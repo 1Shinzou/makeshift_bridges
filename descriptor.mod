@@ -9,4 +9,5 @@ tags={
 	"Technologies"
 }
 name="Makeshift Bridges"
+picture="thumbnail.png"
 supported_version="1.14.7"

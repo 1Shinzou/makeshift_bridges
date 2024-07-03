@@ -1,0 +1,19 @@
+
+state={
+	id=618
+	name="STATE_618" # Dzungaria
+	manpower=1
+	provinces={
+		1708 1783 1844 4714 4788 4823 4849 7693 7737 7866 10674 10691 12590 12737 
+	}
+	buildings_max_level_factor=0.000
+	state_category = wasteland
+	history={
+		owner = NON
+	}
+
+	local_supplies=0.0
+}
+
+	
+

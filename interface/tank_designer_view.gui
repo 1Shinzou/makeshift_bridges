@@ -149,6 +149,11 @@ guiTypes = {
 				position = { x= 220 y= 300 }
 			}
 
+			positionType = {
+				name = "pos_custom_module_slot_window_10"
+				position = { x=@fixed_btn_mod_col_6 y=@fixed_btn_mod_row_0 }
+			}
+
 			######################################################################
 			# Equipment upgrades
 			######################################################################
@@ -242,13 +247,13 @@ guiTypes = {
 		iconType = {
 			name = "tag_icon_bg"
 			spriteType = "GFX_role_icon_bg"
-			position = { x = 465 y = 143 }
+			position = { x = 465 y = 330 }
 			alwaystransparent = yes
 		}
 
 		buttonType = {
 			name = "niche_button"
-			position = { x = 474 y = 150 }
+			position = { x = 474 y = 337 }
 			spriteType = "GFX_niche_icon_strip"
 			clicksound = "ui_tank_designer_company_icon"
 			pdx_tooltip = "DESIGNER_SELECT_NICHE"

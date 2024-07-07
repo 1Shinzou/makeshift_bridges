@@ -398,6 +398,7 @@ technologies = {
 		enable_equipment_modules = {
 			auto_loader
 			tank_heavy_howitzer
+			tank_medium_cannon_3
 		}
 
 		research_cost = 1
@@ -1410,6 +1411,7 @@ technologies = {
 			tank_high_velocity_cannon_3
 			tank_heavy_cannon_3
 			auto_loader
+			tank_medium_cannon_3
 		}
 		research_cost = 1
 

@@ -781,8 +781,10 @@ technologies = {
 			firebrigades
 		}
 
+		infantry = {
+			combat_width = -0.2
+		}
 		
-		conscription = 0.02
 		
 		path = {
 			leads_to_tech = nd_conscription 
@@ -834,7 +836,7 @@ technologies = {
 	nd_conscription = {
 		xp_research_type = army
 		xp_unlock_cost = 100
-		conscription = 0.03
+		conscription = 0.05
 
 		path = {
 			leads_to_tech = werwolf_guerillas 
@@ -1055,10 +1057,10 @@ technologies = {
 	intergrated_support = { #This Branch is focused on boosting stuff in the support column 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		xor={
+		
+		xor = {
 			dispersed_support
 		}
-
 	
 		category_support_battalions = {
 			max_organisation = 10
@@ -1163,6 +1165,7 @@ technologies = {
 	dispersed_support = { # Branch is focused on support units as part of the regular brigades
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 		xor = {
 			intergrated_support
 		}
@@ -1226,7 +1229,12 @@ technologies = {
 		xp_unlock_cost = 100
 		category_line_artillery = {
 			soft_attack = 0.10
+			
 		}
+		category_line_artillery = {
+			combat_width = -0.2
+		}
+		
 		coordination_bonus = 0.05
 
 		enable_tactic = tactic_overwhelming_fire
@@ -1335,6 +1343,7 @@ technologies = {
 	concentrated_fire_plans = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 		xor = {
 			centralized_fire_control
 		}
@@ -1342,7 +1351,7 @@ technologies = {
 		category_army = {
 			hard_attack = 0.10
 		}
-		
+
 		path = {
 			leads_to_tech = combined_arms 
 			research_cost_coeff = 1
@@ -1495,7 +1504,7 @@ technologies = {
 	air_land_battle = {
 		xp_research_type = army
 		xp_unlock_cost = 100
-		category_front_line = {
+		category_army = {
 			max_organisation = 5
 		}
 			
@@ -1556,6 +1565,7 @@ technologies = {
 	centralized_fire_control = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 		xor = {
 			concentrated_fire_plans
 		}
@@ -2861,8 +2871,8 @@ technologies = {
 	}
 	
 	deep_operations = {
-		category_tanks = {
-			max_organisation = 2
+		category_all_armor = {
+			max_organisation = 3
 		}
 		armored_car = {
 			max_organisation = 2
@@ -2918,7 +2928,7 @@ technologies = {
 	operational_concentration = {
 		xp_research_type = army
 		xp_unlock_cost = 100
-		max_planning = 0.10
+		max_planning = 0.15
 		land_reinforce_rate = 0.05
 
 		enable_tactic = tactic_elastic_defense
@@ -3022,7 +3032,7 @@ technologies = {
 	breakthrough_priority = {
 		xp_research_type = army
 		xp_unlock_cost = 100
-		category_tanks = {
+		category_all_armor = {
 			max_organisation = 1
 			breakthrough = 0.10
 		}
@@ -3080,13 +3090,12 @@ technologies = {
 	}
 	
 	mechanized_wave = {
-		category_tanks = {
-			max_organisation = 2
-		}
+	
 		xp_research_type = army
 		xp_unlock_cost = 100
 		category_all_armor = {
 			default_morale = 0.1
+			max_organisation = 2
 		}
 		armored_car = {
 			max_organisation = 3

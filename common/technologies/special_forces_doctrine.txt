@@ -220,7 +220,10 @@ technologies = {
 		force_use_small_tech_layout = yes
 		
 		category_mountaineers = {
-			defense = 0.05
+			defense = 0.10
+		}
+		mountaineers = {
+			combat_width = -0.2
 		}
 		
 		path = {

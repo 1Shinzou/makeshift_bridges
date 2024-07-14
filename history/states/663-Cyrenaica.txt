@@ -2,6 +2,9 @@ state={
 	id=663
 	name="STATE_663"
 	manpower = 8808
+	resources={
+		oil=4
+	}
 	
 	state_category = wasteland
 
@@ -11,10 +14,13 @@ state={
 			infrastructure = 1
 		}
 		add_core_of = TUR
+		victory_points = {
+			10104 1
+		}
 	}
 
 	provinces={
-		1062 1186 4060 4063 4133 7063 7139 7206 9977 10049 12025 12079 13078 
+		1060 1062 1186 4060 4063 4133 7063 7139 7206 9977 10049 10104 11951 12025 12079 13078 10785
 	}
 
 	local_supplies=0.0 

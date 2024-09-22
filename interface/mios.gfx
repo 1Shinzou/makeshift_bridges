@@ -2,1136 +2,1136 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_idea_fin_veljekset_karhumaki"
-		texturefile = "gfx/interface/ideas/idea_fin_veljekset_karhumaki.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_fin_veljekset_karhumaki.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_fin_hietalahtii_shipyard"
-		texturefile = "gfx/interface/ideas/idea_fin_hietalahtii_shipyard.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_fin_hietalahtii_shipyard.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_yug_lazarus"
-		texturefile = "gfx/interface/ideas/idea_yug_lazarus.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_yug_lazarus.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_yug_jadransko_brodogradiliste"
-		texturefile = "gfx/interface/ideas/idea_yug_jadransko_brodogradiliste.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_yug_jadransko_brodogradiliste.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_fra_brest_arsenal"
-		texturefile = "gfx/interface/ideas/idea_fra_brest_arsenal.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_fra_brest_arsenal.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_fra_acp"
-		texturefile = "gfx/interface/ideas/idea_fra_acp.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_fra_acp.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_usa_portsmouth_naval_shipyard"
-		texturefile = "gfx/interface/ideas/idea_usa_portsmouth_naval_shipyard.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_usa_portsmouth_naval_shipyard.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_ast_holden"
-		texturefile = "gfx/interface/ideas/idea_ast_holden.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_ast_holden.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_ast_walkers"
-		texturefile = "gfx/interface/ideas/idea_ast_walkers.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_ast_walkers.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_can_davie_shipbuilding"
-		texturefile = "gfx/interface/ideas/idea_can_davie_shipbuilding.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_can_davie_shipbuilding.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_can_bathurst_street_wharf"
-		texturefile = "gfx/interface/ideas/idea_can_bathurst_street_wharf.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_can_bathurst_street_wharf.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_ger_kriegsmarinewerft_wilhelmshaven"
-		texturefile = "gfx/interface/ideas/idea_ger_kriegsmarinewerft_wilhelmshaven.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_ger_kriegsmarinewerft_wilhelmshaven.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_den_aalborg_shipyard"
-		texturefile = "gfx/interface/ideas/idea_den_aalborg_shipyard.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_den_aalborg_shipyard.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_hol_rdm"
-		texturefile = "gfx/interface/ideas/idea_hol_rdm.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_hol_rdm.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_ger_benz"
-		texturefile = "gfx/interface/ideas/idea_ger_benz.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_ger_benz.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_jap_isuzu"
-		texturefile = "gfx/interface/ideas/idea_jap_isuzu.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_jap_isuzu.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_jap_kokura_arsenal"
-		texturefile = "gfx/interface/ideas/idea_jap_kokura_arsenal.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_jap_kokura_arsenal.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_pol_gdansk_shipyard"
-		texturefile = "gfx/interface/ideas/idea_pol_gdansk_shipyard.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_pol_gdansk_shipyard.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_bra_amic"
-		texturefile = "gfx/interface/ideas/idea_bra_amic.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_bra_amic.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_raj_hindustan_motors"
-		texturefile = "gfx/interface/ideas/idea_raj_hindustan_motors.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_raj_hindustan_motors.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_swe_norma_projektilfabrik"
-		texturefile = "gfx/interface/ideas/idea_swe_norma_projektilfabrik.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_swe_norma_projektilfabrik.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_ins_machinefabriek_braat"
-		texturefile = "gfx/interface/ideas/idea_ins_machinefabriek_braat.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_ins_machinefabriek_braat.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_ger_deschimag"
-		texturefile = "gfx/interface/ideas/idea_ger_deschimag.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_ger_deschimag.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_bul_dsf"
-		texturefile = "gfx/interface/ideas/idea_bul_dsf.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_bul_dsf.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_fra_mac"
-		texturefile = "gfx/interface/ideas/idea_fra_mac.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_fra_mac.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_ger_arado"
-		texturefile = "gfx/interface/ideas/idea_ger_arado.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_ger_arado.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_swe_forenade_flygverkstader"
-		texturefile = "gfx/interface/ideas/idea_swe_forenade_flygverkstader.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_swe_forenade_flygverkstader.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_swe_ab_flyginsustri"
-		texturefile = "gfx/interface/ideas/idea_swe_ab_flyginsustri.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_swe_ab_flyginsustri.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_swe_asja"
-		texturefile = "gfx/interface/ideas/idea_swe_asja.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_swe_asja.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_swe_edmund_sparmann"
-		texturefile = "gfx/interface/ideas/idea_swe_edmund_sparmann.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_swe_edmund_sparmann.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_sov_sestroretsk_tools_plant"
-		texturefile = "gfx/interface/ideas/idea_sov_sestroretsk_tools_plant.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_sov_sestroretsk_tools_plant.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_sov_naz"
-		texturefile = "gfx/interface/ideas/idea_sov_naz.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_sov_naz.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_jap_ishikawajima_motorcar_factory"
-		texturefile = "gfx/interface/ideas/idea_jap_ishikawajima_motorcar_factory.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_jap_ishikawajima_motorcar_factory.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_fin_tikkakoski"
-		texturefile = "gfx/interface/ideas/idea_fin_tikkakoski.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_fin_tikkakoski.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_sov_izhora_plant"
-		texturefile = "gfx/interface/ideas/idea_sov_izhora_plant.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_sov_izhora_plant.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_ger_auto_union"
-		texturefile = "gfx/interface/ideas/idea_ger_auto_union.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_ger_auto_union.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_usa_chevrolet"
-		texturefile = "gfx/interface/ideas/idea_usa_chevrolet.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_usa_chevrolet.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_eng_daimler"
-		texturefile = "gfx/interface/ideas/idea_eng_daimler.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_eng_daimler.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_ast_department_of_aircraft_production"
-		texturefile = "gfx/interface/ideas/idea_ast_department_of_aircraft_production.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_ast_department_of_aircraft_production.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_ast_department_of_munitions"
-		texturefile = "gfx/interface/ideas/idea_ast_department_of_munitions.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_ast_department_of_munitions.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_pru_dicsa"
-		texturefile = "gfx/interface/ideas/idea_pru_dicsa.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_pru_dicsa.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_pru_san_lorenzo_naval_base"
-		texturefile = "gfx/interface/ideas/idea_pru_san_lorenzo_naval_base.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_pru_san_lorenzo_naval_base.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_pru_sima"
-		texturefile = "gfx/interface/ideas/idea_pru_sima.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_pru_sima.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_pru_taller_central_de_aviacion"
-		texturefile = "gfx/interface/ideas/idea_pru_taller_central_de_aviacion.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_pru_taller_central_de_aviacion.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_pru_national_artillery_factory"
-		texturefile = "gfx/interface/ideas/idea_pru_national_artillery_factory.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_pru_national_artillery_factory.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_pru_sima_cefar"
-		texturefile = "gfx/interface/ideas/idea_pru_sima_cefar.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_pru_sima_cefar.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_nor_armstrong_whitworth"
-		texturefile = "gfx/interface/ideas/idea_nor_armstrong_whitworth.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_nor_armstrong_whitworth.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_egy_esrbc"
-		texturefile = "gfx/interface/ideas/idea_egy_esrbc.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_egy_esrbc.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_egy_alexandria_shipyard"
-		texturefile = "gfx/interface/ideas/idea_egy_alexandria_shipyard.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_egy_alexandria_shipyard.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_nor_kjeller_flyfabrikk"
-		texturefile = "gfx/interface/ideas/idea_nor_kjeller_flyfabrikk.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_nor_kjeller_flyfabrikk.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_nor_birger_honningstad"
-		texturefile = "gfx/interface/ideas/idea_nor_birger_honningstad.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_nor_birger_honningstad.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_egy_armored_production_and_repair_factory"
-		texturefile = "gfx/interface/ideas/idea_egy_armored_production_and_repair_factory.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_egy_armored_production_and_repair_factory.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_egy_heliopolis_air_works"
-		texturefile = "gfx/interface/ideas/idea_egy_heliopolis_air_works.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_egy_heliopolis_air_works.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_egy_helwan_air_works"
-		texturefile = "gfx/interface/ideas/idea_egy_helwan_air_works.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_egy_helwan_air_works.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_egy_egao"
-		texturefile = "gfx/interface/ideas/idea_egy_egao.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_egy_egao.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_egy_abu_zaabal_engineering_industry"
-		texturefile = "gfx/interface/ideas/idea_egy_abu_zaabal_engineering_industry.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_egy_abu_zaabal_engineering_industry.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_egy_shoubra_engineering_industry"
-		texturefile = "gfx/interface/ideas/idea_egy_shoubra_engineering_industry.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_egy_shoubra_engineering_industry.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_chl_famae_armor"
-		texturefile = "gfx/interface/ideas/idea_chl_famae_armor.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_chl_famae_armor.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_chl_famae_artillery"
-		texturefile = "gfx/interface/ideas/idea_chl_famae_artillery.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_chl_famae_artillery.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_chl_famae"
-		texturefile = "gfx/interface/ideas/idea_chl_famae.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_chl_famae.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_chl_asmar"
-		texturefile = "gfx/interface/ideas/idea_chl_asmar.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_chl_asmar.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_chl_enaer"
-		texturefile = "gfx/interface/ideas/idea_chl_enaer.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_chl_enaer.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_aus_pola_navy_yard"
-		texturefile = "gfx/interface/ideas/idea_aus_pola_navy_yard.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_aus_pola_navy_yard.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_aus_trieste_naval_shipyard"
-		texturefile = "gfx/interface/ideas/idea_aus_trieste_naval_shipyard.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_aus_trieste_naval_shipyard.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_saf_atlas_aircraft"
-		texturefile = "gfx/interface/ideas/idea_saf_atlas_aircraft.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_saf_atlas_aircraft.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_saf_armaments_production_board"
-		texturefile = "gfx/interface/ideas/idea_saf_armaments_production_board.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_saf_armaments_production_board.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_saf_defence_ordnance_workshop"
-		texturefile = "gfx/interface/ideas/idea_saf_defence_ordnance_workshop.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_saf_defence_ordnance_workshop.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_saf_south_african_mint"
-		texturefile = "gfx/interface/ideas/idea_saf_south_african_mint.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_saf_south_african_mint.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_saf_roberts_heights_air_force_depot"
-		texturefile = "gfx/interface/ideas/idea_saf_roberts_heights_air_force_depot.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_saf_roberts_heights_air_force_depot.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_saf_elgin_brown_and_hamer"
-		texturefile = "gfx/interface/ideas/idea_saf_elgin_brown_and_hamer.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_saf_elgin_brown_and_hamer.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_lib_monrovia_tank_plant"
-		texturefile = "gfx/interface/ideas/idea_lib_monrovia_tank_plant.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_lib_monrovia_tank_plant.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_lib_freeport_of_monrovia"
-		texturefile = "gfx/interface/ideas/idea_lib_freeport_of_monrovia.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_lib_freeport_of_monrovia.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_lib_liberian_national_airways"
-		texturefile = "gfx/interface/ideas/idea_lib_liberian_national_airways.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_lib_liberian_national_airways.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_lib_monrovia_artillery_factory"
-		texturefile = "gfx/interface/ideas/idea_lib_monrovia_artillery_factory.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_lib_monrovia_artillery_factory.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_lib_state_small_arms_factory"
-		texturefile = "gfx/interface/ideas/idea_lib_state_small_arms_factory.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_lib_state_small_arms_factory.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_arg_arsenal_esteban_de_luca"
-		texturefile = "gfx/interface/ideas/idea_arg_arsenal_esteban_de_luca.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_arg_arsenal_esteban_de_luca.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_eth_mogadishu_shipyard"
-		texturefile = "gfx/interface/ideas/idea_eth_mogadishu_shipyard.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_eth_mogadishu_shipyard.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_eth_massawa_shipyard"
-		texturefile = "gfx/interface/ideas/idea_eth_massawa_shipyard.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_eth_massawa_shipyard.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_chi_tianjin_shipyard"
-		texturefile = "gfx/interface/ideas/idea_chi_tianjin_shipyard.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_chi_tianjin_shipyard.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_chi_jiangnan_shipyard"
-		texturefile = "gfx/interface/ideas/idea_chi_jiangnan_shipyard.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_chi_jiangnan_shipyard.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_man_manchurian_aviation_company"
-		texturefile = "gfx/interface/ideas/idea_man_manchurian_aviation_company.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_man_manchurian_aviation_company.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_man_mamc"
-		texturefile = "gfx/interface/ideas/idea_man_mamc.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_man_mamc.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_man_dalian_shipyard"
-		texturefile = "gfx/interface/ideas/idea_man_dalian_shipyard.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_man_dalian_shipyard.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_man_manchurian_heavy_industries"
-		texturefile = "gfx/interface/ideas/idea_man_manchurian_heavy_industries.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_man_manchurian_heavy_industries.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_man_dowa_automobile_company"
-		texturefile = "gfx/interface/ideas/idea_man_dowa_automobile_company.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_man_dowa_automobile_company.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_man_mukden_arsenal_artillery"
-		texturefile = "gfx/interface/ideas/idea_man_mukden_arsenal_artillery.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_man_mukden_arsenal_artillery.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_man_mukden_arsenal"
-		texturefile = "gfx/interface/ideas/idea_man_mukden_arsenal.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_man_mukden_arsenal.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_gxc_guangdong_arsenal"
-		texturefile = "gfx/interface/ideas/idea_gxc_guangdong_arsenal.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_gxc_guangdong_arsenal.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_chi_shaanxi_weyiang_engine_plant"
-		texturefile = "gfx/interface/ideas/idea_chi_shaanxi_weyiang_engine_plant.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_chi_shaanxi_weyiang_engine_plant.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_chi_baotou_tank_plant"
-		texturefile = "gfx/interface/ideas/idea_chi_baotou_tank_plant.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_chi_baotou_tank_plant.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_prc_cmc_aviation_section"
-		texturefile = "gfx/interface/ideas/idea_prc_cmc_aviation_section.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_prc_cmc_aviation_section.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_chi_afamf"
-		texturefile = "gfx/interface/ideas/idea_chi_afamf.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_chi_afamf.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_chi_taiyuan_arsenal"
-		texturefile = "gfx/interface/ideas/idea_chi_taiyuan_arsenal.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_chi_taiyuan_arsenal.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_chi_jinling_arsenal"
-		texturefile = "gfx/interface/ideas/idea_chi_jinling_arsenal.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_chi_jinling_arsenal.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_chi_gongxian_arsenal"
-		texturefile = "gfx/interface/ideas/idea_chi_gongxian_arsenal.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_chi_gongxian_arsenal.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_chi_hanyang_arsenal"
-		texturefile = "gfx/interface/ideas/idea_chi_hanyang_arsenal.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_chi_hanyang_arsenal.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_jap_hino_motors"
-		texturefile = "gfx/interface/ideas/idea_jap_hino_motors.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_jap_hino_motors.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_jap_kobe_seiko_sho"
-		texturefile = "gfx/interface/ideas/idea_jap_kobe_seiko_sho.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_jap_kobe_seiko_sho.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_bel_royal_cannon_foundry"
-		texturefile = "gfx/interface/ideas/idea_bel_royal_cannon_foundry.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_bel_royal_cannon_foundry.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_bel_forges_de_zeebrugge"
-		texturefile = "gfx/interface/ideas/idea_bel_forges_de_zeebrugge.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_bel_forges_de_zeebrugge.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_jap_kawanishi"
-		texturefile = "gfx/interface/ideas/idea_jap_kawanishi.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_jap_kawanishi.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_jap_nagoya_arsenal"
-		texturefile = "gfx/interface/ideas/idea_jap_nagoya_arsenal.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_jap_nagoya_arsenal.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_can_canadian_pacific_railway"
-		texturefile = "gfx/interface/ideas/idea_can_canadian_pacific_railway.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_can_canadian_pacific_railway.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_usa_bethlehem_shipbuilding"
-		texturefile = "gfx/interface/ideas/idea_usa_bethlehem_shipbuilding.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_usa_bethlehem_shipbuilding.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_usa_republic_aviation"
-		texturefile = "gfx/interface/ideas/idea_usa_republic_aviation.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_usa_republic_aviation.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_usa_seversky_aircraft"
-		texturefile = "gfx/interface/ideas/idea_usa_seversky_aircraft.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_usa_seversky_aircraft.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_usa_savage_arms"
-		texturefile = "gfx/interface/ideas/idea_usa_savage_arms.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_usa_savage_arms.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_usa_curtiss_wright"
-		texturefile = "gfx/interface/ideas/idea_usa_curtiss_wright.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_usa_curtiss_wright.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_usa_detroit_arsenal"
-		texturefile = "gfx/interface/ideas/idea_usa_detroit_arsenal.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_usa_detroit_arsenal.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_usa_pressed_steel_car_company"
-		texturefile = "gfx/interface/ideas/idea_usa_pressed_steel_car_company.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_usa_pressed_steel_car_company.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_fra_breguet_aviation"
-		texturefile = "gfx/interface/ideas/idea_fra_breguet_aviation.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_fra_breguet_aviation.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_fra_hotchkiss"
-		texturefile = "gfx/interface/ideas/idea_fra_hotchkiss.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_fra_hotchkiss.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_est_paldiski_port"
-		texturefile = "gfx/interface/ideas/idea_est_paldiski_port.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_est_paldiski_port.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_est_kopli_shipyard"
-		texturefile = "gfx/interface/ideas/idea_est_kopli_shipyard.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_est_kopli_shipyard.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_can_handley_page"
-		texturefile = "gfx/interface/ideas/idea_can_handley_page.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_can_handley_page.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_can_fairchild"
-		texturefile = "gfx/interface/ideas/idea_can_fairchild.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_can_fairchild.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_can_candair"
-		texturefile = "gfx/interface/ideas/idea_can_candair.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_can_candair.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_yug_djuro_djakovic"
-		texturefile = "gfx/interface/ideas/idea_yug_djuro_djakovic.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_yug_djuro_djakovic.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_yug_brod_na_savi"
-		texturefile = "gfx/interface/ideas/idea_yug_brod_na_savi.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_yug_brod_na_savi.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_sov_okb_301"
-		texturefile = "gfx/interface/ideas/idea_sov_okb_301.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_sov_okb_301.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_sov_sukhoi_design_bureau"
-		texturefile = "gfx/interface/ideas/idea_sov_sukhoi_design_bureau.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_sov_sukhoi_design_bureau.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_can_canadian_industries_limited"
-		texturefile = "gfx/interface/ideas/idea_can_canadian_industries_limited.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_can_canadian_industries_limited.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_can_montreal_locomotive_works"
-		texturefile = "gfx/interface/ideas/idea_can_montreal_locomotive_works.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_can_montreal_locomotive_works.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_aus_boehler"
-		texturefile = "gfx/interface/ideas/idea_aus_boehler.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_aus_boehler.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_ger_deutsche_werke"
-		texturefile = "gfx/interface/ideas/idea_ger_deutsche_werke.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_ger_deutsche_werke.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_eng_leyland"
-		texturefile = "gfx/interface/ideas/idea_eng_leyland.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_eng_leyland.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_eng_nuffield"
-		texturefile = "gfx/interface/ideas/idea_eng_nuffield.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_eng_nuffield.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_ita_ansaldo"
-		texturefile = "gfx/interface/ideas/idea_ita_ansaldo.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_ita_ansaldo.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_hol_aviolanda"
-		texturefile = "gfx/interface/ideas/idea_hol_aviolanda.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_hol_aviolanda.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_por_fabrequipa"
-		texturefile = "gfx/interface/ideas/idea_por_fabrequipa.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_por_fabrequipa.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_spr_empresa_nacional_santa_barbara"
-		texturefile = "gfx/interface/ideas/idea_spr_empresa_nacional_santa_barbara.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_spr_empresa_nacional_santa_barbara.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_pol_ksus"
-		texturefile = "gfx/interface/ideas/idea_pol_ksus.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_pol_ksus.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_pol_bbtbp"
-		texturefile = "gfx/interface/ideas/idea_pol_bbtbp.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_pol_bbtbp.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_pol_bbtbp"
-		texturefile = "gfx/interface/ideas/idea_pol_bbtbp.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_pol_bbtbp.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_pol_lws"
-		texturefile = "gfx/interface/ideas/idea_pol_lws.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_pol_lws.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_pol_ursus"
-		texturefile = "gfx/interface/ideas/idea_pol_ursus.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_pol_ursus.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_pol_pfs"
-		texturefile = "gfx/interface/ideas/idea_pol_pfs.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_pol_pfs.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_col_ferrcarriles_nacionales"
-		texturefile = "gfx/interface/ideas/idea_col_ferrcarriles_nacionales.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_col_ferrcarriles_nacionales.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_col_barranquilla_shipyard"
-		texturefile = "gfx/interface/ideas/idea_col_barranquilla_shipyard.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_col_barranquilla_shipyard.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_col_puerto_boy_camp"
-		texturefile = "gfx/interface/ideas/idea_col_puerto_boy_camp.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_col_puerto_boy_camp.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_col_tnam"
-		texturefile = "gfx/interface/ideas/idea_col_tnam.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_col_tnam.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_col_santa_barbara_factory"
-		texturefile = "gfx/interface/ideas/idea_col_santa_barbara_factory.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_col_santa_barbara_factory.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_ger_dwm"
-		texturefile = "gfx/interface/ideas/idea_ger_dwm.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_ger_dwm.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_eng_birmingham_small_arms_company"
-		texturefile = "gfx/interface/ideas/idea_eng_birmingham_small_arms_company.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_eng_birmingham_small_arms_company.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_arg_hispano_argentina"
-		texturefile = "gfx/interface/ideas/idea_arg_hispano_argentina.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_arg_hispano_argentina.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_arg_fabricaciones_militares_artillery"
-		texturefile = "gfx/interface/ideas/idea_arg_fabricaciones_militares_artillery.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_arg_fabricaciones_militares_artillery.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_arg_fabricaciones_militares"
-		texturefile = "gfx/interface/ideas/idea_arg_fabricaciones_militares.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_arg_fabricaciones_militares.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_ice_machine_factory"
-		texturefile = "gfx/interface/ideas/idea_ice_machine_factory.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_ice_machine_factory.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_ice_reykjavik_shipyard"
-		texturefile = "gfx/interface/ideas/idea_ice_reykjavik_shipyard.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_ice_reykjavik_shipyard.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_ice_flugfelag_islands"
-		texturefile = "gfx/interface/ideas/idea_ice_flugfelag_islands.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_ice_flugfelag_islands.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_ice_artillery_factory"
-		texturefile = "gfx/interface/ideas/idea_ice_artillery_factory.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_ice_artillery_factory.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_ice_reykjavik_arsenal"
-		texturefile = "gfx/interface/ideas/idea_ice_reykjavik_arsenal.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_ice_reykjavik_arsenal.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_arg_fabrica_militar_de_aviones"
-		texturefile = "gfx/interface/ideas/idea_arg_fabrica_militar_de_aviones.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_arg_fabrica_militar_de_aviones.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_arg_astilleros_allianza"
-		texturefile = "gfx/interface/ideas/idea_arg_astilleros_allianza.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_arg_astilleros_allianza.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_arg_astarsa"
-		texturefile = "gfx/interface/ideas/idea_arg_astarsa.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_arg_astarsa.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_arg_rio_santiago_shipyard"
-		texturefile = "gfx/interface/ideas/idea_arg_rio_santiago_shipyard.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_arg_rio_santiago_shipyard.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_arg_state_railway"
-		texturefile = "gfx/interface/ideas/idea_arg_state_railway.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_arg_state_railway.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_bra_rff"
-		texturefile = "gfx/interface/ideas/idea_bra_rff.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_bra_rff.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_bra_marine_arsenal_rio_de_jaineiro"
-		texturefile = "gfx/interface/ideas/idea_bra_marine_arsenal_rio_de_jaineiro.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_bra_marine_arsenal_rio_de_jaineiro.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_bra_campanhia_aeronautica_paulista"
-		texturefile = "gfx/interface/ideas/idea_bra_campanhia_aeronautica_paulista.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_bra_campanhia_aeronautica_paulista.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_bra_fabrica_nacional_de_motores"
-		texturefile = "gfx/interface/ideas/idea_bra_fabrica_nacional_de_motores.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_bra_fabrica_nacional_de_motores.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_bra_taurus"
-		texturefile = "gfx/interface/ideas/idea_bra_taurus.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_bra_taurus.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_bra_rio_artillery_arsenal"
-		texturefile = "gfx/interface/ideas/idea_bra_rio_artillery_arsenal.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_bra_rio_artillery_arsenal.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_bra_fabrica_de_itajuba"
-		texturefile = "gfx/interface/ideas/idea_bra_fabrica_de_itajuba.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_bra_fabrica_de_itajuba.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_lit_anbo"
-		texturefile = "gfx/interface/ideas/idea_lit_anbo.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_lit_anbo.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_lit_klaipeda_shipyard"
-		texturefile = "gfx/interface/ideas/idea_lit_klaipeda_shipyard.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_lit_klaipeda_shipyard.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_lit_lithuanian_railways"
-		texturefile = "gfx/interface/ideas/idea_lit_lithuanian_railways.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_lit_lithuanian_railways.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_ins_kereta_epi"
-		texturefile = "gfx/interface/ideas/idea_ins_kereta_epi.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_ins_kereta_epi.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_hol_werkspoor"
-		texturefile = "gfx/interface/ideas/idea_hol_werkspoor.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_hol_werkspoor.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_den_frichs"
-		texturefile = "gfx/interface/ideas/idea_den_frichs.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_den_frichs.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_eth_heavy_aircraft_maintenance_center"
-		texturefile = "gfx/interface/ideas/idea_eth_heavy_aircraft_maintenance_center.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_eth_heavy_aircraft_maintenance_center.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_eth_ammunition_factory"
-		texturefile = "gfx/interface/ideas/idea_eth_ammunition_factory.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_eth_ammunition_factory.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_eth_baei"
-		texturefile = "gfx/interface/ideas/idea_eth_baei.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_eth_baei.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_sau_saudi_railways_organization"
-		texturefile = "gfx/interface/ideas/idea_sau_saudi_railways_organization.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_sau_saudi_railways_organization.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_sau_dammam_shipyard"
-		texturefile = "gfx/interface/ideas/idea_sau_dammam_shipyard.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_sau_dammam_shipyard.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_sau_jeddah_aircraft_factory"
-		texturefile = "gfx/interface/ideas/idea_sau_jeddah_aircraft_factory.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_sau_jeddah_aircraft_factory.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_sau_riyadh_artillery_plant"
-		texturefile = "gfx/interface/ideas/idea_sau_riyadh_artillery_plant.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_sau_riyadh_artillery_plant.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_sau_military_industries_organization"
-		texturefile = "gfx/interface/ideas/idea_sau_military_industries_organization.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_sau_military_industries_organization.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_est_eesti_raudtee"
-		texturefile = "gfx/interface/ideas/idea_est_eesti_raudtee.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_est_eesti_raudtee.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_alb_herukudha_shqiptare"
-		texturefile = "gfx/interface/ideas/idea_alb_herukudha_shqiptare.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_alb_herukudha_shqiptare.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_per_iranian_railways"
-		texturefile = "gfx/interface/ideas/idea_per_iranian_railways.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_per_iranian_railways.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_bul_bulgarian_state_railways"
-		texturefile = "gfx/interface/ideas/idea_bul_bulgarian_state_railways.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_bul_bulgarian_state_railways.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_sia_bang_sue_aircraft_workshop"
-		texturefile = "gfx/interface/ideas/idea_sia_bang_sue_aircraft_workshop.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_sia_bang_sue_aircraft_workshop.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_afg_kabul_aircraft_workshop"
-		texturefile = "gfx/interface/ideas/idea_afg_kabul_aircraft_workshop.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_afg_kabul_aircraft_workshop.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_afg_kabul_arsenal_artillery"
-		texturefile = "gfx/interface/ideas/idea_afg_kabul_arsenal_artillery.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_afg_kabul_arsenal_artillery.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_afg_kabul_arsenal"
-		texturefile = "gfx/interface/ideas/idea_afg_kabul_arsenal.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_afg_kabul_arsenal.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_per_shahbaz_aircraft_factory"
-		texturefile = "gfx/interface/ideas/idea_per_shahbaz_aircraft_factory.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_per_shahbaz_aircraft_factory.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_ins_toko_konstruksi_artileri"
-		texturefile = "gfx/interface/ideas/idea_ins_toko_konstruksi_artileri.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_ins_toko_konstruksi_artileri.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_per_parchin"
-		texturefile = "gfx/interface/ideas/idea_per_parchin.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_per_parchin.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_sia_bangkok_dock"
-		texturefile = "gfx/interface/ideas/idea_sia_bangkok_dock.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_sia_bangkok_dock.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_alb_durres_shipyard"
-		texturefile = "gfx/interface/ideas/idea_alb_durres_shipyard.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_alb_durres_shipyard.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_ins_penataran_angkatan_laut"
-		texturefile = "gfx/interface/ideas/idea_ins_penataran_angkatan_laut.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_ins_penataran_angkatan_laut.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_idea_ins_planning_and_construction_bureau"
-		texturefile = "gfx/interface/ideas/idea_ins_planning_and_construction_bureau.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_ins_planning_and_construction_bureau.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_ins_pabrik_senjata_dan_mesiu"
-		texturefile = "gfx/interface/ideas/idea_ins_pabrik_senjata_dan_mesiu.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_ins_pabrik_senjata_dan_mesiu.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_alb_kucove_aircraft_facilities"
-		texturefile = "gfx/interface/ideas/idea_alb_kucove_aircraft_facilities.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_alb_kucove_aircraft_facilities.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_alb_emp_mjekes"
-		texturefile = "gfx/interface/ideas/idea_alb_emp_mjekes.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_alb_emp_mjekes.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_alb_polican_mechanical_combine"
-		texturefile = "gfx/interface/ideas/idea_alb_polican_mechanical_combine.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_alb_polican_mechanical_combine.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_sia_ordnance_department_artillery"
-		texturefile = "gfx/interface/ideas/idea_sia_ordnance_department_artillery.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_sia_ordnance_department_artillery.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_est_arsenal_artillery"
-		texturefile = "gfx/interface/ideas/idea_est_arsenal_artillery.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_est_arsenal_artillery.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_est_arsenal"
-		texturefile = "gfx/interface/ideas/idea_est_arsenal.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_est_arsenal.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_lat_lkod"
-		texturefile = "gfx/interface/ideas/idea_lat_lkod.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_lat_lkod.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_lat_lkod_air"
-		texturefile = "gfx/interface/ideas/idea_lat_lkod_air.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_lat_lkod_air.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_lat_vef"
-		texturefile = "gfx/interface/ideas/idea_lat_vef.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_lat_vef.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_hun_mavag"
-		texturefile = "gfx/interface/ideas/idea_hun_mavag.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_hun_mavag.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_sia_ordnance_department"
-		texturefile = "gfx/interface/ideas/idea_sia_ordnance_department.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_sia_ordnance_department.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_per_qukhaneh"
-		texturefile = "gfx/interface/ideas/idea_per_qukhaneh.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_per_qukhaneh.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_sia_chaiseri"
-		texturefile = "gfx/interface/ideas/idea_sia_chaiseri.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_sia_chaiseri.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_lat_daugavpils_shot_factory"
-		texturefile = "gfx/interface/ideas/idea_lat_daugavpils_shot_factory.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_lat_daugavpils_shot_factory.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_lat_vairogs"
-		texturefile = "gfx/interface/ideas/idea_lat_vairogs.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_lat_vairogs.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_aus_hirtenberger"
-		texturefile = "gfx/interface/ideas/idea_aus_hirtenberger.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_aus_hirtenberger.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_aus_wnf"
-		texturefile = "gfx/interface/ideas/idea_aus_wnf.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_aus_wnf.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_aus_steyr_daimler_puch"
-		texturefile = "gfx/interface/ideas/idea_aus_steyr_daimler_puch.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_aus_steyr_daimler_puch.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_hun_raba"
-		texturefile = "gfx/interface/ideas/idea_hun_raba.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_hun_raba.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_hun_digep"
-		texturefile = "gfx/interface/ideas/idea_hun_digep.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_hun_digep.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_belgium_fn_herstal"
-		texturefile = "gfx/interface/ideas/idea_belgium_fn_herstal.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_belgium_fn_herstal.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_est_aviotehas"
-		texturefile = "gfx/interface/ideas/idea_est_aviotehas.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_est_aviotehas.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_lat_riga_shipyard"
-		texturefile = "gfx/interface/ideas/idea_lat_riga_shipyard.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_lat_riga_shipyard.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_yug_vtz_kragujevac"
-		texturefile = "gfx/interface/ideas/idea_yug_vtz_kragujevac.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_yug_vtz_kragujevac.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_yug_vistad"
-		texturefile = "gfx/interface/ideas/idea_yug_vistad.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_yug_vistad.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_yug_zastava_automobiles"
-		texturefile = "gfx/interface/ideas/idea_yug_zastava_automobiles.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_yug_zastava_automobiles.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_yug_MIN"
-		texturefile = "gfx/interface/ideas/idea_yug_MIN.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_yug_MIN.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_yug_gosa_fom"
-		texturefile = "gfx/interface/ideas/idea_yug_gosa_fom.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_yug_gosa_fom.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_yug_brodosplit"
-		texturefile = "gfx/interface/ideas/idea_yug_brodosplit.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_yug_brodosplit.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_yug_ikarus"
-		texturefile = "gfx/interface/ideas/idea_yug_ikarus.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_yug_ikarus.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_idea_yug_rogozarski"
-		texturefile = "gfx/interface/ideas/idea_yug_rogozarski.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_yug_rogozarski.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_idea_yug_zmaj"
-		texturefile = "gfx/interface/ideas/idea_yug_zmaj.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_yug_zmaj.dds"
 	}
 
 	SpriteType = {
 		name = "GFX_idea_yug_zavasta_arms"
-		texturefile = "gfx/interface/ideas/idea_yug_zavasta_arms.dds"
+		texturefile = "gfx/interface/ideas/mio/idea_yug_zavasta_arms.dds"
 	}
 }

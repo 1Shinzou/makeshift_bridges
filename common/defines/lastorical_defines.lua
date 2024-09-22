@@ -4,6 +4,9 @@ NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 50
 NDefines.NMilitary.FIELD_MARSHAL_ARMIES_CAP = 7
 NDefines.NMilitary.COMBAT_OVER_WIDTH_PENALTY_MAX = -0.33
 
+--6 Support Companies
+NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 6;
+
 --Convoy Prio
 NDefines.NNavy.NAVAL_INVASION_PRIORITY = 1								-- Default convoy priority for naval invasions
 NDefines.NNavy.NAVAL_TRANSFER_PRIORITY = 1								-- Default convoy priority for naval transports

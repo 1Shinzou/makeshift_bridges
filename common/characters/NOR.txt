@@ -21,9 +21,6 @@ characters={
 		}
 		country_leader={
 			ideology=socialism
-			traits  = {
-				NOR_popular_reformer
-			}
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -42,9 +39,6 @@ characters={
 		}
 		country_leader={
 			ideology=socialism
-			traits  = {
-				NOR_democratic_powerhouse
-			}
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -55,7 +49,7 @@ characters={
 				NOR_AAT = yes 
 			}
 			traits  = {
-				NOR_democratic_powerhouse
+				 NOR_democratic_powerhouse
 			}	
 			ai_will_do = {
 				factor = 1
@@ -80,9 +74,6 @@ characters={
 		}
 		country_leader={
 			ideology=conservatism
-			traits  = {
-				NOR_tobacco_industrialist_leader
-			}
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -96,7 +87,7 @@ characters={
 				is_country_leader = no
 			}
 			traits  = {
-				NOR_tobacco_industrialist
+				 NOR_tobacco_industrialist
 			}
 		}
 	}
@@ -115,7 +106,7 @@ characters={
 		country_leader={
 			ideology=stalinism
 			expire="1965.1.1.1"
-			traits = { NOR_temperate_miners_unionist }
+			traits = { }
 			id=-1
 		}
 	}
@@ -155,31 +146,31 @@ characters={
 		}
 	}
 
-	NOR_peder_anker_wedel_jarlsberg = { # Monarchist Leader
-		name = NOR_peder_anker_wedel_jarlsberg
-		portraits = {
-			civilian = {
-				large = GFX_portrait_NOR_peder_anker_wedel_jarlsberg
-				small = GFX_portrait_NOR_peder_anker_wedel_jarlsberg_small
+	NOR_peder_anker_wedel_jarlsberg={ # Monarchist Leader
+		name=NOR_peder_anker_wedel_jarlsberg
+		portraits={
+			civilian={
+				large=GFX_portrait_NOR_peder_anker_wedel_jarlsberg
+				small=GFX_portrait_NOR_peder_anker_wedel_jarlsberg_small
 			}
 		}
 		allowed_civil_war = {
 			NOR_char_cw_loyalist = yes
 		}
-		country_leader = {
-			ideology = despotism
-			expire = "1965.1.1.1"
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
 			traits = { NOR_shrewd_regent }
-			id = -1
+			id=-1
 		}
-		advisor = {
+		advisor={
 			slot = political_advisor
 			idea_token = NOR_peder_anker_wedel_jarlsberg
 			allowed  = {
 				NOR_AAT = yes
 			}
 			traits  = {
-				NOR_royal_chamberlain
+				 NOR_royal_chamberlain
 			}
 			available = {
 				NOT = {
@@ -213,32 +204,29 @@ characters={
 		}
 	}	
 
-	NOR_king_haakon_vii = { # King 
-		name = NOR_king_haakon_vii
-		portraits = {
-			civilian = {
-				large = GFX_portrait_NOR_king_haakon_vii
-			}
-			army = {
-				small = GFX_portrait_NOR_king_haakon_military_small
+	NOR_king_haakon_vii={ # King 
+		name=NOR_king_haakon_vii
+		portraits={
+			civilian={
+				large=GFX_portrait_NOR_king_haakon_vii
 			}
 		}
 		allowed_civil_war = {
 			NOR_char_cw_loyalist = yes
 		}
-		country_leader = {
-			ideology = despotism
-			expire = "1965.1.1.1"
-			id = -1
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
 		}
-		navy_leader = {
-			traits = { navy_media_personality gentlemanly naval_lineage fleet_protector }
-			skill = 5
-			attack_skill = 2
-			defense_skill = 6
-			maneuvering_skill = 4
-			coordination_skill = 4
-			legacy_id = -1
+		navy_leader={
+			traits={ navy_media_personality gentlemanly naval_lineage fleet_protector }
+			skill=5
+			attack_skill=2
+			defense_skill=6
+			maneuvering_skill=4
+			coordination_skill=4
+			legacy_id=-1
 			
 			visible = {
 				OR = {
@@ -253,28 +241,24 @@ characters={
 
 	}	
 
-	NOR_prince_olav = { # Prince
-		name = NOR_prince_olav
-		portraits = {
-			civilian = {
-				large = GFX_portrait_NOR_prince_olav
+	NOR_prince_olav={ # Prince
+		name=NOR_prince_olav
+		portraits={
+			civilian={
+				large=GFX_portrait_NOR_prince_olav
 			}
-			army = {
-				large = GFX_portrait_NOR_prince_olav
-				small = GFX_portrait_NOR_prince_olaf_military_small
+			army={
+				large=GFX_portrait_NOR_prince_olav
 			}
 		}
-
 		allowed_civil_war = {
 			NOR_char_cw_loyalist = yes
 		}
-
-		country_leader = {
-			ideology = despotism
-			expire = "1965.1.1.1"
-			id = -1
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
 		}
-
 # Leaving the roles here for reference, but it seems the game can't handle both roles in a single character. 
 #		corps_commander = {
 #			visible = {
@@ -304,8 +288,7 @@ characters={
 #			coordination_skill=5
 #			legacy_id=-1
 #			
-#		}	
-
+#		}		
 	}	
 
 	NOR_vidkun_quisling={ # Fascist
@@ -336,7 +319,7 @@ characters={
 			available = {				
 				NOT = {
 					has_completed_focus = NOR_get_rid_of_quisling 
-					#has_completed_focus = NOR_arrest_quisling
+					has_completed_focus = NOR_arrest_quisling
 				}
 				is_country_leader = no
 			}
@@ -788,20 +771,7 @@ characters={
 			allowed = {
 				NOR_AAT = yes 
 			}
-			visible = {
-				NOT = {
-					OR = {
-						has_government = democratic
-						has_completed_focus = NOR_prosecute_the_nkp
-					}
-				}
-			}
-			available = { 
-				OR = {
-					has_government = democratic
-					has_completed_focus = NOR_prosecute_the_nkp
-				}
-			}
+			available = { has_government = democratic }
 			traits = {
 				NOR_minister_of_agriculture 
 			}
@@ -831,12 +801,7 @@ characters={
 
 		corps_commander={
 			visible = {
-				NOT = { 
-					OR = {
-						has_government = fascism 
-						has_government = communism 
-					}
-				}				
+				NOT = { has_government = fascism }				
 			}
 			traits={ trait_reckless trickster winter_specialist }
 			skill=4
@@ -851,14 +816,6 @@ characters={
 			idea_token = NOR_carl_gustav_fleischer
 			allowed = {
 				original_tag = NOR
-			}
-			visible = {
-				NOT = { 
-					OR = {
-						has_government = fascism 
-						has_government = communism 
-					}
-				}	 
 			}
 			available = {
 				NOT = {	has_government = fascism }
@@ -1248,39 +1205,6 @@ characters={
 			maneuvering_skill=3
 			coordination_skill=4
 			legacy_id=-1
-		}
-	}
-	NOR_edvard_christian_danielsen = {
-		advisor = {
-			slot = high_command
-			idea_token = NOR_edvard_christian_danielsen
-			ledger = navy
-				allowed = {
-					original_tag = NOR
-				}
-				traits = {
-					navy_submarine_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		name = NOR_edvard_christian_danielsen
-		portraits = {
-			army = {
-				large = GFX_portrait_NOR_edvard_christian_danielsen
-				small = GFX_portrait_NOR_edvard_christian_danielsen_small
-			}
-		}
-		navy_leader = {
-			traits = { seawolf inshore_fighter }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 1
-			maneuvering_skill = 3
-			coordination_skill = 3
-			legacy_id = -1
 		}
 	}
 
@@ -1697,12 +1621,12 @@ characters={
 			slot = political_advisor
 			idea_token = NOR_adolf_indrebo
 			allowed  = {
-				original_tag = NOR
-				has_aat = no 
-			}
-			traits  = {
-				captain_of_industry 
-			}
+					original_tag = NOR
+					has_aat = no 
+				}
+				traits  = {
+					captain_of_industry 
+				}
 		}
 		name="Adolf Indrebø"
 
@@ -1727,14 +1651,11 @@ characters={
 				NOR_char_cw_labor_only = yes 
 			}
 
-			advisor = {
+			advisor={
 				slot = political_advisor
 				idea_token = NOR_halvdan_koht
 				allowed  = {
 					original_tag = NOR
-				}
-				visible = {
-					has_government = democratic
 				}
 				available = {
 					has_government = democratic

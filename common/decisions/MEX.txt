@@ -124,256 +124,8 @@ MEX_category_military_issues = {
 			}
 		}
 	}
+	#mexico civl war no more?
 
-	# Second Cristiada
-
-	MEX_mission_second_cristiada = {
-
-		icon = generic_civil_support
-
-		available = {
-			OR = {
-				NOT = { has_idea = MEX_church_power_1 }
-				has_stability > 0.6
-				has_government = democratic
-				has_global_flag = flag_second_mexican_civil_war
-				has_civil_war = yes
-			}
-		}
-
-		days_mission_timeout = 150
-
-		activation = {
-			has_idea = MEX_church_power_1
-
-			has_stability < 0.6
-
-			NOT = { has_global_flag = flag_second_mexican_civil_war } # Second Cristiada / Second Mexican Revolution are mutually exclusive
-
-			NOT = { has_government = democratic } # Government has a genuine commitment to reform
-
-			has_civil_war = no
-			
-			OR = { # Domestic violence or antagonised world powers
-				has_completed_focus = MEX_focus_triumph_over_the_cristeros
-				has_completed_focus = MEX_focus_the_red_shirts
-				has_completed_focus = MEX_focus_international_proletarianism
-				has_completed_focus = MEX_focus_ejido_worker_militias
-				has_completed_focus = MEX_focus_bolivarian_alliance
-			}
-		}
-
-		allowed = {
-			original_tag = MEX
-		}
-
-		fixed_random_seed = no
-
-		fire_only_once = no
-
-		is_good = no
-
-		timeout_effect = {
-			set_global_flag = flag_second_mexican_civil_war
-			country_event = {
-				id = mexico.28
-			}
-		}
-	}
-
-	# Dummy decision to warn of Second Cristiada
-
-	MEX_mission_second_cristiada_dummy = {
-
-		icon = generic_civil_support
-
-		available = {
-			has_idea = MEX_church_power_1
-
-			has_stability < 0.6
-
-			NOT = { has_global_flag = flag_second_mexican_civil_war } # Second Cristiada / Second Mexican Revolution are mutually exclusive
-
-			has_civil_war = no
-			
-			NOT = { has_government = democratic } # Government has a genuine commitment to reform
-			
-			OR = { # Domestic violence or antagonised world powers
-				has_completed_focus = MEX_focus_triumph_over_the_cristeros
-				has_completed_focus = MEX_focus_the_red_shirts
-				has_completed_focus = MEX_focus_international_proletarianism
-				has_completed_focus = MEX_focus_ejido_worker_militias
-				has_completed_focus = MEX_focus_bolivarian_alliance
-			}
-		}
-
-		days_remove = 150
-
-		allowed = {
-			original_tag = MEX
-		}
-
-		visible = {
-			NOT = { has_global_flag = flag_second_mexican_civil_war }
-			OR = {
-				NOT = {
-					OR = {
-						has_completed_focus = MEX_focus_triumph_over_the_cristeros
-						has_completed_focus = MEX_focus_the_red_shirts
-						has_completed_focus = MEX_focus_international_proletarianism
-						has_completed_focus = MEX_focus_ejido_worker_militias
-						has_completed_focus = MEX_focus_bolivarian_alliance
-					}
-				}
-				has_stability > 0.6
-				has_idea = MEX_church_power_2
-				has_idea = MEX_church_power_3
-				has_idea = MEX_church_power_4
-				has_idea = MEX_church_power_5
-			}
-			has_civil_war = no
-		}
-
-		fixed_random_seed = no
-
-		fire_only_once = no
-
-		is_good = no
-
-		remove_effect = {
-			set_global_flag = flag_second_mexican_civil_war
-			country_event = {
-				id = mexico.28
-			}
-		}
-	}
-
-	# Second Revolution by anti-Church and far-left groups
-
-	MEX_mission_second_revolution = {
-
-		icon = generic_civil_support
-
-		available = {
-			OR = {
-				NOT = { has_idea = MEX_church_power_5 }
-				has_stability > 0.6
-				has_government = communism
-				has_global_flag = flag_second_mexican_civil_war
-				has_civil_war = yes
-			}
-		}
-
-		days_mission_timeout = 150
-
-		activation = {
-			has_idea = MEX_church_power_5
-
-			has_stability < 0.6
-
-			NOT = { has_global_flag = flag_second_mexican_civil_war } # Second Cristiada / Second Mexican Revolution are mutually exclusive
-
-			has_civil_war = no
-			
-			NOT = { has_government = communism } # Pro-Church communism (liberation theology?) in this context is ahistorical, but if the player pulls it off kudos
-
-			OR = { # Dissent from the people or elite
-				has_completed_focus = MEX_focus_purge_the_bureaucracy
-				has_completed_focus = MEX_focus_womens_suffrage
-				has_completed_focus = MEX_focus_end_land_reform
-				has_completed_focus = MEX_focus_royal_dutch_shell
-				has_completed_focus = MEX_focus_reform_the_cristero_guard
-			}
-		}
-
-		allowed = {
-			original_tag = MEX
-		}
-
-		fixed_random_seed = no
-
-		fire_only_once = no
-
-		is_good = no
-
-		timeout_effect = {
-			set_global_flag = flag_second_mexican_civil_war
-			country_event = {
-				id = mexico.30
-			}
-		}
-	}
-
-	# Dummy decision to warn of Second Revolution
-
-	MEX_mission_second_revolution_dummy = {
-
-		icon = generic_civil_support
-
-		available = {
-			has_idea = MEX_church_power_5
-
-			has_stability < 0.6
-
-			NOT = { has_global_flag = flag_second_mexican_civil_war } # Second Cristiada / Second Mexican Revolution are mutually exclusive
-
-			has_civil_war = no
-			
-			NOT = { has_government = communism } # Pro-Church communism (liberation theology?) in this context is ahistorical, but if the player pulls it off kudos
-
-			OR = { # Dissent from the people or elite
-				has_completed_focus = MEX_focus_purge_the_bureaucracy
-				has_completed_focus = MEX_focus_womens_suffrage
-				has_completed_focus = MEX_focus_end_land_reform
-				has_completed_focus = MEX_focus_royal_dutch_shell
-				has_completed_focus = MEX_focus_reform_the_cristero_guard
-			}
-		}
-
-		days_remove = 150
-
-		allowed = {
-			original_tag = MEX
-		}
-
-		visible = {
-			NOT = { has_global_flag = flag_second_mexican_civil_war }
-			OR = {
-				NOT = {
-					OR = {
-						has_completed_focus = MEX_focus_purge_the_bureaucracy
-						has_completed_focus = MEX_focus_womens_suffrage
-						has_completed_focus = MEX_focus_end_land_reform
-						has_completed_focus = MEX_focus_royal_dutch_shell
-						has_completed_focus = MEX_focus_reform_the_cristero_guard
-					}
-				}
-				has_stability > 0.6
-				has_idea = MEX_church_power_1
-				has_idea = MEX_church_power_2
-				has_idea = MEX_church_power_3
-				has_idea = MEX_church_power_4
-			}
-			has_civil_war = no
-		}
-
-		fixed_random_seed = no
-
-		fire_only_once = no
-
-		is_good = no
-
-		remove_effect = {
-			set_global_flag = flag_second_mexican_civil_war
-			country_event = {
-				id = mexico.30
-			}
-		}
-	}
-
-	# Seizure of the Panama Canal if Mexico controls the rest of Panama
-	# Can trigger an American declaration of war
-	
 	MEX_decision_operation_just_cause = { # Bahahaha
 	
 		icon = generic_nationalism
@@ -1288,7 +1040,7 @@ MEX_category_church_power = {
 
 		}
 
-		cost = 75
+		cost = 25
 		
 		complete_effect = {
 			MEX_increase_church_power = yes		
@@ -1320,7 +1072,7 @@ MEX_category_church_power = {
 			NOT = { has_idea = MEX_church_power_1 }
 		}
 
-		cost = 75
+		cost = 25
 		
 		complete_effect = {
 			MEX_decrease_church_power = yes
@@ -1357,7 +1109,7 @@ MEX_category_church_power = {
 			}
 		}
 
-		cost = 75
+		cost = 25
 		
 		remove_effect = {
 			add_war_support = 0.02
@@ -1394,7 +1146,7 @@ MEX_category_church_power = {
 			}
 		}
 
-		cost = 75
+		cost = 25
 		
 		remove_effect = {
 			add_war_support = 0.02
@@ -1432,7 +1184,7 @@ MEX_category_church_power = {
 			}
 		}
 
-		cost = 75
+		cost = 25
 		
 		remove_effect = {
 			add_stability = 0.03
@@ -1468,7 +1220,7 @@ MEX_category_church_power = {
 			}
 		}
 
-		cost = 75
+		cost = 25
 		
 		remove_effect = {
 			add_stability = 0.03

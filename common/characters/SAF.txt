@@ -86,25 +86,6 @@ characters={
 		}
 	}
 
-	SAF_george_edwin_brink={
-		name=SAF_george_edwin_brink
-		portraits={
-			army={
-				large="GFX_SAF_george_edwin_brink"
-				small=GFX_portrait_SAF_george_edwin_brink_small
-			}
-		}
-		corps_commander={
-			traits={ desert_fox }
-			skill=4
-			attack_skill=4
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
-
 	SAF_guy_hallifax={
 		name=SAF_guy_hallifax
 		portraits={
@@ -315,7 +296,12 @@ characters={
 				small="GFX_idea_SAF_adolf_malan" #small="GFX_idea_generic_air_europe_3"
 			}
 		}
-		advisor={	
+		advisor={
+			available = {
+				SAF = {
+					has_completed_focus = SAF_appoint_new_commander 
+				}
+       		}	
 			slot = air_chief
 			idea_token = SAF_adolf_malan
 			allowed = {

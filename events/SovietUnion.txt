@@ -253,6 +253,20 @@ country_event = {
 		}
 		else = {
 			annex_country = { target = FROM }
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = free_collabs
+						option = on
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = EST
+					}
+					set_compliance = 100
+				}
+			}
 		}
 	}
 }
@@ -294,6 +308,20 @@ country_event = {
 		}
 		else = {
 			annex_country = { target = FROM }
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = free_collabs
+						option = on
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = LAT
+					}
+					set_compliance = 100
+				}
+			}
 		}
 	}
 }
@@ -335,6 +363,20 @@ country_event = {
 		}
 		else = {
 			annex_country = { target = FROM }
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = free_collabs
+						option = on
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = LIT
+					}
+					set_compliance = 100
+				}
+			}
 		}
 	}
 }

@@ -1,0 +1,119 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+EST_eesti_raudtee_organization = {
+    include = generic_tank_organization
+    icon = GFX_idea_est_eesti_raudtee
+    allowed = { 
+        tag = EST
+    }
+	equipment_type = {  
+        armor
+        train_equipment
+    }
+    research_categories = { 
+        armor
+        train_tech
+    }
+}
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+EST_paldiski_port_organization = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_est_paldiski_port
+	allowed = {	
+		tag = EST
+	}
+}
+
+EST_kopli_shipyard_organization = {
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_est_kopli_shipyard
+	allowed = {	
+		tag = EST
+	}
+}
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+EST_aviotehas_organization = {
+	include = generic_general_aircraft_organization
+	icon = GFX_idea_est_aviotehas
+	allowed = {	
+		tag = EST
+	}
+}
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+EST_arsenal_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_est_arsenal
+	allowed = {	
+		tag = EST
+	}
+	equipment_type = {  
+        infantry_equipment
+        armored_car_equipment
+    }
+    research_categories = { 
+        infantry_weapons
+        cat_armored_cars
+    }
+	trait = {
+        token = EST_mio_trait_legacy_of_arsenal_submachine_gun
+        name = EST_mio_trait_legacy_of_arsenal_submachine_gun
+        icon = GFX_generic_mio_trait_icon_breakthrough
+        special_trait_background = yes
+		any_parent = { generic_mio_trait_reinforced_stocks }
+
+        position = { x=5 y=1 }
+        limit_to_equipment_type = { infantry_weapons }
+		
+		equipment_bonus = {
+			defense = 0.03
+			soft_attack = 0.05
+		}
+    }
+}
+
+EST_arsenal_artillery_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_est_arsenal_artillery
+	allowed = {	
+		tag = EST
+	}
+}

@@ -1,0 +1,52 @@
+﻿l_english:
+ lastorical.2.t:0 "Allies Win"
+ lastorical.2.d:0 "Allies WIN"
+ lastorical.2.a:0 "Let me take a save"
+ lastorical.1.t:0 "Axis Win"
+ lastorical.1.d:0 "Axis WIN"
+ lastorical.1.a:0 "Let me take a save"
+ #EVENTS#
+ #ColdestWar#
+ victory_con_axis_2:0 "Looming Axis Victory"
+ victory_con_axis_2_desc:0 "Axis control 7 or more out of 10 Victory points: \nDehli \nBatavia \nTaiwan \nCairo \nBenghasi \nPalermo \nParis \nKiev \nMoscow \nStalingrad"
+ victory_con_allies_2:0 "Looming Allies Victory"
+ victory_con_allies_2_desc:0 "Allies control 7 or more out of 10 Victory points: \nDehli \nBatavia \nTaiwan \nCairo \nBenghasi \nPalermo \nParis \nKiev \nMoscow \nStalingrad"
+ victory_con:0 "Victory Condition"
+ victory_con_desc:0 "To trigger the Victory Condition your Faction needs to control 7 out of 10 Victory points: \nDehli \nBatavia \nTaiwan \nCairo \nBenghasi \nPalermo \nParis \nKiev \nMoscow \nStalingrad"
+ victory_con_allies_1:0 "Allies are winning"
+  victory_con_allies_1_desc:0 "Allies control 7 out of 10 Victory points: \nDehli \nBatavia \nTaiwan \nCairo \nBenghasi \nPalermo \nParis \nKiev \nMoscow \nStalingrad"
+  victory_con_axis_1:0 "Axis are winning"
+  victory_con_axis_1_desc:0 "Axis control 7 out of 10 Victory points: \nDehli \nBatavia \nTaiwan \nCairo \nBenghasi \nPalermo \nParis \nKiev \nMoscow \nStalingrad"
+hosttool_aa2:0 "Anti Air 2 Hosttool"
+hosttool_aa3:0 "Anti Air 3 Hosttool"
+
+FRA_annex_south_africa:0 "Annex South Africa"
+assist_holland:0 "Assist Holland"
+annex_Mexico:0 "Annex Mexico"
+annex_Argentina:0 "Annex Argentina"
+annex_Irak:0 "Annex Iraq"
+ITA_annex_BUL:0 "Annex Bulgaristan"
+ITA_annex_ROM:0 "Annex Romania"
+ITA_annex_HUN:0 "Annex Hungary"
+ROM_annex_HUN:0 "Romania annex Hungary"
+MEX_annex_BRA:0 "Mexico annex Brazil"
+USA_annex_MEX:0 "Annex Mexico"
+USA_annex_BRA:0 "Annex Brazil"
+ENG_annex_MEX:0 "UK annex Mexico"
+annex_Irland:0 "Annex Ireland"
+FIN_annex_SPR:0 "Annex Spain"
+SPR_annex_FIN:0 "Annex Finland"
+
+british_fighter_discount_hidden:0 "bug compensation"
+air_war_plans_division_focus_hidden:0 "bug compensation"
+air_support_focus_hidden:0 "bug compensation"
+
+ MOD_countdown_to_victory_cat:0 "Victory!"
+ MOD_countdown_to_victory_cat_desc:0 "The winner of the game is the team who controlls 7 or more of the 10 following Cities for §Y365 days§!:\n\n§YDehli§! - [GetDehliOwner]\n§YBatavia§! - [GetBataviaOwner]\n§YTaiwan§! - [GetTaiwanOwner]\n§YCairo§! - [GetCairoOwner]\n§YBenghasi§! - [GetBenghasiOwner]\n§YPalermo§! - [GetPalermoOwner]\n§YParis§! -[GetParisOwner]\n§YKiev§! - [GetKievOwner]\n§YMoscow§! -[GetMoscowOwner]\n§YStalingrad§! - [GetStalingradOwner]\n\n\n§YCurrent Score§!:\n\n[GER.GetFlag] §RAxis§!: [?global.axis_score]/§Y10§!\n\n[ENG.GetFlag] §CAllies§!: [?global.allies_score]/§Y10§!\n"
+
+
+ vp_axis_owns:0 "[GER.GetFlag] §RAxis§!"
+ vp_alies_owns:0 "[ENG.GetFlag] §CAllies§!"
+
+ MOD_countdown_to_allied_victory_mission:0 "Imminent [ENG.GetFlag] §CAllied§! §YVictory§!"
+ MOD_countdown_to_axis_victory_mission:0 "Imminent [GER.GetFlag] §RAxis§! §YVictory§!"

@@ -110,6 +110,22 @@ country_event = {
 	}
 }
 
+#Interservice Army Navy
+country_event = {
+    id = japan.505
+    title = japan.505.t
+    desc = japan.505.d
+    picture = GFX_report_event_chinese_soldiers_02
+
+    fire_only_once = no
+    is_triggered_only = yes
+
+
+    option = {
+        name = startingevent.999.a
+    }
+}
+
 # Soviets Push Back And Win
 country_event = {
 	id = japan.3

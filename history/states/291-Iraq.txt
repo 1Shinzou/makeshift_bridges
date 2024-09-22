@@ -7,7 +7,7 @@ state={
 	state_category = town
 	
 	resources={
-		oil=15 # was: 22
+		oil=45 # was: 22
 	}
 
 	history={
@@ -33,7 +33,7 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = TUR
+		add_core_of = SWE
 		add_claim_by = KUR
 	}
 

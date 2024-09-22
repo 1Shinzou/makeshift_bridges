@@ -1,3 +1,77 @@
+
+USA_aid_britain = {
+	send_air_to_eng = {
+
+        icon = GFX_decision_generic_air
+
+            allowed = {
+        }
+
+        available = {
+            OR = {
+                date > 1941.01.01
+            }
+        } 
+        fire_only_once = no
+        visible = {
+            original_tag = USA
+            NOT = {has_country_flag = ENG_air_LL}
+        }
+
+        complete_effect = {
+            activate_mission = send_air_to_eng1 set_country_flag = ENG_air_LL
+        }
+    }
+    send_air_to_eng1 = {
+
+        icon = GFX_decision_generic_air
+
+            allowed = {
+        }
+
+        available = {NOT = {has_country_flag = ENG_air_LL}} 
+        fire_only_once = no
+        visible = {
+            original_tag = USA
+            always = yes
+        }
+        days_mission_timeout = 7
+        is_good = yes
+        activation = { always = no    }
+
+        timeout_effect = {
+            if = { 
+                limit =  { has_country_flag = ENG_air_LL 
+                }
+            air_to_england = yes
+            activate_mission = send_air_to_eng1
+            }
+        }
+    }
+    cancel_air_to_eng = {
+
+        icon = GFX_decision_generic_air
+
+            allowed = {
+        }
+
+        available = {always = yes} 
+        fire_only_once = no
+        visible = {
+            original_tag = USA
+            has_country_flag = ENG_air_LL
+        }
+
+        complete_effect = {
+            if = { 
+            limit =  { has_country_flag = ENG_air_LL 
+                }
+                clr_country_flag = ENG_air_LL
+            }
+        }
+    }
+}
+
 war_measures = {
 
 	USA_homeland_defense = {

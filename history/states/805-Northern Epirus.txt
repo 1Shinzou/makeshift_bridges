@@ -21,6 +21,7 @@ state={
 			infrastructure = 1
 		}
 		add_core_of = ALB
+		#add_core_of = ITA
 		add_claim_by = GRE
 		add_claim_by = ITA
 

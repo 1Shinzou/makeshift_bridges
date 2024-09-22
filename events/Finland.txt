@@ -58,6 +58,9 @@ country_event = {
 	}
 	option = { # Refuse
 		name = finland.1.b
+		trigger = {
+			has_global_flag = no_pregrind
+		}
 		ai_chance = {
 			base = 75
 			modifier = {
@@ -391,19 +394,19 @@ country_event = {
 	}
 
 	#Never give up!
-	option = {
-		name = finland.7.b
-		ai_chance = {
-			base = 2
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
+	# option = {
+	# 	name = finland.7.b
+	# 	ai_chance = {
+	# 		base = 2
+	# 		modifier = {
+	# 			factor = 0
+	# 			is_historical_focus_on = yes
+	# 		}
+	# 	}
 
-		set_country_flag = FIN_available_decision_to_surrender_to_soviets_flag
-		unlock_decision_tooltip = FIN_surrender_to_the_soviet_union
-	}
+	# 	set_country_flag = FIN_available_decision_to_surrender_to_soviets_flag
+	# 	unlock_decision_tooltip = FIN_surrender_to_the_soviet_union
+	# }
 }
 
 #Soviet response to Finish surrender - Event for SOV
@@ -514,17 +517,17 @@ country_event = {
 	}
 
 	#Take it all
-	option = {
-		name = finland.8.b
-		ai_chance = {
-			base = 1
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}			
-		}
-		FIN = { country_event = { id = finland.9 } }
-	}
+	# option = {
+	# 	name = finland.8.b
+	# 	ai_chance = {
+	# 		base = 1
+	# 		modifier = {
+	# 			factor = 0
+	# 			is_historical_focus_on = yes
+	# 		}			
+	# 	}
+	# 	FIN = { country_event = { id = finland.9 } }
+	# }
 }
 
 #Soviet says no! - Event for FIN

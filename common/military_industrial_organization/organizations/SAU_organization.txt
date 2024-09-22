@@ -1,0 +1,88 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+SAU_saudi_railways_organization_organization = {
+    include = generic_tank_organization
+    icon = GFX_idea_sau_saudi_railways_organization
+    allowed = { 
+        tag = SAU
+    }
+	equipment_type = {  
+        armor
+        train_equipment
+    }
+    research_categories = { 
+        armor
+        train_tech
+    }
+}
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+SAU_dammam_shipyard_organization = {
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_sau_dammam_shipyard
+	allowed = {	
+		tag = SAU
+	}
+}
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+SAU_jeddah_aircraft_factory_organization = {
+	include = generic_general_aircraft_organization
+	icon = GFX_idea_sau_jeddah_aircraft_factory
+	allowed = {	
+		tag = SAU
+	}
+}
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+SAU_military_indsutries_corporation_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_sau_military_industries_organization
+	allowed = {	
+		tag = SAU
+	}
+}
+
+SAU_riyadh_artillery_plant_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_sau_riyadh_artillery_plant
+	allowed = {	
+		tag = SAU
+	}
+}

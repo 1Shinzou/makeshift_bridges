@@ -1,0 +1,146 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+ICE_machinery_factory_organization = { #fictional
+    include = generic_tank_organization
+    icon = GFX_idea_ice_machine_factory
+    allowed = { 
+        tag = ICE
+    }
+}
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+ICE_reykjavik_shipyard_organization = {
+	include = generic_raider_ship_organization
+	icon = GFX_idea_ice_reykjavik_shipyard
+	allowed = {	
+		tag = ICE
+	}
+	equipment_type = {
+		capital_ship
+		screen_ship
+		submarine
+		convoy_1
+	}
+	initial_trait = {
+        limit_to_equipment_type = { 
+            convoy_1
+        }
+        production_bonus = {
+            production_capacity_factor = 0.07
+        }
+    }
+	trait = {
+        token = ICE_mio_trait_expand_the_merchant_fleet
+        name = ICE_mio_trait_expand_the_merchant_fleet
+        icon = GFX_generic_mio_department_icon_ship_general_engine
+        special_trait_background = yes
+		any_parent = { generic_mio_trait_long_range_raiding generic_mio_trait_high_speed_raiding }
+		mutually_exclusive = { ICE_mio_trait_cheap_submarine_designs }
+
+        position = { x=3 y=1 }
+        limit_to_equipment_type = { convoy_1 }
+		
+		production_bonus = {
+			production_capacity_factor = 0.15
+		}
+    }
+	trait = {
+        token = ICE_mio_trait_cheap_submarine_designs
+        name = ICE_mio_trait_cheap_submarine_designs
+        icon = GFX_generic_mio_department_icon_ship_submarine_production
+        special_trait_background = yes
+		any_parent = { generic_mio_trait_long_range_raiding generic_mio_trait_high_speed_raiding }
+		mutually_exclusive = { ICE_mio_trait_expand_the_merchant_fleet }
+
+        position = { x=5 y=1 }
+        limit_to_equipment_type = { submarine }
+		
+		equipment_bonus = {
+			surface_visibility = -0.1
+			naval_speed = 0.05
+		}
+		
+		production_bonus = {
+			production_capacity_factor = 0.1
+		}
+    }
+}
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+ICE_flugfelag_islands_organization = { 
+	include = generic_general_aircraft_organization
+	icon = GFX_idea_ice_flugfelag_islands
+	allowed = {	
+		tag = ICE
+	}
+	trait = {
+        token = ICE_mio_trait_militarize_the_aviation_indsutry
+        name = ICE_mio_trait_militarize_the_aviation_indsutry
+        icon = GFX_generic_mio_department_icon_facilities
+        special_trait_background = yes
+		any_parent = { generic_mio_trait_conservative_designs }
+
+        position = { x=0 y=1 }
+		
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.15
+		}
+		
+		production_bonus = {
+			production_efficiency_gain_factor = 0.1
+		}
+    }
+}
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+ICE_reykjavik_arsenal_organization = { #fictional
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_ice_reykjavik_arsenal
+	allowed = {	
+		tag = ICE
+	}
+}
+
+ICE_artillery_factory_organization = { #fictional
+	include = generic_artillery_organization
+	icon = GFX_idea_ice_artillery_factory
+	allowed = {	
+		tag = ICE
+	}
+}

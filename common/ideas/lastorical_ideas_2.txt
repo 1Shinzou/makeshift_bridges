@@ -1,0 +1,100 @@
+ideas = {
+
+    
+    hidden_ideas = {
+        no_faction = {
+            allowed = {
+				always = no
+			}
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = generic_morale_bonus
+						
+			modifier = {
+
+			}  
+            on_add = {
+				set_rule = { 
+					desc = NO_Faction
+					can_create_factions = no
+					can_join_factions = no
+					can_send_volunteers = yes
+				}
+			}
+
+        }
+        air_war_plans_division_focus_hidden = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+		
+			equipment_bonus = {
+				small_plane_naval_bomber_airframe = {
+					build_cost_ic = 0.1 instant = yes
+				}
+				small_plane_cas_airframe = {
+					build_cost_ic = 0.1 instant = yes
+				}
+			}
+		} 
+        air_support_focus_hidden = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				medium_plane_fighter_airframe = {
+					build_cost_ic = 0.1 instant = yes
+				}
+			}
+		}
+        british_fighter_discount_hidden = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_air_bonus
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+				small_plane_naval_bomber_airframe = {
+					build_cost_ic = 0.1 instant = yes
+				}
+				small_plane_cas_airframe = {
+					build_cost_ic = 0.1 instant = yes
+				}
+				cv_small_plane_naval_bomber_airframe = {
+					build_cost_ic = 0.1 instant = yes
+				}
+				cv_small_plane_cas_airframe = {
+					build_cost_ic = 0.1 instant = yes
+				}
+			}
+		}
+		
+    }
+}

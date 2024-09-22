@@ -10,12 +10,13 @@ state={
 		owner = ITA
 		buildings = {
 			infrastructure = 1
+			air_base = 2
 		}
-		add_core_of = TUR
+		add_core_of= SWE
 	}
 	
 	provinces={
-		4200 1057 10754 7076 7136 8069 12866 12082 7985 13073 
+		4200 10754 7076
 	}
 
 	local_supplies=0.0 

@@ -4,7 +4,7 @@ state={
 	name="STATE_447"
 	manpower = 3859239
 	resources={
-		oil=1 # was: 2
+		oil=6 # was: 2
 		tungsten = 3 #maganese
 		steel = 3 #Maganese
 		
@@ -31,7 +31,7 @@ state={
 			}
 		}
 
-		add_core_of = TUR
+		add_core_of = SWE
 	}
 
 	provinces={

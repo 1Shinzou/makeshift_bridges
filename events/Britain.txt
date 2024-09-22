@@ -592,15 +592,17 @@ country_event = {
 	desc = britain.16.d
 	picture = GFX_report_event_europe_funeral
 	
-	trigger = {
-		tag = ENG
-		date > 1936.1.19
-		has_start_date < 1936.01.02
-	}	
+	# trigger = {
+	# 	tag = ENG
+	# 	date > 1936.1.19
+	# 	has_start_date < 1936.01.02
+	# }	
 
-	fire_only_once = yes
+	# fire_only_once = yes
 
-	mean_time_to_happen = { days = 7 }
+	# mean_time_to_happen = { days = 7 }
+
+	is_triggered_only = yes
 
 	immediate = {
 		hidden_effect = {
@@ -822,20 +824,22 @@ country_event = {
     desc = britain.22.d
     picture = GFX_report_event_royal_parade
  
-    fire_only_once = yes
+    # fire_only_once = yes
  
-    trigger = {
-        original_tag = ENG
-        has_government = democratic
-        has_idea = ENG_george_vi
-        date > 1937.5.27
-        has_start_date < 1936.01.02
-        NOT = { has_country_flag = baldwin_resigned }
-    }
+    # trigger = {
+    #     original_tag = ENG
+    #     has_government = democratic
+    #     has_idea = ENG_george_vi
+    #     date > 1937.5.27
+    #     has_start_date < 1936.01.02
+    #     NOT = { has_country_flag = baldwin_resigned }
+    # }
 
-    mean_time_to_happen = {
-        days = 7
-    }
+    # mean_time_to_happen = {
+    #     days = 7
+    # }
+
+	is_triggered_only = yes
 
 	option = {
         name = britain.22.a

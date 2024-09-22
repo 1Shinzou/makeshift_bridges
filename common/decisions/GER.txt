@@ -488,6 +488,7 @@ GER_reichskommissariats = {
 			}
 		}
 	}
+
 	GER_reichskommissariat_niederlande = {
 
 		icon = ger_reichskommissariats
@@ -499,7 +500,7 @@ GER_reichskommissariats = {
 			controls_state = 35
 			controls_state = 36
 		}
-
+		fire_only_once = yes
 		cost = 0
 
 		ai_will_do = {
@@ -537,7 +538,7 @@ GER_reichskommissariats = {
 			controls_state = 29
 			controls_state = 34
 		}
-
+		fire_only_once = yes
 		cost = 0
 
 		ai_will_do = {
@@ -596,7 +597,7 @@ GER_reichskommissariats = {
 			controls_state = 812
 			controls_state = 811
 		}
-
+		fire_only_once = yes
 		cost = 0
 
 		ai_will_do = {
@@ -676,7 +677,7 @@ GER_reichskommissariats = {
 			controls_state = 228
 			controls_state = 227
 		}
-
+		fire_only_once = yes
 		cost = 0
 
 		ai_will_do = {

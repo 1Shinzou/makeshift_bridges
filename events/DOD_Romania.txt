@@ -33,14 +33,6 @@ country_event = {
 		give_guarantee = ROM
 	}
 
-	option = { #no
-		name = DOD_romania.1.b
-		ai_chance = {
-			factor = 30
-		}
-		ROM = { country_event = DOD_romania.3 }	
-	}
-
 }
 #Romania wants to strengthen the Romanian-polish alliance - Poland agrees
 country_event = {

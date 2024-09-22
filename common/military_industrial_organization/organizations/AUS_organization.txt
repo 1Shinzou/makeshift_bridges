@@ -1,0 +1,105 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+AUS_steyr_daimler_puch_tanks_organization = {
+	name = AUS_steyr_daimler_puch_organization
+	include = generic_infantry_tank_organization
+	icon = GFX_idea_aus_steyr_daimler_puch
+	allowed = {
+		original_tag = AUS
+	}
+}
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+AUS_pola_navy_yard_organization = {
+	include = generic_raider_ship_organization
+	icon = GFX_idea_aus_pola_navy_yard
+	allowed = {
+		original_tag = AUS
+	}
+	available = {
+		FROM = { controls_state = 852 } # Istria, where Pola (Pula) is
+	}
+}
+
+AUS_trieste_naval_shipyard_organization = {
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_aus_trieste_naval_shipyard
+	allowed = {
+		original_tag = AUS
+	}
+	available = {
+		FROM = { controls_state = 736 } # Littorale, where Trieste is
+	}
+}
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+AUS_wnf_organization = {
+	include = generic_general_aircraft_organization
+	icon = GFX_idea_aus_wnf
+	allowed = {
+		original_tag = AUS
+	}
+}
+
+
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+AUS_hirtenberger_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_aus_hirtenberger
+	allowed = {
+		original_tag = AUS
+	}
+}
+
+AUS_boehler_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_aus_boehler
+	allowed = {
+		original_tag = AUS
+	}
+}
+
+AUS_steyr_daimler_puch_organization = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_aus_steyr_daimler_puch
+	allowed = {
+		original_tag = AUS
+	}
+}

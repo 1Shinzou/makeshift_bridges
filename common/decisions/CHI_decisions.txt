@@ -50,13 +50,12 @@ CHI_army_reform = {
 		icon = generic_prepare_civil_war
 
 		available = {
-			has_army_experience > 99
-			has_completed_focus = CHI_army_reform
+			has_army_experience > 149
 		}
 
 		cost = 0
 		ai_will_do = {
-			factor = 500
+			factor = 0
 		}
 		days_remove = 90
 
@@ -88,7 +87,7 @@ CHI_army_reform = {
 			}
 		}
 		complete_effect = {
-			army_experience = -100						
+			army_experience = -150						
 		}		
 	}
 
@@ -124,13 +123,12 @@ CHI_army_reform = {
 
 		cost = 0
 		ai_will_do = {
-			factor = 10
+			factor = 0
 		}
 		fire_only_once = yes
 
 		visible = {
 			has_idea = CHI_incompetent_officers
-			has_completed_focus = CHI_army_reform
 		}
 
 		complete_effect = {
@@ -6734,27 +6732,6 @@ CHI_occupation_actions = {
 
 		ai_will_do = {
 			base = 0
-			#Pretty damn important
-			modifier = {
-				add = 25
-				NOT = { controls_state = 608 }
-			}
-			modifier = {
-				add = 25
-				NOT = { controls_state = 614 }
-			}
-			modifier = {
-				add = 25
-				NOT = { controls_state = 597 }
-			}
-			modifier = {
-				add = 25
-				NOT = { controls_state = 598 }
-			}
-			modifier = {
-				add = 25
-				NOT = { controls_state = 606 }
-			}
 		}
 		
 		complete_effect = {

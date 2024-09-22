@@ -1,0 +1,10 @@
+
+rename_mios_decision_category = {
+
+	priority = 1
+
+	allowed = {
+		always = yes
+	}
+
+}

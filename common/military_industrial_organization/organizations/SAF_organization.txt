@@ -1,0 +1,120 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+SAF_iscor_organization = {
+    name = SAF_iscor_organization
+    include = generic_medium_tank_organization
+    icon = GFX_idea_SAF_idea_iscor
+    allowed = {
+        original_TAG = SAF
+        has_dlc = "Together for Victory"
+    }
+}
+
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+SAF_elgin_brown_and_hamer_organisation = {
+	include = generic_raider_ship_organization
+	icon = GFX_idea_saf_elgin_brown_and_hamer
+	allowed = {
+		original_tag = SAF
+	}
+}
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+SAF_roberts_heights_air_force_depot_organization = {
+	include = generic_general_aircraft_organization
+	icon = GFX_idea_saf_roberts_heights_air_force_depot
+	allowed = {
+		original_tag = SAF
+	}
+}
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+###################################
+
+SAF_south_african_mint_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_saf_south_african_mint
+	allowed = {
+		original_tag = SAF
+	}
+}
+
+SAF_defence_ordnance_workshop_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_saf_defence_ordnance_workshop
+	allowed = {
+		original_tag = SAF
+	}
+}
+
+SAF_marmon_herrington_organization = {
+	name = USA_marmon_herrington_organization
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_marmon_herrington
+	allowed = {
+		original_tag = SAF
+	}
+	available = {
+		FROM = { NOT = { has_war_with = USA } }
+	}
+	equipment_type = {
+		motorized_equipment
+		mechanized_equipment
+		motorized_rocket_equipment
+		armored_car_equipment
+	}
+	research_categories = {
+		mio_cat_tech_all_motorized_mechanized
+		cat_armored_cars
+	}
+	trait = {
+        token = SAF_mio_trait_modern_armored_cars
+        name = SAF_mio_trait_modern_armored_cars
+        icon = GFX_generic_mio_department_icon_armored_car_defense
+        special_trait_background = yes
+		relative_position_id = generic_mio_trait_medium_machinegun_mounts
+
+		all_parents = { generic_mio_trait_medium_machinegun_mounts }
+
+        position = { x=-1 y=1 }
+		limit_to_equipment_type = { armored_car_equipment }
+		
+		equipment_bonus = {
+			reliability = 0.07
+			maximum_speed = 0.07
+		}
+    }
+}

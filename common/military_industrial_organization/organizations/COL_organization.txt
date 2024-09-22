@@ -1,0 +1,88 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+COL_ferrocarriles_nacionales_organization = {
+    include = generic_tank_organization
+    icon = GFX_idea_col_ferrcarriles_nacionales
+    allowed = { 
+        tag = COL
+    }
+	equipment_type = {  
+        armor
+        train_equipment
+    }
+    research_categories = { 
+        armor
+        train_tech
+    }
+}
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+COL_barranquilla_shipyard_organisation = {
+	include = generic_battle_line_ship_organization
+	icon = GFX_idea_col_barranquilla_shipyard
+	allowed = {
+		original_tag = COL
+	}
+}
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+COL_puerto_boy_air_force_camp_organization = {
+	include = generic_general_aircraft_organization
+	icon = GFX_idea_col_puerto_boy_camp
+	allowed = {
+		original_tag = COL
+	}
+}
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+COL_taller_nacional_de_artes_mecanicas_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_col_tnam
+	allowed = {
+		original_tag = COL
+	}
+}
+
+COL_santa_barbara_factory_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_col_santa_barbara_factory
+	allowed = {
+		original_tag = COL
+	}
+}

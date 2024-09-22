@@ -5,9 +5,9 @@ state={
 	manpower=42357
 	state_category = small_island
 
-	history={
+history={ 
 		owner = JAP
-		add_core_of = TUR
+		add_core_of = SWE
 		buildings = {
 			infrastructure = 2
 			air_base = 3

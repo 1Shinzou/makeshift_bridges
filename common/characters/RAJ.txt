@@ -63,8 +63,22 @@ characters={
 				small=GFX_portrait_RAJ_noel_beresfordpeirse_small
 			}
 		}
+			advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = RAJ_noel_beresfordpeirse
+			ledger = army
+			allowed = {
+				original_tag = RAJ
+			}
+			available = {
+			}
+			traits = {
+				mass_assault_expert
+			}
+		}
 		corps_commander={
-			traits={ armor_officer }
+			traits={infantry_officer }
 			skill=3
 			attack_skill=3
 			defense_skill=3
@@ -169,7 +183,7 @@ characters={
 		portraits={
 			army={
 				large="GFX_RAJ_kodendera_subayya_thimayya"
-				small=GFX_idea_RAJ_k_s_thimayya
+				small=GFX_portrait_RAJ_kodandera_subayya_thimayya_small
 			}
 		}
 	}

@@ -1,0 +1,32 @@
+﻿add_namespace = lastorical
+
+news_event = {
+	id = lastorical.1
+	title = lastorical.1.t
+	desc = lastorical.1.d
+	picture = GFX_report_event_generic_read_write
+	
+	fire_for_sender = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = lastorical.1.a
+	}
+}
+
+news_event = {
+	id = lastorical.2
+	title = lastorical.2.t
+	desc = lastorical.2.d
+	picture = GFX_report_event_generic_read_write
+
+	fire_for_sender = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+    	
+	option = {
+		name = lastorical.2.a
+	}
+}
+

@@ -36,7 +36,8 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=liberalism
+			ideology=fascism_ideology
+			traits={ inexperienced_imperialist }
 			expire="1989.1.1.1"
 			id=-1
 		}
@@ -63,15 +64,15 @@ characters={
 			}
 		}
 
-		corps_commander={
-			traits={ brilliant_strategist politically_connected trickster trait_engineer }
-			skill=5
-			attack_skill=4
-			defense_skill=5
-			planning_skill=3
-			logistics_skill=4
-			legacy_id=0
-		}
+		# corps_commander={
+		# 	traits={ brilliant_strategist politically_connected trickster trait_engineer }
+		# 	skill=5
+		# 	attack_skill=4
+		# 	defense_skill=5
+		# 	planning_skill=3
+		# 	logistics_skill=4
+		# 	legacy_id=0
+		# }
 	}
 
 	JAP_hisaichi_terauchi={
@@ -187,15 +188,15 @@ characters={
 				small=GFX_portrait_JAP_shizuichi_tanaka_small
 			}
 		}
-		corps_commander={
-			traits={ career_officer infantry_officer trickster }
-			skill=4
-			attack_skill=4
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=4
-			legacy_id=0
-		}
+		# corps_commander={
+		# 	traits={ career_officer infantry_officer trickster }
+		# 	skill=4
+		# 	attack_skill=4
+		# 	defense_skill=3
+		# 	planning_skill=2
+		# 	logistics_skill=4
+		# 	legacy_id=0
+		# }
 	}
 
 	JAP_yasuji_okamura={
@@ -249,15 +250,15 @@ characters={
 				small=GFX_portrait_JAP_toshizo_nishio_small
 			}
 		}
-		corps_commander={
-			traits={ brilliant_strategist infantry_officer }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=2
-			legacy_id=0
-		}
+		# corps_commander={
+		# 	traits={ brilliant_strategist infantry_officer }
+		# 	skill=3
+		# 	attack_skill=3
+		# 	defense_skill=2
+		# 	planning_skill=3
+		# 	logistics_skill=2
+		# 	legacy_id=0
+		# }
 	}
 
 	JAP_rikichi_ando={
@@ -306,15 +307,15 @@ characters={
 				small=GFX_portrait_JAP_seishiro_itagaki_small
 			}
 		}
-		corps_commander={
-			traits={ inflexible_strategist trait_reckless JAP_samurai_lineage }
-			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=0
-		}
+		# corps_commander={
+		# 	traits={ inflexible_strategist trait_reckless JAP_samurai_lineage }
+		# 	skill=3
+		# 	attack_skill=3
+		# 	defense_skill=3
+		# 	planning_skill=2
+		# 	logistics_skill=2
+		# 	legacy_id=0
+		# }
 	}
 
 	JAP_takashi_sakai={
@@ -484,24 +485,24 @@ characters={
 		}
 	}
 
-	JAP_sadao_araki={
-		name=JAP_sadao_araki
-		portraits={
-			army={
-				large=GFX_portrait_JAP_sadao_araki
-				small=GFX_portrait_JAP_sadao_araki_small
-			}
-		}
-		corps_commander={
-			traits={ JAP_samurai_lineage }
-			skill=2
-			attack_skill=1
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=0
-		}
-	}
+	#JAP_sadao_araki={
+	#	name=JAP_sadao_araki
+	#	portraits={
+	#		army={
+	#			large=GFX_portrait_JAP_sadao_araki
+	#			small=GFX_portrait_JAP_sadao_araki_small
+	#		}
+	#	}
+	#	corps_commander={
+	#		traits={ JAP_samurai_lineage }
+	#		skill=2
+	#		attack_skill=1
+	#		defense_skill=2
+	#		planning_skill=2
+	#		logistics_skill=2
+	#		legacy_id=0
+	#	}
+	#}
 
 	JAP_keisuke_fujie={
 		name=JAP_keisuke_fujie
@@ -511,15 +512,15 @@ characters={
 				small=GFX_portrait_JAP_keisuke_fujie_small
 			}
 		}
-		corps_commander={
-			traits={ career_officer politically_connected fortress_buster }
-			skill=3
-			attack_skill=1
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=0
-		}
+		# corps_commander={
+		# 	traits={ career_officer politically_connected fortress_buster }
+		# 	skill=3
+		# 	attack_skill=1
+		# 	defense_skill=3
+		# 	planning_skill=3
+		# 	logistics_skill=3
+		# 	legacy_id=0
+		# }
 	}
 
 	JAP_kiichiro_higuchi={
@@ -624,15 +625,15 @@ characters={
 			}
 		}
 		
-		corps_commander={
-			traits={ career_officer infantry_officer commando }
-			skill=3
-			attack_skill=3
-			defense_skill=1
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=0
-		}
+		# corps_commander={
+		# 	traits={ career_officer infantry_officer commando }
+		# 	skill=3
+		# 	attack_skill=3
+		# 	defense_skill=1
+		# 	planning_skill=3
+		# 	logistics_skill=3
+		# 	legacy_id=0
+		# }
 	}
 
 	JAP_masatane_kanda={
@@ -1104,24 +1105,27 @@ characters={
 	}
 
 	JAP_hideki_tojo={
-		name=JAP_hideki_tojo
+		name="JAP_hideki_tojo"
 		portraits={
 			army={
 				small="GFX_idea_hideki_tojo"
 			}
+			civilian={
+				large="gfx/leaders/JAP/Portrait_Japan_Generic_land_2.dds"
+			}
 		}
 		advisor={
 			slot = army_chief
-			idea_token = hideki_tojo
-			allowed = {
+			idea_token = JAP_hideki_tojo
+			allowed  = {
 				original_tag = JAP
 			}
-			traits = {
-				army_chief_morale_2
+			traits  = {
+				army_chief_morale_2 
 			}
 			cost = 100
 			ai_will_do = {
-				factor = 1.000
+				factor = 1
 			}
 		}
 	}
@@ -1298,7 +1302,7 @@ characters={
 				original_tag = JAP
 			}
 			traits = {
-				air_naval_strike_1
+				air_naval_strike_2
 			}
 			cost =  50
 			ai_will_do = {
@@ -1307,29 +1311,7 @@ characters={
 		}
 	}
 	
-	JAP_tateo_kato={
-		name=JAP_tateo_kato
-		portraits={
-			army={
-				small="GFX_idea_tateo_kato"
-			}
-		}
-		advisor={
-			slot = high_command
-			idea_token = tateo_kato
-			ledger = air
-			allowed = {
-				original_tag = JAP
-			}
-			traits = {
-				air_air_combat_training_3
-			}
-			cost = 200
-			ai_will_do = {
-				factor = 0.800
-			}
-		}
-	}
+
 	
 	JAP_matome_ugaki={
 		name=JAP_matome_ugaki

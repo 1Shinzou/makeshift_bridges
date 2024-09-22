@@ -113,6 +113,20 @@ characters={
 				small=GFX_portrait_AST_henry_wynter_small
 			}
 		}
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = AST_henry_wynter
+			ledger = army
+			allowed = {
+				original_tag = AST
+			}
+			available = {
+			}
+			traits = {
+				grand_battle_plan_expert
+			}
+		}
 		corps_commander={
 			skill=4
 			attack_skill=3

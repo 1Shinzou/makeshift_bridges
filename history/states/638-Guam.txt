@@ -5,9 +5,9 @@ state=
 	state_category = small_island
 	manpower=75153
 	history=
-	{
+{ 
 		owner = USA
-		add_core_of = TUR
+		add_core_of = SWE
 		buildings = {
 			infrastructure = 3 #was: 5
 			12140 = {

@@ -17,13 +17,15 @@ state = {
 			limit = {
 				has_dlc = "Arms Against Tyranny"
 			}
-			add_core_of = SMI
+			add_core_of = NOR
 		}
 		victory_points = {
 			3048 1
 		}
 		buildings = {
 			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
 		}
 	}
 

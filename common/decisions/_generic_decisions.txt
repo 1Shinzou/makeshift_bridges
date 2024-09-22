@@ -216,13 +216,26 @@ economy_decisions = {
 
 		icon = GFX_decision_generic_construction
 
-		visible = { 
+		visible = {
 			OR = {
 				is_major = no
 				AND = {
 					is_faction_leader = yes
-					num_of_factories < 51 #would be a minor if it wasn't for faction leader status
+					num_of_factories < 51					#would be a minor if it wasn't for faction leader status
 				}
+				AND = {
+					tag = JAP
+					OR = {
+						SIA = {
+							is_ai = yes
+						}
+						NOT = {
+							country_exists = SIA
+						}
+					}
+				}
+				tag = ITA
+				tag = GER
 			}
 		}
 		fire_only_once = yes
@@ -1179,7 +1192,31 @@ operations = {
 	#		set_war_support = 1
 	#	}
 	#}
-
+	add_convoy = { #yey we fix convoy bug cuz fuck you
+		name = "Convoy bug no more"
+        icon = GFX_decision_SWI_dismiss_council
+        allowed = {
+             always =yes
+        }
+        days_remove = 10
+        cost = 0
+		priority = 100
+        complete_effect = {
+            add_manpower = 1
+            add_equipment_to_stockpile = {
+                type = convoy_1
+                amount = 1
+            }
+        }
+        
+        remove_effect = {
+            add_manpower = -1
+            add_equipment_to_stockpile = {
+                type = convoy_1
+                amount = -1
+            }
+        }
+    }
 	blow_suez_canal = {
 
 		icon = GFX_decision_generic_ignite_civil_war
@@ -1844,50 +1881,6 @@ war_measures = {
 		}
     }
 	
-	diversify_special_forces = {
-
-		icon = GFX_decision_generic_military
-
-		available = {
-			date > 1940.1.1
-		}
-
-		visible = {
-			AND = {
-				is_major = yes
-				has_dlc = "Arms Against Tyranny"
-				NOT = {
-					OR = {
-						tag = ENG #has a focus
-						tag = USA #has a focus
-						tag = SOV #has a focus
-						tag = JAP #has a focus
-						tag = CHL #has a focus
-						tag = BRA #has a focus
-						tag = ARG #has a focus
-						tag = AST #has a focus
-						tag = FRA #has a focus
-					}
-				} 
-			}
-		}
-
-		fire_only_once = yes
-
-		cost = 50
-
-		complete_effect = {
-			add_potential_special_forces_tree = yes
-		}
-		ai_will_do = {
-			factor = 201
-			modifier = {
-				factor = 0
-				is_major = no
-			}
-		}
-	}
-	
 }
 
 foreign_politics = {
@@ -1903,6 +1896,7 @@ foreign_politics = {
         days_re_enable = 30
 
         available = {
+			always = no
         }
 
         visible = {

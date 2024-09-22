@@ -1,0 +1,384 @@
+defined_text = {
+	name = GetSovBoostStatus
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = sov_boost
+				option = sixteen
+			}
+		}
+		localization_key = check_gamerules_sixteen
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = sov_boost
+				option = twelve
+			}
+		}
+		localization_key = check_gamerules_twelve
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = sov_boost
+				option = eight
+			}
+		}
+		localization_key = check_gamerules_eight
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = sov_boost
+				option = four
+			}
+		}
+		localization_key = check_gamerules_four
+	}
+	text = {
+		localization_key = check_gamerules_zero
+	}
+}
+
+defined_text = {
+	name = GetGerBoostStatus
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = ger_boost
+				option = twelve
+			}
+		}
+		localization_key = check_gamerules_twelve
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = ger_boost
+				option = eight
+			}
+		}
+		localization_key = check_gamerules_eight
+	}
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = ger_boost
+				option = four
+			}
+		}
+		localization_key = check_gamerules_four
+	}
+	text = {
+		localization_key = check_gamerules_zero
+	}
+}
+
+defined_text = {
+	name = GetAlliedEngineBonusStatus
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = allied_engine_bonus
+				option = on
+			}
+		}
+		localization_key = check_gamerules_on
+	}
+	text = {
+		localization_key = check_gamerules_off
+	}
+}
+defined_text = {
+	name = GetGermanAntiTankBonusStatus
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = german_anti_tank_bonus
+				option = on
+			}
+		}
+		localization_key = check_gamerules_on
+	}
+	text = {
+		localization_key = check_gamerules_off
+	}
+}
+defined_text = {
+	name = GetTechStealingStatus
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = techstealing
+				option = onehundred
+			}
+		}
+		localization_key = check_gamerules_on
+	}
+	text = {
+		localization_key = check_gamerules_off
+	}
+}
+
+defined_text = {
+	name = GetMaxSubmarineTechStatus
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = max_submarine_tech
+				option = sub3
+			}
+		}
+		localization_key = check_gamerules_forty
+	}
+	text = {
+		localization_key = check_gamerules_thirtysix
+	}
+}
+
+defined_text = {
+	name = GetFreeCollabsStatus
+	text = {
+		trigger = {
+			has_game_rule = {
+				rule = free_collabs
+				option = on
+			}
+		}
+		localization_key = check_gamerules_on
+	}
+	text = {
+		localization_key = check_gamerules_off
+	}
+}
+
+defined_text = {
+	name = GetVichyFranceStatus
+	text = {
+		trigger = {
+			has_global_flag = no_pregrind
+		}
+		localization_key = check_gamerules_off
+	}
+	text = {
+		localization_key = check_gamerules_on
+	}
+}
+
+#VICTORY SYSTEM
+
+defined_text = {
+	name = GetDehliOwner
+	text = {
+		trigger = {
+			any_country = {
+				is_axis_country = yes
+				controls_state = 439
+			}
+		}
+		localization_key = vp_axis_owns
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_allied_country = yes
+				controls_state = 439
+			}
+		}
+		localization_key = vp_alies_owns
+	}
+}
+
+defined_text = {
+	name = GetBataviaOwner
+	text = {
+		trigger = {
+			any_country = {
+				is_axis_country = yes
+				controls_state = 335
+			}
+		}
+		localization_key = vp_axis_owns
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_allied_country = yes
+				controls_state = 335
+			}
+		}
+		localization_key = vp_alies_owns
+	}
+}
+defined_text = {
+	name = GetTaiwanOwner
+	text = {
+		trigger = {
+			any_country = {
+				is_axis_country = yes
+				controls_state = 524
+			}
+		}
+		localization_key = vp_axis_owns
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_allied_country = yes
+				controls_state = 524
+			}
+		}
+		localization_key = vp_alies_owns
+	}
+}
+
+defined_text = {
+	name = GetCairoOwner
+	text = {
+		trigger = {
+			any_country = {
+				is_axis_country = yes
+				controls_state = 907
+			}
+		}
+		localization_key = vp_axis_owns
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_allied_country = yes
+				controls_state = 907
+			}
+		}
+		localization_key = vp_alies_owns
+	}
+}
+
+defined_text = {
+	name = GetBenghasiOwner
+	text = {
+		trigger = {
+			any_country = {
+				is_axis_country = yes
+				controls_state = 450
+			}
+		}
+		localization_key = vp_axis_owns
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_allied_country = yes
+				controls_state = 450
+			}
+		}
+		localization_key = vp_alies_owns
+	}
+}
+defined_text = {
+	name = GetPalermoOwner
+	text = {
+		trigger = {
+			any_country = {
+				is_axis_country = yes
+				controls_state = 115
+			}
+		}
+		localization_key = vp_axis_owns
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_allied_country = yes
+				controls_state = 115
+			}
+		}
+		localization_key = vp_alies_owns
+	}
+}
+
+defined_text = {
+	name = GetParisOwner
+	text = {
+		trigger = {
+			any_country = {
+				is_axis_country = yes
+				controls_state = 16
+			}
+		}
+		localization_key = vp_axis_owns
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_allied_country = yes
+				controls_state = 16
+			}
+		}
+		localization_key = vp_alies_owns
+	}
+}
+defined_text = {
+	name = GetKievOwner
+	text = {
+		trigger = {
+			any_country = {
+				is_axis_country = yes
+				controls_state = 202
+			}
+		}
+		localization_key = vp_axis_owns
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_allied_country = yes
+				controls_state = 202
+			}
+		}
+		localization_key = vp_alies_owns
+	}
+}
+defined_text = {
+	name = GetMoscowOwner
+	text = {
+		trigger = {
+			any_country = {
+				is_axis_country = yes
+				controls_state = 219
+			}
+		}
+		localization_key = vp_axis_owns
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_allied_country = yes
+				controls_state = 219
+			}
+		}
+		localization_key = vp_alies_owns
+	}
+}
+defined_text = {
+	name = GetStalingradOwner
+	text = {
+		trigger = {
+			any_country = {
+				is_axis_country = yes
+				controls_state = 217
+			}
+		}
+		localization_key = vp_axis_owns
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_allied_country = yes
+				controls_state = 217
+			}
+		}
+		localization_key = vp_alies_owns
+	}
+}

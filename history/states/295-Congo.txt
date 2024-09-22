@@ -2,26 +2,11 @@
 state={
 	id=295
 	name="STATE_295"
-	manpower = 1947522
-	state_category = rural
+	manpower = 1
+	state_category = wasteland
 
-	history={
+	history = {
 		owner = NON
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-			10968 = {
-				naval_base = 1
-
-			}
-
-		}
-		
-		victory_points = {
-			5117 3 
-		}
-	
-
 	}
 
 	provinces={
@@ -29,5 +14,5 @@ state={
 	}
 	
 	buildings_max_level_factor=1.000
-	local_supplies=2.000
+	local_supplies=0.0
 }

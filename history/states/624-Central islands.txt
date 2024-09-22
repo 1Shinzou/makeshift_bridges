@@ -6,8 +6,8 @@ state=
 	state_category = town
 	
 	history=
-	{
-		owner = USA
+{ 
+		owner = PHI
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

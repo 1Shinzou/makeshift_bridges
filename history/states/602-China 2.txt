@@ -5,9 +5,10 @@ state={
 		tungsten=6.000
 	}
 
-	history={
-		owner = PRC
-		add_core_of = PRC
+history={ 
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = CHI
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 2

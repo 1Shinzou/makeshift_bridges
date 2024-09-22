@@ -6,7 +6,7 @@ state=
 	state_category = small_island
 	history= {
 		owner = ENG
-		add_core_of = TUR
+		add_core_of = SWE
 		victory_points = {
 			12003 5 
 		}
@@ -21,5 +21,5 @@ state=
 	}
 	provinces= { 12003 }
 
-	local_supplies=0.0 
+	local_supplies=2.0 
 }

@@ -9,9 +9,9 @@ state={
 	state_category = town
 
 
-	history= {
+history={ 
 		owner = HOL
-		add_core_of = TUR
+		add_core_of = SWE
 		victory_points = {
 			10263 3 
 		}

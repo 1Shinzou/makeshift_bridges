@@ -963,6 +963,7 @@ technologies = {
 			tank_high_velocity_cannon
 			tank_heavy_cannon
 			tank_buster_1
+			tank_medium_cannon
 		}
 		path = {
 			leads_to_tech = antitank1
@@ -1078,8 +1079,9 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
-			tank_medium_cannon
+			
 			squeezebore_adaptor
+			tank_medium_cannon_2
 		}
 		path = {
 			leads_to_tech = antitank2
@@ -1148,8 +1150,8 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_heavy_cannon_2
-			tank_medium_cannon_2
 			tank_buster_2
+			tank_high_velocity_cannon_2
 		}
 		path = {
 			leads_to_tech = antitank3
@@ -1216,9 +1218,7 @@ technologies = {
 	}
 
 	antitank3 = {
-		enable_equipment_modules = {
-			tank_high_velocity_cannon_2
-		}
+
 		anti_tank = {
 			hard_attack = 0.1
 			ap_attack = 0.1
@@ -1313,7 +1313,6 @@ technologies = {
 	}
 
 	antitank4 = {
-		
 		anti_tank = {
 			hard_attack = 0.1
 			ap_attack = 0.1
@@ -1408,10 +1407,10 @@ technologies = {
 			anti_tank_equipment_3
 		}
 		enable_equipment_modules = {
+			tank_medium_cannon_3
 			tank_high_velocity_cannon_3
 			tank_heavy_cannon_3
 			auto_loader
-			tank_medium_cannon_3
 		}
 		research_cost = 1
 

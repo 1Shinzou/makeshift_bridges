@@ -12,9 +12,39 @@ characters={
 			id=-1
 		}
 	}
+
+	JAP_sadao_araki={
+		name=JAP_sadao_araki
+		portraits={
+			army={
+				large=GFX_portrait_JAP_sadao_araki
+				small=GFX_portrait_JAP_sadao_araki_small
+			}
+		}
+	}
+	
+	GER_sepp_dietrich={
+		name=GER_sepp_dietrich
+		portraits={
+			army={
+				large=GFX_portrait_GER_sepp_dietrich
+				small=GFX_portrait_GER_sepp_dietrich_small
+			}
+		}
+		# corps_commander={
+		# 	traits={ brilliant_strategist trait_reckless armor_officer politically_connected }
+		# 	skill=4
+		# 	attack_skill=2
+		# 	defense_skill=3
+		# 	planning_skill=4
+		# 	logistics_skill=4
+		# 	legacy_id=24
+		# }
+	}
+	
 	VEN_juan_bautista_fuenmayor={
 		name="Juan Bautista Fuenmayor"
-		portraits={
+		portraits={q
 			civilian={
 				large=GFX_portrait_Juan_Bautista_Fuenmayor
 			}
@@ -334,7 +364,7 @@ characters={
 					original_tag = VEN
 				}
 				traits = {
-					army_chief_maneuver_2
+					army_chief_offensive_2
 				}
 				cost = 100
 				ai_will_do = {

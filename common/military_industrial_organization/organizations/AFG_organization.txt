@@ -1,0 +1,74 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+AFG_kabul_armor_plant_organization = {
+	include = generic_infantry_tank_organization
+	icon = GFX_idea_generic_armor
+	allowed = {
+		original_tag = AFG
+	}
+}
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+AFG_kabul_aircraft_workshop_organization = {
+	include = generic_multi_role_aircraft_organization
+	icon = GFX_idea_afg_kabul_aircraft_workshop
+	allowed = {
+		original_tag = AFG
+	}
+}
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+AFG_kabul_arsenal_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_afg_kabul_arsenal
+	allowed = {
+		original_tag = AFG
+	}
+}
+
+AFG_kabul_arsenal_artillery_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_afg_kabul_arsenal_artillery
+	allowed = {
+		original_tag = AFG
+	}
+}

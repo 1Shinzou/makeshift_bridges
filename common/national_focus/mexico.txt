@@ -1430,6 +1430,10 @@ focus_tree = {
 
 		cost = 5
 
+		allow_branch = {
+			always = no
+		}
+
 		ai_will_do = {
 			factor = 100
 			
@@ -1830,6 +1834,10 @@ focus_tree = {
 		relative_position_id = MEX_focus_nationalize_the_oil_fields
 
 		cost = 5
+
+		allow_branch = {
+			always = no
+		}
 
 		ai_will_do = {
 			factor = 100
@@ -3133,6 +3141,10 @@ focus_tree = {
 			
 		}
 
+		allow_branch = {
+			always = no
+		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -3735,6 +3747,10 @@ focus_tree = {
 			}
 		}
 
+		allow_branch = {
+			always = no
+		}
+
 		available = {
 			
 		}
@@ -4173,6 +4189,10 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 100
+		}
+
+		allow_branch = {
+			always = no
 		}
 
 		available = {
@@ -6926,8 +6946,7 @@ focus_tree = {
 	focus = {
 		id = MEX_focus_army_expansion_programme
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = MEX_focus_tank_workshops }
-		prerequisite = { focus = MEX_focus_military_aviation_specialists }
+		prerequisite = { focus = MEX_focus_tank_workshops focus = MEX_focus_military_aviation_specialists }
 		x = 1
 		y = 1
 		relative_position_id = MEX_focus_tank_workshops
@@ -6949,7 +6968,9 @@ focus_tree = {
 		}
 
 		available = {
-			
+			GER = {
+				has_war = yes
+			}
 		}
 
 		bypass = {
@@ -6961,6 +6982,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			add_ideas = war_economy
 			every_state = {
 				limit = {
 					OR = {

@@ -1,0 +1,1165 @@
+
+MOD_countdown_to_victory_cat = {
+	MOD_countdown_to_allied_victory_mission = {
+
+		icon = generic_operation
+
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		days_mission_timeout = 365
+
+		activation = {
+			check_variable = {
+				global.allies_score > 6
+			}
+		}
+
+		cancel_trigger = {
+			check_variable = {
+				global.allies_score < 7
+			}
+		}
+
+		timeout_effect = {
+			GER = { news_event = { id = lastorical.2 } }
+		}
+		is_good = no
+		complete_effect = {
+
+		}
+	}
+	MOD_countdown_to_axis_victory_mission = {
+
+		icon = generic_operation
+
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		days_mission_timeout = 365
+
+		activation = {
+			check_variable = {
+				global.axis_score > 6
+			}
+		}
+
+		cancel_trigger = {
+			check_variable = {
+				global.axis_score < 7
+			}
+		}
+
+		timeout_effect = {
+			GER = { news_event = { id = lastorical.1 } }
+		}
+		is_good = no
+		complete_effect = {
+
+		}
+	}
+	# add_to_allied_score = {
+	# 	visible = {
+	# 		is_debug = yes
+	# 	}
+	# 	cost = 0
+	# 	complete_effect = {
+	# 		add_to_variable = {
+	# 			var = global.allies_score
+	# 			value = 1
+	# 		}
+	# 	}
+	# }
+	# add_to_axis_score = {
+	# 	visible = {
+	# 		is_debug = yes
+	# 	}
+	# 	cost = 0
+	# 	complete_effect = {
+	# 		add_to_variable = {
+	# 			var = global.axis_score
+	# 			value = 1
+	# 		}
+	# 	}
+	# }
+	# sub_from_allied_score = {
+	# 	visible = {
+	# 		is_debug = yes
+	# 	}
+	# 	cost = 0
+	# 	complete_effect = {
+	# 		subtract_from_variable = {
+	# 			var = global.allies_score
+	# 			value = 1
+	# 		}
+	# 	}
+	# }
+	# sub_from_axis_score = {
+	# 	visible = {
+	# 		is_debug = yes
+	# 	}
+	# 	cost = 0
+	# 	complete_effect = {
+	# 		subtract_from_variable = {
+	# 			var = global.axis_score
+	# 			value = 1
+	# 		}
+	# 	}
+	# }
+	# reset_scores = {
+	# 	visible = {
+	# 		is_debug = yes
+	# 	}
+	# 	cost = 0
+	# 	complete_effect = {
+	# 		set_variable = {
+	# 			var = global.axis_score
+	# 			value = 0
+	# 		}
+	# 		set_variable = {
+	# 			var = global.allies_score
+	# 			value = 0
+	# 		}
+	# 	}
+	# }
+
+	# test_start = {
+	# 	visible = {
+	# 		is_debug = yes
+	# 	}
+	# 	cost = 0
+	# 	complete_effect = {
+	# 		initilize_victory_system = yes
+	# 	}
+	# }
+
+}
+
+political_actions = {
+
+	move_capital_to_cascablanca = {
+		fire_only_once = yes
+		allowed = {
+			tag = FRA
+		}
+		visible = {
+			tag = FRA
+			NOT = {
+				controls_state = 16
+			}
+		}
+		complete_effect = {
+			set_capital = {
+				state = 461
+			}
+		}
+	}
+
+	move_capital_to_gabon = {
+		fire_only_once = yes
+		allowed = {
+			tag = FRA
+		}
+		visible = {
+			tag = FRA
+			NOT = {
+				controls_state = 16
+			}
+		}
+		complete_effect = {
+			set_capital = {
+				state = 539
+			}
+		}
+	}
+
+
+	
+}
+
+operations = {
+	
+#############################################################################
+#########################||AI ANNEX START||##################################
+#############################################################################
+
+fin_war_eco = {
+		fire_only_once = yes
+		cost = 100
+		allowed = {
+			tag = FIN
+		}
+		available = {
+			SOV = {
+				has_war = yes
+			}
+		}
+		visible = {
+			tag = FIN
+		}
+		complete_effect = {
+			add_ideas = war_economy
+		}
+	}
+
+	fin_extensive_con = {
+		fire_only_once = yes
+		cost = 100
+		allowed = {
+			tag = FIN
+		}
+		available = {
+			FRA = {
+				has_capitulated = yes
+			}
+		}
+		visible = {
+			tag = FIN
+		}
+		complete_effect = {
+			add_ideas = extensive_conscription
+		}
+	}
+
+	#annex_South_Africa = {
+    #        # icon = generic_operation
+    #        allowed = {
+    #            tag = RAJ
+    #        }
+    #        fire_only_once = yes
+    #        cost = 0
+    #        ai_will_do = {
+    #            factor = 0
+    #        }
+    #        available = {
+    #            SAF = {
+    #                is_ai = yes
+     #           }
+     #           ENG = {
+     #               has_completed_focus = uk_south_africa_focus
+     ##           }
+    #        }
+    #        targets = {
+    #            SAF
+    #        }
+   #         complete_effect = {
+   #             SAF = {
+     #               transfer_units_fraction = {
+   #                     target = RAJ
+     #                   size = 1
+    #                    stockpile_ratio = 1
+     #                   army_ratio = 1
+     #                   navy_ratio = 1
+     #                   air_ratio = 1
+     #                   keep_unit_leaders_trigger = {
+    #                        always = no
+    #                    }
+    #                }
+    #            }
+    #            RAJ = {
+    #                annex_country = {
+    #                    target = SAF
+    #                    transfer_troops = yes
+    #                }
+    #            }
+     #           every_state = {
+    #                limit = {
+     #                   is_core_of = SAF
+     #                   is_controlled_by = RAJ
+      #              }
+     #               add_core_of = RAJ
+      #          }
+     #       }
+	#
+     #   }
+
+		annex_Mexico = {
+            # icon = generic_operation
+            allowed = {
+                tag = BRA
+            }
+            fire_only_once = yes
+            cost = 0
+            ai_will_do = {
+                factor = 0
+            }
+            available = {
+                MEX = {
+                    is_ai = yes
+                    has_completed_focus = MEX_focus_soldaderas
+                }
+            }
+            targets = {
+                MEX
+            }
+            complete_effect = {
+                MEX = {
+                    transfer_units_fraction = {
+                        target = BRA
+                        size = 1
+                        stockpile_ratio = 1
+                        army_ratio = 1
+                        navy_ratio = 1
+                        air_ratio = 1
+                        keep_unit_leaders_trigger = {
+                            always = no
+                        }
+                    }
+                }
+                BRA = {
+                    annex_country = {
+                        target = MEX
+                        transfer_troops = yes
+                    }
+                }
+                every_state = {
+                    limit = {
+                        is_core_of = MEX
+                        is_controlled_by = BRA
+                    }
+                    add_core_of = BRA
+                }
+            }
+
+        }
+    annex_Irland = {
+           # icon = generic_operation
+           allowed = {
+                tag = FRA
+            }
+            fire_only_once = yes
+            cost = 0
+            ai_will_do = {
+                factor = 0
+            }
+           available = {
+               has_country_flag = france_tp
+                AND = { IRE = {
+                         is_ai = yes
+                         }
+                         FRA = {has_capitulated = yes}
+                }
+                    }
+            targets = {
+                IRE
+           }
+           complete_effect = {
+                IRE = {
+                    transfer_units_fraction = {
+                        target = ENG
+                        size = 1
+                      stockpile_ratio = 1
+                        army_ratio = 1
+                        navy_ratio = 1
+                        air_ratio = 1
+                       keep_unit_leaders_trigger = {
+                           always = no
+                        }
+                    }
+                }
+                FRA = {
+                    annex_country = {
+                        target = IRE
+                        transfer_troops = yes
+                    }
+                }
+                every_state = {
+                   limit = {
+                       is_core_of = IRE
+                       is_controlled_by = FRA
+                   }
+                    add_compliance = 100
+                }
+            }
+		}
+
+    
+
+	ITA_annex_ROM = {
+		# icon used to be here rip icon 04/29/2024
+		targets = {
+			ROM
+		}
+		fire_only_once = yes
+
+		available = {
+			original_tag = ITA
+			ROM = { is_ai = yes }
+		}
+		visible = {
+			original_tag = ITA
+			ROM = { is_ai = yes }
+			is_ai = NO
+			country_exists = ROM
+		}
+		complete_effect = {
+			ITA = { 
+
+                set_technology = { fuel_refining2 = 1				popup = no }
+				set_technology = { fuel_refining3 = 1				popup = no }
+				set_technology = { fuel_refining4 = 1				popup = no }
+				set_technology = { fuel_refining5 = 1 				popup = no}
+			}
+			hidden_effect = {
+			if = { limit = { ROM = { NOT = { has_completed_focus = ROM_danubian_transport_network}}} ROM = { complete_national_focus = ROM_danubian_transport_network }}
+			if = { limit = { ROM = { NOT = { has_completed_focus = ROM_malaxa}}} ROM = { complete_national_focus = ROM_malaxa }}
+			if = { limit = { ROM = { NOT = { has_completed_focus = ROM_hunedoara_steel_works}}} ROM = { complete_national_focus = ROM_hunedoara_steel_works }}
+			if = { limit = { ROM = { NOT = { has_completed_focus = ROM_invest_in_the_iar}}} ROM = { complete_national_focus = ROM_invest_in_the_iar }}
+			if = { limit = { ROM = { NOT = { has_completed_focus = ROM_expand_ploiesti_oil_production}}} ROM = { complete_national_focus = ROM_expand_ploiesti_oil_production }}
+			if = { limit = { ROM = { NOT = { has_completed_focus = ROM_german_romanian_oil_exploitation_company}}} ROM = { complete_national_focus = ROM_german_romanian_oil_exploitation_company }}
+			}
+			ITA = { annex_country = { target = ROM transfer_troops = yes }}
+			every_state = {
+				limit = {
+						is_core_of = ROM
+						is_controlled_by = ITA
+					}
+				set_compliance = 100
+			}
+		}
+	}
+	ITA_annex_BUL = {
+		# icon used to be here rip icon 04/29/2024
+		targets = {
+			BUL
+		}
+		fire_only_once = yes
+
+		available = {
+			original_tag = ITA
+			BUL = { is_ai = yes }
+		}
+		visible = {
+			original_tag = ITA
+			BUL = { is_ai = yes }
+			is_ai = NO
+			country_exists = BUL
+		}
+		complete_effect = {
+			annex_country = { target = BUL transfer_troops = yes }
+			every_state = {
+				limit = {
+						is_core_of = BUL
+						is_controlled_by = ITA
+					}
+				set_compliance = 100
+			}
+		}
+	}
+	SPR_annex_FIN = {
+		# icon used to be here rip icon 04/29/2024
+		targets = {
+			FIN
+		}
+		fire_only_once = yes
+
+		available = {
+			original_tag = SPR
+			FIN = { is_ai = yes }
+			date > 1940.01.01
+		}
+		visible = {
+			original_tag = SPR
+			FIN = { is_ai = yes }
+			is_ai = NO
+			country_exists = FIN
+		}
+		complete_effect = {
+			annex_country = { target = FIN transfer_troops = yes }
+			every_state = {
+				limit = {
+						is_core_of = FIN
+						is_controlled_by = SPR
+					}
+				set_compliance = 100
+			}
+		}
+	}
+	JAP_annex_MAN = {
+		# icon used to be here rip icon 04/29/2024
+		targets = {
+			man
+		}
+		fire_only_once = yes
+
+		available = {
+			original_tag = JAP
+			MAN = { is_ai = yes }
+		}
+		visible = {
+			original_tag = JAP
+			MAN = { is_ai = yes }
+			is_ai = NO
+			country_exists = MAN
+		}
+		complete_effect = {
+			annex_country = { target = MAN transfer_troops = yes }
+			every_state = {
+				limit = {
+						is_core_of = MAN
+						is_controlled_by = JAP
+					}
+				set_compliance = 100
+			}
+		}
+	}
+	FIN_annex_SPR = {
+		# icon used to be here rip icon 04/29/2024
+		targets = {
+			SPR
+		}
+		fire_only_once = yes
+
+		available = {
+			original_tag = FIN
+			SPR = { is_ai = yes }
+			date > 1938.01.01
+		}
+		visible = {
+			original_tag = FIN
+			SPR = { is_ai = yes }
+			is_ai = NO
+			country_exists = SPR
+		}
+		complete_effect = {
+			annex_country = { target = SPR transfer_troops = yes }
+			every_state = {
+				limit = {
+						is_core_of = SPR
+						is_controlled_by = FIN
+					}
+				set_compliance = 100
+			}
+		}
+	}
+	ROM_annex_HUN = {
+		# icon used to be here rip icon 04/29/2024
+		targets = {
+			HUN
+		}
+		fire_only_once = yes
+
+		available = {
+			original_tag = ROM
+			HUN = { is_ai = yes }
+			#date > 1938.01.01
+		}
+		visible = {
+			original_tag = ROM
+			HUN = { is_ai = yes }
+			is_ai = NO
+			country_exists = HUN
+		}
+		complete_effect = {
+			annex_country = { target = HUN transfer_troops = yes }
+			ROM = { add_state_core = 155 }
+			ROM = { add_state_core = 43 }
+			ROM = { add_state_core = 154 }
+			}
+	}
+	ITA_annex_HUN = {
+		# icon used to be here rip icon 04/29/2024
+		targets = {
+			HUN
+		}
+		fire_only_once = yes
+
+		available = {
+			original_tag = ITA
+			HUN = { is_ai = yes }
+			#date > 1938.01.01
+		}
+		visible = {
+			original_tag = ITA
+			HUN = { is_ai = yes }
+			is_ai = NO
+			country_exists = HUN
+		}
+		complete_effect = {
+			annex_country = { target = HUN transfer_troops = yes }
+			ITA = { add_state_core = 155 }
+			ITA = { add_state_core = 43 }
+			ITA = { add_state_core = 154 }
+			}
+	}
+	#erhm guys wat der sigma , usa can annex mex , eng can annex mex , mex can annex bra , there will be more stuff to do
+	MEX_annex_BRA = {
+		# icon used to be here rip icon 04/29/2024
+		targets = {
+			BRA
+		}
+		fire_only_once = yes
+
+		available = {
+			original_tag = MEX
+			BRA = { is_ai = yes }
+			#date > 1938.01.01
+		}
+		visible = {
+			original_tag = MEX
+			BRA = { is_ai = yes }
+			is_ai = NO
+			country_exists = BRA
+		}
+		complete_effect = {
+			annex_country = { target = BRA transfer_troops = yes }
+			every_state = {
+				limit = {
+						is_core_of = BRA
+						is_controlled_by = MEX
+					}
+				set_compliance = 100
+			}
+		}
+	}
+	USA_annex_MEX = {
+		# icon used to be here rip icon 04/29/2024
+		targets = {
+			MEX
+		}
+		fire_only_once = yes
+
+		available = {
+			original_tag = USA
+			MEX = { is_ai = yes }
+			date > 1938.01.01
+		}
+		visible = {
+			original_tag = USA
+			MEX = { is_ai = yes }
+			is_ai = NO
+			country_exists = MEX
+		}
+		complete_effect = {
+			annex_country = { target = MEX transfer_troops = yes }
+			every_state = {
+				limit = {
+						is_core_of = MEX
+						is_controlled_by = USA
+					}
+				set_compliance = 100
+			}
+		}
+	}
+	USA_annex_BRA = {
+		# icon used to be here rip icon 04/29/2024
+		targets = {
+			BRA
+		}
+		fire_only_once = yes
+
+		available = {
+			original_tag = USA
+			BRA = { is_ai = yes }
+			date > 1938.01.01
+		}
+		visible = {
+			original_tag = USA
+			BRA = { is_ai = yes }
+			is_ai = NO
+			country_exists = BRA
+		}
+		complete_effect = {
+			annex_country = { target = BRA transfer_troops = yes }
+			every_state = {
+				limit = {
+						is_core_of = BRA
+						is_controlled_by = USA
+					}
+				set_compliance = 100
+			}
+		}
+	}
+	#ENG_annex_MEX = {
+	#	# icon used to be here rip icon 04/29/2024
+	#	targets = {
+	#		MEX
+	#	}
+	#	fire_only_once = yes
+
+	#	available = {
+	#		original_tag = ENG
+	#		BRA = { is_ai = yes }
+	#		date > 1938.01.01
+	#	}
+	#	visible = {
+	#		original_tag = ENG
+	#		BRA = { is_ai = yes }
+	#		is_ai = NO
+	##		country_exists = MEX
+	#	}
+	#	complete_effect = {
+	#		annex_country = { target = MEX transfer_troops = yes }
+	#		every_state = {
+	#			limit = {
+	##					is_core_of = MEX
+	#					is_controlled_by = ENG
+	##				}
+	#			set_compliance = 100
+	#		}
+	#	}
+	#}
+
+	
+
+	
+	
+	annex_canada = {
+		# icon = generic_operation
+		allowed = {
+			tag = SAF
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			CAN = {
+				is_ai = yes
+			}
+			ENG = {
+                    has_completed_focus = uk_canada_focus
+                }
+		}
+		targets = {
+			CAN
+		}
+		complete_effect = {
+			CAN = {
+				transfer_units_fraction = {
+					target = SAF
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+					keep_unit_leaders_trigger = {
+						always = no
+					}
+				}
+			}
+			SAF = {
+				annex_country = {
+					target = CAN
+					transfer_troops = yes
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = CAN
+					is_controlled_by = SAF
+				}
+				add_compliance = 100
+			}
+		}
+	}
+	FRA_annex_south_africa = {
+		# icon = generic_operation
+		allowed = {
+			tag = FRA
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			SAF = {
+				is_ai = yes
+			}
+			ENG = {
+                    has_completed_focus = uk_south_africa_focus
+                }
+			FRA =  { has_capitulated = yes }
+		}
+		targets = {
+			SAF
+		}
+		complete_effect = {
+			SAF = {
+				transfer_units_fraction = {
+					target = FRA
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+					keep_unit_leaders_trigger = {
+						always = no
+					}
+				}
+			}
+			FRA = {
+				annex_country = {
+					target = SAF
+					transfer_troops = yes
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = SAF
+					is_controlled_by = FRA
+				}
+				add_compliance = 100
+			}
+		}
+	}
+
+	CAN_annex_south_africa = {
+		# icon = generic_operation
+		allowed = {
+			tag = CAN
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			SAF = {
+				is_ai = yes
+			}
+			ENG = {
+                    has_completed_focus = uk_south_africa_focus
+                }
+		}
+		targets = {
+			SAF
+		}
+		complete_effect = {
+			SAF = {
+				transfer_units_fraction = {
+					target = CAN
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+					keep_unit_leaders_trigger = {
+						always = no
+					}
+				}
+			}
+			CAN = {
+				annex_country = {
+					target = SAF
+					transfer_troops = yes
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = SAF
+					is_controlled_by = CAN
+				}
+				add_compliance = 100
+			}
+		}
+	}
+	annex_british_raj = {
+		# icon = generic_operation
+		allowed = {
+			tag = AST
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			RAJ = {
+				is_ai = yes
+			}
+			ENG = {
+                    has_completed_focus = uk_india_focus
+                }
+		}
+		targets = {
+			RAJ
+		}
+		complete_effect = {
+			AST = {
+				transfer_units_fraction = {
+					target = RAJ
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+					keep_unit_leaders_trigger = {
+						always = no
+					}
+				}
+			}
+			AST = {
+				annex_country = {
+					target = RAJ
+					transfer_troops = yes
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = RAJ
+					is_controlled_by = AST
+				}
+				add_compliance = 100
+			}
+		}
+	}
+	annex_australia = {
+		# icon = generic_operation
+		allowed = {
+			tag = RAJ
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			AST = {
+				is_ai = yes
+			}
+			ENG = {
+                    has_completed_focus = uk_australia_focus
+                }
+		}
+		targets = {
+			AST
+		}
+		complete_effect = {
+			AST = {
+				transfer_units_fraction = {
+					target = RAJ
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+					keep_unit_leaders_trigger = {
+						always = no
+					}
+				}
+			}
+			RAJ = {
+				annex_country = {
+					target = AST
+					transfer_troops = yes
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = AST
+					is_controlled_by = RAJ
+				}
+				add_compliance = 100
+			}
+		}
+	}
+	annex_philippines= {
+		# icon = generic_operation
+		allowed = {
+			tag = USA
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			PHI = {
+				is_ai = yes
+			}
+		}
+		targets = {
+			PHI	
+		}
+		complete_effect = {
+			PHI = {
+				transfer_units_fraction = {
+					target = USA
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+					keep_unit_leaders_trigger = {
+						always = no
+					}
+				}
+			}
+			USA = {
+				annex_country = {
+					target = PHI
+					transfer_troops = yes
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = PHI 
+					is_controlled_by = USA
+				}
+				add_compliance = 100
+			}
+		}
+	}
+
+	annex_hol= {
+		# icon = generic_operation
+		allowed = {
+			tag = RAJ
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			HOL = {
+				is_ai = yes
+			}
+			HOL = {
+				has_capitulated = yes
+			}
+		}
+		targets = {
+			HOL	
+		}
+		complete_effect = {
+			HOL = {
+				transfer_units_fraction = {
+					target = RAJ
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+					keep_unit_leaders_trigger = {
+						always = no
+					}
+				}
+			}
+			RAJ = {
+				annex_country = {
+					target = HOL
+					transfer_troops = yes
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = HOL
+					is_controlled_by = RAJ
+				}
+				add_compliance = 100
+			}
+		}
+	}
+
+
+
+
+#############################################################################
+#########################||AI ANNEX END||####################################
+#############################################################################
+	diversify_special_forces = { #added it back since it was fucked for who knows what reason
+	
+
+		icon = GFX_decision_generic_intelligence_operation
+
+		available = {
+			date > 1939.1.1
+		}
+
+		visible = {
+			AND = {
+				NOT = {
+					OR = {
+						tag = ENG #has a focus
+						tag = USA #has a focus
+						tag = JAP #has a focus
+						tag = CHL #has a focus
+						tag = BRA #has a focus
+						tag = ARG #has a focus
+						tag = FIN #jibril nerf
+						tag = VEN
+						tag = CAN
+					}
+				} 
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+
+		complete_effect = {
+			add_potential_special_forces_tree = yes
+		}
+		ai_will_do = {
+			factor = 201
+			modifier = {
+				factor = 0
+				is_major = no
+			}
+		}
+	}
+
+	#WE DONT HAVE VICHY SO WE DONT NEED THIS
+	FRA_take_north_africa = { 
+		visible = {
+			has_completed_focus = FRA_intervention_in_north_africa
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 70
+		remove_effect = {
+			#transfer_state = 513
+			#transfer_state = 461
+			#transfer_state = 462
+			#transfer_state = 514
+			#transfer_state = 459
+			#transfer_state = 460
+			#transfer_state = 665
+			#transfer_state = 458
+			GER = {
+				add_to_faction = VIC
+				#country_event = LaR_france_vichy_notification_events.11
+			}
+			VIC = {
+				declare_war_on = { target = FRA type = annex_everything }
+				declare_war_on = { target = ENG type = topple_government }
+				#country_event = LaR_france_vichy_notification_events.11
+			}
+		}
+	}
+	steal_soviet_anti_tank_research = {
+		icon = GFX_decision_generic_tank
+		allowed = {
+			tag = GER
+		}
+		visible = {
+			tag = GER
+			has_game_rule = {
+				rule = german_anti_tank_bonus
+				option = on
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			add_tech_bonus = {
+				name = SOV_soviet_artillery_tech_bonus_name_default
+				bonus = 1
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+}
+
+
+
+

@@ -5,9 +5,9 @@ state={
 		rubber=12 # was: 16
 	}
 
-	history={
+history={ 
 		owner = HOL
-		add_core_of = TUR
+		add_core_of = SWE
 		buildings = {
 			infrastructure = 2
 			1355 = {

@@ -10,6 +10,7 @@ state={
 		owner = ENG
 		buildings = {
 			infrastructure = 2
+			air_base = 1
 		}
 
 		victory_points = {
@@ -24,7 +25,7 @@ state={
 			10869 1 
 		}
 
-		add_core_of = TUR
+		add_core_of = SWE
 	}
 
 	provinces={

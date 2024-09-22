@@ -11,12 +11,13 @@ state=
 		owner = YUG
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 2
 		}
 		victory_points = {
 			9627 3 
 		}
 		add_core_of = YUG
-		add_core_of = SLV
+		add_core_of = YUG
 	}
 	provinces={
 		6650 9627

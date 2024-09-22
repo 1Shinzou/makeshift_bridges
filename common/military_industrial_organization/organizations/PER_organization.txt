@@ -1,0 +1,88 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+PER_iranian_railways_organization = {
+    include = generic_tank_organization
+    icon = GFX_idea_per_iranian_railways
+    allowed = { 
+        tag = PER
+    }
+	equipment_type = {  
+        armor
+        train_equipment
+    }
+    research_categories = { 
+        armor
+        train_tech
+    }
+}
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+PER_bandar_abbas_shipyard_organisation = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_generic_sea_focused_navy
+	allowed = {
+		original_tag = PER
+	}
+}
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+PER_shahbaz_aircraft_factory_organization = {
+	include = generic_multi_role_aircraft_organization
+	icon = GFX_idea_per_shahbaz_aircraft_factory
+	allowed = {
+		original_tag = PER
+	}
+}
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+PER_qurkhaneh_in_tehran_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_per_qukhaneh
+	allowed = {
+		original_tag = PER
+	}
+}
+
+PER_parchin_ammunition_factory_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_per_parchin
+	allowed = {
+		original_tag = PER
+	}
+}

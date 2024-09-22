@@ -1,0 +1,285 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+CHI_sino_german_technical_mission_organization = {
+	include = generic_heavy_tank_organization
+	icon = GFX_idea_porsche
+	allowed = {	
+		OR = {
+			is_literally_china = yes
+			tag = MAN
+			tag = MEN
+		} 
+		has_dlc = "Waking the Tiger"
+	}
+	available = {
+		owner = {
+			OR = {
+				has_completed_focus = CHI_chinese_panzers
+				has_idea = german_advisors
+			}
+			NOT = {
+				has_war_with = GER
+			}
+		}
+	}
+}
+
+CHI_baotou_tank_plant_organization = {
+	include = generic_tank_organization
+	icon = GFX_idea_chi_baotou_tank_plant
+	allowed = {	
+		OR = {
+			tag = CHI
+			tag = PRC
+			tag = GXC
+			tag = YUN
+			tag = XSM
+			tag = SHX
+			tag = SIK
+			tag = MAN
+		}
+	}
+	available = {
+		owner = {
+			controls_state = 621
+		}
+	}
+}
+
+CHI_shaanxi_weiyang_engine_plant_organization = {
+	include = generic_mobile_tank_organization
+	icon = GFX_idea_chi_shaanxi_weyiang_engine_plant
+	allowed = {	
+		OR = {
+			tag = CHI
+			tag = PRC
+			tag = GXC
+			tag = YUN
+			tag = XSM
+			tag = SHX
+			tag = SIK
+			tag = MAN
+		}
+	}
+	available = {
+		owner = {
+			controls_state = 744
+		}
+	}
+}
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+CHI_jiangnan_shipyard_group_organization = {
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_chi_jiangnan_shipyard
+	allowed = {	
+		OR = {
+			tag = CHI
+			tag = PRC
+			tag = GXC
+			tag = YUN
+			tag = XSM
+			tag = SHX
+			tag = SIK
+			tag = MAN
+		}
+	}
+	available = {
+		owner = { controls_state = 613 }
+	}
+}
+
+CHI_dagu_shipyard_organization = {
+	name = CHI_tianjin_shipyard
+	include = generic_raider_ship_organization
+	icon = GFX_idea_chi_tianjin_shipyard
+	allowed = {	
+		OR = {
+			tag = CHI
+			tag = PRC
+			tag = GXC
+			tag = YUN
+			tag = XSM
+			tag = SHX
+			tag = SIK
+			tag = MAN
+		}
+	}
+	available = {
+		owner = { controls_state = 608 }
+	}
+}
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+CHI_camco_medium_organization = {
+	include = generic_general_aircraft_organization
+	icon = GFX_idea_CHI_camco
+	allowed = {	
+		OR = {
+			tag = CHI
+			tag = GXC
+			tag = YUN
+			tag = XSM
+			tag = SHX
+			tag = SIK
+		}
+	}
+}
+CHI_afamf_organization = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_chi_afamf
+	allowed = {	
+		OR = {
+			tag = CHI
+			tag = GXC
+			tag = YUN
+			tag = XSM
+			tag = SHX
+			tag = SIK
+		}
+	}
+}
+PRC_cmc_aviation_section_organization = {
+	include = generic_general_aircraft_organization
+	icon = GFX_idea_prc_cmc_aviation_section
+	allowed = {	
+		tag = PRC
+	}
+}
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+CHI_taiyuan_arsenal_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_chi_taiyuan_arsenal
+	allowed = {	
+		OR = {
+			tag = CHI
+			tag = PRC
+			tag = GXC
+			tag = YUN
+			tag = XSM
+			tag = SHX
+			tag = SIK
+			tag = MAN
+		}
+	}
+	available = {
+		owner = { controls_state = 615 }
+	}
+	initial_trait = {
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+			production_capacity_factor = 0.07
+		}
+	}
+}
+CHI_hanyan_arsenal_organization = {
+	name = CHI_hanyang_arsenal #name fix
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_chi_hanyang_arsenal
+	allowed = {	
+		OR = {
+			tag = CHI
+			tag = PRC
+			tag = GXC
+			tag = YUN
+			tag = XSM
+			tag = SHX
+			tag = SIK
+			tag = MAN
+		}
+	}
+	available = {
+		if = {
+			limit = { owner = { NOT = { tag = CHI } } }
+			owner = { controls_state = 620 }
+		}
+	}
+}
+CHI_gongxian_arsenal_organization = {
+	include = generic_support_equipment_organization
+	icon = GFX_idea_chi_gongxian_arsenal
+	allowed = {	
+		OR = {
+			tag = CHI
+			tag = PRC
+			tag = GXC
+			tag = YUN
+			tag = XSM
+			tag = SHX
+			tag = SIK
+			tag = MAN
+		}
+	}
+	available = {
+		if = {
+			limit = { owner = { NOT = { tag = CHI } } }
+			owner = { controls_state = 607 }
+		}
+	}
+}
+CHI_jinling_arsenal_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_chi_jinling_arsenal
+	allowed = {	
+		OR = {
+			tag = CHI
+			tag = PRC
+			tag = GXC
+			tag = YUN
+			tag = XSM
+			tag = SHX
+			tag = SIK
+			tag = MAN
+		}
+	}
+	available = {
+		if = {
+			limit = { owner = { NOT = { tag = CHI } } }
+			owner = { controls_state = 613 }
+		}
+	}
+}
+GXC_guangdong_arsenal_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_gxc_guangdong_arsenal
+	allowed = {	
+		tag = GXC
+	}
+}

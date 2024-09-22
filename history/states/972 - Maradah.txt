@@ -1,0 +1,25 @@
+state={
+	id=972
+	name="STATE_972"
+	manpower = 9483
+	state_category = wasteland
+	
+	
+	history={
+		owner = ITA
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+		}
+		add_core_of= SWE
+		victory_points = {
+			7985 1
+		}
+	}
+	
+	provinces={
+		7985 8069 13073 7136 12082 1057 12866
+	}
+
+	local_supplies=0.0 
+}

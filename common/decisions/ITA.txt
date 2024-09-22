@@ -5793,31 +5793,7 @@ ITA_diplomacy_balkan_decision_category = {
 		icon = eng_trade_unions_demand
 
 		ai_will_do = {
-			base = 20
-			modifier = {
-				factor = 10
-				has_political_power > 160
-			}
-			modifier = {
-				factor = 10
-				date > 1940.6.1
-			}
-			modifier = {
-				factor = 0
-				is_in_faction_with = FROM
-			}
-			modifier = {
-				factor = 0.5
-				original_tag = ITA
-				FROM = {
-					original_tag = YUG
-					any_other_country = {
-						has_guaranteed = PREV
-						is_major = yes
-					}
-				}
-				has_global_flag = second_italo_ethiopian_war_flag #Don't attack YUG if you can't handle ETH
-			}
+			base = 0
 		}
 
 		targets = { YUG CRO MNT SLV BOS HRZ MAC SER KOS TRA } #These are all tags included in scripted trigger "BUL_is_balkan_nation = yes"
@@ -5825,7 +5801,6 @@ ITA_diplomacy_balkan_decision_category = {
 		target_trigger = {
 			ITA_basic_ultimatum_triggers = yes
 			FROM = {
-				is_subject = no #Subjects get dragged along in what their overlord says
 				NOT = {
 					is_subject_of = ITA
 				}
@@ -5834,7 +5809,7 @@ ITA_diplomacy_balkan_decision_category = {
 
 		target_root_trigger = {
 			has_completed_focus = ITA_balkan_ambition
-			is_subject = no
+			is_Subject = no
 		}
 
 		allowed = {
@@ -6450,7 +6425,6 @@ ITA_diplomacy_balkan_decision_category = {
 
 		target_trigger = {
 			FROM = {
-				is_subject = no
 				NOT = {
 					has_war_with = ROOT
 				}
@@ -7427,6 +7401,7 @@ operations = {
 
 		visible = {
 			has_completed_focus = ITA_decima_flottiglia_mas
+			always = no
 		}
 
 		available = {

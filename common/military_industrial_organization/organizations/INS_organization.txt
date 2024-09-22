@@ -1,0 +1,121 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+INS_kereta_api_organization = {
+    include = generic_tank_organization
+    icon = GFX_idea_ins_kereta_epi
+    allowed = { 
+        tag = INS
+    }
+	available = {
+		FROM = { is_subject = no }
+	}
+	equipment_type = {  
+        armor
+        train_equipment
+    }
+    research_categories = { 
+        armor
+        train_tech
+    }
+}
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+INS_panataran_angkatan_laut_organization = {
+	include = generic_raider_ship_organization
+	icon = GFX_idea_ins_penataran_angkatan_laut
+	allowed = {	
+		original_tag = INS
+	}
+	available = {
+		FROM = { is_subject = no }
+	}
+}
+
+INS_marine_establishment_organization = {
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_generic_naval_manufacturer_3
+	allowed = {	
+		original_tag = INS
+	}
+	available = {
+		FROM = { is_subject_of = HOL }
+	}
+}
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+INS_planning_and_construction_bureau_organization = {
+	include = generic_multi_role_aircraft_organization
+	icon = GFX_idea_ins_planning_and_construction_bureau
+	allowed = {	
+		original_tag = INS
+	}
+	available = {
+		FROM = { is_subject = no }
+	}
+}
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+###################################
+
+INS_pabrik_senjata_dan_mesiu_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_ins_pabrik_senjata_dan_mesiu
+	allowed = {	
+		original_tag = INS
+	}
+	available = {
+		FROM = { is_subject = no }
+	}
+}
+
+INS_toko_konstruksi_artileri_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_ins_toko_konstruksi_artileri
+	allowed = {	
+		original_tag = INS
+	}
+	available = {
+		FROM = { is_subject = no }
+	}
+}
+
+INS_machinenfabriek_braat_organization = {
+	include = generic_armored_car_organization
+	icon = GFX_idea_ins_machinefabriek_braat
+	allowed = {	
+		original_tag = INS
+	}
+}

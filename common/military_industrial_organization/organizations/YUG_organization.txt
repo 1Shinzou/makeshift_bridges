@@ -1,0 +1,357 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+YUG_gosa_fom_organization = {
+    include = generic_tank_organization
+    icon = GFX_idea_yug_gosa_fom
+	
+    allowed = { 
+        OR = {
+			original_tag = YUG
+			original_tag = SER
+		}
+    }
+
+    equipment_type = {  
+        armor
+        train_equipment
+    }
+
+    research_categories = { 
+        armor
+        train_tech
+    }
+
+    initial_trait = {
+        name = NOR_mio_initial_trait_mechanical_workshop
+        
+        limit_to_equipment_type = { 
+            train_equipment
+        }
+        equipment_bonus = {
+            build_cost_ic = -0.07
+        }
+    }
+}
+
+YUG_masinska_industrija_nis_organization = {
+    include = generic_infantry_tank_organization
+    icon = GFX_idea_yug_MIN
+	
+    allowed = { 
+        OR = {
+			original_tag = YUG
+			original_tag = SER
+		}
+    }
+
+    equipment_type = {  
+        armor
+        train_equipment
+    }
+
+    research_categories = { 
+        armor
+        train_tech
+    }
+
+    initial_trait = {
+        limit_to_equipment_type = { 
+            train_equipment
+        }
+        equipment_bonus = {
+            reliability = 0.05
+        }
+    }
+}
+
+YUG_brod_na_savi_organization = {
+    include = generic_medium_tank_organization
+    icon = GFX_idea_yug_brod_na_savi
+	
+    allowed = { 
+        OR = {
+			original_tag = YUG
+			original_tag = CRO
+		}
+    }
+
+    equipment_type = {  
+        armor
+        train_equipment
+    }
+
+    research_categories = { 
+        armor
+        train_tech
+    }
+
+    initial_trait = {
+        limit_to_equipment_type = { 
+            train_equipment
+        }
+        equipment_bonus = {
+            build_cost_ic = -0.05
+        }
+    }
+}
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+YUG_jadransko_brodogradiliste_organization = {
+	include = generic_raider_ship_organization
+	icon = GFX_idea_yug_jadransko_brodogradiliste
+	
+	available = {
+		if = {
+			limit = { FROM = { original_tag = SER } }
+			FROM = { owns_state = 105 }
+		}
+	}
+	
+	allowed = {
+		OR = {
+			original_tag = YUG
+			original_tag = SER
+			original_tag = MNT
+		}
+	}
+}
+
+YUG_brodosplit_organization = {
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_yug_brodosplit
+	
+	allowed = {
+		OR = {
+			original_tag = YUG
+			original_tag = CRO
+		}
+	}
+}
+
+YUG_lazarus_organization = {
+	include = generic_refurbishment_repair_organization
+	icon = GFX_idea_yug_lazarus
+	
+	allowed = {
+		OR = {
+			original_tag = YUG
+			original_tag = CRO
+		}
+	}
+}
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+YUG_ikarus_organization = {
+	include = generic_general_aircraft_organization
+	icon = GFX_idea_YUG_ikarus
+	allowed = { 
+		OR = {
+			tag = YUG
+			tag = SER
+		}
+	}
+	add_trait = { 
+		token = YUG_mio_trait_merge_with_rogozarski
+		name = YUG_mio_trait_merge_with_rogozarski
+		icon = GFX_generic_mio_department_icon_facilities
+		special_trait_background = yes
+
+		position = { x=8 y=0 }
+
+		on_complete = {
+			custom_effect_tooltip = YUG_no_rogozarski_for_you_tt
+			FROM = {
+				set_country_flag = YUG_merge_with_rogozarski_flag
+			}
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.1
+		}
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.1
+			military_industrial_organization_funds_gain = 0.15
+		}
+	}
+	add_trait = { 
+		token = YUG_mio_trait_merge_with_zmaj
+		name = YUG_mio_trait_merge_with_zmaj
+		icon = GFX_generic_mio_department_icon_facilities
+		special_trait_background = yes
+
+		position = { x=8 y=1 }
+
+		on_complete = {
+			custom_effect_tooltip = YUG_no_zmaj_for_you_tt
+			FROM = {
+				set_country_flag = YUG_merge_with_zmaj_flag
+			}
+		}
+
+		production_bonus = {
+			production_efficiency_gain_factor = 0.05
+			production_efficiency_cap_factor = 0.1
+		}
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.1
+			military_industrial_organization_funds_gain = 0.15
+		}
+	}
+}
+
+YUG_rogozarski_organization = {
+	include = generic_multi_role_aircraft_organization
+	icon = GFX_idea_YUG_rogozarski
+	allowed = { 
+		OR = {
+			tag = YUG
+			tag = SER
+		}
+	}
+	available = {
+		FROM = { NOT = { has_country_flag = YUG_merge_with_rogozarski_flag } }
+	}
+	trait = {
+        token = YUG_mio_trait_indigenous_designs
+        name = YUG_mio_trait_indigenous_designs
+        icon = GFX_generic_mio_department_icon_facilities
+        special_trait_background = yes
+		all_parents = { generic_mio_trait_armored_cockpit generic_mio_trait_escort_designs }
+
+        position = { x=1 y=1 }
+		
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.1
+		}
+		production_bonus = {
+			production_efficiency_gain_factor = 0.05
+		}
+    }
+}
+YUG_zmaj_organization = {
+	include = generic_cas_aircraft_organization
+	icon = GFX_idea_YUG_zmaj
+	allowed = { 
+		OR = {
+			tag = YUG
+			tag = SER
+		}
+	}
+	available = {
+		FROM = { NOT = { has_country_flag = YUG_merge_with_zmaj_flag } }
+	}
+}
+
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+YUG_zastava_arms_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_zastava_arms
+	
+	allowed = { 
+		OR = {
+			tag = YUG
+			tag = SER
+		}
+	}
+	
+	initial_trait = {
+        
+        production_bonus = {
+            production_efficiency_cap_factor = 0.03
+            production_resource_need_factor = -0.05
+        }
+
+    }
+}
+
+YUG_vistad_organization = {
+    include = generic_support_equipment_organization
+    icon = GFX_idea_yug_vistad
+    
+	allowed = { 
+		OR = {
+			tag = YUG
+			tag = SER
+		}
+	}
+	trait = {
+        token = YUG_mio_trait_move_to_valjevo
+        name = YUG_mio_trait_move_to_valjevo
+        icon = GFX_generic_mio_department_icon_facilities
+        special_trait_background = yes
+
+        position = { x=3 y=0 }
+		
+		production_bonus = {
+			production_efficiency_gain_factor = 0.03
+            production_capacity_factor = 0.07
+        }
+    }
+}
+
+YUG_zastava_automobiles_organization = {
+    include = generic_motorized_mechanized_organization
+    icon = GFX_idea_yug_zastava_automobiles
+    
+	allowed = { 
+		OR = {
+			tag = YUG
+			tag = SER
+		}
+	}
+}
+
+YUG_vtz_kragujevac_organization = {
+    include = generic_artillery_organization
+    icon = GFX_idea_yug_vtz_kragujevac
+    
+	allowed = { 
+		OR = {
+			tag = YUG
+			tag = SER
+		}
+	}
+	
+	initial_trait = {
+		production_bonus = {
+            production_cost_factor = -0.03
+        }
+	}
+}

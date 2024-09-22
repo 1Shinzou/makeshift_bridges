@@ -8,14 +8,7 @@ state = {
 	history = {
 
 		owner = ENG
-		add_claim_by = ARG
-
-		buildings = {
-			infrastructure = 1
-			12960 = {
-				naval_base = 1
-			}
-		}
+		add_core_of = SWE
 
 		victory_points = {
 			12960 1

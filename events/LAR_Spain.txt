@@ -230,49 +230,21 @@ country_event = {
 						neutrality = 11
 						communism = 39
 					}
-					#retire_ideology_leader = democratic
+					retire_ideology_leader = democratic
 					retire_ideology_leader = neutrality
 					retire_ideology_leader = communism
 				}
 				SPD = { # Remove Carlist/Falangist country leaders for new SPD tag
 					retire_ideology_leader = fascism
 					retire_ideology_leader = neutrality
-					every_possible_country = {
-						limit = {
-							has_character = SPR_manuel_azana	
-						}
-						SPR_manuel_azana = { set_nationality = SPD }
-					}
-					IF = {
-						limit = {
-							NOT = {
-								has_country_leader = {
-									character = SPR_manuel_azana
-									ruling_only = yes
-								}
-							}
-						}
-						IF = {
-							limit = {
-								NOT = {
-									can_be_country_leader = SPR_manuel_azana
-								}
-							}
-							add_country_leader_role = {
-								character = SPR_manuel_azana
-								country_leader = {
-								 	ideology = conservatism
-								 	traits = { figurehead_president }
-								 	expire = "1965.1.1"
-								}
-								promote_leader = yes
-							}
-						}
-						ELSE = {
-							promote_character = {
-							    character = SPR_manuel_azana
-							    ideology = conservatism
-							}
+					create_country_leader = {
+						name = "Manuel Azaña"
+						desc = "POLITICS_MANUEL_AZANA_DESC"
+						picture = GFX_portrait_Manuel_Azana
+						expire = "1965.1.1"
+						ideology = conservatism
+						traits = {
+							figurehead_president
 						}
 					}
 				}
@@ -572,8 +544,8 @@ country_event = {
 							infantry = { x = 1 y = 1 }
 							infantry = { x = 1 y = 2 }
 							infantry = { x = 2 y = 0 }
-							artillery_brigade = { x = 3 y = 0 }
-							artillery_brigade = { x = 3 y = 1 }
+							artillery_brigade = { x = 2 y = 1 }
+							artillery_brigade = { x = 2 y = 2 }
 						}
 						support = {
 							recon = { x = 0 y = 0 }
@@ -2537,36 +2509,14 @@ country_event = {
 				SPD = {
 					retire_ideology_leader = fascism
 					retire_ideology_leader = neutrality
-					IF = {
-						limit = {
-							NOT = {
-								has_country_leader = {
-									character = SPR_manuel_azana
-									ruling_only = yes
-								}
-							}
-						}
-						IF = {
-							limit = {
-								NOT = {
-									can_be_country_leader = SPR_manuel_azana
-								}
-							}
-							add_country_leader_role = {
-								character = SPR_manuel_azana
-								country_leader = {
-								 	ideology = conservatism
-								 	traits = { figurehead_president }
-								 	expire = "1965.1.1"
-								}
-								promote_leader = yes
-							}
-						}
-						ELSE = {
-							promote_character = {
-							    character = SPR_manuel_azana
-							    ideology = conservatism
-							}
+					create_country_leader = {
+						name = "Manuel Azaña"
+						desc = "POLITICS_MANUEL_AZANA_DESC"
+						picture = GFX_portrait_Manuel_Azana
+						expire = "1965.1.1"
+						ideology = conservatism
+						traits = {
+							figurehead_president
 						}
 					}
 				}
@@ -4551,153 +4501,153 @@ country_event = {
 		}
 		complete_national_focus = SPA_unify_the_nationalist_front
 	}
-	option = { # Option for Nationalists - Falangism
-		name = lar_spain.2.b
-		trigger = { has_completed_focus = SPA_sin_paquito }
-		ai_chance = {
-			base = 30
-			modifier = {
-				factor = 0
-				OR = {
-					has_country_flag = SPR_AI_RANDOM_CARLIST
-					has_game_rule = {
-						rule = SPR_ai_behavior 
-						option = CARLIST
-					}
-				}
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					AND = {
-						is_historical_focus_on = yes
-						has_game_rule = {
-							rule = SPR_ai_behavior 
-							option = DEFAULT
-						}
-					}
-					has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
-					has_game_rule = {
-						rule = SPR_ai_behavior 
-						option = NATIONALIST_HISTORICAL
-					}
-				}
-			}
-		}
-		# Remove Spirits that will no longer be relevant
-		custom_effect_tooltip = nationalists_chosen
-		remove_ideas = SPR_military_disloyalty
-		remove_ideas = SPR_political_violence
-		SPR_clr_national_strikes = yes
-		effect_tooltip = {
-			add_timed_idea = { idea = SPA_death_before_surrender days = 900 }
-			SPD = { add_timed_idea = { idea = SPR_death_before_surrender days = 900 } }
-			set_party_name = { ideology = neutrality long_name = SPR_neutrality_military_junta_party_long name = SPR_neutrality_military_junta_party }
-		}
-		complete_national_focus = SPA_the_phalanx_ascendant
-	}
-	option = { # Option for Nationalists - Carlism
-		name = lar_spain.2.c
-		trigger = { has_completed_focus = SPA_a_great_spain }
-		ai_chance = {
-			base = 30
-			modifier = {
-				factor = 0
-				OR = {
-					has_country_flag = SPR_AI_RANDOM_FALANGIST
-					has_game_rule = {
-						rule = SPR_ai_behavior 
-						option = FALANGIST
-					}
-				}
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					AND = {
-						is_historical_focus_on = yes
-						has_game_rule = {
-							rule = SPR_ai_behavior 
-							option = DEFAULT
-						}
-					}
-					has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
-					has_game_rule = {
-						rule = SPR_ai_behavior 
-						option = NATIONALIST_HISTORICAL
-					}
-				}
-			}
-		}
-		# Remove Spirits that will no longer be relevant
-		custom_effect_tooltip = nationalists_chosen
-		remove_ideas = SPR_military_disloyalty
-		remove_ideas = SPR_political_violence
-		SPR_clr_national_strikes = yes
-		effect_tooltip = {
-			add_timed_idea = { idea = SPA_death_before_surrender days = 900 }
-			SPD = { add_timed_idea = { idea = SPR_death_before_surrender days = 900 } }
-			set_party_name = { ideology = neutrality long_name = SPR_neutrality_military_junta_party_long name = SPR_neutrality_military_junta_party }
-			kill_ideology_leader = fascism
-		}
-		complete_national_focus = SPA_supremacy_of_the_communion
-	}
-	option = { # Option for Republicans - Democratic
-		name = lar_spain.2.d
-		trigger = { has_completed_focus = SPR_the_popular_front }
-		ai_chance = {
-			base = 40
-			modifier = {
-				factor = 0
-				OR = {
-					has_country_flag = SPR_AI_RANDOM_ANARCHIST
-					has_game_rule = {
-						rule = SPR_ai_behavior 
-						option = ANARCHIST
-					}
-				}
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					has_country_flag = SPR_AI_RANDOM_INDEPENDENT_COMMUNIST
-					has_game_rule = {
-						rule = SPR_ai_behavior 
-						option = INDEPENDENT_COMMUNIST
-					}
-				}
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					has_country_flag = SPR_AI_RANDOM_STALINIST
-					has_game_rule = {
-						rule = SPR_ai_behavior 
-						option = STALINIST
-					}
-				}
-			}
-			modifier = {
-				factor = 0
-				has_global_flag = SOV_covert_support_for_poum_flag #Soviet Right Opposition is providing support to the POUM
-			}
-		}
-		# Remove Spirits that will no longer be relevant
-		custom_effect_tooltip = republicans_chosen
-		remove_ideas = SPA_carlism_1
-		remove_ideas = SPR_military_disloyalty
-		remove_ideas = SPR_political_violence
-		SPR_clr_national_strikes = yes
-		effect_tooltip = {
-			add_ideas = SPR_disbanded_army_1
-		}
-		effect_tooltip = {
-			add_timed_idea = { idea = SPR_death_before_surrender days = 900 }
-			SPA = { add_timed_idea = { idea = SPA_death_before_surrender days = 900 } }
-			set_party_name = { ideology = neutrality long_name = SPR_neutrality_anarchism_party_long name = SPR_neutrality_anarchism_party }
-		}
-		complete_national_focus = SPR_maintain_the_second_republic
-	}
+	# option = { # Option for Nationalists - Falangism
+	# 	name = lar_spain.2.b
+	# 	trigger = { has_completed_focus = SPA_sin_paquito }
+	# 	ai_chance = {
+	# 		base = 30
+	# 		modifier = {
+	# 			factor = 0
+	# 			OR = {
+	# 				has_country_flag = SPR_AI_RANDOM_CARLIST
+	# 				has_game_rule = {
+	# 					rule = SPR_ai_behavior 
+	# 					option = CARLIST
+	# 				}
+	# 			}
+	# 		}
+	# 		modifier = {
+	# 			factor = 0
+	# 			OR = {
+	# 				AND = {
+	# 					is_historical_focus_on = yes
+	# 					has_game_rule = {
+	# 						rule = SPR_ai_behavior 
+	# 						option = DEFAULT
+	# 					}
+	# 				}
+	# 				has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
+	# 				has_game_rule = {
+	# 					rule = SPR_ai_behavior 
+	# 					option = NATIONALIST_HISTORICAL
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	# Remove Spirits that will no longer be relevant
+	# 	custom_effect_tooltip = nationalists_chosen
+	# 	remove_ideas = SPR_military_disloyalty
+	# 	remove_ideas = SPR_political_violence
+	# 	SPR_clr_national_strikes = yes
+	# 	effect_tooltip = {
+	# 		add_timed_idea = { idea = SPA_death_before_surrender days = 900 }
+	# 		SPD = { add_timed_idea = { idea = SPR_death_before_surrender days = 900 } }
+	# 		set_party_name = { ideology = neutrality long_name = SPR_neutrality_military_junta_party_long name = SPR_neutrality_military_junta_party }
+	# 	}
+	# 	complete_national_focus = SPA_the_phalanx_ascendant
+	# }
+	# option = { # Option for Nationalists - Carlism
+	# 	name = lar_spain.2.c
+	# 	trigger = { has_completed_focus = SPA_a_great_spain }
+	# 	ai_chance = {
+	# 		base = 30
+	# 		modifier = {
+	# 			factor = 0
+	# 			OR = {
+	# 				has_country_flag = SPR_AI_RANDOM_FALANGIST
+	# 				has_game_rule = {
+	# 					rule = SPR_ai_behavior 
+	# 					option = FALANGIST
+	# 				}
+	# 			}
+	# 		}
+	# 		modifier = {
+	# 			factor = 0
+	# 			OR = {
+	# 				AND = {
+	# 					is_historical_focus_on = yes
+	# 					has_game_rule = {
+	# 						rule = SPR_ai_behavior 
+	# 						option = DEFAULT
+	# 					}
+	# 				}
+	# 				has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
+	# 				has_game_rule = {
+	# 					rule = SPR_ai_behavior 
+	# 					option = NATIONALIST_HISTORICAL
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	# Remove Spirits that will no longer be relevant
+	# 	custom_effect_tooltip = nationalists_chosen
+	# 	remove_ideas = SPR_military_disloyalty
+	# 	remove_ideas = SPR_political_violence
+	# 	SPR_clr_national_strikes = yes
+	# 	effect_tooltip = {
+	# 		add_timed_idea = { idea = SPA_death_before_surrender days = 900 }
+	# 		SPD = { add_timed_idea = { idea = SPR_death_before_surrender days = 900 } }
+	# 		set_party_name = { ideology = neutrality long_name = SPR_neutrality_military_junta_party_long name = SPR_neutrality_military_junta_party }
+	# 		kill_ideology_leader = fascism
+	# 	}
+	# 	complete_national_focus = SPA_supremacy_of_the_communion
+	# }
+	# option = { # Option for Republicans - Democratic
+	# 	name = lar_spain.2.d
+	# 	trigger = { has_completed_focus = SPR_the_popular_front }
+	# 	ai_chance = {
+	# 		base = 40
+	# 		modifier = {
+	# 			factor = 0
+	# 			OR = {
+	# 				has_country_flag = SPR_AI_RANDOM_ANARCHIST
+	# 				has_game_rule = {
+	# 					rule = SPR_ai_behavior 
+	# 					option = ANARCHIST
+	# 				}
+	# 			}
+	# 		}
+	# 		modifier = {
+	# 			factor = 0
+	# 			OR = {
+	# 				has_country_flag = SPR_AI_RANDOM_INDEPENDENT_COMMUNIST
+	# 				has_game_rule = {
+	# 					rule = SPR_ai_behavior 
+	# 					option = INDEPENDENT_COMMUNIST
+	# 				}
+	# 			}
+	# 		}
+	# 		modifier = {
+	# 			factor = 0
+	# 			OR = {
+	# 				has_country_flag = SPR_AI_RANDOM_STALINIST
+	# 				has_game_rule = {
+	# 					rule = SPR_ai_behavior 
+	# 					option = STALINIST
+	# 				}
+	# 			}
+	# 		}
+	# 		modifier = {
+	# 			factor = 0
+	# 			has_global_flag = SOV_covert_support_for_poum_flag #Soviet Right Opposition is providing support to the POUM
+	# 		}
+	# 	}
+	# 	# Remove Spirits that will no longer be relevant
+	# 	custom_effect_tooltip = republicans_chosen
+	# 	remove_ideas = SPA_carlism_1
+	# 	remove_ideas = SPR_military_disloyalty
+	# 	remove_ideas = SPR_political_violence
+	# 	SPR_clr_national_strikes = yes
+	# 	effect_tooltip = {
+	# 		add_ideas = SPR_disbanded_army_1
+	# 	}
+	# 	effect_tooltip = {
+	# 		add_timed_idea = { idea = SPR_death_before_surrender days = 900 }
+	# 		SPA = { add_timed_idea = { idea = SPA_death_before_surrender days = 900 } }
+	# 		set_party_name = { ideology = neutrality long_name = SPR_neutrality_anarchism_party_long name = SPR_neutrality_anarchism_party }
+	# 	}
+	# 	complete_national_focus = SPR_maintain_the_second_republic
+	# }
 	option = { # Option for Republicans - Communism
 		name = lar_spain.2.e
 		trigger = { has_completed_focus = SPR_the_popular_front }
@@ -4744,62 +4694,62 @@ country_event = {
 		}
 		complete_national_focus = SPR_the_anti_fascist_workers_revolution
 	}
-	option = { # Option for Republicans - Anarchism
-		name = lar_spain.2.f
-		trigger = { has_completed_focus = SPR_the_popular_front }
-		ai_chance = {
-			base = 30
-			modifier = {
-				factor = 0
-				OR = {
-					has_country_flag = SPR_AI_RANDOM_SECOND_REPUBLIC
-					has_game_rule = {
-						rule = SPR_ai_behavior 
-						option = SECOND_REPUBLIC
-					}
-				}
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					has_country_flag = SPR_AI_RANDOM_INDEPENDENT_COMMUNIST
-					has_game_rule = {
-						rule = SPR_ai_behavior 
-						option = INDEPENDENT_COMMUNIST
-					}
-				}
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					has_country_flag = SPR_AI_RANDOM_STALINIST
-					has_game_rule = {
-						rule = SPR_ai_behavior 
-						option = STALINIST
-					}
-				}
-			}
-			modifier = {
-				factor = 0
-				has_global_flag = SOV_covert_support_for_poum_flag #Soviet Right Opposition is providing support to the POUM
-			}
-		}
-		# Remove Spirits that will no longer be relevant
-		custom_effect_tooltip = republicans_chosen
-		remove_ideas = SPA_carlism_1
-		remove_ideas = SPR_military_disloyalty
-		remove_ideas = SPR_political_violence
-		SPR_clr_national_strikes = yes
-		effect_tooltip = {
-			add_ideas = SPR_disbanded_army_1
-		}
-		effect_tooltip = {
-			add_timed_idea = { idea = SPR_death_before_surrender days = 900 }
-			SPA = { add_timed_idea = { idea = SPA_death_before_surrender days = 900 } }
-			set_party_name = { ideology = neutrality long_name = SPR_neutrality_anarchism_party_long name = SPR_neutrality_anarchism_party }
-		}
-		complete_national_focus = SPR_regional_defense_council_of_aragon
-	}
+	# option = { # Option for Republicans - Anarchism
+	# 	name = lar_spain.2.f
+	# 	trigger = { has_completed_focus = SPR_the_popular_front }
+	# 	ai_chance = {
+	# 		base = 30
+	# 		modifier = {
+	# 			factor = 0
+	# 			OR = {
+	# 				has_country_flag = SPR_AI_RANDOM_SECOND_REPUBLIC
+	# 				has_game_rule = {
+	# 					rule = SPR_ai_behavior 
+	# 					option = SECOND_REPUBLIC
+	# 				}
+	# 			}
+	# 		}
+	# 		modifier = {
+	# 			factor = 0
+	# 			OR = {
+	# 				has_country_flag = SPR_AI_RANDOM_INDEPENDENT_COMMUNIST
+	# 				has_game_rule = {
+	# 					rule = SPR_ai_behavior 
+	# 					option = INDEPENDENT_COMMUNIST
+	# 				}
+	# 			}
+	# 		}
+	# 		modifier = {
+	# 			factor = 0
+	# 			OR = {
+	# 				has_country_flag = SPR_AI_RANDOM_STALINIST
+	# 				has_game_rule = {
+	# 					rule = SPR_ai_behavior 
+	# 					option = STALINIST
+	# 				}
+	# 			}
+	# 		}
+	# 		modifier = {
+	# 			factor = 0
+	# 			has_global_flag = SOV_covert_support_for_poum_flag #Soviet Right Opposition is providing support to the POUM
+	# 		}
+	# 	}
+	# 	# Remove Spirits that will no longer be relevant
+	# 	custom_effect_tooltip = republicans_chosen
+	# 	remove_ideas = SPA_carlism_1
+	# 	remove_ideas = SPR_military_disloyalty
+	# 	remove_ideas = SPR_political_violence
+	# 	SPR_clr_national_strikes = yes
+	# 	effect_tooltip = {
+	# 		add_ideas = SPR_disbanded_army_1
+	# 	}
+	# 	effect_tooltip = {
+	# 		add_timed_idea = { idea = SPR_death_before_surrender days = 900 }
+	# 		SPA = { add_timed_idea = { idea = SPA_death_before_surrender days = 900 } }
+	# 		set_party_name = { ideology = neutrality long_name = SPR_neutrality_anarchism_party_long name = SPR_neutrality_anarchism_party }
+	# 	}
+	# 	complete_national_focus = SPR_regional_defense_council_of_aragon
+	# }
 }
 
 # Mission Generator simulating Republican government working against the Nationalists
@@ -8229,42 +8179,14 @@ country_event = {
 				}
 			}
 			SPD = {
-				every_possible_country = {
-					limit = {
-						has_character = SPR_manuel_azana	
-					}
-					SPR_manuel_azana = { set_nationality = SPD }
-				}
-				IF = {
-					limit = {
-						NOT = {
-							has_country_leader = {
-								character = SPR_manuel_azana
-								ruling_only = yes
-							}
-						}
-					}
-					IF = {
-						limit = {
-							NOT = {
-								can_be_country_leader = SPR_manuel_azana
-							}
-						}
-						add_country_leader_role = {
-							character = SPR_manuel_azana
-							country_leader = {
-							 	ideology = conservatism
-							 	traits = { figurehead_president }
-							 	expire = "1965.1.1"
-							}
-							promote_leader = yes
-						}
-					}
-					ELSE = {
-						promote_character = {
-						    character = SPR_manuel_azana
-						    ideology = conservatism
-						}
+				create_country_leader = {
+					name = "Manuel Azaña"
+					desc = "POLITICS_MANUEL_AZANA_DESC"
+					picture = GFX_portrait_Manuel_Azana
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						figurehead_president
 					}
 				}
 				load_focus_tree = {
@@ -10366,7 +10288,13 @@ country_event = {
 			base = 50
 		}
 		add_political_power = -25
-		add_timed_idea = { idea = SPR_seized_spanish_gold_reserves days = 365 }
+		if = {
+			limit = {
+				has_global_flag = no_pregrind
+			}
+			add_timed_idea = { idea = SPR_seized_spanish_gold_reserves days = 365 }
+		}
+		
 		hidden_effect = {
 			SPD = {
 				country_event = { id = lar_spain.54 }
@@ -11749,53 +11677,29 @@ country_event = {
 				add_political_power = 10
 			}
 			retire_country_leader = yes
-			add_country_leader_role = {
-				character = SPR_manuel_azana
-				country_leader = {
-				 	ideology = conservatism
-				 	traits = { figurehead_president }
-				 	expire = "1965.1.1"
+			create_country_leader = {
+				name = "Manuel Azaña"
+				desc = "POLITICS_MANUEL_AZANA_DESC"
+				picture = GFX_portrait_Manuel_Azana
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					figurehead_president
 				}
-				promote_leader = yes
 			}
 		}
 		else = {
 			retire_country_leader = yes
-			add_country_leader_role = {
-				character = SPR_manuel_azana
-				country_leader = {
-				 	ideology = conservatism
-				 	traits = { }
-				 	expire = "1965.1.1"
+			create_country_leader = {
+				name = "Manuel Azaña"
+				desc = "POLITICS_MANUEL_AZANA_DESC"
+				picture = GFX_portrait_Manuel_Azana
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+		
 				}
-				promote_leader = yes
 			}
 		}
 	}
 }
-
-
-# Spain unites the Hispanics!
-news_event = {
-	id = lar_spain.100
-	title = lar_spain.100.t
-	desc = lar_spain.100.d
-	picture = GFX_news_event_journalists_speech
-	
-	major = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = lar_spain.100.a
-		trigger = {
-			NOT = {
-				original_tag = SPR
-			}
-		}
-	}
-	option = {
-		name = lar_spain.100.b
-		trigger = { original_tag = SPR }
-	}
-} 

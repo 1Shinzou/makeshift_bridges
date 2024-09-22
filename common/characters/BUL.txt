@@ -285,15 +285,15 @@ characters = {
 				small = GFX_portrait_BUL_georgi_markov_small
 			}
 		}
-		corps_commander = {
-			traits = { old_guard infantry_leader }
-			skill = 3
-			attack_skill = 4
-			defense_skill = 4
-			planning_skill = 2
-			logistics_skill = 2
-			legacy_id = 1206
-		}
+		# corps_commander = {
+		# 	traits = { old_guard infantry_leader }
+		# 	skill = 3
+		# 	attack_skill = 4
+		# 	defense_skill = 4
+		# 	planning_skill = 2
+		# 	logistics_skill = 2
+		# 	legacy_id = 1206
+		# }
 	}
 
 	BUL_asen_nikolov = {
@@ -375,15 +375,15 @@ characters = {
 				small = GFX_portrait_BUL_damian_velchev_small
 			}
 		}
-		corps_commander = {
-			traits = { trait_reckless harsh_leader trait_BUL_zveno_member }
-			skill = 2
-			attack_skill = 3
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 2
-			legacy_id = 1210
-		}
+		# corps_commander = {
+		# 	traits = { trait_reckless harsh_leader trait_BUL_zveno_member }
+		# 	skill = 2
+		# 	attack_skill = 3
+		# 	defense_skill = 1
+		# 	planning_skill = 1
+		# 	logistics_skill = 2
+		# 	legacy_id = 1210
+		# }
 	}
 
 	BUL_angel_dotsev = {

@@ -1,0 +1,211 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+MAN_manchurian_heavy_industries_organization = {
+	include = generic_infantry_tank_organization
+	icon = GFX_idea_man_manchurian_heavy_industries
+	allowed = {	
+		tag = MAN
+	}
+	
+	add_trait = { 
+		token = MAN_mio_trait_japanese_industrial_help
+		name = MAN_mio_trait_japanese_industrial_help
+		icon = GFX_generic_mio_department_icon_facilities
+		special_trait_background = yes
+		available = {
+			FROM = { is_ally_with = JAP }
+		}
+
+		position = { x=2 y=0 }
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.1
+		}
+		
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+			production_efficiency_gain_factor = 0.05
+		}
+	}
+}
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+MAN_dalian_shipyard_organization = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_man_dalian_shipyard
+	allowed = {	
+		OR = {
+			tag = CHI
+			tag = PRC
+			tag = GXC
+			tag = YUN
+			tag = XSM
+			tag = SHX
+			tag = SIK
+			tag = MAN
+		}
+	}
+	available = {
+		owner = {
+			controls_state = 745
+		}
+	}
+}
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+MAN_mamc_light_organization = {
+	name = MAN_manchurian_aircraft_manufacturing_company
+	include = generic_general_aircraft_organization
+	icon = GFX_idea_man_mamc
+	allowed = {	
+		original_tag = MAN
+		has_dlc = "Waking the Tiger"
+	}
+	
+	add_trait = { 
+		token = MAN_mio_trait_japanese_industrial_help
+		name = MAN_mio_trait_japanese_industrial_help
+		icon = GFX_generic_mio_department_icon_facilities
+		special_trait_background = yes
+		available = {
+			FROM = { is_ally_with = JAP }
+		}
+
+		position = { x=1 y=0 }
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.1
+		}
+		
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+			production_efficiency_gain_factor = 0.05
+		}
+	}
+}
+
+MAN_manchurian_aviation_company_organization = {
+	include = generic_medium_aircraft_organization
+	icon = GFX_idea_man_manchurian_aviation_company
+	
+	allowed = {	
+		original_tag = MAN
+	}
+}
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+MAN_mukden_arsenal_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_man_mukden_arsenal
+	allowed = {	
+		tag = MAN
+	}
+}
+
+MAN_mukden_arsenal_artillery_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_man_mukden_arsenal_artillery
+	allowed = {	
+		tag = MAN
+	}
+}
+
+MAN_dowa_automobile_company_organization = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_man_dowa_automobile_company
+	allowed = {	
+		tag = MAN
+	}
+	equipment_type = {
+		motorized_equipment
+		mechanized_equipment
+		motorized_rocket_equipment
+		armored_car_equipment
+	}
+	
+	research_categories = {
+		mio_cat_tech_all_motorized_mechanized
+		cat_armored_cars
+	}
+	
+	add_trait = { 
+		token = MAN_mio_trait_japanese_industrial_help
+		name = MAN_mio_trait_japanese_industrial_help
+		icon = GFX_generic_mio_department_icon_facilities
+		special_trait_background = yes
+		available = {
+			FROM = { is_ally_with = JAP }
+		}
+
+		position = { x=3 y=0 }
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.1
+		}
+		
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+			production_efficiency_gain_factor = 0.05
+		}
+	}
+	
+	add_trait = { 
+		token = MAN_mio_trait_unite_the_automobile_industry
+		name = MAN_mio_trait_unite_the_automobile_industry
+		icon = GFX_generic_mio_department_icon_motorized_production
+		special_trait_background = yes
+		any_parent = { MAN_mio_trait_japanese_industrial_help }
+
+		position = { x=3 y=1 }
+
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.2
+		}
+		
+		production_bonus = {
+			production_capacity_factor = 0.1
+		}
+		
+		on_complete = {
+			mio:MAN_mio_trait_unite_the_automobile_industry = {
+				set_mio_name_key = MAN_manchuria_automobile_manufacturing_organization
+			}
+		}
+	}
+}

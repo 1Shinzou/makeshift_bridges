@@ -3,11 +3,14 @@ state = {
 	name = "STATE_446" # Suez
 	manpower = 131732
 	state_category = wasteland
+	resources={
+		oil=5
+	}
 
 	history = {
 
 		owner = ENG
-		add_core_of = TUR
+		add_core_of = SWE
 
 		buildings = {
 			infrastructure = 3

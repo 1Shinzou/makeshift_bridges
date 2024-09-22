@@ -17,7 +17,15 @@ add_ideas = {
 	JAP_duplicate_research_efforts
 	JAP_militarism
 }
-
+set_power_balance = {	
+		id = JAP_interservice_rivalry	
+					
+		left_side = imperial_japanese_army	
+					
+		right_side = imperial_japanese_navy	
+					
+		set_value = 0	
+	}
 609 = {
 	start_resistance = yes
 	set_compliance = 5
@@ -76,9 +84,9 @@ add_ideas = {
 
 if = {
 	limit = { has_dlc = "Waking the Tiger" }
-	add_ideas = {
-		JAP_interservice_rivalry_balanced		
-	}
+	#add_ideas = {
+	#	JAP_interservice_rivalry_balanced		
+	#}
 }
 if = {
 	limit = {
@@ -212,12 +220,6 @@ if = {
 		armored_car1 = 1
 	}
 	JAP_create_john_farnsworth_operative = yes
-}
-
-create_import = {
-	resource = oil
-	factories = 2
-	exporter = USA
 }
 
 1939.1.1 = {
@@ -392,7 +394,7 @@ if = {
 	}
 	set_autonomy = {
 		target = MAN
-		autonomous_state = autonomy_integrated_puppet
+		autonomous_state = autonomy_puppet
 	}
 }
 if = {
@@ -421,7 +423,7 @@ if = {
 	}
 	set_autonomy = {
 		target = MAN
-		autonomous_state = autonomy_wtt_imperial_protectorate
+		autonomous_state = autonomy_puppet
 	}
 }
 
@@ -457,7 +459,7 @@ recruit_character = JAP_yoshijiro_umezu
 recruit_character = JAP_otozo_yamada
 recruit_character = JAP_hatazo_adachi
 recruit_character = JAP_iwane_matsui
-recruit_character = JAP_sadao_araki
+#recruit_character = JAP_sadao_araki
 recruit_character = JAP_keisuke_fujie
 recruit_character = JAP_kiichiro_higuchi
 recruit_character = JAP_masaharu_homma

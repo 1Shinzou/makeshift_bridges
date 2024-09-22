@@ -1214,7 +1214,6 @@ country_event = {
 			set_party_name = {
 			    ideology = democratic
 			    name = CHL_frente_popular_party
-			    long_name = CHL_frente_popular_party_long
 			}
 		}
 		
@@ -1375,7 +1374,6 @@ country_event = {
 			set_party_name = {
 			    ideology = democratic
 			    name = CHL_popular_freedom_alliance_party
-			    long_name = CHL_popular_freedom_alliance_party_long
 			}
 		}
 
@@ -1463,7 +1461,6 @@ country_event = {
 			set_party_name = {
 			    ideology = democratic
 			    name = CHL_communist_but_democratic_party
-			    long_name = CHL_communist_but_democratic_party_long
 			}
 		}
 

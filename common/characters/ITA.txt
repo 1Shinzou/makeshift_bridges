@@ -395,15 +395,15 @@ characters = {
 			}
 		}
 
-		corps_commander = {
-			traits = { inflexible_strategist career_officer }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = 0
-		}
+		# corps_commander = {
+		# 	traits = { inflexible_strategist career_officer }
+		# 	skill = 1
+		# 	attack_skill = 1
+		# 	defense_skill = 1
+		# 	planning_skill = 1
+		# 	logistics_skill = 1
+		# 	legacy_id = 0
+		# }
 	}
 
 	ITA_ubaldo_soddu = {
@@ -867,12 +867,12 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { old_guard infantry_officer commando }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 2
+			traits = { old_guard infantry_officer commando infantry_leader cavalry_leader organizer }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 5
 			planning_skill = 1
-			logistics_skill = 2
+			logistics_skill = 10
 			legacy_id = 0
 			visible = {
 				has_completed_focus = ITA_army_leaders
@@ -999,14 +999,14 @@ characters = {
 			}
 		}
 		
-		navy_leader = {
-			traits = { gentlemanly superior_tactician }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 2
-			maneuvering_skill = 3
-			coordination_skill = 2
-			legacy_id = 0
+		navy_leader={
+			traits={ gentlemanly superior_tactician fleet_protector ironside }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=2
+			legacy_id=0
 		}
 	}
 
@@ -1551,34 +1551,6 @@ characters = {
 				base = 1.000
 			}
 		}		
-	}
-	
-	ITA_silvio_scaroni = {
-		name = ITA_silvio_scaroni
-		portraits = {
-			army = {
-				small = GFX_idea_silvio_scaroni
-			}
-		}
-
-		advisor = {
-			slot = high_command
-			idea_token = silvio_scaroni
-			ledger = air
-			allowed = {
-				ITA_is_italian_tag = yes
-			}
-			available = {
-				has_government = fascism
-			}
-			traits = {
-				air_bomber_interception_2
-			}
-			cost = 100
-			ai_will_do = {
-				base = 1.000
-			}
-		}
 	}
 
 	ITA_luigi_mascherpa = {

@@ -1,0 +1,187 @@
+
+rename_mios_decision_category = {
+
+	YUG_rename_zastava_automobiles = {
+
+		visible = {
+			original_tag = YUG
+			has_government = communism
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		complete_effect = {
+			mio:YUG_zastava_automobiles_organization = {
+				set_mio_name_key = YUG_crvena_zastava
+			}
+		}
+	}
+	
+	YUG_rename_vistad = {
+
+		visible = {
+			original_tag = YUG
+			has_government = communism
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		complete_effect = {
+			mio:YUG_vistad_organization = {
+				set_mio_name_key = YUG_krusik
+			}
+		}
+	}
+	
+	YUG_rename_brod_na_savi = {
+
+		visible = {
+			original_tag = YUG
+			has_government = communism
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		complete_effect = { 
+			mio:YUG_brod_na_savi_organization = {
+				set_mio_name_key = YUG_djuro_djakovic
+				set_mio_icon = GFX_idea_yug_djuro_djakovic
+			}
+		}
+	}
+	
+	USA_rename_seversky = {
+
+		visible = {
+			tag = USA
+			date > 1939.09.01
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		complete_effect = { 
+			mio:USA_seversky_aircraft_organization = {
+				set_mio_name_key = USA_republic_aviation_organization
+				set_mio_icon = GFX_idea_usa_republic_aviation
+			}
+		}
+	}
+	
+	SAF_rename_saf_mint = {
+
+		visible = {
+			tag = SAF
+			NOT = {
+				is_ally_with = ENG
+			}
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		complete_effect = { 
+			mio:SAF_south_african_mint_organization = {
+				set_mio_name_key = SAF_armamenst_production_board_organization
+				set_mio_icon = GFX_idea_saf_armaments_production_board
+			}
+		}
+	}
+	
+	SAF_rename_roberts_heights = {
+
+		visible = {
+			tag = SAF
+			is_subject = no
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		complete_effect = { 
+			mio:SAF_roberts_heights_air_force_depot_organization = {
+				set_mio_name_key = SAF_atlas_aircraft_organization
+				set_mio_icon = GFX_idea_saf_atlas_aircraft
+			}
+		}
+	}
+	
+	SOV_rename_gaz = { # GAZ is Gorkovsky avtomobilny zavod, named after the city of Gorky (communist name)
+
+		visible = {
+			tag = SOV
+			NOT = { has_government = communism }
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		complete_effect = { 
+			mio:SOV_gaz_organization = {
+				set_mio_name_key = SAF_naz_organization # was called that for a brief period before Nizhny Novgorod was renamed to Gorky
+				set_mio_icon = GFX_idea_sov_naz
+			}
+		}
+	}
+	
+	ENG_rename_royal_arsenal = {
+
+		visible = {
+			tag = ENG
+			has_government = communism
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		complete_effect = { 
+			mio:ENG_royal_arsenal_organization = {
+				set_mio_name_key = ENG_republican_arsenal_organization
+			}
+		}
+	}
+
+}

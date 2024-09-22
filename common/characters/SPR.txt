@@ -145,46 +145,6 @@ characters={
 		}
 	}
 
-	SPR_manuel_azana = {
-		instance = {
-			allowed = {
-				has_dlc = "La Resistance"
-			}
-
-			name = SPR_manuel_azana
-
-			portraits = {
-				civilian = {
-					large = "GFX_portrait_Manuel_Azana"
-				}
-			}
-			#country_leader = {
-			#	ideology = conservatism
-			#	traits = { figurehead_president }
-			#	expire = "1965.1.1.1"
-			#	id = -1
-			#}
-		}
-		instance = {
-			allowed = {
-				NOT = { has_dlc = "La Resistance" }
-			}
-
-			name = SPR_manuel_azana
-
-			portraits = {
-				civilian = {
-					large = "GFX_portrait_Manuel_Azana"
-				}
-			}
-			#country_leader = {
-			#	ideology = conservatism
-			#	expire = "1965.1.1.1"
-			#	id = -1
-			#}
-		}
-	}
-
 	# Unit Leaders
 
 	SPR_vicente_rojo_lluch={
@@ -647,15 +607,15 @@ characters={
 				small=GFX_portrait_SPR_mohamed_meziane_small
 			}
 		}
-		corps_commander={
-			traits={ career_officer harsh_leader trait_SPA_nationalist_sympathies }
-			skill=4
-			attack_skill=5
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=1109
-		}
+		# corps_commander={
+		# 	traits={ career_officer harsh_leader trait_SPA_nationalist_sympathies }
+		# 	skill=4
+		# 	attack_skill=5
+		# 	defense_skill=2
+		# 	planning_skill=3
+		# 	logistics_skill=3
+		# 	legacy_id=1109
+		# }
 	}
 
 	SPR_gonzalo_queipo_de_llano={
@@ -821,24 +781,24 @@ characters={
 				cost = 100
 			}
 
-			corps_commander={
-				traits={ brilliant_strategist trait_reckless trait_SPA_nationalist_sympathies }
-				skill=3
-				attack_skill=4
-				defense_skill=2
-				planning_skill=2
-				logistics_skill=2
-				legacy_id=1112
-				visible = {
-					OR = {
-						NOT = { has_global_flag = spanish_civil_war }
-						AND = {
-							tag = SPA
-							has_global_flag = spanish_civil_war
-						}
-					}
-				}
-			}
+			# corps_commander={
+			# 	traits={ brilliant_strategist trait_reckless trait_SPA_nationalist_sympathies }
+			# 	skill=3
+			# 	attack_skill=4
+			# 	defense_skill=2
+			# 	planning_skill=2
+			# 	logistics_skill=2
+			# 	legacy_id=1112
+			# 	visible = {
+			# 		OR = {
+			# 			NOT = { has_global_flag = spanish_civil_war }
+			# 			AND = {
+			# 				tag = SPA
+			# 				has_global_flag = spanish_civil_war
+			# 			}
+			# 		}
+			# 	}
+			# }
 		}
 		instance = {
 			allowed = {

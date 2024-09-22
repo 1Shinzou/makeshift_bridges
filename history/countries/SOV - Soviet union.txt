@@ -159,6 +159,15 @@ if = {
 SOV_mikhail_kalinin = {
 	set_character_flag = SOV_safe_from_purge_flag
 }
+SOV_georgy_zhukov = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_konstantin_rokossovsky = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
+SOV_markian_popov = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
 SOV_nikita_khrushchyov = {
 	set_character_flag = SOV_safe_from_purge_flag
 }
@@ -743,10 +752,11 @@ if = {
 	}
 }
 
-set_research_slots = 3
+
 set_stability = 0.5
 set_war_support = 0.3
 # Starting tech
+set_research_slots = 4
 set_technology = { #WARNING: Do not just remove techs from here -> It can impact a lot of stuff. Before removing, double check that content does not count on these techs being researched
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -784,6 +794,7 @@ if = {
 	set_technology = {
 		gwtank_chassis = 1
 		basic_light_tank_chassis = 1
+		basic_heavy_tank_chassis = 1
 		improved_light_tank_chassis = 1
 		engine_tech_1 = 1
 		engine_tech_2 = 1

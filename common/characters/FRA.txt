@@ -185,9 +185,7 @@ characters={
 			allowed = {
 				original_tag = FRA
 			}
-			available = {
-				has_completed_focus = FRA_aggressive_focus
-			}
+			
 			cost = 100.000
 			traits = {
 				army_chief_offensive_2
@@ -225,9 +223,7 @@ characters={
 			allowed = {
 				original_tag = FRA
 			}
-			available = {
-				has_completed_focus = FRA_defensive_focus
-			}
+		
 			cost = 100.000
 			traits = {
 				army_chief_defensive_2
@@ -263,7 +259,10 @@ characters={
 			slot = army_chief
 			idea_token = alphonse_georges
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = VIC
+				}
 			}
 			traits = {
 				army_chief_maneuver_1
@@ -448,7 +447,10 @@ characters={
 			idea_token = charles_huntziger
 			ledger = army
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = VIC
+				}
 			}
 			traits = {
 				army_logistics_1
@@ -1216,7 +1218,7 @@ characters={
 				original_tag  = FRA
 			}
 			available  = {
-				has_completed_focus  = FRA_confirm_eastern_commitments 
+				has_completed_focus  = FRA_self_defense
 				has_government  = democratic 
 			}
 			cost  = 75.000
@@ -1446,7 +1448,7 @@ characters={
 				original_tag  = FRA
 			}
 			available  = {
-				has_completed_focus  = FRA_form_the_popular_front 
+				has_completed_focus  = FRA_popular_frq
 			}
 			traits  = {
 				financial_expert 

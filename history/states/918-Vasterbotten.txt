@@ -22,7 +22,7 @@ state = {
 			limit = {
 				has_dlc = "Arms Against Tyranny"
 			}
-			add_core_of = SMI
+			add_core_of = SWE
 		}
 		buildings = {
 			infrastructure = 2

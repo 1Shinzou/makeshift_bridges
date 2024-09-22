@@ -107,27 +107,21 @@ country_event = {
 		}
 		add_war_support = 0.05
 		custom_effect_tooltip = TUR_soviets_oppose_turkey_tt
-		hidden_effect = {
-			TUR = {
-				set_country_flag = TUR_soviets_defiant
-				country_event = { id = bftb_turkey.5 hours = 8 }
-			}
-		}
 	}
-	option = {
-		name = bftb_turkey.4.b #it matters little to us
-		ai_chance = {
-			factor = 50
-			modifier = {
-				check_variable = { SOV_great_purge_counter > 0 }
-				factor = 0.25
-			}
-		}
-		custom_effect_tooltip = TUR_soviets_allow_militarisation_tt
-		hidden_effect = {
-			TUR = { country_event = { id = bftb_turkey.6 hours = 8 } }
-		}
-	}	
+	# option = {
+	# 	name = bftb_turkey.4.b #it matters little to us
+	# 	ai_chance = {
+	# 		factor = 50
+	# 		modifier = {
+	# 			check_variable = { SOV_great_purge_counter > 0 }
+	# 			factor = 0.25
+	# 		}
+	# 	}
+	# 	custom_effect_tooltip = TUR_soviets_allow_militarisation_tt
+	# 	hidden_effect = {
+	# 		TUR = { country_event = { id = bftb_turkey.6 hours = 8 } }
+	# 	}
+	# }	
 }
 #The Montreux Convention - Soviets Oppose Turkish Remilitarisation of the Straits
 country_event = {
@@ -719,16 +713,6 @@ country_event = {
 				}
 				factor = 100
 			}
-			modifier = {
-				OR = {
-					has_country_flag = TUR_AI_RANDOM_OTTOMAN
-					has_game_rule = {
-						rule = TUR_ai_behavior
-						option = OTTOMAN
-					}
-				}
-				factor = 0
-			}
 		}
 		hidden_effect = {
 			if = {
@@ -830,16 +814,6 @@ country_event = {
 					}
 				}
 				factor = 100
-			}
-			modifier = {
-				OR = {
-					has_country_flag = TUR_AI_RANDOM_OTTOMAN
-					has_game_rule = {
-						rule = TUR_ai_behavior
-						option = OTTOMAN
-					}
-				}
-				factor = 500
 			}
 		}
 		custom_effect_tooltip = TUR_conservative_victory_tt

@@ -483,3 +483,38 @@ adjacency_rule =
 	icon = 6979
 	offset = { 9 0 6 }
 }
+#Fernando Torres Strait
+adjacency_rule={
+	name = "Fernando Torres Strait"
+	contested =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	required_provinces = { 1644 1310 }
+	icon = 5563
+	offset = { 10 0 5 }
+}

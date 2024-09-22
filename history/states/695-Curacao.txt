@@ -10,7 +10,7 @@ state={
 	}
 
 	history={
-		add_core_of = VEN
+		add_core_of = SWE
 		owner = HOL
 		victory_points = {
 			153 1

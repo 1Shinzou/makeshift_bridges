@@ -6,8 +6,8 @@ state=
 	state_category = city
 	history=
 	{
-		owner = PRC
-		add_core_of = PRC
+		owner = CHI
+		add_core_of = CHI
 		
 		victory_points = { 
 			9974 1 
@@ -18,7 +18,10 @@ state=
 		
 		buildings = {
 			infrastructure = 2
-
+			industrial_complex = 1
+			air_base = 6
+			dockyard = 4
+			
 			7191 = {
 				naval_base = 1
 				coastal_bunker = 1

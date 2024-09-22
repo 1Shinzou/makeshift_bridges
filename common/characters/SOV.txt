@@ -177,10 +177,9 @@ characters = {
 			legacy_id = 410
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
-
-		advisor = {
-			cost = 150
-			slot = theorist
+		advisor={
+			cost = 200
+			slot = high_command
 			idea_token = georgy_zhukov
 			ledger = army
 			allowed = {
@@ -196,7 +195,7 @@ characters = {
 				}
 			}
 			traits = {
-				mass_assault_expert
+				army_CombinedArms_3
 			}
 		}		
 	}
@@ -211,16 +210,16 @@ characters = {
 			}
 		}
 
-		corps_commander = {
-			traits = { brilliant_strategist trait_cautious armor_officer }
-			skill = 4
-			attack_skill = 3
-			defense_skill = 4
-			planning_skill = 2
-			logistics_skill = 4
-			legacy_id = 402
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
-		}
+		# corps_commander = {
+		# 	traits = { brilliant_strategist trait_cautious armor_officer }
+		# 	skill = 4
+		# 	attack_skill = 3
+		# 	defense_skill = 4
+		# 	planning_skill = 2
+		# 	logistics_skill = 4
+		# 	legacy_id = 402
+		# 	visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+		# }
 
 		advisor = {
 			slot = high_command
@@ -631,15 +630,15 @@ characters = {
 				small= "GFX_idea_SOV_leonid_govorov"
 			}
 		}
-		corps_commander = {
-			skill = 3
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 2
-			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
-		}
+		# corps_commander = {
+		# 	skill = 3
+		# 	attack_skill = 3
+		# 	defense_skill = 2
+		# 	planning_skill = 3
+		# 	logistics_skill = 2
+		# 	legacy_id = 0
+		# 	visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+		# }
 	}
 
 	SOV_grigory_kulik = {

@@ -176,10 +176,11 @@ add_ideas = {
 	stiff_upper_lip
 	ENG_the_war_to_end_all_wars
 	george_v
+	ENG_state_of_the_economy
 }
 	
 
-set_convoys = 1000
+set_convoys = 2000
 
 # DIPLOMACY
 if = {
@@ -268,7 +269,7 @@ if = {
 	complete_national_focus = uk_asia_focus
 	complete_national_focus = uk_commonwealth_focus
 
-	give_guarantee = POL
+	#give_guarantee = POL
 	if = {
 		limit = {
 			NOT = {
@@ -463,7 +464,7 @@ give_military_access = RAJ
 add_to_faction = RAJ		# Must be after puppet
 add_to_faction = MAL
 
-#give_guarantee = CZE
+##give_guarantee = CZE
 
 # Order matters - here Chamberlain becomes starting leader
 recruit_character = ENG_oswald_mosley
@@ -728,7 +729,6 @@ if = {
 		name = "Light Tank Mk. IV"
 		type = light_tank_chassis_1
 		parent_version = 0
-		show_position = no
 		modules = {
 			main_armament_slot = tank_heavy_machine_gun
 			turret_type_slot = tank_light_one_man_tank_turret
@@ -747,7 +747,6 @@ if = {
 		name = "Light Tank Mk. VI"
 		type = light_tank_chassis_1
 		parent_version = 1
-		show_position = no
 		modules = {
 			main_armament_slot = tank_heavy_machine_gun
 			turret_type_slot = tank_light_two_man_tank_turret
@@ -769,7 +768,6 @@ if = {
 		type = medium_tank_chassis_0
 		design_team = mio:ENG_vickers_armstrong_eng_organization
 		parent_version = 0
-		show_position = no
 		modules = {
 			main_armament_slot = tank_small_cannon
 			turret_type_slot = tank_medium_three_man_tank_turret
@@ -1552,7 +1550,7 @@ if = {
 			has_dlc = "No Step Back"
 		}
 		create_equipment_variant = {
-			name = "Matilda I"
+			name = "Mathilda I"
 			type = light_tank_chassis_2
 			parent_version = 0
 			modules = {
@@ -1571,7 +1569,7 @@ if = {
 		}
 
 		create_equipment_variant = {
-			name = "Matilda II"
+			name = "Mathilda II"
 			type = heavy_tank_chassis_1
 			parent_version = 0
 			modules = {
@@ -1594,7 +1592,6 @@ if = {
 			name = "Cruiser Mk. I"
 			type = medium_tank_chassis_1
 			parent_version = 0
-			show_position = no
 			modules = {
 				main_armament_slot = tank_small_cannon_2
 				turret_type_slot = tank_medium_three_man_tank_turret
@@ -1617,7 +1614,6 @@ if = {
 			name = "Cruiser Mk. IV"
 			type = medium_tank_chassis_1
 			parent_version = 1
-			show_position = no
 			modules = {
 				main_armament_slot = tank_small_cannon_2
 				turret_type_slot = tank_medium_three_man_tank_turret

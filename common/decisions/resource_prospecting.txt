@@ -23,11 +23,6 @@ prospect_for_resources = {
 		visible = {
 			owns_state = 597
 			controls_state = 597
-			597 = {
-				NOT = {
-					has_state_flag = shandong_aluminium_developed
-				}
-			}
 		}
 
 		fire_only_once = yes
@@ -71,7 +66,6 @@ prospect_for_resources = {
 			}
 		}
 		remove_effect = {
-			597 = { set_state_flag = shandong_aluminium_developed }
 			597 = {
 				add_resource = {
 					type = aluminium
@@ -103,11 +97,6 @@ prospect_for_resources = {
 		visible = {
 			owns_state = 621
 			controls_state = 621
-			621 = {
-				NOT = {
-					has_state_flag = suiyuan_steel_developed
-				}
-			}
 		}
 
 		fire_only_once = yes
@@ -151,7 +140,6 @@ prospect_for_resources = {
 			}
 		}
 		remove_effect = {
-			621 = { set_state_flag = suiyuan_steel_developed }
 			621 = {
 				add_resource = {
 					type = steel
@@ -353,11 +341,6 @@ prospect_for_resources = {
 		visible = {
 			owns_state = 325
 			controls_state = 325
-			325 = {
-				NOT = {
-					has_state_flag = yunnan_aluminium_developed
-				}
-			}
 		}
 
 		fire_only_once = yes
@@ -401,7 +384,6 @@ prospect_for_resources = {
 			}
 		}
 		remove_effect = {
-			325 = { set_state_flag = yunnan_aluminium_developed }
 			325 = {
 				add_resource = {
 					type = aluminium
@@ -513,11 +495,6 @@ prospect_for_resources = {
 		visible = {
 			owns_state = 605
 			controls_state = 605
-			605 = {
-				NOT = {
-					has_state_flag = sichuan_aluminium_developed
-				}
-			}
 		}
 
 		fire_only_once = yes
@@ -561,7 +538,6 @@ prospect_for_resources = {
 			}
 		}
 		remove_effect = {
-			605 = { set_state_flag = sichuan_aluminium_developed }
 			605 = {
 				add_resource = {
 					type = aluminium
@@ -3892,12 +3868,12 @@ prospect_for_resources = {
 
 		remove_effect = {
 			custom_effect_tooltip = repeatable_decision_tt
-			add_to_variable = { var = USA_alaska_chromium_duration value = 30 }
+			add_to_variable = { var = USA_oregon_chromium_duration value = 30 }
 			463 = {
 				if = {
 					limit = {
 						NOT = {
-							has_state_flag = alaska_chromium_developed
+							has_state_flag = oregon_chromium_developed
 						}
 					}
 					set_state_flag = {
@@ -4000,7 +3976,7 @@ prospect_for_resources = {
 			537 = {
 				add_resource = {
 					type = oil
-					amount = 8
+					amount = 48
 				}
 				set_state_flag = sakhalin_oil_developed
 			}

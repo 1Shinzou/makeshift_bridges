@@ -2,34 +2,13 @@
 state={
 	id=340
 	name="STATE_340"
-	manpower = 1077853
-	
+	manpower = 1
 
-	state_category = town
+	state_category = wasteland
 
 	history={
 		owner = NON
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-			dockyard = 1
-		}
-		
-		victory_points = {
-			947 10
-		}
-		victory_points = {
-			9799 5
-		}
-		
-		if = {
-			limit = { has_dlc = "Battle for the Bosporus" }
-			set_demilitarized_zone = yes
-		}
-		
-		1936.11.9 = {
-			set_demilitarized_zone = no
-		}
+		add_core_of = NON
 	}
 
 	provinces={

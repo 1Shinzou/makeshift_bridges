@@ -219,9 +219,6 @@ technologies = {
 		
 		force_use_small_tech_layout = yes
 		
-		category_mountaineers = {
-			defense = 0.10
-		}
 		mountaineers = {
 			combat_width = -0.2
 		}
@@ -395,7 +392,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 60
 		
-		special_forces_cap = 0.06
+		special_forces_cap = 0.20
 		special_forces_out_of_supply_factor = -0.1
 		special_forces_attack_factor = 0.10
 		acclimatization_hot_climate_gain_factor = 0.10
@@ -658,9 +655,6 @@ technologies = {
 		
 		xor = { marines_expeditionary }
 		
-		enable_subunits = {
-			marine_commando
-		}
 		
 		on_research_complete = {
 			custom_effect_tooltip = SF_MARINES_exfiltration_effect_tt
@@ -707,7 +701,7 @@ technologies = {
 		
 		xor = { marines_commandoes }
 
-		special_forces_cap = 0.06
+		special_forces_cap = 0.10
 		naval_invasion_planning_bonus_speed = 0.2
 		
 		army_bonus_air_superiority_factor = 0.10

@@ -1,15 +1,10 @@
 state={
 	id=896
 	name="STATE_896"
-	manpower = 188600
-	state_category = pastoral
+	manpower = 1
+	state_category = wasteland
 	history={
 		owner = NON
-		buildings = {
-			infrastructure = 2
-
-		}
-		
 	}
 
 
@@ -17,6 +12,5 @@ state={
 		2120 5155 12935 12950 
 	}
 
-	buildings_max_level_factor=1.000
 	local_supplies = 0.000
 }

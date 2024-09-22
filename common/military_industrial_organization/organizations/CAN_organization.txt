@@ -1,0 +1,236 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+ 
+CAN_montreal_locomotive_works_organization = {
+	include = generic_mobile_tank_organization
+	icon = GFX_idea_can_montreal_locomotive_works
+	allowed = {
+		original_tag = CAN
+	}
+	add_trait = { 
+		token = CAN_mio_trait_import_foreign_materials
+		name = CAN_mio_trait_import_foreign_materials
+		icon = GFX_generic_mio_trait_icon_reliability
+		special_trait_background = yes
+		position = { x=4 y=0 }
+		
+		available = {
+			FROM = {
+				NOT = {
+					has_war_with = ENG
+					has_war_with = USA
+				}
+			}
+		}
+		
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+			production_efficiency_gain_factor = 0.15
+		}
+	}
+}
+
+CAN_canadian_pacific_railway_organization = {
+	include = generic_infantry_tank_organization
+	icon = GFX_idea_can_canadian_pacific_railway
+	allowed = {
+		original_tag = CAN
+	}
+	equipment_type = {  
+        armor
+        train_equipment
+    }
+    research_categories = { 
+        armor
+        train_tech
+    }
+}
+
+CAN_vickers_armstrong_can_organization = {
+	name = CAN_vickers_armstrong_can_organization
+	include = generic_medium_tank_organization
+	icon = GFX_idea_vickers_armstrong_can
+	allowed = {
+		original_TAG = CAN
+		has_dlc = "Together for Victory"
+	}
+	available = {
+		FROM = {
+			NOT = { has_war_with = ENG }
+		}
+	}
+}
+
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+CAN_kingston_shipbuilding_organization = {
+	name = CAN_kingston_shipbuilding_organization
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_kingston_shipbuilding
+	allowed = {
+		original_TAG = CAN
+	}
+}
+
+CAN_halifax_shipyard_organization = {
+	name = CAN_halifax_shipyard_organization
+	include = generic_escort_ship_organization
+	icon = GFX_idea_halifax_shipyard
+	allowed = {
+		original_TAG = CAN
+	}
+}
+
+CAN_bathurst_street_wharf_organization = {
+	include = generic_raider_ship_organization
+	icon = GFX_idea_can_bathurst_street_wharf
+	allowed = {
+		original_TAG = CAN
+	}
+}
+
+CAN_davie_shipbuilding_organization = {
+	include = generic_refurbishment_repair_organization
+	icon = GFX_idea_can_davie_shipbuilding
+	allowed = {
+		original_TAG = CAN
+	}
+}
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+CAN_de_havilland_organization = {
+	name = CAN_de_havilland_organization
+	include = generic_medium_aircraft_organization
+	icon = GFX_idea_de_havilland
+	allowed = {
+		original_TAG = CAN
+	}
+}
+
+CAN_canadian_car_foundry_organization = {
+	name = CAN_canadian_car_foundry_organization
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_canadian_car_foundry
+	allowed = {
+		original_TAG = CAN
+	}
+}
+
+CAN_fairchild_aircraft_ltd_organization = {
+	name = CAN_fairchild_aircraft_ltd_organization
+	include = generic_general_aircraft_organization
+	icon = GFX_idea_can_fairchild
+	allowed = {
+		original_TAG = CAN
+		has_dlc = "Together for Victory"
+	}
+	available = {
+	}
+}
+
+CAN_canadian_vickers_organization = {
+	include = generic_naval_aircraft_organization
+	icon = GFX_idea_vickers_armstrong_can
+	allowed = {
+		original_TAG = CAN
+	}
+	add_trait = { 
+		token = CAN_mio_trait_form_canadair
+		name = CAN_mio_trait_form_canadair
+		icon = GFX_generic_mio_department_icon_facilities
+		special_trait_background = yes
+		position = { x=8 y=0 }
+		
+		on_complete = {
+			mio:CAN_canadian_vickers_organization = {
+				set_mio_name_key = CAN_candaiar_organization
+				set_mio_icon = GFX_idea_can_candair
+			}
+		}
+		
+		production_bonus = {
+			production_efficiency_cap_factor = 0.1
+		}
+		
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.1
+			military_industrial_organization_funds_gain = 0.15
+		}
+	}
+}
+
+CAN_handley_page_organization = {
+	name = CAN_handley_page_organization
+	include = generic_heavy_aircraft_organization
+	icon = GFX_idea_can_handley_page
+	allowed = {
+		original_TAG = CAN
+		has_dlc = "Together for Victory"
+	}
+	available = {
+	}
+}
+
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+CAN_inglis_company_organization = {
+	name = CAN_inglis_company_organization
+	include = generic_support_equipment_organization
+	icon = GFX_idea_inglis_company
+	allowed = {
+		original_TAG = CAN
+		has_dlc = "Together for Victory"
+	}
+}
+
+CAN_small_arms_limited_organization = {
+	name = CAN_small_arms_limited_organization
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_small_arms_limited
+	allowed = {
+		original_TAG = CAN
+		has_dlc = "Together for Victory"
+	}
+}
+
+CAN_canadian_industries_limited_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_can_canadian_industries_limited
+	allowed = {
+		original_tag = CAN
+	}
+}

@@ -1,0 +1,231 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+HOL_werkspoor_organization = {
+    include = generic_tank_organization
+    icon = GFX_idea_hol_werkspoor
+    allowed = { 
+        OR = {
+			tag = HOL
+			tag = INS
+		}
+    }
+	available = {
+		if = {
+			limit = { FROM = { tag = INS } }
+			FROM = { is_subject_of = HOL }
+		}
+	}
+	equipment_type = {  
+        armor
+        train_equipment
+    }
+    research_categories = { 
+        armor
+        train_tech
+    }
+}
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+HOL_nsm_amsterdam_organization = {
+	include = generic_raider_ship_organization
+	icon = GFX_idea_nsm_amsterdam
+	allowed = { 
+		has_dlc = "Man the Guns"
+		OR = {
+			tag = HOL
+			tag = INS
+		}
+	}
+	available = {
+		if = {
+			limit = { FROM = { tag = INS } }
+			FROM = { is_subject_of = HOL }
+		}
+	}
+}
+
+HOL_wilton_fijenoord_organization = {
+	include = generic_battle_line_ship_organization
+	icon = GFX_idea_wilton_fijenoord
+	allowed = { 
+		has_dlc = "Man the Guns"
+		OR = {
+			tag = HOL
+			tag = INS
+		}
+	}
+	available = {
+		if = {
+			limit = { FROM = { tag = INS } }
+			FROM = { is_subject_of = HOL }
+		}
+	}
+}
+
+HOL_rdm_organization = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_hol_rdm
+	allowed = { 
+		OR = {
+			tag = HOL
+			tag = INS
+		}
+	}
+	available = {
+		if = {
+			limit = { FROM = { tag = INS } }
+			FROM = { is_subject_of = HOL }
+		}
+	}
+}
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+HOL_fokker_organization = {
+	include = generic_general_aircraft_organization
+	icon = GFX_idea_fokker
+	allowed = { 
+		has_dlc = "Man the Guns"
+		OR = {
+			tag = HOL
+			tag = INS
+		}
+	}
+	available = {
+		if = {
+			limit = { FROM = { tag = INS } }
+			FROM = { is_subject_of = HOL }
+		}
+	}
+}
+
+HOL_koolhoven_organization = {
+	include = generic_medium_aircraft_organization
+	icon = GFX_idea_koolhoven
+	allowed = { 
+		OR = {
+			tag = HOL
+			tag = INS
+		}
+	}
+	available = {
+		if = {
+			limit = { FROM = { tag = INS } }
+			FROM = { is_subject_of = HOL }
+		}
+	}
+}
+
+HOL_aviolanda_organization = {
+	include = generic_naval_aircraft_organization
+	icon = GFX_idea_hol_aviolanda
+	allowed = { 
+		OR = {
+			tag = HOL
+			tag = INS
+		}
+	}
+	available = {
+		if = {
+			limit = { FROM = { tag = INS } }
+			FROM = { is_subject_of = HOL }
+		}
+	}
+}
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+HOL_daf_organization = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_HOL_daf
+	allowed = { 
+		has_dlc = "Man the Guns"
+		OR = {
+			tag = HOL
+			tag = INS
+		}
+	}
+	available = {
+		if = {
+			limit = { FROM = { tag = INS } }
+			FROM = { is_subject_of = HOL }
+		}
+	}
+}
+
+HOL_artillerie_inrichtingen_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_artillerie_inrichtingen
+	allowed = { 
+		has_dlc = "Man the Guns"
+		OR = {
+			tag = HOL
+			tag = INS
+		}
+	}
+	available = {
+		if = {
+			limit = { FROM = { tag = INS } }
+			FROM = { is_subject_of = HOL }
+		}
+	}
+}
+HOL_hih_siderius_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_hih_siderius
+	allowed = { 
+		has_dlc = "Man the Guns"
+		OR = {
+			tag = HOL
+			tag = INS
+		}
+	}
+	available = {
+		if = {
+			limit = { FROM = { tag = INS } }
+			FROM = { is_subject_of = HOL }
+		}
+	}
+}
+HOL_wilton_fijenoord_ac_organization = {
+	name = HOL_wilton_fijenoord_organization
+	include = generic_armored_car_organization
+	icon = GFX_idea_wilton_fijenoord
+	allowed = { 
+		tag = HOL
+	}
+}

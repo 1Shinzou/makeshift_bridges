@@ -10596,11 +10596,11 @@ greater_italy_category = {
 					}
 					OR = {
 						ITA = { 
-						controls_state = 846 # Ticino 
+						controls_state = 446 # Suez
 						}
 						any_country = {
 							is_subject_of = ITA
-							controls_state = 846 # Ticino
+							controls_state = 446 # Suez
 						}
 					}
 					OR = {
@@ -10703,12 +10703,15 @@ greater_italy_category = {
 				    id = 3838 
 				    name = ITA_italian_ajaccio_name   
 				} 
-				
-				# Ticino
+
+				# Suez
 				ITA = {
-					transfer_state = 846
+					transfer_state = 446
 				}
-				846 = { add_core_of = ROOT }
+				446 = { 
+					add_core_of = ROOT
+					
+				}
 				
 				# Savoy
 				ITA = {

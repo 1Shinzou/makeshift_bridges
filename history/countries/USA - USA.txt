@@ -40,9 +40,9 @@ if = {
 	}
 }
 
-set_research_slots = 4
-set_stability = 0.75
-set_war_support = 0
+set_research_slots = 5 #Maybe I overbuffed Axis? Just giving the US another research slot to counterbalance
+set_stability = 0.80
+set_war_support = 0.0 #Shinzou was here
 add_command_power = 20
 set_variable = { var = senators_support value = 48 }
 set_variable = { var = senators_total value = 96 }
@@ -148,27 +148,27 @@ IF = {
 }
 IF = {
 	limit = { NOT = { has_dlc = "Trial of Allegiance" }	}
-	give_guarantee = CAN
-	give_guarantee = MEX
-	give_guarantee = CUB
-	give_guarantee = HAI
-	give_guarantee = DOM
-	give_guarantee = GUA
-	give_guarantee = HON
-	give_guarantee = ELS
-	give_guarantee = NIC
-	give_guarantee = COS
-	give_guarantee = PAN
-	give_guarantee = VEN
-	give_guarantee = COL
-	give_guarantee = ECU
-	give_guarantee = PRU
-	give_guarantee = BRA
-	give_guarantee = BOL
-	give_guarantee = CHL
-	give_guarantee = PAR
-	give_guarantee = ARG
-	give_guarantee = URG
+	#give_guarantee = CAN
+	#give_guarantee = MEX
+	#give_guarantee = CUB
+	#give_guarantee = HAI
+	#give_guarantee = DOM
+	#give_guarantee = GUA
+	#give_guarantee = HON
+	#give_guarantee = ELS
+	#give_guarantee = NIC
+	#give_guarantee = COS
+	#give_guarantee = PAN
+	#give_guarantee = VEN
+	#give_guarantee = COL
+	#give_guarantee = ECU
+	#give_guarantee = PRU
+	#give_guarantee = BRA
+	#give_guarantee = BOL
+	#give_guarantee = CHL
+	#give_guarantee = PAR
+	#give_guarantee = ARG
+	#give_guarantee = URG
 }
 
 1939.1.1 = {
@@ -333,13 +333,14 @@ add_ideas = {
 	disarmed_nation
 	free_trade
 	home_of_the_free
+	rubber_expensive
 }
 
 
 # DIPLOMACY
 set_autonomy = {
 	target = PHI
-	autonomous_state =  autonomy_puppet
+	autonomous_state =  autonomy_dominion
 }
 
 1939.1.1 = {

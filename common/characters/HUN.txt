@@ -16,13 +16,13 @@ characters={
 			}
 			country_leader={
 				ideology=oligarchism
-				traits={ fascist_sympathies anti_communist }
+				traits={ fascist_sympathies anti_communist conservative_nationalist }
 				expire="1965.1.1.1"
 				id=500
 			}
 			country_leader={
 				ideology=fascism_ideology
-				traits={ anti_communist }
+				traits={ anti_communist conservative_nationalist }
 				expire="1965.1.1.1"
 				id=503
 			}
@@ -128,14 +128,14 @@ characters={
 				small="GFX_idea_HUN_geza_lakatos"
 			}
 		}
-		corps_commander={
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=2
-			legacy_id=-1
-		}
+		# corps_commander={
+		# 	skill=3
+		# 	attack_skill=3
+		# 	defense_skill=2
+		# 	planning_skill=3
+		# 	logistics_skill=2
+		# 	legacy_id=-1
+		# }
 	}
 
 	HUN_ivan_hindy={
@@ -202,14 +202,14 @@ characters={
 				small="GFX_idea_HUN_ferenc_feketehalmy_czeydner"
 			}
 		}
-		field_marshal={
-			skill=2
-			attack_skill=2
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=-1
-		}
+		# field_marshal={
+		# 	skill=2
+		# 	attack_skill=2
+		# 	defense_skill=1
+		# 	planning_skill=2
+		# 	logistics_skill=2
+		# 	legacy_id=-1
+		# }
 	}
 
 
@@ -457,29 +457,6 @@ characters={
 		}
 	}
 
-	HUN_jeno_ratz={
-		name=HUN_jeno_ratz
-		portraits={
-			army={
-				small="GFX_idea_HUN_jeno_ratz"
-			}
-		}
-		advisor={
-			slot = high_command
-			idea_token = HUN_jeno_ratz
-			ledger = air
-			allowed = {
-				original_tag = HUN
-			}
-			traits = {
-				air_air_combat_training_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
 
 	HUN_henrik_werth={
 		name=HUN_henrik_werth

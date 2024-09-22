@@ -6,9 +6,9 @@ state={
 	
 	state_category = pastoral
 
-	history={
+history={ 
 		owner = HOL
-		add_core_of = TUR
+		add_core_of = SWE
 		buildings = {
 			infrastructure = 2
 			1574 = {

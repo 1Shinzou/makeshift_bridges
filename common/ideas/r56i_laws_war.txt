@@ -1,0 +1,123 @@
+#####---------------------------------------------------------------------> Mod by Sig "GreatExperiment" Altre
+
+ideas = {
+
+	r56i_laws_war = { 
+
+		use_list_view = yes
+		
+		law = yes
+		
+		#Lessons of History
+		r56i_laws_war_historical = {
+
+			cost = 125
+
+			available = {
+				has_game_rule = {
+					rule = lastorical_national_ideas
+					option = on
+				}
+				
+			}
+			
+			modifier = {
+				attrition = -0.05
+               	dig_in_speed_factor = 0.05
+				#justify_war_goal_time = 0.25
+				political_power_cost = 0.05
+			}
+			
+			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		#Ideological Struggle
+		r56i_laws_war_ideological = {
+
+			cost = 125
+
+			available = {
+				has_game_rule = {
+					rule = lastorical_national_ideas
+					option = on
+				}
+				
+				
+			}
+			
+			modifier = {
+				conscription = 0.005
+				mobilization_speed = 0.25
+				#justify_war_goal_time = -0.25
+				political_power_cost = 0.05
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		#Brinksmanship
+		r56i_laws_war_brinkmanship = {
+
+			cost = 125
+
+			available = {
+				has_game_rule = {
+					rule = lastorical_national_ideas
+					option = on
+				}
+				
+			}
+			
+			modifier = {
+				army_speed_factor = 0.05
+				#generate_wargoal_tension = -0.25
+				#justify_war_goal_time = -0.25
+				political_power_cost = 0.05
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		#Diplomatic Efforts
+		r56i_laws_war_diplomacy = {
+
+			available = {
+				has_game_rule = {
+					rule = lastorical_national_ideas
+					option = on
+				}
+				
+			
+			}
+			
+			cost = 125
+
+			modifier = {
+				army_org_factor = 0.03
+				#lend_lease_tension = -0.25
+				#send_volunteers_tension = -0.25
+				political_power_cost = 0.05
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+}
+
+#####---------------------------------------------------------------------> End

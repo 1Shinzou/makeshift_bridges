@@ -1,0 +1,97 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+LIB_monrovia_tank_plant_organization = {
+    include = generic_infantry_tank_organization
+    icon = GFX_idea_lib_monrovia_tank_plant
+    allowed = { 
+        original_tag = LIB
+    }
+}
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+LIB_freeport_of_monrovia_organisation = {
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_lib_freeport_of_monrovia
+	allowed = {
+		original_tag = LIB
+	}
+}
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+LIB_liberian_national_airways_organization = {
+	include = generic_general_aircraft_organization
+	icon = GFX_idea_lib_liberian_national_airways
+	allowed = {
+		original_tag = LIB
+	}
+	trait = {
+        token = LIB_mio_trait_militarize_the_aviation_indsutry
+        name = ICE_mio_trait_militarize_the_aviation_indsutry
+        icon = GFX_generic_mio_department_icon_facilities
+        special_trait_background = yes
+		any_parent = { generic_mio_trait_conservative_designs }
+
+        position = { x=0 y=1 }
+		
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.15
+		}
+		
+		production_bonus = {
+			production_efficiency_gain_factor = 0.1
+		}
+    }
+}
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+LIB_state_small_arms_factory_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_lib_state_small_arms_factory
+	allowed = {
+		original_tag = LIB
+	}
+}
+
+LIB_monrovia_artillery_factory_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_lib_monrovia_artillery_factory
+	allowed = {
+		original_tag = LIB
+	}
+}

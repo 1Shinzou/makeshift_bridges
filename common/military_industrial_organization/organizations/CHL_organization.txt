@@ -1,0 +1,171 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+CHL_famae_armor_organization = {
+	name = CHL_famae_organization
+    include = generic_infantry_tank_organization
+    icon = GFX_idea_chl_famae_armor
+    allowed = { 
+        tag = CHL
+    }
+}
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+CHL_asmar_organization = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_chl_asmar
+	allowed = {	
+		tag = CHL
+	}
+	trait = {
+		token = CHL_mio_trait_new_naval_arms_race
+		name = generic_mio_trait_new_naval_arms_race
+		icon = GFX_generic_mio_department_icon_ship_capital_ship_production
+		
+		available = {
+			FROM ={
+				NOT = {
+					has_idea = SMB_MTG_naval_arms_race_legacy
+				}
+				NOT = {
+					has_country_flag = naval_arms_race_mio_flag
+				}
+			}
+		}
+
+		position = { x=3 y=0 }
+		
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.15
+		}
+		production_bonus = {
+			production_capacity_factor = 0.1
+		}
+		on_complete = {
+			custom_effect_tooltip = mio_naval_arms_race_tt
+			FROM = {
+				set_country_flag = naval_arms_race_mio_flag
+			}
+		}
+	}
+}
+
+CHL_csav_organization = {
+	include = generic_refurbishment_repair_organization
+	icon = GFX_idea_CHL_csav
+	allowed = {	
+		has_dlc = "Trial of Allegiance"
+		tag = CHL 
+	}
+	trait = {
+		token = CHL_mio_trait_new_naval_arms_race
+		name = generic_mio_trait_new_naval_arms_race
+		icon = GFX_generic_mio_department_icon_ship_capital_ship_production
+		
+		available = {
+			FROM ={
+				NOT = {
+					has_idea = SMB_MTG_naval_arms_race_legacy
+				}
+				NOT = {
+					has_country_flag = naval_arms_race_mio_flag
+				}
+			}
+		}
+
+		position = { x=3 y=0 }
+		
+		organization_modifier = {
+			military_industrial_organization_funds_gain = 0.15
+		}
+		production_bonus = {
+			production_capacity_factor = 0.1
+		}
+		on_complete = {
+			custom_effect_tooltip = mio_naval_arms_race_tt
+			FROM = {
+				set_country_flag = naval_arms_race_mio_flag
+			}
+		}
+	}
+}
+
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+CHL_enaer_organization = {
+	include = generic_general_aircraft_organization
+	icon = GFX_idea_chl_enaer
+	allowed = {	
+		tag = CHL
+	}
+}
+
+CHL_fanaero_chile_organization = {
+	include = generic_range_focused_aircraft_organization
+	icon = GFX_idea_CHL_fanaero
+	allowed = {	
+		has_dlc = "Trial of Allegiance"
+		tag = CHL 
+	}
+}
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+CHL_famae_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_chl_famae
+	allowed = {	
+		tag = CHL
+	}
+}
+
+CHL_famae_artillery_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_chl_famae_artillery
+	allowed = {	
+		tag = CHL
+	}
+}
+
+CHL_willys_famae_corvo_organization = {
+ 	include = generic_motorized_mechanized_organization
+ 	icon = GFX_idea_CHL_corvo
+ 	allowed = {
+ 		has_dlc = "Trial of Allegiance"
+ 		tag = CHL
+ 	}
+}

@@ -1074,25 +1074,7 @@ country_event = {
 	picture = GFX_report_event_generic_rally_3
 	
 	is_triggered_only = yes
-
-	option = { #challenge
-		name = DOD_hungary.40.a
-		ai_chance = {
-			factor = 50
-			modifier = {
-				is_historical_focus_on = yes
-				factor = 0
-			}
-			modifier = {
-				has_war = yes
-				factor = 0.1
-			}
-		}
-		add_stability = -0.05
-		add_war_support = -0.1
-		HUN = { country_event = { id = DOD_hungary.41 } } #option for HUN to back down
-		
-	}
+	
 	option = { #Fold
 		name = DOD_hungary.40.b
 		ai_chance = {
@@ -4917,18 +4899,6 @@ country_event = {
 			country_event = { id = DOD_hungary.142 days = 3 }
 		}
 	}
-
-	option = {# refuse
-		name = DOD_hungary.140.b
-		ai_chance = {
-			factor = 25
-			modifier = {
-				is_historical_focus_on = yes
-				factor = 0
-			}
-		}
-		HUN = { country_event = { id = DOD_hungary.144 days = 3 } }
-	}
 }
 
 #Bled Agreement - ROM/FRA has agreed, minors get to issue a response
@@ -4939,41 +4909,6 @@ country_event = {
 	picture = GFX_report_event_journalists_speech
 	
 	is_triggered_only = yes
-
-	option = {# intervene
-		name = DOD_hungary.141.a
-		trigger = {
-			HUN = {
-				OR = {
-					has_government = fascism
-					has_added_tension_amount > 0.05 #hungary has been bad
-				}
-			}
-		}
-		ai_chance = {
-			factor = 10
-			modifier = {
-				is_historical_focus_on = yes
-				factor = 0
-			}
-		}
-		create_wargoal = {
-			type = puppet_wargoal_focus
-			target = HUN
-		}
-		add_political_power = -200
-		add_stability = -0.15
-		add_war_support = -0.1
-		add_threat = 5
-	}
-	option = {# issue a protest
-		name = DOD_hungary.141.b
-		ai_chance = {
-			factor = 45
-		}
-		add_opinion_modifier = { target = HUN modifier = protest_action }
-		HUN = { country_event = DOD_hungary.143 }
-	}
 
 	option = {# accept it
 		name = DOD_hungary.141.c

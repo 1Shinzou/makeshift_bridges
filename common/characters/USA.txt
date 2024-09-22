@@ -223,27 +223,19 @@ characters={
 				small="GFX_idea_dwight_eisenhower"
 			}
 		}
-		advisor = {
+		advisor={
 			slot = army_chief
 			idea_token = dwight_eisenhower
 			allowed = {
-				OR = {
 					original_tag = USA
-					is_literally_china = yes
 				}
-			}
-			available = {
-				NOT = {
-					has_country_flag = dwight_d_eisenhower_sent_to_china
+				traits = {
+					army_chief_offensive_2
 				}
-			}
-			traits = {
-				army_chief_offensive_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
 		}
 		
 		field_marshal={
@@ -346,19 +338,13 @@ characters={
 			slot = army_chief
 			idea_token = douglas_macarthur
 			allowed = {
-				OR = {
-					is_literally_china = yes
-					original_tag = USA
-				}
+				original_tag = USA
 			}
 			available = {
 				NOT = {
-					OR = {
-						has_country_flag = douglas_macarthur_sent_to_china
-						has_country_leader = {
-							ruling_only = yes
-							character = USA_douglas_macarthur
-						}
+					has_country_leader = {
+						ruling_only = yes
+						character = USA_douglas_macarthur
 					}
 				}
 			}
@@ -662,10 +648,7 @@ characters={
 			idea_token = joseph_stilwell
 			ledger = army
 			allowed = {
-				OR = {
-					is_literally_china = yes
-					original_tag = USA
-				}
+				original_tag = USA
 			}
 			available = {
 				NOT = {

@@ -8,7 +8,7 @@ RAJ_population_decisions = {
 		
 		visible = { 
 			ROOT = { 
-				has_completed_focus = RAJ_administrative_oversight
+				has_completed_focus = RAJ_industrial_society
 				check_variable = { RAJ_agrarian_society_value < 0 } 
 			} 
 			FROM = {
@@ -29,7 +29,7 @@ RAJ_population_decisions = {
 				is_owned_by = ROOT
 				is_controlled_by = ROOT
 				NOT = {
-					state = 439
+					state = 432
 					state = 430
 					state = 431
 					state = 441
@@ -40,9 +40,9 @@ RAJ_population_decisions = {
 			}
 		}
 		
-		cost = 75
+		cost = 50
 		fire_only_once = no
-		days_remove = 90
+		days_remove = 60
 		ai_will_do = {
 			base = 0
 			modifier = {
@@ -56,7 +56,7 @@ RAJ_population_decisions = {
 			}
 		}
 		complete_effect = {
-			ROOT = { add_stability = -0.03 }
+			ROOT = { add_stability = -0.02 }
 		}
 		remove_effect = {
 			custom_effect_tooltip = RAJ_reduce_agrarian_society_value_tooltip

@@ -56,13 +56,13 @@ characters={
 		advisor={
 			
 			
-			slot = air_chief
+			slot = high_command
 			idea_token = PHI_pelagio_cruz
 			allowed = {
 					original_tag = phi
 				}
 				traits = {
-					air_chief_all_weather_2
+					army_infantry_2
 				}
 				cost = 100
 				ai_will_do = {
@@ -187,7 +187,7 @@ characters={
 					original_tag = phi
 				}
 				traits = {
-					army_chief_defensive_2
+					army_chief_offensive_3
 				}
 				cost = 100
 				ai_will_do = {
@@ -302,15 +302,15 @@ characters={
 	PHI_edwin_andrews={
 		advisor={
 			
-			
-			slot = air_chief
-			idea_token = PHI_edwin_andrews
+			slot =  air_chief
+			idea_token = political_advisor
 			allowed = {
 					original_tag = phi
 				}
-				traits = {
-					air_chief_reform_2
-				}
+			
+			traits = {
+				air_chief_reform_2
+			}
 				cost = 100
 				ai_will_do = {
 					factor = 1.000
@@ -410,6 +410,44 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_asia_1"
+			}
+		}
+	}
+	PHI_mateo_capinpin={
+		advisor={
+			slot = political_advisor
+			idea_token = PHI_mateo_capinpin
+			allowed  = {
+					original_tag  = phi 
+				}
+				traits  = {
+					head_of_intelligence 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name="Mateo Capinpin"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	PHI_manuel_diaz_rodriguez={
+		advisor={
+			slot = political_advisor
+			idea_token = PHI_manuel_diaz_rodriguez
+			allowed  = {
+					original_tag  = PHI
+				}
+				traits  = {
+					war_industrialist 
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name="Manuel Diaz Rodriguez"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_1"
 			}
 		}
 	}

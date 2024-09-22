@@ -3,27 +3,19 @@ state={
 	id=294
 	name="STATE_294"
 	manpower = 369000
-	
-	state_category = rural
-	
-	resources={
-		oil=2 # was: 2
+
+	resources = {
+		oil = 3
 	}
+	
+	state_category = wasteland
 
 	history={
-		owner = RAJ
+		owner = ENG
+		add_core_of = SWE
 		buildings = {
 			infrastructure = 1
-			arms_factory = 1
-			industrial_complex = 1 
-			10760 = {
-				naval_base = 3
-			}
 		}
-		victory_points = {
-			10760 3 
-		}
-		add_core_of = OMA
 	}
 
 	provinces={

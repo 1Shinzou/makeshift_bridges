@@ -3885,17 +3885,7 @@ BUL_internal_factions = {
 		}
 
 		available = {
-			OR = {
-				has_country_flag = BUL_zveno_destroyed_flag
-				has_country_flag = BUL_zveno_integrated_flag
-				AND = {
-					has_country_flag = BUL_fatherland_front_formed_flag
-					NOT = { has_country_flag = BUL_ff_destroyed_flag }
-				}
-				hidden_trigger = {
-					has_completed_focus = BUL_the_fatherland_front
-				}
-			}
+			always = no
 		}
 
 		activation = {

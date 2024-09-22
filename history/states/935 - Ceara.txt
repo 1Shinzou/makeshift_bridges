@@ -8,7 +8,7 @@ state = {
 
 	history = {
 
-		owner = BRA
+		owner = USA
 
 		add_core_of = BRA
 

@@ -921,7 +921,7 @@ technologies = {
 
 		field_hospital = {
 			casualty_trickleback = 0.10
-			experience_loss_factor = -0.10
+			experience_loss_factor = -0.05
 		}
 		
 		path = {
@@ -941,9 +941,7 @@ technologies = {
 			motorized_equipment
 			mio_cat_tech_all_motorized_mechanized
 		}
-		allow = {
-			always = no
-		}
+	
 		ai_will_do = {
 			factor = 1
 			
@@ -968,7 +966,7 @@ technologies = {
 
 		field_hospital = {
 			casualty_trickleback = 0.1
-			experience_loss_factor = -0.10
+			experience_loss_factor = -0.05
 		}
 		path = {
 			leads_to_tech = tech_field_hospital4
@@ -981,9 +979,7 @@ technologies = {
 			name = support_folder
 			position = { x = 8 y = @1942 }
 		}
-		allow = {
-			always = no
-		}
+	
 		categories = {
 			support_tech
 			hospital_tech
@@ -1014,7 +1010,7 @@ technologies = {
 
 		field_hospital = {
 			casualty_trickleback = 0.1
-			experience_loss_factor = -0.10
+			experience_loss_factor = -0.05
 		}
 
 		research_cost = 2.0
@@ -1030,9 +1026,7 @@ technologies = {
 			motorized_equipment
 			mio_cat_tech_all_motorized_mechanized
 		}
-		allow = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			

@@ -11,6 +11,12 @@ equipments = {
 			mechanized
 		}
 		group_by = archetype
+
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+		}
 		
 		interface_category = interface_category_land
 		

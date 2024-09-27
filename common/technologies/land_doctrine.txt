@@ -1235,10 +1235,22 @@ technologies = {
 			intergrated_support
 		}
 		
-		line_artillery = {
-			default_morale = 0.2
-			max_organisation = 2
+		artillery_brigade = {
+			combat_width = -0.2
 		}
+
+		rocket_artillery_brigade = {
+			combat_width = -0.2
+		}
+
+		mot_artillery_brigade = {
+			combat_width = -0.2
+		}
+
+		mot_rocket_artillery_brigade = {
+			combat_width = -0.2
+		}
+
 		signal_company = {
 			battalion_mult = {
 				category = category_artillery

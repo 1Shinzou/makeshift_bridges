@@ -137,7 +137,7 @@ technologies = {
 		
 		rangers_support = {
 			mountain = {
-				attack = 0.20
+				attack = 0.10
 				defence = 0.10
 				movement = 0.10
 			}

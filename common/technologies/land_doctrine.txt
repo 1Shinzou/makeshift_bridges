@@ -2752,6 +2752,8 @@ technologies = {
 		xp_unlock_cost = 100
 		max_dig_in = 5
 
+		conscription = 0.02
+
 		category_light_infantry = {
 			max_organisation = 5
 		}
@@ -2869,7 +2871,7 @@ technologies = {
 	
 	deep_operations = {
 		category_tanks = {
-			max_organisation = 2
+			max_organisation = 10
 		}
 		armored_car = {
 			max_organisation = 2
@@ -3031,7 +3033,7 @@ technologies = {
 		xp_unlock_cost = 100
 		category_tanks = {
 			max_organisation = 1
-			breakthrough = 0.10
+			breakthrough = 0.20
 		}
 		category_all_infantry = {
 			max_organisation = 5
@@ -3101,7 +3103,7 @@ technologies = {
 		}	
 
 		category_vehicle_infantry = {
-			max_organisation = 10
+			max_organisation = 15
 			default_morale = 0.1
 		}
 		armored_car_recon = {
@@ -3235,7 +3237,7 @@ technologies = {
 		military_police = {
 			battalion_mult = {
 				category = category_cavalry
-				suppression = 0.35 #Mp also has a mult
+				suppression = 0.50
 				add = yes
 			}
 		}
@@ -3374,12 +3376,14 @@ technologies = {
 	
 	human_wave_offensive = {
 
-		conscription = 0.05
+		conscription = 0.03
 		xp_research_type = army
 		xp_unlock_cost = 100
 		infantry = {
 			combat_width = -0.4
 		}
+		
+		experience_loss_factor = 0.5
 
 		land_reinforce_rate = 0.15		
 		

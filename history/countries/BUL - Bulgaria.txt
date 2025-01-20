@@ -167,6 +167,7 @@ if = { #DLC
 	106 = { set_state_flag = BUL_historical_bulgarian_claim_flag }
 	731 = { set_state_flag = BUL_historical_bulgarian_claim_flag }
 	184 = { set_state_flag = BUL_historical_bulgarian_claim_flag }
+	971 = { set_state_flag = BUL_historical_bulgarian_claim_flag }
 
 	#International Relations
 	add_opinion_modifier = { 
@@ -332,8 +333,6 @@ set_technology = { #VANILLA & DLC
 	fuel_silos = 1
 	basic_train = 1
 	tech_mountaineers = 1
-
-	mass_assault = 1
 }
 if = {
 	limit = {
@@ -461,7 +460,6 @@ if = {
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
 		mechanical_computing = 1
 		computing_machine = 1
 
@@ -474,6 +472,9 @@ if = {
 		construction2 = 1
 		dispersed_industry = 1
 		dispersed_industry2 = 1
+	}
+	complete_special_project = {
+		project = sp:sp_air_radar
 	}
 
 	if = {

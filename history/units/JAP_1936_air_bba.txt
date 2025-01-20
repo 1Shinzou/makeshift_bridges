@@ -35,7 +35,7 @@ air_wings = {
 	}
 
 	# 2 Hikodan -- Dalian
-	716 = {
+	282 = {
 		# 3 Hiko Rentai -- Kawasaki Ki-10
 		small_plane_airframe_0 = {
 			owner = "JAP" 
@@ -51,7 +51,7 @@ air_wings = {
 	}
 
 	# 3 Hikodan -- Taiwan
-	524 = {
+	282 = {
 		# 10 Hiko Rentai -- Kawasaki Ki-3
 		small_plane_cas_airframe_0 =  {
 			owner = "JAP" 
@@ -63,7 +63,7 @@ air_wings = {
 
 	### IJN Air Forces ###
 	# 1 Rengo Kokutai -- Taiwan
-	524 = {
+	282 = {
 		# Kizarazu Kokutai -- Aichi D1A2
 		cv_small_plane_cas_airframe_0 = {
 			owner = "JAP" 
@@ -79,7 +79,7 @@ air_wings = {
 	}
 
 	# 2 Rengo Kokutai -- Taiwan
-	524 = {
+	282 = {
 		# 12 Kokutai -- Nakajima A4N1
 		cv_small_plane_airframe_0 = {
 			owner = "JAP" 
@@ -92,7 +92,7 @@ air_wings = {
 	}
 
 	### Akagi CAG -- Hiroshima (while Akagi is refit)
-	529 = { 
+	282 = { 
 		cv_small_plane_airframe_0 =  {
 			owner = "JAP" 
 			amount = 10

@@ -4,7 +4,7 @@ state=
 	name="STATE_327" # Luzon
 	manpower = 3548684
 	
-	state_category = city
+	state_category = town
 	history=
 	{
 		owner = PHI

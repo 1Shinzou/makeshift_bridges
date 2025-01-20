@@ -3,10 +3,6 @@ state={
 	id=419
 	name="STATE_419"
 	manpower = 1431714
-	resources={
-		chromium=19 # was: 26
-		steel = 9
-	}
 	
 	state_category = rural
 	history={
@@ -25,7 +21,6 @@ state={
 		}
 		add_core_of = PER
 		
-		add_core_of = AZR
 	}
 
 	provinces={

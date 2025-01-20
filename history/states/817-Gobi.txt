@@ -6,10 +6,16 @@ state={
 	}
 
 	history={
-		owner = NON
-		add_core_of = NON
+		owner = WST
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			12612 1 #Sainshand
+		}
+		add_core_of = WST
 	}
-	manpower=1
+	manpower=11000
 	buildings_max_level_factor=1.000
 	state_category = wasteland
 	local_supplies=0.000

@@ -4,9 +4,6 @@ state={
 	name="STATE_417" # Hamadan
 	manpower = 796396
 	state_category = rural
-	resources={
-		chromium=50 # was: 86
-	}
 
 	history={
 		owner = PER

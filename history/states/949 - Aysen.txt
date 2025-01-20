@@ -1,14 +1,30 @@
 state = {
 	id = 949
 	name = "STATE_949" # Aysen
-	manpower = 1
+	manpower = 34347
 	
-	state_category = wasteland
+	state_category = pastoral
+
+	resources = {
+		aluminium = 1
+	}
+	resources = {
+		oil = 1
+	}
 
 	history = {
 
-		owner = NON
-		add_core_of = NON
+		owner = WST
+		add_core_of = WST
+
+		buildings = {
+			infrastructure = 1
+			#dockyard = 1
+		}
+
+		victory_points = {
+			2161 2
+		}
 		
 	}
 

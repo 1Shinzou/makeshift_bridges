@@ -94,7 +94,7 @@ adjacency_rule =
 		trade = yes
 	}
 	
-	required_provinces = { 4135 13228 }
+	required_provinces = { 4135 9945 }
 	
 	icon = 5407	
 	offset = { -31.0 0.0 -2.0 }
@@ -103,133 +103,13 @@ adjacency_rule =
 #Øresund - (Østersøen <-> Kattegat/Skagerak/Nordsøen)
 adjacency_rule =
 {
-    name = "DANISH_BELTS_STRAIT"
-
-    contested =
-    {
-        army = no
-        navy = no
-        submarine = yes
-        trade = no
-    }
-    enemy =
-    {
-        army = no
-        navy = no
-        submarine = no
-        trade = no
-    }
-    friend =
-    {
-        army = yes
-        navy = yes
-        submarine = yes
-        trade = yes
-    }
-    neutral =
-    {
-        army = yes
-        navy = yes
-        submarine = yes
-        trade = yes
-    }
-
-    required_provinces = { 316 9296 }
-
-    icon = 2455
-    offset = { -26 0 -13 }
-}
-
-#Øresund - Sweeden and Denmark
-adjacency_rule =
-{
-    name = "ORESUND_STRAIT"
-
-    contested =
-    {
-        army = no
-        navy = no
-        submarine = yes
-        trade = no
-    }
-    enemy =
-    {
-        army = no
-        navy = no
-        submarine = no
-        trade = no
-    }
-    friend =
-    {
-        army = yes
-        navy = yes
-        submarine = yes
-        trade = yes
-    }
-    neutral =
-    {
-        army = yes
-        navy = yes
-        submarine = yes
-        trade = yes
-    }
-
-    required_provinces = { 6345 6287 }
-
-    icon = 6287
-    offset = { 4 0 6 }
-}
-#Great Belt - Zealand (Sjælland) and Funen (Fyn) 
-#Little Belt - Jutland and Funen (Fyn) 
-adjacency_rule =
-{
-    name = "THE_BELTS"
-
-    contested =
-    {
-        army = no
-        navy = no
-        submarine = yes
-        trade = no
-    }
-    enemy =
-    {
-        army = no
-        navy = no
-        submarine = no
-        trade = no
-    }
-    friend =
-    {
-        army = yes
-        navy = yes
-        submarine = yes
-        trade = yes
-    }
-    neutral =
-    {
-        army = yes
-        navy = yes
-        submarine = yes
-        trade = yes
-    }
-
-    required_provinces = { 3260 3325 3277 3374 11251}
-
-    icon = 3325
-    offset = { 6 0 8 }
-}
-
-#Panama Canal
-adjacency_rule =
-{
-	name = "PANAMA_CANAL"
+	name = "DANISH_BELTS_STRAIT"
 
 	contested =
 	{
 		army = no
 		navy = no
-		submarine = no
+		submarine = yes
 		trade = no
 	}
 	enemy =
@@ -248,6 +128,41 @@ adjacency_rule =
 	}
 	neutral =
 	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 6287 3277 3325 3260 394 }
+	
+	icon = 2431
+	offset = { -2 0 -7 }
+}
+
+#Panama Canal
+adjacency_rule = {
+	name = "PANAMA_CANAL"
+
+	contested = {
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy = {
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral = {
 		army = no
 		navy = no
 		submarine = no
@@ -260,8 +175,15 @@ adjacency_rule =
 		OR = {
 			has_global_flag = PANAMA_CANAL_BLOCKED
 			has_country_flag = PANAMA_CANAL_BLOCKED_FOR_COUNTRY
+			685 = {
+				has_dynamic_modifier = {
+					modifier = panama_canal_damaged_modifier
+					scope = THIS
+				}
+			}
 		}
-		tooltip = disable_canal_tt
+		#tooltip = disable_canal_tt
+		tooltip = kiel_canal_damaged_tt
 	}
 		
 	icon = 7617
@@ -366,8 +288,7 @@ adjacency_rule =
 }
 
 #Kiel Canal
-adjacency_rule =
-{
+adjacency_rule = {
 	name = "KIEL_CANAL"
 
 	contested =
@@ -400,10 +321,21 @@ adjacency_rule =
 	}
 	
 	required_provinces = { 317 3231 3368 6257 6389 }
+
+	is_disabled = {
+		58 = {
+			has_dynamic_modifier = {
+				modifier = kiel_canal_damaged_modifier
+				scope = THIS
+			}
+		}
+		tooltip = kiel_canal_damaged_tt
+	}	
 		
 	icon = 6389
 	offset = { -9 0 2 }
 }
+
 #Strait of Hormuz
 adjacency_rule =
 {
@@ -444,34 +376,29 @@ adjacency_rule =
 	offset = { 2 0 12 }
 }
 
-#Strait of Otranto #TODO_Manu: TEST THIS OUT AND REMOVE IF NOT SATISFACTORY
-adjacency_rule =
-{
-	name = "OTRANTO_STRAIT" #TODO_Manu: Remove this loc key too if not necessary
+#Strait of Otranto 
+adjacency_rule = {
+	name = "OTRANTO_STRAIT" 
 
-	contested =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-	enemy =
-	{
+	contested = {
 		army = no
 		navy = no
 		submarine = yes
 		trade = no
 	}
-	friend =
-	{
+	enemy = {
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = yes
 		navy = yes
 		submarine = yes
@@ -482,39 +409,4 @@ adjacency_rule =
 		
 	icon = 6979
 	offset = { 9 0 6 }
-}
-#Fernando Torres Strait
-adjacency_rule={
-	name = "Fernando Torres Strait"
-	contested =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = no
-	}
-	enemy =
-	{
-		army = no
-		navy = no
-		submarine = yes
-		trade = no
-	}
-	friend =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-	neutral =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-	required_provinces = { 1644 1310 }
-	icon = 5563
-	offset = { 10 0 5 }
 }

@@ -3,7 +3,7 @@ state = {
 	name = "STATE_468" # Saint Lawrence
 	manpower = 2432754
 	
-	state_category = metropolis
+	state_category = city
 	
 	resources = {
 		aluminium = 3 # was: 4
@@ -13,6 +13,7 @@ state = {
 
 		owner = CAN
 		add_core_of = CAN
+		add_core_of = WST
 
 		buildings = {
 			infrastructure = 3 #was: 6
@@ -29,6 +30,9 @@ state = {
 		}
 		victory_points = {
 			12149 3
+		}
+		victory_points = {
+			10230 1
 		}
 
 	}

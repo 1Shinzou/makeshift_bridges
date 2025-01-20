@@ -1,21 +1,28 @@
+state = {
+	id = 461
+	name = "STATE_461"
 
-state={
-	id=461
-	name="STATE_461"
-	resources={
-		chromium=12.000 #added due to portugal setup
+	resources = {
+		chromium = 12.000 #added due to portugal setup
 	}
 
 	manpower = 3197719
 	
 	state_category = rural
 	
-	history={
+	history = {
+
 		owner = FRA
-		add_core_of = SWE
+		add_core_of = WST
+
 		victory_points = {
-			7069 10 
+			7069 10 # Casablanca
 		}
+
+		victory_points = {
+			10070 2 # Rabat
+		}
+
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -26,9 +33,9 @@ state={
 		}
 	}
 
-	provinces={
-		989 1079 1194 4084 4097 4139 7069 7100 7116 7173 10013 10023 10070 11943 11987 12042 3991 13389 13387 13385 13383 13384 13386 13382 13381 13380 13366 13376 13377 13375 13378 13379 13373
+	provinces = {
+		989 1079 1111 1194 4084 4097 4139 7069 7100 7116 7173 10013 10023 10070 11943 11987 12042 
 	}
 
-	local_supplies=0.0 
+	local_supplies = 0.0 
 }

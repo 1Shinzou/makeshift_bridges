@@ -5,10 +5,10 @@ state={
 		steel=11.000
 	}
 
-history={ 
+	history={
 		owner = CHI
 		add_core_of = CHI
-		add_core_of = CHI
+		
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1

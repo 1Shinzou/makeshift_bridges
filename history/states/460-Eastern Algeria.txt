@@ -8,12 +8,12 @@ state={
 
 	history={
 		owner = FRA
-		add_core_of = SWE
+		add_core_of = WST
 		victory_points = {
 			7081 1 
 		}
 		victory_points = {
-			9976 3 
+			12051 3 
 		}
 		buildings = {
 			infrastructure = 2
@@ -24,8 +24,7 @@ state={
 	}
 
 	provinces={
-		1058 1160 4046 7065 7081 7166 9976 10078 12051 13077
-		10059 13410 13420 13422 13428 13431 13430 11953
+		1058 1160 4046 7065 7081 7166 9976 10078 11953 12051 13077 
 	}
 
 	local_supplies=0.0 

@@ -5,6 +5,9 @@ state={
 	history={
 		owner = CHI
 		add_core_of = CHI
+		add_core_of = CHI
+		
+		add_core_of = MAN
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
@@ -17,7 +20,7 @@ state={
 
 			}
 			owner = PRC
-			controller = MEN
+			controller = MAN
 
 		}
 

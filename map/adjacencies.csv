@@ -113,8 +113,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 3401;7127;sea;6801;-1;-1;-1;-1;;Cyclades-Greece
 8435;6864;sea;7452;-1;-1;-1;-1;;Lesbos-Turkey
 6550;4112;sea;7226;-1;-1;-1;-1;;Chios-Turkey
-
-
+7003;9941;sea;7226;-1;-1;-1;-1;;Kos-Bodrum
+10007;10122;sea;7226;-1;-1;-1;-1;;Rhodes-Turkey
 9833;11829;sea;5412;-1;-1;-1;-1;;Bosphorus
 9680;6741;sea;8282;-1;-1;-1;-1;;Kerch Strait
 9859;3962;sea;5946;-1;-1;-1;-1;;Tsugaru Strait
@@ -217,60 +217,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 13312;7982;sea;2919;-1;-1;-1;-1;;South Iran
 761;13315;sea;9092;-1;-1;-1;-1;;Ontario
 13196;13314;sea;9092;-1;-1;-1;-1;;Northern Quebec
-3151;3060;impassable;-1;-1;-1;-1;-1;;Finnland Border
-3151;9150;impassable;-1;-1;-1;-1;-1;;Finnland Border
-149;9150;impassable;-1;-1;-1;-1;-1;;Finnland Border
-6070;9176;impassable;-1;-1;-1;-1;-1;;Finnland Border
-9078;9176;impassable;-1;-1;-1;-1;-1;;Finnland Border
-9078;6153;impassable;-1;-1;-1;-1;-1;;Finnland Border
-40;6153;impassable;-1;-1;-1;-1;-1;;Finnland Border
-9231;6153;impassable;-1;-1;-1;-1;-1;;Finnland Border
-2998;6153;impassable;-1;-1;-1;-1;-1;;Finnland Border
-2998;11156;impassable;-1;-1;-1;-1;-1;;Finnland Border
-2998;6210;impassable;-1;-1;-1;-1;-1;;Finnland Border
-6210;80;impassable;-1;-1;-1;-1;-1;;Finnland Border
-3185;80;impassable;-1;-1;-1;-1;-1;;Finnland Border
-7;80;impassable;-1;-1;-1;-1;-1;;Finnland Border
-7;6175;impassable;-1;-1;-1;-1;-1;;Finnland Border
-7;6098;impassable;-1;-1;-1;-1;-1;;Finnland Border
-6134;6175;impassable;-1;-1;-1;-1;-1;;Finnland Border
-3073;6175;impassable;-1;-1;-1;-1;-1;;Finnland Border
-3073;9074;impassable;-1;-1;-1;-1;-1;;Finnland Border
-6045;9074;impassable;-1;-1;-1;-1;-1;;Finnland Border
-9158;9074;impassable;-1;-1;-1;-1;-1;;Finnland Border
-9158;9198;impassable;-1;-1;-1;-1;-1;;Finnland Border
-9158;11181;impassable;-1;-1;-1;-1;-1;;Finnland Border
-197;11181;impassable;-1;-1;-1;-1;-1;;Finnland Border
-197;9123;impassable;-1;-1;-1;-1;-1;;Finnland Border
-11085;9123;impassable;-1;-1;-1;-1;-1;;Finnland Border
-11085;15;impassable;-1;-1;-1;-1;-1;;Finnland Border
-11085;74;impassable;-1;-1;-1;-1;-1;;Finnland Border
-6128;74;impassable;-1;-1;-1;-1;-1;;Finnland Border
-6183;74;impassable;-1;-1;-1;-1;-1;;Finnland Border
-6012;74;impassable;-1;-1;-1;-1;-1;;Finnland Border
-6012;9203;impassable;-1;-1;-1;-1;-1;;Finnland Border
-6012;142;impassable;-1;-1;-1;-1;-1;;Finnland Border
-9140;142;impassable;-1;-1;-1;-1;-1;;Finnland Border
-9140;6117;impassable;-1;-1;-1;-1;-1;;Finnland Border
-12359;7602;impassable;-1;-1;-1;-1;-1;;Iran Big Front
-12359;10351;impassable;-1;-1;-1;-1;-1;;Iran Big Front
-10510;10351;impassable;-1;-1;-1;-1;-1;;Iran Big Front
-12333;1521;impassable;-1;-1;-1;-1;-1;;Iran Big Front
-12333;10351;impassable;-1;-1;-1;-1;-1;;Iran Big Front
-7491;5029;impassable;-1;-1;-1;-1;-1;;Iran Big Front
-7491;1521;impassable;-1;-1;-1;-1;-1;;Iran Big Front
-7491;2000;impassable;-1;-1;-1;-1;-1;;Iran Big Front
-7560;2000;impassable;-1;-1;-1;-1;-1;;Iran Big Front
-4958;2000;impassable;-1;-1;-1;-1;-1;;Iran Big Front
-2431;2382;;-1;-1;-1;-1;-1;ORESUND_STRAIT;ORESUND
-2431;2408;;-1;-1;-1;-1;-1;THE_BELTS;TheBelts
-5838;5864;;-1;-1;-1;-1;-1;OTRANTO_STRAIT;Otranto
-13228;1048;impassable;-1;-1;-1;-1;-1;;Gibraltar
-13228;10094;impassable;-1;-1;-1;-1;-1;;Gibraltar
-4135;10094;impassable;-1;-1;-1;-1;-1;;Gibraltar
-4135;7153;impassable;-1;-1;-1;-1;-1;;Gibraltar
-1644;1310;sea;5563;-1;-1;-1;-1;;GDU Papua
-5563;5364;;-1;-1;-1;-1;-1;Fernando Torres Strait;GDU Torres
-5563;5613;;-1;-1;-1;-1;-1;Fernando Torres Strait;GDU Torres 2
+1421;10184;sea;2899;-1;-1;-1;-1;;Sulu-Mindanao
+5864;5838;;-1;-1;-1;-1;-1;OTRANTO_STRAIT;Otranto Strait
 
 -1;-1;;-1;-1;-1;-1;-1;-1 

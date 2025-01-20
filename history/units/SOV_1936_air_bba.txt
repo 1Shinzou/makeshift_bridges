@@ -3,7 +3,7 @@
 ### Air Wings
 air_wings = {
 	# LVO Aviatsya Komandovaniya -- Leningrad
-	195 = { 
+	219 = { 
 		# 15ya Istrebitel'nye Aviabrigada
 		small_plane_airframe_0 = {
 			owner = "SOV" 
@@ -37,7 +37,7 @@ air_wings = {
 	}
 
 	# BOVO Aviatsya Komandovaniya -- Minsk
-	206 = {
+	219 = {
 		# 8ya Istrebitel'nye Aviabrigada
 		small_plane_airframe_1 = {
 			owner = "SOV" 
@@ -59,7 +59,7 @@ air_wings = {
 	}
 
 	# KOVO Aviatsya Komandovaniya -- Kiev
-	202 = {
+	219 = {
 		# 17ya Istrebitel'nye Aviabrigada
 		small_plane_airframe_1 = {
 			owner = "SOV" 
@@ -81,7 +81,7 @@ air_wings = {
 	}
 
 	# Dal'nevostochniy Aviatsya Komandovaniya -- Vladivostock	
-	408 = {
+	219 = {
 		# 12ya Istrebitel'nye Aviabrigada
 		# 20ya Istrebitel'nye Aviabrigada
 		small_plane_airframe_0 = {
@@ -103,7 +103,7 @@ air_wings = {
 	}
 
 	# VVS - KBF Aviatsya Komandovaniya -- Leningrad
-	195 = {
+	219 = {
 		# 8ya VMF Aviabrigada
 		medium_plane_airframe_0 = {
 			owner = "SOV" 
@@ -112,7 +112,7 @@ air_wings = {
 		}
 	}
 	# VVS - BSF Aviatsya Komandovaniya -- Sevastopol
-	137 = {
+	219 = {
 		# 4ya VMF Aviabrigada
 		medium_plane_airframe_0 = {
 			owner = "SOV" 

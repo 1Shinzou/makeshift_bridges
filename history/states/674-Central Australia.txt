@@ -4,7 +4,7 @@ state={
 	name="STATE_674"
 	impassable = yes
 
-history={ 
+	history={
 		owner = AST
 		buildings = {
 			infrastructure = 1

@@ -1,14 +1,25 @@
 state = {
 	id = 958
 	name = "STATE_958"
-	manpower = 1
+	manpower = 602403
 	
-	state_category = wasteland
+	state_category = rural
 
 	history = {
 
-		owner = NON
-		add_core_of = NON
+		owner = WST
+		add_core_of = WST
+
+		buildings = {
+			infrastructure = 2
+
+			# Minister Pistarini Reservoir
+			5152 = { dam = 1 }
+		}
+		
+		victory_points = {
+			12942 2 # Córdoba
+		}
 
 	}
 

@@ -2,9 +2,6 @@
 state={
 	id=453
 	name="STATE_453"
-	resources={
-		oil=5
-	}
 
 	history={
 		owner = ENG
@@ -18,7 +15,7 @@ state={
 		victory_points = {
 			10099 1 
 		}
-		add_core_of = SWE
+		add_core_of = WST
 
 	}
 

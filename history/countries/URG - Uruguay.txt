@@ -75,7 +75,7 @@ IF = {
 	}
 	recruit_character = URG_gabriel_terra
 	recruit_character = URG_venancio_flores
-	recruit_character = URG_bernardo_gonzález
+	recruit_character = URG_bernardo_gonzalez
 	recruit_character = URG_juan_manuel_aguirre
 	recruit_character = URG_ernesto_sanchez_elizondo
 	recruit_character = URG_rafael_marques_ayala
@@ -176,11 +176,11 @@ set_convoys = 15
 		complete_national_focus = URG_ministry_of_public_works
 		complete_national_focus = URG_import_substitution
 		complete_national_focus = URG_rapid_industrialization
-		complete_national_focus = URG_rincon_del_bonete_dam
 		complete_national_focus = URG_la_teja_refinery
 		complete_national_focus = URG_pluna
 		complete_national_focus = URG_conaprole
 		complete_national_focus = URG_mercado_modelo
+		complete_national_focus = URG_colorado_victory
 	}
 	if = {
 		limit = { NOT = { has_dlc = "Trial of Allegiance" }}
@@ -223,7 +223,6 @@ set_convoys = 15
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
 		mechanical_computing = 1
 
 		#industry
@@ -237,6 +236,9 @@ set_convoys = 15
 		construction2 = 1
 		dispersed_industry = 1
 		dispersed_industry2 = 1
+	}
+	complete_special_project = {
+		project = sp:sp_air_radar
 	}
 }
 

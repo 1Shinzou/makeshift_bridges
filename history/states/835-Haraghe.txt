@@ -39,10 +39,9 @@ state = {
 		}
 		
 		owner = ETH
-1936.1.1.13 = { owner = ETH }
 		add_core_of = ETH
-		add_core_of = ETH
-		add_core_of = ETH
+		add_core_of = WST
+		add_core_of = WST
 
 		1936.6.1 = {
 			owner = ITA

@@ -16,7 +16,7 @@ state = {
 		buildings = {
 			infrastructure = 3
 			arms_factory = 0
-			industrial_complex = 3
+			industrial_complex = 1
 			air_base = 5
 			11773 = {
 				naval_base = 3
@@ -26,10 +26,11 @@ state = {
 			}
 		}
 		add_core_of = ITA
+		add_core_of = WST
 	}
 	provinces = {
 		902 6891 9772 9863 11755 11773 11824 11874 	
 	}
 
-	local_supplies = 4.0 
+	local_supplies = 0.0 
 }

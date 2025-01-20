@@ -3,14 +3,19 @@ state={
 	name="STATE_678"
 
 	history={
-        owner = NON
+		owner = WST
+		buildings = {
+			infrastructure = 0
+
+		}
+		add_core_of = WST
 
 	}
 
 	provinces={
 		4932 5081 8118 12740 
 	}
-	manpower=1
+	manpower=42
 	buildings_max_level_factor=1.000
 	state_category=wasteland
 	local_supplies=0.000

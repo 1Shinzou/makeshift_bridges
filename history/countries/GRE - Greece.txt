@@ -279,7 +279,6 @@ set_convoys = 10
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
 		mechanical_computing = 1
 		computing_machine = 1
 
@@ -297,6 +296,9 @@ set_convoys = 10
 		dispersed_industry = 1
 		dispersed_industry2 = 1
 		dispersed_industry3 = 1
+	}
+	complete_special_project = {
+		project = sp:sp_air_radar
 	}
 	if = {
 		limit = { not = { has_dlc = "Man the Guns" } }
@@ -371,6 +373,7 @@ if = {
 	recruit_character = GRE_dimitrios_psarros # Empty character -> Can become unit leader later
 	recruit_character = GRE_panagiotis_demestichas # Empty character -> Can become unit leader later
 	recruit_character = GRE_georgios_kosmidis
+	recruit_character = GRE_stylianos_gonatas
 }
 
 if = {

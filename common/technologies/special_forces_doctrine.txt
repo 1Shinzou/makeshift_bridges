@@ -52,7 +52,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			mountaineers_tech
+			#mountaineers_tech
 			cat_mountaineers_doctrine
 		}
 		
@@ -103,7 +103,7 @@ technologies = {
 
 		categories = {
 			special_forces_doctrine
-			mountaineers_tech
+			#mountaineers_tech
 			cat_mountaineers_doctrine
 		}
 		
@@ -137,7 +137,7 @@ technologies = {
 		
 		rangers_support = {
 			mountain = {
-				attack = 0.10
+				attack = 0.20
 				defence = 0.10
 				movement = 0.10
 			}
@@ -148,7 +148,7 @@ technologies = {
 
 		categories = {
 			special_forces_doctrine
-			mountaineers_tech
+			#mountaineers_tech
 			cat_mountaineers_doctrine
 		}
 		
@@ -194,7 +194,7 @@ technologies = {
 
 		categories = {
 			special_forces_doctrine
-			mountaineers_tech
+			#mountaineers_tech
 			cat_mountaineers_doctrine
 		}
 		
@@ -219,6 +219,9 @@ technologies = {
 		
 		force_use_small_tech_layout = yes
 		
+		category_mountaineers = {
+			defense = 0.10
+		}
 		mountaineers = {
 			combat_width = -0.2
 		}
@@ -235,7 +238,7 @@ technologies = {
 
 		categories = {
 			special_forces_doctrine
-			mountaineers_tech
+			#mountaineers_tech
 			cat_mountaineers_doctrine
 		}
 		
@@ -286,7 +289,7 @@ technologies = {
 
 		categories = {
 			special_forces_doctrine
-			mountaineers_tech
+			#mountaineers_tech
 			cat_mountaineers_doctrine
 		}
 		
@@ -330,7 +333,7 @@ technologies = {
 
 		categories = {
 			special_forces_doctrine
-			mountaineers_tech
+			#mountaineers_tech
 			cat_mountaineers_doctrine
 		}
 		
@@ -369,7 +372,7 @@ technologies = {
 
 		categories = {
 			special_forces_doctrine
-			mountaineers_tech
+			#mountaineers_tech
 			cat_mountaineers_doctrine
 		}
 		
@@ -392,7 +395,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 60
 		
-		special_forces_cap = 0.20
+		special_forces_cap = 0.06
 		special_forces_out_of_supply_factor = -0.1
 		special_forces_attack_factor = 0.10
 		acclimatization_hot_climate_gain_factor = 0.10
@@ -407,7 +410,7 @@ technologies = {
 
 		categories = {
 			special_forces_doctrine
-			mountaineers_tech
+			#mountaineers_tech
 			cat_mountaineers_doctrine
 		}
 		
@@ -474,7 +477,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			marine_tech
+			#marine_tech
 			cat_marines_doctrine
 		}
 
@@ -529,7 +532,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			marine_tech
+			#marine_tech
 			cat_marines_doctrine
 		}
 
@@ -575,7 +578,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			marine_tech
+			#marine_tech
 			cat_marines_doctrine
 		}
 
@@ -622,7 +625,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			marine_tech
+			#marine_tech
 			cat_marines_doctrine
 		}
 
@@ -655,6 +658,9 @@ technologies = {
 		
 		xor = { marines_expeditionary }
 		
+		enable_subunits = {
+			marine_commando
+		}
 		
 		on_research_complete = {
 			custom_effect_tooltip = SF_MARINES_exfiltration_effect_tt
@@ -668,7 +674,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			marine_tech
+			#marine_tech
 			cat_marines_doctrine
 		}
 
@@ -701,7 +707,7 @@ technologies = {
 		
 		xor = { marines_commandoes }
 
-		special_forces_cap = 0.10
+		special_forces_cap = 0.06
 		naval_invasion_planning_bonus_speed = 0.2
 		
 		army_bonus_air_superiority_factor = 0.10
@@ -711,7 +717,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			marine_tech
+			#marine_tech
 			cat_marines_doctrine
 		}
 
@@ -756,7 +762,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			marine_tech
+			#marine_tech
 			cat_marines_doctrine
 		}
 		
@@ -808,7 +814,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			marine_tech
+			#marine_tech
 			cat_marines_doctrine
 		}
 
@@ -859,7 +865,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			marine_tech
+			#marine_tech
 			cat_marines_doctrine
 		}
 
@@ -893,7 +899,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			marine_tech
+			#marine_tech
 			cat_marines_doctrine
 		}
 
@@ -948,7 +954,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			marine_tech
+			#marine_tech
 			cat_marines_doctrine
 		}
 
@@ -1014,7 +1020,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			para_tech
+			#para_tech
 			cat_paratroopers_doctrine
 		}
 
@@ -1063,7 +1069,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			para_tech
+			#para_tech
 			cat_paratroopers_doctrine
 		}
 		
@@ -1106,7 +1112,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			para_tech
+			#para_tech
 			cat_paratroopers_doctrine
 		}
 		
@@ -1154,7 +1160,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			para_tech
+			#para_tech
 			cat_paratroopers_doctrine
 		}
 		
@@ -1198,7 +1204,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			para_tech
+			#para_tech
 			cat_paratroopers_doctrine
 		}
 
@@ -1243,7 +1249,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			para_tech
+			#para_tech
 			cat_paratroopers_doctrine
 		}
 
@@ -1287,7 +1293,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			para_tech
+			#para_tech
 			cat_paratroopers_doctrine
 		}
 
@@ -1326,7 +1332,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			para_tech
+			#para_tech
 			cat_paratroopers_doctrine
 		}
 
@@ -1364,7 +1370,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			para_tech
+			#para_tech
 			cat_paratroopers_doctrine
 		}
 
@@ -1399,7 +1405,7 @@ technologies = {
 		
 		categories = {
 			special_forces_doctrine
-			para_tech
+			#para_tech
 			cat_paratroopers_doctrine
 		}
 

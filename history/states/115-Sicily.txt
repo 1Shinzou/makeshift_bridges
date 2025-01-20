@@ -19,15 +19,15 @@ state = {
 		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 4
+			industrial_complex = 1
 			air_base = 10
 			dockyard = 1
 			10074 = {
-				naval_base = 8
+				naval_base = 2
 
 			}
 			7059 = {
-				naval_base = 2
+				naval_base = 5
 
 			}
 			4159 = {
@@ -38,10 +38,11 @@ state = {
 				naval_base = 3
 
 			}
-		
 
 		}
 		add_core_of = ITA
+		add_core_of = WST
+
 	}
 
 	provinces = {
@@ -50,5 +51,5 @@ state = {
 	manpower = 3836571
 	buildings_max_level_factor = 1.000
 	state_category = city
-	local_supplies = 9.0
+	local_supplies = 0.000
 }

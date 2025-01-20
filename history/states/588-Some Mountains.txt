@@ -10,15 +10,20 @@ state = {
 
 	history = {
 		owner = SOV
+		add_core_of = WST
 		add_core_of = SOV
+
+		victory_points = {
+			12594 2 # Seipalatinsk
+		}
+		#victory_points = {
+		#	7350 1 # Kurchatov
+		#}
+
 		buildings = {
 			infrastructure = 2
-
 		}
-		add_core_of = SOV
-		victory_points = {
-			12594 1
-		}
+		
 	}
 
 	provinces = {

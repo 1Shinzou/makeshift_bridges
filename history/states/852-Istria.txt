@@ -20,9 +20,13 @@ state = {
 			}
 		}
 		add_core_of = ITA
+		add_core_of = YUG
+		add_core_of = WST
+		add_core_of = WST
 
-		#CONTROLLED BY ITALY AT GAME START -> ITALIAN NAMES
-		set_province_name = { id = 11564 name = VICTORY_POINTS_11564_ITA }
+		### CHANGED TO A MROE ROBUST SYSTEM
+		##CONTROLLED BY ITALY AT GAME START -> ITALIAN NAMES
+		#set_province_name = { id = 11564 name = VICTORY_POINTS_11564_ITA }
 	}
 
 	provinces = {

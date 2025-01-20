@@ -24,6 +24,7 @@ if = {
 			iw_small_airframe = 1
 			iw_medium_airframe = 1
 			early_bombs = 1
+			bba_early_transport_plane = 1
 		}
 	else = {
 		set_air_oob = "CZE_1936_air_legacy"
@@ -31,6 +32,7 @@ if = {
 			early_fighter = 1
 			early_bomber = 1
 			CAS1 = 1
+			early_transport_plane = 1
 		}
 	}
 }
@@ -74,6 +76,7 @@ recruit_character = CZE_jozef_tiso
 recruit_character = CZE_vojtech_tuka
 recruit_character = CZE_konrad_henlein
 recruit_character = CZE_gustav_husak
+recruit_character = CZE_albrecht_franz
 
 
 if = {
@@ -95,6 +98,13 @@ if = {
 		basic_light_tank_chassis = 1
 		improved_light_tank_chassis = 1
 	}
+}
+
+IF = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	CZE_create_paul_thummel_operative = yes
 }
 
 set_research_slots = 3
@@ -121,8 +131,7 @@ if = {
 		CZE_skoda_works
 		CZE_divided_nation
 }
-	# #give_guarantee = YUG
-	# #give_guarantee = ROM
+	give_guarantee = ROM
 }
 
 if = {

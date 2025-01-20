@@ -164,7 +164,6 @@ set_country_flag = monroe_doctrine
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
 		mechanical_computing = 1
 		computing_machine = 1
 
@@ -178,6 +177,10 @@ set_country_flag = monroe_doctrine
 		dispersed_industry = 1
 		dispersed_industry2 = 1
 
+	}
+
+	complete_special_project = {
+		project = sp:sp_air_radar
 	}
 
 	set_politics = {

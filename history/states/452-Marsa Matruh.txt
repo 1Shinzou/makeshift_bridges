@@ -10,12 +10,11 @@ state={
 		owner = ENG
 		buildings = {
 			infrastructure = 2
-			air_base = 1
-			10061 = {
-				naval_base = 3
-			}
-			9989 = {
+		9989 = {
 				naval_base = 1
+			}
+		10061 = {
+				naval_base = 3
 			}
 		}
 
@@ -27,13 +26,11 @@ state={
 			9989 1 #Sidi Barrani
 		}
 
-
-		add_core_of = SWE
+		add_core_of = WST
 	}
 
 	provinces={
-		1143 7079 7148 9989 10061 10869 11910 11967 5078 12033 12091 12764
-		13472 13470 13467 13469 13471    
+		7079 9989 10061 11910 11967 5078 12033 12091 7148 12764 4913 8028 2068 7943 1143
 	}
 
 

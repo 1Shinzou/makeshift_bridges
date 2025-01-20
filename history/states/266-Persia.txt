@@ -3,9 +3,6 @@ state={
 	id=266
 	name="STATE_266" # Tehran
 	manpower = 3446250
-	resources={
-		chromium=25 # was: 32
-	}
 	
 	state_category = town
 

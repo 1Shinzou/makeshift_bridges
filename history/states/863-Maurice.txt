@@ -5,12 +5,19 @@ state = {
 	state_category = pastoral
 	
 	history = {
+	
 		owner = CAN
 		add_core_of = CAN
+		add_core_of = WST
+
+		victory_points = {
+			12223 1
+		}
 
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 		}
+
 	}
 	
 	provinces = {

@@ -1,6 +1,7 @@
-﻿capital = 110
+﻿capital = 110 # Oslo
 
 oob = "NOR_1936"
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "NOR_1936_naval_mtg"
@@ -16,10 +17,10 @@ if = {
 		set_technology = {
 			early_fighter = 1
 			early_bomber = 1
-
 		}
 	}
 }
+
 #Country Leaders 
 recruit_character = NOR_johan_nygaardsvold
 recruit_character = NOR_vidkun_quisling
@@ -77,6 +78,12 @@ if = {
 	recruit_character = NOR_oscar_torp
 	recruit_character = NOR_hans_ystgaard 
 	recruit_character = NOR_birger_eriksen
+	recruit_character = NOR_edvard_christian_danielsen
+	recruit_character = NOR_rolf_fuglesang
+	recruit_character = NOR_eivind_blehr
+	recruit_character = NOR_eivind_heiberg
+	recruit_character = NOR_christopher_hornsrud
+	recruit_character = NOR_kirsten_hansteen
 	random_list = {
 		1 = { # this campaign has been blessed by Bamse 
 			set_country_flag = NOR_bamse_activated	
@@ -106,8 +113,6 @@ set_technology = {
 	tech_engineers = 1
 	tech_recon = 1
 	basic_train = 1
-	concentrated_industry = 1
-	concentrated_industry2 = 1
 }
 set_convoys = 350		# 4th biggest merchant marine in the world
 if = {
@@ -171,6 +176,7 @@ if = {
 
 	add_political_power = 1198
 	add_command_power = 100
+
 	if = {
 		limit = {
 			has_aat = yes 
@@ -196,6 +202,10 @@ if = {
 		complete_national_focus = NOR_start_rearmament
 		complete_national_focus = NOR_drobak_coastal_fort
 		complete_national_focus = NOR_kickstart_military_industry
+
+		add_ideas = {
+			NOR_aat_norsk_hydro
+		}
 	}
 	if = {
 		limit = {
@@ -214,7 +224,7 @@ if = {
 		complete_national_focus = NOR_norges_tekniske_hogskole
 	}
 	
-	oob = "NOR_1939"
+	set_oob = "NOR_1939"
 	if = {
 		limit = { has_dlc = "Man the Guns" }
 			set_naval_oob = "NOR_1939_naval_mtg"
@@ -247,7 +257,6 @@ if = {
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
 		mechanical_computing = 1
 		computing_machine = 1
 
@@ -264,6 +273,9 @@ if = {
 		construction3 = 1
 		dispersed_industry = 1
 		dispersed_industry2 = 1
+	}
+	complete_special_project = {
+		project = sp:sp_air_radar
 	}
 	if = {
 		limit = { not = { has_dlc = "Man the Guns" } }
@@ -396,3 +408,29 @@ if = {
 	}
 }
 
+# 1939 Start #
+1939.1.1 = {
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		# Ship variants #
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		# Destroyers #
+		create_equipment_variant = {
+			name = "Sleipner & Odin Class"							
+			type = ship_hull_light_1
+			name_group = NOR_DD_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery_1
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = light_ship_engine_1
+				fixed_ship_torpedo_slot = ship_torpedo_1
+				mid_1_custom_slot = ship_mine_layer_1
+				rear_1_custom_slot = ship_depth_charge_1
+			}
+		}
+}

@@ -6,10 +6,10 @@ state={
 	
 	state_category = town
 
-history={ 
-		owner = MAN
+	history={
+		owner = JAP
 		add_core_of = CHI
-		add_core_of = MAN
+		
 		buildings = {
 			infrastructure = 3 #was: 5
 			arms_factory = 1

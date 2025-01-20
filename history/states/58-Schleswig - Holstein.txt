@@ -5,23 +5,30 @@ state = {
 	state_category = large_city
 	
 	history = {
-		victory_points = {
-			6389 10 
-		}
-		victory_points = {
-			9347 20
-		}
+
 		owner = GER
+		add_core_of = GER
+		add_core_of = WST
+		add_core_of = WST
+
+		victory_points = {
+			6389 10 # Kiel
+		}
+		
+		victory_points = {
+			9347 20 # Hamburg
+		}
+
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1
 			dockyard = 6
 			air_base = 5
 			6389 = {
-				naval_base = 8
+				naval_base = 8	
 			}
 		}
-		add_core_of = GER
+		
 		1939.1.1 = {
 			buildings = {
 				synthetic_refinery = 3
@@ -33,7 +40,7 @@ state = {
 	}
 
 	provinces = {
-		 3368 6257 6389 9320 9347 11331 
+		3368 6257 6389 9320 9347 11331 
  	}
 
 	local_supplies = 0.0 

@@ -5,7 +5,7 @@ state={
 	
 	state_category = rural
 
-history={ 
+	history={
 		victory_points = {
 			1910 1
 		}
@@ -13,7 +13,7 @@ history={
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = RAJ
+		add_core_of = WST
 		add_core_of = RAJ
 
 	}

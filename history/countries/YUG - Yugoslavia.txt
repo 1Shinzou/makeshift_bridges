@@ -64,6 +64,8 @@ recruit_character = YUG_ivan_ribar
 recruit_character = YUG_dimitrije_ljotic
 recruit_character = YUG_ivo_lola_ribar
 recruit_character = YUG_peter_ii
+recruit_character = SOV_vasily_flug
+recruit_character = SOV_boris_shteifon
 
 
 if = {
@@ -175,25 +177,26 @@ if = {
 	add_ideas = {
 		limited_conscription
 	}
+
 	if = {
-	limit = {
-		has_dlc = "Death or Dishonor"
-	}
-	add_ideas = {
-		YUG_idea_foreign_capital
-		YUG_idea_expanded_mining_industry
-		YUG_license_production
-		YUG_idea_orthodox_church_support
-	}
-}
+		limit = {
+			has_dlc = "Death or Dishonor"
+		}
+		add_ideas = {
+			YUG_idea_foreign_capital
+			YUG_idea_expanded_mining_industry
+			YUG_license_production
+			YUG_idea_orthodox_church_support
+		}
+	}	
 
 	add_political_power = 1198
 	add_command_power = 100
 	
 	if = {
-	limit = {
-		has_dlc = "Death or Dishonor"
-	}
+		limit = {
+			has_dlc = "Death or Dishonor"
+		}
 		complete_national_focus = YUG_western_focus
 		complete_national_focus = YUG_industrialization_program
 		complete_national_focus = YUG_friendship_treaty_with_italy
@@ -207,29 +210,30 @@ if = {
 		complete_national_focus = YUG_purchase_foreign
 		complete_national_focus = YUG_license_production 
 		complete_national_focus = YUG_fighter_license 
-		complete_national_focus = YUG_rare_minerals_exploitation
 		complete_national_focus = YUG_establish_the_banovina_of_croatia
 		complete_national_focus = YUG_ban_slovene_nationalist_parties
 		complete_national_focus = YUG_concessions_for_macedonians
 		complete_national_focus = YUG_small_arms 
 		complete_national_focus = YUG_domestic_artillery_production
 		complete_national_focus = YUG_expand_the_serbian_shipyards
+
+		unlock_national_focus = YUG_rare_minerals_exploitation
 	}
 	
 	if = {
-	limit = {
-		NOT = { has_dlc = "Death or Dishonor" }
-	}
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
+		limit = {
+			NOT = { has_dlc = "Death or Dishonor" }
+		}
+		#generic focuses
+		complete_national_focus = army_effort
+		complete_national_focus = equipment_effort
+		complete_national_focus = motorization_effort
+		complete_national_focus = aviation_effort
+		complete_national_focus = naval_effort
+		complete_national_focus = flexible_navy
+		complete_national_focus = industrial_effort
+		complete_national_focus = construction_effort
+		complete_national_focus = production_effort
 	}
 	if = {
 		limit = { NOT = { has_dlc = "No Step Back" } }
@@ -279,7 +283,6 @@ if = {
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
 		mechanical_computing = 1
 		computing_machine = 1
 
@@ -291,6 +294,9 @@ if = {
 		oil_processing = 1
 		construction1 = 1
 		concentrated_industry = 1
+	}
+	complete_special_project = {
+		project = sp:sp_air_radar
 	}
 	if = {
 		limit = { not = { has_dlc = "Man the Guns" } }
@@ -307,6 +313,7 @@ if = {
 }
 
 set_convoys = 10
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1935.5.3"
@@ -334,6 +341,7 @@ set_popularities = {
 		neutrality = 60
 	}
 }
+
 set_stability = 0.6
 
 ### VARIANTS ###

@@ -5,15 +5,21 @@ state = {
 	state_category = rural
 	
 	history = {
-		victory_points = {
-			317 3 
-		}
+
 		owner = GER
+		add_core_of = GER
+		add_core_of = WST
+		add_core_of = WST
+
+		victory_points = {
+			317 3  # Flensburg
+		}
+
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1
 		}
-		add_core_of = GER
+		
 	}
 
 	provinces = {

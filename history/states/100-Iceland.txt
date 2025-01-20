@@ -12,15 +12,13 @@ state = {
 		buildings = {
 			infrastructure = 1
 			dockyard = 1
-			air_base = 10
-			radar_station = 5
 			12674 = {
 				naval_base = 1
 			}
 			industrial_complex = 1
 		}
 		# add_core_of = DEN
-		add_core_of = ENG
+		add_core_of = WST
 	}
 	provinces = {
 		4861 12674 12689 13266 13267 13268 13271

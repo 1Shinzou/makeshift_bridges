@@ -2,12 +2,24 @@
 state={
 	id=296
 	name="STATE_296" # Guinea-Bissau
-	manpower = 1
+	manpower = 364900
 	
-	state_category = wasteland
+	state_category = enclave
+	resources={
+		rubber=1 # was: 1
+	}
 	history={
-		owner = NON
-		add_core_of = NON
+		owner =TUM
+		add_core_of = TUM
+		victory_points = {
+			12891 1
+		}
+		buildings = {
+			infrastructure = 1
+			12891 ={
+				naval_base = 1
+			}
+		}
 	}
 
 	provinces={

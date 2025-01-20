@@ -5,10 +5,11 @@ state={
 		2057 4974 8101 10815 10901 
 	}
 	history = {
-		owner = NON
+		owner = WST
+		add_core_of = WST
 	}
-	manpower=1
-	state_category= wasteland
+	manpower=5000
+	state_category=pastoral
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

@@ -7,6 +7,13 @@ set_technology = {
 
 set_convoys = 0
 
+IF = {
+	limit = {
+		has_dlc = "Gotterdammerung"
+	}
+	recruit_character = BRD_mwambutsa_iv
+}
+
 recruit_character = BRD_communist_guy
 recruit_character = BRD_aa2
 recruit_character = BRD_ar
@@ -59,7 +66,6 @@ recruit_character = BRD_stc
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
 		mechanical_computing = 1
 		computing_machine = 1
 
@@ -73,19 +79,22 @@ recruit_character = BRD_stc
 		dispersed_industry = 1
 		dispersed_industry2 = 1
 	}
+	complete_special_project = {
+		project = sp:sp_air_radar
+	}
 }
 
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-	democratic = 55
+	democratic = 25
 	fascism = 15
 	communism = 5
-	neutrality = 25
+	neutrality = 55
 }

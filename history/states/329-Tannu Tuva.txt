@@ -2,12 +2,25 @@
 state={
 	id=329
 	name="STATE_329"
-	manpower = 12839
+	manpower = 85000
+	resources={
+		chromium=2 # was: 2
+	}
 	
-	state_category = wasteland
+	state_category = rural
 
 	history={
 		owner = SOV
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		victory_points = {
+			10627 3
+		}
+		add_core_of = SOV
+		add_core_of = SOV
 	}
 
 	provinces={

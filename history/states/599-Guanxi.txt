@@ -9,11 +9,11 @@ state= {
 		chromium = 3 # was: 4
 	}
 
-history={ 
+	history= {
 		owner = CHI
 		add_core_of = CHI
-		add_core_of = GXC
-		add_core_of = GXC
+		add_core_of = CHI
+		
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2

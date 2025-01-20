@@ -2,10 +2,11 @@ state={
 	id=714
 	name="STATE_714"
 
-history={ 
+	history={
 		owner = MAN
 		add_core_of = CHI
 		add_core_of = MAN
+		
 		buildings = {
 			infrastructure = 2
 

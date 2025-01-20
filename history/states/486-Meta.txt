@@ -2,13 +2,16 @@
 state={
 	id=486
 	name="STATE_486"
-	manpower = 1
+	manpower = 213160
 	
-	state_category = wasteland
+	state_category = pastoral
 
 	history={
-		owner = NON
-		add_core_of = NON
+		owner = WST
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = WST
 	}
 
 	provinces={

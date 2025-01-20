@@ -17,6 +17,7 @@ state={
 				naval_base = 3
 			}
 		}
+		add_core_of = WST
 		add_core_of = FRA
 	}
 
@@ -24,5 +25,5 @@ state={
 		3838 9851 11804 
 	}
 
-	local_supplies=3.0 
+	local_supplies=0.0 
 }

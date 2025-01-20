@@ -23,6 +23,10 @@ units = {
 			ship = { name = "NRB Sergipe" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BRA version_name = "Para Class"} } }
 			ship = { name = "NRB Santa Catharina" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BRA version_name = "Para Class"} } }
 			ship = { name = "NRB Mato Grosso" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = BRA version_name = "Para Class"} } }
+		}				
+		task_force = {				
+			name = "Flotilha de Submarinos"			
+			location = 10980 # Rio de Janiero
 			ship = { name = "NRB Humaytá" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = BRA version_name = "Humaytá Class"} } }
 		}				
 	}

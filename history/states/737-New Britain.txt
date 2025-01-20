@@ -2,8 +2,8 @@ state={
 	id=737
 	name="STATE_737"
 
-history={ 
-		add_core_of = SWE
+	history={
+		add_core_of = WST
 		owner = AST
 		buildings = {
 			infrastructure = 1

@@ -8,13 +8,15 @@ state={
 	impassable = yes
 
 	history={
-		owner = NON
+		
+		
+
+	
 
 	}
 
 	provinces={
-		2064 7216 10907 12099 12816 
-		12733  10127 13474 13473 13468 13463 13466 13461
+		10814
 	}
 
 	local_supplies=0.0 

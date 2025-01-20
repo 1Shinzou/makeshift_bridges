@@ -1,6 +1,7 @@
-﻿capital = 41
+﻿capital = 41 # Madrid
 
 oob = "SPR_1936"
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "SPR_1936_naval_mtg"
@@ -57,6 +58,8 @@ if = {
 	recruit_character = SPR_diego_martinez_barrio
 	recruit_character = SPR_augusto_barcia_trelles
 	recruit_character = SPR_francisco_largo_caballero
+	recruit_character = SPA_karl_pius_von_habsburg
+	recruit_character = SPR_manuel_azana
 
 	set_popularities = {
 		democratic = 47
@@ -70,6 +73,15 @@ if = {
 		has_dlc = "Battle for the Bosporus"
 	}
 	set_technology = { camelry = 1 }
+}
+
+IF = {
+	limit = {
+		has_dlc = "Gotterdammerung"
+	}
+	complete_special_project = {
+		project = sp:sp_air_helicopter
+	}
 }
 
 if = {
@@ -231,6 +243,8 @@ if = {
 	recruit_character = SPA_luis_hernando_de_larramendi
 	recruit_character = SPA_martin_de_riquer
 	recruit_character = SPA_mauricio_de_sivatte
+	recruit_character = SPA_karl_pius_von_habsburg
+	recruit_character = SPR_manuel_azana
 	165 = {
 		add_dynamic_modifier = { modifier = autonomous_state }
 	}
@@ -262,11 +276,6 @@ set_technology = {
 	gw_artillery = 1
 	interwar_antiair = 1
 	basic_train = 1
-	tech_trucks = 1
-	motorised_infantry = 1
-	gwtank_chassis = 1
-	basic_light_tank_chassis = 1
-	basic_heavy_tank_chassis = 1
 }
 if = {
 	limit = {
@@ -442,8 +451,6 @@ set_stability = 0.5
 		infantry_weapons2 = 1
 		support_weapons = 1
 		support_weapons2 = 1
-		tech_trucks = 1
-		motorised_infantry = 1
 
 		#doctrines
 		air_superiority = 1
@@ -456,7 +463,6 @@ set_stability = 0.5
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
 		mechanical_computing = 1
 		computing_machine = 1
 
@@ -475,14 +481,16 @@ set_stability = 0.5
 		dispersed_industry2 = 1
 		dispersed_industry3 = 1
 	}
+	complete_special_project = {
+		project = sp:sp_air_radar
+	}
 	if = {
 	limit = {
 		NOT = { has_dlc = "No Step Back" }
 	}
 	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-		basic_heavy_tank_chassis = 1
+		gwtank = 1
+		basic_light_tank = 1
 	}
 }
 if = {
@@ -492,7 +500,6 @@ if = {
 	set_technology = {
 		gwtank_chassis = 1
 		basic_light_tank_chassis = 1
-		basic_heavy_tank_chassis = 1
 	}
 }
 	if = {
@@ -504,7 +511,6 @@ if = {
 		limit = { has_dlc = "Man the Guns" }
 		set_technology = {
 			basic_light_battery = 1
-			transport = 1
 		}
 	}
 

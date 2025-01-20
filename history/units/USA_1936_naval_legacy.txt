@@ -26,7 +26,11 @@ units= {
 			### Battleship Division 4 ###			
 			ship = { name = "USS Colorado" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Colorado Class" } } }				
 			ship = { name = "USS West Virginia" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Colorado Class" } } }				
-			ship = { name = "USS Maryland" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Colorado Class" } } }	
+			ship = { name = "USS Maryland" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Colorado Class" } } }				
+		}				
+		task_force = {					
+			name = "Carrier Division, Battle Force"		
+			location = 1562 # San Diego
 			ship = { name = "USS Ranger" definition = carrier equipment = { carrier_2 = { amount = 1 owner = USA } } 
 				
 			}
@@ -35,7 +39,12 @@ units= {
 			}
 			ship = { name = "USS Saratoga" definition = carrier equipment = { carrier_1 = { amount = 1 owner = USA } } 
 				
-			}		
+			}
+		}					
+		task_force = {					
+			name = "Cruisers, Battle Force"
+			location = 9814 # Los Angeles
+			# Cruiser Division 2 #			
 			ship = { name = "USS Omaha" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = USA } } }				
 			ship = { name = "USS Milwaukee" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = USA } } }				
 			ship = { name = "USS Cincinnati" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = USA } } }				
@@ -43,9 +52,19 @@ units= {
 			ship = { name = "USS New Orleans" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA version_name = "Portland Class" } } }				
 			ship = { name = "USS Astoria" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA version_name = "Portland Class" } } }				
 			ship = { name = "USS Minneapolis" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA version_name = "Portland Class" } } }				
-			ship = { name = "USS Indianapolis" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA version_name = "Portland Class" } } }		
+			ship = { name = "USS Indianapolis" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA version_name = "Portland Class" } } }				
+		}					
+		task_force = {					
+			name = "Cruiser Division 3"				
+			base = 1562
+			location = 1562 # San Diego
 			ship = { name = "USS Trenton" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = USA } } }				
 			ship = { name = "USS Concord" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = USA } } }				
+		}					
+		### Destroyer Flotilla 1 ###				
+		task_force = {					
+			name = "Destroyer Flotilla 1"				
+			location = 1562 # San Diego
 			ship = { name = "USS Raleigh" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = USA } } }				
 			### Destroyer Squadron 1 ###				
 			# 1st Destroyer Division				
@@ -81,6 +100,11 @@ units= {
 			ship = { name = "USS Sands" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 			ship = { name = "USS Lawrence" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 			ship = { name = "USS Humphreys" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		}					
+		### Destroyer Flotilla 2 ###				
+		task_force = {					
+			name = "Destroyer Flotilla 2"				
+			location = 9814 # Los Angeles
 			ship = { name = "USS Detroit" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = USA } } }				
 			### Destroyer Squadron 7 ###
 			# 24th Destroyer Division			
@@ -105,11 +129,26 @@ units= {
 			ship = { name = "USS Borie" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 			ship = { name = "USS Simpson" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 			ship = { name = "USS Truxtun" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		}	
+		# Separate DESRONS #
+		task_force = {					
+			name = "Destroyer Division 20"				
+			location = 9671 # San Francisco
 			# 20th Destroyer Division				
 			ship = { name = "USS Breckinridge" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 			ship = { name = "USS Barney" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 			ship = { name = "USS Blakeley" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 			ship = { name = "USS Biddle" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		}					
+	}
+	
+	### SCOUTING FLEET ###
+	fleet = {
+		name = "Scouting Force"			
+		naval_base = 9814 # Los Angeles
+		task_force = {				
+			name = "Scouting Force"				
+			location = 9814 # Los Angeles
 			### Battleship Division 4 ###			
 			ship = { name = "USS Arkansas" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA } } }				
 			ship = { name = "USS New York" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA } } }				
@@ -140,8 +179,22 @@ units= {
 			ship = { name = "USS Babbitt" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 			ship = { name = "USS Hamilton" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 			ship = { name = "USS Roper" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		}					
+	}
+	
+	### SUBMARINE FORCE ###
+	fleet = {
+		name = "Submarine Base Force"			
+		naval_base = 1562 # San Diego
+		task_force = {				
+			name = "Submarine Base Force"			
+			location = 1562 # San Diego
 			ship = { name = "USS Richmond" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = USA } } }				
 			ship = { name = "USS Litchfield" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		}
+		task_force = {					
+			name = "4th Submarine Squadron"			
+			location = 4180 # Pearl Harbor, HI
 			ship = { name = "USS Argonaut" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA version_name = "Barracuda Class" } } }
 			# 7th Submarine Division				
 			ship = { name = "USS S-1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
@@ -154,7 +207,12 @@ units= {
 			# 16th Submarine Division			
 			ship = { name = "USS S-31" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 			ship = { name = "USS S-32" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
-			ship = { name = "USS S-33" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }		
+			ship = { name = "USS S-33" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		}
+		task_force = {					
+			name = "6th Submarine Squadron"			
+			location = 1562 # San Diego
+			# 12th Submarine Division				
 			ship = { name = "USS Barracuda" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA version_name = "Barracuda Class" } } }
 			ship = { name = "USS Bass" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA version_name = "Barracuda Class" } } }
 			ship = { name = "USS Bonita" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA version_name = "Barracuda Class" } } }
@@ -167,6 +225,16 @@ units= {
 			ship = { name = "USS Porpoise" definition = submarine equipment = { submarine_2 = { amount = 1 owner = USA } } }
 			ship = { name = "USS Pike" definition = submarine equipment = { submarine_2 = { amount = 1 owner = USA } } }
 			ship = { name = "USS Shark" definition = submarine equipment = { submarine_2 = { amount = 1 owner = USA } } }
+		}					
+	}
+	
+	### PACIFIC RESERVES ###
+	fleet = {
+		name = "Pacific Reserve Fleet"			
+		naval_base = 1562 # San Diego
+		task_force = {					
+			name = "Pacific Reserve Destroyers"			# Decommissioned ships docked in San Diego				
+			location = 1562 # San Diego
 			ship = { name = "USS Ballard" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 			ship = { name = "USS Chew" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 			ship = { name = "USS Crane" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
@@ -185,6 +253,18 @@ units= {
 			ship = { name = "USS Dorsey" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 			ship = { name = "USS Elliot" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 			ship = { name = "USS Boggs" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		}					
+	}
+
+	##### ATLANTIC FLEET #####
+	fleet = {
+		name = "Atlantic Fleet"			
+		naval_base = 788 # Norfolk
+		# Independent Squadron #
+		task_force = {					
+			name = "Destroyer Squadron 12"				
+			location = 3878 # New York
+			### Destroyer Squadron 12 ###
 			ship = { name = "USS Gilmer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 			# 21st Destroyer Division				
 			ship = { name = "USS Du Pont" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
@@ -194,7 +274,13 @@ units= {
 			# 27th Destroyer Division				
 			ship = { name = "USS Tarbell" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 			ship = { name = "USS Upshur" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
-			ship = { name = "USS Greer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }			
+			ship = { name = "USS Greer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		}					
+		# ATLANTIC SUBMARINES #
+		task_force = {					
+			name = "2nd Submarine Squadron"		
+			location = 9832 # New London, CT
+			# 1st Experimental Division			
 			ship = { name = "USS S-20" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 			ship = { name = "USS S-22" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 			# 4th Submarine Division			
@@ -211,6 +297,11 @@ units= {
 			ship = { name = "USS S-26" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 			ship = { name = "USS S-29" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 			ship = { name = "USS S-30" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		}	
+		# ATLANTIC RESERVES #
+		task_force = {					
+			name = "Atlantic Reserve Destroyers"		# Decommissioned ships docked in Philadelphia					
+			location = 6845 # Philadelphia
 			ship = { name = "USS Allen" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }	
 			ship = { name = "USS Colhoun" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 			ship = { name = "USS Gregory" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
@@ -226,6 +317,10 @@ units= {
 			ship = { name = "USS Hulbert" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 			ship = { name = "USS Noa" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 			ship = { name = "USS William B Preston" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		}					
+		task_force = {					
+			name = "Atlantic Reserve Submarines"		# Decommissioned ships docked in Philadelphia	
+			location = 6845 # Philadelphia
 			ship = { name = "USS O-2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 			ship = { name = "USS O-3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 			ship = { name = "USS O-4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
@@ -257,17 +352,46 @@ units= {
 			ship = { name = "USS S-16" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 			ship = { name = "USS S-17" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 			ship = { name = "USS S-48" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		}					
+	}
+	
+	### CARIBBEAN AND FOREIGN DEPLOYMENTS ###
+	fleet = {
+		name = "Special Assignment Forces"			
+		naval_base = 7617 # Canal Zone
+		task_force = {					
+			name = "Naval Detachment Atlantic"			# Historically based in France	
+			location = 6732 # Boston
 			ship = { name = "USS Dickerson" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 			ship = { name = "USS Herbert" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
-			ship = { name = "USS Dahlgren" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }	
+			ship = { name = "USS Dahlgren" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		}		
+		task_force = {							
+			name = "Special Service Squadron"
+			location = 7617 # Canal Zone
 			ship = { name = "USS Tattnall" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
-			ship = { name = "USS J Fred Talbott" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }			
+			ship = { name = "USS J Fred Talbott" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		}
+		task_force = {					
+			name = "3rd Submarine Squadron"	
+			location = 7617 # Canal Zone
+			# 11th Submarine Division			
 			ship = { name = "USS S-42" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 			ship = { name = "USS S-43" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 			ship = { name = "USS S-44" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 			ship = { name = "USS S-45" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 			ship = { name = "USS S-46" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 			ship = { name = "USS S-47" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		}					
+	}
+	
+	##### ASIATIC FLEET #####
+	fleet = {
+		name = "Asiatic Fleet"			
+		naval_base = 10265 # Manilla
+		task_force = {					
+			name = "Asiatic Fleet"				
+			location = 10265 # Manilla
 			ship = { name = "USS Augusta" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA } } }				
 			ship = { name = "USS Marblehead" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = USA } } }
 			### Destroyer Squadron 5 ###				
@@ -286,7 +410,12 @@ units= {
 			ship = { name = "USS Pope" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 			ship = { name = "USS Peary" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 			ship = { name = "USS Pillsbury" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
-			ship = { name = "USS John D Ford" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }			
+			ship = { name = "USS John D Ford" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
+		}					
+		task_force = {					
+			name = "5th Submarine Squadron"				
+			location = 10265 # Manilla
+			# 10th Submarine Division				
 			ship = { name = "USS S-36" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 			ship = { name = "USS S-37" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 			ship = { name = "USS S-38" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
@@ -315,7 +444,7 @@ instant_effect = {
 		requested_factories = 2
 		progress = 0.80
 		amount = 2
-		industrial_manufacturer = mio:USA_newport_news_shipbuilding_organization
+		industrial_manufacturer = mio:USA_norfolk_naval_yard_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -326,7 +455,7 @@ instant_effect = {
 		requested_factories = 2
 		progress = 0.70
 		amount = 2
-		industrial_manufacturer = mio:USA_newport_news_shipbuilding_organization
+		industrial_manufacturer = mio:USA_norfolk_naval_yard_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -337,7 +466,7 @@ instant_effect = {
 		requested_factories = 2
 		progress = 0.60
 		amount = 2
-		industrial_manufacturer = mio:USA_newport_news_shipbuilding_organization
+		industrial_manufacturer = mio:USA_norfolk_naval_yard_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -348,7 +477,7 @@ instant_effect = {
 		requested_factories = 2
 		progress = 0.50
 		amount = 2
-		industrial_manufacturer = mio:USA_newport_news_shipbuilding_organization
+		industrial_manufacturer = mio:USA_norfolk_naval_yard_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -359,7 +488,7 @@ instant_effect = {
 		requested_factories = 2
 		progress = 0.40
 		amount = 2
-		industrial_manufacturer = mio:USA_newport_news_shipbuilding_organization
+		industrial_manufacturer = mio:USA_norfolk_naval_yard_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -370,7 +499,7 @@ instant_effect = {
 		requested_factories = 2
 		progress = 0.30
 		amount = 2
-		industrial_manufacturer = mio:USA_newport_news_shipbuilding_organization
+		industrial_manufacturer = mio:USA_norfolk_naval_yard_organization
 	}
 	add_equipment_production = {
 		equipment = {
@@ -381,7 +510,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.20
 		amount = 1
-		industrial_manufacturer = mio:USA_newport_news_shipbuilding_organization
+		industrial_manufacturer = mio:USA_norfolk_naval_yard_organization
 	}
 	# SS: Porpoise class (x1) ("USS Tarpon")
 	add_equipment_production = {

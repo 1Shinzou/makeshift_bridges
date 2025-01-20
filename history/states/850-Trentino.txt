@@ -12,10 +12,10 @@ state = {
 		}
 		owner = ITA
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2 #was 3 before split
 		}
 		add_core_of = ITA
-		add_core_of = ITA
+		add_core_of = WST
 		add_claim_by = AUS
 	}
 

@@ -14,8 +14,8 @@ state={
 			}
 
 		}
-		add_core_of = SWE
-		add_claim_by = SOM
+		add_core_of = WST
+		add_claim_by = WST
 	}
 
 	provinces={

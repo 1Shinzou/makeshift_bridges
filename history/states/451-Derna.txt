@@ -3,9 +3,6 @@ state={
 	id=451
 	name="STATE_451"
 	manpower = 45628
-	resources={
-		oil=4
-	}
 	
 	state_category = wasteland
 
@@ -22,12 +19,11 @@ state={
 				naval_base = 6
 			}
 		}
-		add_core_of= SWE
+		add_core_of = WST
 	}
 
 	provinces={
-		1130 1204 4136 4151 7082 9992 10120 12094 13482 13481 
-		 
+		1130 4136 7082 9992 10120  10780 10868 10869 12025
 	}
 
 	local_supplies=4.0 

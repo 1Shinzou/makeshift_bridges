@@ -34,6 +34,7 @@ recruit_character = IRE_john_byrne
 recruit_character = IRE_sean_lemass
 recruit_character = IRE_douglas_hyde
 recruit_character = IRE_sean_ceallaigh
+recruit_character = IRE_ernest_walton
 
 1939.1.1 = {
 
@@ -68,7 +69,6 @@ recruit_character = IRE_sean_ceallaigh
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
 		mechanical_computing = 1
 		computing_machine = 1
 
@@ -81,6 +81,9 @@ recruit_character = IRE_sean_ceallaigh
 		dispersed_industry = 1
 		dispersed_industry2 = 1
 		fuel_refining = 1
+	}
+	complete_special_project = {
+		project = sp:sp_air_radar
 	}
 }
 

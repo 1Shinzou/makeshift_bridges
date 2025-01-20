@@ -2,8 +2,16 @@ state={
 	id=617
 	name="STATE_617"
 
-history={ 
-		owner = NON
+	history={
+		owner = WST
+		add_core_of = WST
+		add_core_of = CHI
+		
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+
+		}
 		victory_points = {
 			4709 5
 		}
@@ -13,7 +21,7 @@ history={
 	provinces={
 		1703 4682 4709 4770 7702 7792 7850 10545 10614 12526 12601 12656 
 	}
-	manpower=1
+	manpower=1080500
 	buildings_max_level_factor=1.000
 	state_category=rural
 

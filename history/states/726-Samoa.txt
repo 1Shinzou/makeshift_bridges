@@ -4,9 +4,9 @@ state={
 	manpower=123214
 	state_category = small_island
 
-history={ 
-		owner = AST
-		add_core_of = SWE
+	history={
+		owner = NZL
+		add_core_of = WST
 		buildings = {
 			infrastructure = 2
 			7290 = {

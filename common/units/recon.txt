@@ -220,10 +220,10 @@ sub_units = {
 		can_be_parachuted = yes
 
 		# Support nerfs to combat abilities
-		breakthrough 	= -0.2
-		defense 		= -0.5		
-		soft_attack 	= -0.5
-		hard_attack 	= -0.5
+		# breakthrough 	= -0.2
+		# defense 		= -0.5		
+		# soft_attack 	= -0.5
+		# hard_attack 	= -0.5
 		
 		essential = {
 			armored_car_equipment
@@ -253,6 +253,7 @@ sub_units = {
 		}
 		desert = {
 			movement = 0.15
+			attack = 0.15
 		}
 		river = {
 			movement = 0.1

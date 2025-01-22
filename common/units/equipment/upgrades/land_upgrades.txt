@@ -6,8 +6,8 @@ upgrades = {
 		cost = land
 
 		linear_cost = {
-			cost_by_level = 1
-			cost_by_level_for_licensed_equipment = 5
+			cost_by_level = 0
+			cost_by_level_for_licensed_equipment = 0
 		}
 
 		level_requirements = {
@@ -27,7 +27,7 @@ upgrades = {
 
 		resource_cost_thresholds = {
 			10 = { #higher level engines do require more strategic resources
-				#chromium = 1
+				#chromium = 0
 			}
 		}
 
@@ -46,8 +46,8 @@ upgrades = {
 		cost = land
 
 		linear_cost = {
-			cost_by_level = 1
-			cost_by_level_for_licensed_equipment = 2
+			cost_by_level = 0
+			cost_by_level_for_licensed_equipment = 0
 		}
 
 		level_requirements = {
@@ -67,15 +67,15 @@ upgrades = {
 
 		resource_cost_thresholds = { # resource values defined here are TOTAL added cost, not cumulative
 			5 = { #more armor requires more resources
-				steel = 1 
+				steel = 0
 			}
 			10 = {
 				steel = 1
-				#chromium = 1
+				#chromium = 0
 			}
 			15 = {
 				steel = 1
-				#chromium = 2
+				#chromium = 0
 			}
 		}
 

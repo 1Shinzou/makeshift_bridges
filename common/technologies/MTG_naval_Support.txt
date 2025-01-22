@@ -999,6 +999,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			ship_torpedo_1
+			torpedo_mounting
 		}
 
 		on_research_complete = {
@@ -1649,6 +1650,10 @@ technologies = {
 #   # ### #  # ### ##
 
 	basic_naval_mines = {
+
+		allow = {
+			always = no
+		}
 
 		research_cost = 2
 

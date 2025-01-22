@@ -2158,6 +2158,9 @@ technologies = {
 		enable_equipments = {
 			mechanized_equipment_3
 		}
+		allow = {
+			always = no
+		}
 
 		mechanized = {
 			soft_attack = 0.15

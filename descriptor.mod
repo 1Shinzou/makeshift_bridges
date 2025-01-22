@@ -10,5 +10,5 @@ tags={
 }
 name="Makeshift Bridges"
 picture="thumbnail.png"
-supported_version="1.15.3"
-remote_file_id="3268219330"
+supported_version="1.15.4"
+remote_file_id="3412397442"

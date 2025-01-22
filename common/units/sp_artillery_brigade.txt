@@ -21,10 +21,10 @@ sub_units = {
 			category_self_propelled_artillery
 		}		
 
-		combat_width = 3
+		combat_width = 2
 
 		need = {
-			light_tank_artillery_chassis = 50
+			light_tank_artillery_chassis = 40
 		}
 		manpower = 500
 		max_organisation = 0
@@ -86,10 +86,10 @@ sub_units = {
 			category_army
 			category_self_propelled_artillery
 		}		
-		combat_width = 3
+		combat_width = 2
 
 		need = {
-			medium_tank_artillery_chassis = 50
+			medium_tank_artillery_chassis = 40
 		}
 		manpower = 500
 		max_organisation = 0
@@ -156,7 +156,7 @@ sub_units = {
 			category_self_propelled_artillery
 		}
 
-		combat_width = 3
+		combat_width = 2
 
 		need = {
 			heavy_tank_artillery_chassis = 40
@@ -295,10 +295,10 @@ sub_units = {
 			category_self_propelled_artillery
 		}
 
-		combat_width = 3
+		combat_width = 2
 
 		need = {
-			modern_tank_artillery_chassis = 50
+			modern_tank_artillery_chassis = 40
 		}
 		manpower = 500
 		max_organisation = 0
@@ -364,7 +364,7 @@ sub_units = {
 #	#		category_army
 #	#	}		
 #
-#	#	combat_width = 3
+#	#	combat_width = 2
 #
 #	#	need = {
 #	#		light_tank_artillery_chassis = 36
@@ -425,7 +425,7 @@ sub_units = {
 #	#		category_all_armor
 	#		category_army
 #		}		
-#		combat_width = 3
+#		combat_width = 2
 #
 #		need = {
 #			medium_tank_artillery_chassis = 36
@@ -491,7 +491,7 @@ sub_units = {
 #			category_army
 #		}
 #
-#		combat_width = 3
+#		combat_width = 2
 #
 #		need = {
 #			heavy_tank_artillery_chassis = 24

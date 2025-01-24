@@ -170,7 +170,7 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-		if = { limit = { NOT = {  OR = { has_idea = ROM_opel has_idea = ROM_opel has_idea = ROM_malaxa has_idea = ROM_cugir has_idea = ROM_resita  }}}  add_ideas = ROM_opel }
+		
 			add_relation_modifier = {
 				target = GER
 				modifier = ROM_license_german_equipment

@@ -5670,10 +5670,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -5686,10 +5686,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -5715,10 +5715,10 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = dockyard
-						level = 2
+						level = 3
 						instant_build = yes
 					}
 				}
@@ -5726,14 +5726,14 @@ focus_tree = {
 					limit = {
 						free_building_slots = {
 							building = dockyard
-							size > 2
+							size > 3
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = dockyard
-						level = 2
+						level = 3
 						instant_build = yes
 					}
 				}				
@@ -5756,7 +5756,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = ITA_naval_power_projection
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -6018,7 +6018,7 @@ focus_tree = {
 		x = -4
 		y = 1
 		relative_position_id = ITA_expand_naval_facilities
-		cost = 10
+		cost = 5
 		available = {
 			OR = {
 				has_full_control_of_state = 448
@@ -6444,7 +6444,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = ITA_expand_naval_facilities
-		cost = 10
+		cost = 5
 		available = {
 			has_tech = marines
 		}
@@ -9045,7 +9045,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_believe_obey_fight
-		cost = 10
+		cost = 5
 
 		allow_branch = {
 			OR = {
@@ -9108,7 +9108,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_banda_carita
-		cost = 10
+		cost = 5
 
 		allow_branch = {
 			has_dlc = "La Resistance"
@@ -9811,8 +9811,6 @@ focus_tree = {
 			add_to_variable = { ITA_re_conscription_factor = 0.05 }
 			add_to_variable = { ITA_re_army_attack_factor = 0.05 }
 			custom_effect_tooltip = ITA_by_blood_alone_re_tt
-			add_to_variable = { ITA_re_non_core_manpower = 0.15 }
-			custom_effect_tooltip = ITA_a_colonial_empire_re_tt
 
 			#REGIA AERONAUTICA
 			add_to_variable = { ITA_ra_air_superiority_bonus_in_combat = 0.05 }
@@ -13762,6 +13760,8 @@ focus_tree = {
 				}
 				add_compliance = 5
 				add_resistance_target = -10
+				add_to_variable = { ITA_re_non_core_manpower = 0.15 }
+				custom_effect_tooltip = ITA_a_colonial_empire_re_tt
 			}
 		}
 	}

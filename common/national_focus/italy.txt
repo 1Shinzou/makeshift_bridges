@@ -2769,10 +2769,10 @@ focus_tree = {
 			custom_effect_tooltip = ITA_power_plants_in_terni_ricostruzione_industriale_tt
 
 			2 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -2789,7 +2789,7 @@ focus_tree = {
 		relative_position_id = ITA_steel_industry_in_terni
 		cost = 5
 		available = {
-			has_tech = synth_oil_experiments
+			# has_tech = synth_oil_experiments
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
@@ -3231,7 +3231,7 @@ focus_tree = {
 					}
 					add_resource = {
 						type = steel
-						amount = 12
+						amount = 50
 					}
 				}
 			}
@@ -3258,6 +3258,9 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			add_to_variable = { ITA_military_industry_dm_factory_max_efficiency_factor = 0.05 }
+			add_to_variable = { ITA_military_industry_dm_production_factory_efficiency_gain_factor = 0.05 }
+			custom_effect_tooltip = ITA_il_sol_dell_avvenire_military_industry_dm_tt
 			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
 
@@ -3289,7 +3292,7 @@ focus_tree = {
 		x = 6
 		y = 1
 		relative_position_id = ITA_italian_highways_bba
-		cost = 10
+		cost = 5
 		available = {
 			controls_state = 2
 			controls_state = 161
@@ -3350,7 +3353,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ITA_railway_innovations
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -3369,7 +3372,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = ITA_railway_innovations
-		cost = 10
+		cost = 5
 		available = {
 			has_full_control_of_state = 159
 		}
@@ -3429,7 +3432,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_investments_in_edison
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -3887,11 +3890,11 @@ focus_tree = {
 		id = ITA_preserve_army_traditions
 		icon = GFX_focus_generic_little_entente
 		prerequisite = { focus = ITA_army_primacy_bba }
-		mutually_exclusive = { focus = ITA_a_bandits_war }
+		# mutually_exclusive = { focus = ITA_a_bandits_war }
 		x = -4
 		y = 1
 		relative_position_id = ITA_army_primacy_bba
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -4154,11 +4157,11 @@ focus_tree = {
 		id = ITA_a_bandits_war
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = ITA_army_primacy_bba }
-		mutually_exclusive = { focus = ITA_preserve_army_traditions }
+		# mutually_exclusive = { focus = ITA_preserve_army_traditions }
 		x = 4
 		y = 1
 		relative_position_id = ITA_army_primacy_bba
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -4251,7 +4254,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ITA_preserve_army_traditions
-		cost = 10
+		cost = 5
 		available = {
 			NOT = { has_global_flag = second_italo_ethiopian_war_flag }
 			#NTH_Manu: Should probably also require a completed focus in any of the ME political paths, so that it can unlock appropriate generals
@@ -4341,7 +4344,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ITA_a_bandits_war
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -4426,7 +4429,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ITA_army_leaders
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -4482,7 +4485,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ITA_bersaglieri
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -4514,7 +4517,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = ITA_bersaglieri
-		cost = 10
+		cost = 5
 		available = {
 			has_tech = paratroopers
 		}
@@ -8236,7 +8239,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_solid_progress
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -8613,7 +8616,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = ITA_triumph_in_africa_bba
-		cost = 10
+		cost = 5
 		available = {
 			has_country_leader = {
 				character = ITA_benito_mussolini
@@ -8637,7 +8640,11 @@ focus_tree = {
 				}
 				mark_focus_tree_layout_dirty = yes
 			}
+		upgrade_economy_law = yes
+		add_ideas = SPA_expand_conscription
 		}
+		
+
 	}
 	
 	focus = {
@@ -8789,7 +8796,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ITA_culto_del_duce
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -8808,7 +8815,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ITA_culto_del_duce
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -8891,7 +8898,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_la_battaglia_per_le_nascite
-		cost = 10
+		cost = 5
 		available = {
 			has_country_leader = {
 				character = ITA_benito_mussolini
@@ -12756,11 +12763,77 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ITA_production_lines
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = ITA_improve_the_industries }
+
+		x = 0
+		y = 2
+		relative_position_id = ITA_improve_the_industries
+		cost = 10
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			add_to_variable = { ITA_military_industry_dm_production_factory_start_efficiency_factor = 0.05 }
+			add_to_variable = { ITA_military_industry_dm_factory_max_efficiency_factor = 0.1 }
+			custom_effect_tooltip = ITA_production_lines_military_industry_dm_tt
+
+			custom_effect_tooltip = ITA_production_lines_factories_tt
+			hidden_effect = {
+				random_core_state = {
+					limit = {
+						is_fully_controlled_by = ROOT
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+					}
+					set_state_flag = ITA_production_lines_flag
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_core_state = {
+					limit = {
+						is_fully_controlled_by = ROOT
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+						NOT = { has_state_flag = ITA_production_lines_flag }
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+				#Clear flag
+				random_core_state = {
+					limit = {
+						has_state_flag = ITA_production_lines_flag
+					}
+					clr_state_flag = ITA_production_lines_flag
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = ITA_expanded_corporatism
 		icon = GFX_focus_ITA_generic_fascist_workers
 		
 	
-		prerequisite = { focus = ITA_improve_the_industries }
+		prerequisite = { focus = ITA_production_lines }
 		
 		relative_position_id = ITA_economic_reforms
 		x = -0
@@ -14151,7 +14224,7 @@ focus = {
         x = 0
         y = 1
 
-        cost = 10
+        cost = 5
         available = {}
 
         search_filters = {FOCUS_FILTER_POLITICAL}

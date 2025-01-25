@@ -200,3 +200,18 @@ NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.03
 NDefines.NMilitary.ARMY_EXP_BASE_LEVEL = 5
 -- NDefines.NAir.AIR_WING_XP_LEVELS = { 20, 40, 60, 80, 100, 140, 180, 220, 260, 300, 380, 460, 640, 620, 700, 740, 780, 820, 860, 900 }
 NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 6;
+
+-------------------------------------------------------------------------------------------
+# Lastorical Added #
+MISSION_SUPREMACY_RATIOS = { -- supremacy multipliers for different mission types
+		0.0, -- HOLD
+		1.0, -- PATROL		
+		0.5, -- STRIKE FORCE 
+		0.5, -- CONVOY RAIDING
+		0.7, -- CONVOY ESCORT
+		0.2, -- MINES PLANTING	
+		0.2, -- MINES SWEEPING	
+		0.0, -- TRAIN
+		0.0, -- RESERVE_FLEET
+		0.5, -- NAVAL_INVASION_SUPPORT
+	}

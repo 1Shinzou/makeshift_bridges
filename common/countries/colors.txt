@@ -97,10 +97,6 @@ SWI = {
     color_ui = rgb { 193 81 81 }
 }
 
-TUR = {
-    color = rgb { 171 190 152 }
-    color_ui = rgb { 222 247 198 }
-}
 
 GRE = {
     color = rgb { 93 181 227 }
@@ -258,11 +254,6 @@ RAJ = {
     color_ui = rgb { 226 135 40 }
 }
 
-PRC = {
-    color = rgb { 245 12 55 }
-    color_ui = rgb { 178 34 60 }
-}
-
 LBA = {
     color = rgb { 200 180 90 }
     color_ui = rgb { 200 180 90 }
@@ -286,11 +277,6 @@ ISR = {
 INS = {
     color = rgb { 40 50 120 }
     color_ui = rgb { 40 50 120 }
-}
-
-UKR = {
-    color = rgb { 0 80 230 }
-    color_ui = rgb { 0 80 230 }
 }
 
 MAN = {

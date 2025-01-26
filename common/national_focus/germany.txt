@@ -735,7 +735,7 @@ focus_tree = {
 				59 = { #Hannover
 					is_owned_and_controlled_by = ROOT
 				}
-				978 = { #Baden
+				301 = { #Baden
 					is_owned_and_controlled_by = ROOT
 				}
 			}
@@ -755,11 +755,11 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					978 = { #Baden
+					301 = { #Baden
 						is_owned_and_controlled_by = ROOT
 					}
 				}
-				978 = { set_state_category = metropolis }
+				301 = { set_state_category = metropolis }
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -5897,7 +5897,7 @@ focus_tree = {
 						state = 7
 						state = 35
 						state = 6
-						state = 977
+						state = 302
 						state = 29
 						state = 785
 						state = 15
@@ -7329,7 +7329,7 @@ focus_tree = {
 					337 = { #Faroes
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
-					933 = { #Shetlands
+					857 = { #Shetlands
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 					134 = { #Ireland
@@ -7379,7 +7379,7 @@ focus_tree = {
 						state = 101
 						state = 100
 						state = 337
-						state = 933
+						state = 857
 						state = 134
 						state = 119
 						state = 178
@@ -7409,7 +7409,7 @@ focus_tree = {
 						#state = 914 #Not you Jan Mayen
 						state = 100
 						state = 337
-						state = 933
+						state = 857
 						state = 134
 						state = 119
 						state = 178
@@ -8027,7 +8027,7 @@ focus_tree = {
 		bypass = {
 			42 = { is_demilitarized_zone = no } #RHINELAND
 			51 = { is_demilitarized_zone = no } #MOSSELLAND
-			978 = { is_demilitarized_zone = no } #BADEN
+			301 = { is_demilitarized_zone = no } #BADEN
 		}
 
 		available = {
@@ -8035,7 +8035,7 @@ focus_tree = {
 			has_government = fascism
 			42 = { is_fully_controlled_by = ROOT } #RHINELAND
 			51 = { is_fully_controlled_by = ROOT } #MOSSELLAND
-			978 = { is_fully_controlled_by = ROOT } #BADEN
+			301 = { is_fully_controlled_by = ROOT } #BADEN
 		}
 		
 		ai_will_do = {
@@ -8048,7 +8048,7 @@ focus_tree = {
 
 			42 = { set_demilitarized_zone = no }
 			51 = { set_demilitarized_zone = no }
-			978 = { set_demilitarized_zone = no }
+			301 = { set_demilitarized_zone = no }
 			set_global_flag = rhineland_remilitarized
 			custom_effect_tooltip = GER_rhineland_ultimatum
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -8178,8 +8178,8 @@ focus_tree = {
 					owns_state = 152
 					owns_state = 153
 					owns_state = 848
-					owns_state = 975
-					owns_state = 976
+					owns_state = 305
+					owns_state = 303
 				}
 			}
 		}
@@ -8239,8 +8239,8 @@ focus_tree = {
 							owns_state = 152
 							owns_state = 153
 							owns_state = 848
-							owns_state = 975
-							owns_state = 976
+							owns_state = 305
+							owns_state = 303
 						}
 					}
 				}
@@ -8284,7 +8284,7 @@ focus_tree = {
 						create_wargoal = {
 							type = take_state_focus
 							target = AUS
-							generator = { 4 152 153 848 975 976 }
+							generator = { 4 152 153 848 305 303 }
 						}
 					}
 				}
@@ -8299,8 +8299,8 @@ focus_tree = {
 							owns_state = 152
 							owns_state = 153
 							owns_state = 848
-							owns_state = 975
-							owns_state = 976
+							owns_state = 305
+							owns_state = 303
 						}
 						
 					}
@@ -8403,7 +8403,7 @@ focus_tree = {
 			}
 			IF = {
 				limit = {
-					975 = {
+					305 = {
 						owner = {
 							NOT = {
 								tag = AUS
@@ -8414,11 +8414,11 @@ focus_tree = {
 						}
 					}
 				}
-				add_state_core = 975
+				add_state_core = 305
 			}
 			IF = {
 				limit = {
-					976 = {
+					303 = {
 						owner = {
 							NOT = {
 								tag = AUS
@@ -8429,7 +8429,7 @@ focus_tree = {
 						}
 					}
 				}
-				add_state_core = 976
+				add_state_core = 303
 			}
 		}
 	}
@@ -9041,7 +9041,7 @@ focus_tree = {
 					}
 				}
 			}
-			972 = { #EASTERN SUDETENLAND
+			415 = { #EASTERN SUDETENLAND
 				controller = {
 					OR = {
 						has_war_with = GER
@@ -9099,7 +9099,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					972 = {
+					415 = {
 						controller = {
 							NOT = {
 								tag = ROOT
@@ -9108,7 +9108,7 @@ focus_tree = {
 						}
 					}
 				}
-				add_state_claim = 972
+				add_state_claim = 415
 			}
 			if = {
 				limit = {
@@ -9130,7 +9130,7 @@ focus_tree = {
 					CZE = {
 						OR = {
 							controls_state = 69
-							controls_state = 972
+							controls_state = 415
 							controls_state = 74
 						}
 					}
@@ -9179,7 +9179,7 @@ focus_tree = {
 							NOT = { has_war_with = ENG }
 							OR = {
 								controls_state = 69
-								controls_state = 972
+								controls_state = 415
 								controls_state = 74
 							}
 						}
@@ -9230,7 +9230,7 @@ focus_tree = {
 						NOT = { tag = CZE }
 						OR = {
 							controls_state = 69
-							controls_state = 972
+							controls_state = 415
 							controls_state = 74
 						}
 						NOT = { has_war_with = ROOT }
@@ -9241,7 +9241,7 @@ focus_tree = {
 						NOT = { tag = CZE }
 						OR = {
 							controls_state = 69
-							controls_state = 972
+							controls_state = 415
 							controls_state = 74
 						}
 						NOT = { has_war_with = ROOT }
@@ -9303,7 +9303,7 @@ focus_tree = {
 			}
 			OR = {
 				owns_state = 69
-				owns_state = 972
+				owns_state = 415
 			}
 		}
 
@@ -11187,8 +11187,8 @@ focus_tree = {
 							105 = { owner = { is_subject_of = YUG } }
 						}
 						OR = {
-							owns_state = 970
-							970 = { owner = { is_subject_of = YUG } }
+							owns_state = 487
+							487 = { owner = { is_subject_of = YUG } }
 						}
 					}
 				}
@@ -11356,11 +11356,11 @@ focus_tree = {
 						}
 						if = {
 							limit = { owns_state = 44 }
-							transfer_state = 934
+							transfer_state = 856
 						}
 						if = {
 							limit = { owns_state = 44 }
-							transfer_state = 970
+							transfer_state = 487
 						}
 					}
 				}
@@ -13346,12 +13346,12 @@ focus_tree = {
 			IF = {
 				limit = {
 					NOT = {
-						981 = { #Barotziland
+						891 = { #Barotziland
 							is_claimed_by = ROOT
 						}
 					}
 				}
-				add_state_claim = 981
+				add_state_claim = 891
 			}
 			IF = {
 				limit = {

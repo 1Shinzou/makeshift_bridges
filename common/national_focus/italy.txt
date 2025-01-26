@@ -9316,7 +9316,7 @@ focus_tree = {
 			105 = { is_claimed_by = ROOT }
 			44 = { is_claimed_by = ROOT }
 			805 = { is_claimed_by = ROOT }
-			934 = { is_claimed_by = ROOT }
+			856 = { is_claimed_by = ROOT }
 		}
 
 		available = {
@@ -9532,12 +9532,12 @@ focus_tree = {
 
 			if = {
 				limit = {
-					934 = { NOT = { is_claimed_by = ROOT } }
+					856 = { NOT = { is_claimed_by = ROOT } }
 				}
-				add_state_claim = 934 #SHKÖDER
+				add_state_claim = 856 #SHKÖDER
 				if = {
 					limit = {
-						934 = {
+						856 = {
 							controller = {
 								NOT = { controls_state = 44 } #Otherwise already received the wargoal above
 								NOT = { controls_state = 805 } #Otherwise already received the wargoal above
@@ -9550,8 +9550,8 @@ focus_tree = {
 					}
 					create_wargoal = {
 						type = take_state_focus
-						target = 934.controller
-						generator = { 934 }
+						target = 856.controller
+						generator = { 856 }
 					}
 				}
 			}

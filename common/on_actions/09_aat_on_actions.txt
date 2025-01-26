@@ -701,13 +701,13 @@ on_actions = {
 						has_country_flag = SWE_already_capped_once
 						148 = { SWE_cross_we_bear_state_condition_trigger = yes } #Lappi
 						722 = { SWE_cross_we_bear_state_condition_trigger = yes } #Petsamo
-						929 = { SWE_cross_we_bear_state_condition_trigger = yes } #Wololo Oulolo
+						892 = { SWE_cross_we_bear_state_condition_trigger = yes } #Wololo Oulolo
 						150 = { SWE_cross_we_bear_state_condition_trigger = yes } #Kuopio
 						149 = { SWE_cross_we_bear_state_condition_trigger = yes } #Vaasa, t
 						926 = { SWE_cross_we_bear_state_condition_trigger = yes } #Turku
-						927 = { SWE_cross_we_bear_state_condition_trigger = yes } #Häme
+						897 = { SWE_cross_we_bear_state_condition_trigger = yes } #Häme
 						930 = { SWE_cross_we_bear_state_condition_trigger = yes } #Mikelli
-						928 = { SWE_cross_we_bear_state_condition_trigger = yes } #Kymi
+						896 = { SWE_cross_we_bear_state_condition_trigger = yes } #Kymi
 						111 = { SWE_cross_we_bear_state_condition_trigger = yes }  #UUsima
 						#Exclude Åland, Salla and Karaja due to uncertain future status depending on focus tree
 					}

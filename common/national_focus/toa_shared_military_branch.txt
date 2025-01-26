@@ -79,14 +79,14 @@ shared_focus = {
 				NOT = {
 					has_dynamic_modifier = { modifier = BRA_neglected_state_dynamic_modifier }
 					OR = {
-						state = 961
-						state = 962
-						state = 963
-						state = 964
-						state = 965
-						state = 966
-						state = 967
-						state = 968
+						state = 544
+						state = 512
+						state = 511
+						state = 510
+						state = 509
+						state = 508
+						state = 507
+						state = 506
 					}					
 				}
 			}
@@ -174,14 +174,14 @@ shared_focus = {
 				is_owned_and_controlled_by = ROOT
 				NOT = {
 					OR = {
-						state = 961
-						state = 962
-						state = 963
-						state = 964
-						state = 965
-						state = 966
-						state = 967
-						state = 968
+						state = 544
+						state = 512
+						state = 511
+						state = 510
+						state = 509
+						state = 508
+						state = 507
+						state = 506
 					}
 				}
 			}
@@ -2082,14 +2082,14 @@ shared_focus = {
 				is_owned_and_controlled_by = ROOT
 				NOT = {
 					OR = {
-						state = 961
-						state = 962
-						state = 963
-						state = 964
-						state = 965
-						state = 966
-						state = 967
-						state = 968
+						state = 544
+						state = 512
+						state = 511
+						state = 510
+						state = 509
+						state = 508
+						state = 507
+						state = 506
 					}
 				}
 			}
@@ -2218,14 +2218,14 @@ shared_focus = {
 				is_owned_and_controlled_by = ROOT
 				NOT = {
 					OR = {
-						state = 961
-						state = 962
-						state = 963
-						state = 964
-						state = 965
-						state = 966
-						state = 967
-						state = 968
+						state = 544
+						state = 512
+						state = 511
+						state = 510
+						state = 509
+						state = 508
+						state = 507
+						state = 506
 					}
 				}
 			}
@@ -2245,14 +2245,14 @@ shared_focus = {
 				is_owned_and_controlled_by = ROOT
 				NOT = {
 					OR = {
-						state = 961
-						state = 962
-						state = 963
-						state = 964
-						state = 965
-						state = 966
-						state = 967
-						state = 968
+						state = 544
+						state = 512
+						state = 511
+						state = 510
+						state = 509
+						state = 508
+						state = 507
+						state = 506
 					}
 				}
 			}
@@ -2480,14 +2480,14 @@ shared_focus = {
 				is_owned_and_controlled_by = ROOT
 				NOT = {
 					OR = {
-						state = 961
-						state = 962
-						state = 963
-						state = 964
-						state = 965
-						state = 966
-						state = 967
-						state = 968
+						state = 544
+						state = 512
+						state = 511
+						state = 510
+						state = 509
+						state = 508
+						state = 507
+						state = 506
 					}
 				}
 			}

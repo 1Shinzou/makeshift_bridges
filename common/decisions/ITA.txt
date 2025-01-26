@@ -1265,7 +1265,7 @@ ITA_missiolinis = {
 					}
 				}
 			}
-			934 = { #SHKÖDER
+			856 = { #SHKÖDER
 				OR = {
 					is_fully_controlled_by = ROOT
 					controller = {
@@ -6179,7 +6179,7 @@ ITA_diplomacy_balkan_decision_category = {
 			805 = {
 				is_controlled_by = ITA
 			}
-			934 = {
+			856 = {
 				is_controlled_by = ITA
 			}
 		}
@@ -6205,7 +6205,7 @@ ITA_diplomacy_balkan_decision_category = {
 			ALB = {
 				transfer_state = 44
 				transfer_state = 805
-				transfer_state = 934
+				transfer_state = 856
 				IF = {
 					limit = {
 						802 = {
@@ -6216,18 +6216,18 @@ ITA_diplomacy_balkan_decision_category = {
 				}
 				IF = {
 					limit = {
-						970 = {
+						487 = {
 							is_controlled_by = ITA
 						}
 					}
-					transfer_state = 970
+					transfer_state = 487
 				}
 				add_ideas = ITA_ALB_italian_settlers
 			}
 			802 = {
 				add_core_of = ALB
 			}
-			970 = {
+			487 = {
 				add_core_of = ALB
 			}
 			IF = {

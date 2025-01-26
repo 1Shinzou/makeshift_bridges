@@ -5,7 +5,6 @@ state={
 	history={
 		owner = WST
 		add_core_of = WST
-		add_core_of = CHI
 		
 		buildings = {
 			infrastructure = 2

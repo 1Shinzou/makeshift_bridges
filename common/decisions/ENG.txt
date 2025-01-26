@@ -416,11 +416,11 @@ ENG_organize_the_blackshirts = {
 
 		available = {
 			NOT = { has_country_flag = ENG_march_timer_flag }
-			has_full_control_of_state = 932
+			has_full_control_of_state = 857
 		}
 
 		highlight_states = {
- 			highlight_state_targets = { state = 932 } 
+ 			highlight_state_targets = { state = 857 } 
 		}
 
 		on_map_mode = map_only
@@ -436,7 +436,7 @@ ENG_organize_the_blackshirts = {
 		cancel_if_not_visible = yes
 
 		complete_effect = {
-			932 = { save_event_target_as = ENG_blackshirt_march_state }
+			857 = { save_event_target_as = ENG_blackshirt_march_state }
 			random_list = {
 				25 = {
 					country_event = { id = mtg_britain.57 days = 1 }

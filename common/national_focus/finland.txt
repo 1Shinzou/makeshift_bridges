@@ -410,7 +410,7 @@ focus_tree = {
 					controls_province = 136 #Varkaus
 					controls_province = 11043
 				}
-				930 = { #MIKKELI
+				891 = { #MIKKELI
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = supply_node
@@ -1235,9 +1235,9 @@ focus_tree = {
 			#HÄME
 			if = {
 				limit = {
-					has_full_control_of_state = 927
+					has_full_control_of_state = 897
 				}
-				927 = { #HÄME
+				897 = { #HÄME
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = infrastructure
@@ -1263,9 +1263,9 @@ focus_tree = {
 			#KYME
 			if = {
 				limit = {
-					has_full_control_of_state = 928
+					has_full_control_of_state = 896
 				}
-				928 = { #KYME
+				896 = { #KYME
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = infrastructure
@@ -1283,8 +1283,8 @@ focus_tree = {
 
 				if = {
 					limit = {
-						has_full_control_of_state = 930
-						has_full_control_of_state = 927
+						has_full_control_of_state = 891
+						has_full_control_of_state = 897
 					}
 					# Helsinki - Hämeenlinna - Lahti - Kouvola - Kotka
 					build_railway = {
@@ -1317,9 +1317,9 @@ focus_tree = {
 			#MIKKELI
 			if = {
 				limit = {
-					has_full_control_of_state = 930
+					has_full_control_of_state = 891
 				}
-				930 = { #MIKKELI
+				891 = { #MIKKELI
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = infrastructure
@@ -1367,7 +1367,7 @@ focus_tree = {
 			}
 			else = {
 				random_owned_state = {
-					prioritize = { 928 } #KYME
+					prioritize = { 896 } #KYME
 					limit = {
 						is_controlled_by = ROOT
 					}
@@ -1563,13 +1563,13 @@ focus_tree = {
 		relative_position_id = FIN_janiskoski_power_plant
 		cost = 5
 		available = {
-			has_full_control_of_state = 928 #KYME
+			has_full_control_of_state = 896 #KYME
 		}
 
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			928 = { #KYME
+			896 = { #KYME
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -1595,13 +1595,13 @@ focus_tree = {
 		cost = 5
 		available = {
 			has_tech = excavation3
-			has_full_control_of_state = 929 #OULU
+			has_full_control_of_state = 892 #OULU
 		}
 
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			929 = { #OULU
+			892 = { #OULU
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -1656,7 +1656,7 @@ focus_tree = {
 			148 = {
 				is_owned_and_controlled_by = ROOT
 			}
-			929 = {
+			892 = {
 				is_owned_and_controlled_by = ROOT
 			}
 		}
@@ -1667,7 +1667,7 @@ focus_tree = {
 			add_ideas = FIN_hydro_electric_expansion
 
 			random_core_state = {
-				prioritize = { 927 } #HÄME (Tampere)
+				prioritize = { 897 } #HÄME (Tampere)
 				limit = {
 					is_fully_controlled_by = ROOT
 					free_building_slots = {
@@ -1705,7 +1705,7 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			929 = {
+			892 = {
 				add_building_construction = {
 					type = dam
 					level = 1
@@ -1733,7 +1733,7 @@ focus_tree = {
 		relative_position_id = FIN_industrial_development
 		cost = 10
 		available = {
-			has_full_control_of_state = 927 #HÄME (Tampere - Nokia)
+			has_full_control_of_state = 897 #HÄME (Tampere - Nokia)
 		}
 
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
@@ -1755,7 +1755,7 @@ focus_tree = {
 			else = {
 				custom_effect_tooltip = FIN_tire_factory_at_nokia_tech_tt
 				effect_tooltip = {
-					927 = {
+					897 = {
 						add_extra_state_shared_building_slots = 3
 						custom_effect_tooltip = FIN_tire_factory_at_nokia_add_synthetic_refineries_tt
 					}
@@ -1961,9 +1961,9 @@ focus_tree = {
 			#OULU Chromium
 			if = {
 				limit = {
-					controls_state = 929
+					controls_state = 892
 				}
-				929 = {
+				892 = {
 					add_resource = {
 						type = chromium
 						amount = 2
@@ -3635,8 +3635,8 @@ focus_tree = {
 			if = {
 				limit = {
 					has_full_control_of_state = 146 #KARJALA
-					has_full_control_of_state = 928 #KYME
-					has_full_control_of_state = 930 #MIKKELI
+					has_full_control_of_state = 896 #KYME
+					has_full_control_of_state = 891 #MIKKELI
 				}
 				146 = {
 					#Viipuri
@@ -3647,7 +3647,7 @@ focus_tree = {
 						province = 9206
 					}
 				}
-				928 = {
+				896 = {
 					#Lappeenranta
 					add_building_construction = {
 						type = bunker
@@ -3662,7 +3662,7 @@ focus_tree = {
 						province = 52
 					}
 				}
-				930 = {
+				891 = {
 					add_building_construction = {
 						type = bunker
 						level = 2
@@ -3846,12 +3846,12 @@ focus_tree = {
 			#KYME (Kouvola)
 			if = {
 				limit = {
-					controls_state = 928
-					928 = {
+					controls_state = 896
+					896 = {
 						air_base < 9
 					}
 				}
-				928 = {
+				896 = {
 					add_building_construction = {
 						type = air_base
 						level = 2
@@ -6438,10 +6438,10 @@ focus_tree = {
 				
 			if = {
 				limit = {
-					has_full_control_of_state = 929
+					has_full_control_of_state = 892
 				}
 				#OULU
-				929 = {
+				892 = {
 					add_building_construction = {
 						type = naval_base
 						level = 2
@@ -6529,7 +6529,7 @@ focus_tree = {
 		available = {
 			OR = {
 				has_full_control_of_state = 111 #UUSIMAA (Helsinki)
-				has_full_control_of_state = 928 #KYME (Kotka)
+				has_full_control_of_state = 896 #KYME (Kotka)
 				has_full_control_of_state = 149 #VAASA (Vaasa)
 			}
 		}
@@ -6564,7 +6564,7 @@ focus_tree = {
 			#KYME (Kotka)
 			if = {
 				limit = {
-					928 = {
+					896 = {
 						free_building_slots = {
 							building = dockyard
 							size > 0
@@ -6572,7 +6572,7 @@ focus_tree = {
 						}
 					}
 				}
-				928 = {
+				896 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard

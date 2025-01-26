@@ -167,7 +167,7 @@ if = { #DLC
 	106 = { set_state_flag = BUL_historical_bulgarian_claim_flag }
 	731 = { set_state_flag = BUL_historical_bulgarian_claim_flag }
 	184 = { set_state_flag = BUL_historical_bulgarian_claim_flag }
-	486 = { set_state_flag = BUL_historical_bulgarian_claim_flag }
+	971 = { set_state_flag = BUL_historical_bulgarian_claim_flag }
 
 	#International Relations
 	add_opinion_modifier = { 

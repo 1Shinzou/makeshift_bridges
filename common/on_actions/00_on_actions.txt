@@ -936,8 +936,8 @@ on_actions = {
 				add_state_core = 152
 				add_state_core = 153
 				add_state_core = 848
-				add_state_core = 305
-				add_state_core = 303
+				add_state_core = 975
+				add_state_core = 976
 			}
 		}
 	}

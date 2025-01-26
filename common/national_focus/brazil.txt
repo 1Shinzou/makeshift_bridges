@@ -565,14 +565,14 @@ focus_tree = {
 					is_owned_and_controlled_by = ROOT
 					NOT = {
 						OR = {
-							state = 544
-							state = 512
-							state = 511
-							state = 510
-							state = 509
-							state = 508
-							state = 507
-							state = 506
+							state = 961
+							state = 962
+							state = 963
+							state = 964
+							state = 965
+							state = 966
+							state = 967
+							state = 968
 						}
 					}
 				}
@@ -857,14 +857,14 @@ focus_tree = {
 					}
 					is_owned_and_controlled_by = ROOT
 					NOT = {
-						state = 544
-						state = 512
-						state = 511
-						state = 510
-						state = 509
-						state = 508
-						state = 507
-						state = 506
+						state = 961
+						state = 962
+						state = 963
+						state = 964
+						state = 965
+						state = 966
+						state = 967
+						state = 968
 					}
 				}
 				add_extra_state_shared_building_slots = 2
@@ -909,14 +909,14 @@ focus_tree = {
 					}
 					is_owned_and_controlled_by = ROOT
 					NOT = {
-						state = 544
-						state = 512
-						state = 511
-						state = 510
-						state = 509
-						state = 508
-						state = 507
-						state = 506
+						state = 961
+						state = 962
+						state = 963
+						state = 964
+						state = 965
+						state = 966
+						state = 967
+						state = 968
 					}
 				}
 				add_extra_state_shared_building_slots = 2
@@ -961,14 +961,14 @@ focus_tree = {
 					}
 					is_owned_and_controlled_by = ROOT
 					NOT = {
-						state = 544
-						state = 512
-						state = 511
-						state = 510
-						state = 509
-						state = 508
-						state = 507
-						state = 506
+						state = 961
+						state = 962
+						state = 963
+						state = 964
+						state = 965
+						state = 966
+						state = 967
+						state = 968
 					}
 				}
 				add_extra_state_shared_building_slots = 1
@@ -1362,7 +1362,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			757 = {
+			938 = {
 				add_resource = {
 					type = rubber
 					amount = 10
@@ -1665,14 +1665,14 @@ focus_tree = {
 					is_owned_and_controlled_by = ROOT
 					NOT = {
 						OR = {
-							state = 544
-							state = 512
-							state = 511
-							state = 510
-							state = 509
-							state = 508
-							state = 507
-							state = 506
+							state = 961
+							state = 962
+							state = 963
+							state = 964
+							state = 965
+							state = 966
+							state = 967
+							state = 968
 						}
 					}
 				}
@@ -1694,14 +1694,14 @@ focus_tree = {
 					is_coastal = yes
 					NOT = {
 						OR = {
-							state = 544
-							state = 512
-							state = 511
-							state = 510
-							state = 509
-							state = 508
-							state = 507
-							state = 506
+							state = 961
+							state = 962
+							state = 963
+							state = 964
+							state = 965
+							state = 966
+							state = 967
+							state = 968
 						}
 					}
 				}
@@ -2136,14 +2136,14 @@ focus_tree = {
 					}
 					NOT = {
 						OR = {
-							state = 544
-							state = 512
-							state = 511
-							state = 510
-							state = 509
-							state = 508
-							state = 507
-							state = 506
+							state = 961
+							state = 962
+							state = 963
+							state = 964
+							state = 965
+							state = 966
+							state = 967
+							state = 968
 						}
 					}
 				}
@@ -2183,24 +2183,24 @@ focus_tree = {
 							has_dynamic_modifier = {
 								modifier = BRA_neglected_state_dynamic_modifier
 							}
-							state = 544
-							state = 512
-							state = 511
-							state = 510
-							state = 509
-							state = 508
-							state = 507
-							state = 506
+							state = 961
+							state = 962
+							state = 963
+							state = 964
+							state = 965
+							state = 966
+							state = 967
+							state = 968
 						}
 						OR = {
-							state = 544
-							state = 512
-							state = 511
-							state = 510
-							state = 509
-							state = 508
-							state = 507
-							state = 506
+							state = 961
+							state = 962
+							state = 963
+							state = 964
+							state = 965
+							state = 966
+							state = 967
+							state = 968
 						}
 					}
 				}

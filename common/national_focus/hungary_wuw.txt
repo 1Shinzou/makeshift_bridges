@@ -1169,7 +1169,7 @@ focus_tree = {
 						state = 82
 						state = 764
 						state = 45
-						state = 305
+						state = 975
 					}
 				}
 				add_claim_by = ROOT
@@ -1656,7 +1656,7 @@ focus_tree = {
 
 			is_subject = no
 
-			305 = {
+			975 = {
 				NOT = {
 					is_owned_by = ROOT
 				}
@@ -1664,7 +1664,7 @@ focus_tree = {
 
 			IF = {
 				limit = {
-					305 = {
+					975 = {
 						is_owned_by = AUS
 					}
 				}
@@ -1678,8 +1678,8 @@ focus_tree = {
 		bypass = {
 
 			OR = {
-				owns_state = 305
-				305 = {
+				owns_state = 975
+				975 = {
 					OWNER = {
 						has_war_with = ROOT
 					}
@@ -1699,7 +1699,7 @@ focus_tree = {
 			custom_effect_tooltip = HUN_demands_tt
 			random_country = {
 				limit = {
-					owns_state = 305
+					owns_state = 975
 				}
 				country_event = {
 					id = WW_hungary.23
@@ -1978,7 +1978,7 @@ focus_tree = {
 				owns_state = 83
 				owns_state = 82
 				owns_state = 45
-				owns_state = 305
+				owns_state = 975
 			}
 			NOT = { has_global_flag = GER_reformed_austro_hungarian_empire }
 			custom_trigger_tooltip = {
@@ -1987,10 +1987,10 @@ focus_tree = {
 					155 = {
 						is_fully_controlled_by = ROOT
 					}
-					306 = {
+					974 = {
 						is_fully_controlled_by = ROOT
 					}
-					322 = {
+					973 = {
 						is_fully_controlled_by = ROOT
 					}
 					43 = {
@@ -4188,10 +4188,10 @@ focus_tree = {
 					has_full_control_of_state = 155
 				}
 				ROOT = {
-					has_full_control_of_state = 306
+					has_full_control_of_state = 974
 				}
 				ROOT = {
-					has_full_control_of_state = 322
+					has_full_control_of_state = 973
 				}
 			}
 			has_tech = excavation3
@@ -4213,14 +4213,14 @@ focus_tree = {
 					amount = 5
 				}
 			}
-			306 = {
+			974 = {
 				add_resource = {
 					type = oil
 					amount = 4
 				}
 			}
 
-			322 = {
+			973 = {
 				add_resource = {
 					type = oil
 					amount = 6

@@ -415,7 +415,7 @@ GER_operational_planning_category = {
 						#type = armor
 					}
 					divisions_in_state = {
-						state = 302
+						state = 977
 						size > 5
 						#type = armor
 					}
@@ -425,7 +425,7 @@ GER_operational_planning_category = {
 						#type = armor
 					}
 					divisions_in_state = {
-						state = 292
+						state = 980
 						size > 5
 						#type = armor
 					}
@@ -457,7 +457,7 @@ GER_operational_planning_category = {
 						}
 					}
 				}
-				292 = {	state_is_fully_controlled_by_ROOT_subject_or_faction_member = no }
+				980 = {	state_is_fully_controlled_by_ROOT_subject_or_faction_member = no }
 				28 = { state_is_fully_controlled_by_ROOT_subject_or_faction_member = no }
 			}
 			modifier = { #Save CP and XP for the French offensive
@@ -1423,7 +1423,7 @@ GER_fortify_the_vaterland_cat = {
 				is_fully_controlled_by = ROOT
 				is_demilitarized_zone = no
 			}
-			301 = { #Baden
+			978 = { #Baden
 				is_fully_controlled_by = ROOT
 				is_demilitarized_zone = no
 			}
@@ -1449,7 +1449,7 @@ GER_fortify_the_vaterland_cat = {
 			NOT = { 
 				has_full_control_of_state = 51 #Rineland
 				has_full_control_of_state = 42 #Moselland
-				has_full_control_of_state = 301 #Baden
+				has_full_control_of_state = 978 #Baden
 			}
 		}
 
@@ -1535,7 +1535,7 @@ GER_fortify_the_vaterland_cat = {
 				}
 				if = {
 					limit = {
-						301 = { #Baden
+						978 = { #Baden
 							any_province_building_level = {
 								province = {
 									id = 3530
@@ -1550,7 +1550,7 @@ GER_fortify_the_vaterland_cat = {
 						}
 
 					}
-					301 = { #Baden
+					978 = { #Baden
 						add_building_construction = {
 							type = bunker
 							level = 2
@@ -2285,7 +2285,7 @@ GER_fortify_the_vaterland_cat = {
 				6 = { #Vlaanderen
 					state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
 				}
-				302 = { #Antwerpen
+				977 = { #Antwerpen
 					state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
 				}
 			}
@@ -2341,7 +2341,7 @@ GER_fortify_the_vaterland_cat = {
 					6 = { #Vlaanderen
 						state_is_fully_controlled_by_ROOT_subject_or_faction_member = no
 					}
-					302 = { #Antwerpen
+					977 = { #Antwerpen
 						state_is_fully_controlled_by_ROOT_subject_or_faction_member = no
 					}
 				}
@@ -2379,7 +2379,7 @@ GER_fortify_the_vaterland_cat = {
 						state = 7
 						state = 35
 						state = 6
-						state = 302
+						state = 977
 					}
 					coastal_bunker < 10
 					is_coastal = yes 
@@ -2407,7 +2407,7 @@ GER_fortify_the_vaterland_cat = {
 						state = 7
 						state = 35
 						state = 6
-						state = 302
+						state = 977
 					}
 					coastal_bunker < 10
 					is_coastal = yes 
@@ -2836,7 +2836,7 @@ GER_fortify_the_vaterland_cat = {
 				153 = { #Tirol
 					state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
 				}
-				303 = { #Steiremark
+				976 = { #Steiremark
 					state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
 				}
 			}
@@ -2874,7 +2874,7 @@ GER_fortify_the_vaterland_cat = {
 					153 = { #Tirol
 						state_is_fully_controlled_by_ROOT_subject_or_faction_member = no
 					}
-					303 = { #Steiremark
+					976 = { #Steiremark
 						state_is_fully_controlled_by_ROOT_subject_or_faction_member = no
 					}
 				}
@@ -2908,7 +2908,7 @@ GER_fortify_the_vaterland_cat = {
 							state = 847 #Western Swiss Alps
 							state = 151 #Eastern Swiss Alps
 							state = 153 #Tirol
-							state = 303 #Steiremark
+							state = 976 #Steiremark
 						}
 					}
 					add_building_construction = {
@@ -3031,13 +3031,13 @@ GER_fortify_the_vaterland_cat = {
 			}
 			if = {
 				limit = { 
-					303 = {
+					976 = {
 						state_is_fully_controlled_by_ROOT_subject_or_faction_member = yes
 						bunker < 10
 					}
 				}
 				hidden_effect = {
-					303 = {
+					976 = {
 						add_building_construction = {
 							type = bunker
 							level = 1
@@ -3730,10 +3730,10 @@ GER_reichskommissariats = {
 				34 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
-				302 = {
+				977 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
-				292 = {
+				980 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
 			}
@@ -3744,8 +3744,8 @@ GER_reichskommissariats = {
 				state = 6
 				state = 29
 				state = 34
-				state = 302
-				state = 292
+				state = 977
+				state = 980
 			}
 		}
 
@@ -5902,7 +5902,7 @@ GER_reichskommissariats = {
 						owns_state = 722
 						owns_state = 147
 						owns_state = 146
-						owns_state = 892
+						owns_state = 929
 					}
 				}
 			}
@@ -6672,10 +6672,10 @@ GER_reichskommissariats = {
 				106 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
-				487 = {
+				970 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
-				856 = {
+				934 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
 				44 = {
@@ -6705,7 +6705,7 @@ GER_reichskommissariats = {
 				77 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
-				486 = {
+				971 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
 				79 = {
@@ -6735,8 +6735,8 @@ GER_reichskommissariats = {
 				state = 802
 				state = 803
 				state = 106
-				state = 487
-				state = 856
+				state = 970
+				state = 934
 				state = 44
 				state = 805
 				state = 48
@@ -6746,7 +6746,7 @@ GER_reichskommissariats = {
 				state = 81
 				state = 46
 				state = 77
-				state = 486
+				state = 971
 				state = 79
 				state = 78
 				state = 766
@@ -7370,10 +7370,10 @@ GER_reichskommissariats = {
 				83 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
-				306 = {
+				974 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
-				322 = {
+				973 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
 				154 = {
@@ -7396,8 +7396,8 @@ GER_reichskommissariats = {
 				state = 84
 				state = 76
 				state = 83
-				state = 306
-				state = 322
+				state = 974
+				state = 973
 				state = 154
 				state = 43
 				state = 155
@@ -7618,7 +7618,7 @@ GER_reichskommissariats = {
 				135 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
-				857 = {
+				932 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
 			}
@@ -7630,7 +7630,7 @@ GER_reichskommissariats = {
 				state = 113
 				state = 134
 				state = 135
-				state = 857
+				state = 932
 			}
 		}
 
@@ -8174,7 +8174,7 @@ GER_reichskommissariats = {
 				770 = {
 				 	is_controlled_by_ROOT_or_subject = yes
 				}
-				279 = {
+				981 = {
 				 	is_controlled_by_ROOT_or_subject = yes
 				}
 				540 = {
@@ -8272,7 +8272,7 @@ GER_reichskommissariats = {
 				state = 889
 				state = 771
 				state = 770
-				state = 279
+				state = 981
 				state = 540
 				state = 891
 				state = 892
@@ -8550,22 +8550,22 @@ GER_reichskommissariats = {
 				310 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
-				494 = {
+				969 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
 				495 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
-				679 = {
+				940 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
-				688 = {
+				939 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
-				757 = {
+				938 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
-				493 = {
+				942 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
 				280 = {
@@ -8577,7 +8577,7 @@ GER_reichskommissariats = {
 				504 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
-				491 = {
+				944 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
 				503 = {
@@ -8592,22 +8592,22 @@ GER_reichskommissariats = {
 				505 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
-				678 = {
+				941 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
 				497 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
-				758 = {
+				937 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
-				855 = {
+				935 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
 				498 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
-				854 = {
+				936 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
 				499 = {
@@ -8616,7 +8616,7 @@ GER_reichskommissariats = {
 				496 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
-				492 = {
+				943 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
 				500 = {
@@ -8657,29 +8657,29 @@ GER_reichskommissariats = {
 				state = 687
 				state = 309
 				state = 310
-				state = 494
+				state = 969
 				state = 495
-				state = 679
-				state = 688
-				state = 757
-				state = 493
+				state = 940
+				state = 939
+				state = 938
+				state = 942
 				state = 280
 				state = 486
 				state = 504
-				state = 491
+				state = 944
 				state = 503
 				state = 502
 				state = 501
 				state = 505
-				state = 678
+				state = 941
 				state = 497
-				state = 758
-				state = 855
+				state = 937
+				state = 935
 				state = 498
-				state = 854
+				state = 936
 				state = 499
 				state = 496
-				state = 492
+				state = 943
 				state = 500
 				state = 487
 				state = 688
@@ -8690,14 +8690,14 @@ GER_reichskommissariats = {
 				state = 510
 				state = 957
 				## IMPASSABLE, HIGHLIGHTED BUT NOT REQUIRED ##
-				state = 507
-				state = 544
-				state = 506
-				state = 512
-				state = 511
-				state = 510
-				state = 509
-				state = 508
+				state = 967
+				state = 961
+				state = 968
+				state = 962
+				state = 963
+				state = 964
+				state = 965
+				state = 966
 			}
 		}
 
@@ -10374,7 +10374,7 @@ GER_reichskommissariats = {
 				857 = {
 				    is_controlled_by_ROOT_or_subject = yes
 				}
-				931 = {
+				859 = {
 				    is_controlled_by_ROOT_or_subject = yes
 				}
 				292 = {
@@ -10425,7 +10425,7 @@ GER_reichskommissariats = {
 				state = 855
 				state = 679
 				state = 857
-				state = 931
+				state = 859
 				state = 292
 				state = 856
 				state = 858
@@ -11736,7 +11736,7 @@ GER_reichskommissariats = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = GER_reichskommissariat_highlighted_required_states
-				300 = {
+				979 = {
 				    is_controlled_by_ROOT_or_subject = yes
 				}
 				523 = {
@@ -11867,7 +11867,7 @@ GER_reichskommissariats = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 300
+				state = 979
 				state = 523
 				state = 737
 				state = 634
@@ -11950,7 +11950,7 @@ GER_reichskommissariats = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			300 = {
+			979 = {
 				IF = {
 					limit = {
 						OWNER = {
@@ -11981,7 +11981,7 @@ GER_reichskommissariats = {
 					limit = {
 						GER_is_RAA_state = yes
 						NOT = {
-							state = 300
+							state = 979
 						}
 						OR = {
 							is_owned_by = ROOT
@@ -11995,7 +11995,7 @@ GER_reichskommissariats = {
 					limit = {
 						GER_is_RAA_state = yes
 						NOT = {
-							state = 300
+							state = 979
 						}
 						NOT = {
 							OR = {
@@ -12699,7 +12699,7 @@ special_projects = {
 		available = {
 			#has_war = yes
 			controls_state = 69 # Sudetenland
-			controls_state = 415 # Southern Sudetenland
+			controls_state = 972 # Southern Sudetenland
 			controls_state = 74 # Eastern Sudetenland
 			controls_state = 9 # Bohemia
 			controls_state = 75 # Moravia
@@ -12714,7 +12714,7 @@ special_projects = {
 		visible = {
 			#has_war = yes
 			controls_state = 69 # Sudetenland
-			controls_state = 415 # Southern Sudetenland
+			controls_state = 972 # Southern Sudetenland
 			controls_state = 74 # Eastern Sudetenland
 			controls_state = 9 # Bohemia
 			controls_state = 75 # Moravia
@@ -13464,7 +13464,7 @@ GER_reich_labor_service_cat = {
 
 		available = {
 			52 = { is_fully_controlled_by = ROOT }
-			301 = { is_fully_controlled_by = ROOT }
+			978 = { is_fully_controlled_by = ROOT }
 			50 = { is_fully_controlled_by = ROOT }
 			53 = { is_fully_controlled_by = ROOT }
 			54 = { is_fully_controlled_by = ROOT }
@@ -13473,7 +13473,7 @@ GER_reich_labor_service_cat = {
 		cancel_trigger = { 
 			NOT = { 
 				52 = { is_controlled_by = ROOT }
-				301 = { is_fully_controlled_by = ROOT }
+				978 = { is_fully_controlled_by = ROOT }
 				50 = { is_controlled_by = ROOT }
 				53 = { is_controlled_by = ROOT }
 				54 = { is_controlled_by = ROOT }
@@ -13483,7 +13483,7 @@ GER_reich_labor_service_cat = {
 		highlight_states = {
 			highlight_state_targets = {
 				state = 50 #Württemberg
-				state = 301 #Baden
+				state = 978 #Baden
 				state = 52 #Oberbayern
 				state = 53 #Niederbayern
 				state = 54 #Franken
@@ -13505,7 +13505,7 @@ GER_reich_labor_service_cat = {
 				limit = {
 					OR = {
 						state = 50 #Württemberg
-						state = 301 #Baden
+						state = 978 #Baden
 						state = 52 #Oberbayern
 						state = 53 #Niederbayern
 						state = 54 #Franken
@@ -14047,7 +14047,7 @@ GER_rebuild_the_nation_cat = {
 
 		available = {
 			52 = { is_fully_controlled_by = ROOT }
-			301 = { is_fully_controlled_by = ROOT }
+			978 = { is_fully_controlled_by = ROOT }
 			50 = { is_fully_controlled_by = ROOT }
 			53 = { is_fully_controlled_by = ROOT }
 			54 = { is_fully_controlled_by = ROOT }
@@ -14056,7 +14056,7 @@ GER_rebuild_the_nation_cat = {
 		cancel_trigger = { 
 			NOT = { 
 				52 = { is_controlled_by = ROOT }
-				301 = { is_fully_controlled_by = ROOT }
+				978 = { is_fully_controlled_by = ROOT }
 				50 = { is_controlled_by = ROOT }
 				53 = { is_controlled_by = ROOT }
 				54 = { is_controlled_by = ROOT }
@@ -14066,7 +14066,7 @@ GER_rebuild_the_nation_cat = {
 		highlight_states = {
 			highlight_state_targets = {
 				state = 50 #Württemberg
-				state = 301 #Baden
+				state = 978 #Baden
 				state = 52 #Oberbayern
 				state = 53 #Niederbayern
 				state = 54 #Franken
@@ -14088,7 +14088,7 @@ GER_rebuild_the_nation_cat = {
 				limit = {
 					OR = {
 						state = 50 #Württemberg
-						state = 301 #Baden
+						state = 978 #Baden
 						state = 52 #Oberbayern
 						state = 53 #Niederbayern
 						state = 54 #Franken
@@ -15471,7 +15471,7 @@ GER_south_east_asian_natural_wealth_cat = {
 					state = 646
 					state = 633
 					state = 743
-					state = 300
+					state = 979
 					state = 737
 				}
 
@@ -15559,7 +15559,7 @@ GER_south_east_asian_natural_wealth_cat = {
 					state = 646
 					state = 633
 					state = 743
-					state = 300
+					state = 979
 					state = 737
 				}
 
@@ -18044,7 +18044,7 @@ GER_weltpolitik_cat = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 300
+				state = 979
 			}
 		}
 
@@ -18054,7 +18054,7 @@ GER_weltpolitik_cat = {
 				has_completed_focus = GER_negotiate_old_colonies_in_the_east
 				has_completed_focus = GER_ally_chiang_kai_shek
 			}
-			300 = {
+			979 = {
 				is_controlled_by_ROOT_or_subject = yes
 			}
 			NOT = {
@@ -18080,7 +18080,7 @@ GER_weltpolitik_cat = {
 		}
 
 		cancel_trigger = {
-			300 = {
+			979 = {
 				is_not_controlled_by_ROOT_or_subject = yes
 			}
 		}
@@ -18089,7 +18089,7 @@ GER_weltpolitik_cat = {
 			
 			custom_effect_tooltip = GER_recruit_asian_schutztruppe_tt
 			hidden_effect = {
-				300 = { 
+				979 = { 
 					create_unit = {
 					    division = "name = \"Asiatische Schutztruppe 'Finschhafen'\" division_template = \"Asiatische Schutztruppe\" start_experience_factor = 0.2 start_equipment_factor = 0.8"
 					    owner = ROOT
@@ -18359,19 +18359,19 @@ GER_realpolitik_cat = {
 					create_faction = GER_mitteleuropa_alliance
 				}
 				HOL = {
-					add_state_claim = 302
+					add_state_claim = 977
 					add_state_claim = 6
 				}
 
 				custom_effect_tooltip = generic_skip_one_line_tt
 
-				add_state_claim = 292
+				add_state_claim = 980
 				add_state_claim = 34
 				add_to_faction = HOL
 				create_wargoal = {
 					type = take_claimed_state
 					target = BEL
-					generator = { 292 34 }
+					generator = { 980 34 }
 				}	
 			}
 
@@ -19372,7 +19372,7 @@ GER_realpolitik_cat = {
 				34 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
-				302 = {
+				977 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
 				29 = {
@@ -19385,7 +19385,7 @@ GER_realpolitik_cat = {
 			highlight_state_targets = {
 				state = 6
 				state = 34
-				state = 302
+				state = 977
 				state = 29
 			}
 		}
@@ -19464,14 +19464,14 @@ GER_realpolitik_cat = {
 						OR = {
 							state = 6
 							state = 34
-							state = 302
+							state = 977
 							state = 29
 						}
 					}
 					add_core_of = BEL
 					transfer_state_to = BEL
 				}
-				292 = {
+				980 = {
 					remove_core_of = BEL
 				}
 			}
@@ -19811,7 +19811,7 @@ GER_realpolitik_cat = {
 				120 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
-				857 = {
+				933 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
 				131 = {
@@ -19820,7 +19820,7 @@ GER_realpolitik_cat = {
 				931 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
-				858 = {
+				932 = {
 					is_controlled_by_ROOT_or_subject = yes
 				}
 			}
@@ -19832,10 +19832,10 @@ GER_realpolitik_cat = {
 				state = 133
 				state = 136
 				state = 120
-				state = 857
+				state = 933
 				state = 131
 				state = 931
-				state = 857
+				state = 932
 			}
 		}
 
@@ -19915,10 +19915,10 @@ GER_realpolitik_cat = {
 							state = 133
 							state = 136
 							state = 120
-							state = 857
+							state = 933
 							state = 131
 							state = 931
-							state = 857
+							state = 932
 						}
 					}
 					add_core_of = SCO

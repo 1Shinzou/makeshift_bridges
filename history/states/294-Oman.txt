@@ -11,7 +11,7 @@ state = {
 
 	history = {
 
-		owner = RAJ
+		owner = WST
 		add_core_of = WST
 
 		buildings = {

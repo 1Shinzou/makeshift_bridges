@@ -46,13 +46,13 @@ IF = {
 				state = 499
 			}
 			NOT = {
-				state = 544
+				state = 961
 				state = 962
-				state = 511
-				state = 510
-				state = 509
-				state = 508
-				state = 507
+				state = 963
+				state = 964
+				state = 965
+				state = 966
+				state = 967
 				state = 968
 				state = 496
 			}
@@ -74,9 +74,9 @@ IF = {
 			OR = {
 				state = 498
 				state = 499
-				state = 855
-				state = 854
-				state = 758
+				state = 935
+				state = 936
+				state = 937
 			}
 		}
 		add_dynamic_modifier = {

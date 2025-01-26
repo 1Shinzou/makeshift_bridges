@@ -4057,11 +4057,11 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					has_full_control_of_state = 486
-					486 = { NOT = { is_core_of = ROOT } }
+					has_full_control_of_state = 971
+					971 = { NOT = { is_core_of = ROOT } }
 				}
-				486 = { set_state_flag = BUL_bulgarian_reintegration_campaign_flag }
-				add_state_core = 486
+				971 = { set_state_flag = BUL_bulgarian_reintegration_campaign_flag }
+				add_state_core = 971
 			}
 			custom_effect_tooltip = BUL_historical_states_tt
 

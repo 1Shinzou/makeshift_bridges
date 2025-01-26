@@ -11,7 +11,7 @@ state=
 	
 
 	history= {
-		owner = FRA
+		owner = WST
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1

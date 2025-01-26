@@ -569,7 +569,7 @@ on_actions = {
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = train_equipment
+					type = train_equipment_1
 					amount = 2
 				}
 			}
@@ -608,7 +608,7 @@ on_actions = {
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = train_equipment
+					type = train_equipment_1
 					amount = 11
 				}
 			}
@@ -646,7 +646,7 @@ on_actions = {
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = train_equipment
+					type = train_equipment_1
 					amount = 14
 				}
 			}
@@ -684,7 +684,7 @@ on_actions = {
 					amount = 114
 				}
 				add_equipment_to_stockpile = {
-					type = train_equipment
+					type = train_equipment_1
 					amount = 10
 				}
 			}
@@ -714,7 +714,7 @@ on_actions = {
 					amount = 5
 				}
 				add_equipment_to_stockpile = {
-					type = train_equipment
+					type = train_equipment_1
 					amount = 2
 				}
 			}
@@ -752,7 +752,7 @@ on_actions = {
 					amount = 45
 				}
 				add_equipment_to_stockpile = {
-					type = train_equipment
+					type = train_equipment_1
 					amount = 4
 				}
 			}
@@ -790,7 +790,7 @@ on_actions = {
 					amount = 10
 				}
 				add_equipment_to_stockpile = {
-					type = train_equipment
+					type = train_equipment_1
 					amount = 10
 				}
 			}
@@ -828,7 +828,7 @@ on_actions = {
 					amount = 5
 				}
 				add_equipment_to_stockpile = {
-					type = train_equipment
+					type = train_equipment_1
 					amount = 10
 				}
 			}
@@ -866,7 +866,7 @@ on_actions = {
 					amount = 80
 				}
 				add_equipment_to_stockpile = {
-					type = train_equipment
+					type = train_equipment_1
 					amount = 40
 				}
 			}
@@ -904,7 +904,7 @@ on_actions = {
 					amount = 172
 				}
 				add_equipment_to_stockpile = {
-					type = train_equipment
+					type = train_equipment_1
 					amount = 37
 				}
 			}
@@ -942,7 +942,7 @@ on_actions = {
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = train_equipment
+					type = train_equipment_1
 					amount = 30
 				}
 			}
@@ -976,7 +976,7 @@ on_actions = {
 					amount = 106
 				}
 				add_equipment_to_stockpile = {
-					type = train_equipment
+					type = train_equipment_1
 					amount = 76
 				}
 			}
@@ -1014,7 +1014,7 @@ on_actions = {
 					amount = 428
 				}
 				add_equipment_to_stockpile = {
-					type = train_equipment
+					type = train_equipment_1
 					amount = 98
 				}
 			}
@@ -1052,7 +1052,7 @@ on_actions = {
 					amount = 22
 				}
 				add_equipment_to_stockpile = {
-					type = train_equipment
+					type = train_equipment_1
 					amount = 19
 				}
 			}
@@ -1090,13 +1090,13 @@ on_actions = {
 					amount = 45
 				}
 				add_equipment_to_stockpile = {
-					type = train_equipment
+					type = train_equipment_1
 					amount = 20
 				}
 			}
 			ENG = {
 				add_equipment_to_stockpile = {
-					type = train_equipment
+					type = train_equipment_1
 					amount = 74
 				}
 				add_equipment_to_stockpile = {
@@ -1132,7 +1132,7 @@ on_actions = {
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = armored_car_equipment
+					type = gw_armored_car_equipment
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
@@ -1144,7 +1144,7 @@ on_actions = {
 			}
 			USA= {
 				add_equipment_to_stockpile = {
-					type = train_equipment
+					type = train_equipment_1
 					amount = 121
 				}
 				add_equipment_to_stockpile = {
@@ -1180,7 +1180,7 @@ on_actions = {
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = armored_car_equipment
+					type = gw_armored_car_equipment
 					amount = 0
 				}
 			}
@@ -1218,7 +1218,7 @@ on_actions = {
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = armored_car_equipment
+					type = gw_armored_car_equipment
 					amount = 0
 				}
 			}
@@ -1256,13 +1256,13 @@ on_actions = {
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = armored_car_equipment
+					type = gw_armored_car_equipment
 					amount = 0
 				}
 			}
 			BRA = {
 				add_equipment_to_stockpile = {
-					type = train_equipment
+					type = train_equipment_1
 					amount = 4
 				}
 				add_equipment_to_stockpile = {
@@ -1298,7 +1298,7 @@ on_actions = {
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = armored_car_equipment
+					type = gw_armored_car_equipment
 					amount = 0
 				}
 			}
@@ -1336,7 +1336,7 @@ on_actions = {
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = armored_car_equipment
+					type = gw_armored_car_equipment
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
@@ -1358,7 +1358,7 @@ on_actions = {
 					variant_name = "H-35"
 				}
 				add_equipment_to_stockpile = {
-					type = train_equipment
+					type = train_equipment_1
 					amount = 82
 				}
 				
@@ -1397,13 +1397,13 @@ on_actions = {
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = armored_car_equipment
+					type = gw_armored_car_equipment
 					amount = 0
 				}
 			}
 			AST = {
 				add_equipment_to_stockpile = {
-					type = train_equipment
+					type = train_equipment_1
 					amount = 4
 				}
 				add_equipment_to_stockpile = {
@@ -1439,7 +1439,7 @@ on_actions = {
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = armored_car_equipment
+					type = gw_armored_car_equipment
 					amount = 0
 				}
 			}
@@ -1477,13 +1477,13 @@ on_actions = {
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = armored_car_equipment
+					type = gw_armored_car_equipment
 					amount = 0
 				}
 			}
 			SOV = {
 				add_equipment_to_stockpile = {
-					type = train_equipment
+					type = train_equipment_1
 					amount = 266
 				}
 				add_equipment_to_stockpile = {
@@ -1519,7 +1519,7 @@ on_actions = {
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = armored_car_equipment
+					type = gw_armored_car_equipment
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
@@ -1569,7 +1569,7 @@ on_actions = {
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = armored_car_equipment
+					type = gw_armored_car_equipment
 					amount = 0
 				}
 			}
@@ -1607,13 +1607,13 @@ on_actions = {
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = armored_car_equipment
+					type = gw_armored_car_equipment
 					amount = 0
 				}
 			}
 			CAN = {
 				add_equipment_to_stockpile = {
-					type = train_equipment
+					type = train_equipment_1
 					amount = 5
 				}
 				add_equipment_to_stockpile = {
@@ -1649,7 +1649,7 @@ on_actions = {
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = armored_car_equipment
+					type = gw_armored_car_equipment
 					amount = 0
 				}
 			}
@@ -1687,7 +1687,7 @@ on_actions = {
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = armored_car_equipment
+					type = gw_armored_car_equipment
 					amount = 0
 				}
 			}
@@ -1725,13 +1725,13 @@ on_actions = {
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = armored_car_equipment
+					type = gw_armored_car_equipment
 					amount = 0
 				}
 			}
 			JAP = {
 				add_equipment_to_stockpile = {
-					type = train_equipment
+					type = train_equipment_1
 					amount = 29
 				}
 				add_equipment_to_stockpile = {
@@ -1767,7 +1767,7 @@ on_actions = {
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = armored_car_equipment
+					type = gw_armored_car_equipment
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
@@ -1779,7 +1779,7 @@ on_actions = {
 			}
 			GER = {
 				add_equipment_to_stockpile = {
-					type = train_equipment
+					type = train_equipment_1
 					amount = 45
 				}
 				add_equipment_to_stockpile = {
@@ -1815,7 +1815,7 @@ on_actions = {
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = armored_car_equipment
+					type = gw_armored_car_equipment
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
@@ -1827,7 +1827,7 @@ on_actions = {
 			}
 			BUL = {
 				add_equipment_to_stockpile = {
-					type = train_equipment
+					type = train_equipment_1
 					amount = 5
 				}
 				add_equipment_to_stockpile = {
@@ -1863,13 +1863,13 @@ on_actions = {
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = armored_car_equipment
+					type = gw_armored_car_equipment
 					amount = 0
 				}
 			}
 			HUN = {
 				add_equipment_to_stockpile = {
-					type = train_equipment
+					type = train_equipment_1
 					amount = 3
 				}
 				add_equipment_to_stockpile = {
@@ -1905,13 +1905,13 @@ on_actions = {
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = armored_car_equipment
+					type = gw_armored_car_equipment
 					amount = 0
 				}
 			}
 			ROM = {
 				add_equipment_to_stockpile = {
-					type = train_equipment
+					type = train_equipment_1
 					amount = 18
 				}
 				add_equipment_to_stockpile = {
@@ -1947,13 +1947,13 @@ on_actions = {
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = armored_car_equipment
+					type = gw_armored_car_equipment
 					amount = 0
 				}
 			}
 			ITA = {
 				add_equipment_to_stockpile = {
-					type = train_equipment
+					type = train_equipment_1
 					amount = 29
 				}
 				add_equipment_to_stockpile = {
@@ -1989,7 +1989,7 @@ on_actions = {
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = armored_car_equipment
+					type = gw_armored_car_equipment
 					amount = 150
 				}
 				add_equipment_to_stockpile = {
@@ -2005,7 +2005,7 @@ on_actions = {
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = train_equipment
+					type = train_equipment_1
 					amount = 6
 				}
 				add_equipment_to_stockpile = {
@@ -2037,7 +2037,7 @@ on_actions = {
 					amount = 0
 				}
 				add_equipment_to_stockpile = {
-					type = armored_car_equipment
+					type = gw_armored_car_equipment
 					amount = 0
 				}
 				

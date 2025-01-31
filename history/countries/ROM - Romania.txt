@@ -70,12 +70,7 @@ recruit_character = ROM_chief_manuever
 recruit_character = ROM_crusader_rom
 recruit_character = ROM_mihail_sturdza
 recruit_character = ROM_paul_teodorescu
-recruit_character = ROM_heinrich_himmler
-recruit_character = ROM_walther_wenck
-recruit_character = ROM_felix_steiner
-recruit_character = ROM_walter_model
-recruit_character = ROM_gotthard_heinrici
-recruit_character = ROM_friedrich_schulz
+
 # Navy Leaders
 recruit_character = ROM_marijan_polic
 recruit_character = ROM_miguel_buiza_fernandez_palacios
@@ -148,7 +143,6 @@ add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 100 }
 add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 }
 #########################################################################################
 
-anti_cross_faction_trade_allies = yes
 
 add_ideas = armyandnavy_idea
 add_ideas = ROM_agrarian_economy 

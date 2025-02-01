@@ -164,8 +164,7 @@ generic_tank_refurbishment_plant_organization = {
 		name = generic_mio_initial_trait_tank_refurbishment_plant
 
 		production_bonus = {
-			production_resource_need_factor = -0.5
-			production_efficiency_cap_factor = -0.25
+			production_resource_need_factor = -0.25
 		}
 		
 	}

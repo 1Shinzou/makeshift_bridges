@@ -3256,12 +3256,16 @@ focus_tree = {
 		x = 7
 		y = 1
 		relative_position_id = USA_continue_the_new_deal
-		cost = 10
+		cost = 5
 		
 		available_if_capitulated = yes
 		
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			add_timed_idea = {
+				idea = investing_in_states
+				days = 180
+			}
 			378 = {
 				add_building_construction = {
 					type = infrastructure
@@ -3329,12 +3333,20 @@ focus_tree = {
 		x = 7
 		y = 2
 		relative_position_id = USA_continue_the_new_deal
-		cost = 10
-		
+		cost = 5
+		available = {
+			NOT = {
+				has_idea = investing_in_states
+			}
+		}
 		available_if_capitulated = yes
 		
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			add_timed_idea = {
+				idea = investing_in_states
+				days = 180
+			}
 			393 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -3373,12 +3385,20 @@ focus_tree = {
 		x = 6
 		y = 3
 		relative_position_id = USA_continue_the_new_deal
-		cost = 10
-		
+		cost = 5
+		available = {
+			NOT = {
+				has_idea = investing_in_states
+			}
+		}
 		available_if_capitulated = yes
 		
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			add_timed_idea = {
+				idea = investing_in_states
+				days = 180
+			}
 			378 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -3417,12 +3437,20 @@ focus_tree = {
 		x = 8
 		y = 3
 		relative_position_id = USA_continue_the_new_deal
-		cost = 10
-		
+		cost = 5
+		available = {
+			NOT = {
+				has_idea = investing_in_states
+			}
+		}
 		available_if_capitulated = yes
 		
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			add_timed_idea = {
+				idea = investing_in_states
+				days = 180
+			}
 			357 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -3461,12 +3489,20 @@ focus_tree = {
 		x = 9
 		y = 2
 		relative_position_id = USA_continue_the_new_deal
-		cost = 10
-		
+		cost = 5
+		available = {
+			NOT = {
+				has_idea = investing_in_states
+			}
+		}
 		available_if_capitulated = yes
 		
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			add_timed_idea = {
+				idea = investing_in_states
+				days = 180
+			}
 			375 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -3505,12 +3541,21 @@ focus_tree = {
 		x = 5
 		y = 2
 		relative_position_id = USA_continue_the_new_deal
-		cost = 10
+		cost = 5
 		
 		available_if_capitulated = yes
+		available = {
+			NOT = {
+				has_idea = investing_in_states
+			}
+		}
 		
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			add_timed_idea = {
+				idea = investing_in_states
+				days = 180
+			}
 			384 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -3554,7 +3599,11 @@ focus_tree = {
 		y = 4
 		relative_position_id = USA_continue_the_new_deal
 		cost = 10
-		
+		available = {
+			NOT = {
+				has_idea = investing_in_states
+			}
+		}
 		available_if_capitulated = yes
 		
 		search_filters = {FOCUS_FILTER_RESEARCH}

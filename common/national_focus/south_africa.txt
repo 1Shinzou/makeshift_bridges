@@ -2022,11 +2022,7 @@ focus_tree = {
            factor = 47
 		}
        available = {
-			NOT = {
-				has_tech = superior_firepower
-				has_tech = trench_warfare 
-				has_tech = mass_assault 
-			}
+			
 		}
         completion_reward = {
 			add_doctrine_cost_reduction = {
@@ -2055,9 +2051,7 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = {
-				has_tech = mobile_warfare 
-			}
+			
 		}
 		
 		bypass = {

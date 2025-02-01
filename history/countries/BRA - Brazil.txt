@@ -112,7 +112,7 @@ IF = {
 	set_variable = { BRA_estado_novo_production_speed_buildings_factor = 0 }
 	set_variable = { BRA_estado_novo_war_support_factor = 0 }
 	set_variable = { BRA_estado_novo_recruitable_population_factor = 0 }
-	set_variable = { BRA_estado_novo_consumer_goods_expected_value = 0 }
+	set_variable = { BRA_estado_novo_consumer_goods_factor = 0 }
 	set_variable = { BRA_estado_novo_political_power_factor = 0 }
 	set_variable = { BRA_estado_novo_production_factory_max_efficiency_factor = 0 }
 	set_variable = { BRA_estado_novo_industrial_capacity_factory = 0 }
@@ -130,7 +130,7 @@ IF = {
 	set_variable = { BRA_estado_moderno_production_speed_buildings_factor = 0 }
 	set_variable = { BRA_estado_moderno_war_support_factor = 0 }
 	set_variable = { BRA_estado_moderno_recruitable_population_factor = 0 }
-	set_variable = { BRA_estado_moderno_consumer_goods_expected_value = 0 }
+	set_variable = { BRA_estado_moderno_consumer_goods_factor = 0 }
 	set_variable = { BRA_estado_moderno_political_power_factor = 0 }
 	set_variable = { BRA_estado_moderno_production_factory_max_efficiency_factor = 0 }
 	set_variable = { BRA_estado_moderno_industrial_capacity_factory = 0 }

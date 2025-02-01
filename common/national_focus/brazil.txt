@@ -306,8 +306,8 @@ focus_tree = {
 					tooltip = production_factory_max_efficiency_factor_tt
 				}
 				add_to_variable = {
-					BRA_estado_novo_consumer_goods_expected_value = -0.05
-					tooltip = consumer_goods_expected_value_tt
+					BRA_estado_novo_consumer_goods_factor = -0.05
+					tooltip = consumer_goods_factor_tt
 				}
 				add_to_variable = {
 					BRA_estado_novo_industrial_capacity_dockyard = 0.05
@@ -321,8 +321,8 @@ focus_tree = {
 					tooltip = industrial_capacity_factory_tt
 				}
 				add_to_variable = {
-					BRA_estado_moderno_consumer_goods_expected_value = -0.05
-					tooltip = consumer_goods_expected_value_tt
+					BRA_estado_moderno_consumer_goods_factor = -0.05
+					tooltip = consumer_goods_factor_tt
 				}
 				add_to_variable = {
 					BRA_estado_moderno_industrial_capacity_dockyard = 0.05
@@ -2240,8 +2240,8 @@ focus_tree = {
 				}
 				custom_effect_tooltip = BRA_modify_estado_novo_ns_intro
 				add_to_variable = {
-					BRA_estado_novo_consumer_goods_expected_value = 0.05
-					tooltip = consumer_goods_expected_value_tt
+					BRA_estado_novo_consumer_goods_factor = 0.05
+					tooltip = consumer_goods_factor_tt
 				}
 				add_to_variable = {
 					BRA_estado_novo_stability_factor = 0.03
@@ -2260,8 +2260,8 @@ focus_tree = {
 				}
 				custom_effect_tooltip = BRA_modify_estado_moderno_ns_intro
 				add_to_variable = {
-					BRA_estado_moderno_consumer_goods_expected_value = -0.05
-					tooltip = consumer_goods_expected_value_tt
+					BRA_estado_moderno_consumer_goods_factor = -0.05
+					tooltip = consumer_goods_factor_tt
 				}
 				add_to_variable = {
 					BRA_estado_moderno_stability_factor = 0.03
@@ -2277,8 +2277,8 @@ focus_tree = {
 				custom_effect_tooltip = BRA_consolidation_of_labor_laws_fallback_tt
 				effect_tooltip = {
 					add_to_variable = {
-						BRA_estado_moderno_consumer_goods_expected_value = -0.05
-						tooltip = consumer_goods_expected_value_tt
+						BRA_estado_moderno_consumer_goods_factor = -0.05
+						tooltip = consumer_goods_factor_tt
 					}
 					add_to_variable = {
 						BRA_estado_moderno_stability_factor = 0.03

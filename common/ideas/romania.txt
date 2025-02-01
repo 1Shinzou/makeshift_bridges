@@ -127,7 +127,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_expected_value = 0.05				
+				consumer_goods_expected_value = 0.1				
 			}
 		}
 
@@ -774,7 +774,7 @@ ideas = {
 			}
 	
 			modifier = {
-				consumer_goods_expected_value = 0.05
+				consumer_goods_expected_value = 0.1
 				stability_factor = -0.4
 				production_speed_industrial_complex_factor = 0.40
 			}

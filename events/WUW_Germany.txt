@@ -61,10 +61,10 @@ country_event = { #MEFO Bills have been cancelled
 			add_dynamic_modifier = { modifier = GER_economy_of_conquest_modifier }
 		}
 		#effect_tooltip = {
-		#	custom_effect_tooltip = GER_industrial_consumer_goods_expected_value_tt
+		#	custom_effect_tooltip = GER_industrial_consumer_goods_factor_tt
 		#	set_variable = { 
-		#		GER_industrial_consumer_goods_expected_value = GER_industrial_consumer_goods_expected_value
-		#		tooltip = consumer_goods_expected_value_tt
+		#		GER_industrial_consumer_goods_factor = GER_industrial_consumer_goods_factor
+		#		tooltip = consumer_goods_factor_tt
 		#	}
 		#}
 		add_to_variable = {
@@ -125,7 +125,7 @@ country_event = { #MEFO Bills are getting a bit expensive and players must be wa
 			has_dynamic_modifier = { modifier = GER_mefo_bills_modifier }
 			has_dynamic_modifier = { modifier = GER_economy_of_conquest_modifier }
 		}
-		check_variable = { GER_industrial_consumer_goods_expected_value > 0.245 }
+		check_variable = { GER_industrial_consumer_goods_factor > 0.245 }
 	}
 
 	option = { 
@@ -150,7 +150,7 @@ country_event = { #MEFO Bills are getting expensive and players must be warned, 
 			has_dynamic_modifier = { modifier = GER_mefo_bills_modifier }
 			has_dynamic_modifier = { modifier = GER_economy_of_conquest_modifier }
 		}
-		check_variable = { GER_industrial_consumer_goods_expected_value > 0.495 }
+		check_variable = { GER_industrial_consumer_goods_factor > 0.495 }
 	}
 
 	option = { 
@@ -175,7 +175,7 @@ country_event = { #MEFO Bills have gotten real expensive and players must be war
 			has_dynamic_modifier = { modifier = GER_mefo_bills_modifier }
 			has_dynamic_modifier = { modifier = GER_economy_of_conquest_modifier }
 		}
-		check_variable = { var = GER_industrial_consumer_goods_expected_value value = 1 compare = greater_than_or_equals }
+		check_variable = { var = GER_industrial_consumer_goods_factor value = 1 compare = greater_than_or_equals }
 	}
 
 	option = { 
@@ -14027,8 +14027,8 @@ country_event = {
 			}
 			GER_modify_industrial_modifier = yes
 			add_to_variable = { 
-				GER_industrial_consumer_goods_expected_value = -0.05
-				tooltip = consumer_goods_expected_value_tt
+				GER_industrial_consumer_goods_factor = -0.05
+				tooltip = consumer_goods_factor_tt
 			}
 		}
 		ELSE = {

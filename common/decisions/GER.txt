@@ -41,8 +41,8 @@ debug_decisions = {
 				}
 				custom_effect_tooltip = GER_modify_economy_of_conquest_modifier_tt
 				add_to_variable = { 
-					GER_industrial_consumer_goods_expected_value = -0.05
-					tooltip = consumer_goods_expected_value_tt
+					GER_industrial_consumer_goods_factor = -0.1
+					tooltip = consumer_goods_factor_tt
 				}
 				GER_reduce_mefo_bills_penalty = yes
 			}
@@ -73,8 +73,8 @@ debug_decisions = {
 				}
 				custom_effect_tooltip = GER_modify_economy_of_conquest_modifier_tt
 				add_to_variable = { 
-					GER_industrial_consumer_goods_expected_value = 0.05
-					tooltip = consumer_goods_expected_value_tt
+					GER_industrial_consumer_goods_factor = 0.1
+					tooltip = consumer_goods_factor_tt
 				}
 				GER_add_mefo_bills_penalty = yes
 			}
@@ -260,19 +260,19 @@ GER_seize_gold_reserves_cat = {
 			base = 10
 			modifier = {
 				factor = 2.5
-				check_variable = { GER_industrial_consumer_goods_expected_value > 0.25 }
+				check_variable = { GER_industrial_consumer_goods_factor > 0.25 }
 			}
 			modifier = {
 				factor = 2
-				check_variable = { GER_industrial_consumer_goods_expected_value > 0.5 }
+				check_variable = { GER_industrial_consumer_goods_factor > 0.5 }
 			}
 			modifier = {
 				factor = 2
-				check_variable = { GER_industrial_consumer_goods_expected_value > 0.75 }
+				check_variable = { GER_industrial_consumer_goods_factor > 0.75 }
 			}
 			modifier = {
 				factor = 5
-				check_variable = { GER_industrial_consumer_goods_expected_value > 0.99 }
+				check_variable = { GER_industrial_consumer_goods_factor > 0.99 }
 			}
 			modifier = {
 				factor = 1.5
@@ -286,7 +286,7 @@ GER_seize_gold_reserves_cat = {
 			}
 			modifier = {
 				factor = 0
-				check_variable = { GER_industrial_consumer_goods_expected_value < 0.15 }
+				check_variable = { GER_industrial_consumer_goods_factor < 0.15 }
 			}
 		}
 
@@ -319,7 +319,7 @@ GER_seize_gold_reserves_cat = {
 			ROOT = {
 				custom_trigger_tooltip = {
 					tooltip = GER_economy_of_conquest_modifier_consumer_goods_tt
-					check_variable = { GER_industrial_consumer_goods_expected_value > 0 }
+					check_variable = { GER_industrial_consumer_goods_factor > 0 }
 				}
 			}
 		}
@@ -357,8 +357,8 @@ GER_seize_gold_reserves_cat = {
 
 				custom_effect_tooltip = GER_modify_economy_of_conquest_modifier_tt
 				add_to_variable = {
-					GER_industrial_consumer_goods_expected_value = occupied_state_num_factory
-					tooltip = consumer_goods_expected_value_tt
+					GER_industrial_consumer_goods_factor = occupied_state_num_factory
+					tooltip = consumer_goods_factor_tt
 				}
 				GER_reduce_mefo_bills_penalty = yes
 			}
@@ -978,19 +978,19 @@ GER_price_controls_cat = {
 			base = 5
 			modifier = {
 				factor = 2
-				check_variable = { GER_industrial_consumer_goods_expected_value > 0.2 }
+				check_variable = { GER_industrial_consumer_goods_factor > 0.2 }
 			}
 			modifier = {
 				factor = 2
-				check_variable = { GER_industrial_consumer_goods_expected_value > 0.3 }
+				check_variable = { GER_industrial_consumer_goods_factor > 0.3 }
 			}
 			modifier = {
 				factor = 2
-				check_variable = { GER_industrial_consumer_goods_expected_value > 0.4 }
+				check_variable = { GER_industrial_consumer_goods_factor > 0.4 }
 			}
 			modifier = {
 				factor = 0
-				check_variable = { GER_industrial_consumer_goods_expected_value < 0.1 }
+				check_variable = { GER_industrial_consumer_goods_factor < 0.1 }
 			}
 		}
 
@@ -1008,8 +1008,8 @@ GER_price_controls_cat = {
 		complete_effect = {
 			GER_modify_industrial_modifier = yes
 			add_to_variable = { 
-				GER_industrial_consumer_goods_expected_value = -0.05
-				tooltip = consumer_goods_expected_value_tt
+				GER_industrial_consumer_goods_factor = -0.05
+				tooltip = consumer_goods_factor_tt
 			}
 			GER_reduce_mefo_bills_penalty = yes
 			add_war_support = 0.025
@@ -1024,19 +1024,19 @@ GER_price_controls_cat = {
 			base = 5
 			modifier = {
 				factor = 2
-				check_variable = { GER_industrial_consumer_goods_expected_value > 0.2 }
+				check_variable = { GER_industrial_consumer_goods_factor > 0.2 }
 			}
 			modifier = {
 				factor = 2
-				check_variable = { GER_industrial_consumer_goods_expected_value > 0.3 }
+				check_variable = { GER_industrial_consumer_goods_factor > 0.3 }
 			}
 			modifier = {
 				factor = 2
-				check_variable = { GER_industrial_consumer_goods_expected_value > 0.4 }
+				check_variable = { GER_industrial_consumer_goods_factor > 0.4 }
 			}
 			modifier = {
 				factor = 0
-				check_variable = { GER_industrial_consumer_goods_expected_value < 0.1 }
+				check_variable = { GER_industrial_consumer_goods_factor < 0.1 }
 			}
 		}
 
@@ -1054,8 +1054,8 @@ GER_price_controls_cat = {
 		complete_effect = {
 			GER_modify_industrial_modifier = yes
 			add_to_variable = { 
-				GER_industrial_consumer_goods_expected_value = -0.05
-				tooltip = consumer_goods_expected_value_tt
+				GER_industrial_consumer_goods_factor = -0.05
+				tooltip = consumer_goods_factor_tt
 			}
 			GER_reduce_mefo_bills_penalty = yes
 			add_popularity = { ideology = ROOT popularity = 0.025 }
@@ -1069,19 +1069,19 @@ GER_price_controls_cat = {
 			base = 5
 			modifier = {
 				factor = 2
-				check_variable = { GER_industrial_consumer_goods_expected_value > 0.2 }
+				check_variable = { GER_industrial_consumer_goods_factor > 0.2 }
 			}
 			modifier = {
 				factor = 2
-				check_variable = { GER_industrial_consumer_goods_expected_value > 0.3 }
+				check_variable = { GER_industrial_consumer_goods_factor > 0.3 }
 			}
 			modifier = {
 				factor = 2
-				check_variable = { GER_industrial_consumer_goods_expected_value > 0.4 }
+				check_variable = { GER_industrial_consumer_goods_factor > 0.4 }
 			}
 			modifier = {
 				factor = 0
-				check_variable = { GER_industrial_consumer_goods_expected_value < 0.1 }
+				check_variable = { GER_industrial_consumer_goods_factor < 0.1 }
 			}
 		}
 
@@ -1099,8 +1099,8 @@ GER_price_controls_cat = {
 		complete_effect = {
 			GER_modify_industrial_modifier = yes
 			add_to_variable = { 
-				GER_industrial_consumer_goods_expected_value = -0.05
-				tooltip = consumer_goods_expected_value_tt
+				GER_industrial_consumer_goods_factor = -0.05
+				tooltip = consumer_goods_factor_tt
 			}
 			GER_reduce_mefo_bills_penalty = yes
 			add_timed_idea = {
@@ -1117,19 +1117,19 @@ GER_price_controls_cat = {
 			base = 5
 			modifier = {
 				factor = 2
-				check_variable = { GER_industrial_consumer_goods_expected_value > 0.2 }
+				check_variable = { GER_industrial_consumer_goods_factor > 0.2 }
 			}
 			modifier = {
 				factor = 2
-				check_variable = { GER_industrial_consumer_goods_expected_value > 0.3 }
+				check_variable = { GER_industrial_consumer_goods_factor > 0.3 }
 			}
 			modifier = {
 				factor = 2
-				check_variable = { GER_industrial_consumer_goods_expected_value > 0.4 }
+				check_variable = { GER_industrial_consumer_goods_factor > 0.4 }
 			}
 			modifier = {
 				factor = 0
-				check_variable = { GER_industrial_consumer_goods_expected_value < 0.1 }
+				check_variable = { GER_industrial_consumer_goods_factor < 0.1 }
 			}
 		}
 
@@ -1148,8 +1148,8 @@ GER_price_controls_cat = {
 		complete_effect = {
 			GER_modify_industrial_modifier = yes
 			add_to_variable = { 
-				GER_industrial_consumer_goods_expected_value = -0.05
-				tooltip = consumer_goods_expected_value_tt
+				GER_industrial_consumer_goods_factor = -0.05
+				tooltip = consumer_goods_factor_tt
 			}
 			GER_reduce_mefo_bills_penalty = yes
 		}
@@ -1162,19 +1162,19 @@ GER_price_controls_cat = {
 			base = 2.5
 			modifier = {
 				factor = 2
-				check_variable = { GER_industrial_consumer_goods_expected_value > 0.2 }
+				check_variable = { GER_industrial_consumer_goods_factor > 0.2 }
 			}
 			modifier = {
 				factor = 2
-				check_variable = { GER_industrial_consumer_goods_expected_value > 0.3 }
+				check_variable = { GER_industrial_consumer_goods_factor > 0.3 }
 			}
 			modifier = {
 				factor = 2
-				check_variable = { GER_industrial_consumer_goods_expected_value > 0.4 }
+				check_variable = { GER_industrial_consumer_goods_factor > 0.4 }
 			}
 			modifier = {
 				factor = 0
-				check_variable = { GER_industrial_consumer_goods_expected_value < 0.1 }
+				check_variable = { GER_industrial_consumer_goods_factor < 0.1 }
 			}
 		}
 
@@ -1192,8 +1192,8 @@ GER_price_controls_cat = {
 		complete_effect = {
 			GER_modify_industrial_modifier = yes
 			add_to_variable = { 
-				GER_industrial_consumer_goods_expected_value = -0.05
-				tooltip = consumer_goods_expected_value_tt
+				GER_industrial_consumer_goods_factor = -0.15
+				tooltip = consumer_goods_factor_tt
 			}
 			GER_reduce_mefo_bills_penalty = yes
 			add_timed_idea = {
@@ -1210,19 +1210,19 @@ GER_price_controls_cat = {
 			base = 2.5
 			modifier = {
 				factor = 2
-				check_variable = { GER_industrial_consumer_goods_expected_value > 0.2 }
+				check_variable = { GER_industrial_consumer_goods_factor > 0.2 }
 			}
 			modifier = {
 				factor = 2
-				check_variable = { GER_industrial_consumer_goods_expected_value > 0.3 }
+				check_variable = { GER_industrial_consumer_goods_factor > 0.3 }
 			}
 			modifier = {
 				factor = 2
-				check_variable = { GER_industrial_consumer_goods_expected_value > 0.4 }
+				check_variable = { GER_industrial_consumer_goods_factor > 0.4 }
 			}
 			modifier = {
 				factor = 0
-				check_variable = { GER_industrial_consumer_goods_expected_value < 0.1 }
+				check_variable = { GER_industrial_consumer_goods_factor < 0.1 }
 			}
 		}
 
@@ -1241,8 +1241,8 @@ GER_price_controls_cat = {
 		complete_effect = {
 			GER_modify_industrial_modifier = yes
 			add_to_variable = { 
-				GER_industrial_consumer_goods_expected_value = -0.05
-				tooltip = consumer_goods_expected_value_tt
+				GER_industrial_consumer_goods_factor = -0.1
+				tooltip = consumer_goods_factor_tt
 			}
 			GER_reduce_mefo_bills_penalty = yes
 			add_stability = -0.025
@@ -1256,19 +1256,19 @@ GER_price_controls_cat = {
 			base = 2.5
 			modifier = {
 				factor = 2
-				check_variable = { GER_industrial_consumer_goods_expected_value > 0.2 }
+				check_variable = { GER_industrial_consumer_goods_factor > 0.2 }
 			}
 			modifier = {
 				factor = 2
-				check_variable = { GER_industrial_consumer_goods_expected_value > 0.3 }
+				check_variable = { GER_industrial_consumer_goods_factor > 0.3 }
 			}
 			modifier = {
 				factor = 2
-				check_variable = { GER_industrial_consumer_goods_expected_value > 0.4 }
+				check_variable = { GER_industrial_consumer_goods_factor > 0.4 }
 			}
 			modifier = {
 				factor = 0
-				check_variable = { GER_industrial_consumer_goods_expected_value < 0.1 }
+				check_variable = { GER_industrial_consumer_goods_factor < 0.1 }
 			}
 		}
 
@@ -1287,8 +1287,8 @@ GER_price_controls_cat = {
 		complete_effect = {
 			GER_modify_industrial_modifier = yes
 			add_to_variable = { 
-				GER_industrial_consumer_goods_expected_value = -0.05
-				tooltip = consumer_goods_expected_value_tt
+				GER_industrial_consumer_goods_factor = -0.1
+				tooltip = consumer_goods_factor_tt
 			}
 			GER_reduce_mefo_bills_penalty = yes
 			add_stability = -0.025
@@ -1302,19 +1302,19 @@ GER_price_controls_cat = {
 			base = 1
 			modifier = {
 				factor = 1.2
-				check_variable = { GER_industrial_consumer_goods_expected_value > 0.3 }
+				check_variable = { GER_industrial_consumer_goods_factor > 0.3 }
 			}
 			modifier = {
 				factor = 1.3
-				check_variable = { GER_industrial_consumer_goods_expected_value > 0.5 }
+				check_variable = { GER_industrial_consumer_goods_factor > 0.5 }
 			}
 			modifier = {
 				factor = 1.5
-				check_variable = { GER_industrial_consumer_goods_expected_value > 0.7 }
+				check_variable = { GER_industrial_consumer_goods_factor > 0.7 }
 			}
 			modifier = {
 				factor = 0
-				check_variable = { GER_industrial_consumer_goods_expected_value < 0.1 }
+				check_variable = { GER_industrial_consumer_goods_factor < 0.1 }
 			}
 			modifier = {
 				factor = 0
@@ -1352,8 +1352,8 @@ GER_price_controls_cat = {
 		complete_effect = {
 			GER_modify_industrial_modifier = yes
 			add_to_variable = { 
-				GER_industrial_consumer_goods_expected_value = -0.05
-				tooltip = consumer_goods_expected_value_tt
+				GER_industrial_consumer_goods_factor = -0.15
+				tooltip = consumer_goods_factor_tt
 			}
 			custom_effect_tooltip = GER_exploit_the_gombos_treaty_tt
 			GER_reduce_mefo_bills_penalty = yes
@@ -13570,7 +13570,7 @@ GER_integration_of_puppet_economies_dec_cat = {
 		days_remove = GER_puppet_economies_integration_days #365
 
 		modifier = {
-			consumer_goods_expected_value = 0.05
+			consumer_goods_factor = 0.1
 			industrial_capacity_factory = 0.02
 		}
 
@@ -13656,7 +13656,7 @@ GER_integration_of_puppet_economies_dec_cat = {
 		days_remove = GER_puppet_economies_integration_days #365
 
 		modifier = {
-			consumer_goods_expected_value = -0.05
+			consumer_goods_factor = -0.1
 		}
 
 		cancel_effect = {

@@ -8,14 +8,14 @@
 
  #################### 
 
-MEX_tga_organization = {
-	include = 
-	icon = GFX_idea_MEX_tga
-	allowed = { 
-		has_dlc = "Man the Guns"
-		tag = MEX
-	}
-}
+#MEX_tga_organization = {
+#	include = 
+#	icon = GFX_idea_MEX_tga
+#	allowed = { 
+#		has_dlc = "Man the Guns"
+#		tag = MEX
+#	}
+#}
 ### Foreign Subsidiaries
 
 ### GER_porsche_organization - German Mexican tanks -> see GER_organizations.txt 

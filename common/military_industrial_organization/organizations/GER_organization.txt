@@ -71,24 +71,7 @@ GER_man_organization = {
 	}
 }
 
-GER_nibelungenwerke_organization  = {
-	include = generic_tank_refurbishment_plant_organization
-	icon = GFX_idea_nibelungenwerke
-	allowed = { 
-		OR = {
-			original_tag = GER
-			original_tag = JAP
-			original_tag = ITA
-			original_tag = ROM
-			original_tag = FIN
-			original_tag = SPR
-			original_tag = MAN
-			original_tag = BUL
-			original_tag = HUN
-			original_tag = SIA
-		}
- }
-}		
+	
 GER_alkett_organization = {
 	include = generic_infantry_tank_organization
 	icon = GFX_idea_GER_alkett

@@ -4963,9 +4963,9 @@ on_actions = {
 				}
 				if = {
 					limit = {
-						check_variable = { GER_industrial_consumer_goods_factor < 1 }
+						check_variable = { GER_industrial_consumer_goods_expected_value < 1 }
 					}
-					add_to_variable = { GER_industrial_consumer_goods_factor = GER_monthly_consumer_goods_increase }
+					add_to_variable = { GER_industrial_consumer_goods_expected_value = GER_monthly_consumer_goods_increase }
 					GER_add_mefo_bills_penalty = yes #Clamps CGFF too 100% and adds penalties
 				}
 				GER_reduce_mefo_bills_penalty = yes #This is a fail-safe, in case it wasn't lowered elsewhere but should have been

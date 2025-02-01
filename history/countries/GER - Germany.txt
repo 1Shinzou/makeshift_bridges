@@ -183,7 +183,7 @@ set_variable = { GER_dockyard_output_penalty = 0.15 } #Dockyard output penalty w
 #INDUSTRAY: MEFO Bills/Economy of Conquest/Recovering Economy/Wirtschaftswunder
 #REMINDER to always update the fake NS if these numbers are altered!
 set_variable = { GER_monthly_consumer_goods_increase = GER_monthly_consumer_goods_start } #Amount of increasing CG each month
-set_variable = { GER_industrial_consumer_goods_factor = 0.1 } #Used for MEFO Bills, Economy of Conquest and Recovering Economy and Wirtschaftswunder - must correspond with the Fake MEFO Bills NS for the 1936 Bookmark
+set_variable = { GER_industrial_consumer_goods_expected_value = 0.05 } #Used for MEFO Bills, Economy of Conquest and Recovering Economy and Wirtschaftswunder - must correspond with the Fake MEFO Bills NS for the 1936 Bookmark
 set_variable = { GER_industrial_civilian_intel_to_others = -25 }
 set_variable = { GER_industrial_army_intel_to_others = -25 }
 set_variable = { GER_industrial_navy_intel_to_others = -25 }
@@ -336,7 +336,7 @@ set_variable = { GER_politburo_conscription_factor = 0}
 
 #ALFRED ROSENBERG
 set_variable = { GER_alfred_rosenberg_modifier_subjects_autonomy_gain = -0.2 }
-set_variable = { GER_alfred_rosenberg_modifier_consumer_goods_factor = 0 }
+set_variable = { GER_alfred_rosenberg_modifier_consumer_goods_expected_value = 0 }
 set_variable = { GER_alfred_rosenberg_modifier_production_speed_arms_factory_factor = 0 }
 set_variable = { GER_alfred_rosenberg_modifier_industrial_capacity_factory = 0 }
 set_variable = { GER_max_alfred_rosenberg_upgrades = 10 }
@@ -367,7 +367,7 @@ set_variable = { GER_military_intelligence_service_master_ideology_drift = 0 }
 set_variable = { GER_military_intelligence_service_encryption_factor = 0 }
 set_variable = { GER_military_intelligence_service_decryption_factor = 0 }
 set_variable = { GER_military_intelligence_service_subversive_activites_upkeep = 0 }
-set_variable = { GER_military_intelligence_service_consumer_goods_factor = 0 }
+set_variable = { GER_military_intelligence_service_consumer_goods_expected_value = 0 }
 set_variable = { GER_military_intelligence_service_decryption_power = 0 }
 set_variable = { GER_military_intelligence_service_intel_network_gain_factor = 0 }
 set_variable = { GER_military_intelligence_root_out_resistance_effectiveness_factor = 0 }
@@ -572,7 +572,7 @@ set_war_support = 0.3
 	unlock_national_focus = GER_establish_the_reichswerke
 
 	#Germany's rearmament program is tanking the economy - must correspond with the Fake MEFO Bills NS for the 1939 Bookmark
-	set_variable = { GER_industrial_consumer_goods_factor = 0.71 }
+	set_variable = { GER_industrial_consumer_goods_expected_value = 0.71 }
 
 	set_country_flag = GER_inactivate_price_control_measures_flag
 	

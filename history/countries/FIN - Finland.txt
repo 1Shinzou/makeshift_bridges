@@ -126,7 +126,7 @@ set_variable = { FIN_fascist_regime_special_forces_attack_factor = 0 }
 set_variable = { FIN_fascist_regime_special_forces_training_time_factor = 0 }
 set_variable = { FIN_fascist_regime_justify_war_goal_time = 0 }
 set_variable = { FIN_fascist_regime_military_industrial_organization_research_bonus = 0 }
-set_variable = { FIN_fasicst_regime_consumer_goods_factor = 0 }
+set_variable = { FIN_fasicst_regime_consumer_goods_expected_value = 0 }
 
 ### MINERAL WEALTH DEVELOPMENT ###
 set_variable = { FIN_mineral_wealth_development_resource_amount = 2 } #2 by default, can be 3 if giving resource rights

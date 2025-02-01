@@ -263,7 +263,7 @@ IF = {
 	# JOINT ECONOMY SPIRIT
 	set_variable = { global.HABSBURG_economy_stability_factor = 0.05 }
 	set_variable = { global.HABSBURG_economy_power_factor = 0.1 }	
-	set_variable = { global.HABSBURG_economy_consumer_goods_factor = 0.0 }	
+	set_variable = { global.HABSBURG_economy_consumer_goods_expected_value = 0.0 }	
 	set_variable = { global.HABSBURG_economy_research_sharing_per_country_bonus_factor = 0.0 }	
 	set_variable = { global.HABSBURG_economy_production_speed_industrial_complex_factor = 0.0 }	
 	set_variable = { global.HABSBURG_economy_trade_laws_cost_factor = 0.0 }	

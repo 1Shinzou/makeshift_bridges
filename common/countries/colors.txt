@@ -239,10 +239,6 @@ MON = {
     color_ui = rgb { 182 62 70 }
 }
 
-DOM = {
-    color = rgb { 152 130 191 }
-    color_ui = rgb { 198 169 248 }
-}
 
 SLO = {
     color = rgb { 158 161 188 }
@@ -257,21 +253,6 @@ RAJ = {
 LBA = {
     color = rgb { 200 180 90 }
     color_ui = rgb { 200 180 90 }
-}
-
-WGR = {
-    color = rgb { 195 236 230 }
-    color_ui = rgb { 225 255 255 }
-}
-
-DDR = {
-    color = rgb { 120 150 80 }
-    color_ui = rgb { 150 180 120 }
-}
-
-ISR = {
-    color = rgb { 152 130 191 }
-    color_ui = rgb { 152 130 191 }
 }
 
 INS = {

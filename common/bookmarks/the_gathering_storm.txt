@@ -339,21 +339,7 @@ bookmarks = {
 				CHI_invite_the_flying_tigers
 			}
 		}
-		"PRC"={
-			minor = yes
-			history = "PRC_GATHERING_STORM_DESC"
-			ideology = communism
-			ideas = {
-				PRC_the_long_march_1
-				PRC_low_popular_support_3
-				PRC_power_struggles
-			}
-			focuses = {
-				PRC_infiltration
-				PRC_maoism
-				PRC_anti_japanese_expedition
-			}
-		}
+		
 		"MAN"={
 			minor = yes
 			history = "MAN_GATHERING_STORM_DESC"
@@ -370,76 +356,7 @@ bookmarks = {
 			}
 		}
 		
-		"GXC"={
-			minor = yes
-			history = "WARLORDS_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				PRC_government_corruption
-				CHI_ineffective_bureaucracy_warlord
-			}
-			focuses = {
-				CHI_join_the_republican_government
-				CHI_provoke_border_clashes
-				CHI_join_the_chinese_soviet
-			}
-		}		
-		"YUN"={
-			minor = yes
-			history = "WARLORDS_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				PRC_government_corruption
-				CHI_ineffective_bureaucracy_warlord
-			}
-			focuses = {
-				CHI_join_the_republican_government
-				CHI_provoke_border_clashes
-				CHI_join_the_chinese_soviet
-			}
-		}		
-		"SHX"={
-			minor = yes
-			history = "WARLORDS_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				PRC_government_corruption
-				CHI_ineffective_bureaucracy_warlord
-			}
-			focuses = {
-				CHI_join_the_republican_government
-				CHI_provoke_border_clashes
-				CHI_join_the_chinese_soviet
-			}
-		}		
-		"XSM"={
-			minor = yes
-			history = "WARLORDS_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				PRC_government_corruption
-				CHI_ineffective_bureaucracy_warlord
-			}
-			focuses = {
-				CHI_join_the_republican_government
-				CHI_provoke_border_clashes
-				CHI_join_the_chinese_soviet
-			}
-		}		
-		"SIK"={
-			minor = yes
-			history = "WARLORDS_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				PRC_government_corruption
-				CHI_ineffective_bureaucracy_warlord
-			}
-			focuses = {
-				CHI_join_the_republican_government
-				CHI_provoke_border_clashes
-				CHI_join_the_chinese_soviet
-			}
-		}
+		
 		
 		"MEX"={
 			minor = yes
@@ -536,21 +453,7 @@ bookmarks = {
 			}
 		}
 
-		"TUR"={
-			minor = yes
-			history = "TUR_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				TUR_sectarian_woes
-				TUR_disorganised_armed_forces
-				TUR_debt_council
-			}
-			focuses = {
-				TUR_ratify_the_six_arrows
-				TUR_reaffirm_the_balkan_pact
-				TUR_pivot_to_the_past
-			}
-		}
+		
 		
 		
 		"LIT"={
@@ -627,20 +530,7 @@ bookmarks = {
 				ETH_military_communism
 			}
 		}
-		SWI = {
-			minor = yes
-			history = "SWI_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				SWI_swiss_neutrality
-				SWI_foreign_fascist_propaganda
-			}
-			focuses = {
-				SWI_national_redoubt
-				SWI_take_a_stance
-				SWI_the_new_eidgenossenschaft
-			}
-		}
+	
 		FIN = {
 			minor = yes
 			history = FIN_GATHERING_STORM_DESC
@@ -715,21 +605,7 @@ bookmarks = {
 				DEN_pan_scandinavianism
 			}
 		}
-		ICE = {
-			minor = yes
-			history = ICE_GATHERING_STORM_DESC
-			ideology = democratic
-			available = { has_dlc = "Arms Against Tyranny" } 
-			ideas = {
-				ICE_christian_x
-				ICE_the_icelandic_economy_modifier_fake_idea
-			}
-			focuses = {
-				ICE_the_kingdom_of_iceland
-				ICE_the_viking_spirit
-				ICE_republicanism
-			}
-		}
+		
 		BRA = {
 			minor = yes
 			history = BRA_GATHERING_STORM_DESC
@@ -749,22 +625,7 @@ bookmarks = {
 				BRA_end_the_state_of_emergency
 			}
 		}
-		CHL = {
-			minor = yes
-			history = CHL_GATHERING_STORM_DESC
-			ideology = democratic
-			available = { has_dlc = "Trial of Allegiance" }
-			ideas = {
-				idea_CHL_near_anarchic_society
-				idea_CHL_the_Hacienda_inquilinaje_system
-				idea_CHL_repubican_guard
-			}
-			focuses = {
-				CHL_policies_of_arturo_alessandri
-				CHL_commence_the_counter_revolution
-				CHL_avenge_the_pacification_of_araucania
-			}
-		}
+	
 		ARG = {
 			minor = yes
 			history = ARG_GATHERING_STORM_DESC

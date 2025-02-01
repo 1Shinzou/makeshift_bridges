@@ -1,14 +1,11 @@
 state={
 	id=896
 	name="STATE_896"
-	manpower = 188600
-	state_category = pastoral
+	manpower = 1
+	state_category = wasteland
 	history={
 		owner =TUM
-		buildings = {
-			infrastructure = 2
-
-		}
+		
 		add_core_of = TUM
 	}
 

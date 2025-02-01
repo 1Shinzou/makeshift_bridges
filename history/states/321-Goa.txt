@@ -7,7 +7,7 @@ state={
 	state_category = enclave
 
 	history={
-		owner =TUM
+		owner =POR
 		add_core_of = TUM
 		victory_points = {
 			1273 1 

@@ -2,19 +2,12 @@
 state={
 	id=540
 	name="STATE_540"
-	manpower = 1600000
-	state_category=rural
+	manpower = 1
+	state_category=wasteland
 
 	history={
-		owner =TUM
-		buildings = {
-			infrastructure = 1
-			8248 = {
-				naval_base = 1
-
-			}
-
-		}
+		owner = TUM
+	
 		victory_points = {
 			8248 1 
 		}

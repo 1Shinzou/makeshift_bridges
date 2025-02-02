@@ -4,13 +4,13 @@ MAL_UK = {
 }
 
 RAJ_UK = {
-	color = rgb { 170  10  10 }
+	color = rgb { 93  9  9 }
 	color_ui = rgb { 200  10  10 }
 }
 
 RAJ_FREE = {
-	color = rgb { 80  165  10 }
-	color_ui = rgb { 80  165  10 }
+	color = rgb { 226  135  40 }
+	color_ui = rgb { 226  135  40 }
 }
 
 INS_HOL = {
@@ -257,12 +257,12 @@ ENG_imperial_federation_india_unified = {
 }
 
 CAN_north_america_dominion = {
-	color = rgb { 160 0 0 }
-	color_ui = rgb { 235 0 0 }
+	color = rgb { 233  59  59 }
+	color_ui = rgb { 155 62 51 }
 }
 
 CAN_UK = {
-	color = rgb { 119 48 39 }
+	color = rgb { 233  59  59 }
 	color_ui = rgb { 155 62 51 }
 }
 

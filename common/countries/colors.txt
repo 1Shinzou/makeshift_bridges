@@ -8,13 +8,13 @@ GER = {
 }
 
 ENG = {
-    color = rgb { 201 56 93 }
-    color_ui = rgb { 255 73 121 }
+   color = rgb { 170  10  10 }
+   color_ui = rgb { 200  10  10 }
 }
 
 SOV = {
-    color = rgb { 125 13 24 }
-    color_ui = rgb { 163 17 31 }
+	color = rgb { 188 0 0 }
+	color_ui = rgb { 188 0 0 }
 }
 
 SWE = {
@@ -23,7 +23,7 @@ SWE = {
 }
 
 FRA = {
-    color = rgb { 57 113 228 }
+    color = rgb { 28 82 190 }
     color_ui = rgb { 74 147 255 }
 }
 
@@ -78,8 +78,8 @@ SPR = {
 }
 
 ITA = {
-    color = rgb { 67 127 63 }
-    color_ui = rgb { 87 165 82 }
+	color = rgb { 0 146 70 }
+	color_ui = rgb { 0 146 70 }
 }
 
 ROM = {
@@ -215,8 +215,8 @@ PHI = {
 }
 
 SAF = {
-    color = rgb { 195 107 160 }
-    color_ui = rgb { 198 169 248 }
+	color = rgb { 156 156 156 }
+	color_ui = rgb { 156 156 156 }
 }
 
 SIA = {
@@ -250,8 +250,8 @@ SLO = {
 }
 
 RAJ = {
-    color = rgb { 226 135 40 }
-    color_ui = rgb { 226 135 40 }
+	color = rgb { 226  135  40 }
+	color_ui = rgb { 226  135  40 }
 }
 
 LBA = {

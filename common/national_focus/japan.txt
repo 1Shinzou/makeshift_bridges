@@ -1139,7 +1139,7 @@ focus = {
 		y = 2
 		relative_position_id = JAP_liaison_conference
 
-		cost = 1
+		cost = 5
 
 		available = { 
 			is_puppet = no 
@@ -1345,7 +1345,7 @@ focus = {
 		y = 1
 		relative_position_id = JAP_sign_tripartite_pact
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -1444,7 +1444,7 @@ focus = {
 		relative_position_id = JAP_liaison_conference
 		dynamic = yes  
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -3990,7 +3990,7 @@ focus = {
 				else = {
 					create_equipment_variant = {
 						name = "A6M Zero-Sen"
-						type = cv_small_plane_airframe_2
+						type = cv_small_plane_airframe_3
 						allow_without_tech = yes #Makes no difference since focus grants appropriate tech (above), but it improves tooltip
 						modules = {
 							fixed_main_weapon_slot = light_mg_2x

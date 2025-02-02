@@ -2,6 +2,28 @@ ideas = {
 
 	country = {
 		##last stand
+		ENG_mi6_ns = {
+			removal_cost = -1
+
+			picture = generic_spy_intel
+				
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+					
+			modifier = {
+				stability_factor = 0.05
+				operative_slot = 1
+				civilian_intel_to_others = -5
+				enemy_operative_detection_chance = 0.05
+				enemy_operative_capture_chance_factor = 0.05
+				intel_network_gain_factor = 0.1
+			}
+		}
 		ENG_the_plan = {
 			
 			allowed = {
@@ -874,8 +896,8 @@ ideas = {
 			
 			modifier = {
 				local_resources_factor = 0.1	
-		production_speed_buildings_factor = 0.1
-		stability_factor = -0.1
+				production_speed_buildings_factor = 0.1
+				stability_factor = -0.05
 			}
 		}
 		motorized_army = {
@@ -1010,7 +1032,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				consumer_goods_factor = -0.075
+				consumer_goods_factor = -0.15
 			}
 		}
 		

@@ -271,6 +271,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = ENG_the_wartime_cabinet_committee_idea
+			add_potential_special_forces_tree = yes	
 		}
 		search_filters = { }
 	}

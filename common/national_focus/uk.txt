@@ -3252,8 +3252,7 @@ focus_tree = {
 			}
 		}
 
-		icon = GFX_goal_support_democracy
-
+		icon = GFX_focus_eng_decolonization
 		x = 10
 		y = 0
 		offset = {
@@ -3401,7 +3400,7 @@ focus_tree = {
 		}
 		
 		icon = GFX_focus_eng_global_defense
-		x = -8
+		x = -9
 		y = 1
 		relative_position_id = uk_service_focus 
 		
@@ -4379,7 +4378,10 @@ focus_tree = {
 			ITA = { has_government = fascism }
 		}
 		completion_reward = {
-			add_ideas = ENG_tackle_fascism_idea_1
+			add_timed_idea = {
+				idea = ENG_tackle_fascism_idea_1
+				days = 365
+			}
 			
 		}
 	}

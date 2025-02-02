@@ -257,12 +257,12 @@ ENG_imperial_federation_india_unified = {
 }
 
 CAN_north_america_dominion = {
-	color = rgb { 160 0 0 }
-	color_ui = rgb { 235 0 0 }
+	color = rgb { 233  59  59 }
+	color_ui = rgb { 155 62 51 }
 }
 
 CAN_UK = {
-	color = rgb { 119 48 39 }
+	color = rgb { 233  59  59 }
 	color_ui = rgb { 155 62 51 }
 }
 

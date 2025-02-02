@@ -215,8 +215,8 @@ PHI = {
 }
 
 SAF = {
-    color = rgb { 195 107 160 }
-    color_ui = rgb { 198 169 248 }
+	color = rgb { 156 156 156 }
+	color_ui = rgb { 156 156 156 }
 }
 
 SIA = {
@@ -250,8 +250,8 @@ SLO = {
 }
 
 RAJ = {
-    color = rgb { 76 200 0 }
-	color_ui = rgb { 76 200 0 }
+	color = rgb { 80  165  10 }
+	color_ui = rgb { 80  165  10 }
 }
 
 LBA = {

@@ -3927,44 +3927,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = BUL_peaceful_development
-
-		prerequisite = { focus = BUL_join_the_tripartite_pact }
-
-		icon = GFX_goal_generic_position_armies
-		relative_position_id = BUL_join_the_tripartite_pact
-		x = 0
-		y = 1
-		cost = 10
-		mutually_exclusive = { focus = BUL_total_war }
-
-		bypass = {
-			has_war = yes
-		}
-
-		available = {
-			if = {
-				limit = {
-					has_war = yes
-				}
-				#This is intended so that the focus does not look unavailable when it can actually be bypassed
-			}
-			has_war = no
-		}
-		
-		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_ANNEXATION}
-		completion_reward = {
-			add_stability = 0.1
-			add_war_support = -0.1
-			custom_effect_tooltip = BUL_peaceful_development_tt
-
-			add_ai_strategy = { #We really want to garrison all these territorial gains
-				type = garrison
-				value = 50
-			}
-		}
-	}
 
 	focus = {
 		id = BUL_military_secrets_sharing
@@ -4009,97 +3971,9 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = BUL_bulgarian_administration_of_the_balkans
 
-		prerequisite = { focus = BUL_peaceful_development focus = BUL_nationalist_propaganda }
 
-		icon = GFX_focus_BUL_bulgarian_administration_of_the_balkans
-		relative_position_id = BUL_join_the_tripartite_pact
-		x = 0
-		y = 2
-		cost = 20
 
-		available = {
-			any_state = {
-				has_state_flag = BUL_historical_bulgarian_claim_flag
-				is_fully_controlled_by = BUL
-			}
-		}
-		
-		search_filters = {FOCUS_FILTER_ANNEXATION}
-		completion_reward = {
-			custom_effect_tooltip = BUL_bulgarian_administration_of_the_balkans_decisions_tt
-			custom_effect_tooltip = BUL_bulgarian_administration_of_the_balkans_cores_tt
-			if = {
-				limit = {
-					has_full_control_of_state = 106
-					106 = { NOT = { is_core_of = ROOT } }
-				}
-				106 = { set_state_flag = BUL_bulgarian_reintegration_campaign_flag }
-				add_state_core = 106
-			}
-			if = {
-				limit = {
-					has_full_control_of_state = 803
-					803 = { NOT = { is_core_of = ROOT } }
-				}
-				803 = { set_state_flag = BUL_bulgarian_reintegration_campaign_flag }
-				add_state_core = 803
-			}
-			if = {
-				limit = {
-					has_full_control_of_state = 77
-					77 = { NOT = { is_core_of = ROOT } }
-				}
-				77 = { set_state_flag = BUL_bulgarian_reintegration_campaign_flag }
-				add_state_core = 77
-			}
-			if = {
-				limit = {
-					has_full_control_of_state = 971
-					971 = { NOT = { is_core_of = ROOT } }
-				}
-				971 = { set_state_flag = BUL_bulgarian_reintegration_campaign_flag }
-				add_state_core = 971
-			}
-			custom_effect_tooltip = BUL_historical_states_tt
-
-			hidden_effect = {
-				news_event = { id = bftb_news.5 hours = 8 random_hours = 4 }
-			}
-
-			add_ai_strategy = { #We really want to garrison all these territorial gains
-				type = garrison
-				value = 75
-			}
-		}
-	}
-
-	focus = {
-		id = BUL_restore_the_bulgarian_patriarchate
-
-		prerequisite = { focus = BUL_bulgarian_administration_of_the_balkans }
-
-		icon = GFX_focus_BUL_restore_the_bulgarian_patriarchate
-		relative_position_id = BUL_bulgarian_administration_of_the_balkans
-		x = 0
-		y = 1
-		cost = 10
-
-		available = {
-			has_stability > 0.50
-		}
-		
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
-		completion_reward = {
-			add_ideas = BUL_bulgarian_patriarchate_restored
-
-			hidden_effect = {
-				news_event = { id = bftb_news.6 hours = 8 random_hours = 4 }
-			}
-		}
-	}
 
 	focus = {
 		id = BUL_total_war
@@ -4137,35 +4011,6 @@ focus_tree = {
 			add_war_support = 0.1
 			add_stability = -0.1
 			add_ideas = BUL_total_war
-
-			#If ROM is not an ally, then Bulgaria can go for it
-			if = {
-				limit = {
-					ROM = {
-						NOT = { is_in_faction_with = ROOT }
-					}
-				}
-				#Romanian controlled states are claimed by Bulgaria
-				ROM = {
-					every_owned_state = {
-						limit = {
-							is_fully_controlled_by = ROM
-						}
-						add_claim_by = ROOT
-					}
-				}
-				if = {
-					limit = {
-						NOT = { has_war_with = ROM }
-					}
-					create_wargoal = {
-						type = annex_everything
-						target = ROM
-						expire = 180
-					}
-					custom_effect_tooltip = BUL_total_war_wargoal_expires_tt
-				}
-			}
 			
 			custom_effect_tooltip = BUL_total_war_join_wars_tt
 			#Join other wars except for the Soviets
@@ -4189,11 +4034,6 @@ focus_tree = {
 				}
 			}
 
-			add_ai_strategy = {
-				type = conquer
-				id = ROM
-				value = 100
-			}
 		}
 	}
 

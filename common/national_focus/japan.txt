@@ -1142,9 +1142,37 @@ focus = {
 		cost = 1
 
 		available = { 
-			
+			is_puppet = no 
+			NOT = { has_war_with = CHI }
 		}
-		
+		bypass = {
+			OR = {
+				AND = {
+					608 = {
+						NOT = {
+							is_controlled_by = CHI
+							is_controlled_by = PRC
+							is_controlled_by = SHX
+						}
+					}
+					597 = {
+						NOT = {
+							is_controlled_by = CHI
+							is_controlled_by = PRC
+							is_controlled_by = SHX
+						}
+					}
+					614 = {
+						NOT = {
+							is_controlled_by = CHI
+							is_controlled_by = PRC
+							is_controlled_by = SHX
+						}
+					}
+				}
+				has_war_with = CHI
+			}
+		}
 
 		will_lead_to_war_with = CHI
 
@@ -1163,55 +1191,51 @@ focus = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			army_experience = 300
-			add_named_threat = { threat = 15 name = JAP_intervene_in_china }
-
-			
-
-			custom_effect_tooltip = "Annex parts of China"
-			
-
-			hidden_effect = {
-				USA = {
-					add_war_support = 0.1
-				}
-				JAP = {
-					transfer_state = 608
-					transfer_state = 614
-					transfer_state = 597
-					transfer_state = 598
-					transfer_state = 613
-					transfer_state = 596
-					transfer_state = 595
-					transfer_state = 593
-					transfer_state = 600
-					transfer_state = 749
-					transfer_state = 606
-					transfer_state = 615
-					transfer_state = 621
-					transfer_state = 746
-					transfer_state = 622
-					transfer_state = 743
-					transfer_state = 607
-					transfer_state = 591
-					transfer_state = 592
-					transfer_state = 721
-					transfer_state = 729
-
-				}
-				hidden_effect = {
-					every_state = {
-						limit = {
-							is_core_of = CHI
-							is_controlled_by = ROOT
+			if = {
+				limit = {
+					CHI = { #if CHI owns one of these states, they get the event
+						OR = {
+							controls_state = 608
+							controls_state = 597
+							controls_state = 614
 						}
-						set_compliance = 80
 					}
 				}
-				
-
+				CHI = {
+					country_event = china.1
+				}
 			}
-			
-		
+			if = {
+				limit = {
+					PRC = { #only fires the event for PRC if they control ALL of the states (to ensure that only one of them gets it, to avoid issues when one selects to turn over the states and the other doesn't)
+						AND = {
+							controls_state = 608
+							controls_state = 597
+							controls_state = 614
+						}
+					}
+				}
+				PRC = {
+					country_event = china.1
+				}
+			}
+			if = {
+				limit = {
+					SHX = { #only fires the event for SHX if they control ALL of the states (to ensure that only one of them gets it, to avoid issues when one selects to turn over the states and the other doesn't)
+						AND = {
+							controls_state = 608
+							controls_state = 597
+							controls_state = 614
+						}
+					}
+				}
+				SHX = {
+					country_event = china.1
+				}
+			}
+			add_named_threat = { threat = 1 name = JAP_intervene_in_china }
+			add_ideas = JAP_intervene_in_china_5
+			unlock_decision_tooltip = JAP_china_step_up_war_effort
 		}
 	}
 
@@ -1234,12 +1258,17 @@ focus = {
 		}
 
 		available = {
-			
-			
+			CHI = {
+				surrender_progress > 0.3
+			}
+			has_war_with = USA
 		}
 
 		bypass = {
-			
+			OR = {
+				NOT = { JAP_has_idea_JAP_intervene_in_china = yes }
+				CHI = { has_capitulated = yes }
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -1248,20 +1277,10 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
-			add_named_threat = { threat = 20 name = JAP_secure_china }			
-			annex_country = {
-				target = CHI
-			}
-			hidden_effect = {
-				every_state = {
-					limit = {
-						is_core_of = CHI
-						is_controlled_by = ROOT
-					}
-					set_compliance = 80
-				}
-			}
-			
+			JAP_intervene_in_china_remove = yes
+			add_named_threat = { threat = 15 name = JAP_secure_china }		
+			USA = { add_war_support = 0.05 }	
+			unlock_decision_tooltip = JAP_ichi_go
 		}
 	}
 

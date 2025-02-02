@@ -160,8 +160,8 @@ CAN = {
 }
 
 CHI = {
-    color = rgb { 255 255 255 }
-	color_ui = rgb { 255 255 255 }
+    color = rgb { 221  178  83 } #
+    color_ui = rgb {221  178  83 } #
 }
 
 ETH = {

@@ -6,7 +6,7 @@ state = {
 
 	history = {
 
-		owner = COG
+		owner = TUM
 
 
 		victory_points = {
@@ -17,7 +17,7 @@ state = {
 			infrastructure = 1
 		}
 
-		add_core_of = COG
+		add_core_of = TUM
 
 	}
 

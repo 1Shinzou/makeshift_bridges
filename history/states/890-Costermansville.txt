@@ -10,8 +10,8 @@ state = {
 	
 	history = {
 
-		owner = COG
-		add_core_of = COG
+		owner = TUM
+		add_core_of = TUM
 
 		
 

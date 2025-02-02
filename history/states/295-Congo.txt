@@ -6,7 +6,7 @@ state = {
 
 	history = {
 
-		owner = COG
+		owner = TUM
 
 
 		buildings = {
@@ -32,7 +32,7 @@ state = {
 			13365 1 # Nkamba
 		}
 
-		add_core_of = COG
+		add_core_of = TUM
 
 	}
 

@@ -9,8 +9,8 @@ RAJ_UK = {
 }
 
 RAJ_FREE = {
-	color = rgb { 80  165  10 }
-	color_ui = rgb { 80  165  10 }
+	color = rgb { 226  135  40 }
+	color_ui = rgb { 226  135  40 }
 }
 
 INS_HOL = {

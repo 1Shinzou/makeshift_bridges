@@ -1,0 +1,49 @@
+spriteTypes = {	
+
+
+### non-designer aircraft ###
+
+	SpriteType = {
+	name = "GFX_BRA_early_fighter_medium"
+	texturefile = "gfx/interface/technologies/BRA_if.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_BRA_fighter1_medium"
+	texturefile = "gfx/interface/technologies/BRA_f1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_BRA_fighter2_medium"
+	texturefile = "gfx/interface/technologies/BRA_f2.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_BRA_fighter3_medium"
+	texturefile = "gfx/interface/technologies/BRA_f3.dds"
+	}		
+
+	
+### designer aircraft ###	
+
+	SpriteType = {
+	name = "GFX_BRA_iw_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/BRA_if.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_BRA_basic_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/BRA_f1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_BRA_improved_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/BRA_f2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_BRA_advanced_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/BRA_f3.dds"
+	}
+	
+}

@@ -1,0 +1,22 @@
+spriteTypes = {	
+
+
+### non-designer aircraft ###
+
+    SpriteType = {
+	name = "GFX_ARG_early_fighter_medium"
+	texturefile = "gfx/interface/technologies/ARG_if.dds"
+	}
+	
+	
+### designer aircraft ###	
+	
+	SpriteType = {
+	name = "GFX_ARG_iw_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/ARG_if.dds"
+	}
+	
+
+
+	
+}

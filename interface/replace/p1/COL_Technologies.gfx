@@ -1,0 +1,124 @@
+spriteTypes = {	
+
+
+	SpriteType = {
+	name = "GFX_COL_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/COL_1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_COL_infantry_weapons1_medium"
+	texturefile = "gfx/interface/technologies/COL_2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_COL_improved_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/COL_3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_COL_advanced_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/COL_4.dds"
+	}
+	
+### Arty ###
+
+	SpriteType = {
+	name = "GFX_COL_gw_artillery_medium"
+	texturefile = "gfx/interface/technologies/COL_iwa.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_COL_artillery1_medium"
+	texturefile = "gfx/interface/technologies/COL_a2.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_COL_artillery4_medium"
+	texturefile = "gfx/interface/technologies/COL_a3.dds"
+	}	
+	
+### armoured cars ###
+
+	SpriteType = {
+	name = "GFX_COL_armored_car1_medium"
+	texturefile = "gfx/interface/technologies/COL_ac1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_COL_armored_car2_medium"
+	texturefile = "gfx/interface/technologies/COL_ac2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_COL_armored_car3_medium"
+	texturefile = "gfx/interface/technologies/COL_ac3.dds"
+	}
+	
+### Anti-air ###
+
+	SpriteType = {
+	name = "GFX_COL_interwar_antiair_medium"
+	texturefile = "gfx/interface/technologies/COL_aa1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_COL_antiair2_medium"
+	texturefile = "gfx/interface/technologies/COL_aa2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_COL_antiair5_medium"
+	texturefile = "gfx/interface/technologies/COL_aa3.dds"
+	}
+	
+### Anti-tank ###
+
+	SpriteType = {
+	name = "GFX_COL_interwar_antitank_medium"
+	texturefile = "gfx/interface/technologies/COL_at1.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_COL_antitank2_medium"
+	texturefile = "gfx/interface/technologies/COL_at2.dds"
+	}	
+	
+    SpriteType = {
+	name = "GFX_COL_antitank5_medium"
+	texturefile = "gfx/interface/technologies/COL_at3.dds"
+	}	
+
+### troop_carriers ###
+
+    SpriteType = {
+	name = "GFX_COL_motorized_equipment_1_medium"
+	texturefile = "gfx/interface/technologies/COL_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_COL_motorised_infantry_medium"
+	texturefile = "gfx/interface/technologies/COL_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_COL_motorised_equipment_medium"
+	texturefile = "gfx/interface/technologies/COL_tc1.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_COL_mechanised_infantry_medium"
+	texturefile = "gfx/interface/technologies/COL_tc2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_COL_mechanised_infantry2_medium"
+	texturefile = "gfx/interface/technologies/COL_tc3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_COL_mechanised_infantry3_medium"
+	texturefile = "gfx/interface/technologies/COL_tc4.dds"
+	}
+	
+}

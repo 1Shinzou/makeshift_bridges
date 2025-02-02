@@ -1,0 +1,23 @@
+SpriteTypes = {	
+
+
+	SpriteType = {
+	name = "GFX_TAN_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/EST_1.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_TAN_infantry_weapons1_medium"
+	texturefile = "gfx/interface/technologies/MON_2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_TAN_improved_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/MON_3.dds"
+	}
+		
+	SpriteType = {
+	name = "GFX_TAN_advanced_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/MON_4.dds"
+	}
+}

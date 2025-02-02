@@ -1,0 +1,85 @@
+spriteTypes = {	
+
+
+### non-designer aircraft ###
+
+    SpriteType = {
+	name = "GFX_AST_early_fighter_medium"
+	texturefile = "gfx/interface/technologies/OZ_if.dds"
+	}
+	
+    SpriteType = {
+	name = "GFX_AST_cv_early_fighter_medium"
+	texturefile = "gfx/interface/technologies/OZ_if_cv.dds"
+	}
+	
+	### fighter 1 ###
+	
+	SpriteType = {
+	name = "GFX_AST_fighter1_medium"
+	texturefile = "gfx/interface/technologies/OZ_f1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_AST_cv_fighter1_medium"
+	texturefile = "gfx/interface/technologies/OZ_f1_cv.dds"
+	}	
+	
+	### fighter 2 ###
+	
+	SpriteType = {
+	name = "GFX_AST_fighter2_medium"
+	texturefile = "gfx/interface/technologies/OZ_f2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_AST_cv_fighter2_medium"
+	texturefile = "gfx/interface/technologies/OZ_f2_cv.dds"
+	}
+
+	### CAS ###
+
+	SpriteType = {
+	name = "GFX_AST_CAS1_medium"
+	texturefile = "gfx/interface/technologies/OZ_f1.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_AST_CAS2_medium"
+	texturefile = "gfx/interface/technologies/OZ_cas2.dds"
+	}	
+	
+	### scouts ###
+	
+    SpriteType = {	
+    name = "GFX_AST_scout_plane1_medium"
+	texturefile = "gfx/interface/technologies/OZ_sp1.dds"
+	}
+	
+    SpriteType = {	
+    name = "GFX_AST_scout_plane2_medium"
+	texturefile = "gfx/interface/technologies/OZ_f2_scout.dds"
+	}
+	
+### designer aircraft ###	
+	
+	SpriteType = {
+	name = "GFX_AST_iw_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/OZ_if.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_AST_basic_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/OZ_f1.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_AST_improved_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/OZ_f2.dds"
+	}	
+
+	
+
+
+	
+}

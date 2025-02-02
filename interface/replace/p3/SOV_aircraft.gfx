@@ -1,0 +1,64 @@
+spriteTypes = {	
+
+
+### non-designer aircraft ###
+
+
+    SpriteType = {
+	name = "GFX_SOV_early_fighter_medium"
+	texturefile = "gfx/interface/technologies/SOV_if.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_SOV_fighter1_medium"
+	texturefile = "gfx/interface/technologies/SOV_f1.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_SOV_fighter2_medium"
+	texturefile = "gfx/interface/technologies/SOV_f2.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_SOV_fighter3_medium"
+	texturefile = "gfx/interface/technologies/SOV_f3.dds"
+	}	
+	
+	
+	SpriteType = {
+	name = "GFX_SOV_CAS1_medium"
+	texturefile = "gfx/interface/technologies/SOV_cas1.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_SOV_CAS2_medium"
+	texturefile = "gfx/interface/technologies/SOV_cas2.dds"
+	}
+
+	
+	
+### designer aircraft ###	
+
+
+	SpriteType = {
+	name = "GFX_SOV_iw_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/SOV_if.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_SOV_basic_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/SOV_f1.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_SOV_improved_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/SOV_f2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SOV_advanced_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/SOV_f3.dds"
+	}
+
+	
+}

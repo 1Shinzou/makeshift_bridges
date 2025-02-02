@@ -1,0 +1,139 @@
+spriteTypes = {	
+
+
+### non-designer aircraft ###
+
+	SpriteType = {
+	name = "GFX_AUS_early_fighter_medium"
+	texturefile = "gfx/interface/technologies/AUS_if.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_AUS_fighter1_medium"
+	texturefile = "gfx/interface/technologies/AUS_f1.dds"
+	}		
+	
+	SpriteType = {
+	name = "GFX_AUS_fighter2_medium"
+	texturefile = "gfx/interface/technologies/AUS_f2.dds"
+	}
+
+    SpriteType = {
+	name = "GFX_AUS_fighter3_medium"
+	texturefile = "gfx/interface/technologies/AUS_f3.dds"
+	}	
+
+    SpriteType = {
+	name = "GFX_AUS_jet_fighter1_medium"
+	texturefile = "gfx/interface/technologies/AUS_jf.dds"
+	}	
+	
+	### CAS ###
+	
+    SpriteType = {
+	name = "GFX_AUS_CAS0_medium"
+	texturefile = "gfx/interface/technologies/AUS_cas0.dds"
+	}	
+	
+    SpriteType = {
+	name = "GFX_AUS_CAS1_medium"
+	texturefile = "gfx/interface/technologies/AUS_cas1.dds"
+	}	
+	
+    SpriteType = {
+	name = "GFX_AUS_CAS2_medium"
+	texturefile = "gfx/interface/technologies/AUS_cas2.dds"
+	}		
+	
+    SpriteType = {
+	name = "GFX_AUS_CAS3_medium"
+	texturefile = "gfx/interface/technologies/AUS_cas3.dds"
+	}		
+	
+	
+	### medium bombers ### 
+	
+	SpriteType = {
+	name = "GFX_AUS_early_bomber_medium"
+	texturefile = "gfx/interface/technologies/AUS_imb.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_AUS_tactical_bomber1_medium"
+	texturefile = "gfx/interface/technologies/AUS_mb1.dds"
+	}	
+		
+	SpriteType = {
+	name = "GFX_AUS_tactical_bomber2_medium"
+	texturefile = "gfx/interface/technologies/AUS_mb2.dds"
+	}
+		
+	SpriteType = {
+	name = "GFX_AUS_tactical_bomber3_medium"
+	texturefile = "gfx/interface/technologies/AUS_mb3.dds"
+	}
+	
+    ### cargo ###
+	
+	
+    SpriteType = {
+    name = "GFX_AUS_transport_plane_equipment_medium"
+    texturefile = "gfx/interface/technologies/AUS_imb.dds"
+    }
+		
+    SpriteType = {
+    name = "GFX_AUS_transport_plane_equipment_1_medium"
+    texturefile = "gfx/interface/technologies/AUS_imb.dds"
+    }
+
+
+	
+### designer aircraft ###	
+
+	SpriteType = {
+	name = "GFX_AUS_iw_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/AUS_if.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_AUS_basic_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/AUS_f1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_AUS_improved_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/AUS_f2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_AUS_advanced_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/AUS_f3.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_AUS_modern_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/AUS_jf.dds"
+	}	
+	
+	
+	SpriteType = {
+	name = "GFX_AUS_iw_medium_airframe_medium"
+	texturefile = "gfx/interface/technologies/AUS_imb.dds"
+	}	
+
+	SpriteType = {
+	name = "GFX_AUS_basic_medium_airframe_medium"
+	texturefile = "gfx/interface/technologies/AUS_mb1.dds"
+	}	
+		
+	SpriteType = {
+	name = "GFX_AUS_improved_medium_airframe_medium"
+	texturefile = "gfx/interface/technologies/AUS_mb2.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_AUS_advanced_medium_airframe_medium"
+	texturefile = "gfx/interface/technologies/AUS_mb3.dds"
+	}
+	
+}

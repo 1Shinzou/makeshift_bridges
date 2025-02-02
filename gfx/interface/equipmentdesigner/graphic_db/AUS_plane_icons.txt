@@ -1,0 +1,203 @@
+### designer aircraft ###
+
+
+
+AUS = {
+
+### small_plane ###
+
+	small_plane_airframe_0 = {
+		pool = {
+			weight = 5
+			icons = {
+                GFX_AUS_early_fighter_medium	
+			}
+		}
+	}
+	small_plane_airframe_1 = {
+		pool = {
+			weight = 5
+			icons = {
+				GFX_AUS_fighter1_medium
+			}
+		}
+	}
+	small_plane_airframe_2 = {
+		pool = {
+			weight = 5
+			icons = {
+				GFX_AUS_fighter2_medium	
+			}
+		}
+	}
+	small_plane_airframe_3 = {
+		pool = {
+			weight = 5
+			icons = {
+				GFX_AUS_fighter3_medium	
+			}
+		}
+	}
+	small_plane_airframe_4 = {
+		pool = {
+			weight = 5
+			icons = {
+				GFX_AUS_jet_fighter1_medium	
+			}
+		}
+	}
+
+### cv_small_plane ###
+
+	cv_small_plane_airframe_0 = {
+		pool = {
+			weight = 5
+			icons = {
+                GFX_AUS_early_fighter_medium	
+			}
+		}
+	}
+	cv_small_plane_airframe_1 = {
+		pool = {
+			weight = 5
+			icons = {
+				GFX_AUS_fighter1_medium
+			}
+		}
+	}
+	cv_small_plane_airframe_2 = {
+		pool = {
+			weight = 5
+			icons = {
+				GFX_AUS_fighter2_medium	
+			}
+		}
+	}
+	cv_small_plane_airframe_3 = {
+		pool = {
+			weight = 5
+			icons = {
+				GFX_AUS_fighter3_medium	
+			}
+		}
+	}
+	cv_small_plane_airframe_4 = {
+		pool = {
+			weight = 5
+			icons = {
+				GFX_AUS_jet_fighter1_medium	
+			}
+		}
+	}
+
+	
+### cas ###
+
+	small_plane_cas_airframe_0 = {
+		pool = {
+			weight = 5
+			icons = {
+		    GFX_AUS_CAS0_medium
+			}
+		}
+	}
+	small_plane_cas_airframe_1 = {
+		pool = {
+			weight = 5
+			icons = {
+		    GFX_AUS_CAS1_medium
+			}
+		}
+	}
+	small_plane_cas_airframe_2 = {
+		pool = {
+			weight = 5
+			icons = {
+		    GFX_AUS_CAS2_medium
+			}
+		}
+	}
+	small_plane_cas_airframe_3 = {
+		pool = {
+			weight = 5
+			icons = {
+		    GFX_AUS_CAS3_medium
+			}
+		}
+	}	
+	
+### cv_cas ###
+
+	cv_small_plane_cas_airframe_0 = {
+		pool = {
+			weight = 5
+			icons = {
+		    GFX_AUS_CAS0_medium
+			}
+		}
+	}
+	cv_small_plane_cas_airframe_1 = {
+		pool = {
+			weight = 5
+			icons = {
+		    GFX_AUS_CAS1_medium
+			}
+		}
+	}
+	cv_small_plane_cas_airframe_2 = {
+		pool = {
+			weight = 5
+			icons = {
+		    GFX_AUS_CAS2_medium
+			}
+		}
+	}
+	cv_small_plane_cas_airframe_3 = {
+		pool = {
+			weight = 5
+			icons = {
+		    GFX_AUS_CAS3_medium
+			}
+		}
+	}	
+		
+### medium_plane ###
+	
+	medium_plane_airframe_0 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_AUS_early_bomber_medium
+			}
+		}
+	}
+	
+	medium_plane_airframe_1 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_AUS_tactical_bomber1_medium
+			}
+		}
+	}		
+	
+	medium_plane_airframe_2 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_AUS_tactical_bomber2_medium
+			}
+		}
+	}		
+	
+	medium_plane_airframe_3 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_AUS_tactical_bomber3_medium
+			}
+		}
+	}	
+	
+	
+}

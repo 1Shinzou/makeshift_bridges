@@ -1,0 +1,61 @@
+### designer aircraft ###
+
+BRA = {
+	small_plane_airframe = {
+		pool = {
+			icons = {
+				GFX_SWI_CAS3_medium
+				GFX_GER_jet_plane_2_medium
+				GFX_GER_jet_plane_1_medium
+				GFX_GER_rocket_plane_1_medium
+				GFX_BRA_fighter3_medium
+				GFX_SWI_CAS2_medium
+				GFX_BRA_fighter2_medium
+				GFX_SWI_CAS1_medium
+				GFX_BRA_fighter1_medium
+				GFX_BRA_early_fighter_medium
+			}
+		}
+	}
+	cv_small_plane_airframe = {
+		pool = {
+			icons = {
+				GFX_SWI_CAS3_medium
+				GFX_GER_jet_plane_2_medium
+				GFX_GER_jet_plane_1_medium
+				GFX_BRA_fighter3_medium
+				GFX_SWI_CAS2_medium
+				GFX_BRA_fighter2_medium
+				GFX_SWI_CAS1_medium
+				GFX_BRA_fighter1_medium
+				GFX_BRA_early_fighter_medium
+			}
+		}
+	}
+	medium_plane_airframe = {
+		pool = {
+			icons = {
+				GFX_SWI_tactical_bomber3_medium
+				GFX_SWI_heavy_fighter3_medium
+				GFX_SWI_tactical_bomber2_medium
+				GFX_GER_jet_medium_plane_1_medium
+				GFX_SWI_heavy_fighter2_medium
+				GFX_SWI_tactical_bomber1_medium
+				GFX_SWI_heavy_fighter1_medium
+				GFX_SWI_early_bomber_medium
+				GFX_GER_scout_plane1_medium
+				GFX_GER_scout_plane2_medium
+			}
+		}
+	}
+	large_plane_airframe = {
+		pool = {
+			icons = {
+				GFX_GER_strategic_bomber3_medium
+				GFX_GER_strategic_bomber2_medium
+				GFX_SWI_strategic_bomber1_medium
+			}
+		}
+	}
+	
+}

@@ -1,0 +1,247 @@
+
+TUR = {
+
+### small_plane ###
+
+	small_plane_airframe_0 = {
+		pool = {
+			weight = 3
+			icons = {
+			GFX_TUR_pzl24g_medium
+			GFX_TUR_pzl24c_medium
+			GFX_TUR_pzl24a_medium
+			}
+			}
+		pool = {
+			weight = 5
+			icons = {
+			GFX_TUR_early_fighter_medium
+			}
+		}
+	}
+	
+	small_plane_airframe_1 = {
+		pool = {
+			weight = 3
+			icons = {
+			GFX_TUR_p40d_medium
+			GFX_TUR_p40c_medium
+			GFX_TUR_ms406c1_medium
+			GFX_TUR_bf109e4_medium
+			GFX_TUR_i16_medium
+			GFX_TUR_hurricane2b_medium
+			}
+			}
+		pool = {
+			weight = 5
+			icons = {
+			GFX_TUR_fighter1_medium
+			}
+		}
+	}
+	
+	small_plane_airframe_2 = {
+		pool = {
+			weight = 3
+			icons = {
+			GFX_TUR_spitfire5b_medium
+			GFX_TUR_spitfire1a_medium
+			GFX_TUR_messerspit_medium
+			GFX_TUR_mig3_medium
+			GFX_TUR_fw190a3_medium
+			}
+			}
+		pool = {
+			weight = 5
+			icons = {
+			GFX_TUR_fighter2_medium
+			}
+		}
+	}
+	
+	small_plane_airframe_3 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_TUR_fighter3_medium
+			}
+		}
+	}
+	
+	small_plane_airframe_4 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_TUR_jet_fighter1_medium
+			}
+		}
+	}
+
+### cv_small_plane ###
+
+	cv_small_plane_airframe_0 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_TUR_hawk3_medium
+			GFX_TUR_hawk2_medium
+			}
+			}
+	}
+
+	cv_small_plane_airframe_1 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_TUR_hurricane1_medium
+			}
+			}
+	}
+	
+	cv_small_plane_cas_airframe_1 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_TUR_hurricane2c_medium
+			}
+		}
+	}
+
+### CAS ###
+
+	small_plane_cas_airframe_0 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_TUR_early_fighter_medium
+			}
+		}
+	}
+	
+	small_plane_cas_airframe_1 = {
+		pool = {
+			weight = 3
+			icons = {
+			GFX_TUR_hurricane2c_medium
+			GFX_TUR_vultee_medium
+			GFX_TUR_lysander_medium
+			}
+			}
+		pool = {
+			weight = 5
+			icons = {
+			GFX_TUR_CAS1_medium
+			}
+		}
+	}
+	
+	small_plane_cas_airframe_2 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_TUR_p47_medium
+			GFX_TUR_CAS2_medium
+			}
+		}
+	}
+	
+### small naval bombers ### 
+
+	small_plane_naval_bomber_airframe_1 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_TUR_naval_bomber1_medium
+			}
+		}
+	}
+	
+    ### medium_plane ###
+	
+	medium_plane_airframe_0 = {
+		pool = {
+			weight = 3
+			icons = {
+			GFX_TUR_b10_medium
+			}
+			}
+		pool = {
+			weight = 5
+			icons = {
+			GFX_TUR_early_bomber_medium
+			}
+		}
+	}
+	
+	medium_plane_airframe_1 = {
+		pool = {
+			weight = 3
+			icons = {
+			GFX_TUR_b10_medium
+			GFX_TUR_blenheim_medium
+			}
+			}
+		pool = {
+			weight = 5
+			icons = {
+			GFX_TUR_tactical_bomber1_medium
+			}
+		}
+	}
+	
+	medium_plane_airframe_2 = {
+		pool = {
+			weight = 3
+			icons = {
+			GFX_TUR_beaufort_medium
+			}
+			}
+		pool = {
+			weight = 5
+			icons = {
+			GFX_TUR_tactical_bomber2_medium
+			}
+		}
+	}
+	
+	medium_plane_airframe_3 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_TUR_tactical_bomber3_medium
+			}
+		}
+	}
+	
+### heavy fighters ###
+
+	medium_plane_fighter_airframe_1 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_TUR_heavy_fighter1_medium
+			}
+		}
+	}
+
+	medium_plane_fighter_airframe_2 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_TUR_heavy_fighter2_medium
+			}
+		}
+	}
+
+	medium_plane_fighter_airframe_3 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_TUR_heavy_fighter3_medium
+			}
+		}
+	}
+
+
+}
+

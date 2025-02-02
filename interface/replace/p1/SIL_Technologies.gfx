@@ -1,0 +1,123 @@
+spriteTypes = {	
+
+	SpriteType = {
+	name = "GFX_SIL_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/GER_1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SIL_infantry_weapons1_medium"
+	texturefile = "gfx/interface/technologies/GER_2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SIL_improved_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/GER_3.dds"
+	}
+		
+	SpriteType = {
+	name = "GFX_SIL_advanced_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/SIL_4.dds"
+	}
+	
+### Arty ###
+
+	SpriteType = {
+	name = "GFX_SIL_gw_artillery_medium"
+	texturefile = "gfx/interface/technologies/SIL_iwa.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_SIL_artillery1_medium"
+	texturefile = "gfx/interface/technologies/SIL_a2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SIL_artillery4_medium"
+	texturefile = "gfx/interface/technologies/SIL_a3.dds"
+	}	
+	
+### Anti-tank ###
+
+	SpriteType = {
+	name = "GFX_SIL_interwar_antitank_medium"
+	texturefile = "gfx/interface/technologies/SIL_at1.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_SIL_antitank2_medium"
+	texturefile = "gfx/interface/technologies/SIL_at2.dds"
+	}		
+   
+    SpriteType = {
+	name = "GFX_SIL_antitank5_medium"
+	texturefile = "gfx/interface/technologies/SIL_at3.dds"
+	}	
+
+### Anti-air ###
+	
+	SpriteType = {
+	name = "GFX_SIL_interwar_antiair_medium"
+	texturefile = "gfx/interface/technologies/SIL_aa1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SIL_antiair2_medium"
+	texturefile = "gfx/interface/technologies/SIL_aa2.dds"
+	}
+		
+	SpriteType = {
+	name = "GFX_SIL_antiair5_medium"
+	texturefile = "gfx/interface/technologies/SIL_aa3.dds"
+	}	
+	
+### armoured cars ###
+
+	SpriteType = {
+	name = "GFX_SIL_armored_car1_medium"
+	texturefile = "gfx/interface/technologies/SIL_ac1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SIL_armored_car2_medium"
+	texturefile = "gfx/interface/technologies/SIL_ac2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SIL_armored_car3_medium"
+	texturefile = "gfx/interface/technologies/SIL_ac3.dds"
+	}
+	
+### troop_carriers ###
+
+    SpriteType = {
+	name = "GFX_SIL_motorized_equipment_1_medium"
+	texturefile = "gfx/interface/technologies/SIL_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SIL_motorised_infantry_medium"
+	texturefile = "gfx/interface/technologies/SIL_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SIL_motorised_equipment_medium"
+	texturefile = "gfx/interface/technologies/SIL_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SIL_mechanised_infantry3_medium"
+	texturefile = "gfx/interface/technologies/SIL_tc4.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_SIL_mechanised_infantry2_medium"
+	texturefile = "gfx/interface/technologies/SIL_tc3.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_SIL_mechanised_infantry_medium"
+	texturefile = "gfx/interface/technologies/SIL_tc2.dds"
+	}
+	
+}

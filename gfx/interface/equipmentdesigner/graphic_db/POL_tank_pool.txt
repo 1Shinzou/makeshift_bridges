@@ -1,0 +1,554 @@
+### designer aircraft ###
+
+POL = {
+
+### light tank 0 ###
+
+	light_tank_chassis_0 = { 
+		pool = {
+			weight = 5
+			icons = { 
+            GFX_POL_wz30
+			GFX_POL_gwtank_medium
+			}
+            models = {
+            "POL_light_armor_0_entity"
+            }
+		}
+	}
+
+
+
+### light tank 1 ###
+	
+	light_tank_chassis_1 = { 
+		pool = {
+			weight = 5
+			icons = { 
+                GFX_POL_tkw_medium
+				GFX_POL_basic_light_tank_medium
+			}
+            models = {
+            "POL_light_armor_0_entity"
+            }
+		}
+	}
+
+	light_tank_destroyer_chassis_1 = { 
+		pool = {
+			weight = 5
+			icons = { 
+				GFX_POL_basic_light_td_medium
+			}
+            models = {
+            "POL_light_armor_0_entity"
+            }
+		}
+	}	
+
+	light_tank_aa_chassis_1 = {
+		pool = {
+			weight = 5
+			icons = {
+				GFX_POL_basic_light_spaa_medium
+			}
+            models = {
+            "POL_light_armor_0_entity"
+            }
+		}
+	}	
+	
+	light_tank_artillery_chassis_1 = { 
+		pool = {
+			weight = 5
+			icons = { 
+                GFX_POL_basic_light_art_medium
+			}
+            models = {
+            "POL_light_armor_0_entity"
+            }
+		}
+	}
+
+	
+### light tank 2 ###
+	
+	light_tank_chassis_2 = { 
+		pool = {
+			weight = 5
+			icons = { 
+			GFX_POL_4tp
+			GFX_POL_9tp
+			GFX_POL_improved_light_tank_medium
+			}
+            models = {
+            "POL_light_armor_entity"
+            }
+		}
+	}
+
+	light_tank_destroyer_chassis_2 = { 
+		pool = {
+			weight = 5
+			icons = { 
+				GFX_POL_improved_light_td_medium
+			}
+            models = {
+            "POL_light_armor_entity"
+            }
+		}
+	}	
+
+	light_tank_aa_chassis_2 = {
+		pool = {
+			weight = 5
+			icons = {
+				GFX_POL_improved_light_spaa_medium
+			}
+		}
+	}	
+	
+	light_tank_artillery_chassis_2 = { 
+		pool = {
+			weight = 5
+			icons = { 
+                GFX_POL_improved_light_art_medium
+			}
+            models = {
+            "POL_light_armor_entity"
+            }
+		}
+	}
+	
+### light tank 3 ###
+	
+	light_tank_chassis_3 = { 
+		pool = {
+			weight = 5
+			icons = { 
+				GFX_POL_14tp
+				GFX_POL_advanced_light_tank_medium
+			}
+            models = {
+            "POL_medium_armor_entity"
+            }
+		}
+	}
+
+	light_tank_destroyer_chassis_3 = { 
+		pool = {
+			weight = 5
+			icons = { 
+				GFX_POL_advanced_light_td_medium
+			}
+            models = {
+            "POL_medium_armor_entity"
+            }
+		}
+	}	
+
+	light_tank_aa_chassis_3 = {
+		pool = {
+			weight = 5
+			icons = {
+				GFX_POL_advanced_light_spaa_medium
+			}
+            models = {
+            "POL_medium_armor_entity"
+            }
+		}
+	}	
+	
+	light_tank_artillery_chassis_3 = { 
+		pool = {
+			weight = 5
+			icons = { 
+                GFX_POL_advanced_light_art_medium
+			}
+            models = {
+            "POL_medium_armor_entity"
+            }
+		}
+	}
+	
+### amphibious light tank ###
+
+	light_tank_amphibious_chassis = { 
+		pool = {
+			weight = 5
+			icons = { 
+			GFX_POL_amphibious_tank_medium
+			}
+            models = {
+            "POL_light_armor_entity"
+            }
+		}
+	}	
+
+
+	
+### medium tank 0 ###
+
+	medium_tank_chassis_0 = {
+		pool = {
+			weight = 5
+			icons = { 
+				GFX_POL_gw_medium_tank_medium
+			}
+		}
+	}
+
+
+### medium tank 1 ###
+	
+	medium_tank_chassis_1 = { 
+		pool = {
+			weight = 5
+			icons = { 
+                GFX_POL_basic_medium_art_medium
+                GFX_POL_basic_medium_tank_medium
+			}
+		}
+	}
+	
+	medium_tank_artillery_chassis_1 = { 
+		pool = {
+			weight = 5
+			icons = { 
+                GFX_POL_basic_medium_art_medium
+			}
+		}
+	}
+
+	medium_tank_destroyer_chassis_1 = { 
+		pool = {
+			weight = 5
+			icons = { 
+				GFX_POL_basic_medium_td_medium
+			}
+		}
+	}	
+
+	medium_tank_aa_chassis_1 = {
+		pool = {
+			weight = 5
+			icons = {
+				GFX_POL_basic_medium_spaa_medium
+			}
+		}
+	}	
+		
+### medium tank 2 ###
+	
+	medium_tank_chassis_2 = { 
+		pool = {
+			weight = 5
+			icons = { 
+                GFX_POL_improved_medium_tank_medium
+			}
+		}
+	}
+	
+	medium_tank_flame_chassis_2 = { 
+		pool = {
+			weight = 5
+			icons = { 
+                GFX_POL_improved_medium_fl_medium
+			}
+		}
+	}
+	
+	medium_tank_amphibious_chassis_2 = { 
+		pool = {
+			weight = 5
+			icons = { 
+			GFX_POL_amphibious_tank_2_alt
+            GFX_POL_amphibious_tank_2_medium
+			}
+		}
+	}
+	
+	medium_tank_artillery_chassis_2 = { 
+		pool = {
+			weight = 5
+			icons = { 
+                GFX_POL_improved_medium_art_medium
+			}
+		}
+	}
+	
+	medium_tank_destroyer_chassis_2 = { 
+		pool = {
+			weight = 5
+			icons = { 
+				GFX_POL_improved_medium_td_medium
+			}
+		}
+	}	
+
+	medium_tank_aa_chassis_2 = {
+		pool = {
+			weight = 5
+			icons = {
+				GFX_POL_improved_medium_spaa_medium
+			}
+		}
+	}	
+	
+	
+	
+### medium tank 3 ###
+	
+	medium_tank_chassis_3 = { 
+		pool = {
+			weight = 5
+			icons = { 
+                GFX_POL_advanced_medium_tank_medium
+			}
+		}
+	}
+
+	medium_tank_artillery_chassis_3 = { 
+		pool = {
+			weight = 5
+			icons = { 
+                GFX_POL_advanced_medium_art_medium
+			}
+		}
+	}
+	
+	medium_tank_destroyer_chassis_3 = { 
+		pool = {
+			weight = 5
+			icons = { 
+				GFX_POL_advanced_medium_td_medium
+			}
+		}
+	}	
+
+	medium_tank_aa_chassis_3 = {
+		pool = {
+			weight = 5
+			icons = {
+				GFX_POL_advanced_medium_spaa_medium
+			}
+		}
+	}	
+	
+### MODERN TANK ###
+	
+	modern_tank_chassis_1 = {
+		pool = {
+			weight = 5
+			icons = { 
+				GFX_POL_main_battle_tank_medium
+			}
+		}
+	}
+	
+	modern_tank_aa_chassis_1 = {
+		pool = {
+			weight = 5
+			icons = {  
+				GFX_POL_modern_spaa_medium
+			}
+		}
+	}
+	
+	modern_tank_destroyer_chassis_1 = {
+		pool = {
+			weight = 5
+			icons = { 
+				GFX_POL_modern_td_medium
+			}
+		}
+	}
+	
+	modern_tank_artillery_chassis_1 = {
+		pool = {
+			weight = 5
+			icons = {  
+				GFX_POL_modern_art_medium
+			}
+		}
+	}
+	
+
+### amphibious medium tank ###
+
+	medium_tank_amphibious_chassis = { 
+		pool = {
+			weight = 5
+			icons = { 
+				GFX_POL_amphibious_tank_2_medium
+			}
+		}
+	}	
+
+
+### heavy tank 0 ###
+
+	heavy_tank_chassis_0 = {
+		pool = {
+			weight = 5
+			icons = { 
+				GFX_POL_gw_heavy_tank_medium
+			}
+		}
+	}
+		
+	
+### heavy tank 1 ###
+	
+	heavy_tank_chassis_1 = { 
+		pool = {
+			weight = 5
+			icons = { 
+                GFX_POL_basic_heavy_tank_medium
+			}
+		}
+	}	
+
+	heavy_tank_artillery_chassis_1 = { 
+		pool = {
+			weight = 5
+			icons = { 
+                GFX_POL_basic_heavy_art_medium
+			}
+		}
+	}
+	
+	heavy_tank_destroyer_chassis_1 = { 
+		pool = {
+			weight = 5
+			icons = { 
+				GFX_POL_basic_heavy_td_medium
+			}
+		}
+	}	
+
+	heavy_tank_aa_chassis_1 = {
+		pool = {
+			weight = 5
+			icons = {
+				GFX_POL_basic_heavy_spaa_medium
+			}
+		}
+	}	
+
+### heavy tank 2 ###
+	
+	heavy_tank_chassis_2 = { 
+		pool = {
+			weight = 5
+			icons = { 
+                GFX_POL_improved_heavy_tank_medium
+			}
+		}
+	}	
+
+	heavy_tank_artillery_chassis_2 = { 
+		pool = {
+			weight = 5
+			icons = { 
+                GFX_POL_improved_heavy_art_medium
+			}
+		}
+	}
+	
+	heavy_tank_destroyer_chassis_2 = { 
+		pool = {
+			weight = 5
+			icons = { 
+				GFX_POL_improved_heavy_td_medium
+			}
+		}
+	}	
+
+	heavy_tank_aa_chassis_2 = {
+		pool = {
+			weight = 5
+			icons = {
+				GFX_POL_improved_heavy_spaa_medium
+			}
+		}
+	}	
+	
+### heavy tank 3 ###
+	
+	heavy_tank_chassis_3 = { 
+		pool = {
+			weight = 5
+			icons = { 
+                GFX_POL_advanced_heavy_tank_medium
+			}
+		}
+	}	
+
+	heavy_tank_artillery_chassis_3 = { 
+		pool = {
+			weight = 5
+			icons = { 
+                GFX_POL_advanced_heavy_art_medium
+			}
+		}
+	}
+	
+	heavy_tank_destroyer_chassis_3 = { 
+		pool = {
+			weight = 5
+			icons = { 
+				GFX_POL_advanced_heavy_td_medium
+			}
+		}
+	}	
+
+	heavy_tank_aa_chassis_3 = {
+		pool = {
+			weight = 5
+			icons = {
+				GFX_POL_advanced_heavy_spaa_medium
+			}
+		}
+	}
+
+### super heavy tank ###
+
+    super_heavy_tank_chassis = {
+		pool = {
+			weight = 5
+			icons = { 
+				GFX_POL_super_heavy_tank_medium
+			}
+		}
+	}
+
+    super_heavy_tank_aa_chassis = {
+		pool = {
+			weight = 5
+			icons = { 
+				GFX_POL_super_heavy_spaa_medium
+			}
+		}
+	}
+
+    super_heavy_tank_artillery_chassis = {
+		pool = {
+			weight = 5
+			icons = { 
+				GFX_POL_super_heavy_tank_medium
+			}
+		}
+	}
+	
+    super_heavy_tank_destroyer_chassis = {
+		pool = {
+			weight = 5
+			icons = { 
+				GFX_POL_super_heavy_tank_medium
+			}
+		}
+	}
+
+	
+}

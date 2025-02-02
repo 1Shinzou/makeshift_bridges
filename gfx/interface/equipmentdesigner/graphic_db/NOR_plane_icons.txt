@@ -1,0 +1,40 @@
+### designer aircraft ###
+
+
+
+NOR = {
+
+### small_plane ###
+
+	small_plane_airframe_0 = {
+		pool = {
+			icons = {
+			GFX_NOR_early_fighter_medium
+			}
+		}
+	}
+	
+	small_plane_airframe_1 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_NOR_fighter1_medium
+			}
+		}
+	}
+	
+	small_plane_airframe_2 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_NOR_fighter2_medium
+			}
+		}
+	}
+	
+	
+	
+	
+	
+}
+

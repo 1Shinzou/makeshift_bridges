@@ -1,0 +1,422 @@
+spriteTypes = {	
+
+### transport aircraft 1 ###	
+	
+	SpriteType = {
+	name = "GFX_YUG_transport_plane_equipment_1_medium"
+	texturefile = "gfx/interface/technologies/YUG_cp1.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_YUG_bba_early_transport_plane_medium"
+	texturefile = "gfx/interface/technologies/YUG_cp1.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_YUG_early_transport_plane_medium"
+	texturefile = "gfx/interface/technologies/YUG_cp1.dds"
+	}
+	
+### transport aircraft 2 ###	
+	
+	SpriteType = {
+	name = "GFX_YUG_transport_plane_equipment_2_medium"
+	texturefile = "gfx/interface/technologies/YUG_cp2.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_YUG_bba_improved_transport_plane_medium"
+	texturefile = "gfx/interface/technologies/YUG_cp2.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_YUG_improved_transport_plane_medium"
+	texturefile = "gfx/interface/technologies/YUG_cp2.dds"
+	}	
+	
+### transport aircraft 3 ###	
+	
+	SpriteType = {
+	name = "GFX_YUG_transport_plane_equipment_3_medium"
+	texturefile = "gfx/interface/technologies/YUG_cp3.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_YUG_bba_strategic_airlifter_medium"
+	texturefile = "gfx/interface/technologies/YUG_cp3.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_YUG_strategic_airlifter_medium"
+	texturefile = "gfx/interface/technologies/YUG_cp3.dds"
+	}	
+
+
+### INTERWAR FIGHTER###
+### non-designer aircraft ###
+	SpriteType = {
+	name = "GFX_YUG_early_fighter_medium"
+	texturefile = "gfx/interface/technologies/YUG_if.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_MNT_early_fighter_medium"
+	texturefile = "gfx/interface/technologies/YUG_if.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_MAC_early_fighter_medium"
+	texturefile = "gfx/interface/technologies/YUG_if.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_BOS_early_fighter_medium"
+	texturefile = "gfx/interface/technologies/YUG_if.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_CRO_early_fighter_medium"
+	texturefile = "gfx/interface/technologies/YUG_if.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SER_early_fighter_medium"
+	texturefile = "gfx/interface/technologies/YUG_if.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SLV_early_fighter_medium"
+	texturefile = "gfx/interface/technologies/YUG_if.dds"
+	}
+	
+### designer aircraft ###	
+	SpriteType = {
+	name = "GFX_YUG_iw_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/YUG_if.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_MNT_iw_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/YUG_if.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_MAC_iw_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/YUG_if.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_BOS_iw_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/YUG_if.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_CRO_iw_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/YUG_if.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SER_iw_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/YUG_if.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SLV_iw_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/YUG_if.dds"
+	}
+
+
+
+### FIGHTER 1 ###
+### non-designer aircraft ###
+	SpriteType = {
+	name = "GFX_YUG_fighter1_medium"
+	texturefile = "gfx/interface/technologies/YUG_f1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SER_fighter1_medium"
+	texturefile = "gfx/interface/technologies/YUG_f1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_CRO_fighter1_medium"
+	texturefile = "gfx/interface/technologies/YUG_f1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_SLV_fighter1_medium"
+	texturefile = "gfx/interface/technologies/YUG_f1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_BOS_fighter1_medium"
+	texturefile = "gfx/interface/technologies/YUG_f1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_MAC_fighter1_medium"
+	texturefile = "gfx/interface/technologies/YUG_f1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_MNT_fighter1_medium"
+	texturefile = "gfx/interface/technologies/YUG_f1.dds"
+	}
+	
+### designer aircraft ###		
+	SpriteType = {
+	name = "GFX_YUG_basic_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/YUG_f1.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_CRO_basic_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/YUG_f1.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_BOS_basic_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/YUG_f1.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_MNT_basic_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/YUG_f1.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_SLV_basic_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/YUG_f1.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_MAC_basic_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/YUG_f1.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_SER_basic_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/YUG_f1.dds"
+	}
+
+
+### FIGHTER 2 ###
+### non-designer aircraft ###	
+	SpriteType = {
+	name = "GFX_YUG_fighter2_medium"
+	texturefile = "gfx/interface/technologies/YUG_f2.dds"
+	}
+	
+### designer aircraft ###	
+	SpriteType = {
+	name = "GFX_YUG_improved_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/YUG_f2.dds"
+	}
+
+	
+### FIGHTER 3 ###
+### non-designer aircraft ###	
+	SpriteType = {
+	name = "GFX_YUG_fighter3_medium"
+	texturefile = "gfx/interface/technologies/YUG_f3.dds"
+	}
+	
+### designer aircraft ###	
+	SpriteType = {
+	name = "GFX_YUG_advanced_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/YUG_f3.dds"
+	}
+
+	
+### JET FIGHTER 1 ###	
+    SpriteType = {
+	name = "GFX_YUG_jet_fighter1_medium"
+    texturefile = "gfx/interface/technologies/YUG_jf1.dds"
+	}	
+	
+    SpriteType = {
+	name = "GFX_YUG_jet_plane_1_medium"
+	texturefile = "gfx/interface/technologies/YUG_jf1.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_YUG_modern_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/YUG_jf1.dds"
+	}	
+	
+### JET FIGHTER 2 ###
+    SpriteType = {
+	name = "GFX_YUG_jet_fighter2_medium"
+    texturefile = "gfx/interface/technologies/YUG_jf2.dds"
+	}	
+	
+    SpriteType = {
+	name = "GFX_YUG_jet_plane_2_medium"
+	texturefile = "gfx/interface/technologies/YUG_jf2.dds"
+	}		
+
+	
+### CV FIGHTER 0 ###		
+	SpriteType = {
+	name = "GFX_YUG_cv_early_fighter_medium"
+	texturefile = "gfx/interface/technologies/YUG_if_cv.dds"
+	}
+
+
+	
+### CV FIGHTER 1 ###		
+	SpriteType = {
+	name = "GFX_YUG_cv_fighter1_medium"
+	texturefile = "gfx/interface/technologies/YUG_f1_cv.dds"
+	}	
+
+
+	
+### CAS 0 ###		
+	SpriteType = {
+	name = "GFX_YUG_CAS0_medium"
+	texturefile = "gfx/interface/technologies/YUG_cas0.dds"
+	}
+
+
+
+### CAS 1 ###	
+	SpriteType = {
+	name = "GFX_YUG_CAS1_medium"
+	texturefile = "gfx/interface/technologies/YUG_cas1.dds"
+	}
+
+
+
+### CAS 2 ###	
+	SpriteType = {
+	name = "GFX_YUG_CAS2_medium"
+	texturefile = "gfx/interface/technologies/YUG_cas2.dds"
+	}
+
+
+		
+### CV CAS 0 ###		
+	SpriteType = {
+	name = "GFX_YUG_cv_CAS0_medium"
+	texturefile = "gfx/interface/technologies/YUG_cas0_cv.dds"
+	}
+
+
+
+### CV NAVAL BOMBER 1 ###
+	SpriteType = {
+	name = "GFX_YUG_cv_naval_bomber1_medium"
+	texturefile = "gfx/interface/technologies/YUG_nb1_cv.dds"
+	}
+
+
+
+### NAVAL BOMBER 1 ###
+	SpriteType = {
+	name = "GFX_YUG_naval_bomber1_medium"
+	texturefile = "gfx/interface/technologies/YUG_nb1.dds"
+	}
+
+### NAVAL BOMBER 2 ###
+	SpriteType = {
+	name = "GFX_YUG_naval_bomber2_medium"
+	texturefile = "gfx/interface/technologies/YUG_nb2.dds"
+	}
+
+
+
+### Tac bomber 0 ###
+### non-designer aircraft ###	
+	SpriteType = {
+    name = "GFX_YUG_early_bomber_medium"
+	texturefile = "gfx/interface/technologies/YUG_imb.dds"
+	}	
+	
+### designer aircraft ###	
+	SpriteType = {
+	name = "GFX_YUG_iw_medium_airframe_medium"
+	texturefile = "gfx/interface/technologies/YUG_imb.dds"
+	}	
+
+
+
+### Tac bomber 1 ###
+### non-designer aircraft ###	
+	SpriteType = {
+	name = "GFX_YUG_tactical_bomber1_medium"
+	texturefile = "gfx/interface/technologies/YUG_mb1.dds"
+	}	
+	
+### designer aircraft ###	
+	SpriteType = {
+	name = "GFX_YUG_basic_medium_airframe_medium"
+	texturefile = "gfx/interface/technologies/YUG_mb1.dds"
+	}	
+
+
+
+### Tac bomber 2 ###
+### non-designer aircraft ###	
+	SpriteType = {
+	name = "GFX_YUG_tactical_bomber2_medium"
+	texturefile = "gfx/interface/technologies/YUG_mb2.dds"
+	}	
+	
+### designer aircraft ###	
+	SpriteType = {
+	name = "GFX_YUG_improved_medium_airframe_medium"
+	texturefile = "gfx/interface/technologies/YUG_mb2.dds"
+	}	
+
+
+
+### Tac bomber 3 ###
+### non-designer aircraft ###	
+	SpriteType = {
+	name = "GFX_YUG_tactical_bomber3_medium"
+	texturefile = "gfx/interface/technologies/YUG_mb3.dds"
+	}	
+	
+### designer aircraft ###	
+	SpriteType = {
+	name = "GFX_YUG_advanced_medium_airframe_medium"
+	texturefile = "gfx/interface/technologies/YUG_mb3.dds"
+	}
+
+
+
+### HEAVY FIGHTER 1 ###	
+    SpriteType = {	
+    name = "GFX_YUG_heavy_fighter1_medium"
+	texturefile = "gfx/interface/technologies/YUG_hf1.dds"
+	}
+
+
+### HEAVY FIGHTER 2 ###		
+    SpriteType = {	
+    name = "GFX_YUG_heavy_fighter2_medium"
+	texturefile = "gfx/interface/technologies/YUG_hf2.dds"
+	}
+	
+    SpriteType = {	
+    name = "GFX_YUG_heavy_fighter2_2_medium"
+	texturefile = "gfx/interface/technologies/YUG_hf2_2.dds"
+	}
+
+
+### HEAVY FIGHTER 3 ###	
+    SpriteType = {	
+    name = "GFX_YUG_heavy_fighter3_medium"
+	texturefile = "gfx/interface/technologies/YUG_hf3.dds"
+	}
+
+	
+### HEAVY BOMBER 0 ###
+	SpriteType = {
+	name = "GFX_YUG_iw_large_airframe_medium"
+	texturefile = "gfx/interface/technologies/YUG_ihb.dds"
+	}	
+		
+}

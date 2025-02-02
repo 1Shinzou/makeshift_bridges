@@ -1,0 +1,42 @@
+### designer aircraft ###
+
+PER = {
+
+### light tank 0 ###
+
+
+### light tank 1 ###
+	
+	light_tank_chassis_1 = { 
+		pool = {
+			weight = 5
+			icons = { 
+            GFX_PER_basic_light_tank_medium
+			}
+		}
+	}
+
+### light tank 2 ###
+	
+	light_tank_chassis_2 = { 
+		pool = {
+			weight = 5
+			icons = { 
+            GFX_PER_improved_light_tank_medium
+			}
+		}
+	}	
+	
+### light tank 3 ###
+	
+	light_tank_chassis_3 = { 
+		pool = {
+			weight = 5
+			icons = { 
+            GFX_PER_advanced_light_tank_medium
+			}
+		}
+	}
+
+
+}

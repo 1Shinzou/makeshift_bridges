@@ -1,0 +1,40 @@
+spriteTypes = {	
+
+
+### non-designer aircraft ###
+
+	SpriteType = {
+	name = "GFX_CAN_early_fighter_medium"
+	texturefile = "gfx/interface/technologies/CAN_if.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_CAN_fighter1_medium"
+	texturefile = "gfx/interface/technologies/CAN_f1.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_CAN_fighter2_medium"
+	texturefile = "gfx/interface/technologies/CAN_f2.dds"
+	}
+
+
+	
+### designer aircraft ###	
+
+	SpriteType = {
+	name = "GFX_CAN_iw_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/CAN_if.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_CAN_basic_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/CAN_f1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_CAN_improved_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/CAN_f2.dds"
+	}
+	
+}

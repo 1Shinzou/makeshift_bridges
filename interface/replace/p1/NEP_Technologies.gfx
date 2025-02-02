@@ -1,0 +1,20 @@
+spriteTypes = {	
+
+
+	SpriteType = {
+	name = "GFX_NEP_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/NEP_1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_NEP_infantry_weapons1_medium"
+	texturefile = "gfx/interface/technologies/NEP_2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_NEP_improved_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/NEP_3.dds"
+	}
+		
+	
+}

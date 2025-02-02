@@ -1,0 +1,30 @@
+spriteTypes = {	
+
+
+### non-designer aircraft ###
+
+
+    SpriteType = {
+	name = "GFX_HOL_early_fighter_medium"
+	texturefile = "gfx/interface/technologies/HOL_if.dds"
+	}
+    SpriteType = {
+	name = "GFX_INS_early_fighter_medium"
+	texturefile = "gfx/interface/technologies/HOL_if.dds"
+	}	
+	
+### designer aircraft ###	
+
+
+	SpriteType = {
+	name = "GFX_HOL_iw_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/HOL_if.dds"
+	}
+	SpriteType = {
+	name = "GFX_INS_iw_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/HOL_if.dds"
+	}	
+
+
+	
+}

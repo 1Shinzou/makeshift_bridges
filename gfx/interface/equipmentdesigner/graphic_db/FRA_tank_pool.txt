@@ -1,0 +1,292 @@
+### designer aircraft ###
+
+FRA = {
+
+### light tank 0 ###
+
+	light_tank_chassis_0 = { 
+		pool = {
+			weight = 5
+			icons = { 
+			GFX_FRA_gwtank_medium
+			}
+		}
+	}
+
+
+### light tank 1 ###
+	
+	light_tank_chassis_1 = { 
+		pool = {
+			weight = 5
+			icons = { 
+			GFX_FRA_basic_light_tank_2_medium
+            GFX_FRA_basic_light_tank_medium
+			}
+		}
+	}
+
+	light_tank_destroyer_chassis_1 = { 
+		pool = {
+			weight = 5
+			icons = { 
+			GFX_FRA_basic_light_td_medium
+			}
+		}
+	}	
+
+	light_tank_aa_chassis_1 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_FRA_basic_light_spaa_medium
+			}
+		}
+	}	
+	
+	light_tank_artillery_chassis_1 = { 
+		pool = {
+			weight = 5
+			icons = { 
+            GFX_FRA_basic_light_art_medium
+			}
+		}
+	}
+	
+
+
+### light tank 2 ###
+	
+	light_tank_chassis_2 = { 
+		pool = {
+			weight = 5
+			icons = { 
+			GFX_FRA_improved_light_tank_2_medium
+            GFX_FRA_improved_light_tank_medium
+			}
+		}
+	}	
+	
+	light_tank_destroyer_chassis_2 = { 
+		pool = {
+			weight = 5
+			icons = { 
+			GFX_FRA_improved_light_td_medium
+			}
+		}
+	}	
+
+	light_tank_aa_chassis_2 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_FRA_improved_light_spaa_medium
+			}
+		}
+	}	
+	
+	
+### light tank 3 ###
+	
+	light_tank_chassis_3 = { 
+		pool = {
+			weight = 5
+			icons = { 
+            GFX_FRA_advanced_light_tank_medium
+			}
+		}
+	}
+
+	light_tank_destroyer_chassis_3 = { 
+		pool = {
+			weight = 5
+			icons = { 
+			GFX_FRA_advanced_light_td_medium
+			}
+		}
+	}	
+
+	light_tank_aa_chassis_3 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_FRA_advanced_light_spaa_medium
+			}
+		}
+	}	
+	
+	light_tank_artillery_chassis_3 = { 
+		pool = {
+			weight = 5
+			icons = { 
+            GFX_FRA_advanced_light_art_medium
+			}
+		}
+	}
+	
+
+### medium tank 0 ###
+	
+	medium_tank_chassis_0 = { 
+		pool = {
+			weight = 5
+			icons = { 
+            GFX_FRA_gw_medium_tank_medium
+			}
+		}
+	}
+
+
+### medium tank 1 ###
+	
+	medium_tank_chassis_1 = { 
+		pool = {
+			weight = 5
+			icons = { 
+            GFX_FRA_basic_medium_tank_medium
+			}
+		}
+	}
+	
+	medium_tank_destroyer_chassis_1 = { 
+		pool = {
+			weight = 5
+			icons = { 
+			GFX_FRA_basic_medium_td_medium
+			}
+		}
+	}		
+
+
+### medium tank 2 ###
+	
+	medium_tank_chassis_2 = { 
+		pool = {
+			weight = 5
+			icons = { 
+			GFX_FRA_improved_medium_tank_2_medium
+            GFX_FRA_improved_medium_tank_medium
+			}
+		}
+	}
+
+	medium_tank_destroyer_chassis_2 = { 
+		pool = {
+			weight = 5
+			icons = { 
+			GFX_FRA_improved_medium_td_medium
+			}
+		}
+	}		
+	
+	medium_tank_artillery_chassis_2 = { 
+		pool = {
+			weight = 5
+			icons = { 
+            GFX_FRA_improved_medium_art_medium
+			}
+		}
+	}
+
+### medium tank 3 ###
+	
+	medium_tank_chassis_3 = { 
+		pool = {
+			weight = 5
+			icons = { 
+            GFX_FRA_advanced_medium_tank_medium
+			}
+		}
+	}
+
+
+### heavy tank 0 ###
+	
+	heavy_tank_chassis_0 = { 
+		pool = {
+			weight = 5
+			icons = { 
+            GFX_FRA_gw_heavy_tank_medium
+			}
+		}
+	}
+
+### heavy tank 1 ###
+	
+	heavy_tank_chassis_1 = { 
+		pool = {
+			weight = 5
+			icons = { 
+			GFX_FRA_b1_ter_medium
+			GFX_FRA_b1_bis_medium
+            GFX_FRA_basic_heavy_tank_medium
+			}
+		}
+	}
+
+	heavy_tank_destroyer_chassis_1 = { 
+		pool = {
+			weight = 5
+			icons = { 
+			GFX_FRA_basic_heavy_td_medium
+			}
+		}
+	}		
+	
+	heavy_tank_artillery_chassis_1 = { 
+		pool = {
+			weight = 5
+			icons = { 
+			GFX_FRA_basic_heavy_td_medium
+            GFX_FRA_basic_heavy_art_medium
+			}
+		}
+	}
+
+
+### heavy tank 2 ###
+	
+	heavy_tank_chassis_2 = { 
+		pool = {
+			weight = 5
+			icons = { 
+            GFX_FRA_improved_heavy_tank_medium
+			}
+		}
+	}
+
+	heavy_tank_destroyer_chassis_2 = { 
+		pool = {
+			weight = 5
+			icons = { 
+			GFX_FRA_improved_heavy_td_medium
+			}
+		}
+	}
+
+
+### heavy tank 3 ###
+	
+	heavy_tank_chassis_3 = { 
+		pool = {
+			weight = 5
+			icons = { 
+            GFX_FRA_advanced_heavy_tank_medium
+			}
+		}
+	}
+	
+	
+### super heavy tank ###
+
+    super_heavy_tank_chassis = {
+		pool = {
+			weight = 5
+			icons = { 
+				GFX_FRA_super_heavy_tank_medium
+			}
+		}
+	}
+
+
+}

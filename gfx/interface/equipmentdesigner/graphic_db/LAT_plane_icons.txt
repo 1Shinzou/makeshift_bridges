@@ -1,0 +1,19 @@
+### designer aircraft ###
+
+
+
+LAT = {
+
+### small_plane ###
+
+	small_plane_airframe_0 = {
+		pool = {
+			icons = {
+				GFX_LAT_early_fighter_medium
+			}
+		}
+	}
+
+
+}
+

@@ -1,0 +1,18 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_AUS_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/AUS_lt36.dds"
+	}
+
+
+
+
+}
+	
+
+	
+
+	
+
+	

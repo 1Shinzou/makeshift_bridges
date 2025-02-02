@@ -1,0 +1,308 @@
+spriteTypes = {	
+
+
+### non-designer aircraft ###
+
+    ### transport aircraft 1 ###	
+	
+	SpriteType = {
+	name = "GFX_TUR_transport_plane_equipment_1_medium"
+	texturefile = "gfx/interface/technologies/TUR_g24.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_TUR_bba_early_transport_plane_medium"
+	texturefile = "gfx/interface/technologies/TUR_g24.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_TUR_early_transport_plane_medium"
+	texturefile = "gfx/interface/technologies/TUR_g24.dds"
+	}
+
+    ### interwar fighters ###
+
+    SpriteType = {
+	name = "GFX_TUR_early_fighter_medium"
+	texturefile = "gfx/interface/technologies/TUR_if.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_TUR_pzl24a_medium"
+	texturefile = "gfx/interface/technologies/TUR_pzl24a.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_TUR_pzl24c_medium"
+	texturefile = "gfx/interface/technologies/TUR_pzl24c.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_TUR_pzl24g_medium"
+	texturefile = "gfx/interface/technologies/TUR_pzl24g.dds"
+	}
+	
+    ### interwar CV fighters ###
+
+    SpriteType = {
+	name = "GFX_TUR_cv_early_fighter_medium"
+	texturefile = "gfx/interface/technologies/TUR_hawk2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_TUR_hawk2_medium"
+	texturefile = "gfx/interface/technologies/TUR_hawk2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_TUR_hawk3_medium"
+	texturefile = "gfx/interface/technologies/TUR_hawk3.dds"
+	}
+	
+	### fighter 1 ###
+	
+	SpriteType = {
+	name = "GFX_TUR_fighter1_medium"
+	texturefile = "gfx/interface/technologies/TUR_f1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_TUR_hurricane1_medium"
+	texturefile = "gfx/interface/technologies/TUR_hurricane1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_TUR_hurricane2b_medium"
+	texturefile = "gfx/interface/technologies/TUR_hurricane2b.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_TUR_hurricane2c_medium"
+	texturefile = "gfx/interface/technologies/TUR_hurricane2c.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_TUR_ms406c1_medium"
+	texturefile = "gfx/interface/technologies/TUR_ms406c1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_TUR_i16_medium"
+	texturefile = "gfx/interface/technologies/TUR_i16.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_TUR_bf109e4_medium"
+	texturefile = "gfx/interface/technologies/TUR_bf109e4.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_TUR_p40d_medium"
+	texturefile = "gfx/interface/technologies/TUR_p40d.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_TUR_p40c_medium"
+	texturefile = "gfx/interface/technologies/TUR_p40c.dds"
+	}
+	
+	### fighter 2 ###
+
+	SpriteType = {
+	name = "GFX_TUR_fighter2_medium"
+	texturefile = "gfx/interface/technologies/TUR_f2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_TUR_fw190a3_medium"
+	texturefile = "gfx/interface/technologies/TUR_fw190a3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_TUR_mig3_medium"
+	texturefile = "gfx/interface/technologies/TUR_mig3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_TUR_messerspit_medium"
+	texturefile = "gfx/interface/technologies/TUR_messerspit.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_TUR_spitfire1a_medium"
+	texturefile = "gfx/interface/technologies/TUR_spitfire1a.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_TUR_spitfire5b_medium"
+	texturefile = "gfx/interface/technologies/TUR_spitfire5b.dds"
+	}
+	
+	### fighter 3 ###
+
+	SpriteType = {
+	name = "GFX_TUR_fighter3_medium"
+	texturefile = "gfx/interface/technologies/TUR_la7.dds"
+	}
+	
+	### jet fighters ###
+	
+		
+    SpriteType = {
+	name = "GFX_TUR_jet_fighter1_medium"
+    texturefile = "gfx/interface/technologies/TUR_me262.dds"
+	}	
+	
+    SpriteType = {
+	name = "GFX_TUR_jet_plane_1_medium"
+	texturefile = "gfx/interface/technologies/TUR_m262.dds"
+	}
+
+	### CAS ###	
+	
+	SpriteType = {
+	name = "GFX_TUR_CAS1_medium"
+	texturefile = "gfx/interface/technologies/TUR_cas1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_TUR_vultee_medium"
+	texturefile = "gfx/interface/technologies/TUR_vultee.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_TUR_lysander_medium"
+	texturefile = "gfx/interface/technologies/TUR_lysander.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_TUR_CAS2_medium"
+	texturefile = "gfx/interface/technologies/TUR_il2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_TUR_p47_medium"
+	texturefile = "gfx/interface/technologies/TUR_p47.dds"
+	}
+	
+	### Small naval bomber ###	
+	
+	SpriteType = {
+	name = "GFX_TUR_naval_bomber1_medium"
+	texturefile = "gfx/interface/technologies/TUR_walrus.dds"
+	}
+	
+	### Early bomber ###		
+	
+	SpriteType = {
+	name = "GFX_TUR_early_bomber_medium"
+	texturefile = "gfx/interface/technologies/TUR_rohrbach.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_TUR_b10_medium"
+	texturefile = "gfx/interface/technologies/TUR_b10.dds"
+	}	
+
+	### Bomber 1 ###
+
+	SpriteType = {
+	name = "GFX_TUR_tactical_bomber1_medium"
+	texturefile = "gfx/interface/technologies/TUR_he111f1.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_TUR_blenheim_medium"
+	texturefile = "gfx/interface/technologies/TUR_blenheim.dds"
+	}	
+	
+	### Bomber 2 ###
+	
+	SpriteType = {
+	name = "GFX_TUR_tactical_bomber2_medium"
+	texturefile = "gfx/interface/technologies/TUR_baltimore.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_TUR_beaufort_medium"
+	texturefile = "gfx/interface/technologies/TUR_beaufort.dds"
+	}		
+	
+	### Bomber 3 ###
+	
+	SpriteType = {
+	name = "GFX_TUR_tactical_bomber3_medium"
+	texturefile = "gfx/interface/technologies/TUR_invader.dds"
+	}	
+
+	### heavy fighter ###
+	
+    SpriteType = {	
+    name = "GFX_TUR_heavy_fighter1_medium"
+	texturefile = "gfx/interface/technologies/TUR_beaufighter.dds"
+	}
+	
+    SpriteType = {	
+    name = "GFX_TUR_heavy_fighter2_medium"
+	texturefile = "gfx/interface/technologies/TUR_mosquito.dds"
+	}
+	
+    SpriteType = {	
+    name = "GFX_TUR_heavy_fighter3_medium"
+	texturefile = "gfx/interface/technologies/TUR_invader.dds"
+	}
+
+	
+### designer aircraft ###	
+	
+	SpriteType = {
+	name = "GFX_TUR_iw_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/TUR_if.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_TUR_basic_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/TUR_f1.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_TUR_improved_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/TUR_f2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_TUR_advanced_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/TUR_la7.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_TUR_modern_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/TUR_me262.dds"
+	}	
+	
+	
+	
+	
+	SpriteType = {
+	name = "GFX_TUR_iw_medium_airframe_medium"
+	texturefile = "gfx/interface/technologies/TUR_rohrbach.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_TUR_basic_medium_airframe_medium"
+	texturefile = "gfx/interface/technologies/TUR_he111f1.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_TUR_improved_medium_airframe_medium"
+	texturefile = "gfx/interface/technologies/TUR_baltimore.dds"
+	}		
+ 
+	SpriteType = {
+	name = "GFX_TUR_advanced_medium_airframe_medium"
+	texturefile = "gfx/interface/technologies/TUR_invader.dds"
+	}	
+
+
+	
+}

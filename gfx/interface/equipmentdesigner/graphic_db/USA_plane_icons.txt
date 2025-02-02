@@ -1,0 +1,109 @@
+
+USA = {
+
+### small_plane ###
+
+	small_plane_airframe_0 = {
+		pool = {
+            weight = 5
+			icons = {
+            GFX_USA_light_plane_2_medium
+			GFX_USA_early_fighter_medium
+			}
+			models = {
+			USA_light_plane_entity
+			}
+		}
+	}
+	
+	small_plane_airframe_1 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_USA_fighter1_3_medium
+			GFX_USA_fighter1_2_medium
+			GFX_USA_light_plane_4_medium
+			GFX_USA_fighter1_medium
+			}
+		}
+	}
+	
+	small_plane_airframe_2 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_USA_fighter2_medium
+			}
+		}
+	}
+
+### cv_small_plane ###
+
+	cv_small_plane_airframe_0 = {
+		pool = {
+			weight = 5
+			icons = {
+            GFX_USA_cv_fighter1_medium
+			GFX_USA_cv_early_fighter_medium
+			}
+		}
+	}
+	
+### CAS ###
+
+	small_plane_cas_airframe_0 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_USA_CAS1_medium
+			}
+		}
+	}
+	
+	small_plane_cas_airframe_1 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_USA_CAS1_2_medium
+			GFX_USA_CAS1_medium
+			}
+		}
+	}
+	
+	small_plane_cas_airframe_2 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_USA_CAS2_medium
+			}
+		}
+	}
+
+
+
+### medium_plane ###
+	
+	medium_plane_airframe_0 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_USA_iw_medium_airframe_medium
+			}
+		}
+	}
+	
+	medium_plane_airframe_1 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_USA_tactical_bomber1_medium
+			}
+		}
+	}
+
+
+
+
+
+}
+

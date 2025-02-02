@@ -1,0 +1,28 @@
+spriteTypes = {	
+
+
+### non-designer aircraft ###
+
+	SpriteType = {
+	name = "GFX_CZE_early_fighter_medium"
+	texturefile = "gfx/interface/technologies/czslo_if.dds"
+	}
+	SpriteType = {
+	name = "GFX_SLO_early_fighter_medium"
+	texturefile = "gfx/interface/technologies/czslo_if.dds"
+	}
+
+	
+### designer aircraft ###	
+
+	SpriteType = {
+	name = "GFX_CZE_iw_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/czslo_if.dds"
+	}
+	SpriteType = {
+	name = "GFX_SLO_iw_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/czslo_if.dds"
+	}
+
+	
+}

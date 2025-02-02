@@ -1,0 +1,19 @@
+### designer aircraft ###
+
+
+
+SPR = {
+
+### small_plane ###
+
+	small_plane_airframe_0 = {
+		pool = {
+			icons = {
+				GFX_SPR_early_fighter_medium
+			}
+		}
+	}
+
+
+}
+

@@ -1,0 +1,131 @@
+spriteTypes = {	
+
+
+### non-designer aircraft ###
+
+    SpriteType = {
+    name = "GFX_USA_transport_plane_equipment_medium"
+    texturefile = "gfx/interface/technologies/USA_cp.dds"
+    }
+    
+	SpriteType = {
+    name = "GFX_USA_transport_plane_equipment_1_medium"
+    texturefile = "gfx/interface/technologies/USA_cp.dds"
+    }
+	
+  
+    SpriteType = {
+	name = "GFX_USA_early_fighter_medium"
+	texturefile = "gfx/interface/technologies/USA_if.dds"
+	}
+	
+    SpriteType = {
+	name = "GFX_USA_cv_early_fighter_medium"
+	texturefile = "gfx/interface/technologies/USA_if_cv.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_USA_cv_fighter1_medium"
+	texturefile = "gfx/interface/technologies/USA_if_cv2.dds"
+	}	
+	
+
+
+	SpriteType = {
+	name = "GFX_USA_fighter1_medium"
+	texturefile = "gfx/interface/technologies/USA_f1.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_USA_fighter1_2_medium"
+	texturefile = "gfx/interface/technologies/USA_f1_3.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_USA_fighter1_3_medium"
+	texturefile = "gfx/interface/technologies/USA_f1_4.dds"
+	}
+	
+	
+	SpriteType = {
+	name = "GFX_USA_fighter2_medium"
+	texturefile = "gfx/interface/technologies/USA_f2.dds"
+	}
+	
+	
+	
+	SpriteType = {
+	name = "GFX_USA_CAS1_medium"
+	texturefile = "gfx/interface/technologies/USA_cas1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_USA_CAS1_2_medium"
+	texturefile = "gfx/interface/technologies/USA_cas1_2.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_USA_CAS2_medium"
+	texturefile = "gfx/interface/technologies/USA_cas2.dds"
+	}
+	
+	
+	
+	SpriteType = {
+	name = "GFX_USA_early_bomber_medium"
+	texturefile = "gfx/interface/technologies/USA_mb1.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_USA_tactical_bomber1_medium"
+	texturefile = "gfx/interface/technologies/USA_mb1.dds"
+	}	
+	
+### designer aircraft ###	
+
+	SpriteType = {
+	name = "GFX_USA_iw_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/USA_if.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_USA_light_plane_2_medium"
+	texturefile = "gfx/interface/technologies/USA_if2.dds"
+	}
+
+
+	SpriteType = {
+	name = "GFX_USA_basic_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/USA_f1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_USA_light_plane_4_medium"
+	texturefile = "gfx/interface/technologies/USA_f1_2.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_USA_improved_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/USA_f2.dds"
+	}
+
+	
+	
+	
+	SpriteType = {
+	name = "GFX_USA_iw_medium_airframe_medium"
+	texturefile = "gfx/interface/technologies/USA_imb.dds"
+	}	
+
+	SpriteType = {
+	name = "GFX_USA_basic_medium_airframe_medium"
+	texturefile = "gfx/interface/technologies/USA_mb1.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_medium_plane_1_medium"
+	texturefile = "gfx/interface/technologies/USA_mb1.dds"
+	}
+	
+	
+}

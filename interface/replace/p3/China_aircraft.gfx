@@ -1,0 +1,98 @@
+spriteTypes = {	
+
+
+### non-designer aircraft ###
+
+  
+    SpriteType = {
+	name = "GFX_CHI_early_fighter_medium"
+	texturefile = "gfx/interface/technologies/china_if.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_CHI_fighter1_medium"
+	texturefile = "gfx/interface/technologies/china_f1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_CHI_fighter2_medium"
+	texturefile = "gfx/interface/technologies/china_f2.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_CHI_fighter3_medium"
+	texturefile = "gfx/interface/technologies/china_f3.dds"
+	}		
+	
+	
+    SpriteType = {
+	name = "GFX_CHI_CAS2_medium"
+	texturefile = "gfx/interface/technologies/china_cas2.dds"
+	}		
+    SpriteType = {
+	name = "GFX_CHI_CAS3_medium"
+	texturefile = "gfx/interface/technologies/china_cas3.dds"
+	}	
+
+
+
+    SpriteType = {	
+    name = "GFX_CHI_heavy_fighter1_medium"
+	texturefile = "gfx/interface/technologies/china_hf1.dds"
+	}
+	
+    SpriteType = {	
+    name = "GFX_CHI_heavy_fighter2_medium"
+	texturefile = "gfx/interface/technologies/china_hf2.dds"
+	}
+	
+	
+		
+	SpriteType = {
+	name = "GFX_CHI_early_bomber_medium"
+	texturefile = "gfx/interface/technologies/china_imb.dds"
+	}	
+		
+	
+	SpriteType = {
+	name = "GFX_CHI_tactical_bomber3_medium"
+	texturefile = "gfx/interface/technologies/china_mb3.dds"
+	}		
+	
+
+	
+### designer aircraft ###	
+
+	SpriteType = {
+	name = "GFX_CHI_iw_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/china_if.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_CHI_basic_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/china_f1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_CHI_improved_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/china_f2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_CHI_advanced_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/china_f3.dds"
+	}
+
+
+	
+	SpriteType = {
+	name = "GFX_CHI_iw_medium_airframe_medium"
+	texturefile = "gfx/interface/technologies/china_imb.dds"
+	}	
+
+	SpriteType = {
+	name = "GFX_CHI_advanced_medium_airframe_medium"
+	texturefile = "gfx/interface/technologies/china_mb3.dds"
+	}
+	
+}

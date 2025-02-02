@@ -1,0 +1,219 @@
+spriteTypes = {	
+	
+### interwar light ###
+	
+	SpriteType = {
+	name = "GFX_GER_light_tank_chassis_0_medium"
+	texturefile = "gfx/interface/technologies/GER_iwt_lt_chassis.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_GER_gwtank_chassis_medium"
+	texturefile = "gfx/interface/technologies/GER_iwt_lt_chassis.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_GER_light_tank_chassis_0_medium"
+	texturefile = "gfx/interface/technologies/GER_iwt_lt_chassis.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_GER_gwtank_medium"
+	texturefile = "gfx/interface/technologies/GER_iwt_lt.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_GER_gw_light_tank_medium"
+	texturefile = "gfx/interface/technologies/GER_iwt_lt.dds"
+	}
+	
+	
+### light tank 1 ###
+
+	SpriteType = {
+	name = "GFX_GER_basic_light_tank_chassis_medium"
+	texturefile = "gfx/interface/technologies/GER_lt36_chassis.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_GER_basic_light_tank_medium"
+	texturefile = "gfx/interface/technologies/GER_lt36.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_GER_pz1b"
+	texturefile = "gfx/interface/technologies/GER_lt36_alt_1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_GER_kpz1"
+	texturefile = "gfx/interface/technologies/GER_lt36_alt_2.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_GER_lkb"
+	texturefile = "gfx/interface/technologies/GER_lt36_alt_3.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_GER_pz1f"
+	texturefile = "gfx/interface/technologies/GER_lt36_alt_6.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_GER_pz1c"
+	texturefile = "gfx/interface/technologies/GER_lt36_alt_7.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_GER_basic_light_td_medium"
+	texturefile = gfx/interface/technologies/GER_lt36_td.dds
+	}
+	
+	spriteType = {
+	name = "GFX_GER_basic_light_art_medium"
+	texturefile = gfx/interface/technologies/GER_lt36_spg.dds
+	}
+	
+	spriteType = {
+	name = "GFX_GER_basic_light_spaa_medium"
+	texturefile = gfx/interface/technologies/GER_lt36_aa.dds
+	}	
+	
+	spriteType = {
+	name = "GFX_GER_basic_light_rocket_medium"
+	texturefile = gfx/interface/technologies/GER_lt36_r.dds
+	}	
+	
+	spriteType = {
+	name = "GFX_GER_basic_light_fl_medium"
+	texturefile = gfx/interface/technologies/GER_lt36_fl.dds
+	}	
+		
+	
+
+### light tank 2 ###
+
+	SpriteType = {
+	name = "GFX_GER_improved_light_tank_chassis_medium"
+	texturefile = "gfx/interface/technologies/GER_lt38_chassis.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_GER_improved_light_tank_medium"
+	texturefile = "gfx/interface/technologies/GER_lt38.dds"
+	}	
+	
+	spriteType = {
+	name = "GFX_GER_improved_light_td_medium"
+	texturefile = gfx/interface/technologies/GER_lt38_td.dds
+	}
+	
+	spriteType = {
+	name = "GFX_GER_improved_light_art_medium"
+	texturefile = gfx/interface/technologies/GER_lt38_spg.dds
+	}
+	
+	spriteType = {
+	name = "GFX_GER_improved_light_spaa_medium"
+	texturefile = gfx/interface/technologies/GER_lt38_aa.dds
+	}	
+	
+	spriteType = {
+	name = "GFX_GER_improved_light_fl_medium"
+	texturefile = gfx/interface/technologies/GER_lt38_fl.dds
+	}	
+
+
+### light tank 3 ###
+
+	SpriteType = {
+	name = "GFX_GER_advanced_light_tank_chassis_medium"
+	texturefile = "gfx/interface/technologies/GER_lt41_chassis.dds"
+	}	
+
+	SpriteType = {
+	name = "GFX_GER_advanced_light_tank_medium"
+	texturefile = "gfx/interface/technologies/GER_lt41.dds"
+	}
+	
+	spriteType = {
+	name = "GFX_GER_advanced_light_td_medium"
+	texturefile = gfx/interface/technologies/GER_lt41_td.dds
+	}	
+	
+	spriteType = {
+	name = "GFX_GER_advanced_light_art_medium"
+	texturefile = gfx/interface/technologies/GER_lt41_spg.dds
+	}
+	
+	spriteType = {
+	name = "GFX_GER_advanced_light_spaa_medium"
+	texturefile = gfx/interface/technologies/GER_lt41_aa.dds
+	}	
+	
+
+### medium 1 ###
+	
+	SpriteType = {
+	name = "GFX_GER_basic_medium_tank_chassis_medium"
+	texturefile = "gfx/interface/technologies/GER_mt38_chassis.dds"
+	}
+		
+	SpriteType = {
+	name = "GFX_GER_basic_medium_tank_medium"
+	texturefile = "gfx/interface/technologies/GER_mt38.dds"
+	}	
+		
+	SpriteType = {
+	name = "GFX_GER_mt38_2_medium"
+	texturefile = "gfx/interface/technologies/GER_mt38_2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_GER_mt38_3_medium"
+	texturefile = "gfx/interface/technologies/GER_mt38_3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_GER_mt38_4_medium"
+	texturefile = "gfx/interface/technologies/GER_mt38_4.dds"
+	}			
+	
+
+	### medium 2 ###
+	
+	SpriteType = {
+	name = "GFX_GER_improved_medium_tank_chassis_medium"
+	texturefile = "gfx/interface/technologies/GER_mt40_chassis.dds"
+	}
+		
+	SpriteType = {
+	name = "GFX_GER_improved_medium_tank_medium"
+	texturefile = "gfx/interface/technologies/GER_mt40.dds"
+	}
+		
+	SpriteType = {
+	name = "GFX_GER_mt40_2_medium"
+	texturefile = "gfx/interface/technologies/GER_mt40_2.dds"
+	}
+
+	### heavy 1 ###
+
+	SpriteType = {
+	name = "GFX_GER_basic_heavy_tank_chassis_medium"
+	texturefile = "gfx/interface/technologies/GER_ht36_chassis.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_GER_basic_heavy_tank_medium"
+	texturefile = "gfx/interface/technologies/GER_ht36.dds"
+	}		
+	
+	
+}
+
+
+	
+
+	

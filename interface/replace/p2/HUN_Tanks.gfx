@@ -1,0 +1,68 @@
+spriteTypes = {	
+
+
+	### interwar light ###
+	
+	SpriteType = {
+	name = "GFX_HUN_light_tank_chassis_0_medium"
+	texturefile = "gfx/interface/technologies/HUN_iwt_lt_chassis.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_HUN_gwtank_chassis_medium"
+	texturefile = "gfx/interface/technologies/HUN_iwt_lt_chassis.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_HUN_light_tank_chassis_0_medium"
+	texturefile = "gfx/interface/technologies/HUN_iwt_lt_chassis.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_HUN_gwtank_medium"
+	texturefile = "gfx/interface/technologies/HUN_iwt_lt.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_HUN_gw_light_tank_medium"
+	texturefile = "gfx/interface/technologies/HUN_iwt_lt.dds"
+	}
+	
+    ### light tank 1 ###
+
+	SpriteType = {
+	name = "GFX_HUN_basic_light_tank_chassis_medium"
+	texturefile = "gfx/interface/technologies/HUN_lt36_chassis.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_HUN_basic_light_tank_medium"
+	texturefile = "gfx/interface/technologies/HUN_lt36.dds"
+	}
+	
+    ### light tank 2 ###
+
+	SpriteType = {
+	name = "GFX_HUN_improved_light_tank_chassis_medium"
+	texturefile = "gfx/interface/technologies/HUN_lt38_chassis.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_HUN_improved_light_tank_medium"
+	texturefile = "gfx/interface/technologies/HUN_lt38.dds"
+	}	
+
+    ### light tank 3 ###
+
+	SpriteType = {
+	name = "GFX_HUN_advanced_light_tank_chassis_medium"
+	texturefile = "gfx/interface/technologies/HUN_lt41_chassis.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_HUN_advanced_light_tank_medium"
+	texturefile = "gfx/interface/technologies/HUN_lt41.dds"
+	}	
+	
+	
+}

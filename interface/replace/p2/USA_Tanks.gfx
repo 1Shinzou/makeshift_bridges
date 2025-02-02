@@ -1,0 +1,24 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_USA_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/USA_lt36.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/USA_lt38.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_USA_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/USA_lt41.dds"
+	}	
+}
+	
+
+	
+
+	
+
+	

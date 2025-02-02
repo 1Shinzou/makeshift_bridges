@@ -1,0 +1,157 @@
+ENG = {
+
+### small_plane ###
+
+	small_plane_airframe_0 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_ENG_early_fighter_medium
+			}
+		}
+	}
+	
+	small_plane_airframe_1 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_ENG_fighter1_medium
+			}
+		}
+	}
+	
+	small_plane_airframe_2 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_ENG_fighter2_2_medium
+			GFX_ENG_fighter2_medium
+			}
+		}
+	}
+	
+### cv_fighter ###
+
+	cv_small_plane_airframe_1 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_ENG_cv_fighter1_medium
+			}
+		}
+	}
+	
+	cv_small_plane_airframe_2 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_ENG_cv_fighter2_2_medium
+			GFX_ENG_cv_fighter2_medium
+			}
+		}
+	}
+
+### CAS ###
+
+	small_plane_cas_airframe_0 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_ENG_CAS1_medium
+			}
+		}
+	}
+	
+	small_plane_cas_airframe_1 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_ENG_CAS1_2_medium
+			GFX_ENG_CAS0_medium
+			}
+		}
+	}
+	
+### CAS CV ###
+
+	cv_small_plane_cas_airframe_1 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_ENG_cv_CAS1_medium
+			}
+		}
+	}
+
+### small naval bombers ### 
+
+	small_plane_naval_bomber_airframe_0 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_ENG_naval_bomber1_medium
+			}
+		}
+	}
+
+	small_plane_naval_bomber_airframe_1 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_ENG_naval_bomber0_medium
+			}
+		}
+	}
+
+### medium_plane ###
+	
+	medium_plane_airframe_0 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_ENG_early_bomber_medium
+			}
+		}
+	}
+		
+	medium_plane_airframe_1 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_ENG_tactical_bomber1_2_medium
+			GFX_ENG_tactical_bomber1_medium
+			}
+		}
+	}
+	
+	medium_plane_airframe_2 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_ENG_tactical_bomber2_medium
+			}
+		}
+	}
+
+### heavy fighters ###
+
+	medium_plane_fighter_airframe_1 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_ENG_heavy_fighter1_medium
+			}
+		}
+	}	
+	
+	medium_plane_fighter_airframe_2 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_ENG_heavy_fighter2_medium
+			}
+		}
+	}	
+
+}
+

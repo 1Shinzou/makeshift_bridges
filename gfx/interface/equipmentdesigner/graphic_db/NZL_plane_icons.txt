@@ -1,0 +1,19 @@
+### designer aircraft ###
+
+
+
+NZL = {
+
+### small_plane ###
+
+	small_plane_airframe_0 = {
+		pool = {
+			icons = {
+				GFX_NZL_early_fighter_medium
+			}
+		}
+	}
+
+
+}
+

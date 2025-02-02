@@ -1,0 +1,102 @@
+### designer aircraft ###
+
+CHI = {
+		
+### small_plane ###
+
+	small_plane_airframe_0 = {
+		pool = {
+			icons = {
+			GFX_CHI_early_fighter_medium
+			}
+		}
+	}
+	
+	small_plane_airframe_1 = {
+		pool = {
+			weight = 1.1
+			icons = {
+				GFX_CHI_fighter1_medium
+			}
+		}
+	}
+	small_plane_airframe_2 = {
+		pool = {
+			weight = 1.1
+			icons = {
+				GFX_CHI_fighter2_medium	
+			}
+		}
+	}
+	small_plane_airframe_3 = {
+		pool = {
+			weight = 1.1
+			icons = {
+				GFX_CHI_fighter3_medium	
+			}
+		}
+	}
+		
+	
+### CAS small frame ###	
+	
+	small_plane_cas_airframe_2 = {
+		pool = {
+			weight = 1.1
+			icons = {
+			GFX_CHI_CAS2_medium
+			}
+		}
+	}
+	
+	small_plane_cas_airframe_3 = {
+		pool = {
+			weight = 1.1
+			icons = {
+			GFX_CHI_CAS3_medium
+			}
+		}
+	}
+
+### heavy_fighter ###	
+
+	medium_plane_fighter_airframe_1 = {
+		pool = {
+			weight = 1.1
+			icons = {
+			GFX_CHI_heavy_fighter1_medium
+			}
+		}
+	}
+	
+	medium_plane_fighter_airframe_2 = {
+		pool = {
+			weight = 1.1
+			icons = {
+			GFX_CHI_heavy_fighter2_medium
+			}
+		}
+	}
+	
+### medium_plane ###
+	
+	medium_plane_airframe_0 = {
+		pool = {
+			weight = 1.1
+			icons = {
+			GFX_early_bomber_medium
+			}
+		}
+	}
+	
+	medium_plane_airframe_3 = {
+		pool = {
+			weight = 1.1
+			icons = {
+			GFX_tactical_bomber3_medium	
+			}
+		}
+	}
+
+
+}

@@ -1,0 +1,50 @@
+### designer aircraft ###
+
+
+
+GRE = {
+
+### small_plane ###
+
+	small_plane_airframe_0 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_GRE_early_fighter_medium
+			}
+		}
+	}
+	
+	small_plane_airframe_1 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_GRE_fighter1_medium
+			}
+		}
+	}
+	
+### naval bomber ###
+	
+ small_plane_naval_bomber_airframe_1 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_GRE_naval_bomber1_medium
+			}
+		}
+	}
+
+### CAS ###
+
+	small_plane_cas_airframe_1 = {
+		pool = {
+			weight = 5
+			icons = {
+			GFX_GRE_CAS1_medium
+			}
+		}
+	}
+
+}
+

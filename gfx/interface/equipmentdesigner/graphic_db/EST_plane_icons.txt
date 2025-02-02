@@ -1,0 +1,19 @@
+### designer aircraft ###
+
+
+
+EST = {
+
+### small_plane ###
+
+	small_plane_airframe_0 = {
+		pool = {
+			icons = {
+				GFX_EST_early_fighter_medium
+			}
+		}
+	}
+
+
+}
+

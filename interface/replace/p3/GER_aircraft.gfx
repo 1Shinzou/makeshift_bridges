@@ -1,0 +1,137 @@
+spriteTypes = {	
+
+
+### non-designer aircraft ###
+
+	SpriteType = {
+	name = "GFX_GER_early_fighter_medium"
+	texturefile = "gfx/interface/technologies/GER_if.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_GER_fighter1_medium"
+	texturefile = "gfx/interface/technologies/GER_f1.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_GER_fighter2_medium"
+	texturefile = "gfx/interface/technologies/GER_f2.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_GER_fighter3_medium"
+	texturefile = "gfx/interface/technologies/GER_f3.dds"
+	}
+	
+	### jet fighters ###
+		
+    SpriteType = {
+	name = "GFX_GER_jet_fighter1_medium"
+    texturefile = "gfx/interface/technologies/GER_jf1.dds"
+	}	
+	
+    SpriteType = {
+	name = "GFX_GER_jet_plane_1_medium"
+	texturefile = "gfx/interface/technologies/GER_jf1.dds"
+	}		
+	
+	
+	### CAS ###
+	
+	SpriteType = {
+	name = "GFX_GER_CAS1_medium"
+	texturefile = "gfx/interface/technologies/GER_cas1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_GER_CAS2_medium"
+	texturefile = "gfx/interface/technologies/GER_cas2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_GER_CAS3_medium"
+	texturefile = "gfx/interface/technologies/GER_cas3.dds"
+	}
+
+    SpriteType = {
+	name = "GFX_GER_iw_CAS_medium"
+	texturefile = "gfx/interface/technologies/GER_cas1_cv.dds"
+	}	
+	
+	
+	
+	
+    SpriteType = {	
+    name = "GFX_GER_heavy_fighter1_medium"
+	texturefile = "gfx/interface/technologies/GER_hf1.dds"
+	}
+	
+	
+	
+	SpriteType = {
+	name = "GFX_GER_naval_bomber1_medium"
+	texturefile = "gfx/interface/technologies/GER_nb1.dds"
+	}
+	
+	
+	
+	SpriteType = {
+	name = "GFX_GER_early_bomber_medium"
+	texturefile = "gfx/interface/technologies/GER_ju86.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_GER_tactical_bomber1_medium"
+	texturefile = "gfx/interface/technologies/GER_mb1.dds"
+	}	
+	
+	
+	
+### designer aircraft ###	
+
+	SpriteType = {
+	name = "GFX_GER_iw_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/GER_if.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_GER_basic_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/GER_f1.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_GER_improved_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/GER_f2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_GER_advanced_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/GER_f3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_GER_modern_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/GER_jf1.dds"
+	}
+
+	
+	
+	SpriteType = {
+	name = "GFX_GER_iw_medium_airframe_medium"
+	texturefile = "gfx/interface/technologies/GER_ju86.dds"
+	}	
+
+	SpriteType = {
+	name = "GFX_GER_basic_medium_airframe_medium"
+	texturefile = "gfx/interface/technologies/GER_mb1.dds"
+	}	
+
+	SpriteType = {
+	name = "GFX_GER_medium_plane_1_medium"
+	texturefile = "gfx/interface/technologies/GER_mb1_do17.dds"
+	}		
+		
+
+	
+	
+}

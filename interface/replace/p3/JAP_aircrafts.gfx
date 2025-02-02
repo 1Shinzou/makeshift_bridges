@@ -1,0 +1,92 @@
+spriteTypes = {	
+
+
+### non-designer aircraft ###
+
+    SpriteType = {
+	name = "GFX_JAP_early_fighter_medium"
+	texturefile = "gfx/interface/technologies/JAP_if.dds"
+	}
+	
+	### CV fighters ###
+	
+    SpriteType = {
+	name = "GFX_JAP_cv_early_fighter_medium"
+	texturefile = "gfx/interface/technologies/JAP_if_cv.dds"
+	}
+	
+	### CAS ###
+	
+	### 0 is actually BASIC not interwar ###
+	SpriteType = {
+	name = "GFX_JAP_CAS0_medium"
+	texturefile = "gfx/interface/technologies/JAP_cas1_cv.dds"
+	}
+	
+	### this is interwar ###
+	SpriteType = {
+	name = "GFX_JAP_CAS1_medium"
+	texturefile = "gfx/interface/technologies/JAP_cas0.dds"
+	}
+	
+	### CAS ###
+
+	SpriteType = {
+	name = "GFX_JAP_cv_CAS0_medium"
+	texturefile = "gfx/interface/technologies/JAP_cas0.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_JAP_cv_CAS1_medium"
+	texturefile = "gfx/interface/technologies/JAP_cas1_cv.dds"
+	}
+		
+	### NAVAL ###
+
+    SpriteType = {
+	name = "GFX_JAP_naval_bomber0_medium"
+	texturefile = "gfx/interface/technologies/JAP_nb0.dds"
+	}
+
+    SpriteType = {
+	name = "GFX_JAP_naval_bomber1_medium"
+	texturefile = "gfx/interface/technologies/JAP_nb1.dds"
+	}	
+	
+    ### CV NAVAL ###
+
+	### 0 is actually BASIC not interwar ###
+    SpriteType = {
+	name = "GFX_JAP_cv_naval_bomber0_medium"
+	texturefile = "gfx/interface/technologies/JAP_nb1.dds"
+	}
+	
+	### this is interwar ###
+	SpriteType = {
+	name = "GFX_JAP_cv_naval_bomber1_medium"
+	texturefile = "gfx/interface/technologies/JAP_nb0.dds"
+	}
+	
+	### medium bomber ###
+	
+	SpriteType = {
+	name = "GFX_JAP_early_bomber_medium"
+	texturefile = "gfx/interface/technologies/JAP_imb.dds"
+	}	
+	
+### designer aircraft ###	
+	
+	SpriteType = {
+	name = "GFX_JAP_iw_small_airframe_medium"
+	texturefile = "gfx/interface/technologies/JAP_if.dds"
+	}
+	
+	
+	
+	SpriteType = {
+	name = "GFX_JAP_iw_medium_airframe_medium"
+	texturefile = "gfx/interface/technologies/JAP_imb.dds"
+	}
+	
+
+}	

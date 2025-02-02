@@ -29,6 +29,8 @@ state={
 			11297 = {
 				naval_base = 5
 			}
+			# Derwent Reservoir Low Dam
+			9315 = { dam = 1 }
 		}
 		add_core_of = ENG
 		1939.1.1 = {

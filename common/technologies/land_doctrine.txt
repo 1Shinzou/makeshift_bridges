@@ -701,6 +701,7 @@ technologies = {
 	modern_blitzkrieg = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		enable_tactic = tactic_masterful_blitz
 		category_tanks = {
 			max_organisation = 3
 			breakthrough = 0.20
@@ -2752,8 +2753,6 @@ technologies = {
 		xp_unlock_cost = 100
 		max_dig_in = 5
 
-		conscription = 0.02
-
 		category_light_infantry = {
 			max_organisation = 5
 		}
@@ -2802,7 +2801,7 @@ technologies = {
 		xor = {
 			peoples_army
 		}
-
+		conscription = 0.02
 		supply_consumption_factor = -0.10
 
 		additional_brigade_column_size = 1
@@ -3164,6 +3163,7 @@ technologies = {
 		land_reinforce_rate = 0.05
 		
 		enable_tactic = tactic_backhand_blow
+		enable_tactic = tactic_masterful_blitz
 
 		doctrine = yes	
 		research_cost = 4.5
@@ -3376,7 +3376,7 @@ technologies = {
 	
 	human_wave_offensive = {
 
-		conscription = 0.03
+		conscription = 0.05
 		xp_research_type = army
 		xp_unlock_cost = 100
 		infantry = {

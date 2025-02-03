@@ -90,6 +90,9 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			add_political_power = 150
+
+			add_offsite_building = { type = industrial_complex level = 50 } 
+			
 			hidden_effect = {
 				if = {
 					limit = {
@@ -228,6 +231,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			add_political_power = 150
+			add_offsite_building = { type = industrial_complex level = 10 } 
 		}
 	}
 	focus = {
@@ -263,6 +267,7 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
+			add_offsite_building = { type = industrial_complex level = 10 } 
 			USA_great_depression_level_down = yes
 			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 230 }
 			USA_congress_medium_opposition = yes
@@ -304,6 +309,7 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
+			add_offsite_building = { type = industrial_complex level = 10 } 
 			USA_great_depression_level_down = yes
 			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 230 }
 			custom_effect_tooltip = USA_great_depression_cooldown_tt
@@ -1391,7 +1397,7 @@ focus_tree = {
  	focus = {
 		id = USA_war_plans_division
 		icon = GFX_goal_generic_position_armies
-		x = 20
+		x = 16
 		y = 0
 		
 		
@@ -1426,7 +1432,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_war_plans_division }
 		relative_position_id = USA_war_plans_division
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1456,7 +1462,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_intervention_in_the_americas }
 		relative_position_id = USA_intervention_in_the_americas
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 2
 		}
@@ -1496,7 +1502,7 @@ focus_tree = {
 		y = 2
 		prerequisite = { focus = USA_reinforce_monroe_doctrine }
 		relative_position_id = USA_intervention_in_the_americas
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1526,7 +1532,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_war_plans_division }
 		relative_position_id = USA_war_plans_division
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1563,7 +1569,7 @@ focus_tree = {
 		prerequisite = { focus = USA_intervention_in_europe }
 		mutually_exclusive = { }
 		relative_position_id = USA_intervention_in_europe
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1604,7 +1610,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = USA_intervention_in_europe
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1653,7 +1659,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = USA_war_plan_black
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1684,7 +1690,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_war_plans_division }
 		relative_position_id = USA_war_plans_division
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1719,7 +1725,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = USA_intervention_in_asia
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1739,7 +1745,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_intervention_in_asia }
 		relative_position_id = USA_intervention_in_asia
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1776,7 +1782,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = USA_intervention_in_asia
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -1963,7 +1969,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1996,7 +2002,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_selective_training_act }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2031,7 +2037,7 @@ focus_tree = {
 		y = 2
 		prerequisite = { focus = USA_louisiana_maneuvers }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2072,7 +2078,7 @@ focus_tree = {
 		y = 2
 		prerequisite = { focus = USA_louisiana_maneuvers }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2101,7 +2107,7 @@ focus_tree = {
 		y = 3
 		prerequisite = { focus = USA_army_of_the_united_states }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2130,7 +2136,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 		prerequisite = { focus = USA_selective_training_act }
 		ai_will_do = {
 			factor = 5
@@ -2156,7 +2162,7 @@ focus_tree = {
 		y = 2
 		prerequisite = { focus = USA_support_rock_island }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2282,7 +2288,7 @@ focus_tree = {
 		y = 4
 		prerequisite = { focus = USA_main_battle_tanks focus = USA_tank_destroyer_doctrine }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2316,7 +2322,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_war_department }
 		relative_position_id = USA_war_department
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2345,7 +2351,7 @@ focus_tree = {
 		y = 2
 		prerequisite = { focus = USA_build_the_pentagon }
 		relative_position_id = USA_war_department
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2464,7 +2470,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = USA_air_support
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -2491,7 +2497,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = USA_air_support
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -2527,7 +2533,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = USA_strategic_bombing
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -2588,7 +2594,7 @@ focus_tree = {
 		y = 4
 		prerequisite = { focus = USA_TAC }
 		relative_position_id = USA_air_war_plans_division
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2623,7 +2629,7 @@ focus_tree = {
 		y = 4
 		prerequisite = { focus = USA_combined_bomber_offensive }
 		relative_position_id = USA_air_war_plans_division
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2762,7 +2768,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_two_ocean_navy_act }
 		relative_position_id = USA_two_ocean_navy_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2792,7 +2798,7 @@ focus_tree = {
 		x = -3
 		y = 2
 		relative_position_id = USA_two_ocean_navy_act
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -2809,7 +2815,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_navy
 		x = 2
 		y = 1
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -2835,7 +2841,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = USA_bureau_of_ships
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -2864,7 +2870,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = USA_battleship_primacy
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -2889,7 +2895,7 @@ focus_tree = {
 		y = 2
 		prerequisite = { focus = USA_advanced_mahanian_doctrine }
 		relative_position_id = USA_battleship_primacy
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2944,7 +2950,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = USA_bureau_of_ships
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -2973,7 +2979,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = USA_carrier_primacy
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -2999,7 +3005,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_bureau_of_aeronautics }
 		relative_position_id = USA_bureau_of_aeronautics
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -3046,7 +3052,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = USA_bureau_of_ships
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -3066,7 +3072,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = USA_escort_effort
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -3091,7 +3097,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_bureau_of_ships }
 		relative_position_id = USA_bureau_of_ships
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -3138,7 +3144,7 @@ focus_tree = {
 		y = 2
 		prerequisite = { focus = USA_fleet_submarines }
 		relative_position_id = USA_bureau_of_ships
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -3167,7 +3173,7 @@ focus_tree = {
 		x = 7
 		y = 1
 		relative_position_id = USA_two_ocean_navy_act
-		cost = 10
+		cost = 5
 		prerequisite = { focus = USA_two_ocean_navy_act }
 		ai_will_do = {
 			factor = 1
@@ -3193,7 +3199,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = USA_fund_the_navy
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -3232,7 +3238,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = USA_expand_the_USMC
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -3249,372 +3255,4 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = USA_urban_development_act
-		icon = GFX_focus_generic_improve_the_administration
-		prerequisite = { focus = USA_continue_the_new_deal }
-		x = 7
-		y = 1
-		relative_position_id = USA_continue_the_new_deal
-		cost = 5
-		
-		available_if_capitulated = yes
-		
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			add_timed_idea = {
-				idea = investing_in_states
-				days = 180
-			}
-			378 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-				set_state_category = megalopolis
-			}
-			393 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-					
-				}
-				set_state_category = megalopolis
-
-			}
-			395 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-
-			}
-			261 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-				set_state_category = megalopolis
-
-			}
-			358 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			360 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			359 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-				
-			
-		}
-	}
-	focus = {
-		id = USA_expand_rustbelt
-		icon = GFX_focus_GER_wirtschaftswunder
-		prerequisite = { focus = USA_urban_development_act }
-		x = 7
-		y = 2
-		relative_position_id = USA_continue_the_new_deal
-		cost = 5
-		available = {
-			NOT = {
-				has_idea = investing_in_states
-			}
-		}
-		available_if_capitulated = yes
-		
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			add_timed_idea = {
-				idea = investing_in_states
-				days = 180
-			}
-			393 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-				}
-			}
-			261 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-				}
-			}
-			395 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-				}
-			}	
-			396 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-				}
-			}
-			
-		}
-	}
-	focus = {
-		id = USA_develop_westcoast
-		icon = GFX_focus_BEL_antwerp_maritime_academy
-		prerequisite = { focus = USA_urban_development_act }
-		x = 6
-		y = 3
-		relative_position_id = USA_continue_the_new_deal
-		cost = 5
-		available = {
-			NOT = {
-				has_idea = investing_in_states
-			}
-		}
-		available_if_capitulated = yes
-		
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			add_timed_idea = {
-				idea = investing_in_states
-				days = 180
-			}
-			378 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-				}
-			}
-			385 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-				}
-			}
-			386 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-				}
-			}	
-			379 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-				}
-			}
-			
-		}
-	}
-	focus = {
-		id = USA_develop_eastcoast
-		icon = GFX_focus_GER_vereinigte_stahlwerke
-		prerequisite = { focus = USA_urban_development_act }
-		x = 8
-		y = 3
-		relative_position_id = USA_continue_the_new_deal
-		cost = 5
-		available = {
-			NOT = {
-				has_idea = investing_in_states
-			}
-		}
-		available_if_capitulated = yes
-		
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			add_timed_idea = {
-				idea = investing_in_states
-				days = 180
-			}
-			357 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-				}
-			}
-			358 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-				}
-			}
-			359 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-				}
-			}	
-			360 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-				}
-			}
-			
-		}
-	}
-	focus = {
-		id = USA_reinvigorate_south
-		icon = GFX_focus_generic_farmland
-		prerequisite = { focus = USA_urban_development_act }
-		x = 9
-		y = 2
-		relative_position_id = USA_continue_the_new_deal
-		cost = 5
-		available = {
-			NOT = {
-				has_idea = investing_in_states
-			}
-		}
-		available_if_capitulated = yes
-		
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			add_timed_idea = {
-				idea = investing_in_states
-				days = 180
-			}
-			375 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-				}
-			}
-			371 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-				}
-			}
-			370 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-				}
-			}	
-			367 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-				}
-			}
-			
-		}
-	}
-	focus = {
-		id = USA_kickstart_central_usa
-		icon = GFX_focus_DEN_no_regulations
-		prerequisite = { focus = USA_urban_development_act }
-		x = 5
-		y = 2
-		relative_position_id = USA_continue_the_new_deal
-		cost = 5
-		
-		available_if_capitulated = yes
-		available = {
-			NOT = {
-				has_idea = investing_in_states
-			}
-		}
-		
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			add_timed_idea = {
-				idea = investing_in_states
-				days = 180
-			}
-			384 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-				}
-			}
-			382 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-				}
-			}
-			383 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-				}
-			}	
-			381 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-				}
-			}
-			
-		}
-	}
-	focus = {
-		id = USA_capital_of_economics
-		icon = GFX_focus_usa_reestablish_the_gold_standard
-		prerequisite = { focus = USA_kickstart_central_usa }
-		prerequisite = { focus = USA_develop_eastcoast }
-		prerequisite = { focus = USA_develop_westcoast }
-		prerequisite = { focus = USA_expand_rustbelt }
-		prerequisite = { focus = USA_reinvigorate_south }
-		x = 7
-		y = 4
-		relative_position_id = USA_continue_the_new_deal
-		cost = 10
-		available = {
-			NOT = {
-				has_idea = investing_in_states
-			}
-		}
-		available_if_capitulated = yes
-		
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-		
-			
-		}
-	}
-
-	
-
-
-	
 }

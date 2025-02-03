@@ -1474,7 +1474,7 @@ characters={
 				original_tag = ENG
 			}
 			traits = {
-				air_air_superiority_2
+				air_air_superiority_3
 			}
 			cost = 100
 			ai_will_do = {

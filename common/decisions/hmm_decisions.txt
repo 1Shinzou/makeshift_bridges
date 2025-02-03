@@ -1,4 +1,33 @@
 operations = {
+     add_convoy = {
+		priority = 100
+        icon = SWE_set_navy_budget
+        allowed = {
+ 		}
+		visible = {
+			is_ai = no
+		}
+        days_remove = 10
+        cost = 0
+        complete_effect = {
+            add_manpower = 1
+            add_equipment_to_stockpile = {
+                type = convoy_1
+                amount = 1
+            }
+        }
+		
+ 		remove_effect = {
+            add_manpower = -1
+            add_equipment_to_stockpile = {
+                type = convoy_1
+                amount = -1
+            }
+ 		}
+        ai_will_do = {
+            factor = 0
+        }
+    }
     annex_South_Africa = {
             # icon = generic_operation
             allowed = {
@@ -474,241 +503,6 @@ political_actions = {
 		}
 	}
 }
-Technologies = {
-    add_convoy = {
-		priority = 100
-        icon = SWE_set_navy_budget
-        allowed = {
- 		}
-		visible = {
-			is_ai = no
-		}
-        days_remove = 10
-        cost = 0
-        complete_effect = {
-            add_manpower = 1
-            add_equipment_to_stockpile = {
-                type = convoy_1
-                amount = 1
-            }
-        }
-		
- 		remove_effect = {
-            add_manpower = -1
-            add_equipment_to_stockpile = {
-                type = convoy_1
-                amount = -1
-            }
- 		}
-        ai_will_do = {
-            factor = 0
-        }
-    }
-
-
-auto_mech = {
-    # icon = generic_operation
-    allowed = {
-    }
-    fire_only_once = no
-    cost = 0
-    ai_will_do = {
-        factor = 0
-    }
-    visible = {
-        NOT = {
-                tag = HOL
-            }
-    }
-    available = {
-            date > 1937.08.01
-        }
-    complete_effect = {
-        SWE = {
-            create_production_license = {
-                target = ROOT
-                equipment = {
-                    type = mechanized_equipment_1
-                    version = 1
-                }
-                cost_factor = 0
-            }
-        }
-    }
-    }
-    
-    hosttool_aa2 = {
-            # icon = generic_operation
-            allowed = {
-            }
-            fire_only_once = no
-            cost = 0
-            ai_will_do = {
-                factor = 0
-            }
-            
-            available = {
-                AND = {
-                    date > 1938.08.01
-                    
-                }
-            }
-            complete_effect = {
-                SWE = {
-                    create_production_license = {
-                        target = ROOT
-                        equipment = {
-                            type = anti_air_equipment_2
-                            version = 0
-                        }
-                        cost_factor = 0
-                    }
-                }
-            }
-    }
-    hosttool_aa3 = {
-            # icon = generic_operation
-            allowed = {
-            }
-            fire_only_once = no
-            cost = 0
-            ai_will_do = {
-                factor = 0
-            }
-            
-            available = {
-                AND = {
-                    date > 1940.08.01
-                    
-                }
-            }
-            complete_effect = {
-                SWE = {
-                    create_production_license = {
-                        target = ROOT
-                        equipment = {
-                            type = anti_air_equipment_3
-                            version = 0
-                            
-                        }
-                        cost_factor = 0
-                    }
-                }
-            }
-    }
-    
-    hosttool_gun2 = {
-        # icon = generic_operation
-        allowed = {
-        }
-        fire_only_once = no
-        cost = 0
-        ai_will_do = {
-            factor = 0
-        }
-        
-        available = {
-            AND = {
-                date > 1938.02.1
-                
-            }
-        }
-        complete_effect = {
-            SWE = {
-                create_production_license = {
-                    target = ROOT
-                    equipment = {
-                        type = infantry_equipment_2
-                        version = 0
-                        
-                    }
-                    cost_factor = 0
-                }
-            }
-        }
-}
-                auto_gun3 = {
-                    # icon = generic_operation
-                    allowed = {
-                    }
-                    fire_only_once = no
-                    cost = 0
-                    ai_will_do = {
-                        factor = 0
-                    }
-                    available = {
-                            date > 1939.12.01
-                        }
-                    complete_effect = {
-                        SWE = {
-                            create_production_license = {
-                                target = ROOT
-                                equipment = {
-                                    type = infantry_equipment_3
-                                    version = 0
-                                    
-                                }
-                                cost_factor = 0
-                            }
-                        }
-                    }
-                    }
-                auto_AT2 = {
-                    # icon = generic_operation
-                    allowed = {
-                    }
-                    fire_only_once = no
-                    cost = 0
-                    ai_will_do = {
-                        factor = 0
-                    }
-                    
-                    available = {
-                            date > 1938.08.1
-                        }
-                    complete_effect = {
-                        SWE = {
-                            create_production_license = {
-                                target = ROOT
-                                equipment = {
-                                    type = anti_tank_equipment_2
-                                    version = 0
-                                    
-                                }
-                                cost_factor = 0
-                            }
-                        }
-                    }
-                    }
-                auto_AT3 = {
-                    # icon = generic_operation
-                    allowed = {
-                    }
-                    fire_only_once = no
-                    cost = 0
-                    ai_will_do = {
-                        factor = 0
-                    }
-                    
-                    available = {
-                            date > 1940.08.01
-                        }
-                    complete_effect = {
-                        SWE = {
-                            create_production_license = {
-                                target = ROOT
-                                equipment = {
-                                    type = anti_tank_equipment_3
-                                    version = 0
-                                    
-                                }
-                                cost_factor = 0
-                            }
-                        }
-                    }
-                    }
-				}
-
 #VP System
 MOD_countdown_to_victory_cat = {
     MOD_countdown_to_allied_victory_mission = {

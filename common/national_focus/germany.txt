@@ -124,7 +124,7 @@ focus_tree = {
 	focus = {
 		id = GER_construct_the_reichsautobahn
 		icon = GFX_focus_generic_road_investment
-		prerequisite = { focus = GER_prioritize_economic_growth focus = GER_the_four_year_plan }
+		prerequisite = { focus = GER_the_four_year_plan }
 
 		x = -3
 		y = 1
@@ -199,7 +199,7 @@ focus_tree = {
 	focus = {
 		id = GER_build_the_rur_dam
 		icon = GFX_focus_generic_hydroelectric_energy
-		prerequisite = { focus = GER_construct_the_reichsautobahn focus = GER_currency_reforms }
+		prerequisite = { focus = GER_construct_the_reichsautobahn }
 
 		x = -2
 		y = 1
@@ -4039,7 +4039,7 @@ focus_tree = {
 		alternate_icon = GFX_focus_GER_sturzkampfbomber_historical
 
 		prerequisite = { focus = GER_aeronautical_research_institute }
-		mutually_exclusive = { focus = GER_tactical_bombers focus = GER_uralbomber_program }
+		#mutually_exclusive = { focus = GER_tactical_bombers focus = GER_uralbomber_program }
 		x = -2
 		y = 1
 		relative_position_id = GER_aeronautical_research_institute
@@ -4170,7 +4170,7 @@ focus_tree = {
 		id = GER_tactical_bombers
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = GER_aeronautical_research_institute }
-		mutually_exclusive = { focus = GER_dive_bombers focus = GER_uralbomber_program }
+		#mutually_exclusive = { focus = GER_dive_bombers focus = GER_uralbomber_program }
 		x = 0
 		y = 1
 		relative_position_id = GER_aeronautical_research_institute
@@ -4300,7 +4300,7 @@ focus_tree = {
 		id = GER_uralbomber_program
 		icon = GFX_focus_generic_long_range_aircraft
 		prerequisite = { focus = GER_aeronautical_research_institute }
-		mutually_exclusive = { focus = GER_dive_bombers focus = GER_tactical_bombers }
+		#mutually_exclusive = { focus = GER_dive_bombers focus = GER_tactical_bombers }
 		x = 2
 		y = 1
 		relative_position_id = GER_aeronautical_research_institute
@@ -7932,7 +7932,7 @@ focus_tree = {
 		alternate_icon = GFX_focus_ger_reichskommisariats_historical
 		prerequisite = {  focus = GER_reorganize_the_wehrmacht }
 
-		x = 0
+		x = 1
 		y = 2
 		relative_position_id = GER_reorganize_the_wehrmacht
 		cost = 5
@@ -10178,11 +10178,12 @@ focus_tree = {
 		alternate_icon = GFX_focus_GER_war_with_the_ussr
 
 		prerequisite = { focus = GER_anti_comintern_pact }
+		prerequisite = { focus = GER_molotov_ribbentrop_pact }
 		mutually_exclusive = { focus = GER_alliance_with_the_ussr }
 		x = 0
-		y = 2
+		y = 4
 		relative_position_id = GER_anti_comintern_pact
-		cost = 10
+		cost = 0.2
 
 		will_lead_to_war_with = SOV
 
@@ -10510,7 +10511,7 @@ focus_tree = {
 		alternate_icon = GFX_focus_GER_befriend_japan
 
 		prerequisite = { focus = GER_anti_comintern_pact }
-		x = 2
+		x = 3
 		y = 1
 		relative_position_id = GER_anti_comintern_pact
 		cost = 5
@@ -10645,7 +10646,83 @@ focus_tree = {
 			
 		}
 	}
+	focus = {
+		id = GER_japanese_naval_cooperation
+		icon = GFX_focus_GER_japanese_naval_cooperation
+		prerequisite = { focus = GER_befriend_japan }
 
+		x = 2
+		y = 1
+		relative_position_id = GER_befriend_japan
+		cost = 10
+
+		available = {
+			is_subject = no
+			NOT = { has_war_with = JAP }
+			has_government = fascism
+			JAP = {
+				is_subject = no
+				OR = {
+					is_in_faction = no
+					has_government = fascism
+					NOT = {
+						any_allied_country = {
+							has_war_with = ROOT
+						}
+					}
+				}
+			}
+			any_controlled_state = {
+				OR = {
+					is_on_continent = asia
+					is_on_continent = australia
+				}
+			}
+		}
+
+		search_filters = { FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = mio_cat_tech_all_capital_ship_and_modules
+				category = mio_cat_tech_all_carrier_and_modules
+			}
+			navy_experience = 25
+
+			JAP = {
+				country_event = {
+					id = wuw_GER_diplomacy.26
+					hours = 6
+				}
+			}
+
+			custom_effect_tooltip = if_they_accept_tt
+			effect_tooltip = {
+				every_country = {
+					limit = {
+						OR = {
+							AND = {
+								original_tag = GER
+								has_government = fascism
+							}
+							AND = {
+								original_tag = JAP
+								has_government = fascism
+							}
+						}
+					}
+					add_to_tech_sharing_group = GER_JAP_naval_tech_sharing
+				}
+
+				add_named_threat = { 
+					threat = 2
+					name = GER_japanese_naval_cooperation
+				}
+			}
+		}
+	}
 	focus = {
 		id = GER_reclaim_former_african_colonies
 		icon = GFX_focus_GER_reclaim_former_african_colonies

@@ -66,7 +66,7 @@ characters={
 		country_leader={
 			ideology=marxism
 			traits = {
-				out_of_office_trait
+				great_war_hero
 			}
 			expire="1965.1.1"
 			id=-1
@@ -85,7 +85,7 @@ characters={
 		country_leader={
 			ideology=stalinism
 			traits = {
-				staunch_atheist
+				comintern_workhorse
 			}
 			expire="1965.1.1"
 			id=-1
@@ -124,8 +124,7 @@ characters={
 			ideology=anarchist_communism
 			traits = {
 				divided_interests
-				r56_trait_opposed_to_democracy
-				r56_trait_opposed_to_fascism
+				anti_democrat
 			}
 			expire="1965.1.1"
 			id=-1
@@ -142,10 +141,8 @@ characters={
 		country_leader={
 			ideology=stalinism
 			traits = {
-				voluntaryism
 				our_right_to_survive
-				r56_trait_opposed_to_democracy
-				r56_trait_opposed_to_communism
+				anti_democrat
 			}
 			expire="1965.1.1"
 			id=-1
@@ -163,7 +160,7 @@ characters={
 			ideology=stalinism
 			traits = {
 				our_right_to_survive
-				r56_trait_opposed_to_fascism
+				anti_democrat
 			}
 			expire="1965.1.1"
 			id=-1
@@ -185,7 +182,7 @@ characters={
 		country_leader={
 			ideology=stalinism
 			traits = {
-				stalin_of_mongolia
+				anti_democrat
 			}
 			expire="1965.1.1"
 			id=-1
@@ -209,7 +206,7 @@ characters={
 				}
 			}
 			traits = {
-				stalin_of_mongolia
+				anti_democrat
 			}
 			cost = 100
 			can_be_fired = no
@@ -432,7 +429,7 @@ characters={
 				}
 			}
 			traits = {
-				revolutionary_writer
+				war_industrialist
 			}
 			cost = 100
 			ai_will_do = { 
@@ -466,7 +463,6 @@ characters={
 			}
 			traits = {
 				education_reformer
-				chairwoman
 			}
 			cost = 150
 			ai_will_do = { 
@@ -496,7 +492,6 @@ characters={
 				}
 			}
 			traits = {
-				centrist_intellectual
 				conservative_grandee
 			}
 			cost = 150
@@ -556,7 +551,7 @@ characters={
 				}
 			}
 			traits = {
-				accomplished_professor
+				socialist_economist
 			}
 			cost = 100
 			ai_will_do = { 
@@ -585,7 +580,7 @@ characters={
 				}
 			}
 			traits = {
-				trade_unionist
+				welfare_architect
 			}
 			cost = 125
 			ai_will_do = { 
@@ -686,7 +681,7 @@ characters={
 				has_completed_focus = MON_new_generation_of_intelligentsia
 			}
 			traits = {
-				POL_Secretary_General
+				soviet_economist
 			}
 			cost = 100
 			ai_will_do = { 

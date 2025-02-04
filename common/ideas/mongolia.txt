@@ -492,9 +492,9 @@ ideas = {
 				motorized_equipment = {
 					build_cost_ic = -0.1 instant = yes
 				}
-				mech_chassis = {
+				mechanized = {
 					build_cost_ic = -0.05 instant = yes
-				}
+				} 
 			}
 		}
 		MON_idea_license_production = {
@@ -745,7 +745,7 @@ ideas = {
 
 		#education #
 		MON_ill_educated_population_idea = {
-			picture = indochina_illiteracy
+			picture = jap_duplicate_research
 			removal_cost = -1
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
@@ -757,7 +757,7 @@ ideas = {
 		}
 
 		MON_population_learning_idea = {
-			picture = indochina_illiteracy
+			picture = jap_duplicate_research
 			removal_cost = -1
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
@@ -850,7 +850,7 @@ ideas = {
 
 		# industrial ideas #
 		MON_weak_currency_idea = {
-			picture = HOL_reliance_on_the_gold_standard
+			picture = SPR_seize_the_gold_reserves
 			removal_cost = -1
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
@@ -876,7 +876,7 @@ ideas = {
 		}
 
 		MON_buddhist_opposition = {
-			picture = MON_monasteries_crushed
+			picture = generic_oppression
 			removal_cost = -1
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }

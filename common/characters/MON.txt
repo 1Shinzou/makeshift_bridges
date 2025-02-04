@@ -1,0 +1,1910 @@
+characters={
+	#political advisors
+
+	MON_anandyn_amar = {
+		name="Anandyn Amar"
+		portraits={
+			civilian={
+				large="gfx/leaders/MON/portrait_mon_anandyn_amar.dds"
+				small="gfx/interface/ideas/idea_MON_anandyn_amar.dds"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			traits = {
+				popular_figurehead
+			}
+			expire="1965.1.1"
+			id=-1
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MON_anandyn_amar
+			allowed = {	
+				original_tag = MON
+			}
+			available = {
+				NOT = {
+					has_country_leader = { 
+						character = MON_anandyn_amar #cannot lead and be in government (at least not with those buffs)
+						ruling_only = yes 
+					}
+				}
+				NOT = {
+					has_country_flag = purged_by_genden_big_flag
+					has_country_flag = MON_soviet_backed_coup_happened
+				}
+				NOT = { 
+					has_completed_focus = MON_remove_nominal_leadership
+				}
+			}
+			do_effect  = {
+				NOT = {
+					has_government  = fascism
+					has_government  = neutrality
+				}
+			}
+			traits = {
+				silent_workhorse
+				popular_figurehead2
+			}
+			cost = 150
+			ai_will_do = { 
+				factor = 15
+			}
+		}
+	}
+
+	MON_peljidiin_genden = {
+		name="Peljidiin Genden"
+		portraits={
+			civilian={
+				large= GFX_MON_Portrait_peljidiin_genden
+				small= GFX_idea_MON_peljidiin_genden
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits = {
+				out_of_office_trait
+			}
+			expire="1965.1.1"
+			id=-1
+			desc = MON_peljidiin_genden_desc
+		}
+	}
+
+	MON_bat_ochiryn_eldev_ochir = {
+		name="Bat-Ochiryn Eldev-Ochir"
+		portraits={
+			civilian={
+				large = GFX_MON_Portrait_bat_ochiryn_eldev_ochir
+				small = "gfx/interface/ideas/mon/advisors/r56_idea_advisor_MON_bat_ochiryn_eldev_ochir.dds"
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			traits = {
+				staunch_atheist
+			}
+			expire="1965.1.1"
+			id=-1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MON_bat_ochiryn_eldev_ochir
+			allowed = {
+				original_tag = MON
+			}
+			available = {
+				has_government = communism
+				NOT = {
+					has_country_leader = { 
+						character = MON_bat_ochiryn_eldev_ochir
+						ruling_only = yes 
+					}
+				}
+			}
+			cost = 100
+			traits = {
+				collectivization_specialist
+				political_chameleon
+			}
+		}	
+	}
+
+	MON_anarcho_communist_commune = {
+		name="Anarcho-Communist Commune"
+		portraits={
+			civilian={
+				large=GFX_portrait_SPR_anarchist_commune
+			}
+		}
+		country_leader={
+			ideology=anarchist_communism
+			traits = {
+				divided_interests
+				r56_trait_opposed_to_democracy
+				r56_trait_opposed_to_fascism
+			}
+			expire="1965.1.1"
+			id=-1
+		}
+	}
+
+	MON_anarchist_commune = {
+		name="Anarchist Commune"
+		portraits={
+			civilian={
+				large=GFX_portrait_SPR_anarchist_commune
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			traits = {
+				voluntaryism
+				our_right_to_survive
+				r56_trait_opposed_to_democracy
+				r56_trait_opposed_to_communism
+			}
+			expire="1965.1.1"
+			id=-1
+		}
+	}
+
+	MON_free_peoples_commune = {
+		name="Free People's Original"
+		portraits={
+			civilian={
+				large=GFX_portrait_SPR_anarchist_commune
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			traits = {
+				our_right_to_survive
+				r56_trait_opposed_to_fascism
+			}
+			expire="1965.1.1"
+			id=-1
+		}
+	}
+
+	MON_khorloogiin_choibalsan = {
+		name="Khorloogiin Choibalsan"
+		portraits = {
+			civilian={
+				large=GFX_MON_Portrait_khorloogiin_choibalsan
+				small=GFX_idea_MON_horloogiyn_choybalsan
+			}
+			army = {
+				large=GFX_MON_Portrait_khorloogiin_choibalsan
+				small=GFX_idea_MON_horloogiyn_choybalsan_army
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			traits = {
+				stalin_of_mongolia
+			}
+			expire="1965.1.1"
+			id=-1
+		}
+		advisor={ #Choibsalsan in government
+			slot = political_advisor
+			idea_token = MON_khorloogiin_choibalsan
+			allowed = {	
+				original_tag = MON
+			}
+			available = {
+				has_government = communism
+				NOT = { 
+					has_completed_focus = MON_remove_nominal_leadership
+				}
+				NOT = {
+					has_country_leader = { 
+						character = MON_khorloogiin_choibalsan
+						ruling_only = yes 
+					}
+				}
+			}
+			traits = {
+				stalin_of_mongolia
+			}
+			cost = 100
+			can_be_fired = no
+			ai_will_do = { 
+				factor = 10	
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = MON_khorloogiin_choibalsan_army
+			allowed = {
+				original_tag = MON
+			}
+			available = {
+				has_government = communism
+				NOT = { 
+					has_completed_focus = MON_remove_nominal_leadership
+				}
+			}
+			traits = {
+				army_chief_morale_2
+			}
+			cost =  75
+			ai_will_do = {
+				factor = 14 # we want Choibalsan everywhere
+			}
+		}
+		corps_commander={
+			traits = { 
+				politically_connected trait_cautious
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 4
+			logistics_skill = 2
+			legacy_id=-1
+		}
+	}
+
+	MON_Wu_Zhongxin = {
+		name="Wu Zhongxin"
+		portraits={
+			civilian={
+				large = "gfx/leaders/MON/r56_portrait_MON_Wu_Zhongxin.dds"
+			}
+		}
+		country_leader={
+			ideology = marxism
+			expire="1965.1.1"
+			id=-1
+			traits = {
+				subservient_democrat
+			}			
+		}
+	}
+
+	MON_navaanlubsangiyn_genepil = {
+		name="Navaanlubsangiyn Genepil"
+		portraits={
+			civilian={
+				large = "gfx/leaders/MON/rt56_portrait_MON_Genepil.dds"
+				small = GFX_idea_MON_genepil
+			}
+		}
+		country_leader={
+			ideology=marxism
+			expire="1965.1.1"
+			id=-1
+			traits = {
+				inexperienced_monarch
+			}
+		}
+	}
+
+	MON_davaagine_namsrai = { #head of General Department of Homeland Security till 1936, after it was Choibalsan, AGAIN
+		name="Davaagine Namsrai"
+		portraits={
+			civilian={
+				small="GFX_idea_generic_army_asia_4"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MON_davaagine_namsrai
+			allowed = {	
+				original_tag = MON
+				has_dlc = "La Resistance"
+			}
+			available = {
+				has_intelligence_agency = yes
+			}
+			traits = {
+				head_of_intelligence
+			}
+			cost = 150
+			ai_will_do = { 
+				factor = 9	
+			}
+		}
+	}
+
+	MON_darizavyn_losol = { #revolutionary leader, book author, deputy member of politburo, little khural president, board member of bank, cooperative control commission member
+		name="Darizavyn Losol"
+		portraits={
+			civilian={
+				large="gfx/leaders/MON/r56_portrait_MON_darizavyn_losol.dds" 
+				small = "gfx/interface/ideas/mon/advisors/r56_idea_advisor_MON_darizavyn_losol.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MON_darizavyn_losol
+			allowed = {	
+				original_tag = MON
+			}
+			available = {
+				OR = {
+					has_government = communism
+					has_government = democratic
+				}
+			}
+			traits = {
+				ecomonist_publicist
+			}
+			cost = 150
+			ai_will_do = { 
+				factor = 3	
+			}
+		}
+	}
+
+
+	MON_dansranbilegiin_dogsom = { #head of parlament 1936-1939, opposer of Genden, purged by Choibalsan in 1941
+		name="Dansranbilegiin Dogsom"
+		portraits={
+			civilian={
+				large="gfx/leaders/MON/r56_portrait_MON_dansranbilegiin_dogsom.dds" 
+				small = "gfx/interface/ideas/mon/advisors/r56_idea_advisor_MON_dansranbilegiin_dogsom.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MON_dansranbilegiin_dogsom
+			allowed = {	
+				original_tag = MON
+			}
+			traits = {
+				popular_figurehead
+			}
+			cost = 150
+			ai_will_do = { 
+				factor = 9
+			}
+		}
+	}
+
+	MON_khas_ochiryn_luvsandorj = {  #one of the communist revolutionaries, purged in 1937
+		name="Khas Ochiryn Luvsandorj"
+		portraits={
+			civilian={
+				small="GFX_idea_generic_army_asia_5"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MON_khas_ochiryn_luvsandorj
+			allowed = {	
+				original_tag = MON
+			}
+			traits = {
+				communist_revolutionary
+			}
+			cost = 75
+			ai_will_do = { 
+				factor = 9
+			}
+		}
+	}
+
+	MON_shirnengiin_ayuush = { #mongolian writer, purged in 1940  
+		name="Shirnengiin Ayuush"
+		portraits={
+			civilian={
+				small="GFX_idea_generic_air_asia_1"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MON_shirnengiin_ayuush
+			allowed = {	
+				original_tag = MON
+			}
+			traits = {
+				editor
+			}
+			cost = 75
+			ai_will_do = { 
+				factor = 6
+			}
+		}
+	}
+
+	MON_sonombaldzshiryn_buyannemech = { #mongolian revolutionary writer and dramatourge, purged 1937 Сономбалжирын Буяннэмэх 
+		name="Sonombaldzshiryn Buyannemech"
+		portraits={
+			civilian={
+				small= "gfx/interface/ideas/mon/advisors/rt56_idea_advisor_MON_sonombaldzshiryn_buyannemech.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MON_sonombaldzshiryn_buyannemech
+			allowed = {	
+				original_tag = MON
+			}
+			available = {
+				NOT = {
+					has_completed_focus = MON_the_great_terror
+				}
+			}
+			traits = {
+				revolutionary_writer
+			}
+			cost = 100
+			ai_will_do = { 
+				factor = 10
+			}
+		}
+	}
+
+	MON_suekhbaataryn_yanjmaa = {  #second woman in history to be a non-hereditary head of state (Great Khural), women education reformer
+		name="Suekhbaataryn Yanjmaa"
+		gender = female
+		portraits={
+			civilian={
+				large = "gfx/leaders/MON/r56_portrait_MON_Suekhbaataryn_Yanjmaa.dds"
+				small = GFX_idea_MON_Suekhbaataryn_Yanjmaa
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MON_suekhbaataryn_yanjmaa
+			allowed = {	
+				original_tag = MON
+			}
+			available = {
+				NOT = {
+					has_country_leader = { 
+						character = MON_suekhbaataryn_yanjmaa
+						ruling_only = yes 
+					}
+				}
+			}
+			traits = {
+				education_reformer
+				chairwoman
+			}
+			cost = 150
+			ai_will_do = { 
+				factor = 10
+			}
+		}
+	}
+
+	MON_Tserendondovyn_Navaanneren={  #Nobleman from Genghis family, minister of internal affairs in 1910s, deputy head of institute of science since 1935(!), purged end of 1937
+		name="Tserendondovyn Navaanneren"
+		portraits={
+			civilian={
+				large = "gfx/leaders/MON/r56_portrait_MON_Tserendondovyn_Navaanneren.dds"
+				small = "gfx/interface/ideas/mon/advisors/r56_idea_advisor_MON_Tserendondovyn_Navaanneren.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MON_Tserendondovyn_Navaanneren
+			allowed = {	
+				original_tag = MON
+			}
+			available = {
+				NOT = {
+					has_completed_focus = MON_deal_with_religious_centre
+					has_completed_focus = MON_reorganize_state_agenda
+				}
+			}
+			traits = {
+				centrist_intellectual
+				conservative_grandee
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 8
+			}
+		}
+	}
+
+	MON_oelziitiin_badrakh = {  #first party secretary, exiled 1933
+		name="Oelziitiin Badrakh"
+		portraits={
+			civilian={
+				large="gfx/leaders/MON/r56_portrait_MON_oelziitiin_badrakh.dds" 
+				small = "gfx/interface/ideas/mon/advisors/r56_idea_advisor_MON_oelziitiin_badrakh.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MON_oelziitiin_badrakh
+			allowed = {
+				original_tag = MON
+			}
+			available = {
+				has_completed_focus = MON_new_party_elite
+			}
+			visible = {
+				has_completed_focus = MON_new_party_elite
+			}
+			traits = {
+				financial_expert
+			}
+			cost = 150
+			ai_will_do = { 
+				factor = 10
+			}
+		}
+	}
+
+	#exiled Mongols, to make Mongolian rightist cabinet more reliable
+	MON_jamsrangiin_tseveen = {  #orientalist, historian, Buryat, "rightist", 1937 imprisoned,  purged 1942 
+		name="Jamsrangiin Tseveen"
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/mon/advisors/r56_idea_advisor_MON_jamsrangiin_tseveen.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MON_jamsrangiin_tseveen
+			allowed = {
+				original_tag = MON
+			}
+			available = {
+				NOT = { 
+					has_completed_focus =  MON_the_great_terror
+				}
+			}
+			traits = {
+				accomplished_professor
+			}
+			cost = 100
+			ai_will_do = { 
+				factor = 10
+			}
+		}
+	}
+
+	MON_banzarjavyn_baasanjav = {   #young communist, chairman of Mongolian Trade Unions till his purge in 1940 by Choibalsan to free place for Tsedenbal
+		name="Banzarjavyn Baasanjav"
+		portraits={
+			civilian={
+				small = "gfx/interface/ideas/idea_asia_generic_land_5.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MON_banzarjavyn_baasanjav
+			allowed = {
+				original_tag = MON
+			}
+			available = {
+				NOT = {
+					has_government = fascism
+					has_completed_focus = MON_remove_nominal_leadership
+				}
+			}
+			traits = {
+				trade_unionist
+			}
+			cost = 125
+			ai_will_do = { 
+				factor = 10
+			}
+		}
+	}
+
+	#new generation of communist advisors (in case purge by Choibalsan happend)
+	MON_yumjaagiin_tsedenbal = {   #new choibalsan after the death of the latter
+		name="Yumjaagiin Tsedenbal"
+		portraits={
+			civilian={
+				large= "gfx/leaders/MON/r56_portrait_MON_yumjaagiin_tsedenbal.dds"
+				small= GFX_idea_MON_yumjaagiin_tsedenbal
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MON_yumjaagiin_tsedenbal
+			allowed = {
+				original_tag = MON
+			}
+			available = {
+				NOT = {
+					has_country_leader = { 
+						character = MON_yumjaagiin_tsedenbal
+						ruling_only = yes 
+					}
+				}
+				OR = {
+					has_completed_focus = MON_new_generation_of_intelligentsia
+					has_completed_focus = MON_student_exchange_program
+				}
+			}
+			visible = {
+				OR = {
+					has_completed_focus = MON_new_generation_of_intelligentsia
+					has_completed_focus = MON_student_exchange_program
+				}
+			}
+			traits = {
+				captain_of_industry
+			}
+			cost = 75
+			ai_will_do = { 
+				factor = 15
+			}
+		}
+	}
+
+	MON_sonomyn_luvsan = {  #minister of trade since 1949
+		name="Sonomyn Luvsan"
+		portraits={
+			civilian={
+				small="GFX_idea_TAN_salchak_toka"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MON_sonomyn_luvsan
+			allowed = {
+				original_tag = MON
+			}
+			available = {
+				has_completed_focus = MON_new_generation_of_intelligentsia
+			}
+			visible = {
+				has_completed_focus = MON_new_generation_of_intelligentsia
+			}
+			traits = {
+				 smooth_talking_charmer
+			}
+			cost = 125
+			ai_will_do = { 
+				factor = 15
+			}
+		}
+	}
+
+	MON_gonchigiin_bumtsend = {#miscellaneous activities in 40s (head of state, commander of local militia, police chief
+		name="Gonchigiin Bumtsend"
+		portraits={
+			civilian={
+				small="GFX_idea_generic_navy_asia_3"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MON_gonchigiin_bumtsend
+			allowed = {
+				original_tag = MON
+			}
+			available = {
+				has_completed_focus = MON_new_generation_of_intelligentsia
+			}
+			visible = {
+				has_completed_focus = MON_new_generation_of_intelligentsia
+			}
+			traits = {
+				POL_Secretary_General
+			}
+			cost = 100
+			ai_will_do = { 
+				factor = 15
+			}
+		}
+	}
+
+	MON_dashiin_damba = { #One of the supporters of Choibalsan purges, came to power later on
+		name="Dashiin Damba"
+		portraits={
+			civilian={
+				small="GFX_idea_generic_army_asia_5"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MON_dashiin_damba
+			allowed = {
+				original_tag = MON
+			}
+			available = {
+				has_completed_focus = MON_new_party_elite
+			}
+			visible = {
+				has_completed_focus = MON_new_party_elite
+			}
+			traits = {
+				prince_of_terror
+			}
+			cost = 75
+			ai_will_do = { 
+				factor = 15
+			}
+		}
+	}
+
+	MON_gelegdorjiin_demid = { #Mongolian general and Marshall (since 1936), died (purged?) in 1937
+		name="Gelegdorjiin Demid"
+		portraits={
+			army={
+				large="gfx/leaders/MON/r56_portrait_MON_gelegdorjiin_demid.dds"
+				small=GFX_idea_MON_gelegdorjiin_demid
+			}
+		}
+		advisor={
+			cost = 75
+			slot = theorist
+			idea_token = MON_gelegdorjiin_demid_theorist
+			ledger = army
+			allowed = {
+				original_tag = MON
+			}
+			available = {
+				has_completed_focus = MON_deal_with_genden
+				NOT = { has_country_flag = MON_demid_killed }
+			}
+			traits = {
+				military_theorist
+			}
+		}
+		advisor = {
+			slot = army_chief	#supporter of Motorization and usage of fast moving troops (so either speed or motorization expert) 
+			idea_token = MON_gelegdorjiin_demid_army_chief
+			allowed = {
+				original_tag = MON
+			}
+			available = {
+				NOT = { has_country_flag = MON_demid_killed }
+			}
+			traits = {
+				army_chief_maneuver_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits = { 
+				politically_connected
+				infantry_officer
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id=-1
+			visible = {
+				NOT = { has_country_flag = MON_demid_killed }
+			}
+		}
+	}
+	MON_enrique_lister={
+		name = SPR_enrique_lister
+		portraits={
+			army={
+				large="gfx/leaders/SPR/portrait_SPR_enrique_lister.dds"
+				small = "gfx/interface/ideas/idea_SPR_enrique_lister.dds"
+			}
+		}
+		corps_commander={ #17/17
+		visible = { date > 1939.4.1 }
+			traits = { infantry_leader  ambusher trait_engineer  scavenger guerilla_fighter commando skirmisher    }
+			skill=6
+			attack_skill=2
+			defense_skill=9
+			planning_skill=1
+			logistics_skill=7
+		}
+	}
+	
+	
+	MON_georgy_zhukov = {
+		name = SOV_georgy_zhukov
+
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = "gfx/leaders/SOV/Portrait_Soviet_Gregory_Zhukov.dds"
+			}
+		}
+
+		corps_commander = { #18/17   as CORPS COMMANDER; higher than -> 9.5 + 9  AS FM
+						
+		traits = { inspirational_leader  trait_engineer fortress_buster ranger fast_planner organisational_leader thorough_planner panzer_leader panzer_expert brilliant_strategist  aggressive_assaulter   winter_specialist winter_expert   }
+		skill = 8
+		attack_skill = 4
+		defense_skill = 5
+		planning_skill = 8
+		logistics_skill = 8
+			
+		}		
+	}
+
+	MON_konstantin_rokossovsky = {
+		name = SOV_konstantin_rokossovsky
+
+		portraits = {
+			army = {
+				small = "GFX_idea_konstantin_rokossovsky"
+				large = "gfx/leaders/SOV/Portrait_Soviet_Konstantin_Rokossovsky.dds"
+			}
+		}
+
+		field_marshal = { #13/13
+			traits = {  scavenger fast_planner panzer_leader panzer_expert  trait_cautious brilliant_strategist aggressive_assaulter adaptable   }
+		skill = 6
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 3
+		logistics_skill = 8			
+		}		
+	}
+
+	MON_aleksandr_vasilevsky = {
+		name = SOV_aleksandr_vasilevsky
+		portraits = {
+			army = {
+				small = "GFX_idea_aleksandr_vasilevsky"
+				large = "GFX_portrait_SOV_aleksandr_vasilevsky"
+			}
+		}
+		corps_commander = { #17/17
+		traits = {  organizer panzer_leader panzer_expert expert_improviser ranger trait_cautious brilliant_strategist  urban_assault_specialist }
+		skill = 6
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 3
+		logistics_skill = 8
+		}
+	}
+
+	MON_boris_shaposhnikov = {
+		name = SOV_boris_shaposhnikov
+		portraits = {
+			army = {
+				small = "GFX_idea_boris_shaposhnikov"
+				large = "gfx/leaders/SOV/Portrait_Soviet_Boris_Shaposhnikov.dds"
+			}
+		}
+
+		field_marshal = { #13/13
+		traits = {   infantry_leader scavenger commando expert_delegator  organisational_leader inspirational_leader logistics_wizard expert_improviser  }
+		skill = 6
+		attack_skill = 4
+		defense_skill = 5
+		planning_skill = 1
+		logistics_skill = 9
+			
+		}
+	}
+
+	MON_nikolay_vatutin = {
+		name = SOV_nikolay_vatutin
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Portrait_Soviet_Nikolai_Fyodorovich_Vatutin.dds"
+				small="gfx/interface/ideas/idea_SOV_nikolai_fyodorovich_vatutin.dds"
+			}
+		}
+		corps_commander = { #17/17
+		traits = {  organizer guerilla_fighter commando  infantry_leader infantry_expert fake_skilled_staffer_sov trait_reckless }
+		skill = 6
+		attack_skill = 6
+		defense_skill = 4
+		planning_skill = 1
+		logistics_skill = 8			
+		}
+	}
+
+	MON_ivan_konev = {
+		name = SOV_ivan_konev
+		portraits = {
+			army = {
+				small = "GFX_idea_ivan_konev"
+				large = "GFX_portrait_SOV_ivan_konev"
+			}
+		}
+
+		field_marshal = { #13/13
+		traits = {  aggressive_assaulter thorough_planner panzer_leader panzer_expert harsh_leader camouflage_expert  }
+		skill = 6
+		attack_skill = 6
+		defense_skill = 1
+		planning_skill = 7
+		logistics_skill = 5			
+		}
+	}
+
+	MON_semyon_timoshenko = {
+		name = SOV_semyon_timoshenko
+		portraits = {
+			army = {
+				small = "GFX_idea_semyon_timoshenko"
+				large = "GFX_portrait_SOV_semyon_timoshenko"
+			}
+		}
+
+		corps_commander = { #17/17 #originally has cav leader
+			traits = { panzer_leader panzer_expert hill_fighter trait_mountaineer  expert_improviser trickster }
+		skill = 6
+		attack_skill = 6
+		defense_skill = 3
+		planning_skill = 5
+		logistics_skill = 5			
+		}
+	}
+
+	MON_kliment_voroshilov = {
+		name = SOV_kliment_voroshilov
+
+		portraits = {
+			army = {
+				small = "GFX_idea_kliment_voroshilov"
+				large = "gfx/leaders/SOV/Portrait_Soviet_Kliment_Voroshilov.dds"
+			}
+		}
+
+		field_marshal = { #14/13
+			traits = { old_guard camouflage_expert  inflexible_strategist infantry_leader defensive_doctrine ambusher unyielding_defender  }
+		skill = 6
+		attack_skill = 8
+		defense_skill = 3
+		planning_skill = 1
+		logistics_skill = 7			
+		}
+	}
+
+	MON_mikhail_tukhachevsky = {
+		name = SOV_mikhail_tukhachevsky
+		portraits = {
+			army = {
+				small = "GFX_idea_mikhail_tukhachevsky"
+				large = "gfx/leaders/SOV/Portrait_Soviet_Mikhail_Tukhachevsky.dds"
+			}
+		}
+
+		field_marshal = { #ingore; purged
+			traits = { brilliant_strategist  trait_reckless infantry_officer offensive_doctrine }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 2
+			visible = { always = no  }
+		}
+	}
+
+	MON_semyon_budyonny = {
+		name = SOV_semyon_budyonny
+		portraits = {
+			army = {
+				large = "GFX_portrait_SOV_semyon_budyonny"
+				small="gfx/interface/ideas/idea_SOV_semyon_budyonny.dds"
+			}
+		}
+		field_marshal = { #13/13
+			traits = {  old_guard ranger bearer_of_artillery defensive_doctrine infantry_leader logistics_wizard organizer  }
+		skill = 6
+		attack_skill = 4
+		defense_skill = 5
+		planning_skill = 4
+		logistics_skill = 6
+			
+			
+		}
+	}
+	MON_issa_pliyev = {
+		name = SOV_issa_pliyev
+		portraits = {
+			army = {
+				large = "GFX_portrait_SOV_issa_pliyev"
+				small="gfx/interface/ideas/idea_SOV_issa_pliyev.dds"
+			}
+		}
+		corps_commander = { #15/17
+		traits = { fake_skilled_staffer  cavalry_leader combined_arms_expert expert_improviser ranger trait_cautious brilliant_strategist  urban_assault_specialist }
+		skill = 6
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 3
+		logistics_skill = 8
+			
+		}
+	}
+	MON_ivan_chernyakhovsky = {
+		name = SOV_ivan_chernyakhovsky
+		portraits = {
+			army = {
+				large = "GFX_portrait_SOV_ivan_chernyakhovsky"
+				small="gfx/interface/ideas/idea_SOV_ivan_chernyakhovsky.dds"
+			}
+		}
+		corps_commander = { #17/17
+		traits = {  organizer panzer_leader panzer_expert expert_improviser ranger trait_cautious brilliant_strategist  urban_assault_specialist }
+		skill = 6
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 3
+		logistics_skill = 8			
+		}
+	}
+	MON_lev_dovator = {
+		name = SOV_lev_dovator
+		portraits = {
+			army = {
+				large = "GFX_portrait_SOV_lev_dovator"
+				small = "gfx/interface/ideas/idea_SOV_lev_dovator.dds"
+			}
+		}
+
+		corps_commander = { #17/17
+			traits = { cavalry_leader 	 combined_arms_expert adaptable trait_engineer organizer commando  trait_reckless   }
+			skill = 6
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 5
+		logistics_skill = 6
+			
+		}
+	}
+
+	MON_leonid_govorov = {
+		name = SOV_leonid_govorov
+		portraits = {
+			army = {
+				large = "GFX_portrait_SOV_leonid_govorov"
+				small="gfx/interface/ideas/idea_SOV_leonid_govorov.dds"
+			}
+		}
+		corps_commander = { #17/17
+		traits = { cavalry_leader  combined_arms_expert ambusher guerilla_fighter fake_skilled_staffer winter_specialist } 
+		skill = 6
+		attack_skill = 2
+		defense_skill = 4
+		planning_skill = 3
+		logistics_skill = 10
+			
+			
+		}
+	}
+
+	MON_grigory_kulik = {
+		name = SOV_grigory_kulik
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Portrait_Soviet_Grigory_Kulik.dds"
+				small="gfx/interface/ideas/idea_SOV_grigory_kulik.dds"
+			}
+		}
+		field_marshal = { #13/13
+			traits = { old_guard inflexible_strategist infantry_leader defensive_doctrine guerilla_fighter skirmisher  unyielding_defender  }
+		skill = 6
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 5
+		logistics_skill = 6
+			
+			
+		}
+	}
+
+	MON_kirill_meretskov = {
+		name = SOV_kirill_meretskov
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Portrait_Soviet_Kirill_Meretskov.dds"
+				small="gfx/interface/ideas/idea_SOV_kirill_meretskov.dds"
+			}
+		}
+		corps_commander = { #17/17
+		traits = {  organizer guerilla_fighter commando  infantry_leader infantry_expert fake_skilled_staffer_sov trait_reckless }
+		skill = 6
+		attack_skill = 6
+		defense_skill = 4
+		planning_skill = 1
+		logistics_skill = 8
+			
+			
+		}
+	}
+
+
+	MON_filipp_golikov = {
+		name = SOV_filipp_golikov
+		portraits = {
+			army = {
+				large = "GFX_portrait_SOV_filipp_golikov"
+				small="gfx/interface/ideas/idea_SOV_filipp_golikov.dds"
+			}
+		}
+		field_marshal = { #13/13
+			traits = { cavalry_leader  combined_arms_expert ambusher defensive_doctrine  organisational_leader  trickster } 
+		skill = 6
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 6
+		logistics_skill = 7
+			
+			
+		}
+	}
+
+	MON_andrey_yeryomenko = {
+		name = SOV_andrey_yeryomenko
+		portraits = {
+			army = {
+				large = "GFX_portrait_SOV_andrey_yeryomenko"
+				small="gfx/interface/ideas/idea_SOV_andrey_yeryomenko.dds"
+			}
+		}
+		corps_commander = { #17/17
+			traits = { cavalry_leader combined_arms_expert skilled_staffer harsh_leader ranger camouflage_expert  expert_improviser trickster }
+		skill = 6
+		attack_skill = 6
+		defense_skill = 5
+		planning_skill = 3
+		logistics_skill = 5			
+		}
+	}
+
+	MON_georgy_zakharov = {
+		name = SOV_georgy_zakharov
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Portrait_Soviet_Georgiy_Zakharov.dds"
+				small="gfx/interface/ideas/idea_SOV_georgiy_zakharov.dds"
+			}
+		}
+		corps_commander = { #17/17
+			traits = { panzer_leader panzer_expert harsh_leader ranger camouflage_expert  expert_improviser trickster }
+		skill = 6
+		attack_skill = 6
+		defense_skill = 5
+		planning_skill = 3
+		logistics_skill = 5
+			
+			
+		}
+	}
+
+	MON_yakov_cherevichenko = {
+		name = SOV_yakov_cherevichenko
+		portraits = {
+			army = {
+				large = "GFX_portrait_SOV_yakov_cherevichenko"
+				small="gfx/interface/ideas/idea_SOV_yakov_cherevichenko.dds"
+			}
+		}
+		corps_commander = { #17/17
+			traits = { panzer_leader panzer_expert harsh_leader ranger camouflage_expert  expert_improviser trickster }
+		skill = 6
+		attack_skill = 6
+		defense_skill = 5
+		planning_skill = 3
+		logistics_skill = 5
+			
+			
+		}
+	}
+
+	MON_maks_reyter = {
+		name = SOV_maks_reyter
+		portraits = {
+			army = {
+				large = "GFX_portrait_SOV_maks_reyter"
+				small="gfx/interface/ideas/idea_SOV_maks_reyter.dds"
+			}
+		} 
+
+		corps_commander = { #17/17
+		traits = {  desert_fox  trickster expert_improviser organizer  paratrooper infantry_leader infantry_expert guerilla_fighter  }
+		skill = 6
+		attack_skill = 3
+		defense_skill = 6
+		planning_skill = 1
+		logistics_skill = 8
+			
+			
+		}
+	}
+
+	MON_nikandr_chibisov = {
+		name = SOV_nikandr_chibisov
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Portrait_Soviet_Nikandr_Yevlampyevich_Chibisov.dds"
+				small="gfx/interface/ideas/idea_SOV_nikandr_yevlampyevich_chibisov.dds"
+			}
+		}
+		field_marshal = { #13.5/13
+			traits = { cavalry_leader  combined_arms_expert inspirational_leader thorough_planner unyielding_defender inflexible_strategist  } 
+		skill = 6
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 6
+		logistics_skill = 7
+			
+			
+		}
+
+
+		
+	}
+
+	MON_vasily_kuznetsov = {
+		name = SOV_vasily_kuznetsov
+		portraits = {
+			army = {
+				large = "GFX_portrait_SOV_vasily_kuznetsov"
+				small="gfx/interface/ideas/idea_SOV_vasily_kuznetsov.dds"
+			}
+		}
+		corps_commander = { #17/17
+		traits = {  ranger panzer_leader panzer_expert ambusher swamp_fox  }
+		skill = 6
+		attack_skill = 4
+		defense_skill = 3
+		planning_skill = 5
+		logistics_skill = 7
+			
+			
+		}
+	}
+
+	MON_andrey_vlasov = {
+		name = SOV_andrey_vlasov
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Portrait_Soviet_Andrey_Vlasov.dds"
+				small="gfx/interface/ideas/idea_SOV_andrey_vlasov.dds"
+			}
+		}
+		corps_commander = { #17/17
+		traits = {  trait_reckless bearer_of_artillery infantry_leader  ranger infantry_expert  expert_improviser  winter_specialist   }
+		skill = 6
+		attack_skill = 5
+		defense_skill = 4
+		planning_skill = 2
+		logistics_skill = 8
+			
+		}
+	}
+
+	MON_ivan_fedyuninsky = {
+		name = SOV_ivan_fedyuninsky
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Portrait_Soviet_Ivan_Fedyuninsky.dds"
+				small="gfx/interface/ideas/idea_SOV_ivan_fedyuninsky.dds"
+			}
+		}
+		corps_commander = { #17/17
+		traits = { infantry_leader ambusher   trait_engineer scavenger trait_mountaineer hill_fighter  }
+		skill = 6
+		attack_skill = 4
+		defense_skill = 7
+		planning_skill = 1
+		logistics_skill = 7
+			
+			
+		}
+	}
+
+	MON_maksim_purkayev = {
+		name = SOV_maksim_purkayev
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Portrait_Soviet_Maksim_Purkayev.dds"
+				small="gfx/interface/ideas/idea_SOV_maksim_purkayev.dds"
+			}
+		}
+		field_marshal = { #13/13
+			traits = { cavalry_leader  combined_arms_expert  bearer_of_artillery thorough_planner logistics_wizard   } 
+		skill = 6
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 6
+		logistics_skill = 7
+			
+			
+		}
+	}
+
+	MON_kuzma_galitsky = {
+		name = SOV_kuzma_galitsky
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Portrait_Soviet_Kuzma_Galitsky.dds"
+				small="gfx/interface/ideas/idea_SOV_kuzma_galitsky.dds"
+			}
+		}
+		corps_commander = { #17/17
+		traits = { infantry_leader infantry_expert ranger trait_engineer fortress_buster organizer  naval_invader  }
+		skill = 6
+		attack_skill = 5
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 7
+			
+			
+		}
+	}
+
+	MON_markian_popov = {
+		name = SOV_markian_popov
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Portrait_Soviet_Matkian_Popov.dds"
+				small="gfx/interface/ideas/idea_SOV_matkian_popov.dds"
+			}
+		}
+		corps_commander = { #17/17
+			traits = { infantry_leader skilled_staffer infantry_expert trait_engineer winter_expert winter_specialist  swamp_fox ranger  brilliant_strategist  }
+		skill = 6
+		attack_skill = 5
+		defense_skill = 5
+		planning_skill = 1
+		logistics_skill = 8	
+			
+			
+		}
+	}
+
+	MON_nikolay_berzarin = {
+		name = SOV_nikolay_berzarin
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Portrait_Soviet_Nikolay_Berzarin.dds"
+				small="gfx/interface/ideas/idea_SOV_nikolai_berzarin.dds"
+			}
+		}
+		corps_commander = { #17/17
+				traits = { infantry_leader infantry_expert trait_mountaineer commando paratrooper skirmisher expert_improviser  }
+		skill = 6
+		attack_skill = 5
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 8
+			
+			
+		}
+	}
+
+	MON_aleksandr_gorbatov = {
+		name = SOV_aleksandr_gorbatov
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Portrait_Soviet_Aleksandr_Gorbatov.dds"
+				small="gfx/interface/ideas/idea_SOV_alexander_gorbatov.dds"
+			}
+		}
+		corps_commander = { #17/17
+		traits = {  guerilla_fighter fake_skilled_staffer_sov2 infantry_leader infantry_expert   }
+		skill = 6
+		attack_skill = 5
+		defense_skill = 5
+		planning_skill = 1
+		logistics_skill = 8
+			
+			
+		}
+	}
+
+	MON_kirill_moskalenko = {
+		name = SOV_kirill_moskalenko
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Portrait_Soviet_Kirill_Moskalenko.dds"
+				small="gfx/interface/ideas/idea_SOV_kirill_moskalenko.dds"
+			}
+		}
+		corps_commander = { #17/17
+		traits = {  ambusher panzer_leader panzer_expert trait_mountaineer bearer_of_artillery guerilla_fighter }
+		skill = 6
+		attack_skill = 5
+		defense_skill = 3
+		planning_skill = 4
+		logistics_skill = 6
+			
+			
+		}
+	}
+
+	MON_dmitry_lelyushenko = {
+		name = SOV_dmitry_lelyushenko
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Portrait_Soviet_Dmitri_Danilovich_Lelyushenko.dds"
+				small="gfx/interface/ideas/idea_SOV_dmitri_danilovich_lelyushenko.dds"
+			}
+		}
+		corps_commander = { #17/17
+		traits = {  organizer panzer_leader panzer_expert expert_improviser ranger trait_cautious brilliant_strategist  urban_assault_specialist }
+		skill = 6
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 3
+		logistics_skill = 8
+			
+			
+		}
+	}
+
+	MON_andrey_grechko = {
+		name = SOV_andrey_grechko
+		portraits = {
+			army = {
+				large = "GFX_portrait_SOV_andrey_grechko"
+				small="gfx/interface/ideas/idea_SOV_andrei_antonovich_grechko.dds"
+			}
+		}
+		corps_commander = { #17/17
+		traits = { scavenger  trait_engineer adaptable panzer_leader panzer_expert  }
+		skill = 6
+		attack_skill = 5
+		defense_skill = 2
+		planning_skill = 10
+		logistics_skill = 2
+			
+			
+		}
+	}
+
+	MON_rodion_malinovsky = {
+		name = SOV_rodion_malinovsky
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Portrait_Soviet_Rodion_Malinovsky.dds"
+				small="gfx/interface/ideas/idea_SOV_rodion_malinovsky.dds"
+			}
+		}
+		corps_commander = { #17/17
+		traits = { old_guard commando bearer_of_artillery infantry_leader swamp_fox commando  infantry_expert organizer  }
+		skill = 6
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 1
+		logistics_skill = 10
+			
+			
+		}
+	}
+
+	MON_vasily_chuykov = {
+		name = SOV_vasily_chuykov
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Portrait_Soviet_Vasily_Chuykov.dds"
+				small="gfx/interface/ideas/idea_SOV_vasily_chuikov.dds"
+			}
+		}	
+		corps_commander = { #17/17
+				traits = { panzer_leader panzer_expert harsh_leader ranger camouflage_expert  expert_improviser trickster }
+		skill = 6
+		attack_skill = 6
+		defense_skill = 5
+		planning_skill = 3
+		logistics_skill = 5
+			
+			
+		}
+	}
+	MON_lodongiin_dandar={ #"the Hero on a Pinto Horse", cavalry officer during the Khalkin-Ghol Лодонгийн Дандар
+		name="Lodongiin Dandar"
+		portraits={
+			civilian={
+				large = "gfx/leaders/MON/r56_portrait_MON_Lodongiin_Dandar.dds"
+				small = GFX_idea_MON_lodongiin_dandar
+			}
+		}
+		corps_commander={
+			traits = { 
+				cavalry_officer trait_reckless
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id=-1
+		}
+	}
+
+	MON_issa_pliev = { #Soviet general and advisor in Mongolia
+		name="Issa Pliev"
+		portraits={
+			army={
+				small=GFX_idea_SOV_issa_pliyev
+			}
+		}
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = MON_issa_pliev_theorist
+			ledger = army
+			allowed = {
+				original_tag = MON
+			}
+			available = {
+				has_completed_focus = MON_invite_soviet_advisors
+			}
+			traits = {
+				military_theorist
+			}
+		}
+	}
+
+	MON_zhamyangiyn_lhagvasuren={  #graduated 1937 from Lenin Military-Political Academy in Moscow, commander-in-chief since 1939
+		name="Zhamyangiyn Lhagvasuren"
+		portraits={
+			army={
+				large = "gfx/leaders/MON/r56_portrait_MON_Zhamyangiyn_Lhagvasuren.dds"
+				small = GFX_idea_MON_zhamyangiyn_lhagvasuren
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = MON_zhamyangiyn_lhagvasuren_high_command
+			allowed = {
+				original_tag = MON
+			}
+			traits = {
+				army_regrouping_1
+			}
+			cost = 75
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = MON_zhamyangiyn_lhagvasuren_army_chief
+			allowed = {
+				original_tag = MON
+			}
+			traits = {
+				army_chief_organizational_1
+			}
+			cost = 75
+			ai_will_do = {
+				factor = 11
+			}
+		}
+		corps_commander={
+			traits = { 
+				politically_connected promising lucky
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id=-1
+		}
+	}
+
+	MON_tsendiin_olzvoy={  #commander active during the Khalkin-Ghol conflict
+		name="Tsendiin Olzvoy"
+		portraits={
+			army={
+				large = "gfx/leaders/MON/r56_portrait_MON_Tsendiin_Olzvoy.dds"
+				small = GFX_idea_MON_tsendiin_olzvoy
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = MON_tsendiin_olzvoy
+			allowed = {
+				original_tag = MON
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		corps_commander={
+			traits = { 
+				infantry_officer harsh_leader trait_reckless
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id=-1
+		}
+	}
+
+	MON_shagdaryn_gongor ={  #commander active during the Khalkin-Ghol conflict  -> was commanding armored division
+		name="Shagdaryn Gongor"
+		portraits={
+			army={
+				large = "gfx/leaders/MON/r56_portrait_MON_Shagdaryn_Gongor.dds"
+				small = GFX_idea_MON_shagdaryn_gongor
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = MON_shagdaryn_gongor
+			allowed = {
+				original_tag = MON
+			}
+			traits = {
+				army_armored_2
+			}
+			cost = 75
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		corps_commander={
+			traits = { 
+				cavalry_officer armor_officer
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id=-1
+		}
+	}
+
+	MON_batyn_dorj ={  #commander active during the Khalkin-Ghol conflict  -> head commander of the garrison unit
+		name="Batyn Dorj"
+		portraits={
+			army={
+				large = "gfx/leaders/MON/r56_portrait_MON_Batyn_Dorj.dds"
+				small = "gfx/interface/ideas/mon/advisors/r56_idea_advisor_MON_Batyn_Dorj.dds" 
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = MON_batyn_dorj
+			allowed = {
+				original_tag = MON
+			}
+			traits = {
+				army_entrenchment_2
+			}
+			cost = 75
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		corps_commander={
+			traits = { 
+				politically_connected skirmisher
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id=-1
+		}
+	}
+
+	MON_butochiyn_tsog ={  #artillery specialist
+		name="Butochiyn Tsog"
+		portraits={
+			army={
+				large = GFX_MON_Portrait_butochiyn_tsog
+				small = GFX_idea_MON_butochiyn_tsog
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = MON_tsendiin_olzvoy
+			allowed = {
+				original_tag = MON
+			}
+			traits = {
+				army_commando_2
+			}
+			cost = 75
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		corps_commander={
+			traits = { 
+				artillerist
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id=-1
+		}
+	}
+
+	MON_jamsrang_tseren ={  #chief of general staff 1939-1940
+		name="Jamsrang Tseren"
+		portraits={
+			army={
+				large=GFX_MON_Portrait_jamsrang_tseren
+				small=GFX_idea_MON_jamsrang_tseren
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = MON_jamsrang_tseren
+			allowed = {
+				original_tag = MON
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		corps_commander={
+			traits = { 
+				politically_connected cavalry_officer caring_leader
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id=-1
+		}
+	}
+
+	MON_navy_chief={
+		name="Admiral in Chief"
+			portraits={
+			army={
+				small="GFX_idea_generic_navy_asia_1"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = MON_navy_chief
+			allowed = {
+				original_tag = MON
+			}
+			traits = {
+				navy_chief_maneuver_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}	
+
+	MON_damchaagiin_demberel = { #mongolian pilot, one of the aces, hero of the MPR 
+		name = "Damchaagiin Demberel"
+		portraits = {
+			army = {
+				small="GFX_idea_generic_navy_asia_1"
+			}
+		}
+
+		advisor = {
+			slot = high_command
+			idea_token = MON_damchaagiin_demberel
+			ledger = air
+			allowed = {
+				original_tag = MON
+			}
+			traits = {
+				air_naval_strike_2
+			}
+			cost = 75
+			ai_will_do = {
+				factor = 8
+			}
+		}
+		advisor={
+			slot = theorist
+			cost = 75
+			idea_token = MON_damchaagiin_demberel_theorist
+			ledger = air
+			allowed = {
+				original_tag = MON
+			}
+			traits = {
+				air_warfare_theorist
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = MON_damchaagiin_demberel_air_chief
+			allowed = {
+				original_tag = MON
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 75
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+
+	MON_vladimir_sudets ={  #chief instructor of air brigade in Mongolia
+		name="Vladimir Sudets"
+		portraits={
+			army={
+				small=GFX_idea_SOV_pavel_rybalko
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = MON_vladimir_sudets
+			allowed = {
+				original_tag = MON
+			}
+			traits = {
+				air_tactical_bombing_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+
+	MON_hamza_zaysanov ={  #air brigade commander, fighter pilot in Mongolia
+		name="Hamza Zaysanov Erzinuly"
+		portraits={
+			army={
+				large = "gfx/leaders/MON/r56_portrait_MON_Hamza_Zaysanov.dds"
+				small= GFX_idea_MON_hamza_zaysanov
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = MON_hamza_zaysanov
+			allowed = {
+				original_tag = MON
+			}
+			traits = {
+				dive_bomber
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+
+	MON_sandivyn_ravdan ={  #Mongolian General from 1941, before commander of various forces/garrisons
+		name="Sandivyn Ravdan"
+		portraits={
+			army={
+				large="gfx/leaders/MON/r56_portrait_MON_sandivyn_ravdan.dds" 
+			}
+		}
+		corps_commander={
+			traits = { 
+				politically_connected infantry_officer promising
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id=-1
+			visible = {
+				has_country_flag = MON_ravdan_hired
+			}
+		}
+	}
+}

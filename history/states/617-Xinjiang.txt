@@ -3,9 +3,8 @@ state={
 	name="STATE_617"
 
 	history={
-		owner = WST
-		add_core_of = WST
-		add_core_of = CHI
+		owner = MON
+		add_core_of = MON
 		
 		buildings = {
 			infrastructure = 2
@@ -23,7 +22,7 @@ state={
 	}
 	manpower=1080500
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category= town
 
 	local_supplies=6.0 
 }

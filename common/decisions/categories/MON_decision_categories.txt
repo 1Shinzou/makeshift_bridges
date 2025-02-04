@@ -1,0 +1,47 @@
+MON_stance_of_mongolian_army = {
+	icon = army_reform
+	picture = GFX_decision_cat_picture_spr_civil_war_offensives
+
+	allowed = {
+		original_tag = MON
+	}
+	priority = 50
+
+	#visible_when_empty = yes
+
+	available = {
+		has_completed_focus = MON_organize_army_inspection
+	}
+	
+	visible = {
+		has_completed_focus = MON_organize_army_inspection
+	}
+}
+
+MON_strengthen_mongolbank_category = {
+	icon = generic_industry
+	picture = GFX_decision_cat_MON_mongolbank
+
+	allowed = {
+		original_tag = MON
+	}
+	priority = 5
+
+	visible = {
+		has_completed_focus = MON_transfer_the_funds_of_mongolbank
+	}
+}
+
+MON_on_the_crossroads_of_the_world_category = {
+	priority = 100
+	icon = power_struggle
+	picture = GFX_decision_cat_MON_crossroads_of_the_world
+
+	allowed = {
+		original_tag = MON
+	}
+	visible_when_empty = yes
+	visible = {
+		always = yes
+	}
+}

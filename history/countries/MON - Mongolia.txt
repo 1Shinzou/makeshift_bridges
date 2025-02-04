@@ -1,85 +1,124 @@
-﻿capital = 330
+﻿capital = 631
 
 oob = "MON_1936"
-
+set_research_slots = 3
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1			
+	interwar_antiair = 1
+		interwar_antitank = 1
+	tech_support = 1	
+	iw_small_airframe = 1 
+	tech_trucks = 1
+	tech_recon = 1
+		tech_trucks = 1
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1
+		basic_train = 1
+}
+
+set_variable = {
+    var = min_fuel
+    value = 0.800
 }
 
 add_ideas = {
+	closed_economy
 	limited_conscription
+	low_economic_mobilisation 
+	MON_ill_educated_population_idea
+	MON_new_course_policy_idea
+	MON_buddhist_opposition
+	MON_weak_currency_idea
+	MON_dominated_animal_husbandry_idea
+	MON_soviet_NKVD_agents
 }
 
+#MONGOLIAUPDATEDRECRUITMENT
 recruit_character = MON_anandyn_amar
-recruit_character = MON_mingzhu_zhanshan
-recruit_character = MON_fu_shangzhi
-recruit_character = MON_songgotu_kangan
-recruit_character = MON_haidav
-recruit_character = MON_dagva
-recruit_character = MON_chimid
-recruit_character = MON_sukhbaataryn_yanjmaa
-recruit_character = MON_ganbaatar
-recruit_character = MON_ulanhu
-recruit_character = MON_vg_pyrselov
-recruit_character = MON_lee_shou_hsin
-recruit_character = MON_buyannmeh
-recruit_character = MON_horloogiyn_choybalsan
-recruit_character = MON_olziytrygyn_badrak
-recruit_character = MON_dashdorj
-recruit_character = MON_gomgchigryn_bumtsend
-recruit_character = MON_dansrabilegyin_dogsam
-recruit_character = MON_yundunwangcug
-recruit_character = MON_pai_yun_ti
+recruit_character = MON_peljidiin_genden
+recruit_character = MON_bat_ochiryn_eldev_ochir
+recruit_character = MON_khorloogiin_choibalsan
+recruit_character = MON_navaanlubsangiyn_genepil
+recruit_character = MON_Wu_Zhongxin	#Head of Mongolian and Tibetian Affairs Commissions, leader in case Mongolia becomes puppet of KMT
+recruit_character = MON_davaagine_namsrai
+recruit_character = MON_darizavyn_losol
+recruit_character = MON_dansranbilegiin_dogsom
+recruit_character = MON_khas_ochiryn_luvsandorj
+recruit_character = MON_shirnengiin_ayuush
+recruit_character = MON_sonombaldzshiryn_buyannemech
+recruit_character = MON_suekhbaataryn_yanjmaa
+recruit_character = MON_Tserendondovyn_Navaanneren
+recruit_character = MON_oelziitiin_badrakh
+recruit_character = MON_jamsrangiin_tseveen
+recruit_character = MON_banzarjavyn_baasanjav
+recruit_character = MON_yumjaagiin_tsedenbal
+recruit_character = MON_sonomyn_luvsan
+recruit_character = MON_gonchigiin_bumtsend
+recruit_character = MON_dashiin_damba
+recruit_character = MON_gelegdorjiin_demid
+recruit_character = MON_jamsrang_tseren
+recruit_character = MON_enrique_lister
+recruit_character = MON_georgy_zhukov
+recruit_character = MON_konstantin_rokossovsky
+recruit_character = MON_aleksandr_vasilevsky
+recruit_character = MON_boris_shaposhnikov
+recruit_character = MON_nikolay_vatutin
+recruit_character = MON_ivan_konev
+recruit_character = MON_kliment_voroshilov
+recruit_character = MON_semyon_timoshenko
+recruit_character = MON_mikhail_tukhachevsky
+recruit_character = MON_issa_pliyev
+recruit_character = MON_semyon_budyonny
+recruit_character = MON_ivan_chernyakhovsky
+recruit_character = MON_lev_dovator
+recruit_character = MON_leonid_govorov
+recruit_character = MON_grigory_kulik
+recruit_character = MON_kirill_meretskov
+recruit_character = MON_filipp_golikov
+recruit_character = MON_andrey_yeryomenko
+recruit_character = MON_georgy_zakharov
+recruit_character = MON_yakov_cherevichenko
+recruit_character = MON_maks_reyter
+recruit_character = MON_nikandr_chibisov
+recruit_character = MON_vasily_kuznetsov
+recruit_character = MON_andrey_vlasov
+recruit_character = MON_ivan_fedyuninsky
+recruit_character = MON_maksim_purkayev
+recruit_character = MON_kuzma_galitsky
+recruit_character = MON_markian_popov
+recruit_character = MON_nikolay_berzarin
+recruit_character = MON_aleksandr_gorbatov
+recruit_character = MON_kirill_moskalenko
+recruit_character = MON_dmitry_lelyushenko
+recruit_character = MON_andrey_grechko
+recruit_character = MON_rodion_malinovsky
+recruit_character = MON_vasily_chuykov
+#generic navy chief
+recruit_character = MON_navy_chief
 
-1939.1.1 = {
+#air chiefs
+recruit_character = MON_damchaagiin_demberel
+recruit_character = MON_vladimir_sudets
+recruit_character = MON_hamza_zaysanov
 
-	add_political_power = 1198
-	add_command_power = 100
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = construction_effort_2
-	complete_national_focus = production_effort_2
-	complete_national_focus = infrastructure_effort
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "MON_1939"
-	set_technology = {
-		support_weapons = 1
-		gw_artillery = 1
-		
-		#doctrines
-		air_superiority = 1
-		
-		mass_assault = 1
-		pocket_defence = 1
-		defence_in_depth = 1
+#high command
+recruit_character = MON_lodongiin_dandar
+recruit_character = MON_zhamyangiyn_lhagvasuren
+recruit_character = MON_issa_pliev
+recruit_character = MON_tsendiin_olzvoy
+recruit_character = MON_shagdaryn_gongor
+recruit_character = MON_batyn_dorj
+recruit_character = MON_butochiyn_tsog
 
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		mechanical_computing = 1
+recruit_character = MON_sandivyn_ravdan
 
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		construction1 = 1
-		construction2 = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
-	}
-	complete_special_project = {
-		project = sp:sp_air_radar
-	}
-}
+activate_advisor = MON_khorloogiin_choibalsan
+add_dynamic_modifier = { modifier = SOV_the_red_army_dynamic_modifier }
 
+#MONGOLIAUPDATEDRECRUITMENT
 set_politics = {
 	ruling_party = communism
 	last_election = "1936.1.1"
@@ -87,15 +126,6 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	communism = 100
-}
-
-1939.1.1 = {
-	add_ideas = {
-		limited_conscription
-	}
-
-	recruit_character = MON_khorloogiin_choibalsan
-	promote_character = MON_khorloogiin_choibalsan
-	retire_character = MON_anandyn_amar
+	communism = 40
+	neutrality = 60
 }

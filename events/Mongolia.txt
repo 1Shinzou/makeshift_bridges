@@ -1,0 +1,70 @@
+﻿
+add_namespace = mongol
+add_namespace = mongol_khalkin_gol
+add_namespace = mongol_democratic
+add_namespace = mongol_genden
+
+add_namespace = mongol_soviet_puppet
+add_namespace = mongol_foreign_influence
+
+add_namespace = mongol_greater_mongolia
+
+add_namespace = mongol_rp_advisor
+
+add_namespace = mongol_anti_soviet
+
+add_namespace = mongol_army 
+#1935 external policy negotiations
+
+#####################POLITICAL EVENTS############################
+
+#Dealing with Genden
+country_event = {
+	id = mongol.35
+	title = mongol.35.t
+	desc = mongol.35.d
+	picture = GFX_report_event_MON_genden_with_others
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	#Allow him to remain in office as foreign minister.
+	option = {
+		name = mongol.35.a
+		ai_chance = { 
+			base = 40
+		}
+		add_war_support = 0.05
+		
+		set_country_flag = MON_genden_allowed_in_office_flag
+		custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip = MON_peljidiin_genden
+	}
+
+	#Force him into early retirement.
+	option = {
+		name = mongol.35.b
+		ai_chance = { 
+			base = 40
+			modifier = {	#historical option
+				factor = 10
+				is_historical_focus_on = yes
+			}
+		}
+		add_stability = 0.05
+		
+	}
+
+	#Such behaviour cannot be tolerated, arrest, or even better, assassinate him!
+	option = {
+		name = mongol.35.c
+		add_stability = -0.1
+		add_popularity = {
+			ideology = communism
+			popularity = -0.10
+		}
+		custom_effect_tooltip = MON_required_for_leftist_takover
+		set_country_flag = MON_kill_genden_for_future_leftist_takeover
+	}
+}

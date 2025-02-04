@@ -2,33 +2,22 @@
 state = {
 	id = 301
 	name = "STATE_301"
-	manpower = 890100
+	manpower = 0
 	
-	state_category = town
+	state_category = wasteland
 	
 	history = {
 
 		owner = WST
 		add_core_of = WST
 
-		buildings = {
-			infrastructure = 2
-			arms_factory = 1
-			industrial_complex = 3
-			air_base = 1
-		}
 		
-		victory_points = {
-			2152 10 
-		}
+		
+		
 
-		victory_points = {
-			2194 5 
-		}
+		
 
-		victory_points = {
-			11023 1
-		}
+		
 
 	}
 
@@ -37,5 +26,5 @@ state = {
 	}
 	
 
-	local_supplies = 0.0 
+	local_supplies=0.0 
 }

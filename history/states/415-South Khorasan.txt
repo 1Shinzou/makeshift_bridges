@@ -2,21 +2,15 @@
 state={
 	id=415
 	name="STATE_415" # Herat
-	manpower = 1
+	manpower = 0
 	
-	state_category = rural
+	state_category = wasteland
 
 	history={
 		owner = WST
-		buildings = {
-			infrastructure = 1
-		}
-		victory_points = {
-			4893 1 
-		}
-		victory_points = {
-			5064 1 
-		}
+		
+		
+		
 		add_core_of = WST
 	}
 

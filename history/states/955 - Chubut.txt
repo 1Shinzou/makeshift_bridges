@@ -1,9 +1,9 @@
 state = {
 	id = 955
 	name = "STATE_955"
-	manpower = 395040
+	manpower = 0
 	
-	state_category = rural
+	state_category = wasteland
 	
 	resources = {
 		oil = 4
@@ -15,24 +15,13 @@ state = {
 		add_core_of = WST
 		add_core_of = WST
 
-		buildings = {
-			infrastructure = 1
-			10953 = {
-				naval_base = 1
-			}
-		}
+		
 
-		victory_points = {
-			13307 2 
-		}
+		
 
-		victory_points = {
-			10953 3 
-		}
+		
 
-		victory_points = {
-			8161 1 
-		}
+		
 		
 	}
 
@@ -40,5 +29,5 @@ state = {
 		8161 8176 10953 11005 13296 13306 13307
 	}
 
-	local_supplies = 0.0 
+	local_supplies=0.0 
 }

@@ -7,16 +7,12 @@ state={
 
 	history={
 		owner = WST
-		buildings = {
-			infrastructure = 1
-		}
-		victory_points = {
-			12557 1 #Choibalsan
-		}
+		
+		
 		add_core_of = WST
 	}
-	manpower=88250
+	manpower = 0
 	buildings_max_level_factor=1.000
-	state_category=pastoral
-	local_supplies=0.000
+	state_category = wasteland
+	local_supplies=0.0
 }

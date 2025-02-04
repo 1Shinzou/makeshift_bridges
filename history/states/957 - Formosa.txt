@@ -1,9 +1,9 @@
 state = {
 	id = 957
 	name = "STATE_957"
-	manpower = 500000
+	manpower = 0
 	
-	state_category = pastoral
+	state_category = wasteland
 	
 	resources = {
 		tungsten = 5
@@ -17,13 +17,9 @@ state = {
 		add_claim_by = WST
 		add_claim_by = WST
 
-		buildings = {
-			infrastructure = 1
-		}
+		
 
-		victory_points = {
-			12922 1 
-		}
+		
 		
 	}
 
@@ -31,5 +27,5 @@ state = {
 		10944 12922 12943
 	}
 
-	local_supplies = 0.0 
+	local_supplies=0.0 
 }

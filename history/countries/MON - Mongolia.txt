@@ -25,7 +25,7 @@ set_variable = {
 }
 
 add_ideas = {
-	closed_economy
+	export_focus
 	limited_conscription
 	low_economic_mobilisation 
 	MON_ill_educated_population_idea
@@ -92,6 +92,6 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	communism = 40
-	neutrality = 60
+	communism = 60
+	neutrality = 40
 }

@@ -2042,6 +2042,16 @@ on_actions = {
 				}
 				
 			}
+			MON = {
+				add_equipment_to_stockpile = {
+					type = convoy
+					amount = 200
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 7000
+				}
+			}
 			
 			
 		}

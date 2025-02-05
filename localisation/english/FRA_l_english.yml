@@ -2,7 +2,7 @@
  
   # TOOL TIPS
   FRA_create_unit_mainland_tt:0 "Creates §Y50§! Infantry Divisions that will be §RRemoved§! upon Capitulation"
-
+  FRA_mobilize_railway_guns_tt:0 "Create §Y4 $railway_gun_equipment_1$§! units in [ROOT.capital.GetName]."
 
   # FOCUSES
   FRA_self_defense:0 "Responsible For Our Own Defense"
@@ -25,8 +25,18 @@
 FRA_tonkin_mines_desc:0 "The soil of our colony in Indochina abounds in resources. A few investments could prove highly profitable..."
 FRA_syria_oil:0 "Developing oil wells in Syria"
 FRA_syria_oil_desc:0 "The soil of our colony in Indochina abounds in resources. A few investments could prove highly profitable..."
-
-
+   FRA_increase_military_spendings:0 "Increase Military Spending"
+ FRA_increase_military_spendings_desc:0 "Military spending must be relaunched to face the danger of war, which is becoming more and more visible."
+ FRA_further_the_reforms:0 "Further the Reforms"
+ FRA_further_the_reforms_desc:0 "The Matignon agreements must not signal the end of social reforms in [FRA.GetNameDef]. We should continue supporting workers with provisions to empower the middle classes to win their support."
+  FRA_rearmament_policy:0 "Rearmament Policy"
+ FRA_rearmament_policy_desc:0 "As European policies continue to change, war seems closer and closer. Whether it comes from [GER.GetNameDef] or [SOV.GetNameDef], we must be prepared for a new conflict."
+   FRA_departements_doutremer:0 "Overseas departments"
+ FRA_departements_doutremer_desc:0 "Some of our most integrated territories are more than ready to become French departments, which legislative proposals have been demanding for over a century."
+  FRA_continue_mandat:0 "Accept The Inevitable"
+ FRA_continue_mandat_desc:0 "As the storm clouds of war gather, it becomes increasingly clear that conflict is unavoidable. Accepting the inevitable allows us to focus our energies on preparation and strategy, ensuring that when war comes, France will stand united and resolute against her foes."
+   FRA_support_daladier:0 "Support Daladier"
+ FRA_support_daladier_desc:0 "Blum has shown us that he can't lead a country during a crisis. He must resign and cede the office to Edouard Daladier, the leader of the Parti Radical and the number two of the Popular Front."
 	#### COMPAGNIES ####
  fcm:0 "FCM"
  fcm_desc:0 "Forges et Chantiers de la Méditerranée"

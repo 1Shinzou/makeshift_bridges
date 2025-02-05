@@ -2,6 +2,68 @@ ideas = {
 
 	country = {
 
+		# NEW
+
+		FRA_rearmament_policy = {
+			
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			picture = HUN_secret_rearmament
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+
+		FRA_further_the_reforms = {
+			
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			picture = prc_low_popular_support3
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				local_resources_factor = 0.05
+			}
+		}
+
+		FRA_increase_military_spendings = {
+			
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			picture = generic_war_preparation
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+	
+
+
+		# VANILLA
+
 		FRA_full_employment = {
 			picture = generic_production_bonus
 			allowed = {

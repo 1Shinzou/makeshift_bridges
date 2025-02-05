@@ -414,7 +414,7 @@ focus_tree = {
 				name = MON_lessons_from_1934_rebellion
 				bonus = 1
 				uses = 1
-				category = cat_1941_tanks
+				category = armor
 			}
 				add_ideas = MON_idea_license_production
 			army_experience = 25
@@ -650,7 +650,7 @@ focus_tree = {
 					name = MON_lessons_from_1934_rebellion
 					bonus = 1
 					uses = 1
-					category = cat_1943_tanks
+					category = armor
 				}
 			add_tech_bonus = {
 				name = MON_improve_coordination_capabilities

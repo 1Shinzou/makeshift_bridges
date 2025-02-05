@@ -24,7 +24,7 @@ sp_land_flamethrower_tank = {
 	
 	available = {
 		FROM = {
-			has_tech = tech_engineers
+			has_tech = tech_engineers2
 		}
 	}
 
@@ -74,7 +74,13 @@ sp_land_flamethrower_tank = {
 		}
 
 		enable_equipment_modules = {
-			flamethrower 
+			advanced_flamethrower 
+		}
+		hidden_effect = {
+			set_technology = {
+				sp_armored_advanced_flamethrower_tech = 1
+				popup = no
+				}
 		}
 
 		enable_equipment_modules = {
@@ -84,11 +90,7 @@ sp_land_flamethrower_tank = {
 			lc_flamethrower_turret
 		}
 
-		enable_subunits = { 
-			light_flame_tank
-			medium_flame_tank
-			heavy_flame_tank
-		}
+		
 	}
 
 	generic_prototype_rewards = {

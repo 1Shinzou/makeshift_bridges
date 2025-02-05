@@ -186,27 +186,27 @@ technologies = {
 
 		enable_equipment_modules = {
 			dozer_blade
-			#flamethrower #MM: Moved to Special Project sp_land_flamethrower_tank
+			flamethrower #MM: Moved to Special Project sp_land_flamethrower_tank
 		}
 
-		#enable_subunits = { #MM: Moved to Special Project sp_land_flamethrower_tank
-		#	light_flame_tank
-		#	medium_flame_tank
-		#	heavy_flame_tank
-		#}
+	  enable_subunits = { #MM: Moved to Special Project sp_land_flamethrower_tank
+			light_flame_tank
+			medium_flame_tank
+			heavy_flame_tank
+		}
 		
-		#on_research_complete = { #MM: Moved to Special Project sp_land_flamethrower_tank
-		#	hidden_effect = {
-		#		if = {
-		#			limit = {
-		#				has_dlc = "No Step Back"
-		#				original_tag = ITA
-		#				has_completed_focus = ITA_italian_tankettes
-		#			}
-		#			ITA_add_basic_light_flamethrower_template = yes
-		#		}
-		#	}
-		#}
+		on_research_complete = { #MM: Moved to Special Project sp_land_flamethrower_tank
+			hidden_effect = {
+				if = {
+					limit = {
+					has_dlc = "No Step Back"
+						original_tag = ITA
+						has_completed_focus = ITA_italian_tankettes
+					}
+					ITA_add_basic_light_flamethrower_template = yes
+				}
+			}
+		}
 		
 		path = {
 			leads_to_tech = tech_engineers3

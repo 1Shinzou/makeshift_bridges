@@ -24,7 +24,7 @@ sp_land_flamethrower_tank = {
 	
 	available = {
 		FROM = {
-			has_tech = tech_engineers2
+			has_tech = sp_armored_advanced_flamethrower_tech
 		}
 	}
 

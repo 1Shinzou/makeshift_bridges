@@ -8397,7 +8397,10 @@ focus = {
 			}
 		}
 
-		available = {
+		available = {	
+				has_war = no
+				is_subject = no
+				date > 1939.1.1
 			OR = {
 				NOT = { has_country_flag = SOV_paranoia_system_active_flag }
 			}

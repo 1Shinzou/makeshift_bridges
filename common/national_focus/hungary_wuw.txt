@@ -25,7 +25,7 @@ focus_tree = {
 
 	continuous_focus_position = { x = 50 y = 1750 }
 
-	shared_focus = HABSBURG_part_of_something_bigger
+	#shared_focus = HABSBURG_part_of_something_bigger
 
 	initial_show_position = {
 	    focus = wuw_HUN_continue_the_regency

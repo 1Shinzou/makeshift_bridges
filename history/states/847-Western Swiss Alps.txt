@@ -2,16 +2,13 @@
 state={
 	id=847
 	name="STATE_847"
-	manpower = 178429
-	state_category = pastoral
+	manpower = 1
+	state_category = wasteland
 	resources={
 	}
 	history={
 		owner = WST
-		buildings = {
-			infrastructure = 1 
-			industrial_complex = 1
-		}
+		
 		add_core_of = WST
 	}
 	provinces={

@@ -1,9 +1,9 @@
 state = {
 	id = 950
 	name = "STATE_950"
-	manpower = 1300000
+	manpower = 1
 	
-	state_category = town
+	state_category = wasteland
 	
 	resources = {
 		steel = 24 # Steel + replacement of copper
@@ -14,24 +14,11 @@ state = {
 		owner = WST
 		add_core_of = WST
 
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 2
-			5121 = {
-				naval_base = 1
-			}
-			5169 = {
-				naval_base = 1
-			}
-		}
 		
-		victory_points = {
-			5121 2
-		}
+		
+		
 
-		victory_points = {
-			5169 1
-		}
+		
 
 	}
 
@@ -39,5 +26,5 @@ state = {
 		5121 5169 12920 12954 13297
 	}
 
-	local_supplies = 0.0 
+	local_supplies=0.0 
 }

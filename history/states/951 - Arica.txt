@@ -1,9 +1,9 @@
 state = {
 	id = 951
 	name = "STATE_951"
-	manpower = 340000
+	manpower = 1
 	
-	state_category = rural
+	state_category = wasteland
 
 	resources = {
 		tungsten = 14 # In replacement of Nitrate
@@ -15,19 +15,11 @@ state = {
 		add_core_of = WST
 		add_claim_by = WST
 
-		buildings = {
-			infrastructure = 1
-			arms_factory = 1
-			air_base = 1
-		}
 		
-		victory_points = {
-			5131 2
-		}
+		
+		
 
-		victory_points = {
-			8217 1
-		}
+		
 
 	}
 
@@ -35,5 +27,5 @@ state = {
 		5131 8217 8231 13303
 	}
 
-	local_supplies = 0.0 
+	local_supplies=0.0 
 }

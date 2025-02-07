@@ -4,20 +4,16 @@ state={
 	provinces={
 		12029 
 	}
-	manpower = 234379
+	manpower = 1
 	
-	state_category = enclave
+	state_category = wasteland
 
 	history= {
 		owner = FRA
 		add_core_of = WST
 		add_core_of = WST
-		victory_points = {
-			12029 1
-		}
-		buildings = {
-			infrastructure = 1
-		}
+		
+		
 
 		1938.9.30 = {
 			owner = WST

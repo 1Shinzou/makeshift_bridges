@@ -2,26 +2,17 @@
 state= {
 	id=341
 	name="STATE_341"
-	manpower = 363947
+	manpower = 1
 	resources={
 
 	}
 	
-	state_category = town
+	state_category = wasteland
 
 	history= {
 		owner =CHO
-		victory_points = {
-			11842 5
-		}
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-			849 = {
-				naval_base = 3
-				coastal_bunker = 2
-			}
-		}
+		
+		
 		add_core_of =CHO
 
 		1936.1.1.1 = { 

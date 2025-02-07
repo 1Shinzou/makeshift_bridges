@@ -5,8 +5,8 @@ state = {
 		rubber = 5.000
 	}
 
-	state_category = pastoral
-	manpower = 1693974
+	state_category = wasteland
+	manpower = 1
 
 	history = {
 
@@ -15,19 +15,12 @@ state = {
 
 		
 
-		victory_points = {
-			988 2 # Coquilhatville
-		}
+		
 
-		buildings = {
-			infrastructure = 1
-		}
+		
 
 		1939.1.1 = {
-			buildings = {
-				infrastructure = 1
-				industrial_complex = 1
-			}
+			
 		}
 
 	}
@@ -37,5 +30,5 @@ state = {
 	}
 	
 	buildings_max_level_factor = 1.000
-	local_supplies = 1.000
+	local_supplies=0.0
 }

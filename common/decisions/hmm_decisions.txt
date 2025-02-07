@@ -159,45 +159,7 @@ operations = {
 
         }
 
-    annex_CONGO = {
-            # icon = generic_operation
-            allowed = {
-                tag = FRA
-            }
-            fire_only_once = yes
-            cost = 0
-            ai_will_do = {
-                factor = 0
-            }
-            available = {
-                         FRA = {has_capitulated = yes}
-                }
-            targets = {
-                COG
-            }
-            complete_effect = {
-                COG = {
-                    transfer_units_fraction = {
-                        target = FRA
-                        size = 1
-                        stockpile_ratio = 1
-                        army_ratio = 1
-                        navy_ratio = 1
-                        air_ratio = 1
-                        keep_unit_leaders_trigger = {
-                            always = no
-                        }
-                    }
-                }
-                FRA = {
-                    annex_country = {
-                        target = COG
-                        transfer_troops = yes
-                    }
-                }
-            }
-
-        }
+	
 		annex_siam = {
 			# icon = generic_operation
 			allowed = {
@@ -298,60 +260,6 @@ operations = {
 				}
 			}
 		}
-		annex_new_zealand = {
-			# icon = generic_operation
-			allowed = {
-				tag = AST
-			}
-			fire_only_once = yes
-			cost = 0
-			ai_will_do = {
-				factor = 0
-			}
-			available = {
-				NZL = {
-					is_ai = yes
-				}
-				ENG = {
-						has_completed_focus = uk_new_zealand_focus
-				}
-				NZL = {
-						has_completed_focus = NZL_think_big
-				}
-	
-			}
-			targets = {
-				NZL
-			}
-			complete_effect = {
-				NZL = {
-					transfer_units_fraction = {
-						target = AST
-						size = 1
-						stockpile_ratio = 1
-						army_ratio = 1
-						navy_ratio = 1
-						air_ratio = 1
-						keep_unit_leaders_trigger = {
-							always = no
-						}
-					}
-				}
-				AST = {
-					annex_country = {
-						target = NZL
-						transfer_troops = yes
-					}
-				}
-				every_state = {
-					limit = {
-						is_core_of = NZL
-						is_controlled_by = AST
-					}
-					add_core_of = AST
-				}
-			}
-		}
 		annex_philippines= {
 			# icon = generic_operation
 			allowed = {
@@ -401,6 +309,34 @@ operations = {
 		}
 }
 political_actions = {
+
+   uk_texas_oil = {
+        icon = GFX_decision_oil
+        allowed = {
+            tag = ENG
+        }
+        fire_only_once = yes
+            cost = 0
+            ai_will_do = {
+                factor = 0
+            }
+            available = {
+                ENG = {
+                    has_war = yes
+                }
+            }
+            targets = {
+                USA
+            }
+            complete_effect = {
+                USA = {
+                    give_resource_rights = {
+					receiver = ENG
+					state = 375
+				}
+                }
+            }
+    }
 
 	move_capital_to_cascablanca = {
 		fire_only_once = yes

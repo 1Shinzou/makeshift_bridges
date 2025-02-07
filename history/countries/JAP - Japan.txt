@@ -381,7 +381,7 @@ if = {
 	}
 }
 
-set_convoys = 400
+set_convoys = 1000
 
 if = {
 	limit = {

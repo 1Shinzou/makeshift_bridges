@@ -965,8 +965,8 @@
 					bonus = 1.0
 					uses = 3
 					category = cat_strategic_bomber
-					category = tactical_bomber
-					category = naval_air
+					category = cat_air_bombs
+					category = cat_torpedoes
 				}
 				add_tech_bonus = {
 					name = AST_cac_woomera

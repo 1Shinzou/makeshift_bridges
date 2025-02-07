@@ -5,29 +5,24 @@ state = {
 		tungsten = 2
 	}
 	
-	state_category = rural
+	state_category = wasteland
 
 	history = {
 
 		owner = WST
 		add_core_of = WST
 
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-		}
+		
 
-		victory_points = {
-			13086 2
-		}
+		
 
 	}
 
 	provinces = {
 		13086 13287
 	}
-	manpower = 130000
+	manpower = 0
 	buildings_max_level_factor = 1.000
 
-	local_supplies = 0.0 
+	local_supplies=0.0 
 }

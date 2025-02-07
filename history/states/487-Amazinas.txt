@@ -2,18 +2,23 @@
 state = {
 	id = 487
 	name = "STATE_487"
-	manpower = 0
+	manpower = 334500
 	
-	state_category = wasteland
+	state_category = pastoral
 
 	history = {
 
 		owner = WST
 		add_core_of = WST
 
-		
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
 
-		
+		victory_points = {
+			2160 5 
+		}
 		
 	}
 
@@ -22,5 +27,5 @@ state = {
 	}
 	
 
-	local_supplies=0.0 
+	local_supplies = 0.0 
 }

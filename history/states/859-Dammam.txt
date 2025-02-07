@@ -1,7 +1,7 @@
 state = {
 	id = 859
 	name = "STATE_859"
-	manpower = 0
+	manpower = 440000
 
 	resources = {
 		oil = 3.000
@@ -12,15 +12,22 @@ state = {
 		owner = WST
 		add_core_of = WST
 
-		
+		victory_points = {
+			12702 1 
+		}
 
-		
+		buildings = {
+			infrastructure = 1
+			12702 = {
+				naval_base = 6
+			}
+		}
 	}
 	
 	provinces = {
 		1955 10791 10850 12702 
 	}
-	state_category = wasteland
+	state_category = rural
 	buildings_max_level_factor = 1.000
-	local_supplies=0.0
+	local_supplies = 0.000
 }

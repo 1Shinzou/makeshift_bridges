@@ -1,9 +1,9 @@
 state = {
 	id = 506
 	name = "STATE_506" # Antofagasta
-	manpower = 0
+	manpower = 423605
 	
-	state_category = wasteland
+	state_category = town
 
 	resources = {
 		tungsten = 42 # In replacement of Nitrate
@@ -15,9 +15,19 @@ state = {
 		add_core_of = WST
 		add_claim_by = WST
 
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			dockyard = 1
+			air_base = 1
+			12994 = {
+				naval_base = 1
+			}
+		}
 		
-		
-		
+		victory_points = {
+			12994 10
+		}
 
 	}
 
@@ -25,5 +35,5 @@ state = {
 		5146 5171 12994 13301 13302 13304
 	}
 
-	local_supplies=0.0 
+	local_supplies = 0.0 
 }

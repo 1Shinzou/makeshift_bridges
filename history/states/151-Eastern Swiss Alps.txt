@@ -2,15 +2,18 @@
 state={
 	id=151
 	name="STATE_151"
-	manpower = 0
-	state_category = wasteland
+	manpower = 598920
+	state_category = rural
 	resources={
 		aluminium=15 # was: 24
 	}
 	history={
 		owner = WST
-		
-		
+		victory_points = { 658 1 }
+		buildings = {
+			infrastructure = 1 
+			industrial_complex = 1
+		}
 		add_core_of = WST
 	}
 	provinces={

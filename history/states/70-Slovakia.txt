@@ -4,9 +4,9 @@ state = {
 
 	name = "STATE_70"
 
-	manpower = 0
+	manpower = 1230500
 	
-	state_category = wasteland
+	state_category = city
 	
 	resources = {
 		tungsten = 1 # was: 2
@@ -16,13 +16,24 @@ state = {
 
 		owner = CZE
 		
-		
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 3
+		}
 
-		
+		victory_points = {
+			9692 10 # Bratislava
+		}
 
-		
+		victory_points = {
+			11539 5 # Zilina
+		}
 
-		
+		victory_points = {
+			541 2 # Nitra
+		}
 
 		add_core_of = CZE
 		add_core_of = WST
@@ -38,5 +49,5 @@ state = {
 		541 3484 3537 9539 9692 11522 11539 
 	}
 
-	local_supplies=0.0 
+	local_supplies = 3.0 
 }

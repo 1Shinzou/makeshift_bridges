@@ -2,15 +2,22 @@
 state={
 	id=306
 	name="STATE_306" # Cundinamarca
-	manpower = 0
+	manpower = 4953049
 	
-	state_category = wasteland
+	state_category = city
 	
 	history={
 		owner = WST
-		
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 5
+			air_base = 2
+		}
 		add_core_of = WST
-		
+		victory_points = {
+			10747 10
+		}
 
 	}
 
@@ -18,5 +25,5 @@ state={
 		2079 7936 7991 7993 10747 10790 10846 
 	}
 
-	local_supplies=0.0 
+	local_supplies=4.0 
 }

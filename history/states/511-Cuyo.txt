@@ -1,18 +1,24 @@
 state = {
 	id = 511
 	name = "STATE_511" # Mendoza
-	manpower = 0
+	manpower = 1090274
 	
-	state_category = wasteland
+	state_category = rural
 
 	history = {
 
 		owner = WST
 		add_core_of = WST
 
-		
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 1
+		}
 
-		
+		victory_points = {
+			10964 2 
+		}
 
 	}
 
@@ -20,5 +26,5 @@ state = {
 		2179 2215 8215 10964 10992  
 	}
 
-	local_supplies=0.0 
+	local_supplies = 0.0 
 }

@@ -5,10 +5,7 @@ state = {
 	
 	state_category = wasteland
 	
-	resources = {
-		tungsten = 5
-		steel = 2
-	}
+	
 
 	history = {
 

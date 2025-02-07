@@ -8,9 +8,7 @@ state = {
 	
 	state_category = wasteland
 	
-	resources = {
-		tungsten = 1 # was: 2
-	}
+	
 
 	history = {
 

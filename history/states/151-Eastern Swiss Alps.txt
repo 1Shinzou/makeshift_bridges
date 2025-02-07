@@ -4,9 +4,7 @@ state={
 	name="STATE_151"
 	manpower = 1
 	state_category = wasteland
-	resources={
-		aluminium=15 # was: 24
-	}
+	
 	history={
 		owner = WST
 		

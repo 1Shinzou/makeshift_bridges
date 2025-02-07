@@ -6,10 +6,7 @@ state={
 	
 	state_category = wasteland
 	
-	resources={
-		aluminium=2 # was: 2
-		chromium=2 # was: 3
-	}
+	
 
 	history={
 		owner = WST

@@ -5,12 +5,8 @@ state = {
 	
 	state_category = wasteland
 
-	resources = {
-		aluminium = 1
-	}
-	resources = {
-		oil = 1
-	}
+	
+	
 
 	history = {
 

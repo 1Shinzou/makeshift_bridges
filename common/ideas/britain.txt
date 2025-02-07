@@ -356,7 +356,7 @@ ideas = {
 			}
 		}
 
-		ENG_quality_RAF_pilots = {
+		ENG_quality_RAF_pilots = { 
 		
 			name = ENG_quality_RAF_pilots
 			
@@ -376,6 +376,7 @@ ideas = {
 			modifier = {
 				experience_gain_air = 0.05
 				air_ace_generation_chance_factor = 0.25
+				air_range_factor = 0.1
 			}
 		}
 

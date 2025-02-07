@@ -4063,7 +4063,7 @@ focus_tree = {
 	}	
 	focus = {
 		id = ENG_amplify_the_exploitation_of_welsh_coal
-		icon = GFX_goal_generic_production2
+		icon = GFX_focus_generic_hydroelectric_energy
 		cost = 10
 		prerequisite = {
 			focus = ENG_expand_southern_industry

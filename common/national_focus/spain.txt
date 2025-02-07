@@ -118,6 +118,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			
 			add_popularity = {
 			    ideology = fascism
 			    popularity = 0.1
@@ -127,6 +128,16 @@ focus_tree = {
 			    popularity = 0.05
 			}
 			hidden_effect = {
+				every_owned_state = {
+				limit = {
+					is_core_of = ROOT
+					is_fully_controlled_by = ROOT
+				}
+			#	add_dynamic_modifier = {
+			#		modifier = SPR_STATE_NO_AIRPORTS
+			#		scope = SPR
+			#	}
+			}	
 				every_owned_state = {
 					limit = {
 						NOT = {
@@ -138,6 +149,7 @@ focus_tree = {
 					}
 					SPA_garrison_control_cost_calculation = yes
 				}
+
 			}
 			add_political_power = 15
 		}
@@ -1182,7 +1194,7 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_fascist_economic_aid focus = SPA_spanish_austerity }
+		prerequisite = { focus = SPA_facilitate_pyrenees_freight_transports focus = SPA_spanish_austerity }
 		
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 1
@@ -1219,7 +1231,7 @@ focus_tree = {
 		prerequisite = { focus = SPA_support_the_war_industry focus = SPA_expand_the_axis_gold_trade }
 		
 		icon = GFX_goal_generic_construct_mil_factory
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = SPA_support_the_war_industry
 		cost = 10
@@ -1932,9 +1944,14 @@ focus_tree = {
 							}
 						}
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = industrial_complex
 						level = 2
 						instant_build = yes
 					}
@@ -2383,8 +2400,8 @@ focus_tree = {
 		prerequisite = { focus = SPA_dictator_for_life focus = SPA_restore_the_monarchy }
 		
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		x = -2
-		y = 2
+		x = -3
+		y = 1
 		relative_position_id = SPA_dictator_for_life
 		cost = 10
 
@@ -2568,7 +2585,7 @@ focus_tree = {
 	focus = {
 		id = SPA_la_division_azul
 		available = {
-			has_completed_focus = SPA_adopt_the_26_points
+			
 		}
 		bypass = {
 		}
@@ -2578,20 +2595,13 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_dictator_for_life
-		cost = 1
+		cost = 5
 
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_ideas = SPA_la_division_azul
-			if = {
-				limit = {
-					has_government = neutrality
-				}
-				set_rule = {
-					can_send_volunteers = yes
-				}
-			}
+
 		}
 	}
 
@@ -2647,6 +2657,10 @@ focus_tree = {
 	focus = {
         id = SPA_unite_iberia
         available = {
+				
+			GER = {
+					has_war = yes
+					}
             OR = {
                 AND = {
                     country_exists = POR
@@ -2682,6 +2696,7 @@ focus_tree = {
         available_if_capitulated = yes
 
         completion_reward = {
+			
 			add_named_threat = {
 				threat = 3
 				name = SPR_Porgual
@@ -2707,46 +2722,98 @@ focus_tree = {
                         transfer_troops = no
                     }
                 }
+		
+		
         }
     }
 
-	focus = {
-		id = SPA_restore_the_monarchy
+		focus = {
+		id = SPA_join_the_axis
 		available = {
+			has_global_flag = scw_over
+			is_in_faction = no
+			OR = {
+				AND = {
+					GER = {
+						has_government = fascism
+						is_faction_leader = yes
+					}
+				}
+				AND = {
+					ITA = {
+						has_government = fascism
+						is_faction_leader = yes
+					}
+				}
+			}
+			NOT = { has_completed_focus = SPA_the_latin_bloc }
+			NOT = { has_global_flag = POR_iberian_summit_in_progress_flag }
 		}
 		bypass = {
+			OR = {
+				AND = {
+					NOT = { GER = { has_government = fascism } }
+					NOT = { ITA = { has_government = fascism } }
+				}
+				is_in_faction_with = GER
+				is_in_faction_with = ITA
+			}
 		}
-		prerequisite = { focus = SPA_adopt_the_26_points }
-		mutually_exclusive = { focus = SPA_dictator_for_life }
+		prerequisite = { focus = SPA_unite_iberia }
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
 		
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		x = 3
+		icon = GFX_goal_support_fascism
+		x = 0
 		y = 1
-		relative_position_id = SPA_adopt_the_26_points
-		cost = 10
+		relative_position_id = SPA_unite_iberia
+		cost = 5
 
 		available_if_capitulated = yes
+		       hidden_effect = {
+                every_owned_state = {
+                limit = {
+                    is_core_of = ROOT
+                    is_fully_controlled_by = ROOT
+                }
+            #    add_dynamic_modifier = {
+            #        modifier = SPR_STATE_NO_AIRPORTS
+            #        scope = SPR
+            #    }
+            }   
+            }
 
 		completion_reward = {
+			add_stability = 0.2
+			set_rule = { can_join_factions = yes }
 			if = {
 				limit = {
-					has_completed_focus = SPA_supremacy_of_the_communion
+					GER = {
+						has_government = fascism
+						is_faction_leader = yes
+					}
 				}
-				custom_effect_tooltip = SPA_restore_the_monarchy_tt
-				hidden_effect = {
-					drop_cosmetic_tag = yes
-					set_cosmetic_tag = SPB_kingdom
-				}
-				news_event = { id = lar_news.17 hours = 6 }
+				GER = { country_event = generic.2 }
 			}
 			if = {
 				limit = {
-					NOT = { has_completed_focus = SPA_supremacy_of_the_communion }
+					ITA = {
+						has_government = fascism
+						is_faction_leader = yes
+					}
 				}
-				news_event = { id = lar_news.18 hours = 6 }
+				ITA = { country_event = generic.2 }
 			}
 		}
 	}
+
+	
 
 	focus = {
 		id = SPA_stamp_out_the_maquis
@@ -2781,7 +2848,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_stamp_out_the_maquis
-		cost = 10
+		cost = 1
 
 		available_if_capitulated = yes
 
@@ -2794,31 +2861,11 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = anti_air_building
-					level = 1
+					level = 4
 					instant_build = yes
 				}
 			}
-			171 = { #Galicia
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}						
-			}
-			792 = { #Basque
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}						
-			}
-			41 = { #Madrid
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}						
-			}
+							
 		}
 	}
 
@@ -2834,7 +2881,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_defenses_against_strategic_bombing
-		cost = 10
+		cost = 1
 
 		available_if_capitulated = yes
 
@@ -2852,7 +2899,7 @@ focus_tree = {
 						all_provinces = yes
 						limit_to_naval_base = yes
 					}
-					level = 2
+					level = 8
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -2861,7 +2908,7 @@ focus_tree = {
 						all_provinces = yes
 						limit_to_naval_base = yes
 					}
-					level = 1
+					level = 8
 					instant_build = yes
 				}
 			}

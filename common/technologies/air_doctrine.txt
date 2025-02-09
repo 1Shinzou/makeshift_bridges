@@ -753,6 +753,9 @@ technologies = {
 		air_superiority_detect_factor = 0.15
 		air_mission_xp_gain_factor = 0.05
 		###########
+		allow_branch = {
+			always = no
+		}
 		
 		path = {
 			leads_to_tech = dive_bombing
@@ -1389,6 +1392,9 @@ technologies = {
 		doctrine_name = "TITLE_OPERATIONAL_INTEGRITY"
 		
 		xp_research_type = air
+		allow_branch = {
+			always = no
+		}
 		
 		xor = { formation_flying air_superiority }	
 

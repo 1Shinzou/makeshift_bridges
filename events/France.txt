@@ -469,13 +469,13 @@ country_event = {
 
 		# Italian Occupation Zone (if they did well)
 		
-		
-			
 			ITA = { transfer_state = 32 }
 			ITA = { transfer_state = 851 }		
 			ITA = { transfer_state = 21 }
 			ITA = { transfer_state = 1 }
 			ITA = { transfer_state = 735 }
+			ITA = { transfer_state = 665 }
+			ITA = { transfer_state = 458 }
 			FRA = {
 				transfer_navy = {
 					target = ITA
@@ -606,6 +606,8 @@ country_event = {
 			}
 			start_civil_war = {
 				ideology = fascism
+				army_ratio = 1
+				air_ratio = 1
 				capital = 26
 				states = { 26 21 22 31 25 20 32 33 1 735 458 462 461 513 459 460 665 514 515 782 786 851 }
 				

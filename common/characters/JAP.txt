@@ -42,7 +42,6 @@ characters={
 			id=-1
 		}
 	}
-
 	JAP_tomoyuki_yamashita={
 		name=JAP_tomoyuki_yamashita
 		portraits={
@@ -64,15 +63,15 @@ characters={
 			}
 		}
 
-		# corps_commander={
-		# 	traits={ brilliant_strategist politically_connected trickster trait_engineer }
-		# 	skill=5
-		# 	attack_skill=4
-		# 	defense_skill=5
-		# 	planning_skill=3
-		# 	logistics_skill=4
-		# 	legacy_id=0
-		# }
+		corps_commander={
+			traits={ brilliant_strategist politically_connected trickster trait_engineer organizer infantry_leader panzer_leader trickster }
+			skill=6
+			attack_skill=5
+			defense_skill=6
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=0
+		}
 	}
 
 	JAP_hisaichi_terauchi={
@@ -188,15 +187,15 @@ characters={
 				small=GFX_portrait_JAP_shizuichi_tanaka_small
 			}
 		}
-		# corps_commander={
-		# 	traits={ career_officer infantry_officer trickster }
-		# 	skill=4
-		# 	attack_skill=4
-		# 	defense_skill=3
-		# 	planning_skill=2
-		# 	logistics_skill=4
-		# 	legacy_id=0
-		# }
+		corps_commander={
+			traits={ career_officer infantry_officer organizer infantry_leader panzer_leader trickster }
+			skill=6
+			attack_skill=6
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=0
+		}
 	}
 
 	JAP_yasuji_okamura={
@@ -246,19 +245,19 @@ characters={
 		name=JAP_toshizo_nishio
 		portraits={
 			army={
-				large=GFX_portrait_JAP_toshizo_nishio
-				small=GFX_portrait_JAP_toshizo_nishio_small
+				large="gfx/leaders/JAP/Portrait_Japan_Toshizo_Nishio.dds"
+				small="gfx/interface/ideas/idea_JAP_toshizo_nishio.dds"
 			}
 		}
-		# corps_commander={
-		# 	traits={ brilliant_strategist infantry_officer }
-		# 	skill=3
-		# 	attack_skill=3
-		# 	defense_skill=2
-		# 	planning_skill=3
-		# 	logistics_skill=2
-		# 	legacy_id=0
-		# }
+		corps_commander={
+			traits = { organizer infantry_leader trait_engineer infantry_expert naval_invader commando trickster trait_mountaineer jungle_rat }
+			skill=8
+			attack_skill=5
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=0
+		}
 	}
 
 	JAP_rikichi_ando={
@@ -307,15 +306,15 @@ characters={
 				small=GFX_portrait_JAP_seishiro_itagaki_small
 			}
 		}
-		# corps_commander={
-		# 	traits={ inflexible_strategist trait_reckless JAP_samurai_lineage }
-		# 	skill=3
-		# 	attack_skill=3
-		# 	defense_skill=3
-		# 	planning_skill=2
-		# 	logistics_skill=2
-		# 	legacy_id=0
-		# }
+		corps_commander={
+			traits={ inflexible_strategist trait_reckless JAP_samurai_lineage organizer infantry_leader panzer_leader trickster }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=0
+		}
 	}
 
 	JAP_takashi_sakai={
@@ -336,7 +335,6 @@ characters={
 			legacy_id=0
 		}
 	}
-
 	JAP_kenji_doihara={
 		name=JAP_kenji_doihara
 		portraits={

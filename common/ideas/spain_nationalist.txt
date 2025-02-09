@@ -792,10 +792,10 @@ ideas = {
 				always = yes
 			}
 
-			modifier = {
-				send_volunteer_size = 100
-				send_volunteer_divisions_required = -0.25
-				send_volunteers_tension = -0.20
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
 			}
 		}
 

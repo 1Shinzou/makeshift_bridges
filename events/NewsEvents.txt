@@ -3,7 +3,31 @@
 ###########################
 
 add_namespace = news
-
+# MSB
+# Spain annex Portugal
+news_event = {
+	id = news.6969
+	title = news.6969.t
+	desc = news.6969.d
+	picture = GFX_news_event_herman_goring
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.6969.a
+		trigger = {
+			NOT = {
+				TAG = SPR
+			}
+		}
+	}
+	option = {
+		name = news.6969.b
+		trigger = { TAG = SPR }
+	}
+}
 # Marco Polo Bridge I
 news_event = {
 	id = news.1

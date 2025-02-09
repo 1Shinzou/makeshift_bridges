@@ -608,17 +608,4 @@ on_actions = {
 			
 		}
 	}
-	on_startup = {
-		effect = {
-			every_country = {
-				if = {
-					limit = {
-					amount_research_slots < 3
-					}
-					set_research_slots = 3
-				}
-				
-			}
-		}
-	}
 }

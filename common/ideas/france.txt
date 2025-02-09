@@ -1312,7 +1312,8 @@ ideas = {
 			modifier = {
 				conscription = -0.003
 				war_support_factor = -0.05
-				land_doctrine_cost_factor = 0.5
+				land_reinforce_rate = -0.05
+				army_org_regain = -0.1
 			}
 		}
 

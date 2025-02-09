@@ -9,6 +9,18 @@ focus_tree = {
 		}
 		modifier = {
 			add = 1000000
+			tag = CHO
+		}
+		modifier = {
+			add = 1000000
+			tag = TUM
+		}
+		modifier = {
+			add = 1000000
+			tag = WST
+		}
+		modifier = {
+			add = 1000000
 			tag = SWE
 		}
 		modifier = {

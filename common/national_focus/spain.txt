@@ -2619,7 +2619,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_la_division_azul
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -2722,9 +2722,10 @@ focus_tree = {
                         transfer_troops = no
                     }
                 }
-		
-		
-        }
+			POR = {
+				transfer_navy = { target = SPR }
+        	}
+		}
     }
 
 		focus = {
@@ -2746,8 +2747,7 @@ focus_tree = {
 					}
 				}
 			}
-			NOT = { has_completed_focus = SPA_the_latin_bloc }
-			NOT = { has_global_flag = POR_iberian_summit_in_progress_flag }
+		
 		}
 		bypass = {
 			OR = {
@@ -2848,7 +2848,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_stamp_out_the_maquis
-		cost = 1
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -2881,7 +2881,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_defenses_against_strategic_bombing
-		cost = 1
+		cost = 5
 
 		available_if_capitulated = yes
 

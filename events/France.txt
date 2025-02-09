@@ -541,9 +541,19 @@ country_event = {
 				set_state_owner_to = D04
 			}786 = {
 				set_state_owner_to = D04
+				
 			}851= {
 				set_state_owner_to = D04 
 			}
+			give_resource_rights = {
+				receiver = GER
+				state = 20
+			}
+			give_resource_rights = {
+				receiver = GER
+				state = 22
+			}
+		
 			set_capital = { state = 26 }
 
 			set_politics = {

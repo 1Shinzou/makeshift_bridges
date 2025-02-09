@@ -2366,7 +2366,9 @@ focus_tree = {
 			factor = 30	
 		}
 		available = {
-			custom_trigger_tooltip = {  tooltip = austria_flag  date > 1938.3.13 }
+			AUS = {
+					exists = NO
+			}
 		}
 
 		completion_reward = {
@@ -2533,11 +2535,7 @@ focus_tree = {
 		relative_position_id = MON_true_hero_for_the_people
 		cost = 5
 		available = {
-			NOT = { 
-				219 = {
-					state_is_fully_controlled_by_ROOT_or_subject = yes
-				}
-			}
+			
 		}
 		completion_reward = {
 			SOV = { 
@@ -2583,7 +2581,7 @@ focus_tree = {
 		prerequisite = { focus = MON_support_the_red_army_focus }
 
 		available = {
-			custom_trigger_tooltip = { tooltip = GER_blau_start date > 1942.6.22 }	
+		   date > 1942.6.1
 		}
 		ai_will_do = {
 			factor = 30	

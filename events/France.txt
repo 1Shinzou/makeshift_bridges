@@ -411,9 +411,7 @@ country_event = {
 		FRA = {
 			set_cosmetic_tag = FRA_FREE
 		}
-		D04 = {
-			set_cosmetic_tag = FRA_VICHY
-		}
+		
 		# German Occupation Zone
 		if = {
 			limit = { 28 = { owner = { original_tag = FRA } } }
@@ -622,8 +620,8 @@ country_event = {
 		}
 		random_other_country = {
 			limit = { original_tag = FRA has_government = fascism }
-			ROOT = { puppet = PREV }
 			set_capital = { state = 26 }
+
 			set_politics = {
 				ruling_party = fascism
 				elections_allowed = no
@@ -639,7 +637,7 @@ country_event = {
 				}
 				set_nationality = FRA
 			}
-			
+			set_cosmetic_tag = FRA_VICHY
 			set_country_flag = vichy_france
 			save_event_target_as = vichy_france
 

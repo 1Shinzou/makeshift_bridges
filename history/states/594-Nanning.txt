@@ -18,7 +18,7 @@ state = {
 
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
+			industrial_complex = 2
 			10004 = { # Fangcheng
 				naval_base = 1
 				coastal_bunker = 1

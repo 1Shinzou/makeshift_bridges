@@ -43,7 +43,7 @@ MON = "countries/Mongolia.txt"
 RAJ = "countries/British Raj.txt"
 ETH = "countries/Ethiopia.txt"
 PHI = "countries/Philipines.txt"
-URG = "countries/Uruguay.txt"
+VEN = "countries/Venezula.txt"
 
 
 # REICHSKOMMISSARIATS (no cores) (European)

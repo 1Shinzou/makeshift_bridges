@@ -487,139 +487,63 @@ country_event = {
 				}
 			}
 		
-		#Spanish occupation zone
-		if = {
-			limit = {
-				31 = { #Midi-Pyrinees
-					owner = { original_tag = FRA }
-					controller = { original_tag = SPR }
-				}
-			}
-			random_other_country = {
-				limit = {
-					original_tag = SPR
-					has_war_with = FRA
-				}
-				transfer_state = 31
-			}
-		}
 		FRA = {
 			set_capital = { state = 539 }
-
-			hidden_effect = {
-				set_state_controller = 26
-				set_state_controller = 22
-				set_state_controller = 25
-				set_state_controller = 20
-				set_state_controller = 33
-				#tunisia
-				if = {
-					limit = {
-						458 = {
-							owner = { original_tag = FRA }
-							controller = { 
-								original_tag = FRA
-							}
-						}
-					}
-					set_state_controller = 458
-				}
-
-				#syria
-				if = {
-					limit = {
-						677 = {
-							owner = { original_tag = FRA }
-							controller = { 
-								original_tag = FRA
-							}
-						}
-					}
-					set_state_controller = 677
-				}
-				if = {
-					limit = {
-						680 = {
-							owner = { original_tag = FRA }
-							controller = { 
-								original_tag = FRA
-							}
-						}
-					}
-					set_state_controller = 680
-				}
-				if = {
-					limit = {
-						554 = {
-							owner = { original_tag = FRA }
-							controller = { 
-								original_tag = FRA
-							}
-						}
-					}
-					set_state_controller = 554 
-				}
-
-				if = {
-					limit = {
-						1 = {
-							owner = { original_tag = FRA }
-						}
-					}
-					set_state_controller = 1
-				}
-				if = {
-					limit = {
-						32 = {
-							owner = { original_tag = FRA }
-						}
-					}
-					set_state_controller = 32
-				}
-				if = {
-					limit = {
-						735 = {
-							owner = { original_tag = FRA }
-						}
-					}
-					set_state_controller = 735
-				}
-				if = {
-					limit = {
-						21 = {
-							owner = { original_tag = FRA }
-						}
-					}
-					set_state_controller = 21
-				}
-				if = {
-					limit = {
-						851 = {
-							owner = { original_tag = FRA }
-						}
-					}
-					set_state_controller = 851
-				}
-				if = {
-					limit = {
-						31 = {
-							owner = { original_tag = FRA }
-						}
-					}
-					set_state_controller = 31
-				}
-			}
-			start_civil_war = {
-				ideology = fascism
-				army_ratio = 1
+			transfer_units_fraction = {
+				target = D04
 				air_ratio = 1
-				capital = 26
-				states = { 26 21 22 31 25 20 32 33 1 735 458 462 461 513 459 460 665 514 515 782 786 851 }
-				
+				army_ratio = 1
 			}
+
+			
 		}
-		random_other_country = {
-			limit = { original_tag = FRA has_government = fascism }
+		D04 = {
+			26 = {
+				set_state_owner_to = D04
+			}
+			21 = {
+				set_state_owner_to = D04
+			}22= {
+				set_state_owner_to = D04
+			} 31= {
+				set_state_owner_to = D04
+			} 25= {
+				set_state_owner_to = D04
+			} 20= {
+				set_state_owner_to = D04
+			} 32= {
+				set_state_owner_to = D04
+			} 33= {
+				set_state_owner_to = D04
+			} 1 = {
+				set_state_owner_to = D04
+			}735= {
+				set_state_owner_to = D04
+			} 458 = {
+				set_state_owner_to = D04
+			}462 = {
+				set_state_owner_to = D04
+			}461= {
+				set_state_owner_to = D04
+			} 513= {
+				set_state_owner_to = D04
+			} 459= {
+				set_state_owner_to = D04
+			} 460 = {
+				set_state_owner_to = D04
+			}665= {
+				set_state_owner_to = D04
+			} 514= {
+				set_state_owner_to = D04
+			} 515 = {
+				set_state_owner_to = D04
+			}782 = {
+				set_state_owner_to = D04
+			}786 = {
+				set_state_owner_to = D04
+			}851= {
+				set_state_owner_to = D04 
+			}
 			set_capital = { state = 26 }
 
 			set_politics = {

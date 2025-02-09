@@ -411,10 +411,17 @@ country_event = {
 		FRA = {
 			set_cosmetic_tag = FRA_FREE
 		}
+		D04 = {
+			set_cosmetic_tag = FRA_VICHY
+		}
 		# German Occupation Zone
 		if = {
 			limit = { 28 = { owner = { original_tag = FRA } } }
 			set_state_controller = 28
+		}
+		if = {
+			limit = { 806 = { owner = { original_tag = FRA } } }
+			set_state_controller = 806
 		}
 		if = {
 			limit = { 17 = { owner = { original_tag = FRA } } }

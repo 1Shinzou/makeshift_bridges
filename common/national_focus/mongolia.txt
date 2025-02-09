@@ -112,7 +112,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_manpower = 10000
-			add_timed_idea = { idea = desperate_defense days = 90 }
+			add_timed_idea = { idea = SOV_desperate_measures_ns days = 90 }
 		}
 		search_filters = {	FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL }
 	}

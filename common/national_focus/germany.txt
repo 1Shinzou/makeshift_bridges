@@ -2980,8 +2980,8 @@ focus_tree = {
 				}
 				add_tech_bonus = {
 					name = GER_nationalize_ford_factories
-					bonus = 1
-					uses = 1
+					bonus = 3
+					uses = 3
 					category = cat_armored_cars
 				}
 

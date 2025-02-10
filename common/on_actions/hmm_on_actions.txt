@@ -438,20 +438,6 @@ on_actions = {
 						tag = POL
 					}
 				}
-				if = {
-					limit = {
-						has_game_rule = {
-							rule = Brasil_AC_rule
-							option = Brasil_AC
-						}
-					}
-					ENG = {
-						add_to_faction = BRA
-					}
-					BRA = {
-						add_political_power = -25
-					}
-				}
 				
 				every_country = {
 					limit = {

@@ -84,6 +84,7 @@ hmm_capitulations_on_actions = {
 				OR = {
 					ITA = { has_war_with = YUG }
 					BUL = { has_war_with = YUG }
+					GER = { has_war_with = YUG }
 				}
 		} 
 		YUG = {
@@ -110,18 +111,12 @@ hmm_capitulations_on_actions = {
 			transfer_state = 106
 			transfer_state = 970
 			transfer_state = 803
-			if = {
-				limit = { NOT = { has_idea = peace_training } }
-				add_ideas = peace_training
-			}
+		
 		}
 		HUN = {
 			transfer_state = 764
 			transfer_state = 45
-			if = {
-				limit = { NOT = { has_idea = peace_training } }
-				add_ideas = peace_training
-			}
+		
 		}
 	} 
 	# Albania
@@ -148,22 +143,31 @@ hmm_capitulations_on_actions = {
 			OR = {
 				ITA = { has_war_with = GRE }
 				BUL = { has_war_with = GRE }
+				GER = { has_war_with = YUG }
 			}
 		} 
 		
 		GRE = {
 			transfer_navy = { target = ITA }
 		}
+		ITA = {
+			transfer_state = 185
+			transfer_state = 47
+			transfer_state = 186
+			transfer_state = 187
+			transfer_state = 182
+		
+		}
 		BUL = {
 			add_named_threat = { 
 				threat = 4.3
 				name = hmm_gre
 			}
-			annex_country = {
-				target = GRE
-				transfer_troops = no
-			}
+			transfer_state = 731
+			transfer_state = 184
+		
 		}
+	
 	} 
 	# China
 	if = {

@@ -1769,7 +1769,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = GER_concentrated_armament_program
-		cost = 10
+		cost = 5
 		available = {
 			has_war_with_major = yes
 			has_civil_war = no
@@ -2831,7 +2831,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_instill_auftragstaktik
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -2996,63 +2996,7 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			if = {
-				limit = {
-					NOT = { has_dlc = "Arms Against Tyranny" }
-				}
-				if = {
-					limit = {
-						has_idea = opel
-					}
-					swap_ideas = {
-						remove_idea = opel
-						add_idea = GER_opel_improved
-					}
-				}
-				else = {
-					effect_tooltip = {
-						swap_ideas = {
-							remove_idea = opel
-							add_idea = GER_opel_improved
-						}
-					}
-				}
-				if = {
-					limit = {
-						has_idea = GER_daimler_benz
-					}
-					swap_ideas = {
-						remove_idea = GER_daimler_benz
-						add_idea = GER_daimler_benz_improved
-					}
-				}
-				else = {
-					effect_tooltip = {
-						swap_ideas = {
-							remove_idea = GER_daimler_benz
-							add_idea = GER_daimler_benz_improved
-						}
-					}
-				}
-			}
-			else = {
-				mio:GER_opel_organization = {
-					add_mio_size = 1
-					add_mio_funds_gain_factor = 0.25
-					add_mio_research_bonus = 0.05
 
-					unlock_mio_trait_tooltip = GER_mio_trait_continental_ag_tires
-					unlock_mio_trait_tooltip = GER_mio_trait_ford_facilities
-				}
-				mio:GER_daimler_benz_organization = {
-					add_mio_size = 1
-					add_mio_funds_gain_factor = 0.25
-					add_mio_research_bonus = 0.05
-
-					#unlock_mio_trait_tooltip = 
-					#unlock_mio_trait_tooltip = 
-				}
-			}
 		}
 	}
 	
@@ -3505,7 +3449,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = GER_adopt_new_panzer_doctrine
-		cost = 10
+		cost = 5
 		available = {
 			has_tech = radio
 		}
@@ -9067,7 +9011,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = GER_reassert_eastern_claims
-		cost = 10
+		cost = 0.2
 
 		will_lead_to_war_with = POL
 
@@ -9091,6 +9035,7 @@ focus_tree = {
 		continue_if_invalid = yes
 
 		available = {
+			date > 1939.3.1
 			is_subject = no
 			#100 div			
 			#Make custom trigger tooltip here
@@ -9588,7 +9533,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_around_maginot
-		cost = 10
+		cost = 4
 
 		bypass = {
 			OR = {
@@ -10199,6 +10144,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		available = {
+			date > 1941.6.1
 			is_subject = no
 		}
 
@@ -14683,7 +14629,7 @@ focus_tree = {
 		icon = GFX_focus_GER_loyalty_to_the_fuhrer
 		prerequisite = { focus = GER_hegemony_of_the_ss focus = GER_wunderwaffe focus = GER_integration_of_puppet_economies focus = GER_propaganda_master focus = GER_total_control_over_domestic_affairs }
 	
-		x = 2
+		x = 0
 		y = 5
 		relative_position_id = GER_fuhrerprinzip
 		cost = 5

@@ -155,6 +155,10 @@ SIA = {
 	color = rgb { 171 190 152 }
 	color_ui = rgb { 222 247 198 }
 }
+VEN = {
+	color = rgb { 171 190 152 }
+	color_ui = rgb { 222 247 198 }
+}
 USA = {
 	color = rgb { 20 133 237 }
 	color_ui = rgb { 87 160 255 }
@@ -480,8 +484,4 @@ DON = {
 KUB = {
 	color = rgb { 102 102 153 }
 	color_ui = rgb { 61 61 92 }
-}
-VEN = {
-	color = rgb { 171 190 152 }
-	color_ui = rgb { 222 247 198 }
 }

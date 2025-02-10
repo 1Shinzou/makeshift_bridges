@@ -9,6 +9,14 @@ focus_tree = {
 		}
 		modifier = {
 			add = 1000000
+			tag = VEN
+		}
+		modifier = {
+			add = 1000000
+			tag = PER
+		}
+		modifier = {
+			add = 1000000
 			tag = CHO
 		}
 		modifier = {

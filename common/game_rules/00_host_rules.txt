@@ -1,6 +1,6 @@
 select_host_country = {
 	name = "Select Host for Host Tool"
-	group = "HMM Rules"
+	group = "MSB Rules"
 	icon = "GFX_volunteers"
 	default = {
 		name = GER
@@ -108,41 +108,10 @@ select_host_country = {
 		desc = ""
 	}
 }
-Brasil_AC_rule = {
-	name = "Select if Brasil can be AC"
-	group = "HMM Rules"
-	icon = "GFX_volunteers"
-	default = {
-		name = Brasil_AC
-		text = "Brasil can AC"
-		desc = ""
-	}
-	option = {
-		name = Brasil_no_AC
-		text = "Brasil cant AC"
-		desc = ""
-	}
 
-}
-Germany_Wirtschaftswunder = {
-	name = "Select if Germany is allowed to complete Wirtschaftswunder"
-	group = "HMM Rules"
-	icon = "GFX_volunteers"
-	default = {
-		name = Germany_no_wirtschaftswunder
-		text = "Germany cant do Wirtschaftswunder"
-		desc = ""
-	}
-	option = {
-		name = Germany_wirtschaftswunder
-		text = "Germany can do Wirtschaftswunder"
-		desc = ""
-	}
-
-}
 Germany_Cancel_Mefo= {
 	name = "Select if Germany is allowed to cancel MEFO Bills"
-	group = "HMM Rules"
+	group = "MSB Rules"
 	icon = "GFX_volunteers"
 	default = {
 		name = Germany_no_cancel_MEFO_Bills

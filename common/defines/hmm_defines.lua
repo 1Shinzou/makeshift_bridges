@@ -3,7 +3,7 @@ NDefines.NCountry.GIE_DIVISION_ATTACK_BONUS_AGAINST_OCCUPIER = 0 -- Attack bonus
 NDefines.NCountry.GIE_DIVISION_DEFENSE_BONUS_AGAINST_OCCUPIER = 0 -- Attack bonus factor against whoever occupies your core territory.
 NDefines.NCountry.GIE_DIVISION_ATTACK_BONUS_ON_CORE = 0 -- Attack bonus factor when fighting on cores.
 NDefines.NCountry.GIE_DIVISION_DEFENSE_BONUS_ON_CORE = 0 -- Defense bonus factor when fighting on cores.
-NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.000000001
+NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.000000001 -- 1 Div Training removed
 NDefines.NOperatives.OPERATIVE_CAPTURE_DURATION_IN_DAYS = 1
 NDefines.NOperatives.INTEL_NETWORK_DETECTION_GLOBAL_FACTOR = 0
 NDefines.NProduction.MIN_LAND_EQUIPMENT_CONVERSION_RESOURCE_COST_FACTOR = 0		-- Minimum fraction of a land equipment's strategic resource cost that any conversion will cost.
@@ -41,8 +41,8 @@ NDefines.NGame.LAG_DAYS_FOR_PAUSE = 30
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 14 							    -- WAS 48 | drastically cuts down on save file sizes after WW2 starts and well into barbarossa
 NDefines.NGame.MESSAGE_TIMEOUT_DAYS = 14					     	    -- WAS 60 | less messages lying around at the top of your screen
 
-NDefines_CareerProfile.NCareerProfile.MOD_STATISTICS_GROUP = "HMM"
-NDefines_CareerProfile.NCareerProfile.MOD_STATISTICS_GROUP_NAME = "HMM"
+NDefines_CareerProfile.NCareerProfile.MOD_STATISTICS_GROUP = "MSB"
+NDefines_CareerProfile.NCareerProfile.MOD_STATISTICS_GROUP_NAME = "MSB"
 
 NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0                     -- Removed for game stability/reducing chance of desync
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 9999						    -- Unlimited special forces
@@ -201,4 +201,13 @@ NDefines.NMilitary.ARMY_EXP_BASE_LEVEL = 5
 -- NDefines.NAir.AIR_WING_XP_LEVELS = { 20, 40, 60, 80, 100, 140, 180, 220, 260, 300, 380, 460, 640, 620, 700, 740, 780, 820, 860, 900 }
 NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 6;
 
+-- FUWG/TFB style converts
 NDefines.NMilitary.BATALION_CHANGED_EXPERIENCE_DROP = 0 
+
+NDefines.NAir.INTERCEPTION_DISTANCE_SCALE = 5000 -- At this many pixels of path length, full interception efficiency is applied to air missions. Lerp from 0.
+NDefines.NAir.INTERCEPTION_DAMAGE_SCALE = 0.0 -- Multiply the interception damage with this value. Works as a cap when interception distance is at maximum.
+
+-- Increased General Size Limit
+NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 50
+NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 50
+NDefines.NMilitary.FIELD_MARSHAL_ARMIES_CAP = 7

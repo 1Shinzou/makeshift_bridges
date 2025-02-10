@@ -1778,12 +1778,7 @@ technologies = {
 
 		
 
-		allow = {
-			ROOT = {
-				is_special_project_completed = sp:sp_land_flamethrower_tank
-			}
-			always = no
-		}
+	
 
 		is_special_project_tech = yes
 

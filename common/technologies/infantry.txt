@@ -1743,7 +1743,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1914
 		folder = {
 			name = infantry_folder
@@ -1792,11 +1792,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
-		start_year = 1940
+		research_cost = 1
+		start_year = 1938
 		folder = {
 			name = infantry_folder
-			position = { x = 4 y = @1940 }
+			position = { x = 4 y = @1938 }
 		}
 		
 		categories = {
@@ -1836,11 +1836,11 @@ technologies = {
 			armored_car_equipment_2
 		}
 
-		research_cost = 2
-		start_year = 1942
+		research_cost = 1
+		start_year = 1940
 		folder = {
 			name = infantry_folder
-			position = { x = 4 y = @1942 }
+			position = { x = 4 y = @1940 }
 		}
 		
 		categories = {
@@ -1885,8 +1885,8 @@ technologies = {
 		}
 		special_project_specialization = { specialization_land }
 
-		research_cost = 1
-		start_year = 1942
+		research_cost = 0.5
+		start_year = 1940
 		sub_tech_index = 1
 		
 		categories = {
@@ -2158,9 +2158,7 @@ technologies = {
 		enable_equipments = {
 			mechanized_equipment_3
 		}
-		allow = {
-			always = no
-		}
+		
 
 		mechanized = {
 			soft_attack = 0.15

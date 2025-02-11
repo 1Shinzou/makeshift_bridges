@@ -1096,6 +1096,13 @@ technologies = {
 	
 	tech_field_hospital2 = {
 
+		allow = {
+			has_game_rule = {
+				rule = hospitals
+				option = on
+			}
+		}
+
 		field_hospital = {
 			casualty_trickleback = 0.10
 			experience_loss_factor = -0.10

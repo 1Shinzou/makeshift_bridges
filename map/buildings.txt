@@ -57977,14 +57977,14 @@
 452;coastal_bunker;3207.00;9.60;1169.00;-3.68;0
 452;coastal_bunker;3249.00;9.55;1161.00;-3.36;0
 452;coastal_bunker;3232.00;9.55;1166.00;-3.55;0
-452;stronghold_network;3196.00;9.80;1146.00;4.27;0
+452;stronghold_network;3231.50;9.60;1135.82;4.27;0
 452;dockyard;3237.00;9.55;1163.00;-3.73;0
 452;anti_air_building;3235.00;9.60;1135.00;2.21;0
 452;anti_air_building;3217.00;9.90;1165.00;4.87;0
 452;anti_air_building;3223.00;9.70;1142.00;1.25;0
 452;synthetic_refinery;3240.00;9.60;1130.00;2.81;0
 452;fuel_silo;3213.00;10.05;1159.00;0.65;0
-452;radar_station;3222.00;9.85;1147.00;2.66;0
+452;radar_station;3240.69;9.60;1142.33;2.66;0
 452;nuclear_reactor_spawn;3224.00;9.60;1130.00;5.98;0
 452;special_project_facility_spawn;3204.00;10.00;1163.00;1.26;0
 452;special_project_facility_spawn;3233.00;9.60;1140.00;5.38;0

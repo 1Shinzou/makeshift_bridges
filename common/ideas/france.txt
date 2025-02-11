@@ -1312,8 +1312,9 @@ ideas = {
 			modifier = {
 				conscription = -0.003
 				war_support_factor = -0.05
-				land_reinforce_rate = -0.05
-				army_org_regain = -0.1
+				land_reinforce_rate = -0.02
+				army_morale_factor = -0.1
+				army_org_factor = -0.1
 			}
 		}
 
@@ -1395,8 +1396,9 @@ ideas = {
 			picture = generic_wall_line
 			
 			modifier = {
-				max_planning = 0.25
-				planning_speed = -0.25
+				max_planning = 0.1
+				planning_speed = -0.15
+				dig_in_speed_factor = 0.25
 			}
 		}
 

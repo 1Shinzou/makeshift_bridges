@@ -1835,7 +1835,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_zentrale_planung
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -1887,7 +1887,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = GER_zentrale_planung
-		cost = 10
+		cost = 5
 		available = {
 		}
 

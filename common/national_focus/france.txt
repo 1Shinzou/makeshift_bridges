@@ -2218,7 +2218,6 @@
 				}
 				remove_ideas = FRA_factory_strikes
 			}
-			add_political_power = 50
 		}
 	}
 	
@@ -4116,16 +4115,16 @@ focus = {
 		}
 		available = {
 				ROOT = {
-					controls_state = 677
-					controls_state = 554
-					controls_state = 553
+					controls_state = 778
+					controls_state = 779
+					controls_state = 780
 				}
 		}
 		completion_reward = {
 			# set_capital = { state = 459 }
 			if = {
 				limit = {
-					677 = {
+					778 = {
 						controller = {
 							OR = {
 								tag = ROOT
@@ -4135,7 +4134,7 @@ focus = {
 						}
 					}
 				}
-				677 = {
+				778 = {
 					add_building_construction = {
 							type = infrastructure
 							level = 1
@@ -4152,7 +4151,7 @@ focus = {
 			}
 			if = {
 				limit = {
-					554 = {
+					779 = {
 						controller = {
 							OR = {
 								tag = ROOT
@@ -4161,7 +4160,7 @@ focus = {
 						}
 					}
 				}
-				554 = {
+				779 = {
 					add_building_construction = {
 							type = infrastructure
 							level = 1
@@ -4178,7 +4177,7 @@ focus = {
 			}
 			if = {
 				limit = {
-					553 = {
+					780 = {
 						controller = {
 							OR = {
 								tag = ROOT
@@ -4187,7 +4186,7 @@ focus = {
 						}
 					}
 				}
-				553 = {
+				780 = {
 				
 					add_building_construction = {
 							type = infrastructure

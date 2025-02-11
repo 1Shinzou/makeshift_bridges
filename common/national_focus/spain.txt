@@ -2344,7 +2344,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SPA_restore_the_monarchy }
 		
 		icon = GFX_goal_generic_political_pressure
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = SPA_adopt_the_26_points
 		cost = 10
@@ -2397,10 +2397,10 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_dictator_for_life focus = SPA_restore_the_monarchy }
+		prerequisite = { focus = SPA_dictator_for_life  }
 		
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		x = -3
+		x = -4
 		y = 1
 		relative_position_id = SPA_dictator_for_life
 		cost = 10
@@ -2589,10 +2589,10 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_dictator_for_life focus = SPA_restore_the_monarchy }
+		prerequisite = { focus = SPA_dictator_for_life  }
 		
 		icon = GFX_goal_rhineland
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = SPA_dictator_for_life
 		cost = 5
@@ -2616,7 +2616,7 @@ focus_tree = {
 		prerequisite = { focus = SPA_stamp_out_the_maquis }
 		
 		icon = GFX_goal_generic_position_armies
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = SPA_la_division_azul
 		cost = 5
@@ -2685,16 +2685,21 @@ focus_tree = {
         bypass = {
             NOT = { country_exists = POR }
         }
-        prerequisite = { focus = SPA_the_tangiers_enclave }
+     	prerequisite = { focus = SPA_la_division_azul }
+		prerequisite = { focus = SPA_stamp_out_the_maquis }
 
-        icon = GFX_focus_generic_attack_portugal
-        x = 0
-        y = 1
-        relative_position_id = SPA_the_tangiers_enclave
-        cost = 10
+        icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+        x = 1
+        y = 3
+        relative_position_id = SPA_dictator_for_life
+        cost = 15
 
         available_if_capitulated = yes
-
+		    hidden_effect = {
+				POR = {
+				transfer_navy = { target = SPR }
+        		}
+            }
         completion_reward = {
 			
 			add_named_threat = {
@@ -2722,75 +2727,8 @@ focus_tree = {
                         transfer_troops = no
                     }
                 }
-			POR = {
-				transfer_navy = { target = SPR }
-        	}
-		}
-    }
-
-		focus = {
-		id = SPA_join_the_axis
-		available = {
-			has_global_flag = scw_over
-			is_in_faction = no
-			OR = {
-				AND = {
-					GER = {
-						has_government = fascism
-						is_faction_leader = yes
-					}
-				}
-				AND = {
-					ITA = {
-						has_government = fascism
-						is_faction_leader = yes
-					}
-				}
-			}
-		
-		}
-		bypass = {
-			OR = {
-				AND = {
-					NOT = { GER = { has_government = fascism } }
-					NOT = { ITA = { has_government = fascism } }
-				}
-				is_in_faction_with = GER
-				is_in_faction_with = ITA
-			}
-		}
-		prerequisite = { focus = SPA_unite_iberia }
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		
-		icon = GFX_goal_support_fascism
-		x = 0
-		y = 1
-		relative_position_id = SPA_unite_iberia
-		cost = 5
-
-		available_if_capitulated = yes
-		       hidden_effect = {
-                every_owned_state = {
-                limit = {
-                    is_core_of = ROOT
-                    is_fully_controlled_by = ROOT
-                }
-            #    add_dynamic_modifier = {
-            #        modifier = SPR_STATE_NO_AIRPORTS
-            #        scope = SPR
-            #    }
-            }   
-            }
-
-		completion_reward = {
-			add_stability = 0.2
+			
+				add_stability = 0.2
 			set_rule = { can_join_factions = yes }
 			if = {
 				limit = {
@@ -2811,9 +2749,9 @@ focus_tree = {
 				ITA = { country_event = generic.2 }
 			}
 		}
-	}
+    }
 
-	
+
 
 	focus = {
 		id = SPA_stamp_out_the_maquis
@@ -2821,7 +2759,7 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_dictator_for_life focus = SPA_restore_the_monarchy }
+		prerequisite = { focus = SPA_dictator_for_life}
 		
 		icon = GFX_goal_generic_more_territorial_claims
 		x = 2
@@ -2845,7 +2783,7 @@ focus_tree = {
 		prerequisite = { focus = SPA_stamp_out_the_maquis }
 		
 		icon = GFX_focus_generic_air_defense
-		x = 0
+		x = 2
 		y = 1
 		relative_position_id = SPA_stamp_out_the_maquis
 		cost = 5

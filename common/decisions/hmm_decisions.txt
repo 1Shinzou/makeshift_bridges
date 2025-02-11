@@ -419,25 +419,7 @@ political_actions = {
 			}
 		}
 	}
-	SOV_assist_republican_spain = {
-		icon = GFX_decision_SOV_secure_the_administration
-		fire_only_once = yes
-		cost = 0
-		visible = {
-			tag = SOV
-		}
-		available = {
-			has_global_flag = spanish_civil_war
-			not = {
-				has_global_flag = scw_over
-			}
-		}
-		complete_effect = {
-			SOV = {
-				army_experience = 300
-			}
-		}
-	}
+
 }
 #VP System
 MOD_countdown_to_victory_cat = {

@@ -8221,11 +8221,6 @@ focus = {
 		
 		available = {
 			has_civil_war = no
-			OR = {
-				has_completed_focus = SOV_the_centre
-				has_completed_focus = SOV_the_left_opposition
-				has_completed_focus = SOV_the_right_opposition
-			}
 			NOT = { has_global_flag = scw_over }
 			has_government = communism
 			is_subject = no
@@ -8234,6 +8229,9 @@ focus = {
 		search_filters = {}
 
 		completion_reward = {
+			
+			army_experience = 400
+		
 			add_timed_idea = { idea = SOV_military_advisors_in_spain days = 1095 }
 			
 			if = {

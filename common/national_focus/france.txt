@@ -2778,7 +2778,8 @@
 		y = 2
 		
 		prerequisite = {
-			focus = FRA_reform_the_labour_laws
+			focus = FRA_support_daladier
+			focus = FRA_the_blum_viollette_proposal
 		}
 		prerequisite = {
 			#focus = FRA_review_foreign_policy

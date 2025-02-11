@@ -226,6 +226,9 @@ characters={
 					has_completed_focus = MON_remove_nominal_leadership
 				}
 			}
+			traits = {
+				army_chief_morale_2
+			}
 			cost =  75
 			ai_will_do = {
 				factor = 14 # we want Choibalsan everywhere

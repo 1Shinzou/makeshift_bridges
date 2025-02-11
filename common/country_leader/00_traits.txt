@@ -5224,6 +5224,10 @@ leader_traits = {
 		subjects_autonomy_gain = -0.1
 	}
 
+	stalin_they_will_know_fear = {
+		army_armor_attack_factor = 0.1
+	}
+
 	stalin_inheritor_of_lenin = {
 		random = no
 		political_power_factor = 0.1

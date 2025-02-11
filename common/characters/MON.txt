@@ -226,9 +226,6 @@ characters={
 					has_completed_focus = MON_remove_nominal_leadership
 				}
 			}
-			traits = {
-				army_chief_morale_2
-			}
 			cost =  75
 			ai_will_do = {
 				factor = 14 # we want Choibalsan everywhere
@@ -236,13 +233,13 @@ characters={
 		}
 		corps_commander={
 			traits = { 
-				politically_connected trait_cautious
+				politically_connected cavalry_leader infantry_leader urban_assault_specialist trickster commando
 			}
-			skill = 3
-			attack_skill = 3
-			defense_skill = 1
-			planning_skill = 4
-			logistics_skill = 2
+			skill = 6
+			attack_skill = 6
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 10
 			legacy_id=-1
 		}
 	}
@@ -752,9 +749,6 @@ characters={
 			available = {
 				NOT = { has_country_flag = MON_demid_killed }
 			}
-			traits = {
-				army_chief_maneuver_2
-			}
 			cost = 100
 			ai_will_do = {
 				factor = 1.000
@@ -762,14 +756,13 @@ characters={
 		}
 		corps_commander={
 			traits = { 
-				politically_connected
-				infantry_officer
+				politically_connected cavalry_leader infantry_leader urban_assault_specialist trickster commando
 			}
-			skill = 3
-			attack_skill = 3
+			skill = 6
+			attack_skill = 6
 			defense_skill = 2
 			planning_skill = 2
-			logistics_skill = 3
+			logistics_skill = 10
 			legacy_id=-1
 			visible = {
 				NOT = { has_country_flag = MON_demid_killed }
@@ -1497,13 +1490,13 @@ characters={
 		}
 		corps_commander={
 			traits = { 
-				cavalry_officer trait_reckless
+				cavalry_officer trait_reckless cavalry_leader infantry_leader inflexible_strategist ranger
 			}
-			skill = 2
+			skill = 6
 			attack_skill = 3
-			defense_skill = 1
+			defense_skill = 5
 			planning_skill = 2
-			logistics_skill = 1
+			logistics_skill = 10
 			legacy_id=-1
 		}
 	}

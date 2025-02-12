@@ -64,7 +64,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.1
 				local_resources_factor = 0.1
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.05
 			}
 		}
 
@@ -84,7 +84,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.2
 				local_resources_factor = 0.2
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.05
 			}
 		}
 
@@ -104,7 +104,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.3
 				local_resources_factor = 0.3
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.05
 			}
 		}
 
@@ -127,7 +127,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_expected_value = 0.1				
+				consumer_goods_factor = 0.1				
 			}
 		}
 
@@ -149,7 +149,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_expected_value = 0.05			
+				consumer_goods_factor = 0.05			
 			}
 		}
 		ROM_agrarian_economy_modernized = {
@@ -389,7 +389,7 @@ ideas = {
 
 			modifier = {
 				stability_factor = -0.1 
-				consumer_goods_expected_value = 0.05
+				consumer_goods_factor = 0.05
 			}
 		}
 
@@ -449,7 +449,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_expected_value = 0.05
+				consumer_goods_factor = 0.05
 			}
 		}
 
@@ -536,7 +536,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_expected_value = 0.075
+				consumer_goods_factor = 0.075
 				political_power_gain = -0.15
 			}
 		}
@@ -623,7 +623,7 @@ ideas = {
 
 			}
 			modifier = {
-				consumer_goods_expected_value = -0.08
+				consumer_goods_factor = -0.08
 			}
 		}
 			ROM_iron_guard = {
@@ -774,7 +774,7 @@ ideas = {
 			}
 	
 			modifier = {
-				consumer_goods_expected_value = 0.1
+				consumer_goods_factor = 0.1
 				stability_factor = -0.4
 				production_speed_industrial_complex_factor = 0.40
 			}
@@ -799,7 +799,7 @@ ideas = {
 			}
 					
 			modifier = {
-				consumer_goods_expected_value = 0.075
+				consumer_goods_factor = 0.075
 				stability_factor = -0.3
 				production_speed_industrial_complex_factor = 0.40
 
@@ -825,7 +825,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_expected_value = 0.05
+				consumer_goods_factor = 0.05
 				stability_factor = -0.2
 				production_speed_industrial_complex_factor = 0.40
 
@@ -851,7 +851,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_expected_value = 0.025
+				consumer_goods_factor = 0.025
 				stability_factor = -0.1
 				production_speed_industrial_complex_factor = 0.40
 
@@ -1050,7 +1050,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.05
 				min_export = -1
 			}
 		}

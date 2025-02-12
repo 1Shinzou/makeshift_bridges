@@ -1935,7 +1935,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = grande_armee_idea
+			picture = FRA_la_deluge
 			
 			modifier = {	
 				equipment_capture = 0.15

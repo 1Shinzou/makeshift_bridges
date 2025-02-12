@@ -326,6 +326,10 @@ country_event = {
 					type = convoy
 					amount = 600
 				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 6000
+				}
 				add_ideas = FRA_defeatism
 				remove_ideas = FRA_victors_of_wwi
 		        remove_ideas = FPM_disjointed_government1

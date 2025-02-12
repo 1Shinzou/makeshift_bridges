@@ -3897,11 +3897,12 @@ focus = {
 		y = 7
 	
 		
-		cost = 10
+		cost = 3
 	
 		ai_will_do = {
 			factor = 1
 		}
+		
 	
 		available = {
 			has_global_flag = fall_of_france
@@ -3917,6 +3918,18 @@ focus = {
 	
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 		completion_reward = {
+			add_country_leader_role = {
+				character = FRA_charles_de_gaulle
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						emergency_powers
+						popular_figurehead3
+					}	
+				}
+				promote_leader = yes				
+			}
 			EFR = {
 				every_army_leader = {
 					set_nationality = FRA
@@ -3966,17 +3979,7 @@ focus = {
 						}
 					}
 				}
-				add_country_leader_role = {
-					character = FRA_charles_de_gaulle
-					country_leader = {
-						expire = "1965.1.1"
-						ideology = conservatism
-						traits = {
-							
-						}
-					}
-					promote_leader = yes
-				}
+				
 			}
 			if = {
 				limit = { not = { has_dlc = "Man the Guns" } }

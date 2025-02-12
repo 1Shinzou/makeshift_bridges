@@ -308,7 +308,7 @@ country_event = {
 				clr_country_flag = GER_dont_seize_gold_reserves_flag
 			}
 			FRA = {
-				country_event = france.20
+				complete_national_focus = FRA_rally_defectors
 				transfer_state = 713
 				transfer_units_fraction = {
 					target = EFR
@@ -350,41 +350,7 @@ country_event = {
 
 	
 }
-country_event = {
-	id = france.20
-	title = france.20.t
-	desc = france.20.d
-	picture = GFX_report_event_degaulle_churchill
 
-	fire_only_once = yes
-	
-	trigger = {
-		original_tag = FRA
-		has_completed_focus = FRA_rally_defectors
-	}
-	
-	option = {
-		custom_effect_tooltip = france.20.a_tt
-		set_country_flag = france_de_gaulle
-		add_country_leader_role = {
-			character = FRA_charles_de_gaulle
-			country_leader = {
-				expire = "1965.1.1"
-				ideology = conservatism
-				traits = {
-					emergency_powers
-					popular_figurehead3
-				}	
-			}
-			promote_leader = yes				
-		}
-		hidden_effect =  {
-					
-		}
-		
-		name = france.20.a
-	}
-}
 
 
 # Germany refuses armistice! (France)

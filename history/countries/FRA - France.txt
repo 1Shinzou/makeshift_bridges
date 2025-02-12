@@ -217,6 +217,7 @@ if = {
 	    FRA_matignon_agreements
 		#laws
 		partial_economic_mobilisation
+		FRA_no_cap
 	}
 
 	complete_national_focus = FRA_begin_rearmament
@@ -403,7 +404,7 @@ set_popularities = {
 
 add_ideas = {
 	FRA_victors_of_wwi
-	FRA_disjointed_government
+	FPM_disjointed_government1
 	FRA_protected_by_the_maginot_line
 	limited_conscription
 	FRA_full_employment

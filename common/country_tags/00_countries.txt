@@ -44,6 +44,8 @@ RAJ = "countries/British Raj.txt"
 ETH = "countries/Ethiopia.txt"
 PHI = "countries/Philipines.txt"
 VEN = "countries/Venezula.txt"
+EFR = "countries/Vichy France.txt"
+
 
 
 # REICHSKOMMISSARIATS (no cores) (European)

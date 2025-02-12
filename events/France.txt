@@ -174,77 +174,7 @@ country_event = {
 ### The Fall of France
 
 #hidden pre-event to check before capitulation
-country_event = {
-	id = france.101
-	hidden = yes
-	trigger = {
-		tag = FRA
-		has_war_with = GER
-		has_government = democratic
-		16 = { is_controlled_by = GER }
-		is_in_faction_with = ENG
-		ENG = { has_war_with = GER }
-		surrender_progress > 0.7
-		GER = {
-			OR = {
-				is_faction_leader = yes
-				has_government = neutrality
-			}
-		}
-		has_civil_war = no
-		#Don't fire if France has pushed pretty far into ITA or GER
-		NOT = {
-			any_state = {
-				is_on_continent = europe
-				NOT = { state = 158 }
-				NOT = { state = 114 }
-				NOT = { state = 50 }
-				NOT = { state = 978 } #BADEN
-				NOT = { state = 42 }
-				is_controlled_by = ROOT
-				OR = {
-					is_owned_by = GER
-					AND = {
-						FRA = { has_War_with = ITA }
-						is_owned_by = ITA
-					}
-				}
-			}
-		}		
 
-		#Don't fire if any states in France are controlled by a different human player
-		NOT = {
-			any_country = {
-				is_ai = no
-				NOT = { tag = GER }
-				NOT = { is_in_faction_with = GER }
-				has_war_with = ROOT
-				any_state = {
-					is_on_continent = europe
-					NOT = { state = 1 }
-					NOT = { state = 735 }
-					NOT = { state = 21 }
-					NOT = { state = 851 }
-					NOT = { state = 31 }
-					is_owned_by = ROOT
-					is_controlled_by = PREV
-				}
-			}
-		}
-		# PLEASE Don't fire if this will end the war (No other ally is a major)
-		FRA = {
-			any_allied_country = {
-				is_major = yes 
-				has_capitulated = no 
-				has_war_with = GER 
-			}
-		}
-	}
-	mean_time_to_happen = { days = 2 }
-	immediate = {
-		country_event = france.10
-	}
-}
 # The Battle is Lost
 country_event = {
 	id = france.10
@@ -254,7 +184,15 @@ country_event = {
 	
 	fire_only_once = yes
 	
-	is_triggered_only = yes
+	trigger = {
+		original_tag = FRA
+	   FRA = {
+		NOT = {
+		controls_state = 16 		
+		}
+		has_idea = FRA_no_cap
+	   }
+	}
 
 	immediate = {
 		set_global_flag = achievement_france_surrender
@@ -275,119 +213,7 @@ country_event = {
 	
 }
 
-# France suggests a Union (Britain)
-country_event = {
-	id = france.11
-	title = france.11.t
-	desc = france.11.d
-	picture = GFX_report_event_degaulle_churchill
-	
-	is_triggered_only = yes
-	
-	option = { # Refuse Union
-		name = france.11.a
-		ai_chance = {
-			factor = 10
-		}
-		FRA = {
-			country_event = { hours = 6 id = france.13 }
-		}
-	}
-	option = { # Agree to Union
-		name = france.11.b
-		ai_chance = {
-			factor = 90
-		}
-		FRA = {
-			country_event = { hours = 6 id = france.12 }
-		}
-	}
-}
 
-# Britain agrees to Union (France)
-country_event = {
-	id = france.12
-	title = france.12.t
-	desc = france.12.d
-	picture = GFX_report_event_chamberlain_announce
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = france.12.a
-		# Franco-British Union created
-		set_global_flag = fall_of_france
-		set_global_flag = flag_franco_british_union
-		hidden_effect = {
-			every_state = {
-				limit = {
-					is_core_of = FRA
-				}
-				ENG = {
-					add_state_core = PREV
-				}
-			}
-		}
-		FRA = {
-			every_unit_leader = {
-				set_unit_leader_flag = flag_former_french_general
-				set_nationality = ENG
-			}
-		}
-		ENG = {
-			annex_country = { target = FRA transfer_troops = yes }
-		}
-		custom_effect_tooltip = FRA_franco_british_cores
-		hidden_effect = {
-			ENG = { set_cosmetic_tag = FRA_UK }
-			GER = { 
-				country_event = { hours = 6 id = news.35 }
-			}
-		}
-	}
-}
-
-# Britain refuses Union (France)
-country_event = {
-	id = france.13
-	title = france.13.t
-	desc = france.13.d
-	picture = GFX_report_event_pierre_laval
-	
-	is_triggered_only = yes
-	
-	option = { # Become Vichy
-		name = france.13.a
-		trigger = { is_ai = no }
-		set_country_flag = become_vichy
-		set_global_flag = fall_of_france
-		save_global_event_target_as = vichy_france
-
-		GER = { country_event = france.14 }
-		custom_effect_tooltip = france.10.a_tt
-		# Switches to Vichy if GER accepts
-	}
-	option = { # Become Free France
-		name = france.13.b
-		GER = { country_event = france.14 }
-		save_global_event_target_as = free_france
-		custom_effect_tooltip = france.10.b_tt
-		set_global_flag = fall_of_france
-	}
-	option = { # decide to fight on
-		name = france.10.e
-		ai_chance = {
-			factor = 15
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		trigger = { has_war_support > 0.7 }
-		add_stability = -0.05
-		custom_effect_tooltip = france_continue_the_fight_tt
-	}
-}
 
 # France wants Armistice (Germany)
 country_event = {
@@ -395,6 +221,8 @@ country_event = {
 	title = france.14.t
 	desc = france.14.d
 	picture = GFX_report_event_german_parade_paris
+
+	fire_only_once = yes
 	
 	is_triggered_only = yes
 	
@@ -404,191 +232,158 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}
-		trigger = {
+		hidden_effect = {
+			GER = {
+				transfer_state = 29
+				transfer_state = 785
+				transfer_state = 18
+				transfer_state = 28
+				transfer_state = 17
+				transfer_state = 27
+				transfer_state = 24
+				transfer_state = 30
+				transfer_state = 15
+				transfer_state = 14
+				transfer_state = 23
+				transfer_state = 806
+				transfer_state = 19
+				transfer_state = 16
+				every_state = {
+					limit = {
+						is_core_of = FRA
+					}
+					add_compliance = 80
+				}
+			}
+			ITA = {
+				transfer_state = 735
+				transfer_state = 851
+				transfer_state = 1
+				transfer_state = 458
+				transfer_state = 665
 
-		}
-		#Set same cosmetic tag they would get on capitulation
-		FRA = {
-			set_cosmetic_tag = FRA_FREE
-		}
-		
-		# German Occupation Zone
-		if = {
-			limit = { 28 = { owner = { original_tag = FRA } } }
-			set_state_controller = 28
-		}
-		if = {
-			limit = { 806 = { owner = { original_tag = FRA } } }
-			set_state_controller = 806
-		}
-		if = {
-			limit = { 17 = { owner = { original_tag = FRA } } }
-			set_state_controller = 17
-		}
-		if = {
-			limit = { 27 = { owner = { original_tag = FRA } } }
-			set_state_controller = 27
-		}
-		if = {
-			limit = { 18 = { owner = { original_tag = FRA } } }
-			set_state_controller = 18
-		}
-		if = {
-			limit = { 29 = { owner = { original_tag = FRA } } }
-			set_state_controller = 29
-		}
-		if = {
-			limit = { 785 = { owner = { original_tag = FRA } } }
-			set_state_controller = 785
-		}
-		if = {
-			limit = { 15 = { owner = { original_tag = FRA } } }
-			set_state_controller = 15
-		}
-		if = {
-			limit = { 16 = { owner = { original_tag = FRA } } }
-			set_state_controller = 16
-		}
-		if = {
-			limit = { 24 = { owner = { original_tag = FRA } } }
-			set_state_controller = 24
-		}
-		if = {
-			limit = { 30 = { owner = { original_tag = FRA } } }
-			set_state_controller = 30
-		}
-		if = {
-			limit = { 14 = { owner = { original_tag = FRA } } }
-			set_state_controller = 14
-		}
-		if = {
-			limit = { 23 = { owner = { original_tag = FRA } } }
-			set_state_controller = 23
-		}
-		if = {
-			limit = { 19 = { owner = { original_tag = FRA } } }
-			set_state_controller = 19
-		}
 
-		GER_set_consumer_goods_war_reparations = yes
-
-		# Italian Occupation Zone (if they did well)
-		
-			ITA = { transfer_state = 32 }
-			ITA = { transfer_state = 851 }		
-			ITA = { transfer_state = 21 }
-			ITA = { transfer_state = 1 }
-			ITA = { transfer_state = 735 }
-			ITA = { transfer_state = 665 }
-			ITA = { transfer_state = 458 }
-			FRA = {
+			}
+			EFR = {
+				give_military_access = GER
+				transfer_state = 20
+				transfer_state = 22
+				transfer_state = 25
+				transfer_state = 31
+				transfer_state = 33
+				transfer_state = 26
+				transfer_state = 32
+				transfer_state = 21
+				transfer_state = 460
+				transfer_state = 513
+				transfer_state = 459
+				transfer_state = 461
+				transfer_state = 462
 				transfer_navy = {
 					target = ITA
 				}
-			}
-		
-		FRA = {
-			set_capital = { state = 539 }
-			transfer_units_fraction = {
-				target = D04
-				air_ratio = 1
-				army_ratio = 1
-			}
-
-			
-		}
-		D04 = {
-			26 = {
-				set_state_owner_to = D04
-			}
-			22= {
-				set_state_owner_to = D04
-			} 31= {
-				set_state_owner_to = D04
-			} 25= {
-				set_state_owner_to = D04
-			} 20= {
-				set_state_owner_to = D04
-			}  33= {
-				set_state_owner_to = D04
-			}  462 = {
-				set_state_owner_to = D04
-			}461= {
-				set_state_owner_to = D04
-			} 513= {
-				set_state_owner_to = D04
-			} 459= {
-				set_state_owner_to = D04
-			} 460 = {
-				set_state_owner_to = D04
-			} 514= {
-				set_state_owner_to = D04
-			} 515 = {
-				set_state_owner_to = D04
-			}782 = {
-				set_state_owner_to = D04
-			}786 = {
-				set_state_owner_to = D04
+				462 = {
+					set_demilitarized_zone = yes
+				}
+				461 = {
+					set_demilitarized_zone = yes
+				}
+				459 = {
+					set_demilitarized_zone = yes
+				}
+				513 = {
+					set_demilitarized_zone = yes
+				}
+				460 = {
+					set_demilitarized_zone = yes
+				}
 				
+
+				
+				
+
 			}
 			
-		
-			set_capital = { state = 26 }
-
-			set_politics = {
-				ruling_party = fascism
-				elections_allowed = no
+			FROM = {
+				clr_country_flag = GER_dont_seize_gold_reserves_flag
 			}
-			set_popularities = {
-				democratic = 22
-				fascism = 76
-				communism = 2
-			}
-			every_unit_leader = {
-				limit = {
-					has_id = 101
+			FRA = {
+				country_event = france.20
+				transfer_state = 713
+				transfer_units_fraction = {
+					target = EFR
+					air_ratio = 1
+					army_ratio = 1
+					stockpile_ratio = 1
 				}
-				set_nationality = FRA
-			}
-			set_cosmetic_tag = FRA_VICHY
-			set_country_flag = vichy_france
-			save_event_target_as = vichy_france
-
-			FRA = { #Move Petain to Vichy
-				set_nationality = {
-					target_country = PREV
-					character = FRA_philippe_petain
+				transfer_navy = {
+					target = ITA
 				}
-			}
-
-			add_country_leader_role = {
-				character = FRA_philippe_petain
-				country_leader = {
-					ideology = fascism_ideology 
-					expire = "1965.1.1.1"
-					id = -1
+				add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 2000
 				}
-				promote_leader = yes 
-			}
-			# FRA Player Switches to Vichy
-			if = {
-				limit = { FRA = { has_country_flag = become_vichy } }
-				change_tag_from = FRA
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 100
+				}
+				add_equipment_to_stockpile = {
+					type = convoy
+					amount = 600
+				}
+				add_ideas = FRA_defeatism
+				remove_ideas = FRA_no_cap
+				remove_ideas = FRA_victors_of_wwi
+		        remove_ideas = FPM_disjointed_government1
+		        remove_ideas = FRA_protected_by_the_maginot_line
+				set_cosmetic_tag = FRA_FREE
+				
+				
+
 			}
 		}
-		country_event = { hours = 6 id = news.34 }
-		hidden_effect =  {
-			FRA = { news_event = { id = france.20 days = 1 } }
-		}
-		FROM = {
-			clr_country_flag = GER_dont_seize_gold_reserves_flag
-		}
+	
 		
 
 	}
 	
 
 	
+}
+country_event = {
+	id = france.20
+	title = france.20.t
+	desc = france.20.d
+	picture = GFX_report_event_degaulle_churchill
+
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = FRA
+		has_completed_focus = FRA_rally_defectors
+	}
+	
+	option = {
+		custom_effect_tooltip = france.20.a_tt
+		set_country_flag = france_de_gaulle
+		add_country_leader_role = {
+			character = FRA_charles_de_gaulle
+			country_leader = {
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					emergency_powers
+					popular_figurehead3
+				}	
+			}
+			promote_leader = yes				
+		}
+		hidden_effect =  {
+					
+		}
+		
+		name = france.20.a
+	}
 }
 
 
@@ -696,34 +491,7 @@ country_event = {
 }
 
 # De Gaulle becomes leader
-country_event = {
-	id = france.20
-	title = france.20.t
-	desc = france.20.d
-	picture = GFX_report_event_degaulle_churchill
-	
-	is_triggered_only = yes
-	
-	option = {
-		custom_effect_tooltip = france.20.a_tt
-		set_country_flag = france_de_gaulle
-		hidden_effect =  {
-			add_country_leader_role = {
-				character = FRA_charles_de_gaulle
-				country_leader = {
-					expire = "1965.1.1"
-					ideology = conservatism
-					traits = {
-						emergency_powers 
-						popular_figurehead3
-					}	
-				}
-				promote_leader = yes				
-			}		
-		}
-		name = france.20.a
-	}
-}
+
 
 # French strikes
 country_event = {
@@ -1212,42 +980,7 @@ country_event = {
 	}
 }
 
-# Édouard Daladier Resigns
-country_event = {
-	id = france.31
-	title = france.31.t
-	desc = france.31.d
-	picture = GFX_report_event_german_parade_paris
 
-	fire_only_once = yes
-
-	trigger = {
-		original_tag = FRA
-		has_government = democratic
-		has_global_flag = fall_of_france
-		NOT = { has_country_flag = france_de_gaulle }
-	} 
-
-	mean_time_to_happen = {
-		days = 7
-	}
-
-	option = {
-		name = france.31.a
-		retire_country_leader = yes
-		add_country_leader_role = {
-			character = FRA_paul_reynaud
-			country_leader = {
-				expire = "1965.1.1"
-				ideology = liberalism
-				traits = {
-				}
-			}
-			promote_leader = yes
-		}
-		set_country_flag = daladier_resigned
-	}
-}
 
 # Hidden event to add AI values for nationalist spain if France is going fascist
 country_event = {
@@ -1299,216 +1032,6 @@ country_event = {
 # Britain is at peace after annexing France in the Franco-British Union
 # AI will tend to release France if historic mode is on or they are democratic
 
-country_event = {
-	id = france.33
-	title = france.33.title
-	desc = france.33.desc
-	
-	picture = GFX_report_event_generic_peaceful_annexation
-	
-	fire_only_once = yes
-	
-	trigger = {
-		tag = ENG
-		has_war = no
-		is_subject = no
-		has_global_flag = flag_franco_british_union
-		any_owned_state = {
-			is_core_of = FRA
-		}
-	}
-	
-	mean_time_to_happen = {
-		months = 1
-	}
-
-	option = { # Release
-		name = france.33.a
-		
-		if = {
-			limit = {
-				has_cosmetic_tag = FRA_UK
-			}
-			drop_cosmetic_tag = yes
-		}
-		
-		if = {
-			limit = {
-				NOT = { country_exists = FRA }
-			}
-			if = {
-				limit = {
-					has_government = democratic
-				}
-				FRA = {
-					set_politics = {
-						ruling_party = democratic
-						elections_allowed = yes
-					}
-					set_popularities = {
-						democratic = 60
-						fascism = 20
-						communism = 20
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_government = fascism
-				}
-				FRA = {
-					set_politics = {
-						ruling_party = fascism
-						elections_allowed = no
-					}
-					set_popularities = {
-						democratic = 20
-						fascism = 60
-						communism = 20
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_government = communism
-				}
-				FRA = {
-					set_politics = {
-						ruling_party = communism
-						elections_allowed = no
-					}
-					set_popularities = {
-						democratic = 20
-						fascism = 20
-						communism = 60
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_government = neutrality
-				}
-				FRA = {
-					set_politics = {
-						ruling_party = neutrality
-						elections_allowed = no
-					}
-					set_popularities = {
-						democratic = 15
-						neutrality = 55
-						fascism = 15
-						communism = 15
-					}
-				}
-			}
-			release = FRA
-			
-			set_autonomy = { target = FRA autonomy_state = autonomy_free }
-		}
-		
-		every_state = {
-			limit = {
-				is_core_of = ENG
-				is_core_of = FRA
-			}
-			remove_core_of = ENG
-		}
-		
-		hidden_effect = { # This looks odd in the tooltip
-			every_other_country = {
-				limit = {
-					is_subject_of = ENG
-				}
-				every_owned_state = {
-					limit = {
-						is_core_of = FRA
-					}
-					FRA = {
-						transfer_state = PREV
-					}
-				}
-			}
-		}
-		
-		if = {
-			limit = {
-				is_faction_leader = yes
-				FRA = {
-					is_subject = no
-					is_in_faction = no
-				}
-			}
-			add_to_faction = FRA
-		}
-		
-		every_unit_leader = {
-			limit = {
-				has_unit_leader_flag = {
-					flag = flag_former_french_general
-				}
-			}
-			set_nationality = FRA
-		}
-		
-		hidden_effect =  {
-			news_event = { id = france.34 days = 1 }
-		}
-		
-		ai_chance = {
-			factor = 60
-			
-			modifier = {
-				factor = 2
-				has_government = democratic
-			}
-		}
-	}
-	
-	option = { # Don't release
-		name = france.33.b
-		
-		add_war_support = -0.1
-		add_stability = -0.2
-		
-		every_state = {
-			limit = {
-				is_core_of = ENG
-				is_core_of = FRA
-			}
-			remove_core_of = ENG
-		}
-		
-		every_unit_leader = {
-			limit = {
-				has_unit_leader_flag = {
-					flag = flag_former_french_general
-				}
-			}
-			set_nationality = FRA
-		}
-		
-		ai_chance = {
-			factor = 40
-			
-			modifier = {
-				factor = 0.5
-				has_stability < 0.5
-			}
-			modifier = {
-				factor = 0.5
-				has_war_support < 0.5
-			}
-			modifier = {
-				factor = 2
-				has_government = fascism
-			}
-			modifier = {
-				factor = 0.5
-				is_historical_focus_on = yes
-			}
-		}
-	}
-}
 
 # News event for the release of France
 

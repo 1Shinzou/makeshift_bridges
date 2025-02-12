@@ -17,7 +17,7 @@
 	
 	default = no
 
-	continuous_focus_position = { x = 2400 y = 1000 }
+	continuous_focus_position = { x = 5000 y = 1000 }
 
 	
 	focus = {
@@ -1174,6 +1174,11 @@
 		ai_will_do = {
 			factor = 1
 		}
+		allow_branch = {
+			NOT = {
+				has_global_flag = fall_of_france
+			}
+		}
 
 		available = {
 			has_war_support > 0.12
@@ -2138,6 +2143,8 @@
 
 #### END ####
 
+
+
 	focus = {
 		id = FRA_form_the_popular_front
 		icon = GFX_focus_focus_fra_revolution_utmost
@@ -2150,6 +2157,11 @@
 
 		ai_will_do = {
 			factor = 1
+		}
+		allow_branch = {
+			NOT = {
+				has_global_flag = fall_of_france
+			}
 		}
 
 		available = {
@@ -3655,340 +3667,12 @@ q
 		}
 	}
 
-	focus = {
-		id = FRA_appeal_to_the_french_nation1
-		icon = GFX_goal_generic_propaganda
-		x = 16
-		y = 8
-		prerequisite = { }
-		available = { 
-			
-			has_capitulated = yes
-		}
-
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		completion_reward = {
-			if = {
-				limit = { not = { has_dlc = "Man the Guns" } }
-				add_manpower = 10000
-			}
-			else = {
-				add_manpower = 10000
-				add_legitimacy = 15
-			}
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 5000
-			}
-			
-		}
-	}
-
-	focus = {
-		id = FRA_appeal_to_overseas_territories
-		icon = GFX_goal_generic_radar
-		x = 0
-		y = 1
-		prerequisite = {
-			focus = FRA_refus_absurde
-			focus = FRA_appeal_to_the_french_nation1
-		}
-		relative_position_id = FRA_appeal_to_the_french_nation1
-
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {
-			# custom_effect_tooltip = FRA_appeal_to_overseas_territories_tt
-			add_offsite_building = {
-				type = industrial_complex
-				level = 4
-			}
-		}
-	}
 	
-
-	focus = {
-		id = FRA_form_the_national_committee
-		icon = GFX_goal_generic_intelligence_exchange
-		x = 2
-		y = 1
-		
-		prerequisite = {
-			focus = FRA_the_free_french_navy1
-		}
-		prerequisite = {
-			focus =FRA_colonial_recruitment
-		}
-		relative_position_id = FRA_the_free_french_navy1
-
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				has_legitimacy > 90
-			}
-			else = {
-				num_of_factories > 24
-			}
-		}
-
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
-		completion_reward = {
-			add_war_support = 0.1
-			add_stability = 0.1
-		}
-	}
-	focus = {
-		id = FRA_form_the_provisional_government_of_the_republic
-		icon = GFX_goal_tripartite_pact
-		x = 0
-		y = 1
-		
-		prerequisite = {
-			focus = FRA_form_the_national_committee
-		}
-		relative_position_id = FRA_form_the_national_committee
-
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			16 = {
-				is_controlled_by = ROOT
-			}
-		}
-
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		completion_reward = {
-			load_focus_tree = french_focus
-			#TODO_GABRIEL: Make scripted effect to give correct focuses depending on left/right
-		}
-	}
-	focus = {
-		id = FRA_continue_the_fight1
-		icon = GFX_goal_generic_major_war
-		x = 0
-		y = 1
-		
-		prerequisite = {
-			focus = FRA_refus_absurde
-			focus = FRA_appeal_to_the_french_nation1
-		}
-		relative_position_id = FRA_refus_absurde
-
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			add_offsite_building = {
-				type = arms_factory
-				level = 4
-			}
-			create_corps_commander = {
-				name = "Marie-Pierre Koenig"
-				GFX = GFX_portrait_fra_marie_pierre_koenig
-				skill = 3
-				traits = {  }
-				attack_skill = 2
-				defense_skill = 2
-				planning_skill = 3
-				logistics_skill = 3
-			}
-			create_corps_commander = {
-				name = "Georges Catroux"
-				GFX = GFX_portrait_fra_georges_catroux
-				skill = 3
-				traits = {  }
-				attack_skill = 3
-				defense_skill = 3
-				planning_skill = 2
-				logistics_skill = 2
-			}
-		}
-	}
-	focus = {
-		id = FRA_the_free_french_navy1
-		icon = GFX_goal_generic_build_navy
-		x = -3
-		y = 1
-		
-		prerequisite = {
-			focus = FRA_continue_the_fight1
-			focus = FRA_appeal_to_overseas_territories
-		}
-		relative_position_id = FRA_appeal_to_overseas_territories
-
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = convoy
-				amount = 200
-			}
-			create_navy_leader = {
-				name = "Emilie Muselier"
-				GFX = GFX_portrait_fra_emilie_muselier
-				skill = 3
-				traits = {  }
-				attack_skill = 1
-				defense_skill = 2
-				maneuvering_skill = 3
-				coordination_skill = 4
-			}
-		}
-	}
-	focus = {
-		id = FRA_colonial_recruitment
-		icon = GFX_goal_generic_allies_build_infantry
-		x = 1
-		y = 1
-		
-		prerequisite = {
-			focus = FRA_continue_the_fight1
-			focus = FRA_appeal_to_overseas_territories
-		}
-		relative_position_id = FRA_appeal_to_overseas_territories
-
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			any_owned_state = {
-				is_controlled_by = ROOT
-				NOT = {
-					is_core_of = ROOT
-				}
-			}
-		}
-
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_MANPOWER }
-		completion_reward = {
-			add_ideas = { FRA_colonial_recruitment }
-		}
-	}
-	
-	
-
-
-	focus = {
-		id = FRA_refus_absurde
-		icon = GFX_goal_generic_demand_territory
-		x = 14
-		y = 8
-		
-		prerequisite = {
-
-		}
-
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			
-			has_capitulated = yes
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				has_legitimacy > 30
-			}
-			else = {
-				num_of_factories > 14
-			}
-		}
-
-		bypass = {
-			AND = {
-				VIC = {
-					owns_state = 26
-				}
-				not = { has_idea = FRA_defeatism }
-			}
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		completion_reward = {
-			remove_ideas = { FRA_defeatism }
-		}
-	}
 
 
 	focus = {
 		id = FRA_support_daladier
-		icon = GFX_focus_fra_milice
+		icon = GFX_focus_generic_self_management
 		cost = 5
 		prerequisite = {
 			focus = FRA_reform_the_labour_laws
@@ -4207,6 +3891,2099 @@ focus = {
 			}
 		
 	    }
+	}
+	focus = {
+		id = FRA_rally_defectors
+		icon = GFX_focus_fra_milice
+		x = 16
+		y = 7
+	
+		
+		cost = 10
+	
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+			has_global_flag = fall_of_france
+		}
+		
+		bypass = {
+	
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_POLITICAL  }
+		completion_reward = {
+			EFR = {
+				every_army_leader = {
+					set_nationality = FRA
+					limit = {
+						NOT = {
+							has_trait = old_guard
+						}
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_appeal_to_the_french_nation
+		icon = GFX_focus_fra_french_union
+		x = 10
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = FRA_rally_defectors
+		}
+		mutually_exclusive = { }
+		relative_position_id = FRA_rally_defectors
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			#failsafe for bug that seems impossible to fix
+			if = {
+				limit = {
+					NOT = {
+						has_country_leader = {
+							character = FRA_charles_de_gaulle
+						}
+					}
+				}
+				add_country_leader_role = {
+					character = FRA_charles_de_gaulle
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = conservatism
+						traits = {
+							
+						}
+					}
+					promote_leader = yes
+				}
+			}
+			if = {
+				limit = { not = { has_dlc = "Man the Guns" } }
+				add_manpower = 10000
+			}
+			else = {
+				add_manpower = 10000
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+			}
+		}
+	}
+	focus = {
+		id = FRA_london_provisional_gov
+		icon = GFX_focus_eng_the_sun_never_sets
+		x = 7
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_appeal_to_the_french_nation
+		}
+		relative_position_id = FRA_appeal_to_the_french_nation
+		
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_timed_idea = { idea = FRA_legitimacy_idea days = 365 }
+		}
+	}
+	focus = {
+		id = FRA_appeal_to_overseas_territories
+		icon = GFX_focus_generic_camel_corps
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_appeal_to_the_french_nation
+		}
+		relative_position_id = FRA_appeal_to_the_french_nation
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 12
+			}
+
+		}
+	}
+
+	focus = {
+		id = FRA_form_the_national_committee
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 0
+		y = 3
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_appeal_to_overseas_territories
+		}
+		relative_position_id = FRA_appeal_to_overseas_territories
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				
+			}
+			else = {
+				num_of_factories > 24
+			}
+		}
+		
+		bypass = {
+			16 = {
+				is_controlled_by = ROOT
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
+		completion_reward = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 2
+			}
+			add_war_support = 0.1
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = FRA_form_the_provisional_government_of_the_republic
+		icon = GFX_focus_focus_fra_orleans_restoration
+		x = 0
+		y = 5
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_form_the_national_committee	
+		}
+		prerequisite = {
+			focus =	FRA_national_council_of_the_resistance
+		}
+		relative_position_id = FRA_form_the_national_committee
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			16 = {
+				is_controlled_by = ROOT
+			}
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			hidden_effect = {
+					add_ideas = { FRA_epuration_sauvage }
+					add_ideas = { FRA_economic_devastation }
+					clr_global_flag = fall_of_france
+			}
+			#TODO_GABRIEL: Make scripted effect to give correct focuses depending on left/right
+			set_country_flag = FRA_prov_government_formed
+		}
+	}
+	focus = {
+		id = FRA_continue_the_fight
+		icon = GFX_focus_ARG_join_the_allies
+		x = 12
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_appeal_to_the_french_nation
+		}
+		relative_position_id = FRA_appeal_to_the_french_nation
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 5
+			}
+			create_corps_commander = {
+				name = "Marie-Pierre Koenig"
+				GFX = GFX_portrait_fra_marie_pierre_koenig
+				skill = 3
+				traits = {  }
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			effect_tooltip = {
+				create_corps_commander = {
+					name = "Paul Legentilhomme"
+				}
+			}
+			effect_tooltip = {
+				create_corps_commander = {
+					name = "Zinovy Peshkov"
+				}
+			}
+			effect_tooltip = {
+				create_corps_commander = {
+					name = "Pierre Billotte"
+				}
+			}
+			create_corps_commander = {
+				name = "Georges Catroux"
+				GFX = GFX_portrait_fra_georges_catroux
+				skill = 2
+				traits = {  }
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+		}
+	}
+	focus = {
+		id = FRA_hidden_weapons
+		icon = GFX_focus_FIN_weapon_caches
+		x = 1
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_continue_the_fight
+		}
+		relative_position_id = FRA_continue_the_fight
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+	
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 2002
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5520
+			}
+		}
+	}
+	focus = {
+		id = FRA_path_to_liberation
+		icon = GFX_focus_attack_germany
+		x = 3
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_continue_the_fight
+		}
+		relative_position_id = FRA_continue_the_fight
+		
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+	
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+			}
+			add_command_power = 30
+			army_experience = 30
+		}
+	}
+	focus = {
+		id = FRA_continue_the_fight2
+		icon = GFX_focus_hol_the_fourth_ally
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_path_to_liberation
+		}
+		relative_position_id = FRA_path_to_liberation
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = { country_exists = VIC }	
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		completion_reward = {
+			add_manpower = 22000
+			set_nationality = {
+    				target_country = FRA
+    				character = FRA_henri_giraud
+			}
+			set_nationality = {
+    				target_country = FRA
+    				character = FRA_alphonse_juin
+			}
+			create_corps_commander = {
+				name = "Louis Koeltz"
+				GFX = GFX_portrait_koeltz
+				skill = 2
+				traits = {  }
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "Henry Martin"
+				GFX = GFX_portrait_martin
+				skill = 2
+				traits = {  }
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 2
+			}
+			set_nationality = {
+    				target_country = FRA
+    				character = FRA_jean_de_lattre_de_tassigny
+			}
+			custom_effect_tooltip = available_chief_of_army
+			show_ideas_tooltip = FRA_alphonse_juin
+			effect_tooltip = {
+				create_corps_commander = {
+					name = "Alphonse Juin"
+				}
+			}
+			effect_tooltip = {
+				create_corps_commander = {
+					name = "Jean de Lattre de Tassigny"
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_army_of_africa
+		icon = GFX_focus_generic_full_social_mobilization
+		x = 0
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_path_to_liberation
+		}
+		relative_position_id = FRA_path_to_liberation
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = { country_exists = VIC }	
+		}
+		
+		bypass = {
+			has_war_with = VIC
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = { VIC_africa_army }
+			add_manpower = 100000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 10000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 4000
+			}
+		}
+	}
+	focus = {
+		id = FRA_CEF1
+		icon = GFX_focus_attack_italy
+		x = 0
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_army_of_africa
+		}
+		relative_position_id = FRA_army_of_africa
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war_with = ITA	
+		}
+		
+		bypass = {
+			NOT = {
+				has_war_with = ITA
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = { FRA_cef }
+			army_experience = 10	
+		}
+	}
+	focus = {
+		id = FRA_army_of_liberation1
+		icon = GFX_focus_hol_liberation
+		x = -3
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_CEF1
+		}
+		prerequisite = { 
+			focus = FRA_usa_equipement
+		}
+		prerequisite = { 
+			focus = FRA_kieffer
+		}
+		prerequisite = { 
+			focus = FRA_2DB
+		}
+		relative_position_id = FRA_CEF1
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			army_experience = 70	
+			remove_ideas = VIC_africa_army
+			remove_ideas = FRA_cef
+			add_ideas = FRA_liberation_army
+			division_template = {
+						name = "Division Française Libre"
+						priority = 8
+						division_names_group = FRA_INF_01
+						regiments = {
+									infantry = { x = 0 y = 0 }
+									infantry = { x = 0 y = 1 }
+									infantry = { x = 0 y = 2 }
+									infantry = { x = 1 y = 0 }
+									infantry = { x = 1 y = 1 }
+									infantry = { x = 1 y = 2 }
+									infantry = { x = 2 y = 0 }
+									infantry = { x = 2 y = 1 }
+									infantry = { x = 2 y = 2 }
+								}
+						support = {
+							artillery = { x = 0 y = 0 } 	# Heavy Arty Regiment had 2x 155mm battalions
+							engineer = { x = 0 y = 1 }
+							anti_air = { x = 0 y = 2 }
+					}
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 16 }
+				create_unit = {
+					division = "name = \"1re division de Marche d'Infanterie\" division_template = \"Division Française Libre\" start_experience_factor = 0.9" 
+					owner = FRA
+				}
+				create_unit = {
+					division = "name = \"4ème Division Marocaine de Montagne\" division_template = \"Division Française Libre\" start_experience_factor = 0.7" 
+					owner = FRA
+				}
+				create_unit = {
+					division = "name = \"3ème Division d’Infanterie Algérienne\" division_template = \"Division Française Libre\" start_experience_factor = 0.7" 
+					owner = FRA
+				}
+				create_unit = {
+					division = "name = \"9ème Division d’Infanterie Coloniale\" division_template = \"Division Française Libre\" start_experience_factor = 0.7" 
+					owner = FRA
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_the_free_french_navy
+		icon = GFX_focus_generic_navy_battleship2
+		x = -3
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_continue_the_fight
+		}
+		relative_position_id = FRA_continue_the_fight
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_offsite_building = { type = dockyard level = 5 }
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 75
+			}
+		}
+	}
+	focus = {
+		id = FRA_FAFL
+		icon = GFX_goal_poland_goal
+		x = 0
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_the_free_french_navy
+		}
+		relative_position_id = FRA_the_free_french_navy
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			air_experience = 25
+				add_equipment_to_stockpile = {
+					type = small_plane_airframe
+					amount = 225
+					producer = FRA
+			}
+		}
+	}
+	focus = {
+		id = FRA_bir_hakeim
+		icon = GFX_focus_chi_army_reform
+		x = -1
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_continue_the_fight
+		}
+		relative_position_id = FRA_continue_the_fight
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			army_experience = 45	
+			add_ideas = { FRA_bir_hakeim_legacy }
+		}
+	}
+	focus = {
+		id = FRA_colonial_recruitment
+		icon = GFX_focus_CZE_german_puppet
+		x = 0
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_bir_hakeim
+		}
+		relative_position_id = FRA_bir_hakeim
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+				}
+			}
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		completion_reward = {
+			army_experience = 10	
+			add_manpower = 180000
+			add_ideas = { FRA_colonial_recruitment }
+		}
+	}
+	focus = {
+		id = FRA_kieffer
+		icon = GFX_focus_eng_special_air_service
+		x = 0
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_colonial_recruitment
+		}
+		relative_position_id = FRA_colonial_recruitment
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			army_experience = 20	
+			add_ideas = { FRA_kieffer_idea }
+		}
+	}
+	focus = {
+		id = FRA_2DB
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = FRA_FAFL }
+		x = 0
+		y = 2
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		relative_position_id = FRA_FAFL
+		cost = 5
+
+		available = {
+			FRA = { is_ally_with = USA }
+		}
+		bypass = {
+			NOT = {
+				FRA = { is_ally_with = USA }
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_XP }
+
+		completion_reward = {
+			army_experience = 15
+			add_tech_bonus = {
+				name = FRA_medium_armor_focus
+				bonus = 1.0
+				uses = 1
+				category = cat_medium_armor
+			}
+			if = {
+				limit = {
+					has_dlc = "No Step Back"
+				}
+				create_equipment_variant = {
+					name = "M4 Sherman"
+					type = medium_tank_chassis_2
+					design_team = mio:FRA_somua_organization
+					parent_version = 0
+				modules = {
+					main_armament_slot = tank_medium_cannon_2 
+					turret_type_slot = tank_medium_three_man_tank_turret
+					suspension_type_slot = tank_bogie_suspension
+					armor_type_slot = tank_cast_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_1 = tank_radio_1
+					special_type_slot_2 = stabilizer
+					special_type_slot_3 = sloped_armor
+					}
+				upgrades = {
+						tank_nsb_engine_upgrade = 4
+						tank_nsb_armor_upgrade = 5
+					}
+					icon = "GFX_USA_medium_CCA_camo"
+				}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+					type = medium_tank_equipment_1
+					amount = 500
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_the_regiment_normandie
+		icon = GFX_focus_fra_regiment_normandie
+		x = -2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_the_free_french_navy
+		}
+		relative_position_id = FRA_the_free_french_navy
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			any_enemy_country = {
+				has_war_with = SOV
+			}
+			NOT = {
+				has_war_with = SOV
+			}
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			air_experience = 25
+			SOV = {
+				add_equipment_to_stockpile = {
+					type = small_plane_airframe
+					amount = 100
+					producer = FRA
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_refus_absurde
+		icon = GFX_focus_spr_crush_the_revolution
+		x = -8
+		y = 1
+		
+		prerequisite = { 
+			focus = FRA_rally_defectors
+		}
+		relative_position_id = FRA_rally_defectors
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				
+			}
+			else = {
+				num_of_factories > 14
+			}
+		}
+		
+		bypass = {
+			not = { has_idea = FRA_defeatism }
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			remove_ideas = { FRA_defeatism }
+		}
+	}
+	focus = {
+		id = FRA_the_maquis
+		icon = GFX_focus_focus_fra_maquis
+		x = -8
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_refus_absurde
+		}
+		relative_position_id = FRA_refus_absurde
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = { FRA_maquis }
+			every_state = {
+				limit = {
+					is_core_of = ROOT
+					not = { is_controlled_by = ROOT }
+					infrastructure < 3
+				}
+				add_resistance_target = {
+					amount = 10
+					tooltip = FRA_the_maquis
+				}
+			}
+		}
+	}
+	focus = {
+		id = FRA_radio_londre
+		icon = GFX_focus_SWE_radiotjanst
+		x = 0
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_the_maquis
+		}
+		relative_position_id = FRA_the_maquis
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.10
+			add_manpower = 7000
+		}
+	}
+	focus = {
+		id = FRA_passive_resistance
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		x = -2
+		y = 3
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_the_maquis
+		}
+		relative_position_id = FRA_the_maquis
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		completion_reward = {
+			add_war_support = 0.05
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = FRA_train_resistance
+		icon = GFX_focus_generic_limited_social_mobilization
+		x = -2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_drop_weapons
+		}
+		relative_position_id = FRA_drop_weapons
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_command_power = 25
+			swap_ideas = {
+				remove_idea = FRA_maquis2
+				add_idea = FRA_maquis3
+			}
+		}
+	}
+	focus = {
+		id = FRA_underground_newspaper
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		x = 4
+		y = 0
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_the_maquis
+		}
+		relative_position_id = FRA_passive_resistance
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		completion_reward = {
+			add_war_support = 0.08
+		}
+	}
+	focus = {
+		id = FRA_break_german_lines
+		icon = GFX_focus_FIN_motti_tactics
+		prerequisite = { focus = FRA_the_maquis }
+		x = 4
+		y = 1
+		relative_position_id = FRA_the_maquis
+		cost = 5
+
+		available = {
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			GER = {
+				add_timed_idea = { idea = FRA_sabotages days = 175 }
+			}
+		}
+	}
+	focus = {
+		id = FRA_improvised_weapons
+		icon = GFX_focus_FIN_oy_alkoholiliike
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_break_german_lines
+		}
+		relative_position_id = FRA_break_german_lines
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+	
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 1008
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 2001
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1504
+			}
+		}
+	}
+	focus = {
+		id = FRA_drop_weapons
+		icon = GFX_focus_generic_paratrooper
+		x = 2
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_underground_newspaper
+		}
+		prerequisite = {
+			focus = FRA_passive_resistance
+		}
+		relative_position_id = FRA_passive_resistance
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {					
+			has_equipment = {
+				infantry_equipment > 1249
+			}
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1250
+			}
+			swap_ideas = {
+				remove_idea = FRA_maquis
+				add_idea = FRA_maquis2
+			}
+		}
+	}
+	focus = {
+		id = FRA_resistance_capital
+		icon = GFX_focus_hol_united_netherlands
+		x = 0
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_drop_weapons
+		}
+		relative_position_id = FRA_drop_weapons
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
+		completion_reward = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 3
+			}
+			add_war_support = 0.05
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = FRA_fight_vichy
+		icon = GFX_goal_generic_major_war
+		x = -4
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_form_the_national_committee
+		}
+		relative_position_id = FRA_form_the_national_committee
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			country_exists = EFR
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			
+			if = {
+				limit = {
+					country_exists = EFR
+				}
+				create_wargoal = {
+					target = EFR
+					type = topple_government
+					expire = 0
+				}
+			}
+		}
+	}
+	# focus = {
+	# 	id = FRA_resistance1
+	# 	icon = GFX_focus_SOV_support_spanish_poum
+	# 	x = 0
+	# 	y = 1
+	# 	offset = {
+	# 		x = 0
+	# 		y = 0
+	# 	}
+	# 	prerequisite = { 
+	# 		focus = FRA_the_maquis
+	# 	}
+	# 	relative_position_id = FRA_the_maquis
+		
+	# 	cost = 4
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available = {
+			
+	# 	}
+		
+	# 	bypass = {
+
+	# 	}
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = yes
+	# 	search_filters = { FOCUS_FILTER_POLITICAL }
+	# 	completion_reward = {
+	# 		add_ideas = FRA_la_resistance
+	# 	}
+	# }
+	# focus = {
+	# 	id = FRA_resistance2
+	# 	icon = GFX_focus_ETH_freedom_at_gunpoint
+	# 	x = 0
+	# 	y = 1
+	# 	offset = {
+	# 		x = 0
+	# 		y = 0
+	# 	}
+	# 	prerequisite = { 
+	# 		focus = FRA_resistance1
+	# 	}
+	# 	relative_position_id = FRA_resistance1
+		
+	# 	cost = 4
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available = {
+			
+	# 	}
+		
+	# 	bypass = {
+
+	# 	}
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = yes
+	# 	search_filters = { FOCUS_FILTER_POLITICAL }
+	# 	completion_reward = {
+	# 		army_experience = 5
+	# 		swap_ideas = {
+
+	# 		remove_idea = FRA_la_resistance
+
+	# 		add_idea = FRA_la_resistance2
+
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = FRA_resistance3
+	# 	icon = GFX_focus_chi_reach_out_to_france
+	# 	x = 0
+	# 	y = 1
+	# 	offset = {
+	# 		x = 0
+	# 		y = 0
+	# 	}
+	# 	prerequisite = { 
+	# 		focus = FRA_resistance2
+	# 	}
+	# 	relative_position_id = FRA_resistance2
+		
+	# 	cost = 4
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available = {
+			
+	# 	}
+		
+	# 	bypass = {
+
+	# 	}
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = yes
+	# 	search_filters = { FOCUS_FILTER_POLITICAL }
+	# 	completion_reward = {
+	# 		army_experience = 5
+	# 		swap_ideas = {
+
+	# 		remove_idea = FRA_la_resistance2
+
+	# 		add_idea = FRA_la_resistance3
+
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = FRA_resistance4
+	# 	icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+	# 	x = 0
+	# 	y = 1
+	# 	offset = {
+	# 		x = 0
+	# 		y = 0
+	# 	}
+	# 	prerequisite = { 
+	# 		focus = FRA_resistance3
+	# 	}
+	# 	relative_position_id = FRA_resistance3
+		
+	# 	cost = 4
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available = {
+			
+	# 	}
+		
+	# 	bypass = {
+
+	# 	}
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = yes
+	# 	search_filters = { FOCUS_FILTER_POLITICAL }
+	# 	completion_reward = {
+	# 		army_experience = 5
+	# 		swap_ideas = {
+
+	# 		remove_idea = FRA_la_resistance3
+
+	# 		add_idea = FRA_la_resistance4
+
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = FRA_resistance5
+	# 	icon = GFX_focus_focus_fra_national_resistance_council
+	# 	x = 0
+	# 	y = 1
+	# 	offset = {
+	# 		x = 0
+	# 		y = 0
+	# 	}
+	# 	prerequisite = { 
+	# 		focus = FRA_resistance4
+	# 	}
+	# 	relative_position_id = FRA_resistance4
+		
+	# 	cost = 4
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available = {
+			
+	# 	}
+		
+	# 	bypass = {
+
+	# 	}
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = yes
+	# 	search_filters = { FOCUS_FILTER_POLITICAL }
+	# 	completion_reward = {
+	# 		army_experience = 5
+	# 		swap_ideas = {
+
+	# 		remove_idea = FRA_la_resistance4
+
+	# 		add_idea = FRA_la_resistance5
+
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = FRA_resistance6
+	# 	icon = GFX_focus_FRA_degaulle
+	# 	x = 0
+	# 	y = 1
+	# 	offset = {
+	# 		x = 0
+	# 		y = 0
+	# 	}
+	# 	prerequisite = { 
+	# 		focus = FRA_resistance5
+	# 	}
+	# 	relative_position_id = FRA_resistance5
+		
+	# 	cost = 4
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	available = {
+			
+	# 	}
+		
+	# 	bypass = {
+
+	# 	}
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = yes
+	# 	search_filters = { FOCUS_FILTER_POLITICAL }
+	# 	completion_reward = {
+	# 		army_experience = 5
+	# 		swap_ideas = {
+
+	# 		remove_idea = FRA_la_resistance5
+
+	# 		add_idea = FRA_la_resistance6
+
+	# 		}
+	# 	}
+	# }
+	focus = {
+		id = FRA_british_equipement
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = FRA_hidden_weapons }
+		x = 0
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		relative_position_id = FRA_hidden_weapons
+		cost = 5
+		available = {
+			any_enemy_country = {
+				has_war_with = ENG
+			}
+			FRA = { is_ally_with = ENG }
+			NOT = {
+				has_war_with = ENG
+			}
+		}
+		bypass = {
+			NOT = {
+				FRA = { is_ally_with = ENG }
+			}
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_ARMY_XP}
+		
+		completion_reward = {
+			army_experience = 10
+        		add_equipment_to_stockpile = {
+        		type = infantry_equipment_1
+			amount = 5000
+			producer = ENG
+			 }
+		}
+	}
+	focus = {
+		id = FRA_usa_equipement
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = FRA_british_equipement }
+		x = 0
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		relative_position_id = FRA_british_equipement
+		cost = 5
+		available = {
+			any_enemy_country = {
+				has_war_with = USA
+			}
+			FRA = { is_ally_with = USA }
+			NOT = {
+				has_war_with = USA
+			}
+		}
+		bypass = {
+			NOT = {
+				FRA = { is_ally_with = USA }
+			}
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_ARMY_XP}
+		
+		completion_reward = {
+			army_experience = 10
+			add_equipment_to_stockpile = {
+        		type = artillery_equipment_1
+			amount = 8000
+			producer = USA
+			}
+			add_equipment_to_stockpile = {
+        		type = infantry_equipment_1
+			amount = 10000
+			producer = USA
+			 }
+		}
+	}
+	focus = {
+		id = FRA_reach_out_to_trade_unions
+		icon = GFX_focus_generic_workers
+		x = 0
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_refus_absurde
+		}
+		relative_position_id = FRA_refus_absurde
+		
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			add_ideas = FRA_connections_to_trade_unions
+		}
+	}
+	focus = {
+		id = FRA_cooperation_with_the_communists
+		icon = GFX_focus_generic_soviet_politics
+		x = 0
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_reach_out_to_trade_unions
+		}
+		relative_position_id = FRA_reach_out_to_trade_unions
+		
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+			effect_tooltip = {
+				create_corps_commander = {
+					name = "Henri Rol-Tanguy"
+				}
+			}
+			swap_ideas = {
+				remove_idea = FRA_connections_to_trade_unions
+				add_idea = FRA_communist_cooperation_2
+			}
+		}
+	}
+	focus = {
+		id = FRA_cooperation_with_the_royalists
+		icon = GFX_focus_focus_fra_third_empire
+		prerequisite = { focus = FRA_refus_absurde }
+		x = 3
+		y = 2
+		relative_position_id = FRA_refus_absurde
+		cost = 4
+
+		available = {
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = FRA_royalists_resistance
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = FRA_connections_to_industrialists
+		icon = GFX_focus_generic_industrialists
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_cooperation_with_the_royalists
+		}
+		relative_position_id = FRA_cooperation_with_the_royalists
+		
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = FRA_industrialist_connections
+		}
+	}
+	focus = {
+		id = FRA_the_civil_and_military_organization
+		icon = GFX_focus_focus_fra_maquis
+		x = 0
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_connections_to_industrialists
+		}
+		relative_position_id = FRA_connections_to_industrialists
+		
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_industrialist_connections
+				add_idea = FRA_civil_and_military_organization
+			}
+		}
+	}
+	focus = {
+		id = FRA_establish_a_gaullist_resistance
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		x = 6
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_refus_absurde
+		}
+		prerequisite = {
+			focus = FRA_appeal_to_the_french_nation
+		}
+		relative_position_id = FRA_refus_absurde
+		
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			effect_tooltip = {
+				create_corps_commander = {
+					name = "Charles Delestraint"
+				}
+			}
+			add_ideas = FRA_secret_army
+		}
+	}
+	focus = {
+		id = FRA_united_resistance_movements
+		icon = GFX_focus_chi_reach_out_to_france
+		x = 0
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_establish_a_gaullist_resistance
+		}
+		relative_position_id = FRA_establish_a_gaullist_resistance
+		
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_secret_army
+				add_idea = FRA_united_resistance_movements
+			}
+		}
+	}
+	focus = {
+		id = FRA_national_council_of_the_resistance
+		icon = GFX_focus_focus_fra_national_resistance_council
+		x = 0
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_the_civil_and_military_organization
+		}
+		prerequisite = {
+			focus = FRA_cooperation_with_the_communists
+		}
+		prerequisite = {
+			focus = FRA_united_resistance_movements
+		}
+		prerequisite = {
+			focus = FRA_form_the_national_committee
+		}
+		relative_position_id = FRA_the_civil_and_military_organization
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 2
+			}
+			remove_ideas = FRA_communist_cooperation_2
+			remove_ideas = FRA_civil_and_military_organization
+			remove_ideas = FRA_united_resistance_movements
+			remove_ideas = FRA_royalists_resistance
+			remove_ideas = FRA_resistance_not_unified
+			add_ideas = FRA_national_council_of_the_resistance
+		}
+	}
+	focus = {
+		id = FRA_send_moulin
+		icon = GFX_focus_generic_vatican_agents
+		prerequisite = { focus = FRA_national_council_of_the_resistance }
+		available = {
+			has_intelligence_agency = yes
+		}
+		allow_branch = {
+			has_dlc = "La Resistance"
+		}
+
+		x = 0
+		y = 2
+		relative_position_id = FRA_national_council_of_the_resistance
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+			add_ideas = { FRA_expand_intelligence_idea }
+			create_operative_leader = {
+				bypass_recruitment = yes
+				name = "Jean Moulin"
+				GFX = "GFX_portrait_FRA_jean_moulin"
+				traits = {
+					operative_escape_artist operative_infiltrator operative_commando
+				}
+				nationalities = { FRA }
+			}
+		}
+	}
+	focus = {
+		id = FRA_national_uprising
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		x = -2
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_national_council_of_the_resistance
+		}
+		relative_position_id = FRA_national_council_of_the_resistance
+		
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_timed_idea = { idea = FRA_national_uprising days = 220 }
+		}
+	}
+	focus = {
+		id = FRA_french_forces_of_the_interior
+		icon = GFX_focus_prc_infiltration
+		x = 2
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_national_council_of_the_resistance
+		}
+		relative_position_id = FRA_national_council_of_the_resistance
+		
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			custom_effect_tooltip = FRA_french_forces_of_the_interior_tt
+			division_template = {
+				name = "FFI Demi-Brigade" 	
+				division_names_group = FRA_INF_01
+				is_locked = yes
+				regiments = {
+					militia = { x = 0 y = 0 }		
+					militia = { x = 0 y = 1 }		
+					militia = { x = 0 y = 2 }		
+					militia = { x = 0 y = 3 }		
+					militia = { x = 0 y = 4 }		
+				}
+				support = {
+					
+				}
+			}
+			every_owned_state = {
+				limit = { 
+					is_core_of = ROOT 
+					not = { has_state_flag = FRA_core_state_liberated }
+					is_fully_controlled_by = ROOT
+				}
+				create_unit = {
+					division = "name = \"1re Demi-Brigade des FFI\" division_template = \"FFI Demi-Brigade\" start_experience_factor = 0"  
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"2me Demi-Brigade des FFI\" division_template = \"FFI Demi-Brigade\" start_experience_factor = 1"  
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"3me Demi-Brigade des FFI\" division_template = \"FFI Demi-Brigade\" start_experience_factor = 0"  
+					owner = ROOT
+				}
+				set_state_flag = FRA_core_state_liberated
+			}
+		}
 	}
 	
 

@@ -332,7 +332,6 @@ country_event = {
 					amount = 600
 				}
 				add_ideas = FRA_defeatism
-				remove_ideas = FRA_no_cap
 				remove_ideas = FRA_victors_of_wwi
 		        remove_ideas = FPM_disjointed_government1
 		        remove_ideas = FRA_protected_by_the_maginot_line

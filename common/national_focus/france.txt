@@ -3914,25 +3914,14 @@ focus = {
 		bypass = {
 	
 		}
-	
+	    available_if_capitulated = yes
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 	
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 		completion_reward = {
-			add_country_leader_role = {
-				character = FRA_charles_de_gaulle
-				country_leader = {
-					expire = "1965.1.1"
-					ideology = conservatism
-					traits = {
-						emergency_powers
-						popular_figurehead3
-					}	
-				}
-				promote_leader = yes				
-			}
+			
 			EFR = {
 				every_army_leader = {
 					set_nationality = FRA
@@ -3973,6 +3962,18 @@ focus = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
+			add_country_leader_role = {
+				character = FRA_charles_de_gaulle
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						emergency_powers
+						popular_figurehead3
+					}	
+				}
+				promote_leader = yes				
+			}
 			#failsafe for bug that seems impossible to fix
 			if = {
 				limit = {

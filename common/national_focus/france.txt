@@ -2277,6 +2277,9 @@
 		x = 4
 		y = 1
 		relative_position_id = FRA_reform_the_labour_laws
+		mutually_exclusive = {
+			focus = FRA_support_daladier
+		}
 		prerequisite = {
 			focus = FRA_reform_the_labour_laws
 			#focus = FRA_protect_the_rights_of_man

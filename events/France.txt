@@ -303,7 +303,6 @@ country_event = {
 				clr_country_flag = GER_dont_seize_gold_reserves_flag
 			}
 			FRA = {
-				complete_national_focus = FRA_rally_defectors
 				transfer_state = 713
 				transfer_units_fraction = {
 					target = EFR

@@ -21,6 +21,7 @@ is_playable_country = {
 		tag = RAJ
 		tag = SAF
 		tag = SOV
+		tag = MON
 	}
 }
 
@@ -44,6 +45,7 @@ allies = {
 		tag = LUX
 		tag = POL
 		tag = DEN
+		tag = MON
 	}
 }
 
@@ -110,6 +112,7 @@ ai_annex = {
 		tag = AUS
 		tag = CZE
 		tag = COG	
+		tag = POR
 	}
 }
 ai_rk = {

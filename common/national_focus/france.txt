@@ -3685,9 +3685,7 @@ q
 		y = 1
 		available = {
 		}
-		bypass = {
-			has_idea = FRA_reforms_failed
-		}
+	
 		
 		ai_will_do = {
 			factor = 4

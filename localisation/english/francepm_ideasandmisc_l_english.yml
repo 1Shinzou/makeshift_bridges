@@ -139,7 +139,6 @@
  FRA_francois_de_la_rocque:0 "François de la Rocque"
  FPM_anglo_french_war_council:0 "Anglo-French Supreme War Council"
  FPM_anglo_french_war_council_desc:0 "We should create a war council to coordinate our military with [ENG.GetName]. Together our militaries shall prevail over any threat!"
- FPM_political_violence_tt:0 "Certain groups may cause §YPolitical Violence§! if not dealt with."
  FPM_political_violence:0 "§YFrance§! has §YPolitical Violence§!"
  FPM_disable_political_violence:0 "Disables §YPolitical Violence§!"
  FPM_enables_political_violence:0 "Enables §YPolitical Violence§!"

@@ -2124,7 +2124,7 @@
 		available_if_capitulated = yes
 
 		available = {
-			NOT = { has_idea = FRA_disjointed_government }
+			NOT = { has_idea = FPM_disjointed_government1 }
 			has_war_with_major = yes
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -2692,7 +2692,7 @@
 		}
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			remove_ideas = FRA_disjointed_government
+			remove_ideas = FPM_disjointed_government1
 			# set_rule = { can_send_volunteers = yes }
 		}
 	}
@@ -2861,7 +2861,7 @@ q
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			remove_ideas =  FRA_inefficient_economy_1
+			# remove_ideas =  FRA_inefficient_economy_1
 			add_ideas = { FRA_market_dynamism }
 			
 		}

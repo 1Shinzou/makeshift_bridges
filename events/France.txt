@@ -186,12 +186,7 @@ country_event = {
 	
 	trigger = {
 		original_tag = FRA
-	   FRA = {
-		NOT = {
-		controls_state = 16 		
-		}
-		has_idea = FRA_no_cap
-	   }
+	    surrender_progress = 0.3
 	}
 
 	immediate = {

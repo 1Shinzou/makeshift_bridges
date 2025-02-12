@@ -315,6 +315,7 @@ units= {
 #########################
 ## STARTING PRODUCTION ##
 #########################
+
 instant_effect = {
 	if = { 
 		limit = { is_tutorial = no } 
@@ -329,7 +330,7 @@ instant_effect = {
 			} 
 			name = "RN Conte di Cavour"
 			requested_factories = 2
-			progress = 0.70 
+			progress = 0.95
 			amount = 1 
 			industrial_manufacturer = mio:ITA_crda_organization
 		} 
@@ -343,7 +344,7 @@ instant_effect = {
 			} 
 			name = "RN Giulio Cesare"
 			requested_factories = 2
-			progress = 0.70 
+			progress = 0.95
 			amount = 1 
 			industrial_manufacturer = mio:ITA_crda_organization
 		} 
@@ -355,7 +356,7 @@ instant_effect = {
 				version_name = "Littorio Class" 
 			} 
 			requested_factories = 2
-			progress = 0.20 
+			progress = 0.95
 			amount = 1 
 			industrial_manufacturer = mio:ITA_crda_organization
 		} 
@@ -367,7 +368,7 @@ instant_effect = {
 				version_name = "Littorio Class" 
 			} 
 			requested_factories = 2
-			progress = 0.20 
+			progress = 0.95
 			amount = 1 
 			industrial_manufacturer = mio:ITA_crda_organization
 		} 
@@ -392,7 +393,7 @@ instant_effect = {
 				version_name = "Duca degli Abruzzi Class" 
 			} 
 			requested_factories = 1 
-			progress = 0.5 
+			progress = 0.95
 			amount = 1
 			industrial_manufacturer = mio:ITA_cantiere_oto_organization 
 		} 
@@ -404,7 +405,7 @@ instant_effect = {
 				version_name = "Duca degli Abruzzi Class" 
 			} 
 			requested_factories = 1 
-			progress = 0.45 
+			progress = 0.95
 			amount = 1 
 			industrial_manufacturer = mio:ITA_cantiere_oto_organization
 		} 
@@ -417,7 +418,7 @@ instant_effect = {
 				version_name = "Maestrale Class" 
 			} 
 			requested_factories = 1 
-			progress = 0.70 
+			progress = 0.95
 			amount = 1
 			industrial_manufacturer = mio:ITA_cantiere_oto_organization
 		} 
@@ -428,7 +429,7 @@ instant_effect = {
 				version_name = "Maestrale Class" 
 			} 
 			requested_factories = 1
-			progress = 0.60 
+			progress = 0.95
 			amount = 1 
 			industrial_manufacturer = mio:ITA_cantiere_oto_organization
 		} 
@@ -442,7 +443,7 @@ instant_effect = {
 			} 
 			name = "RSmg Enrico Tazzoli"
 			requested_factories = 1 
-			progress = 0.50 
+			progress = 0.95
 			amount = 1 
 			industrial_manufacturer = mio:ITA_cantieri_navali_tosi_organization
 		} 

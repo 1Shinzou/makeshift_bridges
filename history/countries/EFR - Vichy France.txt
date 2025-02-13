@@ -6,7 +6,7 @@ set_war_support = 1
 set_research_slots = 0
 set_rule = { can_join_factions = no }
 set_rule = { can_be_spymaster = no }
-add_ideas = {  }
+add_ideas = { EFR_no_prod  }
 set_cosmetic_tag = FRA_VICHY
 set_fuel_ratio = 1
 add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 2000 }

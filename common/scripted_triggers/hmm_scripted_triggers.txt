@@ -22,6 +22,7 @@ is_playable_country = {
 		tag = SAF
 		tag = SOV
 		tag = MON
+		tag = PHI
 	}
 }
 
@@ -46,6 +47,7 @@ allies = {
 		tag = POL
 		tag = DEN
 		tag = MON
+		tag = PHI
 	}
 }
 

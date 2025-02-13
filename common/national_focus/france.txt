@@ -5028,7 +5028,7 @@ focus = {
 
 		completion_reward = {
 			GER = {
-				add_timed_idea = { idea = FRA_sabotages days = 175 }
+				add_timed_idea = { idea = FRA_sabotages days = 30 }
 			}
 		}
 	}

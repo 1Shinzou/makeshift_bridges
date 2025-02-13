@@ -9978,6 +9978,7 @@ operations = {
 		cost = 0
 		
 		visible = {
+			always = no
 			tag = ENG
 			has_war_with = GER
 			date > 1941.1.1

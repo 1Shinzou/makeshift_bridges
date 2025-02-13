@@ -4454,7 +4454,10 @@ focus = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			add_ideas = { FRA_cef }
+			add_timed_idea = {
+				idea = FRA_cef
+				days = 120
+			}
 			army_experience = 10	
 		}
 	}
@@ -4498,49 +4501,7 @@ focus = {
 		completion_reward = {
 			army_experience = 70	
 			remove_ideas = VIC_africa_army
-			remove_ideas = FRA_cef
 			add_ideas = FRA_liberation_army
-			division_template = {
-						name = "Division Française Libre"
-						priority = 8
-						division_names_group = FRA_INF_01
-						regiments = {
-									infantry = { x = 0 y = 0 }
-									infantry = { x = 0 y = 1 }
-									infantry = { x = 0 y = 2 }
-									infantry = { x = 1 y = 0 }
-									infantry = { x = 1 y = 1 }
-									infantry = { x = 1 y = 2 }
-									infantry = { x = 2 y = 0 }
-									infantry = { x = 2 y = 1 }
-									infantry = { x = 2 y = 2 }
-								}
-						support = {
-							artillery = { x = 0 y = 0 } 	# Heavy Arty Regiment had 2x 155mm battalions
-							engineer = { x = 0 y = 1 }
-							anti_air = { x = 0 y = 2 }
-					}
-			}
-			random_owned_controlled_state = {
-				limit = { ROOT = { has_full_control_of_state = PREV } }
-				prioritize = { 16 }
-				create_unit = {
-					division = "name = \"1re division de Marche d'Infanterie\" division_template = \"Division Française Libre\" start_experience_factor = 0.9" 
-					owner = FRA
-				}
-				create_unit = {
-					division = "name = \"4ème Division Marocaine de Montagne\" division_template = \"Division Française Libre\" start_experience_factor = 0.7" 
-					owner = FRA
-				}
-				create_unit = {
-					division = "name = \"3ème Division d’Infanterie Algérienne\" division_template = \"Division Française Libre\" start_experience_factor = 0.7" 
-					owner = FRA
-				}
-				create_unit = {
-					division = "name = \"9ème Division d’Infanterie Coloniale\" division_template = \"Division Française Libre\" start_experience_factor = 0.7" 
-					owner = FRA
-				}
-			}
 		}
 	}
 
@@ -4647,7 +4608,10 @@ focus = {
 		available_if_capitulated = yes
 		completion_reward = {
 			army_experience = 45	
-			add_ideas = { FRA_bir_hakeim_legacy }
+			add_timed_idea = {
+				idea = FRA_bir_hakeim_legacy
+				days = 365
+			}
 		}
 	}
 	focus = {

@@ -721,6 +721,8 @@ ideas = {
 
 		ROM_army_tensions = {
 
+			picture = prc_low_popular_support2
+
 			removal_cost = -1
 			
 			allowed = {

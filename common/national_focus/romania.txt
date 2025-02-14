@@ -1798,23 +1798,6 @@ focus_tree = {
 		}
 	}	
 
-	focus = {
-		id = ROM_copy_succesful_german_fighters
-		icon = GFX_focus_GER_airforce
-		prerequisite = { focus = ROM_light_metal_production }
-		prerequisite = { focus = ROM_invite_german_air_companies }
-		
-		x = 0
-		y = 3
-		relative_position_id = ROM_acquire_licenses
-
-		cost = 5
-
-
-		completion_reward = {
-			air_experience = 50
-		}
-	}	
 
 	focus = {
 		id = ROM_local_development
@@ -1906,47 +1889,14 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = ROM_order_of_the_dragon
-		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = ROM_cas }
-		prerequisite = { focus = ROM_invest_in_the_iar }
-		x = 0
-		y = 2
-		relative_position_id = ROM_air_superiority
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-		}
-
-		completion_reward = {
-			add_ideas = ROM_order_of_the_dragon
-		}
-	}
 
 	focus = {
 		id = ROM_prioritize_aircraft_industry
 		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = ROM_invite_german_air_companies focus = ROM_invest_in_the_iar }
+		prerequisite = { focus = ROM_invite_german_air_companies focus = ROM_invest_in_the_iar 
+		focus = ROM_light_metal_production focus = ROM_cas }
 		x = -2
-		y = 3
+		y = 2
 		relative_position_id = ROM_air_superiority
 
 		cost = 5

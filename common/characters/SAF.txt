@@ -33,6 +33,7 @@ characters={
 				armor_officer
 				trickster
 				career_officer
+				panzer_leader
 
 			}
 			skill = 4

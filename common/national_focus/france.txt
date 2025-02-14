@@ -1465,7 +1465,7 @@
 		prerequisite = { focus = FRA_heavy_armor_focus }
 		mutually_exclusive = { }
 		relative_position_id = FRA_heavy_armor_focus
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1

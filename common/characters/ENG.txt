@@ -318,7 +318,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ inflexible_strategist armor_officer politically_connected }
+			traits={ inflexible_strategist armor_officer politically_connected panzer_leader  }
 			skill=4
 			attack_skill=3
 			defense_skill=4
@@ -667,7 +667,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ harsh_leader armor_officer politically_connected }
+			traits={ harsh_leader armor_officer politically_connected panzer_leader }
 			skill=4
 			attack_skill=4
 			defense_skill=2
@@ -1160,7 +1160,7 @@ characters={
 			idea_token = ENG_jfc_fuller
 			ledger = army
 			available = {
-				has_government = fascism
+				has_completed_focus = ENG_adopt_bliztkrieg_tactics
 			}
 			allowed = {
 				original_tag = ENG

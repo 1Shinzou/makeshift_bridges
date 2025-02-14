@@ -285,7 +285,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = limited_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -325,8 +325,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			has_tech = basic_heavy_tank_chassis
+		}
 
-		available_if_capitulated = yes
+	#	available_if_capitulated = yes
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -339,6 +342,58 @@ focus_tree = {
 				remove_idea = motorized_army
 				add_idea = motorized_army_two
 			}
+			division_template = {
+				name = "Royal Tank Regiment" 	
+
+				regiments = {		
+					heavy_armor = { x = 0 y = 0 }		
+					heavy_armor = { x = 0 y = 1 }		
+					heavy_armor = { x = 0 y = 2 }	
+					heavy_armor = { x = 0 y = 3 }
+					heavy_armor = { x = 0 y = 4 }		
+					heavy_armor = { x = 1 y = 0 }		
+					heavy_armor = { x = 1 y = 1 }
+					heavy_armor = { x = 1 y = 2 }		
+					heavy_armor = { x = 1 y = 3 }
+					heavy_armor = { x = 1 y = 4 }		
+					mechanized = { x = 2 y = 0 }			
+					mechanized = { x = 2 y = 1 }
+					mechanized = { x = 2 y = 2 }
+					mechanized = { x = 2 y = 3 }	
+					mechanized = { x = 2 y = 4 }		
+					mechanized = { x = 3 y = 0 }
+					mechanized = { x = 3 y = 1 }			
+					mechanized = { x = 3 y = 2 }
+					mechanized = { x = 3 y = 3 }
+					mechanized = { x = 3 y = 4 }
+				}
+				support = {  		
+					artillery = { x = 0 y = 0 }
+					anti_air = { x = 0 y = 1 }
+					engineer = { x = 0 y = 2 }
+
+				}
+			}
+		
+				capital_scope = {
+					create_unit = {
+						division = "name = \"1st Royal Tank Divison\" division_template = \"Royal Tank Regiment\" start_experience_factor = 0.7 }"  
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"2nd Royal Tank Divison\" division_template = \"Royal Tank Regiment\" start_experience_factor = 0.7 }"  
+						owner = ROOT
+					}
+						create_unit = {
+						division = "name = \"3rd Royal Tank Divison\" division_template = \"Royal Tank Regiment\" start_experience_factor = 0.7 }"  
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"4th Royal Tank Divison\" division_template = \"Royal Tank Regiment\" start_experience_factor = 0.7 }"  
+						owner = ROOT
+					}
+				}
+			
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -349,7 +404,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ENG_tank_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1009,7 +1064,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = royal_ordinance_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1343,7 +1398,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = air_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 3
 		}
@@ -1397,7 +1452,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = air_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1447,7 +1502,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = air_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -3544,7 +3599,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ENG_expand_the_secret_intelligence_service_focus 
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -3591,7 +3646,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ENG_maintaining_imperial_integrity
 
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = no
 
@@ -3857,7 +3912,7 @@ focus_tree = {
 	focus = {
 		id = ENG_let_that_lion_roar
 		icon = GFX_focus_hol_united_netherlands
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = ENG_Provoke_british_patriotism
 		}
@@ -4287,7 +4342,7 @@ focus_tree = {
 	focus = {
 		id = ENG_ramp_up_constription
 		icon = GFX_focus_SOV_penal_battalions
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = uk_small_arms_focus
 		}
@@ -4307,7 +4362,7 @@ focus_tree = {
 	focus = {
 		id = ENG_order_increased_tank_production
 		icon = GFX_focus_generic_tank_production
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = ENG_tank_variant_focus
 		}
@@ -4339,7 +4394,7 @@ focus_tree = {
 	focus = {
 		id = ENG_britains_finest_armor_corps
 		icon = GFX_focus_SOV_the_glory_of_the_red_army_alternative
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = ENG_order_increased_tank_production
 		}

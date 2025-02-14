@@ -1351,7 +1351,7 @@ ideas = {
 			picture = FRA_political_violence
 			
 			modifier = {
-				custom_modifier_tooltip = FPM_political_violence_tt
+				# custom_modifier_tooltip = FPM_political_violence_tt
 				political_power_cost = 0.8
 				stability_factor = -0.10
 				surrender_limit = -0.15

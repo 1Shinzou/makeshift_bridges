@@ -4602,7 +4602,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = GER_form_the_jagdwaffe
-		cost = 10
+		cost = 5
 		available = {
 			GER_hermann_goring = {
 				is_air_chief = no
@@ -4649,7 +4649,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = GER_reorganize_the_luftwaffe
-		cost = 10
+		cost = 5
 		available = {
 			GER_hermann_goring = {
 				is_air_chief = no
@@ -4803,7 +4803,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = GER_reorganize_the_luftwaffe
-		cost = 10
+		cost = 5
 		available = {
 			has_war_with_major = yes
 		}
@@ -4811,10 +4811,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			add_timed_idea = {
-				idea = GER_defense_of_the_reich_ns
-				days = 730
-			}
+			add_ideas = GER_defense_of_the_reich_ns
+			#add_timed_idea = {
+			#	idea = GER_defense_of_the_reich_ns
+			#	days = 730
+			#}
 		}
 	}
 	
@@ -4903,10 +4904,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-			add_timed_idea = {
-				idea = GER_the_kammhuber_line
-				days = 365
-			}
+			add_ideas = GER_the_kammhuber_line
+			#add_timed_idea = {
+			#	idea = GER_the_kammhuber_line
+			#	days = 365
+			#}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -4971,10 +4973,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-			add_timed_idea = {
-				idea = GER_nachtjagdgeschwader
-				days = 365
-			}
+			add_ideas = GER_nachtjagdgeschwader
+			#add_timed_idea = {
+			#	idea = GER_nachtjagdgeschwader
+			#	days = 365
+			#}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 

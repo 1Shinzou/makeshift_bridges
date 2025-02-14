@@ -1,0 +1,124 @@
+spriteTypes = {	
+
+
+	SpriteType = {
+	name = "GFX_ECU_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/ECU_1.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_ECU_infantry_weapons1_medium"
+	texturefile = "gfx/interface/technologies/ECU_2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ECU_improved_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/ECU_3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ECU_advanced_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/ECU_4.dds"
+	}
+	
+### Arty ###
+
+	SpriteType = {
+	name = "GFX_ECU_gw_artillery_medium"
+	texturefile = "gfx/interface/technologies/ECU_iwa.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ECU_artillery1_medium"
+	texturefile = "gfx/interface/technologies/ECU_a2.dds"
+	}	
+	
+	SpriteType = {
+	name = "GFX_ECU_artillery4_medium"
+	texturefile = "gfx/interface/technologies/ECU_a3.dds"
+	}	
+	
+### Anti-tank ###
+
+	SpriteType = {
+	name = "GFX_ECU_interwar_antitank_medium"
+	texturefile = "gfx/interface/technologies/ECU_at1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ECU_antitank2_medium"
+	texturefile = "gfx/interface/technologies/ECU_at2.dds"
+	}	
+	
+    SpriteType = {
+	name = "GFX_ECU_antitank5_medium"
+	texturefile = "gfx/interface/technologies/ECU_at3.dds"
+	}	
+	
+### Anti-air ###
+
+	SpriteType = {
+	name = "GFX_ECU_interwar_antiair_medium"
+	texturefile = "gfx/interface/technologies/ECU_aa1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ECU_antiair2_medium"
+	texturefile = "gfx/interface/technologies/ECU_aa2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ECU_antiair5_medium"
+	texturefile = "gfx/interface/technologies/ECU_aa3.dds"
+	}	
+	
+### troop_carriers ###
+
+    SpriteType = {
+	name = "GFX_ECU_motorized_equipment_1_medium"
+	texturefile = "gfx/interface/technologies/ECU_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ECU_motorised_infantry_medium"
+	texturefile = "gfx/interface/technologies/ECU_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ECU_motorised_equipment_medium"
+	texturefile = "gfx/interface/technologies/ECU_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ECU_mechanised_infantry2_medium"
+	texturefile = "gfx/interface/technologies/ECU_tc3.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_ECU_mechanised_infantry_medium"
+	texturefile = "gfx/interface/technologies/ECU_tc2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ECU_mechanised_infantry3_medium"
+	texturefile = "gfx/interface/technologies/ECU_tc4.dds"
+	}
+	
+### armoured cars ###
+
+	SpriteType = {
+	name = "GFX_ECU_armored_car1_medium"
+	texturefile = "gfx/interface/technologies/ECU_ac1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ECU_armored_car2_medium"
+	texturefile = "gfx/interface/technologies/ECU_ac2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_ECU_armored_car3_medium"
+	texturefile = "gfx/interface/technologies/ECU_ac3.dds"
+	}
+	
+}

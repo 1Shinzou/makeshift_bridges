@@ -1,0 +1,124 @@
+spriteTypes = {	
+
+
+	SpriteType = {
+	name = "GFX_OMA_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/OMA_1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_OMA_infantry_weapons1_medium"
+	texturefile = "gfx/interface/technologies/OMA_2.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_OMA_improved_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/OMA_3.dds"
+	}
+		
+	SpriteType = {
+	name = "GFX_OMA_advanced_infantry_weapons_medium"
+	texturefile = "gfx/interface/technologies/OMA_4.dds"
+	}
+	
+### Arty ###
+
+	SpriteType = {
+	name = "GFX_OMA_gw_artillery_medium"
+	texturefile = "gfx/interface/technologies/OMA_iwa.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_OMA_artillery1_medium"
+	texturefile = "gfx/interface/technologies/OMA_a2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_OMA_artillery4_medium"
+	texturefile = "gfx/interface/technologies/OMA_a3.dds"
+	}
+	
+### Anti-tank ###
+
+	SpriteType = {
+	name = "GFX_OMA_interwar_antitank_medium"
+	texturefile = "gfx/interface/technologies/OMA_at1.dds"
+	}	
+		
+	SpriteType = {
+	name = "GFX_OMA_antitank2_medium"
+	texturefile = "gfx/interface/technologies/OMA_at2.dds"
+	}	
+   
+    SpriteType = {
+	name = "GFX_OMA_antitank5_medium"
+	texturefile = "gfx/interface/technologies/OMA_at3.dds"
+	}	
+	
+### Anti-air ###
+
+	SpriteType = {
+	name = "GFX_OMA_interwar_antiair_medium"
+	texturefile = "gfx/interface/technologies/OMA_aa1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_OMA_antiair2_medium"
+	texturefile = "gfx/interface/technologies/OMA_aa2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_OMA_antiair5_medium"
+	texturefile = "gfx/interface/technologies/OMA_aa3.dds"
+	}
+	
+### armoured cars ###
+
+	SpriteType = {
+	name = "GFX_OMA_armored_car1_medium"
+	texturefile = "gfx/interface/technologies/OMA_ac1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_OMA_armored_car2_medium"
+	texturefile = "gfx/interface/technologies/OMA_ac2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_OMA_armored_car3_medium"
+	texturefile = "gfx/interface/technologies/OMA_ac3.dds"
+	}
+	
+### troop_carriers ###
+
+    SpriteType = {
+	name = "GFX_OMA_motorized_equipment_1_medium"
+	texturefile = "gfx/interface/technologies/OMA_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_OMA_motorised_infantry_medium"
+	texturefile = "gfx/interface/technologies/OMA_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_OMA_motorised_equipment_medium"
+	texturefile = "gfx/interface/technologies/OMA_tc1.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_OMA_mechanised_infantry_medium"
+	texturefile = "gfx/interface/technologies/OMA_tc2.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_OMA_mechanised_infantry2_medium"
+	texturefile = "gfx/interface/technologies/OMA_tc3.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_OMA_mechanised_infantry3_medium"
+	texturefile = "gfx/interface/technologies/OMA_tc4.dds"
+	}
+	
+}

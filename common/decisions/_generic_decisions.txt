@@ -136,37 +136,6 @@ political_actions = {
 			}
 		}
 	}
-	case_anton = {
-
-		icon = GFX_decision_ger_reichskommissariats
-		priority = 10
-		available = {
-			EFR = {
-				exists = yes
-			}
-			if = {
-				has_war_with = SOV
-			}
-		}
-
-		visible = {
-			tag = GER
-		}
-
-		fire_only_once = no
-
-		complete_effect = {
-			annex_country = {
-				target = EFR
-				transfer_troops = no
-			}
-		}
-
-
-		
-
-	
-	}
 }
 
 economy_decisions = {

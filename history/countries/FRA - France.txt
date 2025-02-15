@@ -20,7 +20,7 @@ starting_train_buffer = 2
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "FRA_1936_naval_mtg"
-		set_war_support = 0.1
+		set_war_support = 0.15
 	else = {
 		set_naval_oob = "FRA_1936_naval_legacy"
 		set_war_support = 0.15
@@ -410,6 +410,7 @@ add_ideas = {
 	FRA_full_employment
 	FRA_political_violence
 	FRA_inefficient_economy_2
+	low_economic_mobilisation
 }
 
 give_guarantee = CZE

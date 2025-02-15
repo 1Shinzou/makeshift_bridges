@@ -10233,6 +10233,12 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
 		completion_reward = {
+			EFR = {
+				give_resource_rights = {
+					receiver = ITA
+					state = 459
+				}
+			}
 			if = {
 				limit = { 
 					any_other_country = {

@@ -151,7 +151,6 @@ political_actions = {
 
 		visible = {
 			tag = GER
-			date > 1940.1.1
 		}
 
 		fire_only_once = no

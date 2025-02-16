@@ -900,6 +900,7 @@ add_ideas = {
 		stalingrad_tractor_factory
 		SOV_tula_arms_plant
 		#laws
+		SOV_collectivized_society
 		war_economy
 		extensive_conscription
 	}

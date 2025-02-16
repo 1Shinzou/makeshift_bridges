@@ -236,10 +236,10 @@ characters={
 		}
 		corps_commander={
 			traits = { 
-				politically_connected cavalry_leader infantry_leader urban_assault_specialist trickster commando
+				politically_connected cavalry_leader infantry_leader  trickster commando
 			}
 			skill = 6
-			attack_skill = 6
+			attack_skill = 2
 			defense_skill = 2
 			planning_skill = 2
 			logistics_skill = 10
@@ -762,10 +762,10 @@ characters={
 		}
 		corps_commander={
 			traits = { 
-				politically_connected cavalry_leader infantry_leader urban_assault_specialist trickster commando
+				politically_connected cavalry_leader infantry_leader  trickster commando
 			}
 			skill = 6
-			attack_skill = 6
+			attack_skill = 2
 			defense_skill = 2
 			planning_skill = 2
 			logistics_skill = 10
@@ -846,11 +846,11 @@ characters={
 			}
 		}
 		corps_commander = { #17/17
-		traits = {  organizer panzer_leader panzer_expert expert_improviser ranger trait_cautious brilliant_strategist  urban_assault_specialist }
+		traits = {  organizer panzer_leader panzer_expert expert_improviser ranger trait_cautious brilliant_strategist   }
 		skill = 6
-		attack_skill = 4
-		defense_skill = 4
-		planning_skill = 3
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
 		logistics_skill = 8
 		}
 	}

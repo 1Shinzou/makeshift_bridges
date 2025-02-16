@@ -27,7 +27,7 @@ italian_arms_discount:0 "Bresica Small Arms Industry"
 greater_italy_required_other_states:0 "Italy or a subject of Italy control \n§YSuez§! \n§YCorsica§! \n§YSavoy§! \n§YZara§! \n§YDalmatia§! \n§YLjubljana§! \n§YMalta§! \n§YCrete§! \n§YDodecaneso§!"
 
  cat_air_bombs: "Bomb Locks"
-
+SOV_collectivized_society:0 "Collectivized Society"
 
 # VP NAMES MAP MODDING
   VICTORY_POINTS_7985: "Maradah"

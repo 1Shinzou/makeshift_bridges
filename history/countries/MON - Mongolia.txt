@@ -24,7 +24,7 @@ set_variable = {
 }
 
 add_ideas = {
-	export_focus
+	SOV_collectivized_society
 	limited_conscription
 	low_economic_mobilisation 
 	MON_ill_educated_population_idea

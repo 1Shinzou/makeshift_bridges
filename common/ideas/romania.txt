@@ -988,10 +988,6 @@ ideas = {
 			allowed_civil_war = {
 			}
 
-			rule = {
-				can_join_factions = no 
-			}
-
 			modifier = {
 				stability_factor = 0.2
 				political_power_gain = 0.05

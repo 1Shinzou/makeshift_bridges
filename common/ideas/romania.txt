@@ -1123,7 +1123,6 @@ ideas = {
 			
 			modifier = {
 				mobilization_speed = 0.2 	
-				experience_loss_factor = -0.10
 				minimum_training_level = -0.2 	
 			}
 		}
@@ -1162,7 +1161,6 @@ ideas = {
 				supply_consumption_factor = -0.1
 				mobilization_speed = 0.2 
 				land_reinforce_rate	= 0.05		
-				experience_loss_factor = -0.30
 				minimum_training_level = -0.2 	
 			}
 		}

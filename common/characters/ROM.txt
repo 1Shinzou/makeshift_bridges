@@ -112,7 +112,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ logistics_wizard offensive_doctrine }
+			traits={ logistics_wizard offensive_doctrine organizer infantry_leader }
 			skill=4
 			attack_skill=4
 			defense_skill=4
@@ -252,7 +252,7 @@ characters={
 		}
 		
 		field_marshal={
-			traits={ offensive_doctrine }
+			traits={ offensive_doctrine infantry_leader }
 			skill=4
 			attack_skill=4
 			defense_skill=4

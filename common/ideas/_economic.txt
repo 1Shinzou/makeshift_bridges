@@ -1132,7 +1132,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				min_export = 0.3
+				min_export = 0.5
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
 				production_speed_buildings_factor = 0.1

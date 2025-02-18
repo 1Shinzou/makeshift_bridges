@@ -14,7 +14,7 @@ state={
 		victory_points = {
 			12612 1 #Sainshand
 		}
-		add_core_of = MON
+		add_core_of = WST
 	}
 	manpower=22000
 	buildings_max_level_factor=1.000

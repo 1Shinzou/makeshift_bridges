@@ -3372,6 +3372,7 @@ focus_tree = {
 			factor = 10
 		}	
 		completion_reward = {
+			add_war_support = 0.05
 			if = {
 				limit = {
 					has_dlc = "Together for Victory"

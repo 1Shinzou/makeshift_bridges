@@ -222,21 +222,6 @@ bookmarks = {
 				AST_fly_the_jolly_roger
 			}
 		}
-		"MON"={
-			minor = yes
-			history = "MON_GATHERING_STORM_DESC"
-			ideology = communism
-			ideas = {
-				MON_buddhist_opposition
-				MON_ill_educated_population_idea
-				MON_new_course_policy_idea
-			}
-			focuses = {
-				MON_hold_plenum_of_central_committee
-				MON_a_socialist_republic
-				MON_desperate_measures
-			}
-		}
 		"PHI"={
 			minor = yes
 			history = "PHI_GATHERING_STORM_DESC"

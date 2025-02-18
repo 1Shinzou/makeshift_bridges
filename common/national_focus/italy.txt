@@ -14396,7 +14396,7 @@ focus = {
 		relative_position_id = ITA_pact_of_steel
 		cost = 1
 		available = {
-			date > 1939.03.01
+			GER = { has_war = yes }
 			is_subject = no
 			GRE = { exists = yes }
 			NOT = { is_in_faction_with = GRE }

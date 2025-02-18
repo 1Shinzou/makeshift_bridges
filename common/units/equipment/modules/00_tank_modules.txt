@@ -1515,7 +1515,7 @@ equipment_modules = {
 
 		add_stats = {
 			entrenchment = 1
-			build_cost_ic = 1
+			build_cost_ic = 3
 		}
 		
 		multiply_stats = {

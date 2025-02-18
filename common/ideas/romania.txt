@@ -485,7 +485,7 @@ ideas = {
 			}
 			
 			modifier = {
-				experience_loss_factor = -0.1
+				experience_gain_air = 0.1
 			}
 		}
 		ROM_the_sentinel_of_the_motherland = {

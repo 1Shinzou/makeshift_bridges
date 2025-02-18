@@ -310,9 +310,7 @@ country_event = {
 					army_ratio = 1
 					stockpile_ratio = 1
 				}
-				transfer_navy = {
-					target = ITA
-				}
+				
 				add_equipment_to_stockpile = {
 					type = motorized_equipment
 					amount = 2000

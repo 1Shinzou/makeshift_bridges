@@ -747,7 +747,7 @@ generic_infantry_equipment_organization = {
 		name = generic_mio_initial_trait_infantry_manufacturer
 
 		equipment_bonus = {
-			soft_attack = 0.15
+			soft_attack = 0.10
 			hard_attack = 0.15
 			ap_attack = 0.1
 			breakthrough = 0.1

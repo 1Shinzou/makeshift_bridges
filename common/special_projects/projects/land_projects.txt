@@ -1108,7 +1108,7 @@ sp_land_super_heavy_railway_gun = {
 
 	available = {
 		FROM = {
-			has_tech = railway_gun
+			has_tech = armored_train
 		}
 	}
 
@@ -1130,18 +1130,18 @@ sp_land_super_heavy_railway_gun = {
 	
 	project_output = {
 		enable_equipments = {
-			super_heavy_railway_gun_equipment_1
+			 railway_gun_equipment_1
 		}
 
 		enable_subunits = {
-			super_heavy_railway_gun
+			railway_gun
 		}
 
 		enable_equipment_modules = {
 			limit = {
 				has_dlc = "Gotterdammerung"
 			}
-			lc_super_heavy_railway_gun
+			lc_hull_mounted_railway_gun 
 		}
 
 		country_effects = {
@@ -1150,13 +1150,13 @@ sp_land_super_heavy_railway_gun = {
 					original_tag = GER
 				}
 				create_railway_gun = {
-					equipment = super_heavy_railway_gun_equipment_1
+					equipment = railway_gun_equipment_1
 					name = "Dora"
 				}
 			}
 			else = {
 				create_railway_gun = {
-					equipment = super_heavy_railway_gun_equipment_1
+					equipment = railway_gun_equipment_1
 				}
 			}
 		}

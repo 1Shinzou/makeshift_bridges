@@ -1752,6 +1752,11 @@ technologies = {
 	}
 
 	railway_gun = {
+
+		allow = {
+			land_facility > 0
+		}
+
 		enable_equipments = {
 			railway_gun_equipment_1
 		}
@@ -1767,7 +1772,7 @@ technologies = {
 			}
 		}
 
-		research_cost = 1.5
+		research_cost = 4.5
 		start_year = 1936
 		folder = {
 			name = support_folder

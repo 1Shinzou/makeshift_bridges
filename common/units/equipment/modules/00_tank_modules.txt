@@ -1514,8 +1514,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			entrenchment = 1
-			build_cost_ic = 3
+			defense = 4
+			build_cost_ic = 1
 		}
 		
 		multiply_stats = {

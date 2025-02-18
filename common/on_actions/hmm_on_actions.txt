@@ -572,23 +572,7 @@ on_actions = {
 			
 		}
 	}
-	on_declare_war = {
-		effect = {
-			if = {
-				limit = {
-					has_war = yes
-					tag = EFR
-				}
-			}
-			GER = {
-				annex_country = {
-					target = EFR
-					transfer_troops = no
-				}
-			}
-			
-		}
-	}
+	
 	on_startup = {
 		effect = {
 			FRA = {

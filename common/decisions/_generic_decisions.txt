@@ -142,12 +142,17 @@ political_actions = {
 		icon = GFX_decision_ger_reichskommissariats
 		priority = 10
 		available = {
-			EFR = {
-				exists = yes
+			OR = {
+				EFR = {
+					has_war = yes
+				}
+				if = {
+					has_war_with = SOV
+				}
 			}
-			if = {
-				has_war_with = SOV
-			}
+			
+			
+			
 		}
 
 		visible = {

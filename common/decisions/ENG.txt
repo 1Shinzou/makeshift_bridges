@@ -9305,7 +9305,7 @@ political_actions = {
 					surrender_progress > 0.2
 				}
 				FRA = {
-					has_capitulated = yes
+					has_cosmetic_tag = FRA_FREE
 				}
 			}
 

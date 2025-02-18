@@ -8354,7 +8354,7 @@ focus = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_development_aid_for_eastern_allies
-		cost = 5
+		cost = 10
 		
 		available = { is_subject = no }
 		
@@ -8428,7 +8428,7 @@ focus = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_policy_of_collective_security
-		cost = 10
+		cost = 20
 		
 		ai_will_do = {
 			factor = 1
@@ -8610,6 +8610,7 @@ ai_will_do = {
 		}
 		will_lead_to_war_with = PER
 		available = {
+			date > 1942.1.1
 			country_exists = PER
 			NOT = { has_war_with = PER }
 			is_subject = no
@@ -8728,7 +8729,8 @@ ai_will_do = {
 		}
 
 		available = {
-			surrender_progress < 0.01
+			date > 1942.1.1
+			#surrender_progress < 0.01
 			country_exists = JAP
 			NOT = {
 				JAP = { is_in_faction_with = ROOT } 

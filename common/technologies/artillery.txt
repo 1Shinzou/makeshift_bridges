@@ -334,9 +334,6 @@ technologies = {
 		enable_equipments = {
 			artillery_equipment_3
 		}
-		enable_equipment_modules = {
-			tank_medium_cannon_3
-		}
 
 		path = {
 			leads_to_tech = artillery5
@@ -393,8 +390,8 @@ technologies = {
 		category_self_propelled_artillery = {
 			soft_attack = 0.025
 		}
-
 		enable_equipment_modules = {
+			tank_medium_cannon_3
 			auto_loader
 			tank_heavy_howitzer
 		}

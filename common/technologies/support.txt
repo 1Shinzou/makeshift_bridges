@@ -1765,12 +1765,7 @@ technologies = {
 			lc_hull_mounted_railway_gun #Module for Land Cruiser
 		}
 
-		on_research_complete = {
-			custom_effect_tooltip = {
-				localization_key = SP_UNLOCK_PROJECT
-				PROJECT = sp_land_super_heavy_railway_gun
-			}
-		}
+	
 
 		research_cost = 4.5
 		start_year = 1936

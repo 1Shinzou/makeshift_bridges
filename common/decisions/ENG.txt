@@ -9300,9 +9300,16 @@ political_actions = {
 			has_country_leader = { ruling_only = yes character = ENG_winston_churchill }
 			has_war_with = GER
 			is_in_faction_with = FRA
-			FRA = {
-				surrender_progress > 0.2
+			OR = {
+				FRA = {
+					surrender_progress > 0.2
+				}
+				FRA = {
+					has_capitulated = yes
+				}
 			}
+
+		
 		}
 
 		cost = 50

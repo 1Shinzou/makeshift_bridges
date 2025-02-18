@@ -3,7 +3,7 @@ state={
 	name="STATE_617"
 
 	history={
-		owner = MON
+		owner = WST
 		add_core_of = MON
 		
 		buildings = {

@@ -6,7 +6,7 @@ state={
 	}
 
 	history={
-		owner = MON
+		owner = WST
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1

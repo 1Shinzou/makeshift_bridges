@@ -8308,12 +8308,12 @@ focus = {
 		}
 
 		available = {
-			any_allied_country = {
-				capital_scope = { is_on_continent = asia }
-				is_major = no
-			}
-			num_of_civilian_factories_available_for_projects > 2
-			is_subject = no
+			#any_allied_country = {
+			#	capital_scope = { is_on_continent = asia }
+			#	is_major = no
+			#}
+			#num_of_civilian_factories_available_for_projects > 2
+			#is_subject = no
 		}
 		
 		search_filters = {}
@@ -8348,51 +8348,11 @@ focus = {
 	}
 
 	focus = {
-		id = SOV_war_measures_in_the_east
-		icon = GFX_SOV_war_measures_in_the_east_ccp_2d_sov_compatibility
+		id = SOV_annex_tannu_tuva
+		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = SOV_development_aid_for_eastern_allies }
 		x = 0
 		y = 1
-		relative_position_id = SOV_development_aid_for_eastern_allies
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_civil_war = yes
-			}	
-		}
-
-		available = {
-			is_subject = no
-		}
-		
-		search_filters = {}
-
-		completion_reward = {
-			custom_effect_tooltip = SOV_war_measures_scope_tt
-			every_other_country = {
-				limit = {
-					is_in_faction_with = ROOT
-					capital_scope = { is_on_continent = asia }
-					is_major = no
-				}
-				country_event = { id = NSB_soviet_foreign_politics_events.11 hours = 2 random_hours = 1 }
-				custom_effect_tooltip = if_they_accept
-				effect_tooltip = {
-					add_timed_idea = { idea = SOV_war_measures_allies days = 1095 }
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_annex_tannu_tuva
-		icon = GFX_focus_generic_treaty
-		prerequisite = { focus = SOV_war_measures_in_the_east }
-		x = -1
-		y = 2
 		relative_position_id = SOV_development_aid_for_eastern_allies
 		cost = 5
 		
@@ -8427,45 +8387,7 @@ focus = {
 			}
 		}
 	}
-
-	focus = {
-		id = SOV_fortify_mongolian_border
-		icon = GFX_SOV_fortify_mongolian_border_ccp_2d_sov_compatibility
-		prerequisite = { focus = SOV_war_measures_in_the_east }
-		x = 1
-		y = 1
-		relative_position_id = SOV_war_measures_in_the_east
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_civil_war = yes
-			}	
-		}
-		
-		available = {
-			MON = {
-				is_in_faction_with = ROOT
-				has_full_control_of_state = 330
-				has_full_control_of_state = 819
-				has_full_control_of_state = 817
-				has_full_control_of_state = 818
-
-			}
-			is_subject = no
-		}
-		
-		search_filters = {}
-
-		completion_reward = {
-			MON = { country_event = { id = NSB_soviet_foreign_politics_events.12 hours = 2 random_hours = 1 } }
-			custom_effect_tooltip = if_they_accept
-			custom_effect_tooltip = SOV_fortify_mongolian_border_forts_tt
-		}
-	}
-
+	
 	focus = {
 		id = SOV_policy_of_collective_security
 		icon = GFX_SOV_policy_of_collective_security_ccp_2d_sov_compatibility

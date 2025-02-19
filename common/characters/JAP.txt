@@ -705,12 +705,6 @@ characters={
 			coordination_skill=6
 			legacy_id=0
 		}
-		scientist = {
-			traits = { scientist_trait_submarine_specialist }
-			skills = {
-				specialization_naval = 2
-			}
-		}
 	}
 
 	JAP_mineichi_koga={
@@ -1015,58 +1009,45 @@ characters={
 				small="GFX_idea_yoshio_nishina"
 			}
 		}
-		#advisor = {
-		#	cost = 100
-		#	slot = theorist
-		#	idea_token = yoshio_nishina
-		#	ledger = army
-		#	allowed = {
-		#		original_tag = JAP
-		#	}
-		#	research_bonus = {
-		#		nuclear = 0.150
-		#	}
-		#	traits = {
-		#		nuclear_scientist
-		#	}
-		#}
-		scientist = {
-			traits = { scientist_trait_nuclear_specialist }
-			skills = {
-				specialization_nuclear = 2
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = yoshio_nishina
+			ledger = army
+			allowed = {
+				original_tag = JAP
+			}
+			research_bonus = {
+				nuclear = 0.150
+			}
+			traits = {
+				nuclear_scientist
 			}
 		}
 	}
 
 	JAP_hideo_itokawa={
 		name="Hideo Itokawa"
-		portraits = {
-			army = {
-				large = GFX_portrait_JAP_hideo_itokawa
-				small = GFX_idea_hideo_itokawa
+		portraits={
+			army={
+				small="GFX_idea_hideo_itokawa"
 			}
 		}
-		scientist = {
-			traits = { scientist_trait_rocketry_specialist }
-			skills = {
-				specialization_air = 2
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = hideo_itokawa
+			ledger = air
+			allowed = {
+				original_tag = JAP
+			}
+			research_bonus = {
+				rocketry = 0.150
+			}
+			traits = {
+				rocket_scientist
 			}
 		}
-		#advisor = {
-		#	cost = 100
-		#	slot = theorist
-		#	idea_token = hideo_itokawa
-		#	ledger = air
-		#	allowed = {
-		#		original_tag = JAP
-		#	}
-		#	research_bonus = {
-		#		rocketry = 0.150
-		#	}
-		#	traits = {
-		#		rocket_scientist
-		#	}
-		#}
 	}
 
 
@@ -1424,89 +1405,164 @@ characters={
 		}
 	}
 
-	JAP_kijiro_nambu = {
-		name = JAP_kijiro_nambu
-		portraits = {
-			army = {
-				large = GFX_portrait_JAP_kijiro_nambu
+	JAP_kijuro_shidehara={
+		name=JAP_kijuro_shidehara
+		portraits={
+			army={
+				small="GFX_idea_kijuro_shidehara"
 			}
 		}
-
-		scientist = {
-			traits = { scientist_trait_armored_specialist }
-			skills = {
-				specialization_land = 2
-			}
-		}
-	}
-	JAP_keiji_fukuda = {
-		name = JAP_keiji_fukuda
-		portraits = {
-			army = {
-				large = GFX_portrait_JAP_keiji_fukuda
-			}
-		}
-
-		scientist = {
-			traits = { scientist_trait_surface_ship_specialist }
-			skills = {
-				specialization_naval = 2
-			}
-		}
-	}
-
-	JAP_jiro_horikoshi = {
-		name = JAP_jiro_horikoshi
-		portraits = {
-			army = {
-				large = GFX_portrait_JAP_jiro_horikoshi
-			}
-		}
-
-		scientist = {
-
-			traits = { scientist_trait_aircraft_specialist }
-
-			skills = {
-				specialization_air = 2
-			}
-
-			visible = {
-				owner = {
-					has_completed_focus = JAP_agility_focus
+		advisor={
+			slot = political_advisor
+			idea_token = kijuro_shidehara
+			available = {
+				if = {
+					limit = {
+						has_dlc = "Waking the Tiger"
+					}
+					has_completed_focus = JAP_strengthen_civilian_government 
+				}
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					NOT = {
+						has_autonomy_state = autonomy_supervised_state
+					}
 				}
 			}
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				democratic_reformer 
+			}
+			do_effect = {
+				NOT = {
+					has_government = democratic 
+				}
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
 		}
 	}
 
-	JAP_hideki_yukawa = {
-		name = JAP_hideki_yukawa
-		portraits = {
-			army = {
-				large = GFX_portrait_JAP_hideki_yukawa
+	JAP_kingoro_hashimoto={
+		name=JAP_kingoro_hashimoto
+		portraits={
+			army={
+				small="GFX_idea_kingoro_hashimoto"
 			}
 		}
+		advisor={
+			slot = political_advisor
+			idea_token = kingoro_hashimoto
+			allowed = {
+				original_tag = JAP
+			}
+			available = {
+				if = {
+					limit = {
+						has_dlc = "Man the Guns"
+					}
+					NOT = {
+						has_autonomy_state = autonomy_supervised_state
+					}
+				}
+			}
+			traits = {
+				fascist_demagogue 
+			}
+			do_effect = {
+				NOT = {
+					has_government = fascism 
+				}
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}		
+	}
 
-		scientist = {
-			traits = { scientist_trait_nuclear_power_expert }
-			skills = {
-				specialization_nuclear = 2
+	JAP_mitsumasa_yonai={
+		name=JAP_mitsumasa_yonai
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = JAP_mitsumasa_yonai
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				silent_workhorse 
 			}
 		}
 	}
 
-	JAP_yoji_ito = {
-		name = JAP_yoji_ito
-		portraits = {
-			army = {
-				large = GFX_portrait_JAP_yoji_ito
+	JAP_hiroshi_oshima={
+		name=JAP_hiroshi_oshima
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_1"
 			}
 		}
+		advisor={
+			slot = political_advisor
+			idea_token = JAP_hiroshi_oshima
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				prince_of_terror 
+			}
+			ai_will_do = {
+				factor = 0.300
+			}
+		}
+	}
 
-		scientist = {
-			traits = { scientist_trait_electronics_specialist }
-			skills = {
-				specialization_air = 2
+	JAP_chiune_sugihara={
+		name=JAP_chiune_sugihara
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_3"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = JAP_chiune_sugihara
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				compassionate_gentleman 
+			}
+		}		
+	}
+
+	JAP_takuo_godo={
+		name=JAP_takuo_godo
+		portraits={
+			army={
+				small="GFX_idea_takuo_godo"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = takuo_godo
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				war_industrialist 
+			}
+			ai_will_do = {
+				factor = 3.000
 			}
 		}
 	}

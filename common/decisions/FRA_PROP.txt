@@ -240,9 +240,7 @@ FRA_propaganda_campaigns = {
 
 		available = {
 			FRA_propaganda_poster_slot_available = yes
-			FRA = {
-				has_capitulated = yes
-			}
+			has_global_flag = fall_of_france
 			NOT = { has_government = fascism }
 		}
 
@@ -280,9 +278,8 @@ FRA_propaganda_campaigns = {
 
 		available = {
 			FRA_propaganda_poster_slot_available = yes
-			FRA = {
-				has_capitulated = yes
-			}
+			has_global_flag = fall_of_france
+
 			NOT = { has_government = fascism }
 			OR = {
 				16 = {
@@ -333,9 +330,7 @@ FRA_propaganda_campaigns = {
 
 		available = {
 			FRA_propaganda_poster_slot_available = yes
-			FRA = {
-				has_capitulated = yes
-			}
+			has_global_flag = fall_of_france
 			NOT = { has_government = fascism }
 		}
 
@@ -372,9 +367,8 @@ FRA_propaganda_campaigns = {
 
 		available = {
 			FRA_propaganda_poster_slot_available = yes
-			FRA = {
-				has_capitulated = yes
-			}
+			has_global_flag = fall_of_france
+
 			NOT = { has_government = fascism }
 		}
 
@@ -416,9 +410,8 @@ FRA_propaganda_campaigns = {
 
 		available = {
 			FRA_propaganda_poster_slot_available = yes
-			FRA = {
-				has_capitulated = yes
-			}
+			has_global_flag = fall_of_france
+
 			
 		}
 
@@ -459,9 +452,8 @@ FRA_propaganda_campaigns = {
 
 		available = {
 			FRA_propaganda_poster_slot_available = yes
-			FRA = {
-				has_capitulated = yes
-			}
+			has_global_flag = fall_of_france
+
 			NOT = { has_government = fascism }
 		}
 

@@ -99,7 +99,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ organizer infantry_leader infantry_expert}
+			traits={ organizer infantry_leader infantry_expert panzer_leader }
 			skill=4
 			attack_skill=4
 			defense_skill=3
@@ -136,7 +136,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ hill_fighter infantry_leader infantry_expert }
+			traits={ hill_fighter infantry_leader infantry_expert cavalry_leader }
 			skill=4
 			attack_skill=4
 			defense_skill=3

@@ -1509,7 +1509,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		completion_reward = {
+	completion_reward = {
 			if = {
 				limit = {
 					NOT = { has_dlc = "By Blood Alone" }
@@ -1522,12 +1522,6 @@ focus_tree = {
 					category = naval_bomber
 					category = cas_bomber
 				}
-				add_tech_bonus = {
-					name = coastal_command_focus
-					bonus = 1
-					uses = 1
-					category = maritime
-				}
 			}
 			else_if = {
 				limit = {
@@ -1538,12 +1532,8 @@ focus_tree = {
 					name = coastal_command_focus
 					bonus = 1.0
 					uses = 1
-					category = light_air
-				}
-				add_tech_bonus = {
-					bonus = 1.0
-					uses = 1
-					category = cat_torpedoes
+					category = naval_bomber
+					category = cas_bomber
 				}
 				add_doctrine_cost_reduction = {
 					name = ENG_coastal_command_focus #land_doc_bonus
@@ -1551,8 +1541,9 @@ focus_tree = {
 					uses = 1
 					category = air_doctrine
 				}
-			}				
+			}
 		}
+		
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 	focus = {

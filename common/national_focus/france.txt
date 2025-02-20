@@ -3931,6 +3931,30 @@ focus = {
 					}
 				}
 			}
+			hidden_effect = {
+				EFR = {
+					give_resource_rights = {
+						receiver = GER
+						state = 22
+					}
+					give_resource_rights = {
+						receiver = GER
+						state = 20
+					}
+					give_resource_rights = {
+						receiver = GER
+						state = 32
+					}
+					give_resource_rights = {
+						receiver = GER
+						state = 21
+					}
+					give_resource_rights = {
+						receiver = ITA
+						state = 459
+					}
+				}
+			}
 		}
 	}
 	focus = {

@@ -159,7 +159,7 @@ political_actions = {
 			tag = GER
 		}
 
-		fire_only_once = no
+		fire_only_once = yes
 
 		complete_effect = {
 			annex_country = {

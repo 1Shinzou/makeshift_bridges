@@ -9300,14 +9300,7 @@ political_actions = {
 			has_country_leader = { ruling_only = yes character = ENG_winston_churchill }
 			has_war_with = GER
 			is_in_faction_with = FRA
-			OR = {
-				FRA = {
-					surrender_progress > 0.2
-				}
-				FRA = {
-					has_cosmetic_tag = FRA_FREE
-				}
-			}
+			has_global_flag = fall_of_france
 
 		
 		}
@@ -9364,7 +9357,7 @@ political_actions = {
 			has_country_leader = { ruling_only = yes character = ENG_winston_churchill }
 			has_war_with = GER
 			is_in_faction_with = FRA
-			FRA = { has_capitulated = yes }
+			has_global_flag = fall_of_france
 		}
 
 		cost = 50
@@ -9421,7 +9414,7 @@ political_actions = {
 			}
 			IRE = { exists = yes }
 			NOT = { is_in_faction_with = IRE }
-			FRA = { has_capitulated = yes }
+			has_global_flag = fall_of_france
 			is_in_faction_with = FRA
 		}
 
@@ -10130,7 +10123,7 @@ operations = {
 					is_in_faction_with = ROOT
 				}
 			}
-			FRA = { has_capitulated = yes }
+			has_global_flag = fall_of_france
 			is_in_faction_with = FRA
 		}
 

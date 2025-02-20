@@ -99,10 +99,10 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ organizer infantry_leader }
+			traits={ organizer infantry_leader infantry_expert}
 			skill=4
 			attack_skill=4
-			defense_skill=2
+			defense_skill=3
 			planning_skill=4
 			logistics_skill=3
 			legacy_id=-1
@@ -136,11 +136,11 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ hill_fighter infantry_leader }
+			traits={ hill_fighter infantry_leader infantry_expert }
 			skill=4
 			attack_skill=4
 			defense_skill=3
-			planning_skill=3
+			planning_skill=5
 			logistics_skill=3
 			legacy_id=-1
 		}

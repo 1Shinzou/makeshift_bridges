@@ -3382,7 +3382,7 @@ technologies = {
 			combat_width = -0.4
 		}
 		
-		experience_loss_factor = 0.5
+		# experience_loss_factor = 0.5 AsKar Experience Loss
 
 		land_reinforce_rate = 0.15		
 		

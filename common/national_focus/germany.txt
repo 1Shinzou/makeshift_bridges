@@ -10214,21 +10214,21 @@ focus_tree = {
 
 			IF = {
 				limit = { SOV = { has_civil_war = no } }
-				create_wargoal = {
-					type = annex_everything
+				declare_war_on = {
 					target = SOV
-					expire = 0
+					type = take_state_focus
+					generator = { 206 }
 				}
 			}
 			ELSE = {
 				every_country = {
 					limit = { original_tag = SOV }
 					GER = {
-						create_wargoal = {
-							type = annex_everything
-							target = PREV
-							expire = 0
-						}
+						declare_war_on = {
+						target = SOV
+						type = take_state_focus
+						generator = { 206 }
+			}
 					}
 				}
 			}

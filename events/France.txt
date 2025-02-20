@@ -204,6 +204,11 @@ country_event = {
 		GER = { country_event = france.14 }
 		custom_effect_tooltip = france.10.b_tt
 		set_country_flag = GER_dont_seize_gold_reserves_flag #Can't allow Germany to seize out gold reserves just yet
+		hidden_effect = {
+		    FRA = {
+				add_ideas = FRA_no_cap
+			}
+		}
 	}
 	
 }

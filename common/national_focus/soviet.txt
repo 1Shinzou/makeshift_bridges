@@ -5913,6 +5913,10 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
+
+			SOV_markian_popov = { add_logistics = 4 }
+			SOV_vasily_kuznetsov = { add_logistics = 4 }
+
 			add_to_variable = { SOV_the_red_army_army_org_factor = 0.05 }
 			set_variable = { SOV_the_red_army_experience_gain_army_factor = 0 }
 			set_variable = { SOV_the_red_army_experience_loss_factor = 0 }
@@ -8428,7 +8432,7 @@ focus = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_policy_of_collective_security
-		cost = 20
+		cost = 5
 		
 		ai_will_do = {
 			factor = 1
@@ -8440,7 +8444,7 @@ focus = {
 				
 		search_filters = {FOCUS_FILTER_PROPAGANDA}
 		available = {
-			
+			surrender_progress > 0.25
 			has_war_with_major = yes
 		}
 		completion_reward = {

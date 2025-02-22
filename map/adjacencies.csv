@@ -274,6 +274,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 
 5563;5364;;-1;-1;-1;-1;-1;Fernando Torres Strait;GDU Torres
 5563;5613;;-1;-1;-1;-1;-1;Fernando Torres Strait;GDU Torres 2
+1644;1310;sea;5563;-1;-1;-1;-1;;GDU Papua
 
 3151;3060;impassable;-1;-1;-1;-1;-1;;Finnland Border
 3151;9150;impassable;-1;-1;-1;-1;-1;;Finnland Border

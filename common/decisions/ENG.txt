@@ -9968,7 +9968,7 @@ operations = {
 			has_government = democratic
 			has_war_with = GER
 			date > 1941.1.1
-			D04 = {
+			EFR = {
 				has_capitulated = no
 			}
 		}
@@ -9982,7 +9982,7 @@ operations = {
 			tag = ENG
 			has_war_with = GER
 			date > 1941.1.1
-			D04 = {
+			EFR = {
 				has_capitulated = no
 			}
 		}
@@ -9990,7 +9990,7 @@ operations = {
 		complete_effect = {
 			create_wargoal = {
 				type = annex_everything
-				target = D04
+				target = EFR
 			}
 		}
 	}

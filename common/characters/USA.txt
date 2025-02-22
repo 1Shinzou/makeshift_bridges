@@ -155,7 +155,7 @@ characters={
 		advisor={
 			cost = 150
 
-			slot = theorist
+			slot = high_command
 			idea_token = george_patton
 			ledger = army
 				allowed = {

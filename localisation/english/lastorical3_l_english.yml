@@ -33,3 +33,12 @@ SOV_collectivized_society:0 "Collectivized Society"
   VICTORY_POINTS_7985:0 "Maradah"
   VICTORY_POINTS_4057:0 "Marsa Al Brega"
   VICTORY_POINTS_3761:0 "To Berlin"
+
+
+# Strategic Region Map Modding
+
+STRATEGICREGION_292:0 "Strait of Sicily"
+STRATEGICREGION_293:0 "Balearic Sea"
+STRATEGICREGION_291:0 "Ionian Sea"
+STRATEGICREGION_15:0 "Levantine Sea"
+STRATEGICREGION_35:0 "Sicily"

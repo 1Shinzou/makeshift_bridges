@@ -8294,70 +8294,14 @@ focus = {
 			}
 		}
 	}
-	focus = {
-		id = SOV_development_aid_for_eastern_allies
-		icon = GFX_SOV_development_aid_for_eastern_allies_ccp_2d_sov_compatibility
-		prerequisite = { focus = SOV_the_comintern }
-		x = 6
-		y = 1
-		relative_position_id = SOV_the_comintern
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_civil_war = yes
-			}	
-		}
-
-		available = {
-			#any_allied_country = {
-			#	capital_scope = { is_on_continent = asia }
-			#	is_major = no
-			#}
-			#num_of_civilian_factories_available_for_projects > 2
-			#is_subject = no
-		}
-		
-		search_filters = {}
-
-		select_effect = {
-			add_ideas = SOV_development_of_eastern_allies
-		}
-
-		completion_reward = {
-			#Tooltip purposes (Select Effect)
-			custom_effect_tooltip = SOV_focus_select_effect_tt
-			effect_tooltip = {
-				add_ideas = SOV_development_of_eastern_allies
-			}
-
-			#(Complete Effect)
-			custom_effect_tooltip = SOV_focus_complete_effect_tt
-			every_other_country = {
-				limit = {
-					is_in_faction_with = ROOT
-					capital_scope = { is_on_continent = asia }
-					is_major = no
-				}
-				country_event = { id = NSB_soviet_foreign_politics_events.10 hours = 2 random_hours = 1 }
-				custom_effect_tooltip = if_they_accept
-				custom_effect_tooltip = SOV_development_aid_for_eastern_allies_tt
-			}
-			hidden_effect = {
-				remove_ideas = SOV_development_of_eastern_allies
-			}
-		}
-	}
 
 	focus = {
 		id = SOV_annex_tannu_tuva
 		icon = GFX_focus_generic_treaty
-		prerequisite = { focus = SOV_development_aid_for_eastern_allies }
-		x = 0
+		prerequisite = { focus = SOV_the_comintern }
+		x = 6
 		y = 1
-		relative_position_id = SOV_development_aid_for_eastern_allies
+		relative_position_id = SOV_the_comintern
 		cost = 10
 		
 		available = { is_subject = no }

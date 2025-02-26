@@ -10405,6 +10405,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_AIR_XP}
 
 		completion_reward = { #Changing stuff here will require changing stuff in History file for 1939 bookmark
+			army_experience = 300
 			if = {
 				limit = {
 					NOT = { has_dlc = "La Resistance" }

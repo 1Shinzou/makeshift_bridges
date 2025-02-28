@@ -333,6 +333,8 @@ set_technology = { #VANILLA & DLC
 	fuel_silos = 1
 	basic_train = 1
 	tech_mountaineers = 1
+	marines  = 1
+	paratroopers = 1 
 }
 if = {
 	limit = {

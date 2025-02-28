@@ -809,9 +809,9 @@ generic_motorized_mechanized_organization = {
 		name = generic_mio_initial_trait_motorized_mechanized_manufacturer
 
 		equipment_bonus = {
-			maximum_speed = 0.08
-			defense = 0.08
-			breakthrough = 0.08
+			maximum_speed = 0.02
+			defense = 0.02
+			breakthrough = 0.02
 		}
 	}
 }

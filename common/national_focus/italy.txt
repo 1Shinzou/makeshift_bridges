@@ -10322,7 +10322,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_corpo_di_truppe_volontarie
-		icon = GFX_goal_generic_military_deal
+		icon = GFX_focus_intervention_spain_nationalists
 		prerequisite = { focus = ITA_foreign_affairs }
 
 		x = 2

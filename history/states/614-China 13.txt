@@ -12,6 +12,7 @@ state={
 		
 		buildings = {
 			infrastructure = 2
+			dockyard = 1
 		}
 
 		1938.10.25 = {

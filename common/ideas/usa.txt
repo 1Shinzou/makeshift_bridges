@@ -689,9 +689,9 @@ ideas = {
 			}
 		}
 
-		wilkies_new_deal = {
+		landons_new_deal = {
 			
-			
+			name = "Landons New Deal"
 			allowed = {
 				always = no
 			}
@@ -703,10 +703,31 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_speed_infrastructure_factor = 0.1
-				stability_factor = 0.05
-				drift_defence_factor = 0.2
-				global_building_slots_factor = 1
+				production_speed_arms_factory_factor = -0.2
+				production_speed_industrial_complex_factor = 0.4
+				war_support_factor = -0.1
+
+			}
+		}
+		landons_new_deal_2 = {
+			
+			name = "Landons New Deal"
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_arms_factory_factor = -0.2
+				production_speed_dockyard_factor = 0.4
+				production_speed_industrial_complex_factor = 0.4
+				war_support_factor = -0.1
+
 			}
 		}
 		

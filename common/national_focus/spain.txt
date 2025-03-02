@@ -2692,7 +2692,7 @@ focus_tree = {
         x = 1
         y = 3
         relative_position_id = SPA_dictator_for_life
-        cost = 15
+        cost = 10
 
         available_if_capitulated = yes
 		    hidden_effect = {

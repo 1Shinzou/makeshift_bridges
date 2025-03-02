@@ -4,10 +4,7 @@ state={
 	name="STATE_544"
 	manpower = 1
 	history={
-		owner =TUM
-		
-		
-		add_core_of = TUM
+
 
 	}
 

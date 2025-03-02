@@ -88,7 +88,7 @@ technologies = {
 			soft_attack = 0.1
 		}
 		category_self_propelled_artillery = {
-			soft_attack = 0.05
+			soft_attack = 0.15
 		}
 
 		enable_equipment_modules = {
@@ -286,7 +286,7 @@ technologies = {
 			soft_attack = 0.1
 		}
 		category_self_propelled_artillery = {
-			soft_attack = 0.05
+			soft_attack = 0.025
 		}
 
 		enable_equipment_modules = {
@@ -388,7 +388,7 @@ technologies = {
 			soft_attack = 0.1
 		}
 		category_self_propelled_artillery = {
-			soft_attack = 0.05
+			soft_attack = 0.025
 		}
 		enable_equipment_modules = {
 			tank_medium_cannon_3

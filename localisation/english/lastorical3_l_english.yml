@@ -13,10 +13,18 @@ news.6969.b:0 "Una, grande, libre"
 
 uk_texas_oil:0 "Texas Oil Rights"
 
+HUN_italy_puppet:0 "Expand Italian Influence"
+HUN_italy_puppet_desc:0 "Italy has become a new great power in Southern Europe, maybe we should allign ourselves more closely with them"
+HUN_reich_protectorat:0 "Expand German Influence"
+HUN_reich_protectorat_desc:0 "Germany is the leader of the new world, we should accept their rule before it is to late."
 
+BUL_italy_puppet:0 "Expand Italian Influence"
+BUL_italy_puppet_desc:0 "Italy has become a new great power in Southern Europe, maybe we should allign ourselves more closely with them"
+BUL_reich_protectorat:0 "Expand German Influence"
+BUL_reich_protectorat_desc:0 "Germany is the leader of the new world, we should accept their rule before it is to late."
 
-#italian_arms_discount:0 "Bresica Small Arms Industry"
-#greater_italy_required_other_states:0 "Italy or a subject of Italy control \n§YSuez§! \n§YCorsica§! \n§YSavoy§! \n§YZara§! \n§YDalmatia§! \n§YLjubljana§! \n§YMalta§! \n§YCrete§! \n§YDodecaneso§!"
+italian_arms_discount:0 "Bresica Small Arms Industry"
+greater_italy_required_other_states:0 "Italy or a subject of Italy control \n§YSuez§! \n§YCorsica§! \n§YSavoy§! \n§YZara§! \n§YDalmatia§! \n§YLjubljana§! \n§YMalta§! \n§YCrete§! \n§YDodecaneso§!"
 
  cat_air_bombs:0 "Bomb Locks"
 SOV_collectivized_society:0 "Collectivized Society"
@@ -33,13 +41,4 @@ STRATEGICREGION_292:0 "Strait of Sicily"
 STRATEGICREGION_293:0 "Balearic Sea"
 STRATEGICREGION_291:0 "Ionian Sea"
 STRATEGICREGION_15:0 "Levantine Sea"
-STRATEGICREGION_289: "Tobruk"
-STRATEGICREGION_290: "Aswan"
-
-# STRAITS
- OTRANTO_STRAIT:0 "Strait of Otranto"
- DJIBOUTI_STRAIT:0 "Bab-el-Mandeb Strait"
- THE_BELTS:0 "Danish Belt Straits"
- ORESUND_STRAIT:0 "Øresund Strait"
- TUNIS_STRAIT:0 "Canale di Sicilia"
- SICILY_STRAIT:0 "Stretto di Messina"
+STRATEGICREGION_35:0 "Sicily"

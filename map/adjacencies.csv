@@ -218,7 +218,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 761;13315;sea;9092;-1;-1;-1;-1;;Ontario
 13196;13314;sea;9092;-1;-1;-1;-1;;Northern Quebec
 1421;10184;sea;2899;-1;-1;-1;-1;;Sulu-Mindanao
-5864;5838;;-1;-1;-1;-1;-1;OTRANTO_STRAIT;Otranto Strait
+
 
 3761;6521;sea;;-1;-1;-1;-1;Berlin-Madrid;Berlin-Madrid;;;;
 9824;9853;impassable;-1;-1;-1;-1;-1;;Spain-France;Border;;;
@@ -268,13 +268,18 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 7560;2000;impassable;-1;-1;-1;-1;-1;;Iran Big Front
 4958;2000;impassable;-1;-1;-1;-1;-1;;Iran Big Front
 
-2431;2382;;-1;-1;-1;-1;-1;ORESUND_STRAIT;ORESUND
-2431;2408;;-1;-1;-1;-1;-1;THE_BELTS;TheBelts
-5838;5864;;-1;-1;-1;-1;-1;OTRANTO_STRAIT;Otranto
-
 5563;5364;;-1;-1;-1;-1;-1;Fernando Torres Strait;GDU Torres
 5563;5613;;-1;-1;-1;-1;-1;Fernando Torres Strait;GDU Torres 2
 1644;1310;sea;5563;-1;-1;-1;-1;;GDU Papua
+5838;5864;;-1;-1;-1;-1;-1;OTRANTO_STRAIT;Otranto
+2776;2800;;-1;-1;-1;-1;-1;DJIBOUTI_STRAIT;Djibouti
+2431;2382;;-1;-1;-1;-1;-1;ORESUND_STRAIT;ORESUND
+2431;2408;;-1;-1;-1;-1;-1;THE_BELTS;TheBelts
+5864;5838;;-1;-1;-1;-1;-1;OTRANTO_STRAIT;Otranto Strait
+9013;8965;;-1;-1;-1;-1;-1;TUNIS_STRAIT;Canale di Sicilia
+9013;5605;;-1;-1;-1;-1;-1;TUNIS_STRAIT;Canale di Sicilia
+5681;1452;;-1;-1;-1;-1;-1;SICILY_STRAIT;Strait of Messina
+
 
 3151;3060;impassable;-1;-1;-1;-1;-1;;Finnland Border
 3151;9150;impassable;-1;-1;-1;-1;-1;;Finnland Border
@@ -311,5 +316,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 6012;142;impassable;-1;-1;-1;-1;-1;;Finnland Border
 9140;142;impassable;-1;-1;-1;-1;-1;;Finnland Border
 9140;6117;impassable;-1;-1;-1;-1;-1;;Finnland Border
+
+
 
 -1;-1;;-1;-1;-1;-1;-1;-1 

@@ -64,7 +64,7 @@ focus_tree = {
 	focus = {
 		id = USA_prepare_election
 		icon = GFX_focus_ARG_strengthening_the_concordancia
-		x = 6
+		x = 2
 		y = 0
 	
 
@@ -173,7 +173,7 @@ mutually_exclusive = {
 	focus = {
 		id = USA_new_deal
 		icon = GFX_goal_generic_construct_infrastructure
-		x = -1
+		x = -2
 		y = 2
 	
      	cost = 5
@@ -205,7 +205,7 @@ mutually_exclusive = {
 	focus = {
 		id = USA_landons_new_deal
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 1
+		x = 2
 		y = 2
 	
      	cost = 5
@@ -231,6 +231,38 @@ mutually_exclusive = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			add_ideas = landons_new_deal
+		}
+	}
+	focus = {
+		id = USA_commited_isolation
+		icon = GFX_focus_generic_american_investments
+		x = 7
+		y = 2
+	
+     	cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = USA_support_alf_landon
+		}
+
+	
+		relative_position_id = USA_prepare_election
+
+		available = {
+			has_government = democratic
+		}
+		bypass = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			USA_congress_large_support = yes
+			add_ideas = export_focus
+			
 		}
 	}
 	focus = {
@@ -261,21 +293,459 @@ mutually_exclusive = {
 		
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
+			USA_congress_small_opposition = yes
 			swap_ideas = {
 				remove_idea = landons_new_deal
 				add_idea = landons_new_deal_2
 			}
 		}
 	}
+	focus = {
+		id = USA_urban_expansion_act
+		icon = GFX_focus_SWE_hygienic_housing
+		x = 4
+		y = 4
+	
+     	cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = USA_expand_landons_new_deal
+		}
+
+	
+		relative_position_id = USA_prepare_election
+
+		available = {
+			has_government = democratic
+		}
+		bypass = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			USA_congress_small_opposition = yes
+			375 = {
+				set_state_category = megalopolis
+			}
+			378 = {
+				set_state_category = megalopolis
+			}
+			371 = {
+				set_state_category = large_city
+			}
+			367 = {
+				set_state_category = large_city
+			}
+			370 = {
+				set_state_category = large_city
+			}
+			365 = {
+				set_state_category = large_city
+			}
+			366 = {
+				set_state_category = large_city
+			}
+			364 = {
+				set_state_category = large_city
+			}
+		}
+	}
+	focus = {
+		id = USA_industry_dispersion
+		icon = GFX_focus_generic_industry_1
+		x = 2
+		y = 4
+	
+     	cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = USA_expand_landons_new_deal
+		}
+
+	
+		relative_position_id = USA_prepare_election
+
+		available = {
+			has_government = democratic
+		}
+		bypass = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			USA_congress_small_opposition = yes
+			375 = {
+				add_state_modifier = {
+					modifier = {
+						local_building_slots_factor = 2
+	                    state_production_speed_buildings_factor = 0.15
+					}
+				}
+			}
+			378 = {
+				add_state_modifier = {
+					modifier = {
+						local_building_slots_factor = 2
+	                    state_production_speed_buildings_factor = 0.15
+					}
+				}
+			}
+			371 = {
+				add_state_modifier = {
+					modifier = {
+						local_building_slots_factor = 2
+	                    state_production_speed_buildings_factor = 0.15
+					}
+				}
+			}
+			367 = {
+				add_state_modifier = {
+					modifier = {
+						local_building_slots_factor = 2
+	                    state_production_speed_buildings_factor = 0.15
+					}
+				}
+			}
+			370 = {
+				add_state_modifier = {
+					modifier = {
+						local_building_slots_factor = 2
+	                    state_production_speed_buildings_factor = 0.15
+					}
+				}
+			}
+			365 = {
+				add_state_modifier = {
+					modifier = {
+						local_building_slots_factor = 2
+	                    state_production_speed_buildings_factor = 0.15
+					}
+				}
+			}
+			366 = {
+				add_state_modifier = {
+					modifier = {
+						local_building_slots_factor = 2
+	                    state_production_speed_buildings_factor = 0.15
+					}
+				}
+			}
+			364 = {
+				add_state_modifier = {
+					modifier = {
+						local_building_slots_factor = 2
+	                    state_production_speed_buildings_factor = 0.15
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = USA_retool_usa
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 5
+		y = 5
+	
+     	cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = USA_emergency_mobilastion_Act
+		}
+		
+
+	
+		relative_position_id = USA_prepare_election
+
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			USA_congress_small_opposition = yes
+		    add_ideas = refocused_industry
+		}
+	}
+	focus = {
+		id = USA_gold_standard
+		icon = GFX_focus_mex_privatisation
+		x = 5
+		y = 3
+	
+     	cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = USA_commited_isolation
+		}
+		
+
+	
+		relative_position_id = USA_prepare_election
+
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			USA_congress_small_support = yes
+		    add_ideas = USA_gold_standard
+		}
+	}
+	focus = {
+		id = USA_america_first
+		icon = GFX_focus_chi_mission_to_the_us
+		x = 7
+		y = 3
+	
+     	cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = USA_commited_isolation
+		}
+		
+
+	
+		relative_position_id = USA_prepare_election
+
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_stability = 0.1
+			USA_congress_small_support = yes
+		    set_rule = {
+				can_join_factions = no
+			}
+		}
+	}
+	focus = {
+		id = USA_redirect_funds
+		icon = GFX_focus_research2
+		x = 9
+		y = 3
+	
+     	cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = USA_commited_isolation
+		}
+		
+
+	
+		relative_position_id = USA_prepare_election
+
+		available = {
+			
+		}
+		bypass = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = USA_emergency_mobilastion_Act
+		icon = GFX_goal_generic_production2
+		x = 7
+		y = 4
+	
+     	cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = USA_gold_standard
+		}
+		prerequisite = {
+			focus = USA_america_first
+		}
+		prerequisite = {
+			focus = USA_redirect_funds
+		}
+	
+		relative_position_id = USA_prepare_election
+
+		available = {
+			has_idea = landons_new_deal_2
+			GER = {
+				has_completed_focus = GER_danzig_or_war
+			}
+			
+		}
+		bypass = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = landons_new_deal_2
+				add_idea = landons_new_deal_3
+			}
+			add_ideas = partial_economic_mobilisation
+		}
+	}
+	focus = {
+		id = USA_emergency_production_Act
+		icon = GFX_focus_generic_tank_production
+		x = 7
+		y = 5
+	
+     	cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = USA_emergency_mobilastion_Act
+		}
+		
+	
+		relative_position_id = USA_prepare_election
+
+		available = {
+			
+			
+		}
+		bypass = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_timed_idea = {
+				idea = emergency_production
+				days = 730
+			}
+
+		}
+	}
+	focus = {
+		id = USA_emergency_naval_act
+		icon = GFX_goal_generic_navy_battleship
+		x = 9
+		y = 5
+	
+     	cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = USA_emergency_mobilastion_Act
+		}
+		
+	
+		relative_position_id = USA_prepare_election
+
+		available = {
+			
+			
+		}
+		bypass = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			add_timed_idea = {
+				idea = naval_emergency_production
+				days = 730
+			}
+
+		}
+	}
+	focus = {
+		id = USA_rearmed_and_ready
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 7
+		y = 6
+	
+     	cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = USA_retool_usa
+		}
+		prerequisite = {
+			focus = USA_emergency_production_Act
+		}
+		prerequisite = {
+			focus = USA_emergency_naval_act
+		}
+		
+	
+		relative_position_id = USA_prepare_election
+
+		available = {
+			date > 1941.1.1
+			
+		}
+		bypass = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+			set_rule = {
+				can_join_factions = yes
+			}
+			add_ideas = tot_economic_mobilisation
+			swap_ideas = {
+				remove_idea = refocused_industry
+				add_idea = refocused_industry_2
+			}
+
+		}
+	}
+
 
 	focus = {
 		id = USA_suspend_the_presecution
 		icon = GFX_focus_generic_diplomatic_treaty
-		x = -5
+		x = -7
 	
-		y = 1
-		prerequisite = { focus = USA_continue_the_new_deal }
-		relative_position_id = USA_continue_the_new_deal
+		y = 2
+		prerequisite = { focus = USA_support_fdr }
+		relative_position_id = USA_prepare_election
 		cost = 10
 
 		ai_will_do = {
@@ -428,7 +898,7 @@ mutually_exclusive = {
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
 			USA_great_depression_level_down = yes
-			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 230 }
+			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 180 }
 			USA_congress_medium_opposition = yes
 			custom_effect_tooltip = USA_great_depression_cooldown_tt
 			unlock_decision_tooltip = { decision = USA_pay_farm_subsidies show_effect_tooltip = yes }
@@ -469,7 +939,7 @@ mutually_exclusive = {
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
 			USA_great_depression_level_down = yes
-			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 230 }
+			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 180 }
 			custom_effect_tooltip = USA_great_depression_cooldown_tt
 			USA_congress_medium_opposition = yes
 		}
@@ -584,7 +1054,7 @@ mutually_exclusive = {
 	focus = {
 		id = USA_office_of_scientific_research_and_development
 		icon = GFX_focus_research
-		x = -3
+		x = 0
 		y = 2
 		relative_position_id = USA_prepare_election
 		cost = 10
@@ -593,6 +1063,7 @@ mutually_exclusive = {
 			factor = 1
 		}
 		prerequisite = {
+			focus = USA_support_alf_landon
 			focus = USA_support_fdr
 		}
 
@@ -616,7 +1087,7 @@ mutually_exclusive = {
 	focus = {
 		id = USA_rubber_reserve_company
 		icon = GFX_focus_generic_rubber
-		prerequisite = { focus = USA_office_of_scientific_research_and_development }
+		prerequisite = { focus = USA_new_deal }
 		available = {
 			
 		}
@@ -984,9 +1455,6 @@ mutually_exclusive = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			navy_experience = 50
-			army_experience = 50
-			air_experience = 10
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
@@ -996,7 +1464,12 @@ mutually_exclusive = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
 				add_building_construction = {
 					type = arms_factory
 					level = 3
@@ -1013,7 +1486,12 @@ mutually_exclusive = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
 				add_building_construction = {
 					type = arms_factory
 					level = 3
@@ -1031,7 +1509,12 @@ mutually_exclusive = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
 				add_building_construction = {
 					type = dockyard
 					level = 3
@@ -1049,7 +1532,12 @@ mutually_exclusive = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
 				add_building_construction = {
 					type = dockyard
 					level = 3
@@ -1064,11 +1552,9 @@ mutually_exclusive = {
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = USA_arsenal_of_democracy }
 		available = {
-			OR = {
-				has_war = yes
-				has_war_support > 0.3
+			JAP = {
+				has_completed_focus = JAP_intervene_in_china
 			}
-			democratic > 0.95
 		}
 		continue_if_invalid = yes
 		x = 0
@@ -1568,6 +2054,11 @@ mutually_exclusive = {
 		}
 
 		available = {
+			or = {
+				has_completed_focus = USA_support_alf_landon
+				has_completed_focus = USA_support_fdr
+			}
+		
 
 		}
 		
@@ -2046,7 +2537,10 @@ mutually_exclusive = {
 		}
 
 		available = {
-
+			or = {
+				has_completed_focus = USA_support_alf_landon
+				has_completed_focus = USA_support_fdr
+			}
 		}
 		
 		bypass = {

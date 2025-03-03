@@ -9242,7 +9242,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = GER_danzig_or_war
-		cost = 4
+		cost = 1
 
 		will_lead_to_war_with = BEL
 		will_lead_to_war_with = HOL
@@ -9395,7 +9395,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = GER_danzig_or_war
-		cost = 4
+		cost = 1
 
 		will_lead_to_war_with = DEN 
 		will_lead_to_war_with = NOR
@@ -9537,7 +9537,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_around_maginot
-		cost = 4
+		cost = 1
 
 		bypass = {
 			OR = {

@@ -12,7 +12,7 @@
 
 	default = no
 
-	continuous_focus_position = { x = 1000 y = 850 }
+	continuous_focus_position = { x = 2000 y = 1000 }
 
 	focus = {
 		id = JAP_the_unthinkable_option
@@ -789,7 +789,7 @@
 			focus = JAP_challenge_the_zaibatsus
 			focus = JAP_ally_with_the_zaibatsus
 		}
-		x = 2
+		x = 4
 		y = 1
 		relative_position_id = JAP_showa_restoration
 
@@ -871,7 +871,7 @@
 		prerequisite = { 
 			focus = JAP_establish_the_northern_resource_area	
 		}
-		x = -2
+		x = -3
 		y = 2
 		relative_position_id = JAP_public_works
 
@@ -902,9 +902,9 @@
 	focus = {
 		id = JAP_public_works
 		icon = GFX_goal_generic_construction
-		prerequisite = { focus = JAP_coal_liquification}
-		x = 2
-		y = 1
+		prerequisite = { focus = JAP_japanese_settlement focus = JAP_manchu_oil }
+		x = 3
+		y = 0
 		relative_position_id = JAP_coal_liquification
 		cost = 5
 
@@ -955,9 +955,9 @@
 	focus = {
 		id = JAP_tokyo_aluminum_plant
 		icon = GFX_goal_generic_construct_civilian
-		prerequisite = { focus = JAP_coal_liquification }
-		x = -2
-		y = 1
+		prerequisite = { focus = JAP_japanese_settlement focus = JAP_manchu_oil }
+		x = -3
+		y = 0
 		relative_position_id = JAP_coal_liquification
 
 		cost = 5
@@ -993,7 +993,7 @@
 		id = JAP_purge_the_kodoha_faction
 		icon = GFX_goal_generic_major_war
 		mutually_exclusive = { focus = JAP_the_unthinkable_option focus = JAP_support_the_kodoha_faction focus = JAP_strengthen_civilian_government }
-		x = 3
+		x = 13
 		y = 0
 
 		cost = 8
@@ -1028,13 +1028,11 @@ focus = {
 		icon = GFX_focus_SWI_embrace_rote_drei
 		cost = 5
 		prerequisite = { 
-			focus = JAP_modern_shogunate
-			focus = JAP_showa_restoration
+			focus = JAP_liaison_conference
 		}
-		
-		x = -2
+		relative_position_id = JAP_liaison_conference
+		x = 0
 		y = 1
-		relative_position_id = JAP_showa_restoration
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -1059,9 +1057,9 @@ focus = {
 			focus = JAP_modern_shogunate
 			focus = JAP_showa_restoration
 		}
-		x = 1
+		x = 2
 		y = 2
-
+		relative_position_id = JAP_purge_the_kodoha_faction
 		cost = 10
 
 		ai_will_do = {
@@ -1094,7 +1092,7 @@ focus = {
 		id = JAP_greater_east_asian_co_prosperity_sphere
 		icon = GFX_goal_generic_alliance
 		prerequisite = { focus = JAP_liaison_conference }
-		x = 2
+		x = -3
 		y = 1
 		relative_position_id = JAP_liaison_conference
 
@@ -1135,7 +1133,7 @@ focus = {
 			focus = JAP_greater_east_asian_co_prosperity_sphere
 		}
 		will_lead_to_war_with = CHI
-		x = 2
+		x = -3
 		y = 2
 		relative_position_id = JAP_liaison_conference
 
@@ -1243,7 +1241,7 @@ focus = {
 		id = JAP_secure_china
 		icon = GFX_focus_chi_one_china_policy
 		prerequisite = { focus = JAP_intervene_in_china }
-		x = 1
+		x = -1
 		y = 1
 		relative_position_id = JAP_intervene_in_china
 
@@ -1287,8 +1285,9 @@ focus = {
 	focus = {
 		id = JAP_develop_chinese_resources
 		icon = GFX_goal_generic_construct_civilian
+		prerequisite = {  focus = JAP_expanded_aluminium_in_manchu }
 		prerequisite = { focus = JAP_intervene_in_china }
-		x = 3
+		x = -3
 		y = 1
 		relative_position_id = JAP_intervene_in_china
 
@@ -1390,7 +1389,7 @@ focus = {
 		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = JAP_non_aggression_pact_with_the_soviet_union }
 		mutually_exclusive = { focus = JAP_secure_the_philippines }
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = JAP_non_aggression_pact_with_the_soviet_union
 
@@ -1663,7 +1662,7 @@ focus = {
 		prerequisite = { 
 			focus = JAP_liaison_conference
 		}
-		x = -2
+		x = 3
 		y = 1
 		relative_position_id = JAP_liaison_conference
 
@@ -1760,7 +1759,7 @@ focus = {
 			focus = JAP_challenge_the_zaibatsus
 			focus = JAP_ally_with_the_zaibatsus
 		}
-		x = 4
+		x = 6
 		y = 1
 		relative_position_id = JAP_showa_restoration
 
@@ -1944,10 +1943,7 @@ focus = {
 	focus = {
 		id = JAP_coal_liquification
 		icon = GFX_focus_generic_resource_extraction
-		prerequisite = {
-			focus = JAP_japanese_settlement 
-			focus = JAP_manchu_oil
-		}
+		prerequisite = { focus = JAP_japanese_settlement focus = JAP_manchu_oil }
 		x = 2
 		y = 1
 		relative_position_id = JAP_japanese_settlement
@@ -2006,9 +2002,7 @@ focus = {
 	focus = {
 		id = JAP_extra_research_slot
 		icon = GFX_focus_research
-		prerequisite = { 
-			focus = JAP_coal_liquification
-		}
+		prerequisite = { focus = JAP_coal_liquification }
 		x = 0
 		y = 1
 		relative_position_id = JAP_coal_liquification
@@ -2463,7 +2457,7 @@ focus = {
 			focus = JAP_nationalize_the_zaibatsus
 		}
 		relative_position_id = JAP_showa_restoration
-		x = 6
+		x = 8
 		y = 1
 
 		cost = 10
@@ -2625,7 +2619,7 @@ focus = {
 		prerequisite = {
 			focus = JAP_non_aggression_pact_with_the_soviet_union
 		}
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = JAP_non_aggression_pact_with_the_soviet_union
 		dynamic = yes  
@@ -2719,7 +2713,7 @@ focus = {
 		id = JAP_preemptive_war
 		icon = GFX_focus_ger_strike_at_the_source
 		prerequisite = { focus = JAP_prepare_for_war_with_the_soviet_union }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = JAP_prepare_for_war_with_the_soviet_union
 
@@ -2951,7 +2945,7 @@ focus = {
 			focus = JAP_guide_the_zaibatsus
 			focus = JAP_nationalize_the_zaibatsus
 		}
-		x = 8
+		x = 10
 		y = 1
 		relative_position_id = JAP_showa_restoration
 
@@ -3154,11 +3148,14 @@ focus = {
 	focus = {
 		id = JAP_the_manchurian_project
 		icon = GFX_focus_jap_manchurian_project
-		x = 21
-		y = 0
-
+		x = -8
+		y = 2
+		relative_position_id = JAP_purge_the_kodoha_faction
 		cost = 10
-
+		prerequisite = { 
+			focus = JAP_modern_shogunate 
+			focus = JAP_showa_restoration
+		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -3264,7 +3261,7 @@ focus = {
 		id = JAP_expand_the_showa_steel_works
 		icon = GFX_focus_generic_steel
 		prerequisite = { focus = JAP_resource_manchu }
-		x = 1
+		x = -1
 		y = 1
 		relative_position_id = JAP_resource_manchu
 
@@ -3294,7 +3291,7 @@ focus = {
 		id = JAP_expanded_aluminium_in_manchu
 		icon = GFX_focus_generic_aluminum
 		prerequisite = { focus = JAP_resource_manchu }
-		x = -1
+		x = 1
 		y = 1
 		relative_position_id = JAP_resource_manchu
 
@@ -3537,9 +3534,9 @@ focus = {
 	focus = {
 		id = JAP_army_expansion_law
 		icon = GFX_goal_generic_army_doctrines
-		x = 8
+		x = 15
 		y = 0
-		relative_position_id = JAP_the_manchurian_project 
+		relative_position_id = JAP_support_the_kodoha_faction
 
 		cost = 10
 

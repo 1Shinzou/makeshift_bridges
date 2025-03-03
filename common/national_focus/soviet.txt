@@ -6339,7 +6339,7 @@ focus_tree = {
 		completion_reward = {
 				add_timed_idea = { 
 				idea = SOV_face_western_fascism_ns 
-				days = 365 
+				days = 999 
 			}
 			add_to_variable = { SOV_the_red_army_special_forces_cap = 0.1 }
 			add_to_variable = { SOV_the_red_army_land_doctrine_cost_factor = -0.1 }

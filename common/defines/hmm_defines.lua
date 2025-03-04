@@ -211,3 +211,7 @@ NDefines.NAir.INTERCEPTION_DAMAGE_SCALE = 0.0 -- Multiply the interception damag
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 50
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 50
 NDefines.NMilitary.FIELD_MARSHAL_ARMIES_CAP = 7
+
+-- TY ASKAR
+NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_RAILWAY_DAMAGE_SPILL_FACTOR = 0 -- Portion of train damage to additionally deal to railways
+

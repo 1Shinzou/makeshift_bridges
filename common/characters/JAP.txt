@@ -510,36 +510,35 @@ characters={
 				small=GFX_portrait_JAP_keisuke_fujie_small
 			}
 		}
-		# corps_commander={
-		# 	traits={ career_officer politically_connected fortress_buster }
-		# 	skill=3
-		# 	attack_skill=1
-		# 	defense_skill=3
-		# 	planning_skill=3
-		# 	logistics_skill=3
-		# 	legacy_id=0
-		# }
-	}
-
-	JAP_kiichiro_higuchi={
-		name=JAP_kiichiro_higuchi
-		portraits={
-			army={
-				large=GFX_portrait_JAP_kiichiro_higuchi
-				small=GFX_portrait_JAP_kiichiro_higuchi_small
-			}
-		}
 		corps_commander={
-			traits={ career_officer trait_cautious }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=1
+			traits={ career_officer politically_connected fortress_buster organizer infantry_leader panzer_leader trickster }
+			skill=6
+			attack_skill=4
+			defense_skill=5
+			planning_skill=5
+			logistics_skill=5
 			legacy_id=0
 		}
 	}
 
+	JAP_harukichi_hyakutake={
+		name=JAP_harukichi_hyakutake
+		portraits={
+			army={
+				large=GFX_portrait_JAP_harukichi_hyakutake
+				small=GFX_portrait_JAP_harukichi_hyakutake_small
+			}
+		}
+		corps_commander={
+			traits={ career_officer politically_connected fortress_buster organizer infantry_leader panzer_leader trickster }
+			skill=4
+			attack_skill=4
+			defense_skill=5
+			planning_skill=5
+			logistics_skill=5
+			legacy_id=0
+		}
+	}
 	JAP_masaharu_homma={
 		name=JAP_masaharu_homma
 		portraits={
@@ -568,12 +567,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_officer }
-			skill=3
-			attack_skill=2
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=3
+			traits={ career_officer politically_connected fortress_buster organizer infantry_leader panzer_leader trickster }
+			skill=4
+			attack_skill=4
+			defense_skill=5
+			planning_skill=5
+			logistics_skill=5
 			legacy_id=0
 		}
 	}
@@ -623,16 +622,17 @@ characters={
 			}
 		}
 		
-		# corps_commander={
-		# 	traits={ career_officer infantry_officer commando }
-		# 	skill=3
-		# 	attack_skill=3
-		# 	defense_skill=1
-		# 	planning_skill=3
-		# 	logistics_skill=3
-		# 	legacy_id=0
-		# }
+		corps_commander={
+			traits = {  commando naval_invader infantry_leader infantry_expert trait_engineer hill_fighter ranger trait_mountaineer }
+			skill=7
+			attack_skill=5
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=0
+		}
 	}
+
 
 	JAP_masatane_kanda={
 		name=JAP_masatane_kanda

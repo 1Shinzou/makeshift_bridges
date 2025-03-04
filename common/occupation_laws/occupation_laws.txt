@@ -86,7 +86,31 @@ no_garrison = {
 	ai_will_do = {
 		base = 0
 
-		
+		modifier = {
+			FROM = {
+				has_government = democratic
+			}
+			has_active_resistance = no
+			add = 200
+		}
+		# if losing, get manpower & equipment back
+		modifier = {
+			FROM = {
+				surrender_progress > 0.15
+			}
+			add = 100
+		}
+		modifier = {
+			FROM = {
+				surrender_progress > 0.4
+			}
+			add = 500
+		}
+
+		modifier = {
+			check_variable  = { uncapped_resistance_target > -0.4 }
+			add = -60
+		}
 	}
 }
 
@@ -123,8 +147,7 @@ autonomous_occupation = {
 foreign_civilian_oversight = {
 	icon = 3
 	sound_effect = "Martial_Law_Interface_Foreign_Cvilian_Oversight"
-	default_law = yes
-	starting_law = yes
+
 	state_modifier = {
 		#resistance_target 				= 0.0
 		required_garrison_factor 		= -0.25
@@ -137,23 +160,8 @@ foreign_civilian_oversight = {
 	ai_will_do = {
 		base = 120
 		modifier = {
-			if = {
-				limit = {
-					OR = {
-					state = 672
-					state = 334
-					state = 335
-					state = 667
-					state = 673
-					state = 668
-					state = 669
-					state = 309
-					state = 695
-					}
-				}
-			}
-			factor = 1000
-			
+			check_variable  = { resistance_target_without_law > 0.05}
+			add = 100
 		}
 	}
 }
@@ -238,7 +246,8 @@ liberate_workers_occupation = {
 military_governor_occupation = {
 	icon = 6
 	sound_effect = "Martial_Law_Interface_Military_Governor_Occupation"
-
+	default_law = yes
+	starting_law = yes
 	
 	state_modifier = {
 		resistance_target 			= -0.35
@@ -526,7 +535,7 @@ colonial_police = {
 					}
 					AND = {
 						has_completed_focus = ITA_ministry_of_italian_africa
-						FROM = { capital_scope = { is_on_continent = africa } }
+						#FROM = { capital_scope = { is_on_continent = africa } }
 					}
 				}
 			}
@@ -585,7 +594,7 @@ colonial_police_improved = {
 				FROM = { original_tag = ALB }
 				has_completed_focus = ITA_albanian_fascist_militia
 			}
-			FROM = { capital_scope = { is_on_continent = africa } }
+			#FROM = { capital_scope = { is_on_continent = africa } }
 		}
 	}
 
@@ -636,7 +645,7 @@ colonial_police_final = {
 				FROM = { original_tag = ALB }
 				has_completed_focus = ITA_albanian_fascist_militia
 			}
-			FROM = { capital_scope = { is_on_continent = africa } }
+			#FROM = { capital_scope = { is_on_continent = africa } }
 		}
 	}
 
@@ -713,6 +722,93 @@ secretaries_general = {
 				set_temp_variable = { requirement_limit = 0.55 }
 			}
 			check_variable = { garrison_min_support_ratio < requirement_limit }
+			add = 350
+		}
+	}
+}
+
+independent_rule = {
+	icon = 13
+	sound_effect = "Martial_Law_Interface_Autonomous_Occupation_Unique_DEM"
+
+	fallback_law = foreign_civilian_oversight
+
+	visible = {
+		original_tag = RAJ
+		has_completed_focus = RAJ_princely_states_policy
+
+	}
+
+	state_modifier = {
+		resistance_target 				= -0.1
+		compliance_gain 				=  0.03
+		required_garrison_factor 		= -0.5
+		resistance_damage_to_garrison	= -0.5
+		local_resources 				= -0.35
+		local_factories 				= -0.35
+	}
+
+
+	ai_will_do = {
+
+		base = 450
+		modifier = {
+			check_variable  = { resistance_target_without_law > 0.2 }
+			add = 200
+		}
+
+
+		modifier = {
+			check_variable  = { resistance_target_without_law > 0.34}
+			add = 300
+		}
+	}
+}
+
+
+princely_subjugation= {
+	icon = 13
+	sound_effect = "Martial_Law_Interface_Autonomous_Occupation_Unique_DEM"
+
+	fallback_law = military_governor_occupation
+
+	visible = {
+		original_tag = RAJ
+		has_completed_focus = RAJ_princely_states_policy
+
+
+		
+	}
+
+	state_modifier = {
+		resistance_target 				= -0.40
+		compliance_gain 				= -0.05
+		required_garrison_factor 		= 0.15
+		resistance_damage_to_garrison 	= 0.50
+		local_factories 				= 1
+		local_resources 				= 1
+
+	}
+
+
+	ai_will_do = {
+		base = 250
+		modifier = {
+			check_variable  = { resistance_target_without_law > 0.3}
+			add = 200
+		}
+
+
+		modifier = {
+			check_variable  = { resistance_target_without_law > 0.44}
+
+			set_temp_variable = { requirement_limit = 0.35 }
+			if = {
+				limit = { occupation_law = local_police_force_garrison }
+				set_temp_variable = { requirement_limit = 0.55 }
+			}
+			check_variable = { garrison_min_support_ratio < requirement_limit }
+
 			add = 350
 		}
 	}

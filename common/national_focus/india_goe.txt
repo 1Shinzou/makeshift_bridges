@@ -110,9 +110,7 @@ focus_tree = {
         }
 
         allow_branch = {
-            NOT = {
-                has_completed_focus = RAJ_provincial_autonomy
-            }
+            always = no
         }
 
         offset = {
@@ -215,9 +213,8 @@ focus_tree = {
 
         }
 
-        allow_branch = {
-            NOT = { has_completed_focus = RAJ_look_to_the_future }
-            NOT = { has_completed_focus = RAJ_provincial_autonomy }
+       allow_branch = {
+            always = no
         }
 
         offset = {
@@ -286,8 +283,7 @@ focus_tree = {
         }
 
         allow_branch = {
-            NOT = { has_completed_focus = RAJ_look_to_the_past }
-            NOT = { has_completed_focus = RAJ_provincial_autonomy }
+            always = no
         }
 
         offset = {
@@ -7300,9 +7296,11 @@ focus_tree = {
         }
 
         allow_branch = {
+             always = no
             NOT = { has_completed_focus = RAJ_mahatma }
             NOT = { has_completed_focus = RAJ_great_depression_price_controls }
         }
+
 
         cancel_if_invalid = yes
         continue_if_invalid = no
@@ -8559,6 +8557,7 @@ focus_tree = {
         }
 
         allow_branch = {
+            always = no
             NOT = { has_completed_focus = RAJ_mahatma }
             NOT = { has_completed_focus = RAJ_great_depression_price_controls }
             NOT = { has_completed_focus = RAJ_red_in_the_shadows }
@@ -8763,6 +8762,7 @@ focus_tree = {
         }
 
         allow_branch = {
+            always = no
             NOT = { has_completed_focus = RAJ_mahatma }
             NOT = { has_completed_focus = RAJ_great_depression_price_controls }
             NOT = { has_completed_focus = RAJ_forward_bloc }

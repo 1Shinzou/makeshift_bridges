@@ -29,12 +29,12 @@ SOV_collectivized_society:0 "Collectivized Society"
 
 # Strategic Region Map Modding
 
-STRATEGICREGION_292:0 "Strait of Sicily"
-STRATEGICREGION_293:0 "Balearic Sea"
-STRATEGICREGION_291:0 "Ionian Sea"
+STRATEGICREGION_299:0 "Strait of Sicily"
+STRATEGICREGION_300:0 "Balearic Sea"
+STRATEGICREGION_301:0 "Ionian Sea"
 STRATEGICREGION_15:0 "Levantine Sea"
-STRATEGICREGION_289: "Tobruk"
-STRATEGICREGION_290: "Aswan"
+STRATEGICREGION_302: "Tobruk"
+STRATEGICREGION_303: "Aswan"
 
 # STRAITS
  OTRANTO_STRAIT:0 "Strait of Otranto"

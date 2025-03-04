@@ -14,7 +14,9 @@ state={
 			infrastructure = 1
 		}
 		add_core_of = WST
-		add_core_of = RAJ
+		add_claim_by = RAJ
+		add_core_of = KAS
+		add_core_of = WST 
 
 	}
 

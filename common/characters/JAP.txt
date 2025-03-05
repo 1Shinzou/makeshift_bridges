@@ -350,7 +350,7 @@ characters={
 				original_tag = JAP
 			}
 			traits = {
-				air_chief_all_weather_1
+				air_chief_all_weather_3
 			}
 			cost =  50
 			ai_will_do = {
@@ -1176,7 +1176,7 @@ characters={
 				original_tag = JAP
 			}
 			traits = {
-				air_chief_night_operations_1
+				air_chief_night_operations_3
 			}
 			cost =  50
 			ai_will_do = {
@@ -1199,7 +1199,7 @@ characters={
 				original_tag = JAP
 			}
 			traits = {
-				air_chief_ground_support_1
+				air_chief_ground_support_3
 			}
 			cost =  50
 			ai_will_do = {

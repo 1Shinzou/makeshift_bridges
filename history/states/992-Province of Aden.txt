@@ -28,7 +28,7 @@ state = {
 
 	provinces = {
 		5074 
-		#13374 # HAVE TO ADD NEW PROVINCE
+		13374 # HAVE TO ADD NEW PROVINCE
 	}
 	buildings_max_level_factor = 1.000
 	local_supplies = 0.000

@@ -22,7 +22,7 @@ state = {
 	
 	provinces = {
 		10744 12879 
-		#13368 # NEW PROVINCE HAS TO BE ADDED LATER
+		13368 # NEW PROVINCE HAS TO BE ADDED LATER
 	}
 
 	local_supplies = 0.0 

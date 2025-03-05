@@ -22,9 +22,9 @@ state=
 		add_core_of = LUX
 	}
 
-	provinces=
-	{
-6583 	}
+	provinces = {
+		6583 13375
+	}
 
 	local_supplies=0.0 
 }

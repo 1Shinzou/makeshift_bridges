@@ -16,16 +16,16 @@ state = {
 
 		buildings = {
 			infrastructure = 1
-			#13369 = {
-			#	naval_base = 1
-			#}
+			13369 = {
+				naval_base = 1
+			}
 		}
 
 	}
 
 	provinces = {
-		#13369 NEW PROVINCE
-		10904
+		13369 
+		
 	}
 
 	local_supplies = 4.0 

@@ -215,3 +215,5 @@ NDefines.NMilitary.FIELD_MARSHAL_ARMIES_CAP = 7
 -- TY ASKAR
 NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_RAILWAY_DAMAGE_SPILL_FACTOR = 0 -- Portion of train damage to additionally deal to railways
 
+NDefines.NCountry.FUEL_LEASE_CONVOY_RATIO = 0.0001 -- Fuel takes less convoys
+

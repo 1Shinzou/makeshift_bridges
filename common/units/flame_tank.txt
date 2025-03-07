@@ -69,14 +69,14 @@ sub_units = {
 			attack = 0.05
 		}
 		urban = {
-			attack = 0.05
+			attack = 0.1
 		}
 		fort = {
-			attack = 0.05
+			attack = 0.075
 			movement = 0.1
 		}
 		river = {
-			attack = 0.075
+			attack = 0.1
 		}
 		amphibious = {
 			attack = 0.1

@@ -727,7 +727,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_expected_value = 0.10
+				consumer_goods_expected_value = 0.15
 				conscription = -0.02
 				production_speed_arms_factory_factor = 0.3
 				production_speed_dockyard_factor = 0.3
@@ -1135,7 +1135,7 @@ ideas = {
 				min_export = 0.5
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
-				production_speed_buildings_factor = 0.15
+				production_speed_buildings_factor = 0.1
 				research_speed_factor = 0.05
 				lend_lease_tension = 0.20
 				faction_trade_opinion_factor = 0.25

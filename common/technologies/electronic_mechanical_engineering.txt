@@ -1648,12 +1648,12 @@ technologies = {
 		#	research_cost_coeff = 1
 		#}
 		
-		start_year = 1940
+		start_year = 1943
 		research_cost = 5
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 0 }
+			position = { x = 0 y = 4 }
 		}
 		
 		ai_will_do = {

@@ -3935,6 +3935,8 @@ focus = {
 				}
 			}
 			hidden_effect = {
+				add_ideas = SPA_death_before_surrender
+				add_state_core = 730
 				EFR = {
 					give_resource_rights = {
 						receiver = GER

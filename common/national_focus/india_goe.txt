@@ -6987,10 +6987,12 @@ focus_tree = {
     focus = {
         id = RAJ_trade_port
         icon = GFX_focus_POL_develop_polish_shipbuilding
-        prerequisite = { focus = RAJ_great_depression_price_controls focus = RAJ_provincial_autonomy }
-        x = 21
+        prerequisite = {
+             #focus = RAJ_great_depression_price_controls 
+             focus = RAJ_provincial_autonomy }
+        x = 6
         y = 1
-        relative_position_id = RAJ_great_depression_price_controls 
+        relative_position_id = RAJ_provincial_autonomy
 
         offset = {
             x = -6

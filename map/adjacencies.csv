@@ -317,6 +317,23 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 9140;142;impassable;-1;-1;-1;-1;-1;;Finnland Border
 9140;6117;impassable;-1;-1;-1;-1;-1;;Finnland Border
 
+2003;5047;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
+2003;5017;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
+2088;5017;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
+2088;12723;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
+2088;13251;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
+2088;1984;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
+12862;1984;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
+12862;2040;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
+12862;13251;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
+4918;2040;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
+4918;4954;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
+12887;4954;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
+12887;2009;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
+12800;2009;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
+12800;13243;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
+12800;13244;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
+
 
 
 -1;-1;;-1;-1;-1;-1;-1;-1 

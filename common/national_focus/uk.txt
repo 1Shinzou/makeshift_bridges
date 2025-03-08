@@ -2195,7 +2195,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			army_experience = 25
 			navy_experience = 25
 			air_experience = 25
 			add_ideas = ENG_service_overseas_idea
@@ -3725,6 +3725,7 @@ focus_tree = {
 		}	
 		completion_reward = {
 			remove_ideas = ENG_the_war_to_end_all_wars
+			army_experience = 125
 			set_rule = { can_send_volunteers = yes }
 		}
 	}

@@ -187,7 +187,7 @@ if = {
 	}
 }
 
-set_convoys = 25
+set_convoys = 75
 set_politics = {
 	ruling_party = democratic
 	last_election = "1933.5.17"

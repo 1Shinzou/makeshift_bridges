@@ -951,7 +951,7 @@ focus_tree = {
 				ruling_party = fascism
 				elections_allowed = no
 			}	
-
+			add_war_support = 0.20
 			news_event = { id = news.485 }
 		}
 	}
@@ -1088,6 +1088,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+				add_war_support = 0.1
 				add_ideas = tot_economic_mobilisation
 			}
 	}

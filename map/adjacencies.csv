@@ -334,6 +334,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 12800;13243;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
 12800;13244;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
 
+1473;5060;impassable;-1;-1;-1;-1;-1;;Africa FRA-UK Border 
+
 
 
 -1;-1;;-1;-1;-1;-1;-1;-1 

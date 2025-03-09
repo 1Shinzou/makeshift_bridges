@@ -218,3 +218,5 @@ NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_RAILWAY_DAMAGE_SPILL_FACTOR = 0 -- Porti
 NDefines.NCountry.FUEL_LEASE_CONVOY_RATIO = 0.0001 -- Fuel takes less convoys
 NDefines.NAir.AIR_MORE_GROUND_CREWS_COST = 1.0
 
+NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 0				-- Political power cost to send attache
+

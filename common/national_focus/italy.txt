@@ -4948,7 +4948,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = ITA_air_innovations_bba #fighter_bonus
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				category = light_fighter
 			}

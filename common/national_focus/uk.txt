@@ -976,9 +976,10 @@ focus_tree = {
 		available = {
 			threat > 0.30
 		} #at war with major or ger in rhineland or high threat
-		prerequisite = { focus = ENG_tank_variant_focus }
+		
 		prerequisite = {
 			focus = ENG_let_that_lion_roar
+			focus = ENG_tank_variant_focus
 		}
 		icon = GFX_goal_generic_construct_mil_factory
 		x = -1
@@ -4214,7 +4215,13 @@ focus_tree = {
 				remove_idea = ENG_state_of_the_economy_four
 				add_idea = ENG_state_of_the_economy_five
 			}
-					}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+		}
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH
 		}

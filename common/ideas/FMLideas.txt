@@ -294,7 +294,8 @@ ideas = {
 				exiled_government_weekly_manpower = 100
 				legitimacy_gain_factor = 0.05
 				legitimacy_daily = 0.25
-				training_time_army_factor = -0.5
+				training_time_army_factor = -0.6
+				production_factory_efficiency_gain_factor = 0.3
 				}
 		}
 

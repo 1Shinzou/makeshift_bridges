@@ -15857,6 +15857,7 @@ country_event = {
 				}
 				188 = {
 					add_core_of = ROOT
+					remove_core_of = LIT
 				}
 			}
 			annex_country = {

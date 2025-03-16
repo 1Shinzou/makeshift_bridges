@@ -559,4 +559,14 @@ initilize_victory_system = {
 
 }		
 
+air_to_england = {
+	if = { limit = { tag = USA }
+		send_equipment = { equipment = small_plane_airframe amount = 100000 target = ENG }
+		send_equipment = { equipment = small_plane_cas_airframe amount = 100000 target = ENG }
+		send_equipment = { equipment = medium_plane_airframe amount = 100000 target = ENG }
+		send_equipment = { equipment = medium_plane_fighter_airframe amount = 100000 target = ENG }	
+		send_equipment = { equipment = large_plane_airframe amount = 100000 target = ENG }	
+	}
+}
+
 		

@@ -801,3 +801,25 @@ MOD_countdown_to_victory_cat = {
     }
 
 }
+
+USA_aid_britain = {
+        send_air_to_eng = {
+	
+		icon = GFX_decision_generic_air
+			
+			allowed = {
+		}
+		
+		available = {
+				date > 1940.07.01	
+		} 
+		fire_only_once = yes
+		visible = {
+			original_tag = USA
+		}
+		
+		complete_effect = {
+            air_to_england = yes
+		}			
+	    }
+}

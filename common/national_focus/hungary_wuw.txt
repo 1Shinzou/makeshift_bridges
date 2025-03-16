@@ -2581,7 +2581,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-
+			add_ideas = extensive_conscription
 			add_ideas = HUN_secret_rearmament
 			custom_effect_tooltip = HUN_secret_rearmament_tt
 
@@ -3554,7 +3554,7 @@ focus_tree = {
 		completion_reward = {
 
 			add_war_support = 0.05
-			add_ideas = extensive_conscription
+			
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			IF = {

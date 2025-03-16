@@ -19153,17 +19153,17 @@ focus_tree = {
                 has_completed_focus = RAJ_gun_and_shell_factory_cossipore
             }
 
-            if = {
-                limit = {
-                     has_dlc = "Arms Against Tyranny"
-                }
-                OR = {
-                    mio:RAJ_ammunition_factory_khadki_organization = { has_mio_size > 7  }                   
-                    mio:RAJ_ordnance_factory_kanpur_organization  = { has_mio_size > 7  } 
-                    mio:RAJ_ordnance_factory_medak_organization  = { has_mio_size > 7  }  
-                    mio:RAJ_vickers_armstrong_organization  = { has_mio_size > 7  }   
-                }
-            }
+           # if = {
+           #     limit = {
+           #          has_dlc = "Arms Against Tyranny"
+           #     }
+           #     OR = {
+           #         mio:RAJ_ammunition_factory_khadki_organization = { has_mio_size > 7  }                   
+           #         mio:RAJ_ordnance_factory_kanpur_organization  = { has_mio_size > 7  } 
+           #         mio:RAJ_ordnance_factory_medak_organization  = { has_mio_size > 7  }  
+           #         mio:RAJ_vickers_armstrong_organization  = { has_mio_size > 7  }   
+           #     }
+           # }
             
         }
         

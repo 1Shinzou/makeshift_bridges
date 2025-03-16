@@ -909,7 +909,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		category_front_line = {
+		category_army = {
 			 soft_attack = 0.1
 		}
 		

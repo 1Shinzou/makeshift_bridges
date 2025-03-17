@@ -276,8 +276,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 2431;2382;;-1;-1;-1;-1;-1;ORESUND_STRAIT;ORESUND
 2431;2408;;-1;-1;-1;-1;-1;THE_BELTS;TheBelts
 5864;5838;;-1;-1;-1;-1;-1;OTRANTO_STRAIT;Otranto Strait
-9013;8965;;-1;-1;-1;-1;-1;TUNIS_STRAIT;Canale di Sicilia
-9013;5605;;-1;-1;-1;-1;-1;TUNIS_STRAIT;Canale di Sicilia
 5681;1452;;-1;-1;-1;-1;-1;SICILY_STRAIT;Strait of Messina
 
 

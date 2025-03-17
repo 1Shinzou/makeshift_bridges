@@ -13825,6 +13825,7 @@ focus_tree = {
         }
 
         allow_branch = {
+            always = no
             has_country_flag = gandhi_survives_assasination_attempt
         }
         cancel_if_invalid = yes

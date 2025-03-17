@@ -167,7 +167,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_trade_treaty_with_germany
 
-		cost = 5
+		cost = 10
 
 		completion_reward = {
 		
@@ -261,7 +261,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ROM_national_recovery
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -287,7 +287,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ROM_autarky
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -322,7 +322,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ROM_bucharest_technical_institute
-		cost = 5
+		cost = 10
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -357,7 +357,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ROM_reduce_reliance_on_foreign_imports
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -385,7 +385,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ROM_encourage_trade_with_germany
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 
@@ -404,7 +404,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ROM_expand_the_axis_oil_trade
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 
@@ -491,7 +491,7 @@ focus_tree = {
 	focus = {
 		id = ROM_the_duty_to_work
 		available = {
-			has_tech = excavation3
+			has_tech = excavation4
 		}
 		bypass = {
 		}
@@ -631,7 +631,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = ROM_national_recovery
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -653,7 +653,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ROM_the_stabilization_plan
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 
@@ -681,7 +681,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ROM_malaxa
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 
@@ -707,7 +707,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ROM_reduce_reliance_on_oil
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
@@ -717,10 +717,10 @@ focus_tree = {
 					is_controlled_by = ROOT
 					is_core_of = ROOT
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}		
@@ -742,7 +742,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ROM_reduce_reliance_on_oil
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -814,7 +814,7 @@ focus_tree = {
 		x = -1
 		y = 1
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 9
@@ -852,7 +852,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 9
@@ -917,7 +917,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_national_recovery
 
-		cost = 5
+		cost = 10
 
 		available = {
 		}
@@ -937,7 +937,7 @@ focus_tree = {
 		x = 4
 		y = 4
 
-		cost = 5
+		cost = 10
 
 
 		cancel_if_invalid = yes
@@ -964,7 +964,7 @@ focus_tree = {
 		x = -2
 		y = 1
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 9
@@ -1003,7 +1003,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 9
@@ -1101,7 +1101,7 @@ focus_tree = {
 		x = 0
 		y = 2
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 9
@@ -1174,7 +1174,7 @@ focus_tree = {
 		x = -4
 		y = 4
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 9
@@ -1233,7 +1233,7 @@ focus_tree = {
 		x = 4
 		y = 1
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 9
@@ -1265,7 +1265,7 @@ focus_tree = {
 		x = -2
 		y = 1
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 9
@@ -1310,7 +1310,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 9
@@ -1353,7 +1353,7 @@ focus_tree = {
 		x = 2
 		y = 1
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 9
@@ -1385,7 +1385,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		cost = 5 
+		cost = 10 
 
 		completion_reward = {
 			add_research_slot = 1 
@@ -1435,7 +1435,7 @@ focus_tree = {
 		x = 1
 		y = 2
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 9
@@ -1587,7 +1587,7 @@ focus_tree = {
 		x = 4
 		y = 4
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 9
@@ -1642,7 +1642,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 70
 		}
 	}
 
@@ -1672,7 +1672,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = ROM_expand_the_air_force }
 		relative_position_id = ROM_expand_the_air_force
-		cost = 5
+		cost = 10
 
 		available = {
 			has_war = yes
@@ -1696,7 +1696,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = ROM_expand_the_air_force
 
-		cost = 5
+		cost = 10
 
 		completion_reward = {
 			add_political_power = 100 
@@ -1711,7 +1711,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_acquire_licenses
 
-		cost = 5
+		cost = 10
 
 
 
@@ -1739,7 +1739,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_acquire_licenses
 
-		cost = 5
+		cost = 10
 
 
 		completion_reward = {
@@ -1785,7 +1785,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = ROM_acquire_licenses
 
-		cost = 5
+		cost = 10
 
 
 
@@ -1809,7 +1809,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = ROM_expand_the_air_force
 
-		cost = 5
+		cost = 10
 		completion_reward = {
 			air_experience = 50
 			add_ideas = ROM_local_development_2
@@ -1824,7 +1824,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_local_development
 
-		cost = 5
+		cost = 10
 
 	
 
@@ -1841,7 +1841,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_air_superiority
 
-		cost = 5
+		cost = 10
 
 		completion_reward = {
 			46 = {
@@ -1870,7 +1870,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_air_superiority
 
-		cost = 5
+		cost = 10
 
 		completion_reward = {
 			46 = {
@@ -1900,7 +1900,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = ROM_air_superiority
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -1966,7 +1966,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_army_maneuvers
 
-		cost = 5
+		cost = 10
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -1986,7 +1986,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_artillery_modernization
 		mutually_exclusive = { focus =  ROM_protect_ploesti }
-		cost = 5
+		cost = 10
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -2006,7 +2006,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_artillery_modernization
 		mutually_exclusive = { focus = ROM_anti_air_modernization  }
-		cost = 5
+		cost = 10
 
 		completion_reward = {
 			46 = {
@@ -2032,7 +2032,7 @@ focus_tree = {
 		x = -6
 		y = 1
 		relative_position_id = ROM_army_maneuvers
-		cost = 5
+		cost = 10
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -2052,7 +2052,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ROM_modern_at_guns
-		cost = 5
+		cost = 10
 
 		completion_reward = {
 			add_ideas = ROM_resita_75
@@ -2066,7 +2066,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_army_maneuvers
 
-		cost = 5
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2090,7 +2090,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_expand_the_army
 
-		cost = 5
+		cost = 10
 
 
 		cancel_if_invalid = yes
@@ -2124,7 +2124,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_expand_small_arms_manufacturing
 
-		cost = 5
+		cost = 10
 
 
 		cancel_if_invalid = yes
@@ -2221,7 +2221,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_expand_the_army
 
-		cost = 5
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2250,7 +2250,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_import_and_convert_antique_artillery
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -2292,7 +2292,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_organizing_logistics
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -2332,7 +2332,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_army_maneuvers
 
-		cost = 5
+		cost = 10
 
 		completion_reward = {	
 			add_doctrine_cost_reduction = {
@@ -2353,7 +2353,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_vanatori_de_munte
 
-		cost = 5
+		cost = 10
 
 		completion_reward = {
 					custom_effect_tooltip = ROM_mountain_artillery_tech_tt
@@ -2380,7 +2380,7 @@ focus_tree = {
 
 
 		completion_reward = {
-			army_experience = 100
+			army_experience = 50
 		}
 	}	
 
@@ -2395,8 +2395,12 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			custom_effect_tooltip = available_mio_tt
-			show_mio_tooltip = GER_opel_organization 
+				add_tech_bonus = {
+				name = ROM_invite_axis_motor_companies 
+				bonus = 1
+				uses = 1
+				category = motorized_equipment
+			}
 		}
 	}	
 
@@ -2408,7 +2412,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_invite_axis_motor_companies
 
-		cost = 5
+		cost = 10
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -2436,7 +2440,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = ROM_modernize_the_army
 
-		cost = 5
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2462,7 +2466,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_acquire_modern_tanks
 
-		cost = 5
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2481,7 +2485,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_mobile_tank_destroyers
 
-		cost = 5
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2502,7 +2506,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ROM_the_R_series }
 		relative_position_id = ROM_acquire_modern_tanks
 
-		cost = 5
+		cost = 10
 
 
 		cancel_if_invalid = yes
@@ -2541,7 +2545,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ROM_acquire_modern_tanks
-		cost = 5
+		cost = 10
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -2574,7 +2578,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_the_R_series
 
-		cost = 5
+		cost = 10
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2642,8 +2646,9 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = ROM_coastal_defense_navy_designer
+			navy_experience = 50
+			#custom_effect_tooltip = available_designer
+			#show_ideas_tooltip = ROM_coastal_defense_navy_designer
 		}
 	}
 
@@ -2738,10 +2743,10 @@ focus_tree = {
 		relative_position_id = ROM_expand_the_galati_shipyards
 
 		cost = 5
-
 		completion_reward = {			
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = ROM_black_sea_dominance_designer
+			navy_experience = 50
+			# custom_effect_tooltip = available_designer
+			# show_ideas_tooltip = ROM_black_sea_dominance_designer
 		}
 	}
 

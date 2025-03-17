@@ -5,48 +5,48 @@ air_wings = {
 	### RAF Fighter Command ###
 	126 = { 
 		### No. 11 Fighter Command, Middlesex area -- Hawker Demons, Furys, Gloster Gauntlets
-		small_plane_airframe_0 = {
+		small_plane_airframe_1 = {
 			owner = "ENG" 
-			amount = 72
+			amount = 100
 			version_name = "Hawker Fury"
 		}
-		small_plane_airframe_0 = {
+		small_plane_airframe_1 = {
 			owner = "ENG" 
-			amount = 72
+			amount = 100
 			version_name = "Hawker Fury"
 		}
-		small_plane_airframe_0 = {
+		small_plane_airframe_1 = {
 			owner = "ENG" 
-			amount = 72
+			amount = 100
 			version_name = "Hawker Fury"
 		}
 	}
 	126 = { 
 		### No. 11 Fighter Command, Essex area -- Hawker Demons, Furys, Gloster Gauntlets
-		small_plane_airframe_0 = {
+		small_plane_airframe_1 = {
 			owner = "ENG" 
-			amount = 77
+			amount = 100
 			version_name = "Hawker Fury"
 		}
-		small_plane_airframe_0 = {
+		small_plane_airframe_1 = {
 			owner = "ENG" 
-			amount = 77
+			amount = 100
 			version_name = "Hawker Fury"
 		}
 	}	
 	126 = { 
 		### No. 12 Fighter Command, Nottingham area -- Hawker Demons, Furys, Gloster Gauntlets
-		small_plane_airframe_0 = {
+		small_plane_airframe_1 = {
 			owner = "ENG" 
-			amount = 96
+			amount = 100
 			version_name = "Hawker Fury"
 		}
 	}	
 	126 = { 
 		### No. 13 Fighter Command, Newcastle -- Hawker Demons, Furys, Gloster Gauntlets
-		small_plane_airframe_0 = {
+		small_plane_airframe_1 = {
 			owner = "ENG" 
-			amount = 72
+			amount = 100
 			version_name = "Hawker Fury"
 		}
 		
@@ -107,7 +107,7 @@ air_wings = {
 	### RAF Middle East and Africa
 	126 = { 
 		### AHQ Egypt
-		small_plane_airframe_0 = {
+		small_plane_airframe_1 = {
 			owner = "ENG" 
 			amount = 72
 			version_name = "Hawker Fury"
@@ -133,7 +133,7 @@ air_wings = {
 	}
 	126 = { 
 		### RAF Aden
-		small_plane_airframe_0 = {
+		small_plane_airframe_1 = {
 			owner = "ENG" 
 			amount = 24
 			version_name = "Hawker Fury"

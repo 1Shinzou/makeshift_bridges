@@ -8,8 +8,8 @@ state = {
 	
 	history = {
 
-		owner = TUM
-		add_core_of = TUM
+		owner = WST
+		add_core_of = WST
 
 		
 

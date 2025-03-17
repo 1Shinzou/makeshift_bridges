@@ -6,10 +6,10 @@ state={
 	state_category = wasteland
 
 	history={
-		owner = TUM
+		owner = WST
 	
 		
-		add_core_of = TUM
+		add_core_of = WST
 
 	}
 

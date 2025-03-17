@@ -17,9 +17,7 @@ state={
 			infrastructure = 1
 			air_base = 1
 		}
-		add_core_of = WST
-		add_core_of = WST
-		add_core_of = WST
+		add_core_of = TUM
 	}
 
 	provinces={

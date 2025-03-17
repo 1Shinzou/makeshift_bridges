@@ -6,7 +6,7 @@ state = {
 
 	history = {
 
-		owner = TUM
+		owner = WST
 
 
 		
@@ -17,7 +17,7 @@ state = {
 
 		
 
-		add_core_of = TUM
+		add_core_of = WST
 
 	}
 

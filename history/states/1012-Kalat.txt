@@ -9,9 +9,8 @@ state={
 
 	history = {
 		owner = RAJ
-		add_core_of = KLT
-		add_core_of = WST
-		add_core_of = WST
+		add_core_of = TUM
+
 
 		buildings = {
 			infrastructure = 1 #was: 5

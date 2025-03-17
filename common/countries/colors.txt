@@ -164,11 +164,6 @@ USA = {
 	color_ui = rgb { 87 160 255 }
 }
 
-MON = {
-    color = rgb { 182 62 61 }
-    color_ui = rgb { 182 62 70 }
-}
-
 RAJ = {
 	color = rgb { 226  135  40 }
 	color_ui = rgb { 226  135  40 }

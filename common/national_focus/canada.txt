@@ -3416,6 +3416,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_ideas = ENG_quality_RAF_pilots
 			air_experience = 25
 			random_owned_controlled_state = {
 				limit = {

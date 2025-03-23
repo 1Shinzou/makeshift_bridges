@@ -216,7 +216,30 @@ NDefines.NMilitary.FIELD_MARSHAL_ARMIES_CAP = 7
 NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_RAILWAY_DAMAGE_SPILL_FACTOR = 0 -- Portion of train damage to additionally deal to railways
 
 NDefines.NCountry.FUEL_LEASE_CONVOY_RATIO = 0.0001 -- Fuel takes less convoys
-NDefines.NAir.AIR_MORE_GROUND_CREWS_COST = 1.0
+
+NDefines.NAir.AIR_MORE_GROUND_CREWS_COST = 0.0
 
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 0				-- Political power cost to send attache
 
+NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { -- supremacy multipliers for different mission types
+0.0, -- HOLD
+1.0, -- PATROL
+0.6, -- STRIKE FORCE
+0.5, -- CONVOY RAIDING
+0.5, -- CONVOY ESCORT
+0.3, -- MINES PLANTING
+0.3, -- MINES SWEEPING
+0.0, -- TRAIN
+0.0, -- RESERVE_FLEET
+0.6, -- NAVAL_INVASION_SUPPORT
+}
+
+NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 50
+NDefines.NProduction.FLOATING_HARBOR_MAX_NAV_FACTORIES_PER_LINE = 50
+NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 100 
+NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 10
+NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 4.50
+
+NDefines.NMilitary.COMBAT_OVER_WIDTH_PENALTY = -1.5	
+
+NDefines.NGeography.MEDITERRANEAN_SEA_REGIONS = { 15, 29, 68, 69, 168, 169, 202, 299, 300, 301, } -- The sea regions that are considered as part of the Mediterranean sea

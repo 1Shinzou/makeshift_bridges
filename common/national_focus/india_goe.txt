@@ -47,6 +47,7 @@ focus_tree = {
         search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 
         completion_reward = {
+            army_experience = 100
             IF = {
                 limit = {
                     NOT = {
@@ -15265,6 +15266,7 @@ focus_tree = {
         search_filters = {FOCUS_FILTER_MILITARY_CHARACTER}
 
         completion_reward = {
+            army_experience = 100
             every_army_leader = {
                 limit = {
                     has_trait = loyalty_to_britain
@@ -15305,7 +15307,7 @@ focus_tree = {
 
         available = {
             has_war_support > 0.5
-            NOT = { has_idea = capital_investment_model }
+            # NOT = { has_idea = capital_investment_model }
         }
         
         bypass = {

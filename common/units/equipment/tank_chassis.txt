@@ -117,6 +117,10 @@ equipments = {
 			count < 2
 		}	
 		module_count_limit = {
+			module = smoke_launchers
+			count < 2
+		}	
+		module_count_limit = {
 			category = tank_radio_module
 			count < 2
 		}
@@ -369,6 +373,10 @@ equipments = {
 		}	
 		module_count_limit = {
 			category = tank_radio_module
+			count < 2
+		}
+		module_count_limit = {
+			module = smoke_launchers
 			count < 2
 		}
 		module_count_limit = {
@@ -626,6 +634,10 @@ equipments = {
 			count < 2
 		}	
 		module_count_limit = {
+			module = smoke_launchers
+			count < 2
+		}
+		module_count_limit = {
 			category = tank_radio_module
 			count < 2
 		}
@@ -880,6 +892,10 @@ equipments = {
 			count < 2
 		}	
 		module_count_limit = {
+			module = smoke_launchers
+			count < 2
+		}
+		module_count_limit = {
 			category = tank_radio_module
 			count < 2
 		}
@@ -1073,6 +1089,10 @@ equipments = {
 			count < 2
 		}	
 		module_count_limit = {
+			module = smoke_launchers
+			count < 2
+		}
+		module_count_limit = {
 			category = tank_radio_module
 			count < 2
 		}
@@ -1260,6 +1280,10 @@ equipments = {
 			module = sloped_armor
 			count < 2
 		}	
+		module_count_limit = {
+			module = smoke_launchers
+			count < 2
+		}
 		module_count_limit = {
 			category = tank_radio_module
 			count < 2
@@ -1453,7 +1477,7 @@ equipments = {
 			module = lc_assault_gun
 			count < 2
 		}
-
+		
 		module_count_limit = {
 			module = lc_high_velocity_cannon_turret
 			count < 3

@@ -8584,6 +8584,7 @@ focus_tree = {
 		relative_position_id = GER_an_invincible_army
 		cost = 5
 		available = {
+			date > 1943.1.1
 			surrender_progress < 0.01
 			custom_trigger_tooltip = {
 				tooltip = GER_an_invincible_army_trigger

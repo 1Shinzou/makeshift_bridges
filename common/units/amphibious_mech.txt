@@ -8,7 +8,7 @@ sub_units = {
 		priority = 610
 		ai_priority = 200
 		active = yes
-		special_forces = no
+		special_forces = yes
 		marines = yes
 		type = {
 			mechanized
@@ -22,6 +22,7 @@ sub_units = {
 			category_army
 			category_vehicle_infantry
 			category_mobile_and_mobile_combat_sup
+			category_special_forces
 		}
 
 		combat_width = 2

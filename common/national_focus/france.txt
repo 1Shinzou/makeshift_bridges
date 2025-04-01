@@ -3935,6 +3935,7 @@ focus = {
 				}
 			}
 			hidden_effect = {
+				add_timed_idea = { idea = FRA_eco_post_cap_idea days = 30 }
 				add_ideas = SPA_death_before_surrender
 				add_state_core = 730
 				EFR = {

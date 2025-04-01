@@ -201,15 +201,7 @@ guiTypes = {
 		position = { x = -250 y = 100 }
 		Orientation = UPPER_RIGHT
 		clipping = no
-	
-		# Add this trigger to make it only appear when the game rule is enabled
-		trigger = {
-			has_game_rule = {
-				rule = naval_cap
-				option = on
-			}
-		}
-	
+
 		background = {
 			name = "Background"		
 			quadTextureSprite ="GFX_theatre_selection_background"
@@ -226,5 +218,4 @@ guiTypes = {
 			format = left
 		}
 	}
-	
 }

@@ -1,0 +1,44 @@
+on_actions = {
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = hospitals
+						option = on
+					}
+				}
+				NVLCAP_check_fleet_size = yes 
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			VEN = { NVLCAP_startup_on_actions = yes }
+			every_country = { 
+				country_event = { 
+					id = startingevent.29
+				}
+			}
+			
+			# Only set up naval cap variables if the game rule is enabled
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = naval_cap
+						option = on
+					}
+				}
+				# Variables to re-use elsewhere
+				set_variable = { global.CAP = 60 }
+				set_variable = { global.SSCAP = 1 }
+				set_variable = { global.DDCAP = 0.2 }
+				set_variable = { global.LCCAP = 1 }
+				set_variable = { global.HCCAP = 1 }
+				set_variable = { global.BCCAP = 2 }
+				set_variable = { global.BBCAP = 3 }
+				set_variable = { global.CVCAP = 3 }
+			}
+		}
+	}
+}

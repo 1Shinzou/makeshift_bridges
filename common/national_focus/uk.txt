@@ -4128,7 +4128,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		add_ideas = welsh_miners_exploited
-			122 = {
+			1017 = {
 				add_building_construction = {
 					type =  dam
 					level = 1

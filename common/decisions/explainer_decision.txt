@@ -1,0 +1,45 @@
+naval_cap_decisions = {
+
+	hide_naval_cap_help = {
+		icon = generic_propaganda
+
+		allowed = {
+
+		}
+
+		visible = {
+			always = yes
+			NOT = { has_country_flag = naval_cap_help_disabled }
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = naval_cap_help_disabled
+		}
+	}
+
+	explain_naval_cap = {
+		icon = generic_propaganda
+
+		allowed = {
+		}
+
+		visible = {
+			always = yes
+	 		NOT = { has_country_flag = naval_cap_help_disabled }
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		ai_will_do = {
+			base = 0
+		}
+
+		complete_effect = {
+			FROM = { country_event = { id = startingevent.29} }
+		}
+	}
+}

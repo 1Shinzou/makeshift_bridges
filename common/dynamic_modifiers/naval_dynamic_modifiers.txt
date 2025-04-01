@@ -1,0 +1,14 @@
+fleet_overstack_dynamic_modifier = {
+    # Add this trigger to only apply penalties when the game rule is enabled
+    enable = {
+        has_game_rule = {
+            rule = naval_cap
+            option = on
+        }
+    }
+    
+    naval_damage_factor = fleet_overstack_naval_damage_factor
+    naval_torpedo_hit_chance_factor = fleet_overstack_naval_damage_factor
+    navy_submarine_attack_factor = fleet_overstack_naval_damage_factor
+    naval_strike_attack_factor = fleet_overstack_naval_damage_factor
+}

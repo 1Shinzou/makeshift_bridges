@@ -3,15 +3,6 @@ scripted_gui = {
 		context_type = player_context 
 		parent_window_name  = "navy_reserve_portrait_window" 
 		window_name = "naval_cap_admiral_current_command_limit_used_window"
-		
-		# Add visibility condition based on naval_cap game rule
-		visible = {
-			has_game_rule = {
-				rule = naval_cap
-				option = on
-			}
-		}
-		
 		dynamic_lists = { 
 			admirals_leading_battlefleets_list = {
 				array = battle_admirals
@@ -28,18 +19,12 @@ scripted_gui = {
 		}		
 	}
 
-	over_cap = {
+	over_cap= {
 		context_type = player_context
+
 		window_name = "over_cap_open_container"
-		
 		visible = {
-			AND = {
-				has_game_rule = {
-					rule = naval_cap
-					option = on
-				}
-				check_variable = { fleet_overstack_naval_damage_factor < 0 }
-			}
+			check_variable = { fleet_overstack_naval_damage_factor < 0 }		
 		}
 
 		effects = {

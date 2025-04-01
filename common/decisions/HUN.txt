@@ -1106,67 +1106,6 @@ HUN_gyor_program_initiatives_category = {
 
 	}
 
-	# Invest in the Magyar Ruggyantaárúgyár
-	HUN_invest_in_magyar_ruggyantaarugyar_decision  = {
-
-		priority = 80
-
-		icon = GFX_decision_rubber
-
-		ai_will_do = {
-			base = 5
-		}
-
-		allowed = {  
-			original_tag = HUN
-		}
-
-		visible = { 
-			has_completed_focus = wuw_HUN_announce_the_gyor_program 
-			NOT = {
-				has_country_flag = HUN_invested_in_magyar_ruggyantaarugyar_flag
-			}
-		}
-
-		available = {
-			has_completed_focus = wuw_HUN_announce_the_gyor_program
-			has_country_flag = HUN_activated_huba_1_flag
-			any_core_state = {
-				is_fully_controlled_by = ROOT
-			}
-		} 
-
-		days_remove = 35
-
-		cost = 50
-
-		modifier = {
-			consumer_goods_factor = 0.15
-		}
-
-		complete_effect = { 
-			  
-		}
-
-		remove_effect = {
-			hidden_effect = {
-				set_country_flag = HUN_invested_in_magyar_ruggyantaarugyar_flag
-			}
-
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = ROOT
-				}
-				add_resource = {
-					type = rubber
-					amount = 16
-				}	
-			}
-			
-
-		} 
-
-	}
 
 
 

@@ -140,18 +140,3 @@ hospitals = {
 		desc = "You're NOT ALLOWD TO research Hospital 2technology(Recommmended)"
 	}
 }
-naval_cap = {
-	name = "Naval Cap"
-	group = "MSB Rules"
-	icon = "GFX_decision_category_generic_naval"
-	default = {
-		name = on
-		text = "GOn"
-		desc = "Naval cap for ships is ALLOWED(Recommmended)"
-	}
-	option = {
-		name = off
-		text = "ROff"
-		desc = "Naval cap for ships is NOT ALLOWED(Not Recommmended)"
-	}
-}

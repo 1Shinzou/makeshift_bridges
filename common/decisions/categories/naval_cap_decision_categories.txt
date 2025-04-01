@@ -1,9 +1,0 @@
-naval_cap_decisions = {
-	priority = 10000
-
-	icon = generic_propaganda
-
-	visible = {
-		NOT = { has_country_flag = naval_cap_help_disabled }
-	}
-}

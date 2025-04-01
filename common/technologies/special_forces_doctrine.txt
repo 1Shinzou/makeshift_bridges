@@ -807,7 +807,7 @@ technologies = {
 		}
 		
 		shore_bombardment_bonus = 0.15
-		modifier_army_sub_unit_marines_attack_factor = 0.05
+		modifier_army_sub_unit_marines_attack_factor = 0.1
 			
 		doctrine = yes	
 		research_cost = 2.25

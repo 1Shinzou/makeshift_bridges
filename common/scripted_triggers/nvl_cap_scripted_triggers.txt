@@ -1,0 +1,6 @@
+HasGameRule_hospitals_on = {
+	has_game_rule = {
+		rule = hospitals
+		option = on
+	}
+}

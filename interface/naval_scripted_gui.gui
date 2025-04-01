@@ -13,7 +13,7 @@ guiTypes = {
 			spriteType = "GFX_tiled_window_transparent"
 		}
 			
-			containerWindowType = {
+		containerWindowType = {
 			name = "admirals_leading_battlefleets_list_container"
 			position = { x=12 y =-2 }
 			size = { width = 444 height=400 }
@@ -35,7 +35,6 @@ guiTypes = {
 				add_horizontal = no
 			}
 		}
-
 	}
 
 	containerWindowType = {
@@ -153,16 +152,6 @@ guiTypes = {
 			maxHeight = 24
 			fixedsize = yes		
 		}
-		# instantTextBoxType = {
-		# 	name = "shbb"
-		# 	position = { x = 350 y = 50 }
-		# 	font = "hoi_18mbs"
-		# 	text = "SHBB: [?shbb_count]" 
-		# 	format = left
-		# 	maxWidth = 65
-		# 	maxHeight = 24
-		# 	fixedsize = yes		
-		# }
 		instantTextBoxType = {
 			name = "Capitals"
 			position = { x = 55 y = 65 }
@@ -193,7 +182,6 @@ guiTypes = {
 			maxHeight = 24
 			fixedsize = yes		
 		}	
-
 	}
 
 	containerWindowType = {
@@ -201,14 +189,6 @@ guiTypes = {
 		position = { x = -250 y = 100 }
 		Orientation = UPPER_RIGHT
 		clipping = no
-	
-		# Add this trigger to make it only appear when the game rule is enabled
-		trigger = {
-			has_game_rule = {
-				rule = naval_cap
-				option = on
-			}
-		}
 	
 		background = {
 			name = "Background"		
@@ -226,5 +206,4 @@ guiTypes = {
 			format = left
 		}
 	}
-	
 }

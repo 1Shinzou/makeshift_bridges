@@ -1,5 +1,4 @@
 fleet_overstack_dynamic_modifier = {
-    # Add this trigger to only apply penalties when the game rule is enabled
     enable = {
         has_game_rule = {
             rule = naval_cap

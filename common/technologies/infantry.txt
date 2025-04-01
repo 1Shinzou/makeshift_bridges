@@ -2161,8 +2161,8 @@ technologies = {
 		
 
 		mechanized = {
-			soft_attack = 0.15
-			hard_attack = 0.15
+			soft_attack = 0.05
+			hard_attack = 0.05
 		}
 
 		research_cost = 3

@@ -217,7 +217,7 @@ NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_RAILWAY_DAMAGE_SPILL_FACTOR = 0 -- Porti
 
 NDefines.NCountry.FUEL_LEASE_CONVOY_RATIO = 0.0001 -- Fuel takes less convoys
 
-NDefines.NAir.AIR_MORE_GROUND_CREWS_COST = 0.0
+
 
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 0				-- Political power cost to send attache
 
@@ -243,3 +243,10 @@ NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 4.50
 NDefines.NMilitary.COMBAT_OVER_WIDTH_PENALTY = -1.5	
 
 NDefines.NGeography.MEDITERRANEAN_SEA_REGIONS = { 15, 29, 68, 69, 168, 169, 202, 299, 300, 301, } -- The sea regions that are considered as part of the Mediterranean sea
+
+-- Air Rework
+NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 1   --vanilla 3
+NDefines.NAir.DISRUPTION_FACTOR = 5 --cas enters battle at 30+%
+NDefines.NAir.AIR_MORE_GROUND_CREWS_COST = 0.0
+NDefines.NAir.COMBAT_MULTIPLANE_CAP = 3							-- How many planes can shoot at each plane on other side ( if there are 100 planes we are atttacking COMBAT_MULTIPLANE_CAP * 100 of our planes can shoot )
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.7						-- Higher value = more shot down planes

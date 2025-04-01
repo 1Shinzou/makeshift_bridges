@@ -1,7 +1,0 @@
-fleet_overstack_dynamic_modifier = {
-	naval_damage_factor = fleet_overstack_naval_damage_factor
-	naval_torpedo_hit_chance_factor = fleet_overstack_naval_damage_factor
-	sortie_efficiency = fleet_overstack_naval_damage_factor
-	navy_submarine_attack_factor = fleet_overstack_naval_damage_factor
-	naval_strike_attack_factor = fleet_overstack_naval_damage_factor
-}

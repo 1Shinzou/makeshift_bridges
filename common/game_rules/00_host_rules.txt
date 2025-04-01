@@ -140,23 +140,3 @@ hospitals = {
 		desc = "You're NOT ALLOWD TO research Hospital 2technology(Recommmended)"
 	}
 }
-navy_cap = {
-	name = "RULE_NAVY_CAP"
-	group = "MSB Rules"
-	icon = "GFX_airwing_carrier_icon"
-	default = {
-		name = "on-150"
-		text = "on-150"
-		desc = "placeholder"
-	}
-	option = {
-		name = "on-100"
-		text = "on-100"
-		desc = "placeholder"
-	}
-	option = {
-		name = "off"
-		text = "off"
-		desc = "placeholder"
-	}
-}

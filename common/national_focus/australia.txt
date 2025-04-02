@@ -1250,7 +1250,7 @@
 				bonus = 1.0
 				ahead_reduction = 2
 				uses = 1
-				category = naval_bomber
+				category = cat_torpedoes
 			}
 		}
 	}

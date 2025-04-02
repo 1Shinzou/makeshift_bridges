@@ -36,7 +36,7 @@ operations = {
 		}
 		
 		available = {
-				date > 1940.03.01	
+				date > 1940.06.01	
 		} 
 		fire_only_once = yes
 		visible = {

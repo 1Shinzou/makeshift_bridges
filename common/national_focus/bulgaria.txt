@@ -3935,7 +3935,7 @@ focus_tree = {
 
 		icon = GFX_goal_tfv_generic_tech_sharing
 		relative_position_id = BUL_join_the_tripartite_pact
-		x = -2
+		x = -3
 		y = 1
 		cost = 10
 
@@ -3971,6 +3971,30 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = BUL_restore_the_bulgarian_patriarchate
+
+		prerequisite = { focus = BUL_join_the_tripartite_pact }
+
+		icon = GFX_focus_BUL_restore_the_bulgarian_patriarchate
+		relative_position_id = BUL_join_the_tripartite_pact
+		x = -1
+		y = 1
+		cost = 10
+		mutually_exclusive = { focus = BUL_total_war }
+		available = {
+			has_stability > 0.50
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			add_ideas = BUL_bulgarian_patriarchate_restored
+
+			hidden_effect = {
+				news_event = { id = bftb_news.6 hours = 8 random_hours = 4 }
+			}
+		}
+	}
 
 
 
@@ -4000,7 +4024,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
-		mutually_exclusive = { focus = BUL_peaceful_development }
+		mutually_exclusive = { focus = BUL_restore_the_bulgarian_patriarchate}
 
 		available = {
 			# has_government = fascism
@@ -4008,6 +4032,7 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER}
 		completion_reward = {
+			# add_political_power = 150
 			add_war_support = 0.1
 			add_stability = -0.1
 			add_ideas = BUL_total_war
@@ -4173,7 +4198,8 @@ focus_tree = {
 			}
 		}
 
-		prerequisite = { focus = BUL_total_war  }
+		prerequisite = { focus = BUL_total_war 
+		focus = BUL_restore_the_bulgarian_patriarchate }
 
 		icon = GFX_focus_BUL_the_third_bulgarian_empire
 		relative_position_id = BUL_total_war

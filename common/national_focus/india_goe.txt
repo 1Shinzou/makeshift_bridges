@@ -15427,7 +15427,8 @@ focus_tree = {
         }
 
         available = {
-
+            has_country_flag = gandhi_survives_assasination_attempt
+            custom_effect_tooltip = RAJ_ghandi_path_tt
         }
         
         bypass = {
@@ -15435,20 +15436,21 @@ focus_tree = {
         }
 
         allow_branch = {
-            has_country_flag = gandhi_survives_assasination_attempt
+           # has_country_flag = gandhi_survives_assasination_attempt
         }
         cancel_if_invalid = yes
         continue_if_invalid = no
         available_if_capitulated = no
 
         complete_tooltip = {
-
+         
         }
 
         search_filters = {FOCUS_FILTER_POLITICAL_CHARACTER}
         search_filters = {FOCUS_FILTER_POLITICAL}
 
         completion_reward = {
+                custom_effect_tooltip = RAJ_ghandi_path_tt
             if = {
                 limit = {
                     NOT = { 

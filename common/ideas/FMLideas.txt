@@ -317,8 +317,9 @@ ideas = {
 			picture = ARG_envoy_to_london
 			
 			modifier = {
-				industrial_capacity_factory = 1 # fra post cap idea
+				industrial_capacity_factory = 4 # fra post cap idea
 				production_lack_of_resource_penalty_factor = -1
+				communism_drift = -0.3
 				}
 		}
 

@@ -4045,7 +4045,7 @@ focus = {
 		}
 		relative_position_id = FRA_appeal_to_the_french_nation
 		
-		cost = 4
+		cost = 1
 		ai_will_do = {
 			factor = 1
 		}

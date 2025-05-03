@@ -19058,6 +19058,53 @@ focus = {
 	}
 }
 
+focus = {
+	id = RAJ_preemptive_invasion_of_iran
+	icon = GFX_focus_generic_attack_iran
+	prerequisite = { focus = RAJ_indian_gentleman_officers }
+	
+	x = 2
+	y = 2
+	relative_position_id = RAJ_indian_gentleman_officers 
+	cost = 10
+
+	available = {
+		threat > 0.5
+		OR = {
+			is_subject = no
+			is_subject_of = ENG
+		}
+		NOT = {
+			is_in_faction_with = PER
+			has_guaranteed = PER
+			has_non_aggression_pact_with = PER
+		}
+	}
+
+	search_filters = {  }
+
+	completion_reward = {
+		if = {
+			limit = {
+				is_subject_of = ENG
+			}
+			ENG = { country_event = { id = GOE_RAJ_loyalist.03 hours = 4 random_hours = 1 } }
+			custom_effect_tooltip = if_they_accept_tt
+			effect_tooltip = {
+				declare_war_on = {
+					target = PER
+					type = annex_everything
+				}
+			}
+		}
+		else = {
+			create_wargoal = {
+				type = annex_everything
+				target = PER
+			}
+		}
+	}
+}
 
 focus = {
 	id = RAJ_mobilization_of_the_indian_army
@@ -24701,7 +24748,25 @@ focus = {
 
         available = {
 
-      
+            if = {
+                limit = {
+                    NOT = { has_dlc = "Arms Against Tyranny" }
+                }
+                has_completed_focus = RAJ_rifle_factory_ishapore_west_bengal
+                has_completed_focus = RAJ_gun_and_shell_factory_cossipore
+            }
+
+            if = {
+                limit = {
+                     has_dlc = "Arms Against Tyranny"
+                }
+                OR = {
+                    mio:RAJ_ammunition_factory_khadki_organization = { has_mio_size > 7  }                   
+                    mio:RAJ_ordnance_factory_kanpur_organization  = { has_mio_size > 7  } 
+                    mio:RAJ_ordnance_factory_medak_organization  = { has_mio_size > 7  }  
+                    mio:RAJ_vickers_armstrong_organization  = { has_mio_size > 7  }   
+                }
+            }
             
         }
         

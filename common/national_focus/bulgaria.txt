@@ -2658,10 +2658,10 @@ focus_tree = {
 		prerequisite = { focus = BUL_power_to_the_tsar }
 		icon = GFX_focus_BUL_condemn_macedonian_organizations
 		relative_position_id = BUL_power_to_the_tsar
-		x = -4
+		x = -2
 		y = 1
 		cost = 5
-		mutually_exclusive = { focus = BUL_support_macedonian_organizations }
+		# mutually_exclusive = { focus = BUL_support_macedonian_organizations }
 
 		available = {
 
@@ -2704,87 +2704,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = BUL_support_macedonian_organizations
 
-		prerequisite = { focus = BUL_power_to_the_tsar }
-		icon = GFX_focus_BUL_support_macedonian_organizations
-		relative_position_id = BUL_condemn_macedonian_organizations
-		x = 2
-		y = 0
-		cost = 5
-
-		mutually_exclusive = { focus = BUL_condemn_macedonian_organizations }
-
-		available = {
-
-		}
-		
-		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-		completion_reward = {
-			add_threat = 1
-			BUL_zveno_low_loyalty_decrease_effect = yes
-			BUL_bs_low_loyalty_decrease_effect = yes
-			BUL_bzns_low_loyalty_decrease_effect = yes
-			BUL_nsm_low_loyalty_increase_effect = yes
-			custom_effect_tooltip = BUL_support_macedonian_organizations_tt
-			every_country = {
-				limit = {
-					BUL_country_seeks_macedonian_stability = yes
-				}
-				add_opinion_modifier = { 
-					target = BUL
-					modifier = BUL_supported_imro
-				}
-			}
-			#If all Macedonia is already controlled by BUL, update NS and unlock the appropriate decisions
-			if = {
-				limit = {
-					NOT = {
-						any_state = {
-							BUL_is_macedonian_state = yes
-							NOT = { is_fully_controlled_by = ROOT }
-						}
-					}
-				}
-				hidden_effect = {
-					set_country_flag = { flag = BUL_support_imro_flag value = 3 }
-				}
-				if = {
-					limit = {
-						has_idea = BUL_imro_01
-					}
-					swap_ideas = {
-						remove_idea = BUL_imro_01
-						add_idea = BUL_imro_05
-					}
-				}
-				else_if = {
-					limit = {
-						has_idea = BUL_imro_04
-					}
-					swap_ideas = {
-						remove_idea = BUL_imro_04
-						add_idea = BUL_imro_05
-					}
-				}
-			}
-			if = {
-				limit = {
-					OR = {
-						has_idea = BUL_army_restrictions_aat
-						has_idea = BUL_army_restrictions
-					}
-				}
-				custom_effect_tooltip = BUL_support_macedonian_organizations_rearmament_tt
-			}
-			set_country_flag = { flag = BUL_rearmament_flag value = 2 } #Unlock Pressure to Lift Arms Restrictions decision
-
-			hidden_effect = {
-				news_event = { id = bftb_news.2 hours = 8 random_hours = 4 }
-			}
-		}
-	}
 
 
 
@@ -2794,7 +2714,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_power_to_the_tsar }
 		icon = GFX_focus_BUL_cooperate_with_the_zveno
 		relative_position_id = BUL_condemn_macedonian_organizations
-		x = 6
+		x = 4
 		y = 0
 		cost = 5
 

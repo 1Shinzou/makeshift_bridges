@@ -5,8 +5,6 @@ state={
 	state_category = wasteland
 
 	history={
-		owner =WST
-		add_core_of = WST
 
 	}
 

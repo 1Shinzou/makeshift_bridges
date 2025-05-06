@@ -133,7 +133,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-
+			add_ideas = extensive_conscription
 			add_popularity = {
 				ideology = neutrality
 				popularity = 0.05
@@ -2581,7 +2581,6 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = extensive_conscription
 			add_ideas = HUN_secret_rearmament
 			custom_effect_tooltip = HUN_secret_rearmament_tt
 

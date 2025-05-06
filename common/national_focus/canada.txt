@@ -2657,7 +2657,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			date > 1941.1.1
 		}
 		
 		bypass = {
@@ -2669,6 +2669,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_ideas = ENG_quality_RAF_pilots
 			add_ideas = CAN_the_plan
 		}
 	}
@@ -2729,8 +2730,9 @@ focus_tree = {
 	focus = {
 		id = CAN_supply_the_empire
 		icon = GFX_goal_generic_construction2
-		prerequisite = { focus = CAN_the_plan}
-		prerequisite = { focus = CAN_camp_x }
+		prerequisite = { focus = CAN_camp_x
+						focus = CAN_the_plan
+		 }
 		x = -1
 		y = 3
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
@@ -3416,7 +3418,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = ENG_quality_RAF_pilots
+			
 			air_experience = 25
 			random_owned_controlled_state = {
 				limit = {

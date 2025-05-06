@@ -1193,7 +1193,7 @@ focus_tree = {
 				}			
 			}
 		
-			add_ideas = ENG_quality_RAF_pilots
+			
 					
 			random_owned_controlled_state = {
 				limit = {
@@ -2825,12 +2825,13 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = uk_commonwealth_focus
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 30
 		}
 
 		available = {
+			date > 1941.1.1
 			OR = {
 				CAN = { is_in_faction_with = ENG }
 				SAF = { is_in_faction_with = ENG }
@@ -2856,6 +2857,7 @@ focus_tree = {
 			}
 			ENG = {
 				add_ideas = ENG_the_plan
+				add_ideas = ENG_quality_RAF_pilots
 			}
 		}
 	}

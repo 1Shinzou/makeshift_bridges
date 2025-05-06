@@ -21,7 +21,7 @@ if = {
 
 
 set_stability = 0.7
-set_war_support = 0.3
+set_war_support = 0.1
 add_manpower = 80000
 # Starting tech
 set_technology = {
@@ -238,20 +238,3 @@ recruit_character = SAF_george_brink
 recruit_character = SAF_leonard_beyers
 
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = democratic
-		last_election = "1938.5.18"
-		election_frequency = 60
-		elections_allowed = yes
-	}
-	set_popularities = {
-		democratic = 100
-	}
-
-	#retire_character = SAF_j_b_m_hertzog
-	# Took office 5 days after this date
-	recruit_character = SAF_jan_smuts
-	promote_character = SAF_jan_smuts
-	retire_character = SAF_j_b_m_hertzog
-}

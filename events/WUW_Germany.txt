@@ -100,6 +100,12 @@ country_event = { #MEFO Bills have been cancelled
 		ai_chance = {
 			base = 0
 		}
+		trigger = {
+			has_game_rule = {
+				rule = Germany_Cancel_Mefo
+				option = Germany_cancel_MEFO_Bills
+			}
+		}
 		GER_stop_rearmament = yes
 
 		custom_effect_tooltip = generic_skip_one_line_tt

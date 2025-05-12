@@ -94,21 +94,6 @@ select_host_country = {
 	}
 }
 
-auto_tech_rush = {
-	name = "Auto Tech Rush"
-	group = "MSB Rules"
-	icon = "GFX_decision_generic_research"
-	default = {
-		name = on
-		text = "GOn"
-		desc = "There will be decisions for auto-tech rushing (Recommmended)"
-	}
-	option = {
-		name = off
-		text = "ROff"
-		desc = "There will NOT be decisions for auto-tech rushing (Not Recommmended)"
-	}
-}
 
 Germany_Cancel_Mefo= {
 	name = "Select if Germany is allowed to cancel MEFO Bills"
@@ -126,6 +111,23 @@ Germany_Cancel_Mefo= {
 	}
 
 }
+
+auto_tech_rush = {
+	name = "Auto Tech Rush"
+	group = "MSB Rules"
+	icon = "GFX_decision_generic_research"
+	default = {
+		name = on
+		text = "GOn"
+		desc = "There will be decisions for auto-tech rushing (Recommmended)"
+	}
+	option = {
+		name = off
+		text = "ROff"
+		desc = "There will NOT be decisions for auto-tech rushing (Not Recommmended)"
+	}
+}
+
 hospitals = {
 	name = "Allow Hospital 2"
 	group = "MSB Rules"

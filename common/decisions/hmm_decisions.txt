@@ -653,7 +653,7 @@ auto_mech = {
                         factor = 0
                     }
                     available = {
-                            date > 1940.10.01
+                            date > 1940.07.01
                         }
                     complete_effect = {
                         SWE = {

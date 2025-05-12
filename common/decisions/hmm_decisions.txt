@@ -491,38 +491,8 @@ political_actions = {
 }
 
 Technologies = {
-    add_convoy = {
-		priority = 100
-        icon = SWE_set_navy_budget
-        allowed = {
- 		}
-		visible = {
-			is_ai = no
-		}
-        days_remove = 10
-        cost = 0
-        complete_effect = {
-            add_manpower = 1
-            add_equipment_to_stockpile = {
-                type = convoy_1
-                amount = 1
-            }
-        }
-		
- 		remove_effect = {
-            add_manpower = -1
-            add_equipment_to_stockpile = {
-                type = convoy_1
-                amount = -1
-            }
- 		}
-        ai_will_do = {
-            factor = 0
-        }
-    }
 
-
-auto_mech = {
+hosttool_mech = {
     # icon = generic_operation
     allowed = {
     }
@@ -643,7 +613,7 @@ auto_mech = {
             }
         }
 }
-                auto_gun3 = {
+                hosttool_gun3 = {
                     # icon = generic_operation
                     allowed = {
                     }
@@ -669,7 +639,7 @@ auto_mech = {
                         }
                     }
                     }
-                auto_AT2 = {
+                hosttool_AT2 = {
                     # icon = generic_operation
                     allowed = {
                     }
@@ -696,7 +666,7 @@ auto_mech = {
                         }
                     }
                     }
-                auto_AT3 = {
+                hosttool_AT3 = {
                     # icon = generic_operation
                     allowed = {
                     }

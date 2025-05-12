@@ -12,6 +12,16 @@ news.6969.a:0 "Worrying..."
 news.6969.b:0 "Una, grande, libre"
 
 uk_texas_oil:0 "Texas Oil Rights"
+add_convoy:0 "Add Convoy"
+
+# TECH RUSH LOC
+hosttool_mech:0 "Mechanized 1"
+hosttool_aa2:0 "Anti-Air Equipment 2"
+hosttool_aa3:0 "Anti-Air Equipment 3"
+hosttool_gun2:0 "Infantry Equipment 2"
+hosttool_gun3:0 "Infantry Equipment 3"
+hosttool_AT2:0 "Anti-Tank Equipment 2"
+hosttool_AT3:0 "Anti-Tank Equipment 3"
 
 
 

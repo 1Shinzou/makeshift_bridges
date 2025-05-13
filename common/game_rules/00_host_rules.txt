@@ -160,6 +160,38 @@ hospitals = {
 		desc = "You're NOT ALLOWD TO research Hospital 2technology(Recommmended)"
 	}
 }
+
+sov_closed_eco = {
+	name = "Soviet Closed Economy"
+	group = "Economic Adjustments"
+	icon = "GFX_decision_SOV_secure_the_administration"
+	default = {
+		name = on
+		text = "GOn"
+		desc = "Soviets start the game on closed eco with free trade bonuses which cannot be changed (Recommmended)"
+	}
+	option = {
+		name = off
+		text = "ROff"
+		desc = "Soviets start on export focus (Not Recommmended)"
+	}
+}
+
+japan_closed_eco = {
+	name = "Japan Closed Economy"
+	group = "Economic Adjustments"
+	icon = "GFX_decision_jap_pacific_guardian"
+	default = {
+		name = off
+		text = "GOff"
+		desc = "Japan starts on limited exports (Recommmended)"
+	}
+	option = {
+		name = on
+		text = "ROn"
+		desc = "Japan starts the game on closed eco with free trade bonuses which cannot be changed (Not Recommmended)"
+	}
+}
     
   
 ger_boost = {

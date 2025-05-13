@@ -34,10 +34,30 @@ on_actions = {
 				}
 			}
 			SOV = { 
+					
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = sov_closed_eco
+						option = on
+					}
+				}
 				add_ideas = SOV_collectivized_society
+				}
 				country_event = {
 					id = mexico.21 # Mexico returns trotsky
 					days = 396 # Feb 37
+				}
+			}
+			if = { # Japan Closed Eco Game Rule
+				limit = {
+					has_game_rule = {
+						rule = japan_closed_eco
+						option = on
+					}
+				}
+				JAP = {
+					add_ideas = SOV_collectivized_society
 				}
 			}
 			every_country = {

@@ -365,4 +365,9 @@ usa_boost = {
 		text = "ROn-8"
 		desc = "USA gets 8 Civilian factories (Not Recommmended)"
 	}
+	option = {
+		name = usa12
+		text = "ROn-12"
+		desc = "USA gets 12 Civilian factories (Not Recommmended)"
+	}
 }

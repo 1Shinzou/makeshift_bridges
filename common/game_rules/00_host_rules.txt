@@ -96,9 +96,9 @@ select_host_country = {
 
 
 Germany_Cancel_Mefo= {
-	name = "Select if Germany is allowed to cancel MEFO Bills"
+	name = "Is Germany is allowed to cancel MEFO Bills?"
 	group = "MSB Rules"
-	icon = "GFX_volunteers"
+	icon = "GFX_decision_ger_mefo_bills"
 	default = {
 		name = Germany_no_cancel_MEFO_Bills
 		text = "Germany cant cancel MEFO Bills"
@@ -108,6 +108,23 @@ Germany_Cancel_Mefo= {
 		name = Germany_cancel_MEFO_Bills
 		text = "Germany can cancel MEFO Bills"
 		desc = ""
+	}
+
+}
+
+danzig_date_lock= {
+	name = "'Danzig or War' available date"
+	group = "MSB Rules"
+	icon = "GFX_decision_border_war"
+	default = {
+		name = locked
+		text = "Not available until June 1939"
+		desc = "Germany cannot take the Focus 'Danzig or War' before June 1st 1939"
+	}
+	option = {
+		name = not_locked
+		text = "Always available"
+		desc = "Germany can always take the Focus 'Danzig or War' no matter the date"
 	}
 
 }

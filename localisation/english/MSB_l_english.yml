@@ -1,9 +1,5 @@
 ﻿l_english:
 
-stalin_they_will_know_fear:0 "They will know Fear"
-
-JAP_expand_airborne_units:0 "Airborn Forces"
-JAP_expand_airborne_units_desc:0 "The Japanese Army focus on Special Forces needs to be applied to the use of Air Power as well."
 
 SPR_Porgual:0 "Spain annexes Portugal"
 news.6969.t:0 "Spanish annexation of Portugal"
@@ -14,22 +10,17 @@ news.6969.b:0 "Una, grande, libre"
 uk_texas_oil:0 "Texas Oil Rights"
 add_convoy:0 "Add Convoy"
 
-# TECH RUSH LOC
-hosttool_mech:0 "Mechanized Equipment 1"
-hosttool_aa2:0 "Anti-Air Equipment 2"
-hosttool_aa3:0 "Anti-Air Equipment 3"
-hosttool_gun2:0 "Infantry Equipment 2"
-hosttool_gun3:0 "Infantry Equipment 3"
-hosttool_AT2:0 "Anti-Tank Equipment 2"
-hosttool_AT3:0 "Anti-Tank Equipment 3"
+# RAJ
+RAJ_ghandi_path_tt:0 "Have Gandhi as country leader. When Gandhi's assassination attempt happens shortly after going independent, have finished Viceroy's Bodyguard and keep at least 1 cavalry division in Delhi so he survives."
 
 
 
 #italian_arms_discount:0 "Bresica Small Arms Industry"
 #greater_italy_required_other_states:0 "Italy or a subject of Italy control \n§YSuez§! \n§YCorsica§! \n§YSavoy§! \n§YZara§! \n§YDalmatia§! \n§YLjubljana§! \n§YMalta§! \n§YCrete§! \n§YDodecaneso§!"
 
- cat_air_bombs:0 "Bomb Locks"
+
 SOV_collectivized_society:0 "Collectivized Society"
+stalin_they_will_know_fear:0 "They will know Fear"
 
 # VP NAMES MAP MODDING
   VICTORY_POINTS_7985:0 "Maradah"

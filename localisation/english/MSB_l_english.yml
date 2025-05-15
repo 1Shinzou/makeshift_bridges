@@ -15,7 +15,7 @@ uk_texas_oil:0 "Texas Oil Rights"
 add_convoy:0 "Add Convoy"
 
 # TECH RUSH LOC
-hosttool_mech:0 "Mechanized 1"
+hosttool_mech:0 "Mechanized Equipment 1"
 hosttool_aa2:0 "Anti-Air Equipment 2"
 hosttool_aa3:0 "Anti-Air Equipment 3"
 hosttool_gun2:0 "Infantry Equipment 2"

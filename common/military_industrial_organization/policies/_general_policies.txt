@@ -57,7 +57,7 @@ mio_policy_general_mechanical_genius  = {
 	
 	equipment_bonus = {
 		same_as_mio = {
-			reliability = 0.15
+			reliability = 0.05
 		}
 	}
 }

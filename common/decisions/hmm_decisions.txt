@@ -47,57 +47,7 @@ operations = {
             air_to_england = yes
 		}			
  }
-    annex_South_Africa = {
-            # icon = generic_operation
-            allowed = {
-                tag = RAJ
-            }
-            fire_only_once = yes
-            cost = 0
-            ai_will_do = {
-                factor = 0
-            }
-            available = {
-                SAF = {
-                    is_ai = yes
-                }
-                ENG = {
-                    has_completed_focus = uk_south_africa_focus
-                }
-            }
-            targets = {
-                SAF
-            }
-            complete_effect = {
-                SAF = {
-                    transfer_units_fraction = {
-                        target = RAJ
-                        size = 1
-                        stockpile_ratio = 1
-                        army_ratio = 1
-                        navy_ratio = 1
-                        air_ratio = 1
-                        keep_unit_leaders_trigger = {
-                            always = no
-                        }
-                    }
-                }
-                RAJ = {
-                    annex_country = {
-                        target = SAF
-                        transfer_troops = yes
-                    }
-                }
-                every_state = {
-                    limit = {
-                        is_core_of = SAF
-                        is_controlled_by = RAJ
-                    }
-                    add_core_of = RAJ
-                }
-            }
 
-        }
 		annex_Ethopia = {
             # icon = generic_operation
             allowed = {

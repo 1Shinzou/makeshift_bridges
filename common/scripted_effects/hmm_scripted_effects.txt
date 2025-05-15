@@ -27,7 +27,7 @@ hmm_capitulations_on_actions = {
 		}
 		FRA = {
 			set_capital = {
-				state = 461
+				state = 539
 			}
 		}
 		
@@ -35,14 +35,14 @@ hmm_capitulations_on_actions = {
 			country_event = france.69420
 		}
 		set_global_flag = fall_of_france
-		every_country = {
-			limit = { is_in_faction_with = GER
-						NOT = {has_war_with= ENG}}
-			add_timed_idea = {
-				idea = WAR_join
-				days = 90
-			}
-		}
+	#	every_country = {
+	#		limit = { is_in_faction_with = GER
+	#					NOT = {has_war_with= ENG}}
+	#		add_timed_idea = {
+	#			idea = WAR_join
+	#			days = 90
+	#		}
+	#	}
 	}
 
 	if = {

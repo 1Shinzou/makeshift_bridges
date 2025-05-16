@@ -92,7 +92,7 @@ technologies = {
 			soft_attack = 0.1
 		}
 		category_self_propelled_artillery = {
-			soft_attack = 0.05
+			soft_attack = 0.15
 		}
 
 		enable_equipment_modules = {
@@ -233,7 +233,7 @@ technologies = {
 			soft_attack = 0.1
 		}
 		category_self_propelled_artillery = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 
 		path = {
@@ -641,8 +641,7 @@ technologies = {
 	}
 
 	interwar_antiair = {
-		static_anti_air_damage_factor = 0.05
-		static_anti_air_hit_chance_factor = 0.1 
+
 		enable_equipments = {
 			anti_air_equipment_1
 		}
@@ -650,6 +649,7 @@ technologies = {
 	armored_car = {
 			hard_attack = 0.1
 		}
+		tech_air_damage_factor = 0.12
 		enable_equipment_modules = {
 			ship_anti_air_2
 			tank_auto_cannon
@@ -718,8 +718,7 @@ technologies = {
 	}
 
 	antiair1 = {
-		static_anti_air_damage_factor = 0.05
-		static_anti_air_hit_chance_factor = 0.1 
+
 		anti_air = {
 			air_attack = 0.1
 		}
@@ -730,13 +729,9 @@ technologies = {
 			air_attack = 0.1
 		}
 		category_self_propelled_anti_air = {
-			hard_attack = 0.05
-			ap_attack = 0.05
 			air_attack = 0.15
 		}
-
-		tech_air_damage_factor = -0.02
-
+		static_anti_air_damage_factor = 0.05
 		path = {
 			leads_to_tech = antiair2
 			research_cost_coeff = 1
@@ -781,12 +776,10 @@ technologies = {
 		enable_equipments = {
 			anti_air_equipment_2
 		}
-
-		static_anti_air_damage_factor = 0.05
-		static_anti_air_hit_chance_factor = 0.1 
 		armored_car = {
 			hard_attack = 0.1
 		}
+		static_anti_air_damage_factor = 0.1
 
 		enable_equipment_modules = {
 			ship_anti_air_3
@@ -840,8 +833,7 @@ technologies = {
 	}
 
 	antiair3 = {
-		static_anti_air_damage_factor = 0.05
-		static_anti_air_hit_chance_factor = 0.1 
+
 		anti_air = {
 			air_attack = 0.1
 		}
@@ -858,8 +850,7 @@ technologies = {
 		enable_equipment_modules = {
 			tank_heavy_cannon_2
 		}
-
-		tech_air_damage_factor = -0.02
+		static_anti_air_damage_factor = 0.05
 
 		path = {
 			leads_to_tech = antiair4
@@ -901,8 +892,7 @@ technologies = {
 	}
 
 	antiair4 = {
-		static_anti_air_damage_factor = 0.05
-		static_anti_air_hit_chance_factor = 0.1 
+
 		anti_air = {
 			air_attack = 0.1
 		}
@@ -915,8 +905,7 @@ technologies = {
 		category_self_propelled_anti_air = {
 			air_attack = 0.05
 		}
-
-		tech_air_damage_factor = -0.02
+		static_anti_air_damage_factor = 0.05
 
 		path = {
 			leads_to_tech = antiair5
@@ -958,15 +947,14 @@ technologies = {
 	}
 
 	antiair5 = {
-		static_anti_air_damage_factor = 0.05
-		static_anti_air_damage_factor = 0.1
+
 		enable_equipments = {
 			anti_air_equipment_3
 		}
 		armored_car = {
 			hard_attack = 0.1
 		}
-
+		static_anti_air_damage_factor = 0.1
 
 		enable_equipment_modules = {
 			ship_anti_air_4

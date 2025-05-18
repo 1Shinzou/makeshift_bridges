@@ -4,7 +4,7 @@ mio_policy_general_ruthless_contracts = {
 	
 	# cost = 0
 	organization_modifier = {
-		military_industrial_organization_funds_gain = 0.05
+		military_industrial_organization_funds_gain = 0.01
 	}
 }
 
@@ -68,7 +68,7 @@ mio_policy_general_experimental_development_teams = {
 	
 	#	cost = 0
 	organization_modifier = {
-		military_industrial_organization_research_bonus = 0.05
+		military_industrial_organization_research_bonus = 0.01
 	}
 }
 

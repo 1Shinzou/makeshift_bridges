@@ -186,7 +186,7 @@ country_event = {
 	
 	trigger = {
 		original_tag = FRA
-	    surrender_progress = 0.3
+	    surrender_progress = 0.32
 	}
 
 	immediate = {

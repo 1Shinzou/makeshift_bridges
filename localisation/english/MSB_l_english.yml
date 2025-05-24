@@ -1,10 +1,16 @@
 ﻿l_english:
 
+# MSB Events
 SPR_Porgual:0 "Spain annexes Portugal"
 news.6969.t:0 "Spanish annexation of Portugal"
 news.6969.d:0 "The Spanish government has today announced the annexation of the Portugese State. The Spanish governments also remarked that this marks the beginning of a united Iberian State."
 news.6969.a:0 "Worrying..."
 news.6969.b:0 "Una, grande, libre"
+
+# Start up Event
+msb.1.t: "Most Important Changes in MSB"
+msb.1.a: "Okay, Thank You"
+msb.1.desc: "Every Tile is 80-width\nMIO's are railroaded\nThe Tank Designer is reworked\nFlatter Army/Navy/Air Experience System\nLand Doctrines reworked (GBP & Mass Assault-R untouched)\nMasterful Blitz counters Guerilla Tactics\nSpecial Forces Doctrine grants 10% Attack to each specific SF Unit (Mountaineer/Marine/Paratrooper)\n Artillery Rework:\n - More Breakthrough\n - More Defense\n - More Soft Attack"
 
  
 

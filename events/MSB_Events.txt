@@ -1,0 +1,125 @@
+add_namespace = MSB
+
+news_event = {
+	id = msb.1 #Startup
+	title = msb.1.t
+	desc = msb.1.desc
+	picture = GFX_news_event_generic_fall_of_budapest
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = msb.1.a
+	}
+}
+
+	id = GER_alt_hist.04
+
+	hidden = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_completed_focus = GER_start_the_proletarian_revolution
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_shine_effect_on_focus = GER_formalize_the_intelligence_wing
+			}
+			complete_national_focus = {
+				focus = GER_formalize_the_intelligence_wing
+				use_side_message = yes
+				originator_name = GER_Commie_Originator
+			}
+			clr_country_flag = GER_formalize_the_intelligence_wing_in_progress
+			country_event = { id = GER_alt_hist.03 days = 1 }
+		}
+		else_if = {
+			limit = {
+				has_shine_effect_on_focus = GER_form_the_stasi
+			}
+			complete_national_focus = {
+				focus = GER_form_the_stasi
+				use_side_message = yes
+				originator_name = GER_Commie_Originator
+			}
+			clr_country_flag = GER_form_the_stasi_in_progress
+			country_event = { id = GER_alt_hist.03 days = 1 }
+		}
+		else_if = {
+			limit = {
+				has_shine_effect_on_focus = GER_effective_operations
+			}
+			complete_national_focus = {
+				focus = GER_effective_operations
+				use_side_message = yes
+				originator_name = GER_Commie_Originator
+			}
+			clr_country_flag = GER_effective_operations_in_progress
+			country_event = { id = GER_alt_hist.03 days = 1 }
+		}
+		else_if = {
+			limit = {
+				has_shine_effect_on_focus = GER_assemble_red_orchestra
+			}
+			complete_national_focus = {
+				focus = GER_assemble_red_orchestra
+				use_side_message = yes
+				originator_name = GER_Commie_Originator
+			}
+			clr_country_flag = GER_assemble_red_orchestra_in_progress
+			country_event = { id = GER_alt_hist.03 days = 1 }
+		}
+		else_if = {
+			limit = {
+				has_shine_effect_on_focus = GER_ressurect_the_red_front_fighters_league
+			}
+			complete_national_focus = {
+				focus = GER_ressurect_the_red_front_fighters_league
+				use_side_message = yes
+				originator_name = GER_Commie_Originator
+			}
+			clr_country_flag = GER_ressurect_the_red_front_fighters_league_in_progress
+			country_event = { id = GER_alt_hist.03 days = 1 }
+		}
+		else_if = {
+			limit = {
+				has_shine_effect_on_focus = GER_reorganize_nationale_volksarmee
+			}
+			complete_national_focus = {
+				focus = GER_reorganize_nationale_volksarmee
+				use_side_message = yes
+				originator_name = GER_Commie_Originator
+			}
+			clr_country_flag = GER_reorganize_nationale_volksarmee_in_progress
+			country_event = { id = GER_alt_hist.03 days = 1 }
+		}
+		else_if = {
+			limit = {
+				has_shine_effect_on_focus = GER_political_commissars
+			}
+			complete_national_focus = {
+				focus = GER_political_commissars
+				use_side_message = yes
+				originator_name = GER_Commie_Originator
+			}
+			clr_country_flag = GER_political_commissars_in_progress
+			country_event = { id = GER_alt_hist.03 days = 1 }
+		}
+		else_if = {
+			limit = {
+				has_shine_effect_on_focus = GER_rapid_army_expansion
+			}
+			complete_national_focus = {
+				focus = GER_rapid_army_expansion
+				use_side_message = yes
+				originator_name = GER_Commie_Originator
+			}
+			clr_country_flag = GER_rapid_army_expansion_in_progress
+		}
+
+	}
+}

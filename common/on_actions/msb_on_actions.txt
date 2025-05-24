@@ -143,7 +143,13 @@ on_actions = {
 					days = 912
 				}
 			}
-		}
+			if = {
+                limit = {
+                    date < 1936.1.22
+                }
+                random_country = { news_event = { id = msb.1 } }
+            }
+		}	
 	}
 	on_monthly = {
 		effect = {

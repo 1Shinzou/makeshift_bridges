@@ -161,6 +161,22 @@ hospitals = {
 	}
 }
 
+china_war_difficulty = {
+	name = "China War" 
+	group = "MSB Rules"
+	icon = "GFX_decision_jap_conquer_china"
+	option = {
+		name = yes
+		text = "RHard"
+		desc = "China will get 62 divisions in total which are all fully equipped (Not Recommmended)"
+	}
+	default = {
+		name = no
+		text = "GEasy"
+		desc = "China will get no divisions at all (Recommmended)"
+	}
+}
+
 sov_closed_eco = {
 	name = "Soviet Closed Economy"
 	group = "Economic Adjustments"

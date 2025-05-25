@@ -10158,7 +10158,17 @@ focus_tree = {
 		available_if_capitulated = no
 
 		available = {
-			date > 1941.6.1
+
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = barb_date_lock
+						option = locked
+					}	
+				}
+				date > 1941.6.1
+			}
+
 			is_subject = no
 		}
 

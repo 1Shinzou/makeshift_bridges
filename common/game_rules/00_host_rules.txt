@@ -95,23 +95,6 @@ select_host_country = {
 }
 
 
-Germany_Cancel_Mefo= {
-	name = "Is Germany is allowed to cancel MEFO Bills?"
-	group = "MSB Rules"
-	icon = "GFX_decision_ger_mefo_bills"
-	default = {
-		name = Germany_no_cancel_MEFO_Bills
-		text = "Germany cant cancel MEFO Bills"
-		desc = ""
-	}
-	option = {
-		name = Germany_cancel_MEFO_Bills
-		text = "Germany can cancel MEFO Bills"
-		desc = ""
-	}
-
-}
-
 danzig_date_lock= {
 	name = "'Danzig or War' available date"
 	group = "MSB Rules"
@@ -126,7 +109,38 @@ danzig_date_lock= {
 		text = "Always available"
 		desc = "Germany can always take the Focus 'Danzig or War' no matter the date"
 	}
+}
 
+barb_date_lock= {
+	name = "'War with the USSR' available date"
+	group = "MSB Rules"
+	icon = "GFX_decision_SOV_socialism_in_one_country"
+	default = {
+		name = locked
+		text = "Not available until June 1941"
+		desc = "Germany cannot take the Focus 'War with the USSR' before June 1st 1941"
+	}
+	option = {
+		name = not_locked
+		text = "Always available"
+		desc = "Germany can always take the Focus 'War with the USSR' no matter the date"
+	}
+}
+
+china_war_difficulty = {
+	name = "China War" 
+	group = "MSB Rules"
+	icon = "GFX_decision_jap_conquer_china"
+	option = {
+		name = yes
+		text = "RHard"
+		desc = "China will get 62 divisions in total which are all fully equipped (Not Recommmended)"
+	}
+	default = {
+		name = no
+		text = "GEasy"
+		desc = "China will get no divisions at all (Recommmended)"
+	}
 }
 
 auto_tech_rush = {
@@ -161,20 +175,21 @@ hospitals = {
 	}
 }
 
-china_war_difficulty = {
-	name = "China War" 
-	group = "MSB Rules"
-	icon = "GFX_decision_jap_conquer_china"
-	option = {
-		name = yes
-		text = "RHard"
-		desc = "China will get 62 divisions in total which are all fully equipped (Not Recommmended)"
-	}
+Germany_Cancel_Mefo= {
+	name = "Is Germany is allowed to cancel MEFO Bills?"
+	group = "Economic Adjustments"
+	icon = "GFX_decision_ger_mefo_bills"
 	default = {
-		name = no
-		text = "GEasy"
-		desc = "China will get no divisions at all (Recommmended)"
+		name = Germany_no_cancel_MEFO_Bills
+		text = "Germany cant cancel MEFO Bills"
+		desc = ""
 	}
+	option = {
+		name = Germany_cancel_MEFO_Bills
+		text = "Germany can cancel MEFO Bills"
+		desc = ""
+	}
+
 }
 
 sov_closed_eco = {

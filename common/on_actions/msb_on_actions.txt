@@ -596,14 +596,6 @@ on_actions = {
                     limit = {
                         has_game_rule = {
                             rule = china_war_difficulty
-                            option = no
-                        }
-                    }
-                }
-                else_if = {
-                    limit = {
-                        has_game_rule = {
-                            rule = china_war_difficulty
                             option = yes
                         }
                     }

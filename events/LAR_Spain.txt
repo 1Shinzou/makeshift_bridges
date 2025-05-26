@@ -186,6 +186,7 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
+			add_threat = 2 # MSB No Volunteers so SCW needs more tension
 			every_owned_state = {
 				limit = {
 					is_core_of = ROOT
@@ -4584,7 +4585,11 @@ country_event = {
 	}
 	option = { # Option for Nationalists - Carlism
 		name = lar_spain.2.c
-		trigger = { has_completed_focus = SPA_a_great_spain }
+		trigger = { 
+			has_completed_focus = SPA_a_great_spain
+			is_ai = yes
+		}
+	
 		ai_chance = {
 			base = 30
 			modifier = {

@@ -1,0 +1,319 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            if = {
+                limit = {
+                    WST = { has_country_flag = no_asia_bookmark }
+                }
+                WST = { 
+                    add_equipment_to_stockpile = {
+                        type = infantry_equipment_1
+                        amount = 999999
+                    }
+                }
+                FRA = {
+                    add_state_core = 635
+                    add_state_core = 543
+                    add_state_core = 461
+                    add_state_core = 462
+                    add_state_core = 728
+                    add_equipment_to_stockpile = {
+                        type = infantry_equipment_1
+                        amount = 7000
+                    }
+                }
+                WST = { 
+                    annex_country = { target = USA transfer_troops = yes }
+                    every_state = {
+                        limit = {
+                            is_core_of = USA
+                        }
+                        add_core_of = WST
+                    }
+                }
+				WST = { 
+                    annex_country = { target = BRA transfer_troops = yes }
+                    every_state = {
+                        limit = {
+                            is_core_of = BRA
+                        }
+                        add_core_of = WST
+                    }
+                }
+                WST = { 
+                    annex_country = { target = JAP transfer_troops = yes }
+                    every_state = {
+                        limit = {
+                            is_core_of = JAP
+                        }
+                        add_core_of = WST
+                    }
+                }
+                WST = { 
+                    annex_country = { target = SIA transfer_troops = yes }
+                    every_state = {
+                        limit = {
+                            is_core_of = SIA
+                        }
+                        add_core_of = WST
+                    }
+                }
+                WST = { 
+                    annex_country = { target = MAN transfer_troops = yes }
+                    every_state = {
+                        limit = {
+                            is_core_of = MAN
+                        }
+                        add_core_of = WST
+                    }
+                }
+                WST = { 
+                    annex_country = { target = MEX transfer_troops = yes }
+                    every_state = {
+                        limit = {
+                            is_core_of = MEX
+                        }
+                        add_core_of = WST
+                    }
+                }
+                WST = { 
+                    annex_country = { target = CHI transfer_troops = yes }
+                    every_state = {
+                        limit = {
+                            is_core_of = CHI
+                        }
+                        add_core_of = WST
+                    }
+                }
+            }
+        }
+    }
+	on_startup = {
+        effect = {
+            if = {
+                limit = {
+                    WST = { has_country_flag = no_asia_scrap_bookmark }
+                }
+                WST = { 
+                    add_equipment_to_stockpile = {
+                        type = infantry_equipment_1
+                        amount = 999999
+                    }
+                }
+                FRA = {
+                    add_state_core = 635
+                    add_state_core = 543
+                    add_state_core = 461
+                    add_state_core = 462
+                    add_state_core = 728
+                    add_equipment_to_stockpile = {
+                        type = infantry_equipment_1
+                        amount = 7000
+                    }
+                }
+				ITA = { 
+                    annex_country = { target = BUL transfer_troops = yes }
+                    every_state = {
+						limit = {
+							is_core_of = BUL
+						}
+						add_core_of = ITA
+					}
+                }
+				GER = { 
+                    annex_country = { target = FIN transfer_troops = yes }
+                    every_state = {
+						limit = {
+							is_core_of = FIN
+						}
+						add_core_of = GER
+					}
+                }
+				ROM = { 
+                    annex_country = { target = HUN transfer_troops = yes }
+                    every_state = {
+						limit = {
+							is_core_of = HUN
+						}
+						add_core_of = ROM
+					}
+                }
+				SAF = { 
+                    annex_country = { target = CAN transfer_troops = yes }
+                    every_state = {
+						limit = {
+							is_core_of = CAN
+						}
+						add_core_of = SAF
+					}
+                }
+				RAJ = { 
+                    annex_country = { target = AST transfer_troops = yes }
+                    every_state = {
+						limit = {
+							is_core_of = AST
+							is_controlled_by = RAJ
+                    	}
+						set_compliance = 100
+					}
+                }
+                WST = { 
+                    annex_country = { target = USA transfer_troops = yes }
+                    every_state = {
+                        limit = {
+                            is_core_of = USA
+                        }
+                        add_core_of = WST
+                    }
+                }
+				WST = { 
+                    annex_country = { target = BRA transfer_troops = yes }
+                    every_state = {
+                        limit = {
+                            is_core_of = BRA
+                        }
+                        add_core_of = WST
+                    }
+                }
+                WST = { 
+                    annex_country = { target = JAP transfer_troops = yes }
+                    every_state = {
+                        limit = {
+                            is_core_of = JAP
+                        }
+                        add_core_of = WST
+                    }
+                }
+                WST = { 
+                    annex_country = { target = SIA transfer_troops = yes }
+                    every_state = {
+                        limit = {
+                            is_core_of = SIA
+                        }
+                        add_core_of = WST
+                    }
+                }
+                WST = { 
+                    annex_country = { target = MAN transfer_troops = yes }
+                    every_state = {
+                        limit = {
+                            is_core_of = MAN
+                        }
+                        add_core_of = WST
+                    }
+                }
+                WST = { 
+                    annex_country = { target = MEX transfer_troops = yes }
+                    every_state = {
+                        limit = {
+                            is_core_of = MEX
+                        }
+                        add_core_of = WST
+                    }
+                }
+                WST = { 
+                    annex_country = { target = CHI transfer_troops = yes }
+                    every_state = {
+                        limit = {
+                            is_core_of = CHI
+                        }
+                        add_core_of = WST
+                    }
+                }
+            }
+        }
+    }
+    on_startup = {
+        effect = {
+            if = {
+                limit = {
+                    WST = { has_country_flag = scrap_bookmark }
+                }
+                WST = { 
+                    add_equipment_to_stockpile = {
+                        type = infantry_equipment_1
+                        amount = 999999
+                    }
+                }
+                FRA = {
+                    add_state_core = 635
+                    add_state_core = 543
+                    add_state_core = 461
+                    add_state_core = 462
+                    add_state_core = 728
+                    add_equipment_to_stockpile = {
+                        type = infantry_equipment_1
+                        amount = 7000
+                    }
+                }
+                ITA = { 
+                    annex_country = { target = BUL transfer_troops = yes }
+                    every_state = {
+                        limit = {
+                            is_core_of = BUL
+                        }
+                        add_core_of = ITA
+                    }
+                }
+                GER = { 
+                    annex_country = { target = FIN transfer_troops = yes }
+                    every_state = {
+                        limit = {
+                            is_core_of = FIN
+                        }
+                        add_core_of = GER
+                    }
+                }
+                ROM = { 
+                    annex_country = { target = HUN transfer_troops = yes }
+                    every_state = {
+                        limit = {
+                            is_core_of = HUN
+                        }
+                        add_core_of = ROM
+                    }
+                }
+                SAF = { 
+                    annex_country = { target = CAN transfer_troops = yes }
+                    every_state = {
+                        limit = {
+                            is_core_of = CAN
+                        }
+                        add_core_of = SAF
+                    }
+                }
+                RAJ = { 
+                    annex_country = { target = AST transfer_troops = yes }
+                    every_state = {
+                        limit = {
+                            is_core_of = AST
+                            is_controlled_by = RAJ
+                        }
+                        set_compliance = 100
+                    }
+                }
+                USA = { 
+                    annex_country = { target = MEX transfer_troops = yes }
+                    every_state = {
+                        limit = {
+                            is_core_of = MEX
+                            is_controlled_by = USA
+                        }
+                        set_compliance = 100
+                    }
+                }
+                USA = { 
+                    annex_country = { target = BRA transfer_troops = yes }
+                    every_state = {
+                        limit = {
+                            is_core_of = BRA
+                            is_controlled_by = USA
+                        }
+                        set_compliance = 100
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -560,8 +560,8 @@ guiTypes = {
 			position = { x = -55 y = 620 }
 			font = "hoi4_typewriter22"
 			borderSize = {x = 0 y = 0}
-			maxWidth = 340
-			maxHeight = 30
+			maxWidth = 600
+			maxHeight = 40
 			format = left
 		}
 
@@ -623,6 +623,7 @@ guiTypes = {
 		background = {
 			name = "single_player_country_bg"
 			quadTextureSprite ="GFX_country_selection_bg"
+			
 		}
 
 		ButtonType = {

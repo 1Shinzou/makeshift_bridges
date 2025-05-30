@@ -2,7 +2,7 @@ bookmarks = {
 	bookmark = {
 		name = "SCRAPING_NAME"
 		desc = "SCRAPING_SCRAP_DESC"
-		date = 1936.1.4.12
+		date = 1936.1.1.14
 		picture = "GFX_select_date_scrap"
 		default_country = "GER"
 		

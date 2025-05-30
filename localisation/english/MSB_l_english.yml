@@ -34,9 +34,8 @@ stalin_they_will_know_fear:0 "They will know Fear"
   VICTORY_POINTS_4057:0 "Marsa Al Brega"
   VICTORY_POINTS_3761:0 "To Berlin"
 
-
-# Strategic Region Map Modding
-
+# Map Modding
+# Strategic Region 
 STRATEGICREGION_299:0 "Strait of Sicily"
 STRATEGICREGION_300:0 "Balearic Sea"
 STRATEGICREGION_301:0 "Ionian Sea"
@@ -44,6 +43,7 @@ STRATEGICREGION_15:0 "Levantine Sea"
 STRATEGICREGION_302:0 "Tobruk"
 STRATEGICREGION_303:0 "Aswan"
 
+# States
 STATE_1017:0 "North Wales"
 
 # STRAITS

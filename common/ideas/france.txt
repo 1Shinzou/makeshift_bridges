@@ -1347,7 +1347,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = FRA_political_violence
+			picture = generic_disjointed_gov
 			
 			modifier = {
 				# custom_modifier_tooltip = FPM_political_violence_tt
@@ -1373,7 +1373,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = FRA_political_violence
+			picture = generic_disjointed_gov
 			
 			modifier = {
 				political_power_cost = 0.8

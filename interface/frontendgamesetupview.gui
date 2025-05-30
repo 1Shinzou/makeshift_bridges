@@ -530,16 +530,16 @@ guiTypes = {
 
 		containerWindowType = {
 			name ="bookmarks"
-			position = { x = -70 y = 165 } #-94 74
-			size = { width = -10 height = 120}
+			position = { x = 180 y = 165 } 
+			size = { width = 550 height = 420 } # Skibidi 2 rows instead of 1x4 now is 2x2
 
 			gridboxType = {
 				name ="bookmarks_grid"
-				position = { x = 0 y = -20 }
+				position = { x = 0 y = 0 }
 				size = { width = 100%% height = 100%% }
 				slotsize = { width = 275 height = 210 }
 				add_horizontal = yes
-				max_slots = { x = 5 y = 2 }
+				max_slots = { x = 2 y = 2 } # Changed to 2x2 grid
 				format = "UPPER_LEFT"
 			}
 		}
@@ -623,7 +623,6 @@ guiTypes = {
 		background = {
 			name = "single_player_country_bg"
 			quadTextureSprite ="GFX_country_selection_bg"
-			
 		}
 
 		ButtonType = {

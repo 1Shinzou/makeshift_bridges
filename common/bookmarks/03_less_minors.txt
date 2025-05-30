@@ -1,9 +1,9 @@
 bookmarks = {
 	bookmark = {
-		name = "NO_ASIA_SCRAP_NAME"
-		desc = "NO_ASIA_SCRAP_DESC"
-		date = 1936.1.4.12
-		picture = "GFX_select_date_no_asia_scrap"
+		name = "MINOR_NAME"
+		desc = "MINOR_DESC"
+		date = 1936.1.2.12
+		picture = "GFX_select_date_1939"
 		default_country = "GER"
 		
 		"FRA"={
@@ -34,6 +34,20 @@ bookmarks = {
 				FRA_form_the_popular_front
 				FRA_continue_mandat
 				FRA_self_defense
+			}
+		}
+		"USA"={
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				home_of_the_free
+				great_depression
+				undisturbed_isolation
+			}
+			focuses = {
+				USA_war_plan_black
+				USA_continue_the_new_deal
+				USA_two_ocean_navy_act
 			}
 		}
 		"ENG"={
@@ -129,6 +143,20 @@ bookmarks = {
 				ITA_mare_nostrum_bba
 			}		
 		}
+		"JAP"={
+			history = "JAP_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				state_shintoism
+				JAP_zaibatsus
+				JAP_militarism
+			}	
+			focuses = {
+				JAP_the_zero
+				JAP_warrior_spirit
+				JAP_strike_on_the_southern_resource_area
+			}			
+		}
 		"SOV"={
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
@@ -165,6 +193,7 @@ bookmarks = {
 		}
 
 
+		# minors from DLC ####
 		"SAF"={
 			minor = yes
 			history = "SAF_GATHERING_STORM_DESC"
@@ -177,39 +206,6 @@ bookmarks = {
 				SAF_secure_interests_in_africa
 				SAF_cruiser_tanks
 				SAF_operation_overlord
-			}
-		}
-
-
-		"ROM"={
-			minor = yes
-			history = "ROM_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				ROM_king_carol_ii_hedonist
-				neutrality_idea
-			}
-			focuses = {
-				ROM_for_the_preservation_of_greater_romania
-				ROM_the_romanian_miracle
-				ROM_ask_codreanue_to_form_government
-			}
-		}
-		
-
-		"SPR"={
-			minor = yes
-			history = "SPAIN_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				SPR_military_disloyalty
-				SPA_carlism_1
-				SPR_political_violence
-			}
-			focuses = {
-				SPA_caudillo_of_spain
-				SPA_unite_iberia
-				SPA_expand_the_axis_gold_trade
 			}
 		}
 		"RAJ"={
@@ -226,9 +222,40 @@ bookmarks = {
 				RAJ_the_smiling_buddha
 			}
 		}
+	
+		"ROM"={
+			minor = yes
+			history = "ROM_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				ROM_king_carol_ii_hedonist
+				neutrality_idea
+			}
+			focuses = {
+				ROM_for_the_preservation_of_greater_romania
+				ROM_the_romanian_miracle
+				ROM_ask_codreanue_to_form_government
+			}
+		}
+		
+		"SPR"={
+			minor = yes
+			history = "SPAIN_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				SPR_military_disloyalty
+				SPA_carlism_1
+				SPR_political_violence
+			}
+			focuses = {
+				SPA_caudillo_of_spain
+				SPA_unite_iberia
+				SPA_expand_the_axis_gold_trade
+			}
+		}
 		effect = {
 			every_country = {
-                set_country_flag = no_asia_scrap_bookmark
+                set_country_flag = scrap_bookmark
             }
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }

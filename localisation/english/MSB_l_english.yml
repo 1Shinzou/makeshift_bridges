@@ -53,9 +53,11 @@ STATE_1017:0 "North Wales"
  ORESUND_STRAIT:0 "Øresund Strait"
  SICILY_STRAIT:0 "Stretto di Messina"
 
- SCRAP_NAME:0 "Scrapping the barrel Game Mode"
- SCRAP_DESC:0 "In this game mode the playable countries are what are represented in the country selection screen,this game mode is made if the lobby has less players.It plays mostly the same how ever there are less countries,for more clarity here are the exact countries:TODO"
- NO_ASIA_SCRAP_NAME:0 "No Asia countries-Scrapping the barrel Game Mode"
- NO_ASIA_SCRAP_DESC:0 "In this game mode the playable countries are like the No Asia countries game mode but with even less players , good for very small less than 12 people lobbies and late dead games,for more clarity here are the exact countries:TODO"
- NO_ASIA_NAME:0 "No Asia countries Game Mode"
- NO_ASIA_DESC:0 "In this game mode the playable countries are all but expect what would be considered Asian theater/Asian focuses.This gam emode removes them so that the game is more focused on the European theater,for more clarity here are the exact countries:TODO"
+
+# Bookmarks
+ MINOR_NAME:0 "Less Minors"
+ MINOR_DESC:0 "This game mode reduces the amount of playable minor nations."
+ SCRAPING_NAME:0 "Scraping the Barrel"
+ SCRAPING_SCRAP_DESC:0 "This game mode combines 'No-Asia' + 'Less Minors' so that there are 9 playable countries in total. Perfect game mode for when you are lacking players in general. The UK in this game mode starts with 5 research slots to compensate the loss of US research."
+ NO_ASIA_NAME:0 "No-Asia"
+ NO_ASIA_DESC:0 "The entire Pacific Theater is removed from the game. Every nation that usually joins the War after 1941+ is not present here. The UK in this game mode starts with 5 research slots to compensate the loss of US research."

@@ -55,8 +55,6 @@ STATE_1017:0 "North Wales"
 
 
 # Bookmarks
- MINOR_NAME:0 "Less Minors"
- MINOR_DESC:0 "This game mode reduces the amount of playable minor nations."
  SCRAPING_NAME:0 "Scraping the Barrel"
  SCRAPING_SCRAP_DESC:0 "This game mode combines 'No-Asia' + 'Less Minors' so that there are 9 playable countries in total. Perfect game mode for when you are lacking players in general. The UK in this game mode starts with 5 research slots to compensate the loss of US research."
  NO_ASIA_NAME:0 "No-Asia"

@@ -21,10 +21,10 @@ on_actions = {
 					NOT = { country_exists = CHI }
 				}
 
-				random_country = {
-					news_event = { 
-						id = msb.2
-						days = 500 
+				WST = {
+					country_event = { 
+						id = msb.3
+						days = 560 
 					} 
 				}
 			

@@ -25,7 +25,24 @@ news_event = {
 	
 	option = {
 		name = msb.2.a
-		add_threat = 40
+
 	}
+}
+
+country_event = {
+    id = msb.3
+    title = msb.3.t
+    desc = msb.3.d
+    picture = GFX_report_event_chinese_japanese_handshake
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = msb.3.a
+        add_threat = 40
+        hidden_effect = {
+            news_event = { hours = 6 id = msb.2 }
+        }
+    }
 }
 

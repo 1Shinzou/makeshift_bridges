@@ -20,9 +20,12 @@ on_actions = {
 				limit = {
 					NOT = { country_exists = CHI }
 				}
-				news_event = {
-					id = msb.2
-					days = 500 
+
+				random_country = {
+					news_event = { 
+						id = msb.2
+						days = 500 
+					} 
 				}
 			
 			}

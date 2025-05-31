@@ -13,8 +13,7 @@ state={
 	}
 
 	history={
-		# No Asia + Scraping
-		1936.1.1.13 = { owner = ITA add_core_of = ITA }
+		# Scraping
 		1936.1.1.14 = { owner = ITA add_core_of = ITA }
 
         owner = BUL

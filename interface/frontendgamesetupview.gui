@@ -9,7 +9,7 @@ guiTypes = {
 	### bookmark entry
 	containerWindowType = {
 		name = "bookmark_entry"
-		position = { x= 130 y = 0 }
+		position = { x= 105 y = 0 }
 		size = { width=232 height=211}
 		clipping = no
 		fade_time = 500
@@ -503,16 +503,16 @@ guiTypes = {
 
 	containerWindowType = {
 		name ="gamesetup_scenario_window"
-		size = { width = 950 height = 704 }
+		size = { width = 650 height = 304 }
 		clipping = no
 		orientation = center
-		position = { x = -120 y = -50 }
+		position = { x = -200 y = -200 }
 		origo = center
 		moveable = yes
 
 		instantTextBoxType = {
 			name = "title"
-			position = { x = 450 y = 80 }
+			position = { x = 350 y = 70 }
 			textureFile = ""
 			font = "hoi_20b"
 			borderSize = {x = 0 y = 0}
@@ -530,7 +530,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name ="bookmarks"
-			position = { x = 60 y = 165 } 
+			position = { x = 0 y = 165 } 
 			size = { width = 550 height = 420 } # Skibidi 2 rows instead of 1x4 now is 2x2 , now its 1x3 because idk lol
 
 			gridboxType = {
@@ -546,7 +546,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "history_title"
-			position = { x = -180 y = 582 }
+			position = { x = -180 y = 380 }
 			font = "hoi_20b"
 			borderSize = {x = 0 y = 0}
 			text = "BM_HISTORY_TITLE"
@@ -557,7 +557,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "bookmark_title"
-			position = { x = -55 y = 620 }
+			position = { x = -55 y = 400 }
 			font = "hoi4_typewriter22"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 600
@@ -567,17 +567,17 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "bookmark_desc"
-			position = { x = -55 y = 650 }
+			position = { x = -55 y = 450 }
 			font = "hoi4_typewriter16"
 			borderSize = {x = 0 y = 0}
-			maxWidth = 1320
+			maxWidth = 1100
 			maxHeight = 30
 			format = left
 		}
 
 		ButtonType = {
 			name = "back_button"
-			position = { x = -50 y = 87 }
+			position = { x = -50 y = 205 }
 			quadTextureSprite ="GFX_button_221x34"
 			buttonText = "BACK"
 			buttonFont = "hoi_18mbs"
@@ -589,7 +589,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "select_button"
-			position = { x = 75 y = 87 }#-150 too much left
+			position = { x = 200 y = 205 }#-150 too much left
 			quadTextureSprite ="GFX_button_221x34"
 			buttonText = "FE_SELECT_SCENARIO"
 			buttonFont = "hoi_18mbs"

@@ -14,3 +14,18 @@ news_event = {
 	}
 }
 
+news_event = {
+	id = msb.2
+	title = msb.2.t
+	desc = msb.2.desc
+	picture = GFX_news_event_002
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = msb.2.a
+		add_threat = 40
+	}
+}
+

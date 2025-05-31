@@ -1,0 +1,31 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = { 
+				limit = {
+					NOT = { country_exists = USA }
+				}
+				ENG = {
+					add_research_slot = 1
+				}
+
+				WST = {
+					give_resource_rights = {
+						receiver = ENG
+						state = 375
+					}
+				}
+			}
+			if = { 
+				limit = {
+					NOT = { country_exists = CHI }
+				}
+				news_event = {
+					id = msb.2
+					days = 500 
+				}
+			
+			}
+		}
+	}
+}

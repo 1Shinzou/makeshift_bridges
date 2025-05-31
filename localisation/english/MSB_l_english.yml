@@ -12,7 +12,10 @@ msb.1.t: "Most Important Changes in MSB"
 msb.1.a: "Okay, Thank You"
 msb.1.desc: "Every Tile is 80-width\nMIO's are railroaded\nThe Tank Designer is reworked\nFlatter Army/Navy/Air Experience System\nLand Doctrines reworked (GBP & Mass Assault-R untouched)\nMasterful Blitz counters Guerilla Tactics\nSpecial Forces Doctrine grants 10% Attack to each specific SF Unit (Mountaineer/Marine/Paratrooper)\n Artillery Rework:\n - More Breakthrough\n - More Defense\n - More Soft Attack"
 
- 
+# Bookmark No-Asia Event
+msb.2.t: "No-Asia World Tension Compensation"
+msb.2.desc: "Because there is no Japan and no China in No-Asia, extra aritifical World Tension is needed so that the Allies can consistenly stay on 'Partial Mobilization' until the beginning of WW2."
+msb.2.a: "40 Extra World Tension"
 
 uk_texas_oil:0 "Texas Oil Rights"
 add_convoy:0 "Add Convoy"
@@ -56,6 +59,6 @@ STATE_1017:0 "North Wales"
 
 # Bookmarks
  SCRAPING_NAME:0 "Scraping the Barrel"
- SCRAPING_SCRAP_DESC:0 "This game mode combines 'No-Asia' + 'Less Minors' so that there are 9 playable countries in total. Perfect game mode for when you are lacking players in general. The UK in this game mode starts with 5 research slots to compensate the loss of US research."
+ SCRAPING_SCRAP_DESC:0 "This game mode takes 'No-Asia' and throws out more minor nations, so that there are 9 playable countries in total. Perfect game mode for when you are lacking players in general. The UK in this game mode starts with 5 research slots to compensate the loss of US research."
  NO_ASIA_NAME:0 "No-Asia"
  NO_ASIA_DESC:0 "The entire Pacific Theater is removed from the game. Every nation that usually joins the War after 1941+ is not present here. The UK in this game mode starts with 5 research slots to compensate the loss of US research."

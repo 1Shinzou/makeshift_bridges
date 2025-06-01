@@ -3416,6 +3416,116 @@ country_event = {
 		add_to_variable = { var = GER_mefo_bill_counter value = -10 }
 	}
 
+	option = {
+		name = germany.55.c
+		ai_chance = {
+			base = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		add_political_power = -50
+		if = {
+			limit = { country_exists = CZE }
+			annex_country = { target = CZE }
+			add_war_support = 0.1
+		}
+		else_if = { #This is a backup and should never be possible
+			limit = {
+				any_state = {
+					is_core_of = CZE
+					NOT = {
+						controller = {
+							is_ally_with = ROOT
+						}
+					}
+				}
+			}
+			every_other_country = {
+				limit = {
+					any_controlled_state = {
+						is_core_of = CZE
+					}
+					NOT = {
+						is_ally_with = ROOT
+					}
+				}
+				display_individual_scopes = yes
+				every_controlled_state = {
+					limit = {
+						is_core_of = CZE
+						NOT = {
+							OR = {
+								is_claimed_by = ROOT
+								is_core_of = ROOT
+								is_owned_by = ROOT
+							}
+						}
+					}
+					add_to_array = {
+						array = PREV.GER_czech_target_states_array
+						value = THIS
+					}
+				}
+				ROOT = {
+					create_wargoal = {
+						type = take_state_focus
+						target = PREV
+						generator = PREV.GER_czech_target_states_array
+					}
+				}
+			}
+		}
+		else = { #This is a backup and should never be possible
+			every_state = {
+				limit = {
+					is_core_of = CZE
+					NOT = {
+						OR = {
+							is_claimed_by = ROOT
+							is_core_of = ROOT
+							is_owned_by = ROOT
+						}
+					}
+				}
+				ROOT = {
+					add_state_claim = PREV
+				}
+			}
+		}
+
+		CZE = {
+			every_core_state = {
+				limit = {
+					is_controlled_by = ROOT
+				}
+				add_claim_by = GER
+				set_compliance = 50
+			}
+		}
+
+		if = {
+			limit = { has_global_flag = GER_HUN_CZE_split }
+			HUN = { country_event = DOD_hungary.106 }
+		}
+		hidden_effect = {
+			country_event = { hours = 6 id = news.62 }
+		}
+
+		if = {
+			limit = {
+				any_state = {
+					is_core_of = CZE
+					is_fully_controlled_by = ROOT
+				}
+			}
+			GER_czechoslovakia_modify_mefo_bills_or_economy_of_conquest = yes
+			GER_seize_gold_reserves_in_europe_peacefully = yes
+			add_to_variable = { var = GER_mefo_bill_counter value = -10 }
+		}
+	}
+
 
 	option = {
 		name = germany.55.do

@@ -16,6 +16,15 @@ msb.1.desc: "Every Tile is 80-width\nMIO's are railroaded\nThe Tank Designer is 
 msb.2.t: "No-Asia World Tension Compensation"
 msb.2.desc: "Because there is no Japan and no China in No-Asia, extra aritifical World Tension is needed so that the Allies can consistenly stay on 'Partial Mobilization' until the beginning of WW2."
 msb.2.a: "Okay, Thank you for the 40 extra World Tension"
+msb.4.t: "No-Asia 1941 USA Support"
+msb.4.d: "The east coast of the USA is going to be annexed to the UK with cores."
+msb.4.a: "Okay, Thank you for the IC."
+msb.5.t: "No-Asia 1941 USA Support"
+msb.5.desc: "The east coast of the USA has been annexed to the UK."
+msb.5.a: "Thanks for the Info"
+
+
+
 
 uk_texas_oil:0 "Texas Oil Rights"
 add_convoy:0 "Add Convoy"
@@ -59,6 +68,6 @@ STATE_1017:0 "North Wales"
 
 # Bookmarks
  SCRAPING_NAME:0 "Scraping the Barrel"
- SCRAPING_SCRAP_DESC:0 "This game mode takes 'No-Asia' and throws out more minor nations, so that there are 9 playable countries in total. Perfect game mode for when you are lacking players in general. The UK in this game mode starts with 5 research slots to compensate the loss of US research. The UK and the Soviet Union start with an extra 12 off-map civilian factories to compensate for the loss of US IC and Trade."
+ SCRAPING_SCRAP_DESC:0 "This game mode takes 'No-Asia' and throws out more minor nations, so that there are 9 playable countries in total. Perfect game mode for when you are lacking players in general. The UK in this game mode starts with 5 research slots to compensate the loss of US research. The UK and the Soviet Union start with an extra 16 off-map civilian factories to compensate for the loss of US IC and Trade. Additionally the UK gets the east coast of the USA annexed in 1941."
  NO_ASIA_NAME:0 "No-Asia"
- NO_ASIA_DESC:0 "The entire Pacific Theater is removed from the game. Every nation that usually joins the War after 1941+ is not present here. The UK in this game mode starts with 5 research slots to compensate the loss of US research. The UK and the Soviet Union start with an extra 12 off-map civilian factories to compensate for the loss of US IC and Trade."
+ NO_ASIA_DESC:0 "The entire Pacific Theater is removed from the game. Every nation that usually joins the War after 1941+ is not present here. The UK in this game mode starts with 5 research slots to compensate the loss of US research. The UK and the Soviet Union start with an extra 16 off-map civilian factories to compensate for the loss of US IC and Trade. Additionally the UK gets the east coast of the USA annexed in 1941."

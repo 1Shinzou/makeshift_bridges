@@ -321,11 +321,11 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ inflexible_strategist trait_reckless JAP_samurai_lineage organizer infantry_leader panzer_leader trickster }
-			skill=4
-			attack_skill=4
-			defense_skill=4
-			planning_skill=3
+			traits={ inflexible_strategist trait_reckless JAP_samurai_lineage }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
 			logistics_skill=2
 			legacy_id=0
 		}
@@ -392,9 +392,9 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ old_guard trait_reckless cavalry_officer }
-			skill=4
-			attack_skill=3
+			traits={ old_guard trait_reckless cavalry_officer inflexible_strategist trait_reckless organizer infantry_leader panzer_leader cavalry_leader trickster }
+			skill=5
+			attack_skill=4
 			defense_skill=2
 			planning_skill=4
 			logistics_skill=4
@@ -467,13 +467,13 @@ characters={
 				small=GFX_portrait_JAP_hatazo_adachi_small
 			}
 		}
-		corps_commander={
-			traits={ trait_reckless infantry_officer JAP_samurai_lineage trickster }
-			skill=2
-			attack_skill=1
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
+	corps_commander={
+			traits={ trait_reckless infantry_officer JAP_samurai_lineage career_officer politically_connected fortress_buster organizer infantry_leader trickster trait_engineer }
+			skill=6
+			attack_skill=4
+			defense_skill=5
+			planning_skill=5
+			logistics_skill=5
 			legacy_id=0
 		}
 	}
@@ -538,7 +538,7 @@ characters={
 	
 		}
 		corps_commander={
-			traits={ career_officer politically_connected fortress_buster organizer infantry_leader trickster }
+			traits={ career_officer politically_connected fortress_buster organizer infantry_leader trickster trait_engineer }
 			skill=8
 			attack_skill=4
 			defense_skill=5
@@ -558,7 +558,7 @@ characters={
 		}
 		corps_commander={
 			traits={ career_officer politically_connected fortress_buster organizer infantry_leader panzer_leader trickster }
-			skill=4
+			skill=5
 			attack_skill=4
 			defense_skill=5
 			planning_skill=5

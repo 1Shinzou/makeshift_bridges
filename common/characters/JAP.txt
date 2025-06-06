@@ -188,7 +188,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer infantry_officer organizer infantry_leader panzer_leader trickster }
+			traits={ career_officer infantry_officer organizer infantry_leader cavalry_leader trickster }
 			skill=8
 			attack_skill=6
 			defense_skill=4
@@ -249,8 +249,22 @@ characters={
 				small="gfx/interface/ideas/idea_JAP_toshizo_nishio.dds"
 			}
 		}
+
+		advisor={
+			slot = high_command
+			idea_token = JAP_toshizo_nishio
+			ledger = army
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				army_commando_3
+			}
+		
+		}
+
 		corps_commander={
-			traits = { organizer infantry_leader trait_engineer infantry_expert naval_invader commando trickster trait_mountaineer jungle_rat }
+			traits = { organizer infantry_leader trait_engineer naval_invader commando trickster trait_mountaineer jungle_rat }
 			skill=8
 			attack_skill=5
 			defense_skill=2
@@ -511,7 +525,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer politically_connected fortress_buster organizer infantry_leader panzer_leader trickster }
+			traits={ career_officer politically_connected fortress_buster organizer infantry_leader trickster }
 			skill=8
 			attack_skill=4
 			defense_skill=5

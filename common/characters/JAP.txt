@@ -187,6 +187,16 @@ characters={
 				small=GFX_portrait_JAP_shizuichi_tanaka_small
 			}
 		}
+			advisor={
+			slot = army_chief
+			idea_token = JAP_shizuichi_tanaka
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				army_chief_offensive_3
+			}
+		}
 		corps_commander={
 			traits={ career_officer infantry_officer organizer infantry_leader cavalry_leader trickster }
 			skill=8
@@ -216,7 +226,7 @@ characters={
 			traits = {
 				army_infantry_2
 			}
-			cost = 100
+			cost = 25
 			ai_will_do = {
 				factor = 2.500
 				modifier = {
@@ -1054,7 +1064,7 @@ characters={
 			traits = {
 				army_chief_offensive_1
 			}
-			cost =  50
+			cost =  25
 			ai_will_do = {
 				factor = 1.000
 			}

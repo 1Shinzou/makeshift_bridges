@@ -22263,7 +22263,6 @@ focus = {
                 show_effect_tooltip = yes # default is no
                 show_modifiers = yes # default is no
             }
-            custom_effect_tooltip = quinine_advice
         }
     }
     

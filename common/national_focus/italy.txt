@@ -5835,16 +5835,16 @@ focus_tree = {
 						is_fully_controlled_by = ROOT
 						free_building_slots = {
 							building = dockyard
-							size > 1
+							size > 0
 							include_locked = yes
 						}
 					}
 				}
 				162 = { #TUSCANY (La Spezia)
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -5855,15 +5855,15 @@ focus_tree = {
 						is_fully_controlled_by = ROOT
 						free_building_slots = {
 							building = dockyard
-							size > 1
+							size > 0
 							include_locked = yes
 						}
 					}
 					prioritize = { 157 161 2 } #ABRUZZO as main fallback
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -5875,16 +5875,16 @@ focus_tree = {
 						is_fully_controlled_by = ROOT
 						free_building_slots = {
 							building = dockyard
-							size > 1
+							size > 0
 							include_locked = yes
 						}
 					}
 				}
 				736 = { #LITORALE (Trieste)
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -5895,15 +5895,15 @@ focus_tree = {
 						is_fully_controlled_by = ROOT
 						free_building_slots = {
 							building = dockyard
-							size > 1
+							size > 0
 							include_locked = yes
 						}
 					}
 					prioritize = { 852 160 161 } #ISTRIA as main fallback
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}

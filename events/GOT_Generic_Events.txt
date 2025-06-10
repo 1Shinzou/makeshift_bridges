@@ -100,24 +100,8 @@ country_event = { #Guarantee Poland
 		# add_political_power = -50
 				
 		give_guarantee = POL
-	}
-	option = { #They're on their own
-		name = GOT_guarantee_events.01.b
-		ai_chance = {
-			base = 5
-			modifier = {
-				factor = 2
-				has_government = FROM
-			}
-			modifier = {
-				factor = 2
-				has_government = FROM
-				has_opinion = {
-					target = FROM
-					value > 49
-				}
-			}
-		}
+		give_guarantee = YUG
+		give_guarantee = GRE
 	}
 }
 

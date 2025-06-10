@@ -33,7 +33,7 @@ allies = {
 		tag = AST
 		tag = BRA
 		tag = MEX
-		tag = NZL
+		# tag = NZL
 		tag = USA
 		tag = RAJ
 		tag = SAF
@@ -46,6 +46,8 @@ allies = {
 		tag = POL
 		tag = DEN
 		tag = PHI
+		tag = YUG
+		tag = GRE
 	}
 }
 

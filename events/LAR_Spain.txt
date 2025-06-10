@@ -595,6 +595,123 @@ country_event = {
 						}
 					}
 				}
+				if = { # MSB easy spain game rule
+					limit = {
+						has_game_rule = {
+							rule = scw_difficulty
+							option = easy
+						}
+						# has_completed_focus = SPA_the_army_of_africa
+					}
+					division_template = {
+						name = "Noob assistance"
+						template_counter = 20
+						division_names_group = SPA_INF_01
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }
+							infantry = { x = 3 y = 0 }
+							infantry = { x = 3 y = 1 }
+							artillery_brigade = { x = 4 y = 0 }
+							artillery_brigade = { x = 4 y = 1 }
+							artillery_brigade = { x = 4 y = 3 }
+						}
+						support = {
+							recon = { x = 0 y = 0 }
+							engineer = { x = 0 y = 1 }
+						}
+					}
+					174 = {
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+						create_unit = {
+							division = "division_template = \"Noob assistance\" start_experience_factor = 0.3" 
+							owner = SPR
+						}
+					}
+				}
+
 				# Republicans remove their army
 				SPD = {
 					delete_units = {

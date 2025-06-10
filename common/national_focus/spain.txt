@@ -70,6 +70,14 @@ focus_tree = {
 				has_country_flag = SPR_spanish_elections_flag
 			}
 		}
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 1
+				is_historical_focus_on = yes
+				
+			}
+		}
 		cancel_if_invalid = yes
 		
 		bypass = {
@@ -364,6 +372,9 @@ focus_tree = {
 			is_ai = yes
 			NOT = {
 				has_country_flag = SPR_spanish_elections_flag
+			}
+			NOT = {
+				is_historical_focus_on = yes
 			}
 		}
 		

@@ -12835,16 +12835,18 @@ focus_tree = {
 			add_to_variable = { ITA_military_industry_dm_production_lack_of_resource_penalty_factor = -0.05 }
 			custom_effect_tooltip = ITA_expanded_corporatism_military_industry_tt
 
-			every_owned_state = {
+			every_controlled_state = {
 				limit = {
 					NOT = {	is_core_of = ROOT }
-					is_fully_controlled_by = ROOT
+					# is_fully_controlled_by = ROOT
 				}
 				add_dynamic_modifier = {
 					modifier = ITA_expanded_corporatism_modifier
 					scope = ITA
 				}
 			}
+
+			
 			if = {
 				limit = {
 					2 = { 

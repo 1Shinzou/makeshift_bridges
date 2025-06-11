@@ -140,7 +140,8 @@ FRA_propaganda_campaigns = {
 
 		complete_effect = {
 	
-			
+			set_variable = { FRA_new_propaganda_campaign = 5 }
+			FRA_pick_propaganda_campaign_slot_effect = yes
 
 			
 		}

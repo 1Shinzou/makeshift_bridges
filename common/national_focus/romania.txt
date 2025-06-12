@@ -70,28 +70,15 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			NOT = { has_government = democratic }
+			# NOT = { has_government = democratic }
 		}
 		completion_reward = {
 			add_political_power = 100
-			if = {
-				limit = {
-					has_idea = ROM_the_resource_curse_1
-				}
-				swap_ideas = {
-					remove_idea = ROM_the_resource_curse_1
-					add_idea = ROM_the_resource_curse_2
-				}
+			swap_ideas = {
+				remove_idea = ROM_the_resource_curse_1
+				add_idea = ROM_the_resource_curse_2
 			}
-			if = {
-				limit = {
-					has_idea = ROM_the_resource_curse_2
-				}
-				swap_ideas = {
-					remove_idea = ROM_the_resource_curse_2
-					add_idea = ROM_the_resource_curse_3	
-				}
-			}
+			
 		}
 	}
 
@@ -373,10 +360,10 @@ focus_tree = {
 	focus = {
 		id = ROM_expand_the_axis_oil_trade
 		available = {
-		    OR = {
-			NOT = { has_government = democratic }
-			has_completed_focus = ROM_ensure_agricultural_self_sufficiency
-			}
+		   # OR = {
+			#NOT = { has_government = democratic }
+			#has_completed_focus = ROM_ensure_agricultural_self_sufficiency
+			#}
  		}
 		bypass = {
 		}
@@ -424,7 +411,7 @@ focus_tree = {
 	focus = {
 		id = ROM_expand_fuel_stockpiles
 		available = {
-
+			has_completed_focus = ROM_trade_treaty_with_germany
 		}
 		bypass = {
 		}
@@ -442,25 +429,11 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			if = {
-				limit = {
-					has_idea = ROM_the_resource_curse_1
-				}
-				swap_ideas = {
-					remove_idea = ROM_the_resource_curse_1
-					add_idea = ROM_the_resource_curse_2
-				}
+			swap_ideas = {
+				remove_idea = ROM_the_resource_curse_2
+				add_idea = ROM_the_resource_curse_3
 			}
-			if = {
-				limit = {
-					has_idea = ROM_the_resource_curse_2
-				}
-				swap_ideas = {
-					remove_idea = ROM_the_resource_curse_2
-					add_idea = ROM_the_resource_curse_3
-				}
-			}
-
+			
 			83 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -643,7 +616,7 @@ focus_tree = {
 	focus = {
 		id = ROM_malaxa
 		available = {
-			has_government = democratic
+			# has_government = democratic
 		}
 		bypass = {
 		}
@@ -672,7 +645,7 @@ focus_tree = {
 	focus = {
 		id = ROM_reduce_reliance_on_oil
 		available = {
-			has_government = democratic
+			# has_government = democratic
 		}
 		bypass = {
 		}
@@ -697,7 +670,7 @@ focus_tree = {
 	focus = {
 		id = ROM_improve_living_standards
 		available = {
-			has_government = democratic
+			# has_government = democratic
 		}
 		bypass = {
 		}
@@ -732,7 +705,7 @@ focus_tree = {
 	focus = {
 		id = ROM_domestic_industrial_developments
 		available = {
-			has_government = democratic
+			# has_government = democratic
 		}
 		bypass = {
 		}
@@ -764,7 +737,7 @@ focus_tree = {
 	focus = {
 		id = ROM_the_romanian_miracle
 		available = {
-			has_government = democratic
+			# has_government = democratic
 		}
 		prerequisite = { focus = ROM_improve_living_standards }
 		prerequisite = { focus = ROM_domestic_industrial_developments }
@@ -2100,17 +2073,17 @@ focus_tree = {
 
 		completion_reward = {
 			79 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
 			add_tech_bonus = {
 				name = ROM_expand_small_arms_manufacturing
-				bonus = 0.75
-				uses = 4
+				bonus = 0.5
+				uses = 1
 				category = infantry_weapons
 			}
 		}
@@ -2337,7 +2310,7 @@ focus_tree = {
 		completion_reward = {	
 			add_doctrine_cost_reduction = {
 				name = ROM_vanatori_de_munte
-				cost_reduction = 0.99
+				cost_reduction = 0.5
 				uses = 3
 				category = cat_mountaineers_doctrine
 			}	

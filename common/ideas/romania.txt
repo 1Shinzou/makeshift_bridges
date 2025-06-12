@@ -62,7 +62,7 @@ ideas = {
 			}
 			
 			modifier = {
-				stability_factor = -0.1
+				stability_factor = -0.05
 				local_resources_factor = 0.1
 				consumer_goods_factor = -0.05
 			}
@@ -82,7 +82,7 @@ ideas = {
 			}
 			
 			modifier = {
-				stability_factor = -0.2
+				stability_factor = -0.1
 				local_resources_factor = 0.2
 				consumer_goods_factor = -0.05
 			}
@@ -102,7 +102,7 @@ ideas = {
 			}
 			
 			modifier = {
-				stability_factor = -0.3
+				stability_factor = -0.15
 				local_resources_factor = 0.3
 				consumer_goods_factor = -0.05
 			}
@@ -756,7 +756,7 @@ ideas = {
 			}
 
 			modifier = {
-				fascism_drift = 0.01
+				fascism_drift = 0.1
 				stability_factor = 0.05				
 			}
 		}
@@ -1088,7 +1088,7 @@ ideas = {
 			}
 			
 			modifier = {
-				land_doctrine_cost_factor = -0.2
+				land_doctrine_cost_factor = -0.1
 			}
 		}
 
@@ -1160,7 +1160,7 @@ ideas = {
 				conscription = 0.02
 				supply_consumption_factor = -0.1
 				mobilization_speed = 0.2 
-				land_reinforce_rate	= 0.05		
+				land_reinforce_rate	= 0.01		
 				minimum_training_level = -0.2 	
 			}
 		}

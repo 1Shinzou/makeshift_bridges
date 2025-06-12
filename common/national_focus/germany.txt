@@ -7232,12 +7232,20 @@ focus_tree = {
 		
 		available_if_capitulated = no
 		
-		available = {
-			has_war = no
-			is_subject = no
-			date > 1937.6.1
+	available = {
+            is_subject = no
+            has_war = no
+            has_civil_war = no
+            OR = {
+                date > 1937.6.1
+                custom_trigger_tooltip = {
+                    tooltip = GER_anschluss_eq_trigger_tt
+                    check_variable = { num_equipment_in_armies_k@infantry_equipment > 50 }
+                }
+            }
+        }
 
-		}
+	
 
 		ai_will_do = {
 			factor = 10

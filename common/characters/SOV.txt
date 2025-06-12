@@ -360,10 +360,23 @@ characters = {
 				small=GFX_portrait_SOV_nikolay_vatutin_small
 			}
 		}
+		advisor = {
+			slot = high_command
+			idea_token = nikolay_vatutin
+			ledger = army
+			allowed = {
+				original_tag = SOV
+				
+			}
+			traits = {
+				army_infantry_1
+			}
+			cost = 50
+		}
 		corps_commander = {
-			traits = { trait_reckless infantry_officer }
-			skill = 3
-			attack_skill = 1
+			traits = { trait_reckless infantry_officer infantry_leader }
+			skill = 4
+			attack_skill = 3
 			defense_skill = 3
 			planning_skill = 3
 			logistics_skill = 3
@@ -832,9 +845,9 @@ characters = {
 			traits = {  panzer_leader trickster trait_engineer skilled_staffer cavalry_leader  organizer ranger urban_assault_specialist commando}
 			skill = 6
 			attack_skill = 5
-			defense_skill = 6
+			defense_skill = 7
 			planning_skill = 6
-			logistics_skill = 6
+			logistics_skill = 7
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -1006,9 +1019,9 @@ characters = {
 			traits = { brilliant_strategist winter_specialist panzer_leader trickster trait_engineer  cavalry_leader organizer urban_assault_specialist ranger }
 			skill = 8
 			attack_skill = 5
-			defense_skill = 6
+			defense_skill = 7
 			planning_skill = 6
-			logistics_skill = 6
+			logistics_skill = 7
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}

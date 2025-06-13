@@ -272,7 +272,7 @@ defined_text = {
 	}
 }
 defined_text = {
-	name = GetMandalayOwner
+	name = GetSingaporeOwner
 	text = {
 		trigger = {
 			any_country = {

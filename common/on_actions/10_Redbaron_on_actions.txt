@@ -54,7 +54,7 @@ on_actions = {
 							state = 439 # Delhi
 							state = 335 # Batavia
 
-							state = 640 # Mandalay
+							state = 336 # Singapore
 							state = 645 # Iwo Jima
 						}
 					}
@@ -86,7 +86,7 @@ on_actions = {
 						if = { limit = { FROM.FROM = { state = 285 } } set_global_flag = allies_owns_canberra clr_global_flag = axis_owns_canberra }
 						if = { limit = { FROM.FROM = { state = 439 } } set_global_flag = allies_owns_Delhi clr_global_flag = axis_owns_Delhi }
 						if = { limit = { FROM.FROM = { state = 335 } } set_global_flag = allies_owns_batavia clr_global_flag = axis_owns_batavia }
-						if = { limit = { FROM.FROM = { state = 640 } } set_global_flag = allies_owns_mandalay clr_global_flag = axis_owns_mandalay }
+						if = { limit = { FROM.FROM = { state = 640 } } set_global_flag = allies_owns_singapore clr_global_flag = axis_owns_singapore }
 						if = { limit = { FROM.FROM = { state = 645 } } set_global_flag = allies_owns_iwo_jima clr_global_flag = axis_owns_iwo_jima }
 					}
 					else_if = {
@@ -115,7 +115,7 @@ on_actions = {
 						if = { limit = { FROM.FROM = { state = 285 } } set_global_flag = axis_owns_canberra clr_global_flag = allies_owns_canberra }
 						if = { limit = { FROM.FROM = { state = 439 } } set_global_flag = axis_owns_Delhi clr_global_flag = allies_owns_Delhi }
 						if = { limit = { FROM.FROM = { state = 335 } } set_global_flag = axis_owns_batavia clr_global_flag = allies_owns_batavia }
-						if = { limit = { FROM.FROM = { state = 640 } } set_global_flag = axis_owns_mandalay clr_global_flag = allies_owns_mandalay }
+						if = { limit = { FROM.FROM = { state = 640 } } set_global_flag = axis_owns_singapore clr_global_flag = allies_owns_singapore }
 						if = { limit = { FROM.FROM = { state = 645 } } set_global_flag = axis_owns_iwo_jima clr_global_flag = allies_owns_iwo_jima }
 					}
 				}

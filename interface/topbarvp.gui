@@ -2,7 +2,7 @@
 guiTypes = {
 	containerWindowType = {
 		name = "topbar_vp_container"
-		position = { x = -550 y = 2 }
+		position = { x = -590 y = 2 }
 		Orientation = UPPER_RIGHT
 		containerWindowType = {
 			name = "vp_container"

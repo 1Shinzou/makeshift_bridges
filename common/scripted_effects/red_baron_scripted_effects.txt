@@ -1,5 +1,5 @@
 initilize_victory_system = {
-	# state = 285 #Canberra
+	# state = 629 #Hawaii
 	# state = 439 #Delhi
 	# state = 907 #Cairo
 	# state = 450 #Benghasi
@@ -29,7 +29,7 @@ initilize_victory_system = {
 		}
 		if = {
 			limit = {
-				controls_state = 285 #Canberra
+				controls_state = 629 #Hawaii
 			}
 			add_to_variable = {
 				var = global.axis_score
@@ -40,8 +40,8 @@ initilize_victory_system = {
 				min = 0
 				max = 15
 			}
-			set_global_flag = axis_owns_canberra
-			clr_global_flag = allies_owns_canberra
+			set_global_flag = axis_owns_hawaii
+			clr_global_flag = allies_owns_hawaii
 		}
 		if = {
 			limit = {
@@ -275,7 +275,7 @@ initilize_victory_system = {
 		}
 		if = {
 			limit = {
-				controls_state = 285 #Canberra
+				controls_state = 629 #Hawaii
 			}
 			add_to_variable = {
 				var = global.allies_score
@@ -286,8 +286,8 @@ initilize_victory_system = {
 				min = 0
 				max = 15
 			}
-			clr_global_flag = axis_owns_canberra
-			set_global_flag = allies_owns_canberra
+			clr_global_flag = axis_owns_hawaii
+			set_global_flag = allies_owns_hawaii
 		}
 		if = {
 			limit = {

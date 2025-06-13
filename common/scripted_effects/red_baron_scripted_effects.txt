@@ -10,7 +10,7 @@ initilize_victory_system = {
 	# state = 219 #Moscow
 	# state = 217 #Stalingrad
 	# state = 110 #Oslo
-	# state = 126 #London
+	# state = 2 #Rome
 	# state = 241 #Gomel
 	# state = 336 #Singapore
 	# state = 645 #Iwo Jima
@@ -221,7 +221,7 @@ initilize_victory_system = {
 		}
 		if = {
 			limit = {
-				controls_state = 126 #London
+				controls_state = 2 #Rome
 			}
 			add_to_variable = {
 				var = global.axis_score
@@ -232,8 +232,8 @@ initilize_victory_system = {
 				min = 0
 				max = 15
 			}
-			set_global_flag = axis_owns_london
-			clr_global_flag = allies_owns_london
+			set_global_flag = axis_owns_rome
+			clr_global_flag = allies_owns_rome
 		}
 		if = {
 			limit = {
@@ -467,7 +467,7 @@ initilize_victory_system = {
 		}
 		if = {
 			limit = {
-				controls_state = 126 #London
+				controls_state = 2 #Rome
 			}
 			add_to_variable = {
 				var = global.allies_score
@@ -478,8 +478,8 @@ initilize_victory_system = {
 				min = 0
 				max = 15
 			}
-			clr_global_flag = axis_owns_london
-			set_global_flag = allies_owns_london
+			clr_global_flag = axis_owns_rome
+			set_global_flag = allies_owns_rome
 		}
 		if = {
 			limit = {

@@ -52,9 +52,9 @@ guiTypes = {
 		}
 
 		instantTextBoxType = {
-			name = "vp_london"
+			name = "vp_rome"
 			font = "hoi_18mbs"
-			text = "vp_victory_london"
+			text = "vp_victory_rome"
 			position = { x = 30 y = 120 }
 			maxHeight = 36
 			format = left

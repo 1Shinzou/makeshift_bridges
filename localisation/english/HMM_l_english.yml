@@ -10,19 +10,19 @@
 
  #ColdestWar#
   victory_con_axis_2:0 "Looming Axis Victory"
-  victory_con_axis_2_desc:0 "Axis control 11 or more out of 15 Victory points:\n \nDelhi \nCanberra \nBatavia \nSingapore \nIwo Jima \n\nCairo \nBenghasi \n\nLondon \nParis \nAmsterdam \nOslo \n\nGomel \nLeningrad \nMoscow \nStalingrad"
+  victory_con_axis_2_desc:0 "Axis control 11 or more out of 15 Victory points:\n \nDelhi \nCanberra \nBatavia \nSingapore \nIwo Jima \n\nCairo \nBenghasi \n\nRome \nParis \nAmsterdam \nOslo \n\nGomel \nLeningrad \nMoscow \nStalingrad"
   victory_con_allies_2:0 "Looming Allies Victory"
-  victory_con_allies_2_desc:0 "Allies control 11 or more out of 15 Victory points:\n \nDelhi \nCanberra \nBatavia \nSingapore \nIwo Jima \n\nCairo \nBenghasi \n\nLondon \nParis \nAmsterdam \nOslo \n\nGomel \nLeningrad \nMoscow \nStalingrad"
+  victory_con_allies_2_desc:0 "Allies control 11 or more out of 15 Victory points:\n \nDelhi \nCanberra \nBatavia \nSingapore \nIwo Jima \n\nCairo \nBenghasi \n\nRome \nParis \nAmsterdam \nOslo \n\nGomel \nLeningrad \nMoscow \nStalingrad"
   victory_con:0 "Victory Condition"
-  victory_con_desc:0 "To trigger the Victory Condition your Faction needs to control 11 out of 15 Victory points:\n \nDelhi \nCanberra \nBatavia \nSingapore \nIwo Jima \n\nCairo \nBenghasi \n\nLondon \nParis \nAmsterdam \nOslo \n\nGomel \nLeningrad \nMoscow \nStalingrad"
+  victory_con_desc:0 "To trigger the Victory Condition your Faction needs to control 11 out of 15 Victory points:\n \nDelhi \nCanberra \nBatavia \nSingapore \nIwo Jima \n\nCairo \nBenghasi \n\nRome \nParis \nAmsterdam \nOslo \n\nGomel \nLeningrad \nMoscow \nStalingrad"
   victory_con_allies_1:0 "Allies are winning"
-  victory_con_allies_1_desc:0 "Allies control 11 out of 15 Victory points:\n \nDelhi \nCanberra \nBatavia \nSingapore \nIwo Jima \n\nCairo \nBenghasi \n\nLondon \nParis \nAmsterdam \nOslo \n\nGomel \nLeningrad \nMoscow \nStalingrad"
+  victory_con_allies_1_desc:0 "Allies control 11 out of 15 Victory points:\n \nDelhi \nCanberra \nBatavia \nSingapore \nIwo Jima \n\nCairo \nBenghasi \n\nRome \nParis \nAmsterdam \nOslo \n\nGomel \nLeningrad \nMoscow \nStalingrad"
   victory_con_axis_1:0 "Axis are winning"
-  victory_con_axis_1_desc:0 "Axis control 11 out of 15 Victory points:\n \nDelhi \nCanberra \nBatavia \nSingapore \nIwo Jima \n\nCairo \nBenghasi \n\nLondon \nParis \nAmsterdam \nOslo \n\nGomel \nLeningrad \nMoscow \nStalingrad"
+  victory_con_axis_1_desc:0 "Axis control 11 out of 15 Victory points:\n \nDelhi \nCanberra \nBatavia \nSingapore \nIwo Jima \n\nCairo \nBenghasi \n\nRome \nParis \nAmsterdam \nOslo \n\nGomel \nLeningrad \nMoscow \nStalingrad"
 
 
 MOD_countdown_to_victory_cat:0 "Victory!"
-vp_container_desc:0 "The winner of the game is the team who controls §Y11§! or more of the §Y15§! following Cities for §Y500 days§!:\n\n§YParis§! - [GetParisOwner]\n§YAmsterdam§! - [GetAmsterdamOwner]\n§YOslo§! - [GetOsloOwner]\n§YLondon§! - [GetLondonOwner]\n\n§YGomel§! - [GetGomelOwner]\n§YLeningrad§! - [GetLeningradOwner]\n§YMoscow§! - [GetMoscowOwner]\n§YStalingrad§! - [GetStalingradOwner]\n\n§YBenghasi§! - [GetBenghasiOwner]\n§YCairo§! - [GetCairoOwner]\n\n§YIwo Jima§! - [GetIwoJimaOwner]\n§YSingapore§! - [GetSingaporeOwner]\n§YBatavia§! - [GetBataviaOwner]\n§YCanberra§! - [GetCanberraOwner]\n§YDelhi§! - [GetDelhiOwner]\n\n\n§YCurrent Score§!:\n\n[GER.GetFlag] §RAxis§!: [?global.axis_score]/§Y15§!\n\n[ENG.GetFlag] §CAllies§!: [?global.allies_score]/§Y15§!\n"
+vp_container_desc:0 "The winner of the game is the team who controls §Y11§! or more of the §Y15§! following Cities for §Y500 days§!:\n\n§YParis§! - [GetParisOwner]\n§YAmsterdam§! - [GetAmsterdamOwner]\n§YOslo§! - [GetOsloOwner]\n§YRome§! - [GetRomeOwner]\n\n§YGomel§! - [GetGomelOwner]\n§YLeningrad§! - [GetLeningradOwner]\n§YMoscow§! - [GetMoscowOwner]\n§YStalingrad§! - [GetStalingradOwner]\n\n§YBenghasi§! - [GetBenghasiOwner]\n§YCairo§! - [GetCairoOwner]\n\n§YIwo Jima§! - [GetIwoJimaOwner]\n§YSingapore§! - [GetSingaporeOwner]\n§YBatavia§! - [GetBataviaOwner]\n§YCanberra§! - [GetCanberraOwner]\n§YDelhi§! - [GetDelhiOwner]\n\n\n§YCurrent Score§!:\n\n[GER.GetFlag] §RAxis§!: [?global.axis_score]/§Y15§!\n\n[ENG.GetFlag] §CAllies§!: [?global.allies_score]/§Y15§!\n"
 
 vp_ticking_desc:0 "§YVictory is imminent. You can make this Pop-Up go away by clicking the box above.§!"
 
@@ -32,7 +32,7 @@ vp_score_text:0 "[GER.GetFlag] §RAxis§!: [?global.axis_score]/§Y15§!        
 vp_victory_paris:0"§YParis§! - [GetParisOwner]"
 vp_victory_amsterdam:0"§YAmsterdam§! - [GetAmsterdamOwner]"
 vp_victory_oslo:0"§YOslo§! - [GetOsloOwner]"
-vp_victory_london:0"§YLondon§! - [GetLondonOwner]"
+vp_victory_rome:0"§YRome§! - [GetRomeOwner]"
 
 vp_victory_gomel:0"§YGomel§! - [GetGomelOwner]"
 vp_victory_leningrad:0"§YLeningrad§! - [GetLeningradOwner]"
@@ -52,17 +52,12 @@ vp_victory_canberra:0"§YCanberra§! - [GetCanberraOwner]"
 
 
 
-
-
-
 vp_axis_owns:0 "[GER.GetFlag] §RAxis§!"
 vp_alies_owns:0 "[ENG.GetFlag] §CAllies§!"
 
 MOD_countdown_to_allied_victory_mission:0 "Imminent [ENG.GetFlag] §CAllied§! §YVictory§!"
 MOD_countdown_to_axis_victory_mission:0 "Imminent [GER.GetFlag] §RAxis§! §YVictory§!"
 
-
-SPA_civil_war_volunteer_limit:0 "Spanish Civil War Volunteer Limit (6 total)"
 
 allies_winning_tt:0 "Allies: §G[?global.allies_score]/15§! VP's"
 axis_winning_tt:0 "Axis: §R[?global.axis_score]/15§! VP's"

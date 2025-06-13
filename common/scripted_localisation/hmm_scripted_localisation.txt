@@ -251,12 +251,12 @@ defined_text = {
 	}
 }
 defined_text = {
-	name = GetLondonOwner
+	name = GetRomeOwner
 	text = {
 		trigger = {
 			any_country = {
 				axis = yes
-				controls_state = 126
+				controls_state = 2
 			}
 		}
 		localization_key = vp_axis_owns
@@ -265,7 +265,7 @@ defined_text = {
 		trigger = {
 			any_country = {
 				allies = yes
-				controls_state = 126
+				controls_state = 2
 			}
 		}
 		localization_key = vp_alies_owns

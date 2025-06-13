@@ -311,93 +311,8 @@ on_actions = {
 			
 		}
 	}
-	on_state_control_changed = {
-		effect = {
 
 
-			#VP System
-
-			if = {
-				limit = {
-					FROM.FROM = {
-						OR = {
-							state = 613 #Nanjing
-							state = 439 #Dehli
-							state = 447 #Alexandria
-							state = 450 #Benghasi
-							state = 7 #Amsterdam
-							state = 16 #Paris
-							state = 20 #Lyon
-							state = 224 #Bryansk
-							state = 219 #Moscow
-							state = 217 #Stalingrad
-						}
-					}
-				}
-				ROOT = { #gained controll (add var)
-					if = {
-						limit = {
-							allies = yes
-						}
-						add_to_variable = {
-							var = global.allies_score
-							value = 1
-						}
-						clamp_variable = {
-							var = global.allies_score
-							min = 0
-							max = 10
-						}
-					}
-					else_if = {
-						limit = { 
-							axis = yes
-						}
-						add_to_variable = {
-							var = global.axis_score
-							value = 1
-						}
-						clamp_variable = {
-							var = global.axis_score
-							min = 0
-							max = 10
-						}
-					}
-				}
-				FROM = { #lost controll (sub var)
-					if = {
-						limit = {
-							allies = yes
-						}
-						subtract_from_variable = {
-							var = global.allies_score
-							value = 1
-						}
-						clamp_variable = {
-							var = global.allies_score
-							min = 0
-							max = 10
-						}
-					}
-					else_if = {
-						limit = { 
-							axis = yes
-						}
-						subtract_from_variable = {
-							var = global.axis_score
-							value = 1
-						}
-						clamp_variable = {
-							var = global.axis_score
-							min = 0
-							max = 10
-						}
-					}
-				}
-			}
-
-		}
-	}
 	on_war_relation_added = {
         effect = {
             if = {
@@ -433,6 +348,10 @@ on_actions = {
 				limit = {
 					FROM = {
 						original_tag = SOV
+					}
+					has_game_rule = {
+							rule = vp_system
+							option = ENABLED
 					}
 				}
 				initilize_victory_system = yes

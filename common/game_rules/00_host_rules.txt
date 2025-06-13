@@ -94,11 +94,27 @@ select_host_country = {
 	}
 }
 
+vp_system = {
+	name = "Victory Points System"
+	group = "MSB Rules"
+	icon = GFX_decision_infiltrate_state
+	default = {
+		name = "ENABLED"
+		text = "Enabled"
+		desc = "Enable the Victory Points System (Hold 11/15 VP's for 500 days to win)"
+	}
+	option = {
+		name = "DISABLED"
+		text = "Disabled"
+		desc = "Disable the Victory Points System"
+	}
+
+}
 
 danzig_date_lock= {
 	name = "'Danzig or War' available date"
 	group = "MSB Rules"
-	icon = "GFX_decision_border_war"
+	icon = GFX_decision_border_war
 	default = {
 		name = locked
 		text = "Not available until June 1939"

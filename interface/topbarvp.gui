@@ -50,7 +50,7 @@ guiTypes = {
 	}
 	containerWindowType = {
 		name = "topbar_vp_ticking"
-		position = { x = -550 y = 30 }
+		position = { x = -590 y = 30 }
 		size = { width = 160 height = 30}
 		Orientation = UPPER_RIGHT
 		containerWindowType = {

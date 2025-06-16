@@ -1840,35 +1840,13 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				mio:FIN_sisu_auto_organization = {
-					add_mio_size = 1
-					add_mio_funds_gain_factor = 0.35
-					unlock_mio_trait_tooltip = FIN_mio_trait_yhteissisus_modern_premises
-				}
+			add_tech_bonus = {
+				name = FIN_contract_with_yhteissisu
+				bonus = 1
+				uses = 1
+				category = motorized_equipment
 			}
-			else = {
-				if = {
-					limit = {
-						has_idea = FIN_sisu_auto
-					}
-					swap_ideas = {
-						remove_idea = FIN_sisu_auto
-						add_idea = FIN_sisu_auto_improved
-					}
-				}
-				else = {
-					effect_tooltip = {
-						swap_ideas = {
-							remove_idea = FIN_sisu_auto
-							add_idea = FIN_sisu_auto_improved
-						}
-					}
-				}
-			}
+			
 		}
 	}
 

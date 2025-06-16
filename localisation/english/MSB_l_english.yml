@@ -29,6 +29,9 @@ msb.5.a: "Thanks for the Info"
 uk_texas_oil:0 "Texas Oil Rights"
 add_convoy:0 "Add Convoy"
 peace_training:0 "Peacetime Training"
+continuous_recruitment_drive:0 "Recruitment Drive"
+continuous_reduce_ship_training_time:0 "Navy Training"
+continuous_reduce_air_training_time:0 "Airforce Training"
 
 # RAJ
 RAJ_ghandi_path_tt:0 "Have Gandhi as country leader. When Gandhi's assassination attempt happens shortly after going independent, have finished Viceroy's Bodyguard and keep at least 1 cavalry division in Delhi so he survives."

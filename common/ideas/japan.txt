@@ -356,12 +356,12 @@ ideas = {
 			picture = jap_zaibatsu_control
 			
 			modifier = {
-				stability_factor = -0.1
+				stability_factor = -0.05
 				production_speed_industrial_complex_factor = 0.10
 				production_speed_arms_factory_factor = 0.10
-				production_speed_dockyard_factor = 0.15
+				production_speed_dockyard_factor = 0.20
 				consumer_goods_factor = 0.10
-				production_factory_start_efficiency_factor = 0.10
+				industrial_capacity_dockyard = 0.1
 			}
 		}
 

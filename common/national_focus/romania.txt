@@ -411,11 +411,11 @@ focus_tree = {
 	focus = {
 		id = ROM_expand_fuel_stockpiles
 		available = {
-			has_completed_focus = ROM_trade_treaty_with_germany
 		}
 		bypass = {
 		}
 		prerequisite = { focus = ROM_support_the_war_industry }
+		prerequisite = { focus = ROM_trade_treaty_with_germany }
 		
 		icon = GFX_focus_generic_stockpile_fuel
 		x = -1

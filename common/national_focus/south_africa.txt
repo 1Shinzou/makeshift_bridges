@@ -252,7 +252,7 @@ focus_tree = {
 	
 	focus = {
 		id = SAF_expand_manufacturing_industry
-		icon = GFX_goal_generic_consumer_goods
+		icon = GFX_SOV_eastern_development_ccp_2d_sov_compatibility
 		prerequisite = { focus = SAF_new_machine_tools }
 		x = 0
 		y = 1
@@ -298,7 +298,7 @@ focus_tree = {
 	
 	focus = {
 		id = SAF_shift_away_from_agrarianism
-		icon = GFX_focus_research
+		icon = GFX_SOV_the_trade_union_as_labor_organizer_ccp_2d_sov_compatibility
 		prerequisite = { focus = SAF_fund_the_university_of_south_africa }
 		x = 0
 		y = 3
@@ -336,7 +336,7 @@ focus_tree = {
 	
 	focus = {
 		id = SAF_electronic_engineering
-		icon = GFX_focus_research
+		icon = GFX_focus_ARG_develop_the_electricity_sector
 		prerequisite = { focus = SAF_fund_the_university_of_south_africa }
 		x = 1
 		y = 1
@@ -1036,7 +1036,7 @@ focus_tree = {
 	
 	focus = {
 		id = SAF_allied_research_effort
-		icon = GFX_focus_research
+		icon = GFX_focus_research2
 		prerequisite = { focus = SAF_lenz_bomb_factory }
 		x = 0
 		y = 1
@@ -1244,7 +1244,7 @@ focus_tree = {
 	
 	focus = {
 		id = SAF_field_marshall_jan_smuts
-		icon = GFX_goal_generic_construction2
+		icon = GFX_SOV_an_adaptable_army_ccp_2d_sov_compatibility
 		prerequisite = { focus = SAF_war_measures_act }
 		x = 1
 		y = 1

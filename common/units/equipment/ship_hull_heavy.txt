@@ -124,7 +124,7 @@ equipments = {
 		
 		surface_detection = 20
 		sub_detection = 1
-		surface_visibility = 20
+		surface_visibility = 30
 		naval_speed = 20
 		reliability = 0.80
 		
@@ -656,6 +656,7 @@ equipments = {
 			front_1_custom_slot = empty
 			rear_1_custom_slot = empty
 		}
+		surface_visibility = 40
 		naval_range = 4500
 		naval_speed = 24
 		max_strength = 700

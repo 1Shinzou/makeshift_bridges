@@ -55,7 +55,7 @@ JAP_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			research_speed_factor = 0.075
+			research_speed_factor = 0.05
 		}
 
 		complete_effect = {

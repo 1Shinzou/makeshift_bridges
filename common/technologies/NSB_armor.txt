@@ -1787,7 +1787,7 @@ technologies = {
 		
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 10 y = 6 }
+			position = { x = 9 y = @1938 }
 		}
 
 		enable_equipment_modules = {

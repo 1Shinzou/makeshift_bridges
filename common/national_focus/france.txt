@@ -3924,6 +3924,7 @@ focus = {
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 		completion_reward = {
 			
+			add_timed_idea = { idea = FRA_eco_post_cap_idea days = 60 }
 			EFR = {
 				every_army_leader = {
 					set_nationality = FRA
@@ -3939,7 +3940,7 @@ focus = {
 				type = industrial_complex
 				level = 4
 			}
-				add_timed_idea = { idea = FRA_eco_post_cap_idea days = 60 }
+				
 				add_ideas = SPA_death_before_surrender
 				add_state_core = 730
 				EFR = {

@@ -2,7 +2,6 @@
  
   # TOOL TIPS
   FRA_create_unit_mainland_tt:0 "Creates §Y50§! Infantry Divisions that will be §RRemoved§! upon Capitulation"
-  FRA_mobilize_railway_guns_tt:0 "Create §Y4 $railway_gun_equipment_1$§! units in [ROOT.capital.GetName]."
 
   # FOCUSES
   FRA_self_defense:0 "Responsible For Our Own Defense"

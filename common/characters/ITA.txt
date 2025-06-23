@@ -1056,7 +1056,7 @@ characters = {
 		}
 
 		navy_leader = {
-			traits = { aviation_enthusiast blockade_runner bold ironside }
+			traits = { aviation_enthusiast blockade_runner bold superior_tactician green_water_expert inshore_fighter }
 			skill = 4
 			attack_skill = 5
 			defense_skill = 2

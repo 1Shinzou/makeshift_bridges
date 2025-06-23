@@ -9112,7 +9112,7 @@ ai_will_do = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_claims_in_baltic
-		cost = 5
+		cost = 1
 		
 		ai_will_do = {
 			factor = 1
@@ -9175,7 +9175,7 @@ ai_will_do = {
 		x = 2
 		y = 1
 		relative_position_id = SOV_claims_in_baltic
-		cost = 5
+		cost = 1
 
 		ai_will_do = {
 			factor = 2.5

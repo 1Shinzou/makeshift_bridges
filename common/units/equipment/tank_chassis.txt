@@ -1333,6 +1333,10 @@ equipments = {
 			module = stabilizer
 			count < 2
 		}
+		module_count_limit = {
+			category = tank_secondary_turret
+			count < 4
+		}
 
 		default_modules = {
 			main_armament_slot = empty

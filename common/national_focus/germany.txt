@@ -7239,8 +7239,8 @@ focus_tree = {
             OR = {
                 date > 1937.6.1
                 custom_trigger_tooltip = {
-                    tooltip = GER_anschluss_eq_trigger_tt
-                    check_variable = { num_equipment_in_armies_k@infantry_equipment > 50 }
+                    tooltip = GER_msb_anschluss_eq_trigger_tt
+                    check_variable = { num_equipment_in_armies_k@infantry_equipment > 40 }
                 }
             }
         }

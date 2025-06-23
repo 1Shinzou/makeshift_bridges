@@ -36,7 +36,8 @@ continuous_reduce_air_training_time:0 "Airforce Training"
 # RAJ
 RAJ_ghandi_path_tt:0 "Have Gandhi as country leader. When Gandhi's assassination attempt happens shortly after going independent, have finished Viceroy's Bodyguard and keep at least 1 cavalry division in Delhi so he survives."
 
-
+# GER
+GER_msb_anschluss_eq_trigger_tt:0 "More than §Y40.000§! infantry equipment in the army"
 
 #italian_arms_discount:0 "Bresica Small Arms Industry"
 #greater_italy_required_other_states:0 "Italy or a subject of Italy control \n§YSuez§! \n§YCorsica§! \n§YSavoy§! \n§YZara§! \n§YDalmatia§! \n§YLjubljana§! \n§YMalta§! \n§YCrete§! \n§YDodecaneso§!"

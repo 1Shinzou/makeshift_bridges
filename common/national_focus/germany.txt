@@ -7138,7 +7138,7 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			NOT = { has_global_flag = scw_over }
+			# NOT = { has_global_flag = scw_over }
 		}
 
 		continue_if_invalid = yes

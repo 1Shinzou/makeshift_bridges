@@ -10331,30 +10331,7 @@ focus_tree = {
 		cost = 5
 
 		bypass = {
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				OR = {
-					has_global_flag = scw_over
-					AND = {
-						has_global_flag = spanish_civil_war
-						NOT = { country_exists = SPA }
-					}
-				}
-			}
-			else = {
-				has_global_flag = spanish_civil_war
-				NOT = {
-					any_country = {
-						original_tag = SPR
-						OR = {
-							has_government = fascism
-							has_civil_war = yes
-						}
-					}
-				}
-			}
+
 		}
 
 		available = {

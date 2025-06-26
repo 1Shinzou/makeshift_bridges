@@ -2059,6 +2059,64 @@ on_actions = {
 
 		on_startup = {
 		effect = {
+				if = {
+				limit = {
+					has_game_rule = {
+						rule = tradebacks
+						option = on
+					}
+				}
+				every_country = {
+					limit = {
+						is_playable_country = yes
+					}
+					add_ideas = tradeback_is_cancer
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = tradebacks
+						option = no_export
+					}
+				}
+				every_country = {
+					limit = {
+						is_playable_country = yes
+					}
+					add_ideas = tradeback_is_cancer_no_export
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = tradebacks
+						option = not_allies
+					}
+				}
+				every_country = {
+					limit = {
+						AND = {
+							is_playable_country = yes
+							NOT = {
+								tag = USA
+								tag = ENG
+								tag = CAN
+								tag = BRA
+								tag = MEX
+								tag = IRE
+								tag = SAF
+								tag = AST
+								tag = NZL
+								tag = RAJ
+								tag = NOR
+								tag = FRA
+							}
+						}
+					}
+					add_ideas = tradeback_is_cancer
+				}
+			}
 			if = { #sov civs
 			limit = {
 				has_game_rule = {

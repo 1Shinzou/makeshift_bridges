@@ -111,6 +111,32 @@ vp_system = {
 
 }
 
+tradebacks = {
+	name = "Tradeback Idea"
+	group = "MSB Rules"
+	icon = GFX_decision_generic_forestry
+	default = {
+		name = off
+		text = "GOff"
+		desc = "No tradeback idea (Recommmended)"
+	}
+	option = {
+		name = on
+		text = "ROn"
+		desc = "Everyone has a tradeback idea that givens -100% missing resource penalty. (Not Recommmended)"
+	}
+	option = {
+		name = no_export
+		text = "BNo Exports"
+		desc = "Everyone has a tradeback idea that givens -100% missing resource penalty and no exports. (Not Recommmended)"
+	}
+	option = {
+		name = not_allies
+		text = "YNot Allies"
+		desc = "Everyone has no tradeback idea except for Allies. (Not Recommmended)"
+	}
+}
+
 danzig_date_lock= {
 	name = "'Danzig or War' available date"
 	group = "MSB Rules"

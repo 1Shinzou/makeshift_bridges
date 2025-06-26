@@ -235,6 +235,10 @@ country_event = {
 		hidden_effect = {
 			
 			GER = {
+				add_named_threat = { 
+					threat = 10
+					name = fall_of_france
+				}
 				custom_effect_tooltip = GER_modify_economy_of_conquest_modifier_tt
 				add_to_variable = { 
 					GER_industrial_consumer_goods_factor = -0.2

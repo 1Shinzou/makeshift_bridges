@@ -91,7 +91,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 150
 
-			add_offsite_building = { type = industrial_complex level = 20 } 
+			add_offsite_building = { type = industrial_complex level = 10 } 
 			
 			hidden_effect = {
 				if = {
@@ -352,6 +352,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
+			add_offsite_building = { type = industrial_complex level = 10 } 
 			USA_great_depression_level_down = yes
 			USA_congress_medium_opposition = yes
 			custom_effect_tooltip = federal_housing_tt

@@ -1262,6 +1262,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			add_ideas = SAF_military_complex_expansion 
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {

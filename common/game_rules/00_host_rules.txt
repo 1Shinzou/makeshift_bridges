@@ -154,8 +154,8 @@ china_war_difficulty = {
 	}
 	default = {
 		name = yes
-		text = "GHard"
-		desc = "China will get 62 divisions in total which are all fully equipped (Recommmended)"
+		text = "GNormal"
+		desc = "China will get 62 divisions in total which are all fully equipped (Recommended)"
 	}
 }
 

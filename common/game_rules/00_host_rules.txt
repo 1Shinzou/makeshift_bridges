@@ -148,14 +148,14 @@ china_war_difficulty = {
 	group = "MSB Rules"
 	icon = "GFX_decision_jap_conquer_china"
 	option = {
-		name = yes
-		text = "RHard"
-		desc = "China will get 62 divisions in total which are all fully equipped (Not Recommmended)"
+		name = no
+		text = "REasy"
+		desc = "China will get no divisions at all (Not Recommmended)"
 	}
 	default = {
-		name = no
-		text = "GEasy"
-		desc = "China will get no divisions at all (Recommmended)"
+		name = yes
+		text = "GHard"
+		desc = "China will get 62 divisions in total which are all fully equipped (Recommmended)"
 	}
 }
 
@@ -245,15 +245,16 @@ japan_closed_eco = {
 	group = "Economic Adjustments"
 	icon = "GFX_decision_jap_pacific_guardian"
 	default = {
-		name = off
-		text = "GOff"
-		desc = "Japan starts on limited exports (Recommmended)"
+		name = on
+		text = "GOn"
+		desc = "Japan starts the game on closed eco with free trade bonuses which cannot be changed"
 	}
 	option = {
-		name = on
-		text = "ROn"
-		desc = "Japan starts the game on closed eco with free trade bonuses which cannot be changed (Not Recommmended)"
+		name = off
+		text = "ROff"
+		desc = "Japan starts on limited exports"
 	}
+	
 }
     
   

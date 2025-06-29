@@ -1,5 +1,15 @@
 spriteTypes = {
-	
+
+	spriteType = {
+		name = "startup"
+		texturefile = "gfx/event_pictures/startup.dds"
+	}
+
+	spriteType = {
+		name = "grape_startup"
+		texturefile = "gfx/event_pictures/grape_startup.dds"
+	}
+
 	spriteType = {
 		name = "GFX_report_event_canada_ronnie"
 		texturefile = "gfx/event_pictures/report_event_canada_ronnie.dds"

@@ -147,8 +147,15 @@ on_actions = {
                 limit = {
                     date < 1936.1.22
                 }
+                random_country = { news_event = { id = msb.6 } }
+            }
+			if = {
+                limit = {
+                    date < 1936.1.21
+                }
                 random_country = { news_event = { id = msb.1 } }
             }
+			
 		}	
 	}
 	on_monthly = {

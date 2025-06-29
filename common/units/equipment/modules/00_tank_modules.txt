@@ -28,7 +28,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 1 
 			fuel_consumption = 2
-			reliability = 0.3
+			reliability = 0.25
 		}
 		multiply_stats = {  }
 	}
@@ -156,7 +156,7 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 1
-			reliability = 0.2
+			reliability = 0.15
 		}
 		dismantle_cost_ic  = 2
 
@@ -519,8 +519,8 @@ equipment_modules = {
 		
 		add_stats = {
 			build_cost_ic = 5
-			reliability = 0.2
-			defense = 3
+			reliability = 0.4
+			defense = 5
 		}
 
 		multiply_stats = {
@@ -906,7 +906,7 @@ equipment_modules = {
 			ap_attack = 90
 			build_cost_ic = 4
 			maximum_speed = -0.3
-			reliability = -0.15
+			reliability = -0.20
 			breakthrough = 4
 		}
 		dismantle_cost_ic = 1
@@ -934,7 +934,7 @@ equipment_modules = {
 			ap_attack = 90
 			build_cost_ic = 6
 			maximum_speed = -0.3
-			reliability = -0.15
+			reliability = -0.25
 			breakthrough = 4
 		}
 		dismantle_cost_ic = 1
@@ -1102,7 +1102,7 @@ equipment_modules = {
 			ap_attack = 125
 			build_cost_ic = 5
 			maximum_speed = -0.3
-			reliability = -0.175
+			reliability = -0.25
 		}
 		dismantle_cost_ic = 1
 		
@@ -1463,9 +1463,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			reliability = 0.25
+			reliability = 0.15
 			max_strength = 1
-			build_cost_ic = 1
 		}
 		
 		multiply_stats = {
@@ -1544,10 +1543,10 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			reliability = 0.10
+			reliability = 0.1
 		}
 		dismantle_cost_ic = 1
-		xp_cost = 30
+		# xp_cost = 30
 		multiply_stats = {
 			build_cost_ic = -0.10
 		}

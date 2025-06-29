@@ -115,7 +115,7 @@ equipments = {
 		hg_attack = 0
 		
 		torpedo_attack = 0
-		sub_attack = 0
+		sub_attack = 0.1
 		
 		anti_air_attack = 0
 		

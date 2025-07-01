@@ -13,7 +13,7 @@ msb.1.a: "Okay, Thank You"
 msb.1.desc: "Every Tile is 80-width\nMIO's are railroaded\nThe Tank Designer is reworked\nFlatter Army/Navy/Air Experience System\nLand Doctrines reworked (GBP & Mass Assault-R untouched)\nMasterful Blitz counters Guerilla Tactics\nSpecial Forces Doctrine grants 10% Attack to each specific SF Unit (Mountaineer/Marine/Paratrooper)\n Artillery Rework:\n - More Breakthrough\n - More Defense\n - More Soft Attack"
 msb.6.t: ""
 msb.6.a: "Fair winds and following seas"
-msb.6.desc: "\n\n\n - Massively punished deathstacking. Large fleets can still work, but are be vulnerable to smaller, elite fleets with air cover. Fleet size positioning penalties start in at above 25 ships.\n - Increased supremacy from “Patrol” and “Convoy Raid” to encourage active navies.\n - Increased the power of light ships and reduced power of heavy ships. Expensive ships are less IC efficient, but win through concentration of force due to positioning changes.\nFor more Info check out the "Grape Naval Fix" steam description"
+msb.6.desc: "\n\n - Massively punished deathstacking. Large fleets can still work, but are be vulnerable to smaller, elite fleets with air cover. Fleet size positioning penalties start in at above 25 ships.\n - Increased supremacy from “Patrol” and “Convoy Raid” to encourage active navies.\n - Increased the power of light ships and reduced power of heavy ships. Expensive ships are less IC efficient, but win through concentration of force due to positioning changes.\n\nFor more Info check out the "Grape Naval Fix" steam description"
 
 # Bookmark No-Asia Event
 msb.2.t: "No-Asia World Tension Compensation"

@@ -15428,8 +15428,11 @@ focus_tree = {
 
         available = {
             has_country_flag = gandhi_survives_assasination_attempt
-            custom_effect_tooltip = RAJ_ghandi_path_tt
+              custom_trigger_tooltip = {
+                    tooltip = RAJ_ghandi_path_tt
+                }
         }
+
         
         bypass = {
 
@@ -15450,7 +15453,6 @@ focus_tree = {
         search_filters = {FOCUS_FILTER_POLITICAL}
 
         completion_reward = {
-                custom_effect_tooltip = RAJ_ghandi_path_tt
             if = {
                 limit = {
                     NOT = { 

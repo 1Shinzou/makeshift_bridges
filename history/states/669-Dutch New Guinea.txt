@@ -6,11 +6,8 @@ state={
 	state_category = pastoral
 
 	history= {
-				# Less Minors + Scraping
-		1936.1.1.15 = { owner = RAJ add_core_of = AST}
-		1936.1.1.14 = { owner = RAJ add_core_of = AST }
-		owner = AST
-		add_core_of = AST
+		owner = HOL
+		add_core_of = WST
 		victory_points = {
 			12371 1 
 		}

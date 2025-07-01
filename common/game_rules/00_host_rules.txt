@@ -250,6 +250,23 @@ Germany_Cancel_Mefo= {
 
 }
 
+ger_autarky= {
+	name = "Is Germany is allowed to do 'Autarky Achieved'?"
+	group = "Economic Adjustments"
+	icon = GFX_decision_ger_reichskommissariats
+	default = {
+		name = banned
+		text = "Germany cant do 'Autarky Achieved'"
+		desc = ""
+	}
+	option = {
+		name = allowed
+		text = "Germany can do 'Autarky Achieved'"
+		desc = ""
+	}
+
+}
+
 sov_closed_eco = {
 	name = "Soviet Closed Economy"
 	group = "Economic Adjustments"

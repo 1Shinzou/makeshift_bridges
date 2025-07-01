@@ -177,44 +177,44 @@ operations = {
 				}
 			}
 		}
-    	annex_east_indies = {
-			# icon = generic_operation
-			allowed = {
-				tag = USA
-			}
-			fire_only_once = yes
-			cost = 0
-			ai_will_do = {
-				factor = 0
-			}
-			available = {
-                date > 1940.03.01
-				HOL = {
-                    has_capitulated = yes
-					is_ai = yes
-				}
-			}
-			targets = {
-				HOL	
-			}
-			complete_effect = {
-		
-				USA = {
-               	    transfer_state = 672
-			        transfer_state = 334
-			        transfer_state = 335
-			        transfer_state = 667
-			        transfer_state = 673
-			        transfer_state = 668
-			        transfer_state = 669
-			        transfer_state = 309
-			        transfer_state = 695
-                    transfer_state = 721 
-                    transfer_state = 738   
-				}
-		
-			}
-		}
+    #	annex_east_indies = {
+	#		# icon = generic_operation
+	#		allowed = {
+	#			tag = USA
+	#		}
+	#		fire_only_once = yes
+	#		cost = 0
+	#		ai_will_do = {
+	#			factor = 0
+	#		}
+	#		available = {
+    #            date > 1940.03.01
+	#			HOL = {
+    #                has_capitulated = yes
+	#				is_ai = yes
+	#			}
+	#		}
+	#		targets = {
+	#			HOL	
+	#		}
+	#		complete_effect = {
+	#	
+	#			USA = {
+    #           	    transfer_state = 672
+	#		        transfer_state = 334
+	#		        transfer_state = 335
+	#		        transfer_state = 667
+	#		        transfer_state = 673
+	#		        transfer_state = 668
+	#		        transfer_state = 669
+	#		        transfer_state = 309
+	#		       # transfer_state = 695
+    #                transfer_state = 721 
+    #                transfer_state = 738   
+	#			}
+	#	
+	#		}
+	#	}
 }
 political_actions = {
 

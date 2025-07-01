@@ -206,24 +206,25 @@ operations = {
 			        transfer_state = 667
 			        transfer_state = 673
 			        transfer_state = 668
-			        transfer_state = 669
+			        #transfer_state = 669
 			        transfer_state = 309
-			        transfer_state = 695
+			        #transfer_state = 695
                     transfer_state = 721 
                     transfer_state = 738   
 				}
 		
 			}
 		}
-}
-political_actions = {
+    }
 
-   uk_texas_oil = {
-        icon = GFX_decision_oil
-        allowed = {
-            tag = ENG
-        }
-        fire_only_once = yes
+    political_actions = {
+
+        uk_texas_oil = {
+            icon = GFX_decision_oil
+            allowed = {
+                tag = ENG
+            }
+            fire_only_once = yes
             cost = 0
             ai_will_do = {
                 factor = 0
@@ -244,7 +245,7 @@ political_actions = {
 				}
                 }
             }
-    }
+        }
 
 	move_capital_to_cascablanca = {
 		fire_only_once = yes

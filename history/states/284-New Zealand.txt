@@ -3,6 +3,10 @@ state={
 	id=284
 	name="STATE_284" # North Island
 	manpower = 899836
+	resources={
+		steel= 10
+		oil = 5
+	}
 	
 	state_category = city
 	

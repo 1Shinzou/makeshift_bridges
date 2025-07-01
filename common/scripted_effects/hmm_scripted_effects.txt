@@ -72,9 +72,9 @@ hmm_capitulations_on_actions = {
 			transfer_state = 667
 			transfer_state = 673
 			transfer_state = 668
-			transfer_state = 669
+			#transfer_state = 669
 			transfer_state = 309
-			transfer_state = 695
+			#transfer_state = 695
 		}
 	}
 

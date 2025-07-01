@@ -648,7 +648,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer harsh_leader trait_SPA_nationalist_sympathies organizer panzer_leader cavalry_leader infantry_leader commando skilled_staffer hill_fighter desert_fox }
+			traits={ trickster career_officer harsh_leader trait_SPA_nationalist_sympathies organizer panzer_leader cavalry_leader infantry_leader commando skilled_staffer hill_fighter desert_fox }
 			skill = 6
 			attack_skill = 6
 			defense_skill = 4

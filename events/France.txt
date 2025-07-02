@@ -233,7 +233,17 @@ country_event = {
 			factor = 50
 		}
 		hidden_effect = {
-			
+			every_country = {
+				limit = {
+					is_in_faction_with = GER
+					NOT = { has_war_with= ENG }
+					NOT = { original_tag = SPR }
+				}
+				add_timed_idea = {
+					idea = WAR_join
+					days = 1
+				}
+			}
 			GER = {
 				add_named_threat = { 
 					threat = 10

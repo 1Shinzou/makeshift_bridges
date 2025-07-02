@@ -69,14 +69,13 @@ ideas = {
 			modifier = {
 			}
 			on_remove = {
-					add_to_war = {
-						targeted_alliance = GER
-						enemy = ENG
-						hostility_reason = asked_to_join
-					}
+				add_to_war = {
+					targeted_alliance = GER
+					enemy = ENG
+					hostility_reason = asked_to_join
+				}
 			}
-			}
-		
+		}	
 	}
 	hidden_ideas = {
 		blm_ai = {

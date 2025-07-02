@@ -2713,7 +2713,11 @@ focus_tree = {
         		}
             }
         completion_reward = {
-			
+			declare_war_on = {
+					target = ENG
+					type = take_state_focus
+					generator = { 206 }
+				}
 			add_named_threat = {
 				threat = 3
 				name = SPR_Porgual

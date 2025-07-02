@@ -1130,7 +1130,7 @@ on_actions = {
 				}
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_0
-					amount = 7733
+					amount = 27733
 				}
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_1

@@ -1,3 +1,11 @@
+E_ll = {
+	icon = GFX_decision_categ
+
+	allowed = {
+		always = yes
+	}
+}
+
 Technologies = {
 	icon = generic_propaganda
 

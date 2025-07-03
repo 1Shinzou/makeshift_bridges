@@ -1330,6 +1330,81 @@ ideas = {
 				consumer_goods_factor = 0.1
 			}
 		}
+
+		# MSB / TFB
+
+		USA_vic_plan = {
+			allowed = {
+				always = no
+			}
+			picture = man_five_year_plan_tank
+			removal_cost = -1
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				consumer_goods_factor = -0.15
+				conscription_factor = 0.2
+				local_resources_factor = 0.2
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.2
+				production_speed_arms_factory_factor = 0.2
+				production_speed_synthetic_rubber_refinery_factor = 0.2
+			}
+			equipment_bonus = {
+				fighter_equipment = {
+					air_range = 0.1 instant = yes
+					build_cost_ic = -0.2 instant = yes
+				}
+				heavy_fighter_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				cv_fighter_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+
+		allied_vic_plan = {
+				allowed = {
+				always = no
+			}
+			picture = man_five_year_plan_tank
+			removal_cost = -1
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_arms_factory_factor = 0.2
+				consumer_goods_factor = -0.15
+				conscription_factor = 0.05
+				local_resources_factor = 0.1
+			}
+		}
+
+			USA_all_in = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = eng_imperial_conscription
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_speed_factor = 0.1
+				naval_invasion_capacity = 100
+				navy_max_range_factor = 1
+			}
+		}
 	
 	}
 	

@@ -54,9 +54,16 @@ GER_msb_anschluss_eq_trigger_tt:0 "More than §Y40.000§! infantry equipment in 
 #italian_arms_discount:0 "Bresica Small Arms Industry"
 #greater_italy_required_other_states:0 "Italy or a subject of Italy control \n§YSuez§! \n§YCorsica§! \n§YSavoy§! \n§YZara§! \n§YDalmatia§! \n§YLjubljana§! \n§YMalta§! \n§YCrete§! \n§YDodecaneso§!"
 
-
+# SOV
 SOV_collectivized_society:0 "Collectivized Society"
 stalin_they_will_know_fear:0 "They will know Fear"
+
+# USA
+USA_vic_plan:0 "Victory Plan"
+allied_vic_plan:0 "Allied Victory Plan"
+USA_all_in:0 "All-In"
+USA_victory_plan:0 "Implement The Victory Plan"
+USA_victory_plan_desc:0 "In 1941, a team of officers led by General Albert Wedemeyer on behalf of General George C. Marshall drew up the Victory Program, whose premise was that the Soviet Union would be defeated that year, and that to defeat Nazi Germany would require the United States to raise by the summer of 1943 a force of 215 divisions comprising 8.7 million men."
 
 # VP NAMES MAP MODDING
   VICTORY_POINTS_7985:0 "Maradah"

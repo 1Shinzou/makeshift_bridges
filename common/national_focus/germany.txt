@@ -9777,7 +9777,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_war_with_france
-		cost = 10
+		cost = 5
 		available = {
 			
 		}
@@ -9785,7 +9785,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			add_ideas = SWI_trading_with_switzerland_military
+			# add_ideas = SWI_trading_with_switzerland_military
 			if = { #This is so that it shows "Modify NS" by default, since most likely Anschluss will be completed and NS will be there. But if Anschluss is bypassed without getting the DM, the tooltip will be adjusted.
 				limit = {
 					NOT = { has_completed_focus = GER_anschluss }

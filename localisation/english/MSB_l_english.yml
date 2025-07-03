@@ -88,3 +88,32 @@ STATE_1017:0 "North Wales"
  SCRAPING_SCRAP_DESC:0 "This game mode takes 'No-Asia' and throws out more minor nations, so that there are 9 playable countries in total. Perfect game mode for when you are lacking players in general. The UK in this game mode starts with 5 research slots to compensate the loss of US research. The UK and the Soviet Union start with an extra 16 off-map civilian factories to compensate for the loss of US IC and Trade. Additionally the UK gets the east coast of the USA annexed in 1941."
  NO_ASIA_NAME:0 "No-Asia"
  NO_ASIA_DESC:0 "The entire Pacific Theater is removed from the game. Every nation that usually joins the War after 1941+ is not present here. The UK in this game mode starts with 5 research slots to compensate the loss of US research. The UK and the Soviet Union start with an extra 16 off-map civilian factories to compensate for the loss of US IC and Trade. Additionally the UK gets the east coast of the USA annexed in 1941."
+
+  # Template decisions category and decisions
+ templates:0 "Division Templates"
+ templates_desc:0 "Create predefined division templates with a single click."
+ 
+ Hide_Templates:0 "Hide Template Decisions"
+ Hide_Templates_desc:0 "Hide all template decisions to declutter your decision view."
+ 
+ Show_Templates:0 "Show Template Decisions"
+ Show_Templates_desc:0 "Show all template decisions."
+ 
+ cav:0 "Create Cavalry Garrison Template"
+ cav_desc:0 "Create a 25-battalion cavalry division template for garrison duty."
+ 
+ a2cw:0 "Create 2W Infantry Template"
+ a2cw_desc:0 "Create a minimal 2-width infantry division template for FALS conversion."
+ 
+ a20cw:0 "Create 20W Infantry Template"
+ a20cw_desc:0 "Create a 20-width infantry division (10 battalions) template."
+
+ a26cw:0 "Create 26W Infantry Template"
+ a26cw_desc:0 "Create a 26-width infantry division (13 battalions) template."
+ 
+ a40cw:0 "Create 40W Infantry Template"
+ a40cw_desc:0 "Create a 40-width infantry division (20 battalions) template."
+ 
+ a50cw:0 "Create 50W Infantry Template"
+ a50cw_desc:0 "Create a 50-width infantry division (25 battalions) template."
+ 

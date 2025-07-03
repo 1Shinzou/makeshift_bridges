@@ -252,6 +252,7 @@ if = { #DLC
 	recruit_character = BUL_nikola_nakov #Starts as empty, can become unit leader later
 
 	activate_advisor = BUL_georgi_ivanov_kyoseivanov
+	activate_advisor = BUL_ivan_dochev
 
 	if = {
 		limit = {

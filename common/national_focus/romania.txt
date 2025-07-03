@@ -1645,7 +1645,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = ROM_expand_the_air_force }
 		relative_position_id = ROM_expand_the_air_force
-		cost = 10
+		cost = 5
 
 		available = {
 			has_war = yes
@@ -1939,7 +1939,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_army_maneuvers
 
-		cost = 10
+		cost = 5
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -2039,7 +2039,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_army_maneuvers
 
-		cost = 10
+		cost = 5
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2194,14 +2194,13 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_expand_the_army
 
-		cost = 10
+		cost = 5
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		available = { 	
-			has_tech = improved_equipment_conversion 
 		}
 
 		completion_reward = {
@@ -2223,7 +2222,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_import_and_convert_antique_artillery
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2250,7 +2249,7 @@ focus_tree = {
 			add_tech_bonus = {
 				category = support_tech
 				uses = 2
-				bonus = 1
+				bonus = 0.5
 				name = ROM_organizing_logistics
 			}
 		}

@@ -351,10 +351,18 @@ on_actions = {
 				}
 			}
 			47 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 10
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 10
+					instant_build = yes
+				}
+			}
+			185 = {
+				add_extra_state_shared_building_slots = 7
+				add_building_construction = {
+					type = arms_factory
+					level = 7
 					instant_build = yes
 				}
 			}

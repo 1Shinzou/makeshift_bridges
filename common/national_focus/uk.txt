@@ -2853,7 +2853,7 @@ focus_tree = {
 				add_ideas = ENG_british_commonwealth_air_training_plan_1
 			}
 			ENG = {
-				add_ideas = ENG_the_plan
+				# add_ideas = ENG_the_plan
 				add_ideas = ENG_quality_RAF_pilots
 			}
 		}

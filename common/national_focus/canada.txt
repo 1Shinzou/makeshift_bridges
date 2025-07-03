@@ -2646,7 +2646,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2670,7 +2670,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = ENG_quality_RAF_pilots
-			add_ideas = CAN_the_plan
+			# add_ideas = CAN_the_plan
 		}
 	}
 

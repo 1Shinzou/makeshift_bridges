@@ -10,6 +10,7 @@ state={
 		owner = ITA
 		buildings = {
 			infrastructure = 2
+			air_base = 2
 		4057 = {
 				naval_base = 1
 			}

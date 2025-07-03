@@ -1151,19 +1151,19 @@ technologies = {
 		}
 		
 		artillery_brigade = {
-			combat_width = -0.2
+			combat_width = -0.3
 		}
 
 		rocket_artillery_brigade = {
-			combat_width = -0.2
+			combat_width = -0.3
 		}
 
 		mot_artillery_brigade = {
-			combat_width = -0.2
+			combat_width = -0.3
 		}
 
 		mot_rocket_artillery_brigade = {
-			combat_width = -0.2
+			combat_width = -0.3
 		}
 
 		signal_company = {

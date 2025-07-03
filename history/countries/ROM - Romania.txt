@@ -153,7 +153,7 @@ add_ideas = ROM_romanian_officers
 add_ideas = ROM_iron_guard
 add_ideas = ROM_king_carol_ii_hedonist
 
-set_convoys = 60
+set_convoys = 100
 
 set_politics = {
 	ruling_party = democratic

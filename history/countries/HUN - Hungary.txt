@@ -1,5 +1,5 @@
 ﻿capital = 43 # Budapest (Northern Hungary)
-
+set_convoys = 50
 IF = {
 	limit = {
 		has_dlc = "Gotterdammerung"

@@ -1174,53 +1174,29 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			effect_tooltip = {
-				IF = {
-					limit = { has_dlc = "Arms Against Tyranny"}
-					unlock_decision_category_tooltip = foreign_mio_decisions_category
-				}
-				ELSE = {
-					if = {
-						limit = {
-							country_exists = GER
-							NOT = { has_war_with = GER }
-							GER = { BUL_is_valid_subject = yes }
-						}
-						activate_targeted_decision = { target = GER decision = BUL_military_agreements }
-					}
-					if = {
-						limit = {
-							country_exists = ENG
-							NOT = { has_war_with = ENG }
-							ENG = { BUL_is_valid_subject = yes }
-						}
-						activate_targeted_decision = { target = ENG decision = BUL_military_agreements }
-					}
-					if = {
-						limit = {
-							country_exists = SOV
-							NOT = { has_war_with = SOV }
-							SOV = { BUL_is_valid_subject = yes }
-						}
-						activate_targeted_decision = { target = SOV decision = BUL_military_agreements }
-					}
-					if = {
-						limit = {
-							country_exists = ITA
-							NOT = { has_war_with = ITA }
-							ITA = { BUL_is_valid_subject = yes }
-						}
-						activate_targeted_decision = { target = ITA decision = BUL_military_agreements }
-					}
+			add_political_power = -550
+			random_owned_state = { 
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
 				}
 			}
-			hidden_effect = {
-				IF = {
-					limit = { NOT = { has_dlc = "Arms Against Tyranny"} }
-					activate_targeted_decision = { target = GER decision = BUL_military_agreements }
-					activate_targeted_decision = { target = ENG decision = BUL_military_agreements }
-					activate_targeted_decision = { target = SOV decision = BUL_military_agreements }
-					activate_targeted_decision = { target = ITA decision = BUL_military_agreements }
+			random_owned_state = { 
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+			random_owned_state = { 
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
 				}
 			}
 		}

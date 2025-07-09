@@ -552,7 +552,7 @@ characters={
 			}
 
 			field_marshal={
-				traits={ logistics_wizard organisational_leader expert_delegator }
+				traits={ logistics_wizard organisational_leader expert_delegator trait_SPA_nationalist_sympathies }
 				skill=3
 				attack_skill=3
 				defense_skill=2

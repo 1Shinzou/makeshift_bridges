@@ -188,7 +188,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = SPA_a_great_spain
-		cost = 5
+		cost = 1
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
@@ -210,7 +210,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_hand_over_the_ceda_campaign_chest
-		cost = 4
+		cost = 1
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SPA_CIVIL_WAR}
@@ -239,7 +239,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_negotiate_carlist_support
-		cost = 5
+		cost = 1
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_SPA_CIVIL_WAR}
@@ -263,7 +263,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_the_army_of_africa
-		cost = 5
+		cost = 1
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_SPA_CIVIL_WAR}
@@ -345,7 +345,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_secure_the_northern_garrisons
-		cost = 4
+		cost = 1
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_SPA_CIVIL_WAR}
@@ -838,7 +838,7 @@ focus_tree = {
 		prerequisite = { focus = SPA_fuse_the_parties }
 		
 		icon = GFX_goal_generic_army_doctrines
-		x = -2
+		x = -4
 		y = 1
 		relative_position_id = SPA_fuse_the_parties
 		cost = 5
@@ -1085,7 +1085,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SPA_autarky }
 		
 		icon = GFX_goal_generic_construction
-		x = -10
+		x = -17
 		y = 2
 		relative_position_id = SPA_fuse_the_parties
 		cost = 10
@@ -1432,6 +1432,520 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = SPA_the_stabilization_plan
+		available = {
+			NOT = { has_completed_focus = SPA_expand_the_axis_gold_trade }
+
+		}
+		bypass = {
+		}
+		#prerequisite = { focus = SPA_join_the_allies }
+		prerequisite = { focus = SPA_national_recovery }
+		
+		icon = GFX_goal_generic_neutrality_focus
+		x = 5
+		y = 1
+		relative_position_id = SPA_national_recovery
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = SPA_recovering_from_civil_war
+						has_idea = SPA_recovering_from_civil_war_2
+					}
+				}
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = SPA_recovering_from_civil_war
+						add_idea = SPA_recovering_from_civil_war_2
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_idea = SPA_recovering_from_civil_war
+				}
+				swap_ideas = {
+					remove_idea = SPA_recovering_from_civil_war
+					add_idea = SPA_recovering_from_civil_war_2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = SPA_recovering_from_civil_war_2
+				}
+				swap_ideas = {
+					remove_idea = SPA_recovering_from_civil_war_2
+					add_idea = SPA_recovering_from_civil_war_3
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_expand_spanish_bases
+		available = {
+
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_the_stabilization_plan }
+		
+		icon = GFX_goal_generic_construct_military
+		x = 0
+		y = 1
+		relative_position_id = SPA_the_stabilization_plan
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			171 = { #Galicia
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					province = 758
+					instant_build = yes
+				}							
+			}
+			790 = { #Asturias
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					province = 11707
+					instant_build = yes
+				}							
+			}
+			792 = { #Basque
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					province = 740
+					instant_build = yes
+				}							
+			}
+			165 = { #Catalonia
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					province = 9764
+					instant_build = yes
+				}							
+			}
+			167 = { #Valencia
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					province = 6906
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					province = 4098
+					instant_build = yes
+				}						
+			}
+			168 = { #Murcia
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					province = 10024
+					instant_build = yes
+				}							
+			}
+			173 = { #Granada
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					province = 747
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					province = 9979
+					instant_build = yes
+				}						
+			}
+			169 = { #Sevilla
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					province = 1048
+					instant_build = yes
+				}							
+			}
+			41 = { #Madrid
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}							
+			}
+			177 = { #Baleares
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					province = 9793
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					province = 7114
+					instant_build = yes
+				}							
+			}
+			178 = { #Canary Islands
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					province = 13071
+					instant_build = yes
+				}							
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_capitalist_economic_aid
+		available = {
+
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_expand_spanish_bases }
+		prerequisite = { focus = SPA_reduce_reliance_on_foreign_resources }
+		mutually_exclusive = { focus = SPA_expand_the_axis_gold_trade }
+		
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 0
+		y = 2
+		relative_position_id = SPA_expand_spanish_bases
+		cost = 10
+
+		available_if_capitulated = yes
+		complete_tooltip = {
+			every_state = {
+				limit	= {	has_state_flag = SPA_capitalist_economic_aid_2civ }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			add_tech_bonus = {
+				name = SPA_capitalist_economic_aid
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+					}
+					is_core_of = ROOT
+				}
+				set_state_flag = SPA_capitalist_economic_aid_2civ
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			remove_ideas = SPA_recovering_from_civil_war_3
+			swap_ideas = {
+				remove_idea = SPA_national_recovery_3
+				add_idea = SPA_national_recovery_4
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_improve_living_standards
+		available = {
+
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_capitalist_economic_aid }
+		
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 1
+		relative_position_id = SPA_capitalist_economic_aid
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_stability = 0.15
+			add_political_power = 120
+			if = {
+				limit = {
+					NOT = {
+						has_idea = SPA_national_recovery_4
+						has_idea = SPA_national_recovery_6
+					}
+				}
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = SPA_national_recovery_4
+						add_idea = SPA_national_recovery_5
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_idea = SPA_national_recovery_4
+				}
+				swap_ideas = {
+					remove_idea = SPA_national_recovery_4
+					add_idea = SPA_national_recovery_5
+				}
+			}
+			if = {
+				limit = {
+					has_idea = SPA_national_recovery_6
+				}
+				swap_ideas = {
+					remove_idea = SPA_national_recovery_6
+					add_idea = SPA_national_recovery_7
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_domestic_industrial_developments
+		available = {
+			OR = {
+				is_in_faction_with = ENG
+				is_in_faction_with = USA
+			}
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_capitalist_economic_aid }
+		
+		icon = GFX_goal_generic_production
+		x = 1
+		y = 1
+		relative_position_id = SPA_capitalist_economic_aid
+		cost = 10
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = SPA_national_recovery_4
+						has_idea = SPA_national_recovery_5
+					}
+				}
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = SPA_national_recovery_4
+						add_idea = SPA_national_recovery_6
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_idea = SPA_national_recovery_4
+				}
+				swap_ideas = {
+					remove_idea = SPA_national_recovery_4
+					add_idea = SPA_national_recovery_6
+				}
+			}
+			if = {
+				limit = {
+					has_idea = SPA_national_recovery_5
+				}
+				swap_ideas = {
+					remove_idea = SPA_national_recovery_5
+					add_idea = SPA_national_recovery_7
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SPA_the_spanish_miracle
+		available = {
+
+		}
+		bypass = {
+		}
+		prerequisite = { focus = SPA_improve_living_standards }
+		prerequisite = { focus = SPA_domestic_industrial_developments }
+		
+		icon = GFX_focus_spa_the_spanish_miracle
+		x = 1
+		y = 1
+		relative_position_id = SPA_improve_living_standards
+		cost = 20
+
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+			every_state = {
+				limit	= {	has_state_flag = SPA_the_spanish_miracle_2civ }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit	= {	has_state_flag = SPA_the_spanish_miracle_2mil }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+					}
+					is_core_of = ROOT
+				}
+				set_state_flag = SPA_the_spanish_miracle_2civ
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+					}
+					is_core_of = ROOT
+					NOT = { has_state_flag = SPA_the_spanish_miracle_2civ }
+				}
+				set_state_flag = SPA_the_spanish_miracle_2civ
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+					}
+					is_core_of = ROOT
+					NOT = { has_state_flag = SPA_the_spanish_miracle_2civ }
+				}
+				set_state_flag = SPA_the_spanish_miracle_2civ
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+					}
+					is_core_of = ROOT
+				}
+				set_state_flag = SPA_the_spanish_miracle_2mil
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+					}
+					is_core_of = ROOT
+					NOT = { has_state_flag = SPA_the_spanish_miracle_2mil }
+				}
+				set_state_flag = SPA_the_spanish_miracle_2mil
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
 
 	focus = {
 		id = SPA_national_recovery
@@ -1443,7 +1957,7 @@ focus_tree = {
 		prerequisite = { focus = SPA_fuse_the_parties }
 		
 		icon = GFX_goal_generic_consumer_goods
-		x = -8
+		x = -15
 		y = 1
 		relative_position_id = SPA_fuse_the_parties
 		cost = 10
@@ -2636,34 +3150,15 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			if = {
-				limit = {
-					ENG = { has_government = democratic }
-				}
-				effect_tooltip = {
-					290 = {
-						add_extra_state_shared_building_slots = 3
-						add_building_construction = {
-							type = industrial_complex
-							level = 2
-							instant_build = yes
-						}
-					}
-				}
-				custom_effect_tooltip = SPA_the_tangiers_enclave_tt
-				ENG = { country_event = { id = lar_spain.36 hours = 6 random_hours = 18 } }
-			}
-			else = {
-				290 = {
+			290 = {
 					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = industrial_complex
 						level = 2
 						instant_build = yes
 					}
-				}
 			}
-		}
+		}	
 	}
 
 	focus = {
@@ -2697,13 +3192,13 @@ focus_tree = {
         bypass = {
             NOT = { country_exists = POR }
         }
-     	prerequisite = { focus = SPA_la_division_azul }
-		prerequisite = { focus = SPA_stamp_out_the_maquis }
+     	prerequisite = { focus = SPA_fuse_the_parties }
+		prerequisite = { focus = SPA_adopt_the_26_points }
 
         icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
-        x = 1
-        y = 3
-        relative_position_id = SPA_dictator_for_life
+        x = 0
+        y = 2
+        relative_position_id = SPA_fuse_the_parties
         cost = 10
 
         available_if_capitulated = yes
@@ -2799,7 +3294,7 @@ focus_tree = {
 		prerequisite = { focus = SPA_stamp_out_the_maquis }
 		
 		icon = GFX_focus_generic_air_defense
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = SPA_stamp_out_the_maquis
 		cost = 5

@@ -55,7 +55,7 @@ operations = {
                     complete_national_focus = ITA_solid_progress 
 
                 }
-				add_threat = 2.6
+				
                 
             }
 

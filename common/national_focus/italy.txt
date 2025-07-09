@@ -8236,6 +8236,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}
 
 		completion_reward = {
+			add_threat = 2.6
 			add_popularity = {
 				ideology = fascism 
 				popularity = 0.05
@@ -12812,8 +12813,15 @@ focus_tree = {
 			custom_effect_tooltip = ITA_expanded_corporatism_military_industry_tt
 
 			every_controlled_state = {
+
 				limit = {
 					NOT = {	is_core_of = ROOT }
+					NOT = {	is_core_of = HOL }
+					NOT = {	is_core_of = BEl }
+					NOT = {	is_core_of = LUX }
+					NOT = {	is_core_of = POL }
+					NOT = {	is_core_of = NOR }
+					NOT = {	is_core_of = DEN }
 					# is_fully_controlled_by = ROOT
 				}
 				add_dynamic_modifier = {

@@ -85,10 +85,10 @@ focus_tree = {
 	focus = {
 		id = ROM_appoint_german_friendly_government
 		icon = GFX_goal_support_fascism
-		prerequisite = { focus = ROM_trade_treaty_with_germany }
-		x = -3
+		prerequisite = { focus = ROM_elections_of_1937 }
+		x = 0
 		y = 1
-		relative_position_id = ROM_trade_treaty_with_germany
+		relative_position_id = ROM_elections_of_1937
 
 		cost = 5
 
@@ -106,7 +106,7 @@ focus_tree = {
 				is_faction_leader = yes
 				has_government = fascism
 			}
-			has_completed_focus = ROM_elections_of_1937
+			# has_completed_focus = ROM_elections_of_1937
 		}
 
 		bypass = {
@@ -190,7 +190,7 @@ focus_tree = {
 		prerequisite = { focus = ROM_german_romanian_oil_exploitation_company }
 		mutually_exclusive = { focus = ROM_reichswerke_subsidiary }
 		x = -1
-		y = 3
+		y = 2
 		relative_position_id = ROM_german_romanian_oil_exploitation_company
 
 
@@ -215,7 +215,7 @@ focus_tree = {
 		prerequisite = { focus = ROM_german_romanian_oil_exploitation_company }
 		mutually_exclusive = { focus = ROM_nationalize_the_oil }
 		x = 1
-		y = 3
+		y = 2
 		relative_position_id = ROM_german_romanian_oil_exploitation_company
 
 

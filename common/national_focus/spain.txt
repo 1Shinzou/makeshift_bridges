@@ -1046,6 +1046,7 @@ focus_tree = {
 				uses = 1
 				category = motorized_equipment
 			}
+			add_ideas = ITA_bandits_war
 		}
 	}
 

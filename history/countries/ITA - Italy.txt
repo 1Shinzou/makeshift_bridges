@@ -441,7 +441,6 @@ if = {
 		coastal_defense_ships = 1
 		improved_airplane_launcher = 1
 		basic_heavy_shell = 1
-		improved_heavy_battery = 1
 		basic_dp_light_battery = 1
 		early_ship_hull_carrier = 1
 		basic_ship_hull_carrier = 1

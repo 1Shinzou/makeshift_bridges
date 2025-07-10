@@ -895,6 +895,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			add_ideas = ITA_bandits_war
 			army_experience = 150
 			add_doctrine_cost_reduction = {
 				name = SPA_the_army_of_africa_model
@@ -1046,7 +1047,7 @@ focus_tree = {
 				uses = 1
 				category = motorized_equipment
 			}
-			add_ideas = ITA_bandits_war
+
 		}
 	}
 

@@ -278,13 +278,7 @@ NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { -- supremacy multipliers for differe
 		0.0, -- RESERVE_FLEET
 		0.25, -- NAVAL_INVASION_SUPPORT
 	}
-
-NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
-		100.0,	-- big guns
-		100.0,	-- torpedoes
-		35.0,	-- small guns
-	}
-
+	
 NDefines.NNavy.AGGRESSION_SETTINGS_VALUES = { -- ships will use this values while deciding to attack enemies
 		0,		-- do not engage
 		2.0,	-- low

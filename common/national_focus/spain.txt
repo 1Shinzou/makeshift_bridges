@@ -890,13 +890,13 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_the_national_and_popular_army_of_spain
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_ideas = ITA_bandits_war
-			army_experience = 150
+			army_experience = 75
 			add_doctrine_cost_reduction = {
 				name = SPA_the_army_of_africa_model
 				cost_reduction = 0.5
@@ -1063,7 +1063,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SPA_motorization
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}

@@ -315,35 +315,59 @@ operations = {
 
 Technologies = {
 
-hosttool_mech = {
-    # icon = generic_operation
-    allowed = {
-    }
-    fire_only_once = no
-    cost = 0
-    ai_will_do = {
-        factor = 0
-    }
-    visible = {
-        NOT = {
-                tag = HOL
+	uk_hf3_usa = {
+            icon = GFX_decision_generic_merge_plant_aircraft
+            allowed = {
+                tag = ENG
+            }
+            fire_only_once = yes
+            cost = 0
+            ai_will_do = {
+                factor = 0
+            }
+			visible = {
+        		NOT = { country_exists = USA }
+    		}
+            available = {
+                ENG = {
+                    has_war = yes
+                }
+            }
+
+            complete_effect = {
+              	set_technology = { advanced_medium_airframe = 1 }
             }
     }
-    available = {
+
+	hosttool_mech = {
+    	# icon = generic_operation
+    	allowed = {
+    	}
+    	fire_only_once = no
+    	cost = 0
+    	ai_will_do = {
+        	factor = 0
+    	}
+    	visible = {
+        	NOT = {
+                tag = HOL
+            	}
+    	}
+    	available = {
             date > 1937.08.01
         }
-    complete_effect = {
-        SWE = {
-            create_production_license = {
-                target = ROOT
-                equipment = {
-                    type = mechanized_equipment_1
-                    version = 1
-                }
-                cost_factor = 0
-            }
-        }
-    }
+    	complete_effect = {
+        	SWE = {
+            	create_production_license = {
+                	target = ROOT
+                	equipment = {
+                    	type = mechanized_equipment_1
+                    	version = 1
+                	}
+                	cost_factor = 0
+           		}
+        	}
+    	}
     }
     
     hosttool_aa2 = {

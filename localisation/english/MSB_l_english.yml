@@ -37,6 +37,7 @@ continuous_reduce_ship_training_time:0 "Navy Training"
 continuous_reduce_air_training_time:0 "Airforce Training"
 tradeback_is_cancer:0"No Tradeback"
 tradeback_is_cancer_no_export:0"No Tradeback - no exports for playable countries"
+uk_hf3_usa:"Advanced Heavy Fighter"
 
 # LL Decision
  E_ll:"Air Decision Lend Lease"

@@ -1233,6 +1233,31 @@ ideas = {
 			}
 		}
 
+		italian_arms_discount = { # MSB addition
+			
+			name = italian_arms_discount
+
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+
 		ITA_the_eastern_threat_ns = {
 			name = ITA_the_eastern_threat
 			removal_cost = -1

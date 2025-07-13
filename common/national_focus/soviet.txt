@@ -7365,6 +7365,7 @@ focus_tree = {
 		cost = 10
 
 		available = {
+			surrender_progress > 0.25
 			has_defensive_war = yes
 			has_war_with_major = yes
 			
@@ -8388,7 +8389,7 @@ focus = {
 				
 		search_filters = {FOCUS_FILTER_PROPAGANDA}
 		available = {
-			surrender_progress > 0.25
+			surrender_progress > 0.35
 			has_war_with_major = yes
 		}
 		completion_reward = {

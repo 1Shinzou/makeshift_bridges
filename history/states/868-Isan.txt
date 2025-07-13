@@ -10,6 +10,7 @@ state={
 		1936.1.1.14 = { owner = WST add_core_of = WST }
 
         owner = JAP
+		
 
        # Less Minors
 		1936.1.1.15 = { owner = SIA add_core_of = SIA }
@@ -20,7 +21,7 @@ state={
 		victory_points = {
 			10438 1 
 		}
-		add_core_of = JAP
+		add_core_of = SIA
 	}
 	manpower=2000000
 	state_category = town

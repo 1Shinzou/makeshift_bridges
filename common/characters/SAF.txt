@@ -75,7 +75,6 @@ characters={
 		corps_commander = {
 			traits = {
 				infantry_leader
-				urban_assault_specialist
 			}
 			skill = 3
 			attack_skill = 2

@@ -641,6 +641,23 @@ ideas = {
 			}
 		}
 
+		BUL_contract_foreign_companies = {
+			picture = generic_flexible_foreign_policy
+
+			allowed = {
+				original_tag = BUL
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.25
+			}
+		}
+
 		BUL_national_industry_01 = {
 			picture = bul_national_industry
 

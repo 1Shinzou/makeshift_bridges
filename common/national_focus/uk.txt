@@ -254,27 +254,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
-	focus = {
-		id = ENG_the_wartime_cabinet_committee
-		prerequisite = { focus = ENG_maintaining_imperial_integrity }
-		available = { 
-			has_war = yes
-		}
-
-		icon = GFX_goal_generic_territory_or_war
-		x = -2
-		y = 1
-		relative_position_id = ENG_maintaining_imperial_integrity
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_ideas = ENG_the_wartime_cabinet_committee_idea
-			add_potential_special_forces_tree = yes	
-		}
-		search_filters = { }
-	}
 
 	focus = {
 		id = ENG_motorized_focus
@@ -1388,6 +1367,7 @@ focus_tree = {
 			army_experience = 10
 			navy_experience = 10
 			air_experience = 10
+			add_potential_special_forces_tree = yes	
 			add_ideas = ENG_chiefs_of_staff_committee_idea
 		}
 	}
@@ -3614,7 +3594,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_special_operations_executive
-		prerequisite = { focus = ENG_expand_the_secret_intelligence_service_focus  }
+		prerequisite = { focus = ENG_maintaining_imperial_integrity   }
 
 		icon = GFX_focus_eng_special_air_service
 		offset = {
@@ -3624,9 +3604,9 @@ focus_tree = {
 				NOT = { has_dlc = "Man the Guns" }
 			}
 		}
-		x = 0
+		x = -2
 		y = 1
-		relative_position_id = ENG_expand_the_secret_intelligence_service_focus 
+		relative_position_id = ENG_maintaining_imperial_integrity 
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -4455,32 +4435,7 @@ focus_tree = {
 
 		}
 	}
-	focus = {
-		id = ENG_strike_mainland_europe_together
-		icon = GFX_focus_usa_focus_on_europe
-		cost = 20
-		prerequisite = {
-			#focus = ENG_maintaining_the_balance_of_power
-			focus = ENG_the_wartime_cabinet_committee
-		}
-		x = 0
-		y = 1
-		relative_position_id = ENG_the_wartime_cabinet_committee
-		ai_will_do = {
-			factor = 2
-		}
-		available = {
-			GER = { has_government = fascism }
-			ITA = { has_government = fascism }
-		}
-		completion_reward = {
-			add_timed_idea = {
-				idea = ENG_tackle_fascism_idea_1
-				days = 365
-			}
-			
-		}
-	}
+
 }
 
 

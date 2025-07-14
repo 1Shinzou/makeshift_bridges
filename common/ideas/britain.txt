@@ -511,29 +511,6 @@ ideas = {
 			}
 		}
 
-		ENG_the_wartime_cabinet_committee_idea = {
-			
-			name = ENG_the_wartime_cabinet_committee
-			
-			allowed = {
-				original_tag = ENG
-				always = no
-			}
-
-			cancel = {
-				has_war = no
-			}
-
-			removal_cost = -1
-
-			picture = FRA_scw_intervention_nationalists_focus
-			
-			modifier = {
-				planning_speed = 0.1
-				special_forces_defence_factor = 0.05
-				special_forces_attack_factor = 0.05
-			}
-		}
 
 		ENG_special_operations_executive_idea = {
 			name = ENG_special_operations_executive

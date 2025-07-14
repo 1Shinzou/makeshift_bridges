@@ -8712,8 +8712,8 @@ focus_tree = {
 
             custom_effect_tooltip = generic_skip_one_line_tt
 
-            custom_effect_tooltip = available_political_advisor
-            show_ideas_tooltip = RAJ_GOE_tara_singh
+           # custom_effect_tooltip = available_political_advisor
+           # show_ideas_tooltip = RAJ_GOE_tara_singh
 
             custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -17496,8 +17496,8 @@ focus = {
 
 		custom_effect_tooltip = generic_skip_one_line_tt
 
-		custom_effect_tooltip = available_political_advisor
-		show_ideas_tooltip = RAJ_GOE_tara_singh
+		#custom_effect_tooltip = available_political_advisor
+		#show_ideas_tooltip = RAJ_GOE_tara_singh
 
 		custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -22970,70 +22970,7 @@ focus = {
 
 
 
-    focus = {
-        id = RAJ_lions_of_the_great_war_dlc
-        icon = GFX_focus_RAJ_lions_of_the_great_war
-        prerequisite = { focus = RAJ_gurkhas }
-        x = 0
-        y = 1
-        relative_position_id = RAJ_gurkhas
-
-        cost = 10
-
-        ai_will_do = {
-            factor = 25
-        }
-
-        available = {
-
-        }
-
-        bypass = {
-
-        }
-
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        available_if_capitulated = no
-
-        search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_ARMY_XP FOCUS_FILTER_WAR_SUPPORT }
-        completion_reward = {
-            add_ideas = idea_RAJ_lions_of_the_great_war
-            army_experience = 30
-            custom_effect_tooltip = RAJ_create_unit_sikh_tt
-            hidden_effect = {
-
-                division_template = {
-                name = "Sikh Regiment" #sikh regiment, bro
-                division_names_group = RAJ_INF_01
-                regiments = {
-                        infantry = { x = 0 y = 0 }
-                        infantry = { x = 0 y = 1 }
-                        infantry = { x = 0 y = 2 }
-        
-                        infantry = { x = 1 y = 0 }
-                        infantry = { x = 1 y = 1 }
-                        infantry = { x = 1 y = 2 }
-
-                        infantry = { x = 2 y = 0 }
-                        infantry = { x = 2 y = 1 }
-                        infantry = { x = 2 y = 2 }
-                            }
-                        }
-        
-                    random_owned_controlled_state = {
-                            prioritize = { 439 }
-                            create_unit = { 
-                                division = "name = \"1. Sikh Regiment\" division_template = \"Sikh Regiment\" start_experience_factor = 0.5" 
-                                owner = RAJ
-                                }
-        
-                    }
-                }
-
-        }
-    }
-    
+ 
 
     focus = {
         id = RAJ_abolish_agrarian_society_criteria

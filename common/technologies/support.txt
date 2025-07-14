@@ -1767,7 +1767,7 @@ technologies = {
 
 	
 
-		research_cost = 4.5
+		research_cost = 1.5
 		start_year = 1936
 		folder = {
 			name = support_folder

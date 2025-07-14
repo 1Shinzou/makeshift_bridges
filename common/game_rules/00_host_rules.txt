@@ -1,7 +1,7 @@
 select_host_country = {
 	name = "Select Host for Host Tool"
-	group = "MSB Rules"
-	icon = "GFX_volunteers"
+	group = "Host Tool"
+	icon = GFX_volunteers
 	default = {
 		name = GER
 		text = "Germany"
@@ -111,39 +111,13 @@ vp_system = {
 
 }
 
-tradebacks = {
-	name = "Tradeback Idea"
-	group = "MSB Rules"
-	icon = GFX_decision_generic_forestry
-	default = {
-		name = off
-		text = "GOff"
-		desc = "No tradeback idea (Recommmended)"
-	}
-	option = {
-		name = on
-		text = "ROn"
-		desc = "Everyone has a tradeback idea that givens -100% missing resource penalty. (Not Recommmended)"
-	}
-	option = {
-		name = no_export
-		text = "BNo Exports"
-		desc = "Everyone has a tradeback idea that givens -100% missing resource penalty and no exports. (Not Recommmended)"
-	}
-	option = {
-		name = not_allies
-		text = "YNot Allies"
-		desc = "Everyone has no tradeback idea except for Allies. (Not Recommmended)"
-	}
-}
-
-danzig_date_lock= {
-	name = "'Danzig or War' available date"
+danzig_date_lock = {
+	name = "Danzig or War"
 	group = "MSB Rules"
 	icon = GFX_decision_border_war
 	default = {
 		name = locked
-		text = "Not available until June 1939"
+		text = "June 1939"
 		desc = "Germany cannot take the Focus 'Danzig or War' before June 1st 1939"
 	}
 	option = {
@@ -153,13 +127,13 @@ danzig_date_lock= {
 	}
 }
 
-barb_date_lock= {
-	name = "'War with the USSR' available date"
+barb_date_lock = {
+	name = "War with the USSR"
 	group = "MSB Rules"
 	icon = "GFX_decision_SOV_socialism_in_one_country"
 	default = {
 		name = locked
-		text = "Not available until June 1941"
+		text = "June 1941"
 		desc = "Germany cannot take the Focus 'War with the USSR' before June 1st 1941"
 	}
 	option = {
@@ -201,22 +175,6 @@ scw_difficulty = {
 	}
 }
 
-auto_tech_rush = {
-	name = "Auto Tech Rush"
-	group = "MSB Rules"
-	icon = "GFX_decision_generic_research"
-	default = {
-		name = on
-		text = "GOn"
-		desc = "There will be decisions for auto-tech rushing (Recommmended)"
-	}
-	option = {
-		name = off
-		text = "ROff"
-		desc = "There will NOT be decisions for auto-tech rushing (Not Recommmended)"
-	}
-}
-
 hospitals = {
 	name = "Allow Hospital 2"
 	group = "MSB Rules"
@@ -233,35 +191,67 @@ hospitals = {
 	}
 }
 
-Germany_Cancel_Mefo= {
-	name = "Is Germany is allowed to cancel MEFO Bills?"
+auto_tech_rush = {
+	name = "Auto Tech Rush"
+	group = "MSB Rules"
+	icon = "GFX_decision_generic_research"
+	default = {
+		name = on
+		text = "GOn"
+		desc = "There will be decisions for auto-tech rushing (Recommmended)"
+	}
+	option = {
+		name = off
+		text = "ROff"
+		desc = "There will NOT be decisions for auto-tech rushing (Not Recommmended)"
+	}
+}
+
+tradebacks = {
+	name = "Tradeback Idea"
+	group = "MSB Rules"
+	icon = GFX_decision_generic_forestry
+	default = {
+		name = off
+		text = "GOff"
+		desc = "No tradeback idea (Recommmended)"
+	}
+	option = {
+		name = on
+		text = "ROn"
+		desc = "Everyone has a tradeback idea that givens -100% missing resource penalty. (Not Recommmended)"
+	}
+}
+
+Germany_Cancel_Mefo = {
+	name = "Germany MEFO Bills"
 	group = "Economic Adjustments"
-	icon = "GFX_decision_ger_mefo_bills"
+	icon = GFX_decision_ger_mefo_bills
 	default = {
 		name = Germany_no_cancel_MEFO_Bills
-		text = "Germany cant cancel MEFO Bills"
+		text = "Cannot cancel"
 		desc = ""
 	}
 	option = {
 		name = Germany_cancel_MEFO_Bills
-		text = "Germany can cancel MEFO Bills"
+		text = "Can cancel"
 		desc = ""
 	}
 
 }
 
-ger_autarky= {
-	name = "Is Germany is allowed to do 'Autarky Achieved'?"
+ger_autarky = {
+	name = "Germany Autarky Achieved"
 	group = "Economic Adjustments"
 	icon = GFX_decision_ger_reichskommissariats
 	default = {
 		name = banned
-		text = "Germany cant do 'Autarky Achieved'"
+		text = "GOff"
 		desc = ""
 	}
 	option = {
 		name = allowed
-		text = "Germany can do 'Autarky Achieved'"
+		text = "ROn"
 		desc = ""
 	}
 
@@ -329,7 +319,7 @@ ger_boost = {
 jap_boost = {
 	name = "Japan Civ Boost"
 	group = "Economic Adjustments"
-	icon = "GFX_decision_generic_merge_plant_materiel"
+	icon = GFX_decision_generic_merge_plant_materiel
 	default = {
 		name = off
 		text = "GOff"

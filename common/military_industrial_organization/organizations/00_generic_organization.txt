@@ -273,8 +273,9 @@ generic_raider_ship_organization = {
 		always = no # Archetype only - countries using it have their own versions
 	}
 	equipment_type = {
-		capital_ship
-		screen_ship
+		mio_cat_eq_all_battleship
+		mio_cat_eq_all_cruiser
+		mio_cat_eq_all_carrier
 		submarine
 	}
 	research_categories = {

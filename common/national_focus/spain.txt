@@ -1839,7 +1839,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SPA_improve_living_standards
-		cost = 20
+		cost = 10
 
 		available_if_capitulated = yes
 

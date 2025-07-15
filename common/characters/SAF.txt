@@ -346,7 +346,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={  panzer_leader desert_fox }
+			traits={  panzer_leader }
 			skill=5
 			attack_skill=5
 			defense_skill=4

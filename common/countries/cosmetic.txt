@@ -262,7 +262,7 @@ CAN_north_america_dominion = {
 }
 
 CAN_UK = {
-	color = rgb { 233  59  59 }
+	color = rgb { 155 62 51 }
 	color_ui = rgb { 155 62 51 }
 }
 
@@ -334,7 +334,7 @@ SPC_poum = {
 }
 
 FRA_VICHY = {
-	color = rgb { 194 140 86 }
+	color = rgb { 50 150 150 }
 	color_ui = rgb {194 140 86 }
 }
 

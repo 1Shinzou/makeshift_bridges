@@ -9,7 +9,7 @@ ENG = {
    color_ui = rgb { 200  10  10 }
 }
 SOV = {
-	color = rgb { 188 0 0 }
+	color = rgb { 160 0 0 }
 	color_ui = rgb { 188 0 0 }
 }
 SWE = {
@@ -17,7 +17,7 @@ SWE = {
 	color_ui = rgb { 47 172 255 }
 }
 FRA = {
-    color = rgb { 28 82 190 }
+   	color = rgb { 25 52 190 }
     color_ui = rgb { 74 147 255 }
 }
 LUX = {
@@ -58,8 +58,8 @@ SPR = {
 	color_ui = rgb { 255 255 122 }
 }
 ITA = {
-	color = rgb { 0 102 0 }
- color_ui = rgb { 0 51 0 }
+	color = rgb { 0 80 0 }
+ 	color_ui = rgb { 0 51 0 }
 }
 ROM = {
 	color = rgb { 215 196 72 }
@@ -90,7 +90,7 @@ BUL = {
 	color_ui = rgb { 51 155 0 }
 }
 POR = {
-	color = rgb { 39 116 70 }
+	color = rgb { 0 128 128 }
 	color_ui = rgb { 51 151 91 }
 }
 FIN = {
@@ -106,15 +106,15 @@ HUN = {
 	color_ui = rgb { 128 64 0 }
 }
 AST = {
-    color = rgb { 24 14 125 }
-    color_ui = rgb { 24 12 101 }
+	color = rgb { 57 143 97 }
+	color_ui = rgb { 74 186 126 }
 }
 BRA = {
-    color = rgb { 60 192 52 }
+    color = rgb { 50 150 50 }
     color_ui = rgb { 94 139 53 }
 }
 CAN = {
-    color = rgb { 233 59 59 }
+    color = rgb { 102  0  0 }
     color_ui = rgb { 155 62 51 }
 }
 CHI = {
@@ -130,8 +130,8 @@ JAP = {
 	color_ui = rgb { 230 230 230 }
 }
 MEX = {
-	color = rgb { 76 145 63 }
-	color_ui = rgb { 99 189 82 }
+	color = rgb { 104 152 83 }
+	color_ui = rgb { 135 198 108 }
 }
 NZL = {
 	color = rgb { 152 130 191 }
@@ -160,7 +160,7 @@ VEN = {
 	color_ui = rgb { 222 247 198 }
 }
 USA = {
-	color = rgb { 20 133 237 }
+	color = rgb { 40 100 200 }
 	color_ui = rgb { 87 160 255 }
 }
 
@@ -481,6 +481,6 @@ KUB = {
 	color_ui = rgb { 61 61 92 }
 }
 EFR = {
-	color = rgb { 126  76  120 } 
+	color = rgb { 50 150 150 } 
 	color_ui = rgb { 126  76  120 }
 }

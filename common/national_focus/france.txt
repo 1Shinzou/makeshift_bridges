@@ -4032,7 +4032,7 @@ focus = {
 	focus = {
 		id = FRA_appeal_to_the_french_nation
 		icon = GFX_focus_fra_french_union
-		x = 10
+		x = 6
 		y = 1
 		offset = {
 			x = 0
@@ -4096,7 +4096,7 @@ focus = {
 	focus = {
 		id = FRA_london_provisional_gov
 		icon = GFX_focus_eng_the_sun_never_sets
-		x = 7
+		x = 5
 		y = 1
 		offset = {
 			x = 0
@@ -4127,7 +4127,7 @@ focus = {
 	focus = {
 		id = FRA_appeal_to_overseas_territories
 		icon = GFX_focus_generic_camel_corps
-		x = 0
+		x = 2
 		y = 1
 		offset = {
 			x = 0
@@ -4166,7 +4166,7 @@ focus = {
 		id = FRA_form_the_national_committee
 		icon = GFX_goal_generic_intelligence_exchange
 		x = 0
-		y = 3
+		y = 2
 		offset = {
 			x = 0
 			y = 0
@@ -4202,10 +4202,6 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
-			add_offsite_building = {
-				type = arms_factory
-				level = 2
-			}
 			add_war_support = 0.1
 			add_stability = 0.1
 		}
@@ -4214,7 +4210,7 @@ focus = {
 		id = FRA_form_the_provisional_government_of_the_republic
 		icon = GFX_focus_focus_fra_orleans_restoration
 		x = 0
-		y = 5
+		y = 4
 		offset = {
 			x = 0
 			y = 0
@@ -4256,7 +4252,7 @@ focus = {
 	focus = {
 		id = FRA_continue_the_fight
 		icon = GFX_focus_ARG_join_the_allies
-		x = 12
+		x = 10
 		y = 1
 		offset = {
 			x = 0
@@ -4283,10 +4279,6 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_offsite_building = {
-				type = arms_factory
-				level = 5
-			}
 			create_corps_commander = {
 				name = "Marie-Pierre Koenig"
 				GFX = GFX_portrait_fra_marie_pierre_koenig
@@ -4328,7 +4320,7 @@ focus = {
 		id = FRA_hidden_weapons
 		icon = GFX_focus_FIN_weapon_caches
 		x = 1
-		y = 2
+		y = 1
 		offset = {
 			x = 0
 			y = 0
@@ -4367,7 +4359,7 @@ focus = {
 		id = FRA_path_to_liberation
 		icon = GFX_focus_attack_germany
 		x = 3
-		y = 2
+		y = 1
 		offset = {
 			x = 0
 			y = 0
@@ -4392,10 +4384,6 @@ focus = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			add_offsite_building = {
-				type = arms_factory
-				level = 1
-			}
 			add_command_power = 30
 			army_experience = 30
 		}
@@ -4419,7 +4407,7 @@ focus = {
 			factor = 1
 		}
 		available = {
-			NOT = { country_exists = VIC }	
+			NOT = { country_exists = EFR }	
 		}
 		
 		bypass = {
@@ -4496,7 +4484,7 @@ focus = {
 			factor = 1
 		}
 		available = {
-			NOT = { country_exists = VIC }	
+			NOT = { country_exists = EFR }	
 		}
 		
 		bypass = {
@@ -4551,7 +4539,7 @@ focus = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = FRA_cef
-				days = 120
+				days = 30
 			}
 			army_experience = 10	
 		}
@@ -4560,7 +4548,7 @@ focus = {
 		id = FRA_army_of_liberation1
 		icon = GFX_focus_hol_liberation
 		x = -3
-		y = 2
+		y = 1
 		offset = {
 			x = 0
 			y = 0
@@ -4604,7 +4592,7 @@ focus = {
 		id = FRA_the_free_french_navy
 		icon = GFX_focus_generic_navy_battleship2
 		x = -3
-		y = 2
+		y = 1
 		offset = {
 			x = 0
 			y = 0
@@ -4677,7 +4665,7 @@ focus = {
 		id = FRA_bir_hakeim
 		icon = GFX_focus_chi_army_reform
 		x = -1
-		y = 2
+		y = 1
 		offset = {
 			x = 0
 			y = 0
@@ -4845,55 +4833,12 @@ focus = {
 			}
 		}
 	}
-	focus = {
-		id = FRA_the_regiment_normandie
-		icon = GFX_focus_fra_regiment_normandie
-		x = -2
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = { 
-			focus = FRA_the_free_french_navy
-		}
-		relative_position_id = FRA_the_free_french_navy
-		
-		cost = 1
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			any_enemy_country = {
-				has_war_with = SOV
-			}
-			NOT = {
-				has_war_with = SOV
-			}
-		}
-		
-		bypass = {
 
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		completion_reward = {
-			air_experience = 25
-			SOV = {
-				add_equipment_to_stockpile = {
-					type = small_plane_airframe
-					amount = 100
-					producer = FRA
-				}
-			}
-		}
-	}
 
 	focus = {
 		id = FRA_refus_absurde
 		icon = GFX_focus_spr_crush_the_revolution
-		x = -8
+		x = -6
 		y = 1
 		
 		prerequisite = { 
@@ -4930,7 +4875,7 @@ focus = {
 	focus = {
 		id = FRA_the_maquis
 		icon = GFX_focus_focus_fra_maquis
-		x = -8
+		x = -4
 		y = 1
 		offset = {
 			x = 0
@@ -4975,7 +4920,7 @@ focus = {
 		id = FRA_radio_londre
 		icon = GFX_focus_SWE_radiotjanst
 		x = 0
-		y = 2
+		y = 1
 		offset = {
 			x = 0
 			y = 0
@@ -5009,7 +4954,7 @@ focus = {
 		id = FRA_passive_resistance
 		icon = GFX_focus_spr_torchbearers_of_tomorrow
 		x = -2
-		y = 3
+		y = 1
 		offset = {
 			x = 0
 			y = 0
@@ -5107,39 +5052,17 @@ focus = {
 			add_war_support = 0.08
 		}
 	}
-	focus = {
-		id = FRA_break_german_lines
-		icon = GFX_focus_FIN_motti_tactics
-		prerequisite = { focus = FRA_the_maquis }
-		x = 4
-		y = 1
-		relative_position_id = FRA_the_maquis
-		cost = 5
 
-		available = {
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			GER = {
-				add_timed_idea = { idea = FRA_sabotages days = 30 }
-			}
-		}
-	}
 	focus = {
 		id = FRA_improvised_weapons
 		icon = GFX_focus_FIN_oy_alkoholiliike
-		x = 0
+		x = 2
 		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
+	
 		prerequisite = { 
-			focus = FRA_break_german_lines
+			focus = FRA_drop_weapons
 		}
-		relative_position_id = FRA_break_german_lines
+		relative_position_id = FRA_drop_weapons
 		
 		cost = 5
 		ai_will_do = {
@@ -5174,7 +5097,7 @@ focus = {
 		id = FRA_drop_weapons
 		icon = GFX_focus_generic_paratrooper
 		x = 2
-		y = 2
+		y = 1
 		offset = {
 			x = 0
 			y = 0
@@ -5219,7 +5142,7 @@ focus = {
 		id = FRA_resistance_capital
 		icon = GFX_focus_hol_united_netherlands
 		x = 0
-		y = 2
+		y = 1
 		offset = {
 			x = 0
 			y = 0
@@ -5244,14 +5167,6 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
-			add_offsite_building = {
-				type = arms_factory
-				level = 1
-			}
-			add_offsite_building = {
-				type = industrial_complex
-				level = 3
-			}
 			add_war_support = 0.05
 			add_stability = 0.1
 		}
@@ -5259,8 +5174,8 @@ focus = {
 	focus = {
 		id = FRA_fight_vichy
 		icon = GFX_goal_generic_major_war
-		x = -4
-		y = 2
+		x = -1
+		y = 1
 		offset = {
 			x = 0
 			y = 0
@@ -5618,8 +5533,8 @@ focus = {
 	focus = {
 		id = FRA_reach_out_to_trade_unions
 		icon = GFX_focus_generic_workers
-		x = 0
-		y = 2
+		x = 2
+		y = 1
 		offset = {
 			x = 0
 			y = 0
@@ -5701,8 +5616,8 @@ focus = {
 		id = FRA_cooperation_with_the_royalists
 		icon = GFX_focus_focus_fra_third_empire
 		prerequisite = { focus = FRA_refus_absurde }
-		x = 3
-		y = 2
+		x = 6
+		y = 1
 		relative_position_id = FRA_refus_absurde
 		cost = 4
 
@@ -5764,6 +5679,12 @@ focus = {
 		prerequisite = { 
 			focus = FRA_connections_to_industrialists
 		}
+		prerequisite = { 
+			focus = FRA_cooperation_with_the_communists
+		}
+		prerequisite = { 
+			focus = FRA_united_resistance_movements
+		}
 		relative_position_id = FRA_connections_to_industrialists
 		
 		cost = 4
@@ -5791,8 +5712,8 @@ focus = {
 	focus = {
 		id = FRA_establish_a_gaullist_resistance
 		icon = GFX_focus_ETH_freedom_at_gunpoint
-		x = 6
-		y = 2
+		x = 10
+		y = 1
 		offset = {
 			x = 0
 			y = 0
@@ -5869,7 +5790,7 @@ focus = {
 		id = FRA_national_council_of_the_resistance
 		icon = GFX_focus_focus_fra_national_resistance_council
 		x = 0
-		y = 2
+		y = 1
 		offset = {
 			x = 0
 			y = 0
@@ -5877,15 +5798,7 @@ focus = {
 		prerequisite = { 
 			focus = FRA_the_civil_and_military_organization
 		}
-		prerequisite = {
-			focus = FRA_cooperation_with_the_communists
-		}
-		prerequisite = {
-			focus = FRA_united_resistance_movements
-		}
-		prerequisite = {
-			focus = FRA_form_the_national_committee
-		}
+
 		relative_position_id = FRA_the_civil_and_military_organization
 		
 		cost = 5

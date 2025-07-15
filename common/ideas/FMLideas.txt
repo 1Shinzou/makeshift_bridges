@@ -317,7 +317,7 @@ ideas = {
 			picture = ARG_envoy_to_london
 			
 			modifier = {
-				industrial_capacity_factory = 9 # fra post cap idea
+				industrial_capacity_factory = 8 # fra post cap idea
 				production_lack_of_resource_penalty_factor = -1
 				communism_drift = -0.3
 				}
@@ -1970,7 +1970,7 @@ ideas = {
 				acclimatization_hot_climate_gain_factor = 0.50
 				army_morale_factor = 0.08
 				army_org_factor = 0.05
-				breakthrough_factor = 0.05
+				#breakthrough_factor = 0.05
 				}
 		}
 
@@ -2015,8 +2015,8 @@ ideas = {
 			modifier = {
 				ai_desired_divisions_factor = 0.25
 				legitimacy_gain_factor = 0.10
-				army_defence_against_major_factor = 0.05
-				army_attack_against_major_factor  = 0.10
+				#army_defence_against_major_factor = 0.05
+				#army_attack_against_major_factor  = 0.10
 				army_morale_factor = 0.05
 				acclimatization_hot_climate_gain_factor = 0.50
 				}

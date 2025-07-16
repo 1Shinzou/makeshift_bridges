@@ -155,9 +155,7 @@ focus_tree = {
 		}
 
 		available = {
-			date > 1940.6.1
-	
-
+			has_idea = partial_economic_mobilisation
 		}
 		
 		bypass = {

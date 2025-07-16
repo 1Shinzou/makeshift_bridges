@@ -13,6 +13,9 @@ state = {
 	history = {
 		owner = RAJ
 		add_core_of = TUM
+		buildings = {
+			infrastructure = 2
+		}
 	}
 
 	provinces = {

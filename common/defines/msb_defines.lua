@@ -253,7 +253,7 @@ NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = 0 --Vanilla -0.12
  NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_FIGHTER = 1.5			-- How much efficiency to regain per day. Gain applied hourly.
  NDefines.NAir.EFFICIENCY_REGION_CHANGE_PENALTY_FACTOR = 1.0				-- Penalty applied for changing region
  --Grape Naval Fix
- NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.025
+NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.025
 NDefines.NNavy.BASE_POSITIONING	= 0.25	-- base value for positioning
 NDefines.NNavy.RELATIVE_SURFACE_DETECTION_TO_POSITIONING_FACTOR	= 0.01	-- multiples the surface detection difference between two sides. the side with higher detection will get a bonus of this value
 NDefines.NNavy.MAX_POSITIONING_BONUS_FROM_SURFACE_DETECTION	= 0.1  -- will clamp the bonus that you get from detection
@@ -310,7 +310,7 @@ NDefines.NAI.SCREENS_TO_CAPITAL_RATIO = 3.2					-- screens to capital/carrier co
 NDefines.NAI.MAX_FACTORY_TO_SPARE_FOR_MISSION_FUEL_TRADE = 0.7						-- amount of factories to spend on oil trade in case of fuel need for missions
 NDefines.NAI.MAX_FACTORY_TO_SPARE_FOR_CRITICAL_MISSION_FUEL_TRADE = 0.7			-- amount of factories to spend on oil trade in case of fuel need for prio missions
 NDefines.NAI.MAX_FACTORY_TO_TRADE_FOR_FUEL = 0.8
-NDefines.NAir.PORT_STRIKE_DAMAGE_FACTOR = 0.5
+NDefines.NAir.PORT_STRIKE_DAMAGE_FACTOR = 0.5	-- How much damage is dealt to ports during a port strike (per plane damage [complex number] * num flying planes * define)
 NDefines.NAir.NAVAL_STRIKE_BASE_STR_TO_PLANES_RATIO = 0.03		-- Max airbombers to do port strike comparing to strength
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.025		-- Max planes that can join a combat comparing to the total strength of the ships
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO_PER_DAY = 0.1 -- max extra plane % that can join every day

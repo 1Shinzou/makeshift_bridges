@@ -2366,6 +2366,7 @@ focus = {
 				}
 				custom_effect_tooltip = cost_reduced_last_stand 
 			}
+			custom_effect_tooltip = CHI_50_cheaper_force_attack
 		}
 	}
 

@@ -3539,12 +3539,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			add_tech_bonus = {
-				name = air_equipment
-				bonus = 1.0
-				uses = 1
-				category = air_equipment
-			}
+
 			add_doctrine_cost_reduction = {
 				name = air_doctrine
 				cost_reduction = 0.5
@@ -3606,12 +3601,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			add_tech_bonus = {
-				name = air_equipment
-				bonus = 1.0
-				uses = 1
-				category = air_equipment
-			}
+
 			add_doctrine_cost_reduction = {
 				name = air_doctrine
 				cost_reduction = 0.5

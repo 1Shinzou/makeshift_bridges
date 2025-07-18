@@ -2358,7 +2358,7 @@ focus_tree = {
 				character = "SPA_francisco_franco"
 				country_leader = {
 				  ideology=despotism
-				  traits = { caudillo_1 hardened_officer }
+				  traits = { caudillo_1 }
 				  expire="1965.1.1"
 				}
 				promote_leader = yes
@@ -2367,7 +2367,7 @@ focus_tree = {
 				character = "SPA_francisco_franco"
 				country_leader = {
 				  ideology=fascism_ideology
-				  traits = { caudillo_1 hardened_officer }
+				  traits = { caudillo_1 }
 				  expire="1965.1.1"
 				}
 				promote_leader = yes

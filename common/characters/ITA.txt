@@ -640,7 +640,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { organizer infantry_leader trait_engineer cavalry_leader } #Motorized
+			traits = { organizer infantry_leader trait_engineer cavalry_leader trickster } #Motorized
 			skill = 6
 			attack_skill = 4
 			defense_skill = 5
@@ -785,7 +785,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { trait_mountaineer organizer infantry_leader trait_engineer cavalry_leader } # Infantry, Mountaneers, Armor
+			traits = { trait_mountaineer organizer infantry_leader trait_engineer cavalry_leader trickster } # Infantry, Mountaneers, Armor
 			skill = 6
 			attack_skill = 6
 			defense_skill = 4

@@ -317,7 +317,7 @@ ITA_missiolinis = {
 							controls_province = 5097
 						}
 						hidden_trigger = {
-							NOT = { has_global_flag = second_italo_ethiopian_war_flag }
+							
 							hidden_trigger = { NOT = { has_country_flag = ITA_defeat_in_ethiopia_flag } }
 						}
 					}
@@ -462,7 +462,7 @@ ITA_missiolinis = {
 							controls_province = 13247
 						}
 						hidden_trigger = {
-							NOT = { has_global_flag = second_italo_ethiopian_war_flag }
+							
 							hidden_trigger = { NOT = { has_country_flag = ITA_defeat_in_ethiopia_flag } }
 						}
 					}
@@ -546,7 +546,7 @@ ITA_missiolinis = {
 		}
 
 		available = { #GOAL
-			NOT = { has_global_flag = second_italo_ethiopian_war_flag }
+			
 			hidden_trigger = { NOT = { has_country_flag = ITA_defeat_in_ethiopia_flag } }
 		}
 
@@ -2286,7 +2286,7 @@ ITA_balance_of_power_category = {
 		}
 
 		available = {
-			NOT = { has_global_flag = second_italo_ethiopian_war_flag }
+			
 		}
 
 		cost = ITA_bop_generic_council_cost
@@ -2355,7 +2355,7 @@ ITA_balance_of_power_category = {
 		fire_only_once = yes
 
 		available = {
-			NOT = { has_global_flag = second_italo_ethiopian_war_flag }
+			
 			ROOT = { has_government = fascism }
 		}
 
@@ -3361,7 +3361,7 @@ ITA_colonial_management_dec_cat = {
 
 		available = {
 			has_war = yes
-			NOT = { has_global_flag = second_italo_ethiopian_war_flag }
+			
 			any_controlled_state = {
 				OR = {
 					is_core_of = LBA
@@ -3617,7 +3617,7 @@ ITA_colonial_management_dec_cat = {
 		}
 
 		available = {
-			NOT = { has_global_flag = second_italo_ethiopian_war_flag }
+			
 			any_country_division = {
 				division_has_majority_template = irregular_infantry
 			}

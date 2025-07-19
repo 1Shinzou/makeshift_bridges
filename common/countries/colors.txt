@@ -145,7 +145,7 @@ PER = {
 }
 
 PHI = {
-	color = HSV { 0.75 0.7 1 }
+	color = HSV { 0.7 0.7 1 }
 	color_ui = rgb { 198 169 248 }
 }
 SAF = {

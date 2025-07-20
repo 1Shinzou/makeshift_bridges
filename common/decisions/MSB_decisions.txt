@@ -29,37 +29,6 @@ operations = {
         }
     }
 
-
-		annex_Ethopia = {
-            # icon = generic_operation
-            allowed = {
-                tag = ITA
-            }
-            fire_only_once = yes
-            cost = 0
-            ai_will_do = {
-                factor = 0
-            }
-            available = {
-               
-            }
-            targets = {
-                ETH
-            }
-            complete_effect = {
-                ITA = {
-                    annex_country = {
-                        target = ETH
-                        transfer_troops = no
-                    }
-                    complete_national_focus = ITA_solid_progress 
-
-                }
-				
-                
-            }
-
-        }
 	
 		annex_siam = {
 			# icon = generic_operation

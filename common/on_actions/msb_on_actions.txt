@@ -138,6 +138,12 @@ on_actions = {
 				}
 			}
 			ITA = {
+				annex_country = {
+                    target = ETH
+                    transfer_troops = no
+                }
+                complete_national_focus = ITA_solid_progress 
+				complete_national_focus = ITA_ethiopian_war_logistics_bba
 				country_event = {
 					id = DOD_yugoslavia.20
 					days = 912

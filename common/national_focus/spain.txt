@@ -2674,7 +2674,7 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_integrate_the_requetes focus = SPA_confirm_the_fueros }
+		prerequisite = { focus = SPA_integrate_the_requetes }
 		
 		icon = GFX_focus_research
 		x = 0

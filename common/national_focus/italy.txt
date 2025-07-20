@@ -9060,11 +9060,11 @@ focus_tree = {
 	focus = {
 		id = ITA_banda_carita
 		icon = GFX_focus_ITA_banda_carita
-		prerequisite = { focus = ITA_believe_obey_fight }
+		prerequisite = { focus = ITA_culto_del_duce  }
 
-		x = 0
+		x = -3
 		y = 1
-		relative_position_id = ITA_believe_obey_fight
+		relative_position_id = ITA_culto_del_duce
 		cost = 5
 
 		allow_branch = {
@@ -9165,7 +9165,7 @@ focus_tree = {
 		icon = GFX_goal_generic_military_sphere
 		prerequisite = { focus = ITA_culto_del_duce  }
 
-		x = 7
+		x = 6
 		y = 1
 		relative_position_id = ITA_culto_del_duce
 
@@ -9895,7 +9895,7 @@ focus_tree = {
 			}
 		}
 
-		x = 15
+		x = 13
 		y = 1
 		relative_position_id = ITA_triumph_in_africa_bba
 		cost = 5
@@ -10418,7 +10418,7 @@ focus_tree = {
 	focus = {
 		id = ITA_the_italian_liberation_war
 		icon = GFX_focus_generic_anti_fascist_diplomacy
-		x = -6
+		x = -10
 		y = 0
 		relative_position_id = ITA_ethiopian_war_logistics_bba
 		cost = 5
@@ -11169,7 +11169,7 @@ focus_tree = {
  	focus = {
 		id = ITA_the_italian_social_republic
 		icon = GFX_goal_support_fascism
-		x = -6
+		x = -10
 		y = 0
 		relative_position_id = ITA_ethiopian_war_logistics_bba
 		cost = 5
@@ -13412,7 +13412,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = ITA_a_greater_purpose
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -13430,7 +13430,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_believe_obey_fight }
 		
 		relative_position_id = ITA_believe_obey_fight
-		x = 2
+		x = 0
 		y = 1
 
 		cost = 5
@@ -14093,7 +14093,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_strengthen_the_regime
 
-        cost = 10
+        cost = 5
         available = {
             has_government = fascism
         }

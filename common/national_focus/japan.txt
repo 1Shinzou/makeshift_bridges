@@ -12,7 +12,7 @@
 
 	default = no
 
-	continuous_focus_position = { x = 1000 y = 850 }
+	continuous_focus_position = { x = 200 y = 850 }
 
 	focus = {
 		id = JAP_the_unthinkable_option
@@ -789,7 +789,7 @@
 			focus = JAP_challenge_the_zaibatsus
 			focus = JAP_ally_with_the_zaibatsus
 		}
-		x = 2
+		x = -5
 		y = 1
 		relative_position_id = JAP_showa_restoration
 
@@ -1023,18 +1023,17 @@
 			}
 	}
 
-focus = {
+	focus = {
 		id = JAP_black_dragon_society
 		icon = GFX_focus_SWI_embrace_rote_drei
 		cost = 5
 		prerequisite = { 
-			focus = JAP_modern_shogunate
-			focus = JAP_showa_restoration
+			focus = JAP_liaison_conference
 		}
 		
-		x = -2
+		x = 0
 		y = 1
-		relative_position_id = JAP_showa_restoration
+		relative_position_id = JAP_liaison_conference
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -1059,7 +1058,7 @@ focus = {
 			focus = JAP_modern_shogunate
 			focus = JAP_showa_restoration
 		}
-		x = 1
+		x = 12
 		y = 2
 
 		cost = 10
@@ -1243,7 +1242,7 @@ focus = {
 		id = JAP_secure_china
 		icon = GFX_focus_chi_one_china_policy
 		prerequisite = { focus = JAP_intervene_in_china }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = JAP_intervene_in_china
 
@@ -1288,7 +1287,7 @@ focus = {
 		id = JAP_develop_chinese_resources
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = JAP_intervene_in_china }
-		x = 3
+		x = 2
 		y = 1
 		relative_position_id = JAP_intervene_in_china
 
@@ -1760,7 +1759,7 @@ focus = {
 			focus = JAP_challenge_the_zaibatsus
 			focus = JAP_ally_with_the_zaibatsus
 		}
-		x = 4
+		x = -3
 		y = 1
 		relative_position_id = JAP_showa_restoration
 
@@ -2463,7 +2462,7 @@ focus = {
 			focus = JAP_nationalize_the_zaibatsus
 		}
 		relative_position_id = JAP_showa_restoration
-		x = 6
+		x = -1
 		y = 1
 
 		cost = 10
@@ -2951,7 +2950,7 @@ focus = {
 			focus = JAP_guide_the_zaibatsus
 			focus = JAP_nationalize_the_zaibatsus
 		}
-		x = 8
+		x = 1
 		y = 1
 		relative_position_id = JAP_showa_restoration
 

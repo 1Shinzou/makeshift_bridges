@@ -126,7 +126,7 @@ focus_tree = {
 		icon = GFX_focus_generic_road_investment
 		prerequisite = { focus = GER_the_four_year_plan }
 
-		x = -3
+		x = -5
 		y = 1
 		relative_position_id = GER_the_four_year_plan
 		cost = 5
@@ -682,7 +682,7 @@ focus_tree = {
 		alternate_icon = GFX_focus_GER_the_four_year_plan_historical
 
 		mutually_exclusive = { focus = GER_prioritize_economic_growth }
-		x = 50
+		x = 52
 		y = 0
 		
 		cost = 5
@@ -727,7 +727,7 @@ focus_tree = {
 		icon = GFX_focus_GER_autarky_ambitions
 		prerequisite = { focus = GER_the_four_year_plan  }
 
-		x = 2
+		x = 0
 		y = 1
 		relative_position_id = GER_the_four_year_plan
 		cost = 5
@@ -1561,7 +1561,7 @@ focus_tree = {
 		icon = GFX_focus_generic_combined_arms
 		prerequisite = { focus = GER_the_four_year_plan }
 
-		x = 6
+		x = 5
 		y = 1
 		relative_position_id = GER_the_four_year_plan
 		cost = 5

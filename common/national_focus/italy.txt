@@ -4973,7 +4973,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_air_innovations_bba
-		cost = 10
+		cost = 5
 		available = {
 			has_full_control_of_state = 2
 		}
@@ -8226,7 +8226,7 @@ focus_tree = {
 	focus = {
 		id = ITA_solid_progress
 		icon = GFX_focus_generic_attack_ethiopia
-		x = 57
+		x = 60
 		y = 0
 
 		cost = 5
@@ -8672,7 +8672,7 @@ focus_tree = {
 		icon = GFX_goal_demand_sudetenland
 		prerequisite = { focus = ITA_culto_del_duce }
 
-		x = -4
+		x = -6
 		y = 1
 		relative_position_id = ITA_culto_del_duce
 		cost = 5
@@ -8748,7 +8748,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_the_man_of_providence }
 		mutually_exclusive = { focus = ITA_to_live_as_a_lion }
 		x = -1
-		y = 3
+		y = 2
 		relative_position_id = ITA_the_man_of_providence
 		cost = 5
 		available = {
@@ -8896,7 +8896,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_la_battaglia_del_grano focus = ITA_la_battaglia_per_la_terra }
 
 		x = 1
-		y = 2
+		y = 1
 		relative_position_id = ITA_la_battaglia_del_grano
 		cost = 5
 		available = {
@@ -8957,8 +8957,8 @@ focus_tree = {
 		prerequisite = { focus = ITA_to_live_as_a_lion focus = ITA_boost_the_grand_council_of_fascism }
 		prerequisite = { focus = ITA_strengthen_the_regime }
 
-		x = -4
-		y = 1
+		x = -6
+		y = 2
 		relative_position_id = ITA_strengthen_the_regime
 		cost = 5
 		available = {
@@ -9320,11 +9320,11 @@ focus_tree = {
 	focus = {
 		id = ITA_towards_a_greater_italy
 		icon = GFX_focus_ITA_greater_italy
-		prerequisite = { focus = ITA_strengthen_the_regime }
+		prerequisite = { focus = ITA_italys_destiny }
 		mutually_exclusive = { focus = ITA_mare_nostrum_bba }
 
-		x = -2
-		y = 2
+		x = -3
+		y = 4
 		relative_position_id = ITA_strengthen_the_regime
 		cost = 5
 
@@ -10084,7 +10084,7 @@ focus_tree = {
 		icon = GFX_focus_ger_oppose_hitler
 		prerequisite = { focus = ITA_pact_of_steel }
 
-		x = -5
+		x = -2
 		y = 1
 		relative_position_id = ITA_pact_of_steel
 		cost = 5
@@ -10103,9 +10103,12 @@ focus_tree = {
 	focus = {
 		id = ITA_sea_wolves_bba
 		icon = GFX_goal_generic_wolf_pack
-		prerequisite = { focus = ITA_german_military_cooperation }
+		prerequisite = { 
+			focus = ITA_german_military_cooperation 
+			focus = ITA_treaty_with_germany
+		}
 
-		x = -1
+		x = 1
 		y = 1
 		relative_position_id = ITA_german_military_cooperation
 		cost = 5
@@ -10135,9 +10138,12 @@ focus_tree = {
 	focus = {
 		id = ITA_secret_weapons
 		icon = GFX_goal_generic_secret_weapon
-		prerequisite = { focus = ITA_german_military_cooperation }
+		prerequisite = { 
+			focus = ITA_german_military_cooperation 
+			focus = ITA_treaty_with_germany
+		}
 
-		x = 1
+		x = 3
 		y = 1
 		relative_position_id = ITA_german_military_cooperation
 		cost = 5
@@ -10168,7 +10174,7 @@ focus_tree = {
 		icon = GFX_focus_chi_mission_to_germany
 		prerequisite = { focus = ITA_pact_of_steel }
 
-		x = -2
+		x = 2
 		y = 1
 		relative_position_id = ITA_pact_of_steel
 		cost = 5
@@ -10217,71 +10223,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = ITA_request_control_of_french_territories
-		icon = GFX_focus_generic_attack_vichy_france
-		prerequisite = { focus = ITA_treaty_with_germany focus = ITA_german_military_cooperation}
-		#prerequisite = { focus = ITA_italian_irredentism }
-	
-		mutually_exclusive = { focus = ITA_war_with_france }
-		x = -2
-		y = 2
-		relative_position_id = ITA_pact_of_steel
-		cost = 5
 
-		available = {
-			is_puppet = no
-			is_in_faction_with = GER
-			GER = { 
-				controls_state = 16 				
-				GER = { is_faction_leader = yes }
-			}
-			custom_trigger_tooltip = {
-			 tooltip = ITA_claims_on_france_tt
-				any_other_country = {
-					original_tag = FRA
-					has_government = fascism
-					owns_state = 735
-					controls_state = 735
-					owns_state = 1
-					controls_state = 1
-				}
-			}
-		}
-
-		search_filters = {FOCUS_FILTER_ANNEXATION}
-
-		completion_reward = {
-			EFR = {
-				give_resource_rights = {
-					receiver = ITA
-					state = 459
-				}
-			}
-			if = {
-				limit = { 
-					any_other_country = {
-						original_tag = FRA
-						has_government = fascism
-						owns_state = 735
-					}
-				}
-				set_global_flag = ITA_claims_on_france_735
-			}
-			if = {
-				limit = { 
-					any_other_country = {
-						original_tag = FRA
-						has_government = fascism
-						owns_state = 1
-					}
-				}
-				set_global_flag = ITA_claims_on_france_1
-			}
-
-			GER = { country_event = germany.104 }
-		}
-	}
 
 
 
@@ -10290,7 +10232,7 @@ focus_tree = {
 		icon = GFX_focus_chi_collaboration_with_the_japanese
 		prerequisite = { focus = ITA_pact_of_steel  }
 
-		x = 2
+		x = 4
 		y = 1
 		relative_position_id = ITA_pact_of_steel
 		cost = 5
@@ -13464,10 +13406,10 @@ focus_tree = {
 
 		focus = {
 		id = ITA_italys_destiny
-		icon = GFX_focus_generic_balkans_focus
+		icon = GFX_focus_ITA_imperial_recognition
 		prerequisite = { focus = ITA_a_greater_purpose }
 
-		x = -2
+		x = -3
 		y = 1
 		relative_position_id = ITA_a_greater_purpose
 		cost = 10
@@ -13549,13 +13491,13 @@ focus_tree = {
 		focus = {
 		id = ITA_mare_nostrum_bba
 		icon = GFX_focus_ITA_mare_nostrum
-		prerequisite = { focus = ITA_strengthen_the_regime  }
+		prerequisite = { focus = ITA_spreading_the_eagles_wings  }
 		mutually_exclusive = { focus = ITA_towards_a_greater_italy }
-		x = 4
-		y = 0
+		x = 3
+		y = 4
 		
 		#relative_position_id = ITA_setting_course #Better to use the other one for hiding branches
-		relative_position_id = ITA_towards_a_greater_italy
+		relative_position_id = ITA_strengthen_the_regime
 		cost = 5
 		available = {
 			any_owned_state = {
@@ -14144,12 +14086,12 @@ focus_tree = {
 
 	focus = {
         id = ITA_a_greater_purpose
-        icon = GFX_goal_support_fascism
-        prerequisite = { focus = ITA_pact_of_steel  }
+        icon = GFX_focus_generic_italy_first
+        prerequisite = { focus = ITA_strengthen_the_regime  }
 
-		x = 5
+		x = 0
 		y = 1
-		relative_position_id = ITA_pact_of_steel
+		relative_position_id = ITA_strengthen_the_regime
 
         cost = 10
         available = {
@@ -14195,7 +14137,7 @@ focus = {
         icon = GFX_focus_generic_spread_fascism
         prerequisite = { focus = ITA_a_greater_purpose }
         relative_position_id = ITA_a_greater_purpose
-        x = 0
+        x = 3
         y = 1
 
         cost = 5
@@ -14215,13 +14157,14 @@ focus = {
         id = ITA_italian_hegemony
         icon = GFX_focus_ITA_italian_hegemony
         prerequisite = { focus = ITA_spreading_the_eagles_wings }
+		prerequisite = { focus = ITA_italys_destiny }
         relative_position_id = ITA_a_greater_purpose
         x = 0
         y = 2
 
         cost = 10
         available = {
-            num_subjects > 0
+          #  num_subjects > 0
         }
 
         search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER}

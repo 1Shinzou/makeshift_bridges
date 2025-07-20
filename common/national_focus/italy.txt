@@ -9926,7 +9926,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_albanian_occupation
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_focus_ITA_albanian_irredentism
 		prerequisite = { focus = ITA_foreign_affairs }
 
 		x = -2
@@ -13704,43 +13704,7 @@ focus_tree = {
 			custom_effect_tooltip = ITA_all_roads_lead_to_rome_re_tt
 			add_to_variable = { ITA_re_supply_node_range = 0.1 }
 
-			custom_effect_tooltip = ITA_all_roads_lead_to_rome_wargoals_tt
-			if = {
-				limit = {
-					any_other_country = {
-						capital_scope = { is_on_continent = europe }
-						NOT = {
-							is_in_faction_with = ROOT
-							has_guaranteed = ROOT
-							is_guaranteed_by = ROOT
-							has_non_aggression_pact_with = ROOT
-							has_war_with = ROOT
-						}
-					}
-				}
-				custom_effect_tooltip = generic_current_effects
-				custom_effect_tooltip = generic_ROOT_gains_wargoal_tt
-				every_neighbor_country = {
-					limit = {
-						capital_scope = { is_on_continent = europe }
-						NOT = {
-							is_in_faction_with = ROOT
-							has_guaranteed = ROOT
-							is_guaranteed_by = ROOT
-							has_non_aggression_pact_with = ROOT
-							has_war_with = ROOT
-						}
-					}
-					hidden_effect = {
-						ROOT = {
-							create_wargoal = {
-								type = annex_everything
-								target = PREV
-							}
-						}
-					}
-				}
-			}
+
 		}
 	}
 

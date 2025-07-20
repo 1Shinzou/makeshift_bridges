@@ -30,56 +30,6 @@ operations = {
     }
 
 	
-		annex_siam = {
-			# icon = generic_operation
-			allowed = {
-				tag = JAP
-			}
-			available = {
-				SIA = {
-					is_ai = yes
-				}
-			}
-			fire_only_once = yes
-			cost = 0
-			ai_will_do = {
-				factor = 0
-			}
-			visible = {
-				tag = JAP
-			}
-			targets = {
-				SIA
-			}
-			complete_effect = {
-				SIA = {
-					transfer_units_fraction = {
-						target = JAP
-						size = 1
-						stockpile_ratio = 1
-						army_ratio = 1
-						navy_ratio = 1
-						air_ratio = 1
-						keep_unit_leaders_trigger = {
-							always = no
-						}
-					}
-				}
-				JAP = {
-					annex_country = {
-						target = SIA
-						transfer_troops = yes
-					}
-				}
-				every_state = {
-					limit = {
-						is_core_of = SIA
-						is_controlled_by = JAP
-					}
-					add_compliance = 100
-				}
-			}
-		}
 
 		annex_philippines= {
 			# icon = generic_operation

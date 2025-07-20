@@ -7894,8 +7894,8 @@ focus_tree = {
 		alternate_icon = GFX_focus_ger_reichskommisariats_historical
 		prerequisite = {  focus = GER_reorganize_the_wehrmacht }
 
-		x = 0
-		y = 2
+		x = 2
+		y = 1
 		relative_position_id = GER_reorganize_the_wehrmacht
 		cost = 5
 		available = {
@@ -10297,8 +10297,8 @@ focus_tree = {
 
 		prerequisite = { focus = GER_reorganize_the_wehrmacht }
 		mutually_exclusive = { focus = GER_anti_soviet_pact }
-		x = 2
-		y = 1
+		x = 0
+		y = 2
 		relative_position_id = GER_reorganize_the_wehrmacht
 		cost = 5
 		
@@ -10354,7 +10354,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_molotov_ribbentrop_pact
-		cost = 10
+		cost = 5
 		
 		bypass = { 
 			OR = {

@@ -90,11 +90,11 @@ focus_tree = {
 		scroll_wheel_factor = 1.0
 	}
 
-	continuous_focus_position = { x = 500 y = 1300 }
+	continuous_focus_position = { x = 3300 y = 1000 }
 
 	inlay_window = {
 		id = ger_inner_circle_inlay_window
-		position = { x = 4350 y = 1100 }
+		position = { x = 4450 y = 1000 }
 	}
 
 	
@@ -682,7 +682,7 @@ focus_tree = {
 		alternate_icon = GFX_focus_GER_the_four_year_plan_historical
 
 		mutually_exclusive = { focus = GER_prioritize_economic_growth }
-		x = 45
+		x = 50
 		y = 0
 		
 		cost = 5
@@ -1991,7 +1991,7 @@ focus_tree = {
 		icon = GFX_focus_GER_army
 		#prerequisite = { focus = }
 
-		x = 8
+		x = 13
 		y = 0
 		#relative_position_id = GER_prioritize_economic_growth
 		cost = 5
@@ -7068,9 +7068,9 @@ focus_tree = {
 			}
 		}
 
-		x = 31
+		x = 70
 		y = 0
-		relative_position_id = GER_the_four_year_plan
+
 
 		cost = 5
 
@@ -7134,12 +7134,12 @@ focus_tree = {
 	focus = {
 		id = GER_legion_condor
 		icon = GFX_focus_intervention_spain_nationalists
-		prerequisite = { focus = GER_remilitarize_the_rhineland }
+		prerequisite = { focus = GER_reorganize_the_wehrmacht }
 
 
-		x = -4
+		x = -3
 		y = 1
-		relative_position_id = GER_remilitarize_the_rhineland
+		relative_position_id = GER_reorganize_the_wehrmacht
 
 		cost = 5
 
@@ -7191,7 +7191,7 @@ focus_tree = {
 
 		prerequisite = { focus = GER_reorganize_the_wehrmacht  }
 
-		x = -8
+		x = -6
 		y = 1
 		relative_position_id = GER_reorganize_the_wehrmacht
 		cost = 10
@@ -7497,7 +7497,7 @@ focus_tree = {
 		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = GER_remilitarize_the_rhineland }
 
-		x = -14
+		x = -6
 		y = 1
 		relative_position_id = GER_remilitarize_the_rhineland
 		cost = 5
@@ -8081,7 +8081,7 @@ focus_tree = {
 
 		mutually_exclusive = { focus = GER_befriend_czechoslovakia }
 
-		x = -2
+		x = 3
 		y = 1
 		relative_position_id = GER_anschluss
 
@@ -8503,7 +8503,7 @@ focus_tree = {
 		icon = GFX_focus_GER_demonstration_of_military_achievements
 		prerequisite = { focus = GER_anschluss }
 
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = GER_anschluss
 		cost = 5
@@ -8655,12 +8655,14 @@ focus_tree = {
 	focus = {
 		id = GER_the_triumphant_will
 		icon = GFX_goal_support_fascism
-		prerequisite = { focus = GER_anschluss }
+		prerequisite = { 
+			focus = GER_war_with_france
+		}
 		#mutually_exclusive = { focus = GER_integration_of_puppet_economies focus = GER_specialized_ss_commandos }
 
-		x = 4
-		y = 1
-		relative_position_id = GER_anschluss
+		x = 0
+		y = 2
+		relative_position_id = GER_war_with_france
 		cost = 5
 	
 		available = {
@@ -8746,7 +8748,7 @@ focus_tree = {
 		icon = GFX_focus_generic_liechtenstein_coa
 		prerequisite = { focus = GER_anschluss }
 
-		x = 6
+		x = 1
 		y = 1
 		relative_position_id = GER_anschluss
 		cost = 5
@@ -8792,8 +8794,8 @@ focus_tree = {
 		id = GER_reassert_eastern_claims
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = GER_anschluss }
-
-		x = 2
+		prerequisite = { focus = GER_treaty_with_the_ussr }
+		x = 5
 		y = 1
 		relative_position_id = GER_anschluss
 		cost = 5
@@ -8940,82 +8942,7 @@ focus_tree = {
 	#	}
 	#}
 
-	focus = {
-		id = GER_form_rome_berlin_axis
 
-		icon = GFX_focus_befriend_italy
-		alternate_icon = GFX_focus_GER_befriend_italy
-
-		prerequisite = { focus = GER_fate_of_czechoslovakia  }
-		mutually_exclusive = { focus = GER_invade_italy }
-		x = 0
-		y = 1
-		relative_position_id = GER_fate_of_czechoslovakia
-		cost = 5
-
-		bypass = {
-			OR = {
-				is_in_faction_with = ITA
-				has_war_with = ITA
-				NOT = { country_exists = ITA }
-				ITA = {
-					OR = {
-						NOT = { has_government = fascism }
-						is_subject = yes
-					}
-				}
-			}
-		}
-
-		available_if_capitulated = yes
-		
-		available = {
-			is_faction_leader = yes
-			is_subject = no
-			NOT = { has_war_with = ITA }
-			ITA = {
-				has_government = fascism
-				is_subject = no
-			}
-			NOT = { has_country_flag = ENG_ditched_the_italians_flag }
-		}
-
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				OR = {
-					has_government = democratic
-					has_government = communism
-				}
-			}
-		}
-
-		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-			ITA = {
-				add_opinion_modifier = { target = GER modifier = ger_ita_alliance_focus }
-				hidden_effect = {
-					add_ai_strategy = {
-						type = befriend
-						id = ROOT
-						value = 50
-					}
-					ROOT = {
-						add_ai_strategy = {
-							type = befriend
-							id = PREV
-							value = 50
-						}
-					}
-					country_event = { id = generic.5 hours = 4 random_hours = 4 }
-				}
-				custom_effect_tooltip = generic_invite_to_faction_tt
-			}
-		}
-	}
-	
 
 	
 	focus = {
@@ -9024,11 +8951,12 @@ focus_tree = {
 		icon = GFX_focus_GER_danzig_or_war
 		alternate_icon = GFX_focus_GER_danzig_or_war_historical
 
-		prerequisite = { focus = GER_reassert_eastern_claims }
+		#prerequisite = { focus = GER_reassert_eastern_claims }
 		prerequisite = { focus = GER_molotov_ribbentrop_pact }
+		prerequisite = { focus = GER_fate_of_czechoslovakia }
 
 		x = 0
-		y = 2
+		y = 3
 		relative_position_id = GER_reassert_eastern_claims
 		cost = 0.2
 
@@ -9687,7 +9615,7 @@ focus_tree = {
 		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = GER_war_with_france }
 
-		x = 3
+		x = 1
 		y = 1
 		relative_position_id = GER_war_with_france
 		cost = 10
@@ -9773,10 +9701,10 @@ focus_tree = {
 	focus = {
 		id = GER_the_swiss_gold
 		icon = GFX_focus_GER_the_swiss_gold
-		prerequisite = { focus = GER_war_with_france }
-		x = 1
+		prerequisite = { focus = GER_around_maginot }
+		x = -1
 		y = 1
-		relative_position_id = GER_war_with_france
+		relative_position_id = GER_around_maginot
 		cost = 5
 		available = {
 			
@@ -9911,7 +9839,7 @@ focus_tree = {
 	focus = {
 		id = GER_operation_sea_lion
 		icon = GFX_focus_generic_naval_invasion
-		prerequisite = { focus = GER_war_with_france focus = GER_invade_italy }
+		prerequisite = { focus = GER_war_with_france  }
 
 		x = -1
 		y = 1
@@ -9977,7 +9905,7 @@ focus_tree = {
 
 		prerequisite = { focus = GER_remilitarize_the_rhineland }
 
-		x = 0
+		x = 4
 		y = 1
 		relative_position_id = GER_remilitarize_the_rhineland
 		cost = 5
@@ -10295,11 +10223,11 @@ focus_tree = {
 		icon = GFX_goal_molotov_ribbentrop_pact
 		alternate_icon = GFX_focus_GER_molotov_ribbentrop_pact
 
-		prerequisite = { focus = GER_reorganize_the_wehrmacht }
+		prerequisite = { focus = GER_reassert_eastern_claims }
 		mutually_exclusive = { focus = GER_anti_soviet_pact }
 		x = 0
-		y = 2
-		relative_position_id = GER_reorganize_the_wehrmacht
+		y = 1
+		relative_position_id = GER_reassert_eastern_claims
 		cost = 5
 		
 		available = {
@@ -10349,11 +10277,11 @@ focus_tree = {
 	focus = {
 		id = GER_treaty_with_the_ussr
 		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = GER_molotov_ribbentrop_pact }
+		prerequisite = { focus = GER_reorganize_the_wehrmacht }
 
 		x = 0
 		y = 1
-		relative_position_id = GER_molotov_ribbentrop_pact
+		relative_position_id = GER_reorganize_the_wehrmacht
 		cost = 5
 		
 		bypass = { 
@@ -10793,7 +10721,7 @@ focus_tree = {
 		icon = GFX_focus_GER_support_the_fuhrer
 
 		prerequisite = { focus = GER_remilitarize_the_rhineland }
-		x = -17
+		x = -9
 		y = 7
 		relative_position_id = GER_remilitarize_the_rhineland
 		cost = 5

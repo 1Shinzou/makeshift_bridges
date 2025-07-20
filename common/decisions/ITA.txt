@@ -122,6 +122,7 @@ ETH_second_italo_ethiopian_war_category = {
 		}
 
 		visible = {
+			country_exists = ETH
 			has_global_flag = second_italo_ethiopian_war_flag
 		}
 

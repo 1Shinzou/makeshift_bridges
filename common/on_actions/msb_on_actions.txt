@@ -149,6 +149,16 @@ on_actions = {
 					days = 912
 				}
 			}
+			IF = {
+				limit = {
+					has_global_flag = second_italo_ethiopian_war_flag
+					OR = {
+						tag = ITA
+						tag = ETH
+					}
+				}
+				ITA_end_the_italo_ethiopian_war = yes
+			}
 			if = {
                 limit = {
                     date < 1936.1.22

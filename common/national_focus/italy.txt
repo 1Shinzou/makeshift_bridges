@@ -8304,10 +8304,7 @@ focus_tree = {
 		cost = 5
 
 		bypass = {
-			OR = {
-				has_country_flag = ITA_defeat_in_ethiopia_flag
-				ITA_has_peaced_out_eth_on_startup = yes
-			}
+	
 		}
 
 		available = {

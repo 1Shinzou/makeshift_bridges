@@ -132,7 +132,7 @@ NDefines.NBuildings.OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 1.0 -- You get all 
 
 
 
-NDefines.NIndustrialOrganisation.DESIGN_TEAM_CHANGE_XP_COST = 0
+NDefines.NIndustrialOrganisation.DESIGN_TEAM_CHANGE_XP_COST = 0 --Mio costs 0 XP to apply
 
 --NDefines_Graphics.NAirGfx.MAX_MISSILE_BOMBING_SCENARIOS = 0
 --NDefines_Graphics.NAirGfx.MAX_BOMBING_SCENARIOS = 0
@@ -300,6 +300,13 @@ NDefines.NNavy.MISSION_FUEL_COSTS = {  -- fuel cost for each mission
 		0.0, -- RESERVE_FLEET (consumes fuel HOLD_MISSION_MOVEMENT_COST fuel while moving)
 		1.0, -- NAVAL_INVASION_SUPPORT (does not cost fuel at base, only costs while doing bombardment and escorting units)
 	}
+
+NDefines.NAir.PORT_STRIKE_DAMAGE_FACTOR = 0.5	-- How much damage is dealt to ports during a port strike (per plane damage [complex number] * num flying planes * define)
+NDefines.NAir.NAVAL_STRIKE_BASE_STR_TO_PLANES_RATIO = 0.03		-- Max airbombers to do port strike comparing to strength
+NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.025		-- Max planes that can join a combat comparing to the total strength of the ships
+NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO_PER_DAY = 0.1 -- max extra plane % that can join every day
+NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_MIN_CAP = 0		-- Min cap for planes that can join naval combat
+--Grape Naval Fix AI
 NDefines.NAI.CARRIER_TASKFORCE_MAX_CARRIER_COUNT = 3 		-- optimum carrier count for carrier taskforces
 NDefines.NAI.CAPITAL_TASKFORCE_MAX_CAPITAL_COUNT = 6 		-- optimum capital count for capital taskforces
 NDefines.NAI.SCREEN_TASKFORCE_MAX_SHIP_COUNT = 25			-- optimum screen count for screen taskforces
@@ -307,13 +314,6 @@ NDefines.NAI.SUB_TASKFORCE_MAX_SHIP_COUNT = 16 				-- optimum sub count for sub 
 NDefines.NAI.MIN_CAPITALS_FOR_CARRIER_TASKFORCE = 3			-- carrier fleets will at least have this amount of capitals
 NDefines.NAI.CAPITALS_TO_CARRIER_RATIO = 1.0				-- capital to carrier count in carrier taskfoces
 NDefines.NAI.SCREENS_TO_CAPITAL_RATIO = 3.2					-- screens to capital/carrier count in carrier & capital taskforces
-	
 NDefines.NAI.MAX_FACTORY_TO_SPARE_FOR_MISSION_FUEL_TRADE = 0.7						-- amount of factories to spend on oil trade in case of fuel need for missions
 NDefines.NAI.MAX_FACTORY_TO_SPARE_FOR_CRITICAL_MISSION_FUEL_TRADE = 0.7			-- amount of factories to spend on oil trade in case of fuel need for prio missions
 NDefines.NAI.MAX_FACTORY_TO_TRADE_FOR_FUEL = 0.8
-NDefines.NAir.PORT_STRIKE_DAMAGE_FACTOR = 0.5	-- How much damage is dealt to ports during a port strike (per plane damage [complex number] * num flying planes * define)
-NDefines.NAir.NAVAL_STRIKE_BASE_STR_TO_PLANES_RATIO = 0.03		-- Max airbombers to do port strike comparing to strength
-NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.025		-- Max planes that can join a combat comparing to the total strength of the ships
-NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO_PER_DAY = 0.1 -- max extra plane % that can join every day
-NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_MIN_CAP = 0		-- Min cap for planes that can join naval combat
-	

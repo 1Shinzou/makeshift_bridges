@@ -1244,6 +1244,12 @@ focus_tree = {
 				limit = { has_idea = volunteer_only }
 				add_ideas = limited_conscription
 			}
+			if = {
+				limit = {
+					has_idea = limited_conscription
+				}
+				add_ideas = extensive_conscription
+			}
 		}
 	}
 
@@ -1378,6 +1384,7 @@ focus_tree = {
 				}
 				add_ideas = BUL_bulgarian_army_02
 			}
+			add_ideas = SPA_expand_conscription
 		}
 	}
 

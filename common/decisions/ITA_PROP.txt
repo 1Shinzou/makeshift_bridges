@@ -21,7 +21,6 @@ ITA_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			experience_loss_factor = -0.1
 			experience_gain_army_factor = 0.1
 		}
 
@@ -136,7 +135,7 @@ ITA_propaganda_campaigns = {
 
 		modifier = {
 			research_sharing_per_country_bonus_factor = 0.5
-			command_power_gain_mult = 1.0
+			command_power_gain_mult = 0.25
 			offensive_war_stability_factor = 0.1
 		}
 

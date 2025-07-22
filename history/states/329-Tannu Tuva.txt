@@ -2,17 +2,17 @@
 state={
 	id=329
 	name="STATE_329"
-	manpower = 85000
+	manpower = 100000
 	resources={
 		chromium=2 # was: 2
 	}
 	
-	state_category = rural
+	state_category = city
 
 	history={
 		owner = SOV
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			arms_factory = 1
 			industrial_complex = 1
 		}

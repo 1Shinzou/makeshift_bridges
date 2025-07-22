@@ -4279,6 +4279,11 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			hidden_effect = {
+				every_army_leader = {
+					remove_unit_leader_trait = no_grind
+				}
+			}
 			create_corps_commander = {
 				name = "Marie-Pierre Koenig"
 				GFX = GFX_portrait_fra_marie_pierre_koenig

@@ -2088,9 +2088,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			hidden_effect = {
-				set_technology = { advanced_ship_hull_heavy = 1 }	
-			}
+
+			set_technology = { advanced_ship_hull_heavy = 1 }	
 			navy_experience = 25
 			create_equipment_variant = {
 				name = "Vanguard"
@@ -2127,7 +2126,7 @@ focus_tree = {
 				133 = {
 					custom_effect_tooltip = ENG_vanguard_tt_communism
 				}
-				hidden_effect = { load_oob = "ENG_vanguard_communist" }
+
 			}
 		}
 	}

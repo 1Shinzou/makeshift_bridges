@@ -844,7 +844,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		icon = GFX_goal_generic_construct_mil_factory
-		x = -10
+		x = -9
 		y = 1
 		relative_position_id = limited_rearmament_focus
 		cost = 10
@@ -2088,9 +2088,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			hidden_effect = {
-				set_technology = { advanced_ship_hull_heavy = 1 }	
-			}
+
+			set_technology = { advanced_ship_hull_heavy = 1 }	
 			navy_experience = 25
 			create_equipment_variant = {
 				name = "Vanguard"
@@ -2127,7 +2126,7 @@ focus_tree = {
 				133 = {
 					custom_effect_tooltip = ENG_vanguard_tt_communism
 				}
-				hidden_effect = { load_oob = "ENG_vanguard_communist" }
+
 			}
 		}
 	}
@@ -3187,6 +3186,7 @@ focus_tree = {
 		id = ENG_imperial_conference
 		prerequisite = { focus = uk_australia_focus }
 		prerequisite = { focus = uk_south_africa_focus }
+		prerequisite = { focus = uk_ireland_focus }
 
 		allow_branch = {
 			has_dlc = "Man the Guns"
@@ -3363,9 +3363,6 @@ focus_tree = {
 	}
 
 	### GLOBAL DEFENSE BRANCH ###
-
-
-
 
 	focus = {
 		id = ENG_maintaining_imperial_integrity
@@ -3781,9 +3778,10 @@ focus_tree = {
 
 	focus = {
 		id = ENG_military_training_act
-		prerequisite = { focus = ENG_reinforce_the_empire
+		prerequisite = { 
+			focus = ENG_issue_gasmasks
 		}
-		relative_position_id = ENG_reinforce_the_empire
+
 		available = {
 			OR = {
 				threat > 0.5
@@ -3794,10 +3792,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 
-		icon = GFX_focus_generic_commonwealth_build_infantry
-		x = 7
-		y = 1
-		
+		icon = GFX_focus_RAJ_military_into_the_workforce
+		x = 8
+		y = 2
+		relative_position_id = ENG_reinforce_the_empire		
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -3806,6 +3804,35 @@ focus_tree = {
 			remove_ideas = ENG_the_war_to_end_all_wars
 			army_experience = 125
 			set_rule = { can_send_volunteers = yes }
+		}
+	}
+
+	focus = {
+		id = ENG_issue_gasmasks
+		available = {
+			OR = {
+				threat > 0.2
+				has_war = yes
+			}
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+		prerequisite = { focus = ENG_reinforce_the_empire }
+		icon = GFX_goal_generic_construct_military
+		x = 8
+		y = 1
+		relative_position_id = ENG_reinforce_the_empire
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY}	
+		completion_reward = {
+			add_war_support = 0.05
+			add_stability = 0.1
 		}
 	}
 
@@ -3832,7 +3859,7 @@ focus_tree = {
 
 	focus = {
 		id = ENG_kickstart_the_war_industry
-		prerequisite = { focus = ENG_military_training_act }
+		prerequisite = { focus = ENG_issue_gasmasks }
 		available = { 
 			
 		}
@@ -3840,9 +3867,9 @@ focus_tree = {
 		continue_if_invalid = yes
 
 		icon = GFX_focus_generic_reorient_production
-		x = 1
+		x = 2
 		y = 1
-		relative_position_id = ENG_military_training_act
+		relative_position_id = ENG_issue_gasmasks
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -3902,11 +3929,12 @@ focus_tree = {
 		id = ENG_arms_purchases_in_the_us
 		text = FRA_arms_purchases_in_the_us
 		icon = GFX_focus_generic_american_investments
-		x = -1
+		x = -2
 		y = 1
 		prerequisite = {
 			focus = ENG_kickstart_the_war_industry
 			focus = ENG_the_home_army
+			focus = ENG_military_training_act
 		}
 		relative_position_id = ENG_kickstart_the_war_industry
 		cost = 5
@@ -3954,11 +3982,11 @@ focus_tree = {
 
 		available_if_capitulated = no
 
-		prerequisite = { focus = ENG_military_training_act }
+		prerequisite = { focus = ENG_issue_gasmasks }
 		icon = GFX_focus_CHL_departemento_de_las_tropas_nacistas_de_asalto
-		x = -1
+		x = -2
 		y = 1
-		relative_position_id = ENG_military_training_act
+		relative_position_id = ENG_issue_gasmasks
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -4055,7 +4083,7 @@ focus_tree = {
 							}
 						}
 					}
-					add_extra_state_shared_building_slots = 5
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
 						level = 1
@@ -4105,7 +4133,7 @@ focus_tree = {
 							}
 						}
 					}
-					add_extra_state_shared_building_slots = 5
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
 						level = 1

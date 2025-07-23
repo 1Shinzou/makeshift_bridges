@@ -99,7 +99,7 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = IRE_scars_of_The_Potato_Famine
 			add_to_variable = { 
-				IRE_army_org_factor = 0.15
+				IRE_scars_of_The_Potato_Famine_army_org_factor = 0.05
 				tooltip = army_org_factor_tt
 			}
 			add_to_variable = { 

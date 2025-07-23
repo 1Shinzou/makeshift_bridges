@@ -49,7 +49,6 @@ HOL_obtain_foreign_colonial_investments = {
 					has_full_control_of_state = PREV
 				}
 			}
-			has_full_control_of_state = 695
 			has_full_control_of_state = 309
 		}
 
@@ -125,7 +124,7 @@ HOL_obtain_foreign_colonial_investments = {
 					has_full_control_of_state = PREV
 				}
 			}
-			has_full_control_of_state = 695
+
 			has_full_control_of_state = 309
 		}
 

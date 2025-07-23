@@ -2961,7 +2961,7 @@ focus_tree = {
 		prerequisite = { 
 			focus = uk_canada_focus 
 		}
-		x = 1
+		x = 2
 		y = 3
 		relative_position_id = uk_commonwealth_focus
 
@@ -3103,7 +3103,7 @@ focus_tree = {
 		prerequisite = { 
 			focus = uk_india_focus
 			}
-		x = -1
+		x = -2
 		y = 3
 		relative_position_id = uk_commonwealth_focus
 		cost = 2
@@ -3128,6 +3128,75 @@ focus_tree = {
 
 		completion_reward = {
 			AST = {
+				add_opinion_modifier = { target = ENG modifier = ENG_imperial_trade }
+				add_timed_idea = {	idea = GBR_british_mobilisation_support	days = 200	}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = GBR_supported_local_industry_flag
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = GBR_supported_local_industry_flag
+				}
+			}
+		}
+	}
+	focus = {
+		id = uk_ireland_focus
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { 
+			focus = uk_india_focus
+			focus = uk_canada_focus
+			}
+		x = 0
+		y = 3
+		relative_position_id = uk_commonwealth_focus
+		cost = 2
+
+		available = {
+			any_country = {
+				original_tag = IRE
+				is_in_faction_with = ROOT
+			}
+		}
+
+		bypass = {
+			IRE = { 
+				OR = {
+					exists = no
+					is_in_faction = no
+				}
+			}
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			IRE = {
 				add_opinion_modifier = { target = ENG modifier = ENG_imperial_trade }
 				add_timed_idea = {	idea = GBR_british_mobilisation_support	days = 200	}
 				random_owned_controlled_state = {
@@ -3291,13 +3360,16 @@ focus_tree = {
 							is_subject_of = ENG
 							tag = NZL
 						}
+						AND = {
+							is_subject_of = ENG
+							tag = IRE
+						}
 					}
 				}
 				country_event = { id = mtg_britain.82 hours = 6 }
 			}
 			hidden_effect = { news_event = { id = mtg_news.13 days = 1 } }
 			custom_effect_tooltip = ENG_imperial_conference_tt
-			custom_effect_tooltip = ENG_indian_autonomy_tt
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}

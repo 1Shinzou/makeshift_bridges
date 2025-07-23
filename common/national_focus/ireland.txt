@@ -1682,7 +1682,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = IRE_secure_the_imperial_shipping_routes
-				bonus = 5
+				bonus = 1
 				uses = 2
 				category = cl_tech
 			}
@@ -1707,7 +1707,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = dd_bonus
-				bonus = 5
+				bonus = 1
 				uses = 2
 				category = dd_tech
 			}

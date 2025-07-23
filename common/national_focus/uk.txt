@@ -10,7 +10,7 @@ focus_tree = {
 		}
 	}
 	
-	continuous_focus_position = { x = 1000 y = 1200 }
+	continuous_focus_position = { x = 100 y = 1200 }
 
 	default = no
 
@@ -265,7 +265,7 @@ focus_tree = {
 		available = { 			
 		}
 		icon = GFX_goal_generic_army_motorized
-		x = 0
+		x = -5
 		y = 1
 		relative_position_id = limited_rearmament_focus
 		cost = 5
@@ -384,7 +384,7 @@ focus_tree = {
 		id = ENG_tank_variant_focus
 		prerequisite = { focus = ENG_tank_focus }
 		icon = GFX_goal_generic_army_tanks
-		x = -1
+		x = 1
 		y = 1
 		relative_position_id = ENG_tank_focus
 		cost = 5
@@ -844,7 +844,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		icon = GFX_goal_generic_construct_mil_factory
-		x = -9
+		x = -10
 		y = 1
 		relative_position_id = limited_rearmament_focus
 		cost = 10
@@ -942,6 +942,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
+			add_potential_special_forces_tree = yes	
 			add_ideas = ENG_special_air_service_idea
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = ENG_david_stirling
@@ -965,7 +966,7 @@ focus_tree = {
 			focus = ENG_tank_variant_focus
 		}
 		icon = GFX_goal_generic_construct_mil_factory
-		x = -2
+		x = 2
 		y = 3
 		relative_position_id = ENG_motorized_focus
 		cost = 10
@@ -1371,7 +1372,6 @@ focus_tree = {
 			army_experience = 10
 			navy_experience = 10
 			air_experience = 10
-			add_potential_special_forces_tree = yes	
 			add_ideas = ENG_chiefs_of_staff_committee_idea
 		}
 	}
@@ -2132,24 +2132,39 @@ focus_tree = {
 		}
 	}
 	
-	#focus = {
-	#	id = uk_embargo_focus
-	#	available = { threat > 0.1 }
-	#	icon = GFX_goal_support_democracy
-	#	x = 12
-	#	y = 0
-	#	cost = 10
-	#	ai_will_do = {
-	#		factor = 1
-	#	}	
-	#	completion_reward = {
-	#		every_other_country = {
-	#			limit = { NOT = { has_government = democratic } }
-	#			add_opinion_modifier = { target = ENG modifier = minor_sanctions }
-	#			add_opinion_modifier = { target = ENG modifier = minor_sanctions_relations } 
-	#		}
-	#	}
-	#}
+
+	focus = {
+		id = ENG_the_sun_never_sets
+		prerequisite = { focus = ENG_imperial_conference }	
+		available = {
+
+		}
+		icon = GFX_focus_eng_the_sun_never_sets
+		x = 0
+		y = 1
+		relative_position_id = ENG_imperial_conference
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			add_tech_bonus = {
+				name = ENG_the_sun_never_sets
+				bonus = 1.0
+				uses = 1
+				category = dd_tech
+				category = cl_tech
+				category = ca_tech
+				category = bb_tech
+				category = cv_tech
+				category = ss_tech
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = ENG_the_sun_never_sets_idea
+			custom_effect_tooltip = ENG_the_sun_never_sets_tt
+		}
+	}
 
 	### EMPIRE ###
 
@@ -2610,90 +2625,19 @@ focus_tree = {
 					province = 12299
 					instant_build = yes
 				}
-				if = {
-					limit = {
-						CONTROLLER = {
-							NOT = { tag = ENG }
-						}
-					}
-					CONTROLLER = {
-						add_autonomy_ratio = {
-							value = -0.02
-							localization = singapore_focus
-						}
-					}
-				}
+
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_TFV_AUTONOMY }
 	}
-	focus = {
-		id = sp_landward_forts_focus
-		prerequisite = { focus = uk_asia_focus }
-		icon = GFX_goal_generic_construct_military
-		x = 1
-		y = 1
-		relative_position_id = uk_asia_focus
-		cost = 1
-		ai_will_do = {
-			factor = 1
-		}	
-		available = {
-			336 = {
-				controls_or_subject_of = yes
-			}
-		}
 
-
-		available_if_capitulated = yes
-
-		bypass = {
-			336 = {
-				free_building_slots = {
-					building = anti_air_building
-					size < 2
-				}
-			}
-		}
-
-		completion_reward = {
-			336 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = bunker
-					level = 4
-					province = 12299
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = anti_air_building
-					level = 2
-					instant_build = yes
-				}
-				if = {
-					limit = {
-						CONTROLLER = {
-							NOT = { tag = ENG }
-						}
-					}
-					CONTROLLER = {
-						add_autonomy_ratio = {
-							value = -0.02
-							localization = sp_landward_forts_focus
-						}
-					}
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_TFV_AUTONOMY }
-	}
 	focus = {
 		id = peninsular_focus
 		prerequisite = { focus = uk_asia_focus }
 		icon = GFX_goal_generic_construction2
-		x = -1
-		y = 1
-		relative_position_id = sp_landward_forts_focus
+		x = 0
+		y = 2
+		relative_position_id = uk_asia_focus
 		cost = 1
 		ai_will_do = {
 			factor = 1
@@ -2713,6 +2657,21 @@ focus_tree = {
 
 		completion_reward = {
 			336 = {
+				add_extra_state_shared_building_slots = 1
+
+				add_building_construction = {
+						type = bunker
+						level = 4
+						province = 12299
+						instant_build = yes
+					}
+			
+				add_building_construction = {
+						type = anti_air_building
+						level = 2
+						instant_build = yes
+				}
+				
 				add_building_construction = {
 					type = bunker
 					level = 3
@@ -2736,19 +2695,7 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
-				if = {
-					limit = {
-						CONTROLLER = {
-							NOT = { tag = ENG }
-						}
-					}
-					CONTROLLER = {
-						add_autonomy_ratio = {
-							value = -0.02
-							localization = peninsular_focus
-						}
-					}
-				}
+
 			}
 		}
 	}
@@ -3667,6 +3614,53 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = ENG_ceylon_forward_operating_base
+		prerequisite = { focus = uk_asia_focus }
+
+		available = {
+		}
+		bypass = {
+		}
+
+		icon = GFX_goal_generic_position_armies
+		x = 1
+		y = 1
+		relative_position_id = uk_asia_focus
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}	
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			# Ceylon
+			422 = {
+				if = {
+					limit = {
+						is_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = air_base
+						level = 5
+						instant_build = yes
+					}
+					# Singapore
+					add_building_construction = {
+						type = naval_base
+						level = 5
+						province = 7260
+						instant_build = yes
+					}
+				}								
+			}
+		}
+	}
+
 
 	focus = {
 		id = ENG_special_operations_executive
@@ -3812,6 +3806,27 @@ focus_tree = {
 			remove_ideas = ENG_the_war_to_end_all_wars
 			army_experience = 125
 			set_rule = { can_send_volunteers = yes }
+		}
+	}
+
+	focus = {
+		id = ENG_imperial_conscription
+		prerequisite = { focus = ENG_global_defense }	
+		available = {
+
+		}
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		x = 0
+		y = 1
+		relative_position_id = ENG_global_defense
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {FOCUS_FILTER_MANPOWER}	
+		completion_reward = {
+			add_ideas = ENG_imperial_conscription_idea
+
 		}
 	}
 
@@ -3977,7 +3992,7 @@ focus_tree = {
 			focus = limited_rearmament_focus
 		}
 		relative_position_id = limited_rearmament_focus
-		x = -5
+		x = 0
 		y = 1
 		ai_will_do = {
 			factor = 10
@@ -4040,7 +4055,7 @@ focus_tree = {
 							}
 						}
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 5
 					add_building_construction = {
 						type = industrial_complex
 						level = 1
@@ -4090,7 +4105,7 @@ focus_tree = {
 							}
 						}
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 5
 					add_building_construction = {
 						type = industrial_complex
 						level = 1
@@ -4404,7 +4419,7 @@ focus_tree = {
 			focus = ENG_tank_focus
 		}
 		relative_position_id = ENG_motorized_focus
-		x = 1
+		x = -1
 		y = 2
 		ai_will_do = {
 			factor = 5
@@ -4459,7 +4474,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = uk_small_arms_focus
 		}
-		x = 1
+		x = -1
 		y = 4
 		relative_position_id = ENG_motorized_focus
 		ai_will_do = {
@@ -4485,7 +4500,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ENG_order_increased_tank_production
 		}
-		x = 1
+		x = -1
 		y = 5
 		relative_position_id = ENG_motorized_focus
 		ai_will_do = {

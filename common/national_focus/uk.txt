@@ -3187,6 +3187,7 @@ focus_tree = {
 		id = ENG_imperial_conference
 		prerequisite = { focus = uk_australia_focus }
 		prerequisite = { focus = uk_south_africa_focus }
+		prerequisite = { focus = uk_ireland_focus }
 
 		allow_branch = {
 			has_dlc = "Man the Guns"

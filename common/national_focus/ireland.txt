@@ -966,7 +966,7 @@ focus_tree = {
 						is_owned_and_controlled_by = ROOT
 					}
 				}
-				135 = { set_state_category = metropolis }
+				135 = { set_state_category = megalopolis }
 			}
 		}
 	}
@@ -1005,7 +1005,7 @@ focus_tree = {
 						is_owned_and_controlled_by = ROOT
 					}
 				}
-				134 = { set_state_category = metropolis }
+				134 = { set_state_category = megalopolis }
 			}
 		}
 	}
@@ -1030,7 +1030,7 @@ focus_tree = {
 				limit = {
 					is_controlled_by = ROOT
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 			}
 			add_tech_bonus = {
 				name = IRE_invest_in_railways_bonus
@@ -1042,26 +1042,7 @@ focus_tree = {
 				idea = BRA_rail_investment
 				days = 730
 			}
-			IF = {
-				limit = {
-					1019 = { is_owned_and_controlled_by = ROOT }
-				}
-				1019 = {
-					add_building_construction = {
-						type = supply_node
-						province = 11371
-						level = 1
-						instant_build = yes
-					}
-				}
-				build_railway = {
-					level = 1
-					build_only_on_allied = yes
-					fallback = yes
-					start_province = 11371
-					target_province = 3359
-				}
-			}
+		
 			IF = {
 				limit = {
 					134 = { is_owned_and_controlled_by = ROOT }

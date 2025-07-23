@@ -32,7 +32,6 @@ set_technology = {
 	basic_cruiser_armor_scheme = 1
 	basic_heavy_armor_scheme = 1
 	mtg_transport = 1
-	basic_fire_control_system = 1
 }
 
 add_dynamic_modifier = {

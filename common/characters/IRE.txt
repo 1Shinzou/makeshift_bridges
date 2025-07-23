@@ -110,7 +110,7 @@ characters={
 					factor = 1.000
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="Liam Archer"
 		portraits={
 			army={
@@ -281,7 +281,7 @@ characters={
 				}
 				
 				traits = {
-					military_theorist
+					IRE_armour_theorist
 				}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
@@ -289,32 +289,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_generic_army_europe_2"
-			}
-		}
-	}
-	IRE_dan_mckenna={
-		advisor={
-			
-			
-			slot = high_command
-			idea_token = IRE_dan_mckenna
-			ledger = army
-				allowed = {
-					original_tag = IRE
-				}
-				traits = {
-					army_regrouping_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="Daniel McKenna"
-		portraits={
-			army={
-				small="GFX_idea_generic_army_europe_1"
 			}
 		}
 	}
@@ -423,6 +397,473 @@ characters={
 			army={
 				small="GFX_idea_generic_political_advisor_europe_1"
 			}
+		}
+	}
+	
+	
+	
+	IRE_jack_lynch={
+		advisor={
+			slot = political_advisor
+			idea_token = IRE_jack_lynch
+			available  = {
+				has_completed_focus  = IRE_The_Constitution_Act 
+			}
+			allowed = {
+					original_tag = IRE
+				}
+				
+				traits = {
+					De_Valeras_Second_Man
+				}
+				cost = 75
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		# DEMOCRATIC
+		name="Jack Lynch"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+	IRE_thomas_ohiggins={
+		advisor={
+			slot = political_advisor
+			idea_token = IRE_thomas_ohiggins
+			available  = {
+				has_completed_focus  = IRE_The_IRA_Dictatorship 
+			}
+			allowed = {
+					original_tag = IRE
+				}
+				traits = {
+					IRE_Blueshirt_Council
+				}
+				cost = 75
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name="Thomas F. O'Higgins"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	IRE_sean_murray={
+		advisor={
+			slot = political_advisor
+			idea_token = IRE_sean_murray
+			available = {
+				has_completed_focus = IRE_legalise_the_PCI
+			}
+			allowed = {
+				original_tag = IRE
+			}
+			traits = {
+				IRE_Communist_Sympathiser
+			}
+			cost = 75
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name="Sean Murray"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_4"
+			}
+		}
+	}
+	IRE_joseph_macrory={
+		advisor={
+			slot = political_advisor
+			idea_token = IRE_joseph_macrory
+			available = {
+				has_completed_focus = IRE_Snakes_and_sins
+			}
+			allowed = {
+					original_tag = IRE
+				}
+				traits = {
+					IRE_Advocate_of_St_Patrick
+				}
+				cost = 75
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name="Joseph MacRory"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_5"
+			}
+		}
+	}
+	
+	IRE_Lugaid_OConnor={
+		name= "Lugaid O'Connor"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_5"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = IRE_Lugaid_OConnor
+			allowed  = {
+				original_tag  = IRE
+			}
+			traits  = {
+				silent_workhorse 
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+	
+	IRE_christopher_furlong={
+		advisor={
+			slot = political_advisor
+			idea_token = IRE_christopher_furlong
+			allowed = {
+					original_tag = IRE
+				}
+				traits = {
+					economic_reformer
+				}
+				cost = 150
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name="Christopher Furlong"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_6"
+			}
+		}
+	}
+	IRE_charlotte_despard={
+		advisor={
+			slot = political_advisor
+			idea_token = IRE_charlotte_despard
+			allowed = {
+					original_tag = IRE
+				}
+				traits = {
+					Irish_Suffragettes
+				}
+				cost = 150
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name="Charlotte Despard"
+		portraits={
+			army={
+				small="GFX_idea_ENG_sylvia_pankhurst"
+			}
+		}
+	}
+	IRE_padraig_hennessy={
+		name= "Pádraig Hennessy"
+		portraits={
+			army={
+				small="GFX_idea_ENG_maxwell_aitken"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = IRE_padraig_hennessy
+			allowed  = {
+				original_tag  = IRE
+			}
+			traits  = {
+				war_industrialist 
+			}
+			ai_will_do  = {
+				base = 2
+			}
+		}
+	}
+	IRE_Michael_Fitzpatrick={
+		name= "Michael Fitzpatrick"
+		portraits={
+			army={
+				small="GFX_idea_ENG_ernest_bevin"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = IRE_Michael_Fitzpatrick
+			allowed  = {
+				original_tag  = IRE
+			}
+			traits  = {
+				quartermaster_general 
+			}
+			ai_will_do  = {
+				base = 1.000
+			}
+		}
+	}
+	
+	
+	IRE_daniel_hogan = {
+		name = "Daniel Hogan"
+		portraits = {
+			army = {
+				large = GFX_portrait_IRE_daniel_hogan_army_large
+				small = GFX_portrait_IRE_daniel_hogan_army_small
+			}
+		}
+		corps_commander = {
+			traits = { harsh_leader light_infantry_officer trickster guerilla_fighter }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	
+	IRE_sean_mac_eoin = {
+		name = "Seán Mac Eoin"
+		portraits = {
+			army = {
+				large = GFX_portrait_IRE_sean_mac_eoin_army_large
+				small = GFX_portrait_IRE_sean_mac_eoin_army_small
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer infantry_leader ambusher }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	IRE_james_steele = {
+		name = "James Steele"
+		portraits = {
+			army = {
+				large = GFX_portrait_IRE_james_steele_army_large
+				small = GFX_portrait_IRE_james_steele_army_small
+			}
+		}
+		corps_commander = {
+			traits = { artillery_specialist }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	
+	IRE_jj_oconnell = {
+		name = "J. J. O'Connell"
+		portraits = {
+			army = {
+				large = GFX_portrait_IRE_jj_oconnell_army_large
+				small = GFX_portrait_IRE_jj_oconnell_army_small
+			}
+		}
+		corps_commander = {
+			desc = IRE_jj_oconnell_theorist_desc
+			traits = { career_officer infantry_leader organizer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+		advisor = {
+			slot = theorist
+			idea_token = IRE_jj_oconnell_theorist
+			ledger = army
+			traits = { IRE_military_theorist }
+			cost = 100
+		}
+	}
+	
+	IRE_daniel_mckenna = {	### Army chief role gets upgraded with focus
+		name = "Daniel McKenna"
+		portraits = {
+			army = {
+				large = GFX_portrait_IRE_daniel_mckenna_army_large
+				small = GFX_portrait_IRE_daniel_mckenna_army_small
+			}
+		}
+		corps_commander = {
+			traits = { career_officer urban_assault_specialist }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = IRE_daniel_mckenna_army_chief
+			traits = { IRE_army_chief_entrenchment_1 }
+			cost = 50
+		}
+	}
+	
+	IRE_tom_barry = {
+		name = "Thomas Barry"
+		portraits = {
+			army = {
+				large = GFX_portrait_IRE_tom_barry_army_large
+				small = GFX_portrait_IRE_tom_barry_army_small
+			}
+		}
+		corps_commander = {
+			traits = { war_hero infantry_leader trickster hill_fighter }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = high_command
+			idea_token = IRE_tom_barry_high_command
+			ledger = army
+			traits = { IRE_MHC_infantry_2 }
+			cost = 100
+		}
+	}
+	
+	IRE_frank_aiken = {
+		name = "Frank Aiken"
+		portraits = {
+			army={
+				small="GFX_portrait_SWE_axel_rappe_small"
+				large = "GFX_portrait_SWE_axel_rappe"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = IRE_frank_aiken_high_command
+			ledger = army
+			traits = { army_entrenchment_2 }
+			cost = 100
+		}
+	}
+	
+	IRE_eamon_broy = {
+		name = "Eamon Broy"
+		portraits = {
+			army={
+				small="GFX_portrait_SWE_ernst_linder_small"
+				large = "GFX_portrait_SWE_ernst_linder"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = IRE_eamon_broy_high_command
+			ledger = army
+			traits = { army_CombinedArms_2 }
+			cost = 100
+		}
+	}
+	
+	IRE_wj_brennan_whitmore = {
+		name = "W. J. Brennan-Whitmore"
+		portraits = {
+			army = {
+				large = GFX_portrait_IRE_wj_brennan_whitmore_army_large
+				small = GFX_portrait_IRE_wj_brennan_whitmore_army_small
+			}
+		}
+		field_marshal = {
+			traits = { career_officer light_infantry_officer infantry_leader trickster }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = IRE_wj_brennan_whitmore_army_chief
+			traits = { IRE_army_chief_planning_2 }
+			cost = 100
+		}
+	}
+	
+	
+	
+	IRE_james_ObrienNavy = {
+		name = "James O'Brien"
+		portraits={
+			army={
+				large=GFX_portrait_ENG_arthur_power
+				small=GFX_portrait_ENG_arthur_power_small
+			}
+		}
+		navy_leader={
+			traits={ gunnery_expert }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=2
+		}
+	}
+	
+	IRE_Harry_FitzgeraldNavy = {
+		name = "Harry Fitzgerald"
+		portraits={
+			army={
+				large=GFX_portrait_ENG_algernon_willis
+				small=GFX_portrait_ENG_algernon_willis_small
+			}
+		}
+		navy_leader={
+			traits={ battleship_adherent spotter }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=2
+		}
+	}
+	
+	IRE_Paddy_AikenNavy = {
+		name = "Paddy Aiken"
+		portraits={
+			army={
+				large=GFX_portrait_ENG_charles_forbes
+				small=GFX_portrait_ENG_charles_forbes_small
+			}
+		}
+		navy_leader={
+			traits={ gunnery_expert fly_swatter }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=3
 		}
 	}
 

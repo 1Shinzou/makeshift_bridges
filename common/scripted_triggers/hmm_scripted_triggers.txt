@@ -48,6 +48,7 @@ allies = {
 		tag = PHI
 		tag = YUG
 		tag = GRE
+		tag = IRE
 	}
 }
 

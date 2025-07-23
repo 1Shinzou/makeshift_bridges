@@ -1,0 +1,2400 @@
+focus_tree = {
+	id = ireland_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 100
+			tag = IRE
+		}
+	}
+
+	default = no
+	
+	#Focus Path shortcuts	
+
+	shortcut = {
+		name = IRE_political_path_shortcut
+		target = IRE_Fianna_fail
+		scroll_wheel_factor = 1.0
+	}
+	shortcut = {
+		name = IRE_trade_war_path_shortcut
+		target = IRE_The_Trade_War
+		scroll_wheel_factor = 1.0
+	}
+	shortcut = {
+		name = IRE_Irish_Army_path_shortcut
+		target = IRE_Irish_Army
+		scroll_wheel_factor = 1.0
+	}
+
+	continuous_focus_position = { x = 2000 y = 1000 }
+
+
+
+#######################
+#######################
+###### DEFENSIVE ######
+#######################
+#######################
+
+
+
+
+	focus = {
+		id = IRE_Fianna_fail
+
+		icon = GFX_goal_support_democracy	
+		
+		text = "Continue with Fianna Fáil"
+			
+		x = 8
+		y = 0
+	
+		cost = 5
+		
+
+
+		available = {
+		}
+	
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_country_leader_trait = De_Valera_Presidency
+		}
+	}
+
+	focus = {
+		id = IRE_The_Emergency_Powers_Act
+		text = "The Emergency Powers Act"
+		icon = GFX_focus_usa_voter_registration_act						
+			
+		x = 5
+		y = 1
+	
+		cost = 7.2
+		
+		prerequisite = { focus = IRE_Fianna_fail }
+		relative_position_id = IRE_Fianna_fail
+		
+		available = {
+			OR = {
+				date > 1938.1.1
+				has_war = yes
+			}
+		}
+	
+		search_filters = {  }
+	
+		completion_reward = {
+			add_ideas = { IRE_emergency_powers_act_idea }
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = IRE_scars_of_The_Potato_Famine
+			add_to_variable = { 
+				IRE_army_org_factor = 0.15
+				tooltip = army_org_factor_tt
+			}
+			add_to_variable = { 
+				IRE_scars_of_The_Potato_Famine_war_support_factor = 0.1
+				tooltip = war_support_factor_tt
+			}
+			
+		}
+	}
+
+	
+	focus = {
+		id = IRE_plains_warfare
+		text = "Anglo-Irish Warfare Upgrades"
+		icon = GFX_focus_generic_horse_studs
+		prerequisite = { focus = IRE_The_Emergency_Powers_Act }
+		prerequisite = { focus = IRE_Treaty_Port_Proposition }
+		relative_position_id = IRE_Treaty_Port_Proposition
+		x = 2
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 100
+		
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory 
+						size > 0 
+						include_locked = yes 
+					} 
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory 
+					level = 1 
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = IRE_multi_purpose_tanks
+		text = "Multi-Purpose Tanks"
+		icon = GFX_focus_generic_tankette
+		prerequisite = { focus = IRE_plains_warfare }
+		relative_position_id = IRE_plains_warfare
+		mutually_exclusive = { focus = IRE_The_Irish_Rovers }
+		x = -1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 10
+			add_tech_bonus = {
+				name = IRE_multipurpose_tanks
+				category = armor
+				bonus = 0.25
+				uses = 4
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory 
+						size > 1
+						include_locked = yes 
+					} 
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory 
+					level = 2 
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = IRE_The_Irish_Rovers
+		text = "The Irish Rovers"
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = IRE_plains_warfare }
+		relative_position_id = IRE_plains_warfare
+		mutually_exclusive = { focus = IRE_multi_purpose_tanks }
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		search_filters = {FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 10 
+			add_tech_bonus = {
+				name = IRE_The_Irish_Rovers
+				category = armor
+				bonus = 1
+				uses = 2
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory 
+						size > 1
+						include_locked = yes 
+					} 
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory 
+					level = 2 
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = IRE_Strengthen_the_welfare_state
+		text = "Strengthen the Welfare State"
+		icon = GFX_focus_generic_welfare						
+			
+		x = -5
+		y = 1
+	
+		cost = 7.2
+		
+		prerequisite = { focus = IRE_Fianna_fail }
+		relative_position_id = IRE_Fianna_fail
+		
+		available = {
+		}
+	
+		search_filters = {  }
+	
+		completion_reward = {
+		
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = IRE_scars_of_The_Potato_Famine
+			add_to_variable = { 
+				IRE_scars_of_The_Potato_Famine_production_speed_arms_factory_factor = 0.05
+				tooltip = production_speed_arms_factory_factor_tt
+			}
+			add_to_variable = { 
+				IRE_scars_of_The_Potato_Famine_army_org_factor = 0.05
+				tooltip = army_org_factor_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_tech_bonus = {
+				name = IRE_autarky_efforts
+				bonus = 1
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	
+	focus = {
+		id = IRE_Reform_the_punt
+		text = "Reform the Punt"
+		icon = GFX_focus_generic_currency_reforms						
+			
+		x = -1
+		y = 1
+	
+		cost = 7.2
+		
+		prerequisite = { focus = IRE_Strengthen_the_welfare_state }
+		relative_position_id = IRE_Strengthen_the_welfare_state
+		
+		available = {
+		}
+	
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				random_select_amount = 2
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = IRE_Housing_Development
+		text = "Housing Development"
+		icon = GFX_focus_generic_low_cost_housing						
+			
+		x = 1
+		y = 1
+	
+		cost = 7.2
+		
+		prerequisite = { focus = IRE_Strengthen_the_welfare_state }
+		relative_position_id = IRE_Strengthen_the_welfare_state
+		
+		available = {
+		}
+	
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			if = {
+				limit = {
+					134 = { #Galway
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				134 = { set_state_category = large_city }
+			}
+			if = {
+				limit = {
+					135 = { #Cork
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				135 = { set_state_category = large_city }
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				random_select_amount = 3
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	
+	focus = {
+		id = IRE_Trinity_College_Dublin
+		text = "Expand Trinity College"
+		icon = GFX_focus_generic_university_1						
+			
+		x = 0
+		y = 2
+	
+		cost = 7.2
+		
+		prerequisite = { focus = IRE_Housing_Development focus = IRE_Reform_the_punt }
+		relative_position_id = IRE_Strengthen_the_welfare_state
+		
+		available = {
+		}
+	
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			add_research_slot = 1
+			mio:IRE_Munster_Arms_Suppliers_organization = {
+				add_mio_size = 1
+				add_mio_funds_gain_factor = 0.25
+				add_mio_research_bonus = 0.05
+			}
+		}
+	}
+	
+	focus = {
+		id = IRE_Directorate_Military_Intelligence
+		text = "Form the Directorate of Intelligence"
+		icon = GFX_goal_generic_intelligence_exchange						
+			
+		x = 0
+		y = 1
+	
+		cost = 7.2
+		
+		prerequisite = { focus = IRE_Trinity_College_Dublin }
+		relative_position_id = IRE_Trinity_College_Dublin
+		
+		available = {
+		}
+	
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "La Resistance" 
+				}
+ 				if = {
+					limit = {
+						has_intelligence_agency = no
+					}
+					create_intelligence_agency = {
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = IRE_Comission_the_Inniscarra_Dam
+		text = "Commision the Inniscarra Dam"
+		icon = GFX_focus_BEL_dam_the_consequences						
+			
+		x = 1
+		y = 1
+	
+		cost = 5
+		
+		prerequisite = { focus = IRE_Housing_Development }
+		prerequisite = { focus = IRE_Expression_of_Irish_Unity }
+		relative_position_id = IRE_Housing_Development
+		
+		available = {
+		}
+	
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			135 = {
+				add_building_construction = {
+					type = dam
+					level = 1
+					instant_build = yes
+					province = {
+						id = 7394
+					}
+				}
+			}
+			custom_effect_tooltip = {
+				localization_key = building_state_modifier|dam
+				INDENT = "    "
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = IRE_The_Constitution_Act
+		text = "The Constitution Act"
+		icon = GFX_focus_NOR_restore_public_trust_in_the_storting						
+			
+		x = 0
+		y = 1
+	
+		cost = 7.2
+		
+		prerequisite = { focus = IRE_Fianna_fail }
+		relative_position_id = IRE_Fianna_fail
+		
+		available = {
+		}
+	
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+		
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = IRE_jack_lynch
+			custom_effect_tooltip = CHL_skip_one_line_tt
+			custom_effect_tooltip = IRE_Autonomous_Dominion
+		
+			add_to_variable = { 
+				IRE_Autonomous_Dominion_political_power_factor = 0.25
+				tooltip = political_power_factor_tt
+			}
+		}
+	}
+	
+	focus = {
+		id = IRE_Expression_of_Irish_Unity
+		text = "The Irish Family Values"
+		icon = GFX_focus_generic_advanced_military_studies						
+			
+		x = -2
+		y = 1
+	
+		cost = 5
+		
+		prerequisite = { focus = IRE_The_Constitution_Act }
+		relative_position_id = IRE_The_Constitution_Act
+		
+		available = {
+		}
+	
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {			add_ideas = { IRE_Irish_family_values }
+			custom_effect_tooltip = IRE_scars_of_The_Potato_Famine
+			add_to_variable = { 
+				IRE_scars_of_The_Potato_Famine_production_speed_arms_factory_factor = 0.05
+				tooltip = production_speed_arms_factory_factor_tt
+			}
+			add_to_variable = { 
+				IRE_scars_of_The_Potato_Famine_conscription_factor = 0.1
+				tooltip = conscription_factor_tt
+			}
+		}
+	}
+	
+
+	focus = {
+		id = IRE_Treaty_Port_Proposition
+		text = "Draft the Treaty Port Proposal"
+		icon = GFX_focus_SWE_coastal_support						
+			
+		x = 2
+		y = 1
+	
+		cost = 5
+		
+		prerequisite = { focus = IRE_The_Constitution_Act }
+		relative_position_id = IRE_The_Constitution_Act
+		
+		available = {
+			is_power_balance_in_range = {
+				id = IRE_IRA_political_balance
+				range < IRE_centre_range
+			}
+		}
+	
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			remove_ideas = { IRE_Treaty_Ports }
+			random_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			ENG = {
+				diplomatic_relation = {
+					country = IRE
+					relation = docking_rights
+					active = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = IRE_The_Irish_Language_Act
+		text = "The Irish Language Act"
+		icon = GFX_focus_AUS_lawmaking_leniency						
+			
+		x = 0
+		y = 1
+	
+		cost = 5
+		
+		prerequisite = { focus = IRE_The_Constitution_Act }
+		relative_position_id = IRE_The_Constitution_Act
+		
+		available = {
+			is_power_balance_in_range = {
+				id = IRE_IRA_political_balance
+				range < IRE_centre_range
+			}
+		}
+	
+		search_filters = {  }
+	
+		completion_reward = {
+			add_political_power = 100
+			custom_effect_tooltip = IRE_scars_of_The_Potato_Famine
+			add_to_variable = { 
+				IRE_scars_of_The_Potato_Famine_production_speed_arms_factory_factor = 0.05
+				tooltip = production_speed_arms_factory_factor_tt
+			}
+			add_to_variable = { 
+				IRE_scars_of_The_Potato_Famine_war_support_factor = 0.15
+				tooltip = war_support_factor_tt
+			}
+		}
+	}
+	
+	focus = {
+		id = IRE_British_Constitutional_Crisis
+		text = "The British Constitutional Crisis"
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties					
+			
+		x = 0
+		y = 1
+	
+		cost = 7.2
+		
+		prerequisite = { focus = IRE_Expression_of_Irish_Unity focus = IRE_Treaty_Port_Proposition }
+		relative_position_id = IRE_The_Irish_Language_Act
+		
+		available = {
+			ENG = {
+					has_country_flag = ENG_edward_viii_abdicated
+				
+			}
+		}
+	
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			custom_effect_tooltip = IRE_Autonomous_Dominion
+			
+			add_to_variable = { 
+				IRE_Autonomous_Dominion_political_power_factor = 0.15
+				tooltip = political_power_factor_tt
+			}
+		}
+	}
+	
+	focus = {
+		id = IRE_External_Relations_Act
+		text = "The External Relations Act"
+		icon = GFX_focus_ARG_develop_the_electricity_sector						
+			
+		x = -1
+		y = 1
+	
+		cost = 5
+		
+		prerequisite = { focus = IRE_British_Constitutional_Crisis }
+		relative_position_id = IRE_British_Constitutional_Crisis
+		
+		available = {
+		}
+	
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			remove_dynamic_modifier = {
+				modifier = IRE_Autonomous_Dominion_dynamic_modifier
+			}
+		}
+	}
+	
+	focus = {
+		id = IRE_Bunreacht_na_hEireann
+		text = "Bunreacht na hÉireann"
+		icon = GFX_focus_TUR_ratify_the_six_arrows						
+			
+		x = 1
+		y = 1
+	
+		cost = 5
+		
+		prerequisite = { focus = IRE_British_Constitutional_Crisis }
+		relative_position_id = IRE_British_Constitutional_Crisis
+		
+		available = {
+		}
+	
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+
+	
+	focus = {
+		id = IRE_Abolish_the_IRA
+		text = "Dissolve the IRA"
+		icon = GFX_focus_SWI_dissolve_the_federal_council						
+			
+		x = -1
+		y = 1
+	
+		cost = 5
+		
+		prerequisite = { focus = IRE_Bunreacht_na_hEireann focus = IRE_External_Relations_Act }
+		relative_position_id = IRE_Bunreacht_na_hEireann
+		
+		available = {
+			is_power_balance_in_range = {
+				id = IRE_IRA_political_balance
+				range = IRA_Furious
+			}
+		}
+	
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.15
+			remove_power_balance = {
+				id = IRE_IRA_political_balance
+			}
+		}
+	}
+	
+	focus = {
+		id = IRE_The_Trade_War
+		text = "The Anglo-Irish Trade War"
+		icon = GFX_focus_generic_monetary_union							
+			
+		x = 20
+		y = 0
+	
+		cost = 5
+		
+	
+		
+		available = {
+		}
+	
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+	focus = {
+		id = IRE_The_Coal_Cattle_Pact
+		text = "Sign the Coal-Cattle Pact"
+		icon = GFX_focus_ARG_capitalize_the_beef_industry						
+			
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = IRE_The_Trade_War }
+		relative_position_id = IRE_The_Trade_War
+		
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			custom_effect_tooltip = CHL_skip_one_line_tt
+			custom_effect_tooltip = IRE_economic_downturn
+			add_to_variable = { 
+				IRE_economic_downturn_consumer_goods_factor = -0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = { 
+				IRE_economic_downturn_industrial_capacity_factory = 0.05
+				tooltip = industrial_capacity_factory_tt
+			}
+		}
+	}
+	
+	focus = {
+		id = IRE_Buy_Irish_Produce
+		text = "Campaign for Irish Products"
+		icon = GFX_focus_CHL_focus_on_cattle_and_wool								
+			
+		x = -2
+		y = 1
+		
+		prerequisite = { focus = IRE_The_Trade_War }
+		relative_position_id = IRE_The_Trade_War
+		
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			custom_effect_tooltip = IRE_economic_downturn
+			add_to_variable = { 
+				IRE_economic_downturn_consumer_goods_factor = -0.05
+				tooltip = consumer_goods_factor_tt
+			}
+		}
+	}
+	
+	focus = {
+		id = IRE_Encourage_Increased_Tillage
+		text = "Encourage Increased Tillage"
+		icon = GFX_focus_generic_farmland							
+			
+		x = 2
+		y = 1
+		
+		prerequisite = { focus = IRE_The_Trade_War }
+		relative_position_id = IRE_The_Trade_War
+		
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			custom_effect_tooltip = CHL_skip_one_line_tt
+			custom_effect_tooltip = IRE_economic_downturn
+			add_to_variable = { 
+				IRE_economic_downturn_industrial_capacity_factory = 0.05
+				tooltip = industrial_capacity_factory_tt
+			}
+
+		}
+	}
+	
+	focus = {
+		id = IRE_Attract_Foreign_Capital
+		text = "Attract Foreign Capital"
+		icon = GFX_SOV_aristocratic_investments_ccp_2d_sov_compatibility							
+			
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = IRE_The_Coal_Cattle_Pact }
+		prerequisite = { focus = IRE_Buy_Irish_Produce }
+		relative_position_id = IRE_The_Coal_Cattle_Pact
+		
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			add_ideas = IRE_invite_foreign_capital
+			custom_effect_tooltip = CHL_skip_one_line_tt
+			custom_effect_tooltip = IRE_economic_downturn
+			add_to_variable = { 
+				IRE_economic_downturn_consumer_goods_factor = -0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = { 
+				IRE_economic_downturn_industrial_capacity_factory = 0.05
+				tooltip = industrial_capacity_factory_tt
+			}
+		}
+	}
+	
+	focus = {
+		id = IRE_promote_resource_extraction
+		text = "Promote Resource Extraction"
+		icon = GFX_focus_generic_resource_extraction
+		prerequisite = { focus = IRE_Attract_Foreign_Capital }
+		x = -2
+		y = 1
+		relative_position_id = IRE_Attract_Foreign_Capital
+		cost = 5
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			random_core_state = {
+				limit = {
+					is_owned_and_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_resource = {
+					type = steel
+					amount = 5
+				}
+			}
+			random_core_state = {
+				limit = {
+					is_owned_and_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_resource = {
+					type = aluminium
+					amount = 2
+				}
+			}
+			add_tech_bonus = {
+				name = IRE_resource_extraction_bonus
+				bonus = 0.50
+				uses = 2
+				category = excavation_tech
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = IRE_Stimulate_the_economy
+		text = "Stimulate the Economy"
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = IRE_Grant_Construction_Subsidies }
+		x = 2
+		y = 1
+		relative_position_id = IRE_Grant_Construction_Subsidies
+		cost = 5
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+
+				
+				add_tech_bonus = {
+					name = IRE_industry_bonus
+					bonus = 0.5
+					uses = 2
+					category = industry
+				}
+			
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					135 = { 
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				135 = { set_state_category = metropolis }
+			}
+		}
+	}
+	
+	focus = {
+		id = IRE_Grant_Construction_Subsidies
+		text = "Grant Construction Subsidies"
+		icon = GFX_focus_generic_low_cost_housing							
+			
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = IRE_The_Coal_Cattle_Pact }
+		prerequisite = { focus = IRE_Encourage_Increased_Tillage }
+		relative_position_id = IRE_The_Coal_Cattle_Pact
+		
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			custom_effect_tooltip = CHL_skip_one_line_tt
+			custom_effect_tooltip = IRE_economic_downturn
+			add_to_variable = { 
+				IRE_economic_downturn_consumer_goods_factor = -0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = { 
+				IRE_economic_downturn_industrial_capacity_factory = 0.05
+				tooltip = industrial_capacity_factory_tt
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					134 = { 
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				134 = { set_state_category = metropolis }
+			}
+		}
+	}
+	
+	focus = {
+		id = IRE_Build_Railways
+		text = "Connect Rural Ireland"
+		icon = GFX_focus_generic_railroad						
+			
+		x = 0
+		y = 2
+		
+		prerequisite = { focus = IRE_Grant_Construction_Subsidies }
+		prerequisite = { focus = IRE_Attract_Foreign_Capital }
+		relative_position_id = IRE_The_Coal_Cattle_Pact
+		
+		cost = 7.2
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			add_tech_bonus = {
+				name = IRE_invest_in_railways_bonus
+				bonus = 0.50
+				uses = 1
+				category = train_tech
+			}
+			add_timed_idea = {
+				idea = BRA_rail_investment
+				days = 730
+			}
+			IF = {
+				limit = {
+					1019 = { is_owned_and_controlled_by = ROOT }
+				}
+				1019 = {
+					add_building_construction = {
+						type = supply_node
+						province = 11371
+						level = 1
+						instant_build = yes
+					}
+				}
+				build_railway = {
+					level = 1
+					build_only_on_allied = yes
+					fallback = yes
+					start_province = 11371
+					target_province = 3359
+				}
+			}
+			IF = {
+				limit = {
+					134 = { is_owned_and_controlled_by = ROOT }
+				}
+				134 = {
+					add_building_construction = {
+						type = supply_node
+						province = 9303
+						level = 1
+						instant_build = yes
+					}
+				}
+				build_railway = {
+					level = 1
+					build_only_on_allied = yes
+					fallback = yes
+					start_province = 9303
+					target_province = 303
+				}
+			}
+		}
+		
+	}
+	
+	focus = {
+		id = IRE_Settle_Land_Annuities
+		text = "Settle Land Annuities"
+		icon = GFX_focus_POL_complete_april_constitution							
+			
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = IRE_Build_Railways }
+		prerequisite = { focus = IRE_promote_resource_extraction focus = IRE_Stimulate_the_economy }
+		relative_position_id = IRE_Build_Railways
+		
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			remove_dynamic_modifier = {
+				modifier = IRE_economic_downturn_dynamic_modifier
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	focus = {
+		id = IRE_Irish_Army
+		text = "Arm na hÉireann"
+		icon = GFX_focus_generic_military_dictatorship							
+			
+		x = 40
+		y = 0
+	
+		cost = 5
+		
+
+		
+		available = {
+		}
+	
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			army_experience = 25
+			random_core_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					is_owned_and_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			hidden_effect = { add_dynamic_modifier = { modifier = IRE_army_modifier } }
+		}
+	}
+	
+	focus = {
+		id = IRE_Irish_Military_Academy
+		text = "Acadamh Míleata"
+		icon = GFX_goal_generic_army_doctrines							
+			
+		x = -2
+		y = 1
+	
+		cost = 5
+		
+		prerequisite = { focus = IRE_Irish_Army }
+		relative_position_id = IRE_Irish_Army
+		
+		available = {
+		}
+	
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			custom_effect_tooltip = JUNO_army_academy_random_generals_tt
+			hidden_effect = {
+			random_army_leader = {		
+				add_planning = 1
+			}
+			random_army_leader = {			
+				add_planning = 1
+			} 
+			random_army_leader = {			
+				add_planning = 1
+			}
+			}
+			custom_effect_tooltip = IRE_army_modifier_tt
+			add_to_variable = { IRE_experience_gain_army_factor = 0.05 tooltip = experience_gain_army_factor_tt }
+			add_to_variable = { IRE_army_org_factor = 0.03 tooltip = army_org_factor_tt }
+		}
+	}
+	
+	focus = {
+		id = IRE_Evolve_the_Irish_Man
+		text = "Retrain the Irishmen"
+		icon = GFX_focus_ETH_freedom_at_gunpoint							
+			
+		x = -1
+		y = 1
+	
+		cost = 5
+		
+		prerequisite = { focus = IRE_Irish_Military_Academy }
+		relative_position_id = IRE_Irish_Military_Academy
+		available = {
+		}
+	
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			custom_effect_tooltip = IRE_army_modifier_tt
+			add_to_variable = { IRE_army_org_factor = 0.02 tooltip = army_org_factor_tt }
+			add_to_variable = { IRE_army_core_defence_factor = 0.04 tooltip = army_core_defence_factor_tt }
+
+		}
+	}
+	
+	
+	focus = {
+		id = IRE_Expand_Procurement_Department
+		text = "Expand Weapon Procurement"
+		icon = GFX_focus_generic_military_industry							
+			
+		x = -6
+		y = 1
+	
+		cost = 5
+		
+		prerequisite = { focus = IRE_Irish_Army }
+		relative_position_id = IRE_Irish_Army
+		
+		available = {
+		}
+	
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory 
+						size > 0 
+						include_locked = yes 
+					} 
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory 
+					level = 1 
+					instant_build = yes 
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory 
+						size > 0 
+						include_locked = yes 
+					} 
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory 
+					level = 1 
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = IRE_Invest_in_the_motor_industries
+		text = "Invest in Irish Motor Industries"
+		icon = GFX_focus_generic_purchase_mechanized_equipment							
+
+		x = 1
+		y = 1
+	
+		cost = 5
+		
+		prerequisite = { focus = IRE_Expand_Procurement_Department }
+		relative_position_id = IRE_Expand_Procurement_Department
+		
+		available = {
+		}
+	
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				ahead_reduction = 1
+				bonus = 1
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+	
+
+	
+	focus = {
+		id = IRE_Tank_Warfare
+		text = "Tank Warfare"
+		icon = GFX_focus_NOR_rikstanken							
+
+		x = -1
+		y = 1
+	
+		cost = 5
+		
+		prerequisite = { focus = IRE_Invest_in_the_motor_industries }
+		relative_position_id = IRE_Invest_in_the_motor_industries
+		
+		available = {
+		}
+	
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			add_tech_bonus = {
+				name = IRE_armor_modernization_initiative
+				bonus = 0.75
+				uses = 2
+				category = armor
+			}
+		}
+	}
+	
+	focus = {
+		id = IRE_Expand_Artillery
+		text = "Expand our Artillery"
+		icon = GFX_focus_generic_anti_tank_guns							
+
+		x = 1
+		y = 1
+	
+		cost = 5
+		
+		prerequisite = { focus = IRE_Evolve_the_Irish_Man }
+		relative_position_id = IRE_Evolve_the_Irish_Man
+		
+		available = {
+		}
+	
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			add_tech_bonus = {
+				name = JUNO_artilery_modernization_initiative
+				bonus = 2
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = IRE_Department_of_Logistics
+		text = "Department of Logistics"
+		icon = GFX_focus_generic_supply_line							
+			
+		x = -4
+		y = 1
+	
+		cost = 7.2
+		
+		prerequisite = { focus = IRE_Irish_Army }
+		relative_position_id = IRE_Irish_Army
+		
+		available = {
+		}
+	
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			custom_effect_tooltip = IRE_army_modifier_tt
+			add_to_variable = { IRE_experience_gain_army_factor = 0.1 tooltip = experience_gain_army_factor_tt }
+			add_to_variable = { IRE_experience_loss_factor = -0.1 tooltip = experience_loss_factor_tt }
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	focus = {
+		id = IRE_Retrain_Generals
+		text = "Retrain our Generals"
+		icon = GFX_focus_ETH_ecole_militaire_haile_selassie_1er							
+
+		x = 2
+		y = 1
+	
+		cost = 5
+		
+		prerequisite = { focus = IRE_Tank_Warfare focus = IRE_Expand_Artillery }
+		relative_position_id = IRE_Tank_Warfare
+		available = {
+		}
+	
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			random_army_leader = {		
+				add_attack = 1
+			}
+			random_army_leader = {			
+				add_defense = 1
+			} 
+			random_army_leader = {			
+				add_logistics = 1
+			}
+			
+			custom_effect_tooltip = IRE_army_modifier_tt
+			add_to_variable = { IRE_training_time_factor = -0.1 tooltip = training_time_factor_tt }
+			add_to_variable = { IRE_special_forces_cap = 0.1 tooltip = special_forces_cap_tt }
+		}
+	}
+	
+	focus = {
+		id = IRE_Increase_Army_Professionalism
+		text = "Increase Army Professionalism"
+		icon = GFX_focus_generic_military_mission							
+
+		x = -2
+		y = 1
+	
+		cost = 5
+		mutually_exclusive = { focus = IRE_Increase_Conscription }
+		prerequisite = { focus = IRE_Retrain_Generals }
+		relative_position_id = IRE_Retrain_Generals
+		available = {
+		}
+	
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			custom_effect_tooltip = IRE_army_modifier_tt
+			add_to_variable = { IRE_training_time_factor = -0.05 tooltip = training_time_factor_tt }
+			add_to_variable = { IRE_army_attack_factor = 0.02 tooltip = army_attack_factor_tt }
+			add_to_variable = { IRE_army_org_factor = 0.01 tooltip = army_org_factor_tt }
+		}
+	}
+	
+	focus = {
+		id = IRE_Increase_Conscription
+		text = "Increase Conscription"
+		icon = GFX_focus_RAJ_military_into_the_workforce							
+
+		x = 2
+		y = 1
+	
+		cost = 5
+		mutually_exclusive = { focus = IRE_Increase_Army_Professionalism }
+		prerequisite = { focus = IRE_Retrain_Generals }
+		relative_position_id = IRE_Retrain_Generals
+		available = {
+		}
+	
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			custom_effect_tooltip = IRE_army_modifier_tt
+			add_to_variable = { IRE_training_time_factor = 0.1 tooltip = training_time_factor_tt }
+			add_to_variable = { IRE_conscription_factor = 0.05 tooltip = conscription_tt }
+		}
+	}
+	
+	focus = {
+		id = IRE_Special_Operation_Command
+		text = "Special Operation Command"
+		icon = GFX_focus_eng_special_air_service							
+
+		x = 2
+		y = 1
+	
+		cost = 5
+		prerequisite = { focus = IRE_Increase_Army_Professionalism focus = IRE_Increase_Conscription }
+		relative_position_id = IRE_Increase_Army_Professionalism
+		available = {
+		}
+	
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_potential_special_forces_tree = yes
+				add_doctrine_cost_reduction = {
+					name = IRE_expand_the_special_foces
+					cost_reduction = 0.5
+					uses = 1
+					category = special_forces_doctrine
+				}
+			}
+		}
+	}
+
+	
+	focus = {
+		id = IRE_naval_rearmament_focus
+		text = "Naval Build-up Initiative"
+		prerequisite = { focus = IRE_Irish_Army }
+		icon = GFX_goal_generic_construct_naval_dockyard 
+		x = 2
+		y = 1
+		relative_position_id = IRE_Irish_Army
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		bypass = {
+			custom_trigger_tooltip =  {
+				tooltip = naval_effort_tt
+				NOT = {
+					any_owned_state = {
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = IRE_naval_rearmament_focus_1dockyard }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			navy_experience = 50
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = IRE_naval_rearmament_focus_1dockyard
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = IRE_naval_rearmament_focus_1dockyard
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = IRE_naval_rearmament_focus_1dockyard
+			}
+		}
+	}
+
+	focus = {
+		id = IRE_anti_non_contact_committee
+		text = "The Hazardous Shamrocks"
+		prerequisite = { focus = IRE_naval_rearmament_focus }
+		icon = GFX_focus_generic_mine_warfare
+		x = 2
+		y = 1
+		relative_position_id = IRE_naval_rearmament_focus
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				name = IRE_anti_non_contact_committee
+				bonus = 1.0
+				uses = 1
+				category = naval_minelaying
+			}
+			add_tech_bonus = {
+				name = IRE_anti_non_contact_committee
+				bonus = 1.0
+				uses = 2
+				category = naval_minesweeping
+			}
+		}
+	}
+
+	focus = {
+		id = IRE_Cruiser_Initiative
+		text = "Cruiser Initatives"
+		prerequisite = { focus = IRE_naval_rearmament_focus }
+		prerequisite = { focus = IRE_service_focus }
+		icon = GFX_focus_generic_cruiser_submarines
+		x = 3
+		y = 2
+		offset = {
+			x = -1
+			y = 0
+			trigger = {
+				NOT = { has_dlc = "Man the Guns" }
+			}
+		}
+		relative_position_id = IRE_naval_rearmament_focus
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				name = IRE_secure_the_imperial_shipping_routes
+				bonus = 5
+				uses = 2
+				category = cl_tech
+			}
+		}
+	}
+
+	focus = {
+		id = IRE_destroyer_focus
+		text = "Begin the Destroyer Lines"
+		prerequisite = { focus = IRE_naval_rearmament_focus }
+		icon = GFX_focus_SWE_italian_destroyers
+		x = -1
+		y = 2
+		relative_position_id = IRE_naval_rearmament_focus
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 5
+				uses = 2
+				category = dd_tech
+			}
+		}
+	}
+
+	focus = {
+		id = IRE_a_s_warfare
+		text = "Anti-Subarine Warfare Plans"
+		prerequisite = { focus = IRE_destroyer_focus }
+		icon = GFX_goal_generic_navy_anti_submarine
+		x = 0
+		y = 2
+		relative_position_id = IRE_destroyer_focus
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				name = IRE_asw_warfare
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 2
+				category = asw_tech
+			}	
+		}
+	}
+
+	focus = {
+		id = IRE_convoy_focus
+		text = "Convoy System Priority"
+		prerequisite = { focus = IRE_destroyer_focus }
+		icon = GFX_goal_generic_navy_cruiser
+		x = -1
+		y = 1
+		relative_position_id = IRE_destroyer_focus
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = british_convoy_discount
+		}
+	}
+
+	focus = {
+		id = IRE_anti_submarine_training_school
+		text = "Anti-Submarine Training School"
+		prerequisite = { focus = IRE_convoy_focus }
+		icon = GFX_SOV_submarine_warfare_ccp_2d_sov_compatibility
+		x = 0
+		y = 2
+		offset = {
+			x = 0
+			y = -1
+			trigger = {
+				NOT = { has_dlc = "Man the Guns" }
+			}
+		}
+		relative_position_id = IRE_convoy_focus
+		cost = 7.2
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = IRE_anti_submarine_training_school
+				cost_reduction = 0.5
+				uses = 2
+				category = convoy_defense_tree
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = ENG_anti_submarine_training_school
+		}
+	}
+
+	focus = {
+		id = IRE_waves_focus
+		text = "Gain a Foothold on Doctrine"
+		prerequisite = { focus = IRE_naval_rearmament_focus }
+		icon = GFX_focus_generic_naval_discipline
+		x = 1
+		y = 2
+		relative_position_id = IRE_naval_rearmament_focus
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = IRE_waves_focus
+				cost_reduction = 0.5
+				uses = 3
+				category = naval_doctrine
+			}
+		}
+	}
+	focus = {
+		id = IRE_carrier_focus
+		text = "Build the Carriers"
+		prerequisite = { focus = IRE_waves_focus }
+		mutually_exclusive = { focus = IRE_battleship_focus }
+		icon = GFX_goal_generic_navy_carrier
+		x = -1
+		y = 1
+		relative_position_id = IRE_waves_focus
+		cost = 5
+		ai_will_do = {
+			factor = 0.25
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			navy_experience = 50
+			add_tech_bonus = {
+				name = IRE_carrier_focus
+				bonus = 1.0
+				uses = 2
+				category = cv_tech
+			}
+			
+		}
+	}
+	focus = {
+		id = IRE_battleship_focus
+		text = "Assimilate the Battleships"
+		prerequisite = { focus = IRE_waves_focus }
+		mutually_exclusive = { focus = IRE_carrier_focus }
+		icon = GFX_goal_generic_navy_battleship
+		x = 1
+		y = 1
+		relative_position_id = IRE_waves_focus
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = IRE_battleship_focus
+				bonus = 1.0
+				uses = 2
+				category = bb_tech
+			}
+		}
+	}
+	focus = {
+		id = IRE_amphibious_focus
+		text = "Maritime Focus"
+		prerequisite = { focus = IRE_naval_rearmament_focus }
+		icon = GFX_focus_generic_naval_invasion
+		x = 0
+		y = 1
+		relative_position_id = IRE_naval_rearmament_focus
+		cost = 7.2
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes	
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				name = IRE_amphibious_focus
+				bonus = 1.0
+				uses = 1
+				category = marine_tech
+			}
+			add_tech_bonus = {
+				name = IRE_amphibious_focus
+				bonus = 1.0
+				uses = 2
+				category = tp_tech
+			}
+		}
+	}
+
+	focus = {
+		id = IRE_expand_the_repair_yards
+		text = "Expand the Repair Yards"
+		prerequisite = { focus = IRE_battleship_focus focus = IRE_carrier_focus }
+		icon = GFX_focus_POL_develop_polish_shipbuilding
+		x = -1
+		y = 1
+		relative_position_id = IRE_battleship_focus
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = ENG_expand_the_repair_yards_2dockyard }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = ENG_expand_the_repair_yards_2dockyard
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = ENG_expand_the_repair_yards
+		}
+	}
+	
+	
+	
+	focus = {
+		id = IRE_Exstablish_The_4_year_plan
+		text = "Establish the Four Year Plan"
+		icon = GFX_focus_generic_military_industry							
+			
+		x = 28
+		y = 0
+	
+		cost = 5
+		
+		
+		available = {
+		}
+	
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			add_tech_bonus = {
+				name = IRE_the_four_year_plan
+				bonus = 1.0
+				uses = 1
+				category = construction_tech
+			}
+			add_timed_idea = {
+				idea = POL_four_year_plan_idea
+				days = 1460
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					1018 = { 
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				1018 = { set_state_category = large_city }
+			}
+			
+		}
+	}
+	
+	
+	focus = {
+		id = IRE_Rural_Ireland_Strategy
+		text = "Rural Ireland Strategy"
+		icon = GFX_goal_generic_construct_civilian							
+			
+		x = 2
+		y = 1
+	
+		cost = 5
+		
+		available = {
+		}
+		prerequisite = { focus = IRE_Exstablish_The_4_year_plan }
+		relative_position_id = IRE_Exstablish_The_4_year_plan
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
+					1017 = { 
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				1017 = { set_state_category = large_city }
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+			add_tech_bonus = {
+				name = IRE_central_region_strategy
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	
+	focus = {
+		id = IRE_National_Defence_Fund
+		text = "National Defence Fund"
+		icon = GFX_focus_CONGO_gold_and_diamonds							
+			
+		x = -2
+		y = 1
+	
+		cost = 5
+		
+		available = {
+		}
+		prerequisite = { focus = IRE_Exstablish_The_4_year_plan }
+		relative_position_id = IRE_Exstablish_The_4_year_plan
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			add_timed_idea = {
+				idea = POL_national_defence_fund_idea
+				days = 720
+			}
+		}
+	}
+	
+	focus = {
+		id = IRE_Cork_Offshore_Oilrigs
+		text = "Cork Offshore Oil Rigs"
+		icon = GFX_focus_generic_offshore_oil_rig							
+			
+		x = -4
+		y = 1
+	
+		cost = 5
+		
+		available = {
+		}
+		prerequisite = { focus = IRE_Exstablish_The_4_year_plan }
+		prerequisite = { focus = IRE_The_Trade_War }
+		relative_position_id = IRE_Exstablish_The_4_year_plan
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			135 = {
+				add_resource = {
+					type = oil
+					amount = 9
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = IRE_Rebuild_1916_Towns
+		text = "Rebuild 1916 Towns"
+		icon = GFX_focus_SWE_hygienic_housing							
+			
+		x = 0
+		y = 1
+	
+		cost = 5
+		
+		available = {
+		}
+		prerequisite = { focus = IRE_Exstablish_The_4_year_plan }
+		relative_position_id = IRE_Exstablish_The_4_year_plan
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = IRE_Reinvest_in_our_industries
+		text = "Re-Invest in our Industries"
+		icon = GFX_goal_generic_construct_civ_factory							
+			
+		x = 0
+		y = 1
+	
+		cost = 7.2
+		
+		available = {
+		}
+		prerequisite = { focus = IRE_Rebuild_1916_Towns }
+		relative_position_id = IRE_Rebuild_1916_Towns
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			add_stability = 0.05
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = IRE_Send_Women_to_Mines
+		text = "Send our Women into the Mines"
+		icon = GFX_focus_CONGO_bakwanga_mine							
+			
+		x = -3
+		y = 1
+	
+		cost = 5
+		
+		available = {
+		}
+		prerequisite = { focus = IRE_Rebuild_1916_Towns }
+		prerequisite = { focus = IRE_National_Defence_Fund }
+		relative_position_id = IRE_Rebuild_1916_Towns
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			add_stability = -0.05
+			random_owned_controlled_state = {
+				add_resource = {
+					type = steel
+					amount = 26
+				}
+			}
+			113 = {
+				add_resource = {
+					type = steel
+					amount = 18
+				}
+			}
+			random_owned_controlled_state = {
+				add_resource = {
+					type = aluminium
+					amount = 10
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = IRE_Address_the_Scars
+		text = "Address our Scars"
+		icon = GFX_focus_CHL_address_the_mapuche_conflict							
+			
+		x = 3
+		y = 1
+	
+		cost = 5
+		
+		available = {
+			
+			check_variable = { var = IRE_scars_of_The_Potato_Famine_war_support_factor  value = -0.05  compare = equals }
+			check_variable = { var = IRE_scars_of_The_Potato_Famine_production_speed_arms_factory_factor  value = -0.05  compare = equals }
+			check_variable = { var = IRE_scars_of_The_Potato_Famine_army_org_factor  value = -0.05  compare = equals }
+			check_variable = { var = IRE_scars_of_The_Potato_Famine_conscription_factor  value = -0.05  compare = equals }
+		}
+		prerequisite = { focus = IRE_Rebuild_1916_Towns }
+		relative_position_id = IRE_Rebuild_1916_Towns
+		search_filters = {  }
+	
+		completion_reward = {
+			custom_effect_tooltip = IRE_Healed_Scars_tt
+			custom_effect_tooltip = CHL_skip_one_line_tt
+			remove_dynamic_modifier = {
+				modifier = IRE_scars_of_The_Potato_Famine_dynamic_modifier
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = IRE_Open_the_Military_Aid_Factories
+		text = "Open the Military-Aid Factories"
+		icon = GFX_goal_generic_construct_mil_factory							
+			
+		x = -1
+		y = 2
+	
+		cost = 7.2
+		
+		available = {
+		}
+		prerequisite = { focus = IRE_Rebuild_1916_Towns }
+		prerequisite = { focus = IRE_Send_Women_to_Mines }
+		relative_position_id = IRE_Rebuild_1916_Towns
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = IRE_Work_for_the_unemployed
+		text = "Work Projects for the Unemployed"
+		icon = GFX_focus_generic_public_works							
+			
+		x = 1
+		y = 2
+	
+		cost = 7.2
+		
+		available = {
+		}
+		prerequisite = { focus = IRE_Rebuild_1916_Towns }
+		prerequisite = { focus = IRE_Address_the_Scars }
+		relative_position_id = IRE_Rebuild_1916_Towns
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+	
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+
+
+	
+	
+	
+	
+
+	
+	
+	
+
+}	
+
+
+

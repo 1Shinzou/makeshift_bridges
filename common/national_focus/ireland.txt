@@ -291,12 +291,7 @@ focus_tree = {
 				tooltip = army_org_factor_tt
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			add_tech_bonus = {
-				name = IRE_autarky_efforts
-				bonus = 1
-				uses = 1
-				category = industry
-			}
+			add_ideas = IRE_welfare_state
 		}
 	}
 	

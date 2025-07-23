@@ -25,6 +25,20 @@ ideas = {
 				war_support_factor = 0.05
 			}
 		}
+		IRE_welfare_state = {
+			picture = HABSBURG_economy
+			allowed = {
+				always = yes
+			}
+			name = "Welfare State"
+
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.3
+			}
+		}
 		
 		IRE_Celtic_Knowledge = {
 			allowed = {

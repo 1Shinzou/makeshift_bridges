@@ -11,6 +11,7 @@ advanced_heavy_tank_chassis_short:0 "1942 Heavy"
 advanced_light_tank_chassis_short:0 "1940 Light"
 
  cat_air_bombs:0 "Bomb Locks"
+ advanced_ship_hull_heavy:0 "1942 Heavy Ship Hull"
 
 # TECH RUSH LOC
 hosttool_mech:0 "Mechanized Equipment 1"

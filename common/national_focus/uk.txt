@@ -3627,7 +3627,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = uk_asia_focus
-		cost = 7
+		cost = 1
 		ai_will_do = {
 			factor = 1
 		}	

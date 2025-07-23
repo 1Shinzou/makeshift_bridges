@@ -16,6 +16,9 @@ focus_tree = {
 
 	focus = {
 		id = crypto_bomb_focus
+		prerequisite = { focus = radar_focus
+		}
+		relative_position_id = radar_focus
 		available = {
 			has_war_with = GER
 			POL = {
@@ -59,7 +62,7 @@ focus_tree = {
 		}
 		
 		icon = GFX_focus_generic_cryptologic_bomb
-		x = -6
+		x = -1
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -143,11 +146,11 @@ focus_tree = {
 			}
 			
 		} 
-		prerequisite = { focus = crypto_bomb_focus }
-		prerequisite = { focus = radar_focus }
+		prerequisite = { focus = crypto_bomb_focus 
+		focus = ENG_vickers_experimental_facility_focus }
 		icon = GFX_goal_generic_scientific_exchange
-		x = 0
-		y = 3
+		x = 1
+		y = 1
 		relative_position_id = crypto_bomb_focus
 		cost = 5
 		ai_will_do = {
@@ -166,7 +169,7 @@ focus_tree = {
 		prerequisite = { focus = tizard_mission_focus }
 		icon = GFX_focus_wonderweapons
 		mutually_exclusive = { focus = ENG_tube_alloys }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = tizard_mission_focus
 		cost = 5
@@ -196,8 +199,9 @@ focus_tree = {
 	focus = {
 		id = limited_rearmament_focus
 		icon = GFX_focus_SOV_merge_plants
-		prerequisite = { focus = ENG_steady_as_she_goes }
-		x = 5
+		prerequisite = { focus = ENG_prepare_for_the_inevitable }
+		relative_position_id = ENG_prepare_for_the_inevitable
+		x = 0
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -261,7 +265,7 @@ focus_tree = {
 		available = { 			
 		}
 		icon = GFX_goal_generic_army_motorized
-		x = -2
+		x = 0
 		y = 1
 		relative_position_id = limited_rearmament_focus
 		cost = 5
@@ -380,7 +384,7 @@ focus_tree = {
 		id = ENG_tank_variant_focus
 		prerequisite = { focus = ENG_tank_focus }
 		icon = GFX_goal_generic_army_tanks
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = ENG_tank_focus
 		cost = 5
@@ -422,7 +426,7 @@ focus_tree = {
 	}	
 	focus = {
 		id = air_defense_focus
-		prerequisite = { focus = limited_rearmament_focus }
+		prerequisite = { focus = shadow_scheme_focus }
 		available = {
 			if = {
 				limit = {
@@ -451,9 +455,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		icon = GFX_goal_generic_construct_military
-		x = -10
+		x = 0
 		y = 1
-		relative_position_id = limited_rearmament_focus
+		relative_position_id = shadow_scheme_focus
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -806,11 +810,11 @@ focus_tree = {
 			}
 			date > 1942.01.01
 		}	
-		prerequisite = { focus = ENG_vickers_experimental_facility_focus  }
+		prerequisite = { focus = tizard_mission_focus  }
 		icon = GFX_focus_wonderweapons
-		x = 1
-		y = 2
-		relative_position_id = radar_focus
+		x = 2
+		y = 0
+		relative_position_id = maud_focus
 		mutually_exclusive = { focus = maud_focus }
 		cost = 5
 		ai_will_do = {
@@ -822,7 +826,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = maud_focus
-				bonus = 1.0
+				bonus = 1.5
 				uses = 1
 				category = nuclear
 			}
@@ -840,7 +844,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		icon = GFX_goal_generic_construct_mil_factory
-		x = 0
+		x = -9
 		y = 1
 		relative_position_id = limited_rearmament_focus
 		cost = 10
@@ -907,7 +911,7 @@ focus_tree = {
 		continue_if_invalid = yes
 
 		icon = GFX_goal_generic_consumer_goods
-		x = 6
+		x = 7
 		y = 1
 		relative_position_id = limited_rearmament_focus
 		cost = 10
@@ -961,7 +965,7 @@ focus_tree = {
 			focus = ENG_tank_variant_focus
 		}
 		icon = GFX_goal_generic_construct_mil_factory
-		x = -1
+		x = -2
 		y = 3
 		relative_position_id = ENG_motorized_focus
 		cost = 10
@@ -1077,9 +1081,9 @@ focus_tree = {
 		id = UK_secret_focus
 		prerequisite = { focus = maud_focus focus = ENG_tube_alloys }
 		icon = GFX_goal_generic_secret_weapon
-		x = 0
-		y = 4
-		relative_position_id = air_defense_focus
+		x = 1
+		y = 1
+		relative_position_id = maud_focus
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1711,10 +1715,14 @@ focus_tree = {
 
 	focus = {
 		id = ENG_secure_the_imperial_shipping_routes
-		prerequisite = { focus = naval_rearmament_focus }
-		prerequisite = { focus = uk_service_focus }
+		prerequisite = { focus = ENG_global_defense
+		}
+		prerequisite = { focus = naval_rearmament_focus
+		}
+		relative_position_id = ENG_global_defense
+	
 		icon = GFX_focus_generic_cruiser2
-		x = 2
+		x = -5
 		y = 1
 		offset = {
 			x = -1
@@ -1723,7 +1731,7 @@ focus_tree = {
 				NOT = { has_dlc = "Man the Guns" }
 			}
 		}
-		relative_position_id = naval_rearmament_focus
+		
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2148,6 +2156,7 @@ focus_tree = {
 	focus = {
 		id = ENG_reinforce_the_empire
 		prerequisite = { focus = ENG_steady_as_she_goes }
+		relative_position_id = ENG_steady_as_she_goes
 		text = uk_empire_focus
 		mutually_exclusive = { focus = ENG_revisit_colonial_policy }
 		available = {
@@ -2155,7 +2164,7 @@ focus_tree = {
 			num_subjects > 0
 		} 
 		icon = GFX_goal_generic_national_unity
-		x = 32
+		x = 0
 		y = 1
 		offset = {
 			x = -2
@@ -2197,7 +2206,7 @@ focus_tree = {
 		}
 
 		icon = GFX_goal_generic_position_armies
-		x = 0
+		x = -4
 		y = 1
 		offset = {
 			x = 2
@@ -2229,7 +2238,7 @@ focus_tree = {
 			}
 		} 
 		icon = GFX_focus_generic_mediterranean_sea_focus
-		x = 2
+		x = -2
 		y = 1
 		relative_position_id = ENG_global_defense
 		cost = 5
@@ -2468,7 +2477,7 @@ focus_tree = {
 		
 		
 		icon = GFX_goal_generic_construct_civilian
-		x = -2
+		x = 2
 		y = 1
 		relative_position_id = ENG_global_defense
 		cost = 5
@@ -2747,10 +2756,10 @@ focus_tree = {
 	focus = {
 		id = uk_commonwealth_focus
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		prerequisite = { focus = uk_service_focus }
+		prerequisite = { focus = ENG_maintaining_imperial_integrity }
 		x = 0
-		y = 2
-		relative_position_id = ENG_reinforce_the_empire
+		y = 1
+		relative_position_id = ENG_maintaining_imperial_integrity
 
 		available = {
 			OR = {
@@ -2800,7 +2809,7 @@ focus_tree = {
 		id = uk_colonial_focus
 		icon = GFX_focus_research2
 		prerequisite = { focus = uk_commonwealth_focus }
-		x = -1
+		x = 1
 		y = 1
 		relative_position_id = uk_commonwealth_focus
 
@@ -2835,7 +2844,7 @@ focus_tree = {
 		id = ENG_british_commonwealth_air_training_plan
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = uk_commonwealth_focus }
-		x = 1
+		x = -1
 		y = 1
 		relative_position_id = uk_commonwealth_focus
 		cost = 10
@@ -2882,7 +2891,7 @@ focus_tree = {
 			focus = uk_colonial_focus
 			focus = ENG_british_commonwealth_air_training_plan 
 		}		
-		x = -3
+		x = 1
 		y = 2
 		relative_position_id = uk_commonwealth_focus
 
@@ -2950,11 +2959,10 @@ focus_tree = {
 		id = uk_south_africa_focus
 		icon = GFX_focus_generic_africa_factory
 		prerequisite = { 
-			focus = uk_colonial_focus
-			focus = ENG_british_commonwealth_air_training_plan 
+			focus = uk_canada_focus 
 		}
 		x = 1
-		y = 2
+		y = 3
 		relative_position_id = uk_commonwealth_focus
 
 		cost = 2
@@ -3018,7 +3026,7 @@ focus_tree = {
 
 	focus = {
 		id = uk_india_focus
-		icon = GFX_focus_RAJ_all_india_forward_bloc
+		icon = GFX_focus_RAJ_british_investors
 		prerequisite = { 
 			focus = uk_colonial_focus
 			focus = ENG_british_commonwealth_air_training_plan 
@@ -3093,11 +3101,10 @@ focus_tree = {
 		id = uk_australia_focus
 		icon = GFX_focus_AST_rats_tobruk
 		prerequisite = { 
-			focus = uk_colonial_focus
-			focus = ENG_british_commonwealth_air_training_plan 
-		}
-		x = 3
-		y = 2
+			focus = uk_india_focus
+			}
+		x = -1
+		y = 3
 		relative_position_id = uk_commonwealth_focus
 		cost = 2
 
@@ -3164,8 +3171,6 @@ focus_tree = {
 		id = ENG_imperial_conference
 		prerequisite = { focus = uk_australia_focus }
 		prerequisite = { focus = uk_south_africa_focus }
-		prerequisite = { focus = uk_canada_focus }
-		prerequisite = { focus = uk_india_focus }
 
 		allow_branch = {
 			has_dlc = "Man the Guns"
@@ -3250,9 +3255,8 @@ focus_tree = {
 			}
 		}
 		icon = GFX_focus_eng_imperial_federation
-
 		x = 0
-		y = 3
+		y = 4
 		relative_position_id = uk_commonwealth_focus
 		cost = 10
 		ai_will_do = {
@@ -3315,7 +3319,7 @@ focus_tree = {
 		}
 
 		icon = GFX_focus_eng_decolonization
-		x = 10
+		x = 32
 		y = 0
 		
 		
@@ -3346,8 +3350,8 @@ focus_tree = {
 
 	focus = {
 		id = ENG_maintaining_imperial_integrity
-		prerequisite = { focus = ENG_steady_as_she_goes }
-		mutually_exclusive = { focus = ENG_maintaining_the_balance_of_power }
+		prerequisite = { focus = ENG_reinforce_the_empire }
+		relative_position_id = ENG_reinforce_the_empire
 		allow_branch = {
 			has_dlc = "Man the Guns"
 		}	
@@ -3371,9 +3375,9 @@ focus_tree = {
 		continue_if_invalid = yes
 
 		icon = GFX_focus_chi_british_cooperation
-		x = 30
+		x = 3
 		y = 1
-		relative_position_id = ENG_steady_as_she_goes
+		relative_position_id = ENG_reinforce_the_empire
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -3457,7 +3461,7 @@ focus_tree = {
 		}
 		
 		icon = GFX_focus_eng_global_defense
-		x = -9
+		x = 0
 		y = 1
 		relative_position_id = uk_service_focus 
 		
@@ -3594,19 +3598,19 @@ focus_tree = {
 
 	focus = {
 		id = ENG_special_operations_executive
-		prerequisite = { focus = ENG_maintaining_imperial_integrity   }
+		prerequisite = { focus = ENG_reinforce_the_empire   }
 
 		icon = GFX_focus_eng_special_air_service
 		offset = {
-			x = -1
-			y = 0
+			x = 0
+			y = 1
 			trigger = {
 				NOT = { has_dlc = "Man the Guns" }
 			}
 		}
-		x = -2
+		x = 0
 		y = 1
-		relative_position_id = ENG_maintaining_imperial_integrity 
+		relative_position_id = ENG_reinforce_the_empire
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -3637,12 +3641,8 @@ focus_tree = {
 	focus = {
 		id = ENG_expand_the_secret_intelligence_service_focus 
 
-		prerequisite = { focus = ENG_maintaining_imperial_integrity }
-
-		dynamic = yes
-
-		available = {
-		} 
+		prerequisite = { focus = ENG_special_operations_executive
+}
 
 		allow_branch = {
 			has_dlc = "La Resistance"
@@ -3650,9 +3650,9 @@ focus_tree = {
 
 		icon = GFX_focus_generic_secret_service_agency
 
-		x = 2
+		x = 0
 		y = 1
-		relative_position_id = ENG_maintaining_imperial_integrity
+		relative_position_id = ENG_special_operations_executive
 
 		cost = 5
 
@@ -3681,17 +3681,12 @@ focus_tree = {
 
 	# START IRAQ/IRAN/USSR INTERVENTION #
 
-	focus = {
-		id = ENG_prepare_for_the_inevitable
-		available = {
+	focus = { id = ENG_prepare_for_the_inevitable 
 
-		}		
-		prerequisite = { focus = ENG_maintaining_imperial_integrity }
+		icon = GFX_focus_generic_home_defense
 
-		icon = GFX_goal_generic_construction
-
-		x = 0
-		y = 1
+		x = 10
+		y = 0
 		offset = {
 			x = 6
 			y = 0
@@ -3699,8 +3694,7 @@ focus_tree = {
 				NOT = { has_dlc = "Man the Guns" }
 			}
 		}
-		relative_position_id = ENG_maintaining_imperial_integrity
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}	
@@ -3721,6 +3715,9 @@ focus_tree = {
 
 	focus = {
 		id = ENG_military_training_act
+		prerequisite = { focus = ENG_reinforce_the_empire
+		}
+		relative_position_id = ENG_reinforce_the_empire
 		available = {
 			OR = {
 				threat > 0.5
@@ -3730,11 +3727,11 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		prerequisite = { focus = ENG_prepare_for_the_inevitable }
+
 		icon = GFX_focus_generic_commonwealth_build_infantry
-		x = 0
+		x = 7
 		y = 1
-		relative_position_id = ENG_prepare_for_the_inevitable
+		
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -3856,7 +3853,9 @@ focus_tree = {
 			}
 		}
 	}
+	
 
+			
 	focus = {
 		id = ENG_the_home_army
 		available = {
@@ -3905,8 +3904,9 @@ focus_tree = {
 		prerequisite = {
 			focus = limited_rearmament_focus
 		}
-		x = -1
-		y = 2
+		relative_position_id = limited_rearmament_focus
+		x = -5
+		y = 1
 		ai_will_do = {
 			factor = 10
 		}
@@ -3994,8 +3994,8 @@ focus_tree = {
 		mutually_exclusive = { focus = ENG_revitalize_northern_england  }
 		icon = GFX_goal_generic_construct_civ_factory
 		x = -1
-		y = 2
-		relative_position_id = ENG_Provoke_british_patriotism
+		y = 1
+		relative_position_id = ENG_let_that_lion_roar
 		cost = 10
 
 		available_if_capitulated = yes
@@ -4332,7 +4332,7 @@ focus_tree = {
 			focus = ENG_tank_focus
 		}
 		relative_position_id = ENG_motorized_focus
-		x = 2
+		x = 1
 		y = 2
 		ai_will_do = {
 			factor = 5
@@ -4361,9 +4361,9 @@ focus_tree = {
 		prerequisite = {
 			focus = uk_small_arms_focus
 		}
-		x = -1
-		y = 5
-		relative_position_id = ENG_motorized_focus
+		x = 0
+		y = 2
+		relative_position_id = royal_ordinance_focus
 		ai_will_do = {
 			factor = 2
 		}

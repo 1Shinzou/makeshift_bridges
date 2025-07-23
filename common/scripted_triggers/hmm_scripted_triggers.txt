@@ -22,11 +22,13 @@ is_playable_country = {
 		tag = SAF
 		tag = SOV
 		tag = PHI
+		tag = HOL
 	}
 }
 
 allies = {
 	OR = {
+		tag = HOL
 		tag = ENG
 		tag = FRA
 		tag = CAN
@@ -97,7 +99,6 @@ ai_manpower = {
 		tag = BEL
 		tag = NOR
 		tag = LUX
-		tag = HOL
 		tag = POL
 		tag = YUG
 		tag = CHI

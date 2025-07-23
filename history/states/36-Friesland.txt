@@ -3,6 +3,10 @@ state={
 	name="STATE_36"
 
 	history={
+		add_dynamic_modifier = {
+			modifier = HOL_nerf
+			scope = HOL
+		}
 		owner = HOL
 		add_core_of = HOL
 		victory_points = {
@@ -18,8 +22,9 @@ state={
 			6336 1 
 		}
 		buildings = {
+			arms_factory = 3
 			infrastructure = 2
-			industrial_complex = 2
+			industrial_complex = 3
 			6336 = {
 				naval_base = 3
 

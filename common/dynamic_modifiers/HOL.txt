@@ -1,0 +1,14 @@
+
+
+HOL_nerf = {
+	enable = { tag = HOL }
+
+	
+
+	icon = GFX_modifiers_ETH_state_development
+	
+	local_factories = -0.5
+	
+}
+
+

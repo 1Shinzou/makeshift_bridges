@@ -67,6 +67,9 @@ USA_all_in:0 "All-In"
 USA_victory_plan:0 "Implement The Victory Plan"
 USA_victory_plan_desc:0 "In 1941, a team of officers led by General Albert Wedemeyer on behalf of General George C. Marshall drew up the Victory Program, whose premise was that the Soviet Union would be defeated that year, and that to defeat Nazi Germany would require the United States to raise by the summer of 1943 a force of 215 divisions comprising 8.7 million men."
 
+# HOL
+HOL_nerf:0 "Netherlands nerf"
+
 # VP NAMES MAP MODDING
   VICTORY_POINTS_7985:0 "Maradah"
   VICTORY_POINTS_4057:0 "Marsa Al Brega"

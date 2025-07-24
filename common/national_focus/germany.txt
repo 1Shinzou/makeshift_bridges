@@ -9083,6 +9083,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ANNEXATION }
 		
 		completion_reward = {
+			hidden_effect = {				
+				FIN = {
+					country_event = { id = wuw_GER_realpolitik.1 days = 1 }
+				}
+			}
 			add_named_threat = { threat = 30 name = GER_danzig_or_war }
 			if = {
 				limit = {
@@ -9782,88 +9787,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = GER_secure_finland
 
-		icon = GFX_focus_FIN_keepers_of_the_north
-
-		prerequisite = { focus = GER_operation_weserubung  }
-
-		x = 3
-		y = 1
-		relative_position_id =  GER_operation_weserubung 
-
-		cost = 1
-
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				OR = {
-					has_government = democratic
-					has_government = communism
-				}
-			}
-		}
-
-		available = {
-			is_subject = no
-			NOT = { has_war_with = FIN }
-			NOT = { is_ally_with = FIN }
-			NOT = { has_guaranteed = FIN }
-			NOT = { has_non_aggression_pact_with = FIN }
-			country_exists = FIN 
-			FIN = {
-				NOT = { is_ally_with = SOV }
-				NOT = { is_guaranteed_by = SOV }
-				NOT = { has_non_aggression_pact_with = SOV }
-				OR = {
-					NOT = { has_completed_focus = FIN_the_lone_wolf }
-					NOT = { has_government = neutrality }
-				}
-			}
-		}
-
-		will_lead_to_war_with = FIN
-
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-
-		completion_reward = {
-			if = {
-				limit = {
-					FIN = {
-						is_subject = no
-						is_in_faction = no
-					}
-				}
-				FIN = {
-					country_event = { id = wuw_GER_realpolitik.1 days = 1 }
-				}
-				custom_effect_tooltip = if_they_accept_tt
-				effect_tooltip = {
-					GER = {
-						add_to_faction = FIN
-					}
-				}
-
-				custom_effect_tooltip = if_they_refuse_tt
-				effect_tooltip = {
-					GER = {
-						create_wargoal = {
-							type = annex_everything
-							target = FIN
-						}
-					}
-				}
-			}
-			else = {
-				create_wargoal = {
-					type = annex_everything
-					target = FIN
-				}
-			}
-		}
-	}
 
 	focus = {
 		id = GER_operation_sea_lion

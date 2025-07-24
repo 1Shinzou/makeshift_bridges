@@ -12,7 +12,7 @@
 
 	default = no
 
-	continuous_focus_position = { x = 200 y = 1800 }
+	continuous_focus_position = { x = 2900 y = 1000 }
 
 	focus = {
 		id = JAP_the_unthinkable_option
@@ -1091,7 +1091,7 @@
 	
 	focus = { 
 		id = JAP_nomonhan_incident
-		icon = GFX_focus_attack_soviet
+		icon = GFX_SOV_the_glory_of_the_red_army_ccp_2d_sov_compatibility
 		cost = 5
 		prerequisite = { 
 			focus = JAP_liaison_conference

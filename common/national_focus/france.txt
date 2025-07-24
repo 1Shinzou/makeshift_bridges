@@ -4774,7 +4774,7 @@ focus = {
 	}
 	focus = {
 		id = FRA_fight_vichy
-		icon = GFX_goal_generic_major_war
+		icon = GFX_focus_generic_attack_vichy_france
 		x = -1
 		y = 1
 		offset = {

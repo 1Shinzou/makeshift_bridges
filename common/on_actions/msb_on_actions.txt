@@ -418,10 +418,9 @@ on_actions = {
 					every_army_leader = {
 						remove_unit_leader_trait = no_grind
 					}
-				}
-				
-
+				}		
 			}
+
 			if = {
 				limit = {
 					FROM = {
@@ -433,6 +432,22 @@ on_actions = {
 					add_to_faction = FROM
 				}
 			}
+
+			if = {
+				limit = {
+					FROM = {
+						tag = EFR
+					}
+				}
+				
+				GER = {
+					annex_country = {
+						target = EFR
+						transfer_troops = no
+					}
+				}
+			}
+			
 			if = {
                 limit = {
                     FROM = {

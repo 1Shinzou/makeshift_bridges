@@ -1459,7 +1459,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = IRE_army_modifier_tt
 			add_to_variable = { IRE_training_time_factor = 0.1 tooltip = training_time_factor_tt }
-			add_to_variable = { IRE_conscription_factor = 0.05 tooltip = conscription_tt }
+			add_to_variable = { IRE_conscription = 0.05 tooltip = conscription_tt }
 		}
 	}
 	

@@ -419,13 +419,6 @@ on_actions = {
 						remove_unit_leader_trait = no_grind
 					}
 				}
-				ENG = {
-					puppet = IRE
-					set_autonomy = {
-						target = IRE
-						autonomy_state = autonomy_integrated_puppet
-					}
-				}
 				
 
 			}

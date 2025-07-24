@@ -315,6 +315,26 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 9140;142;impassable;-1;-1;-1;-1;-1;;Finnland Border
 9140;6117;impassable;-1;-1;-1;-1;-1;;Finnland Border
 
+11130;3058;impassable;-1;-1;-1;-1;-1;;Finnland Border
+11130;3082;impassable;-1;-1;-1;-1;-1;;Finnland Border
+11130;6107;impassable;-1;-1;-1;-1;-1;;Finnland Border
+11130;9191;impassable;-1;-1;-1;-1;-1;;Finnland Border
+203;9191;impassable;-1;-1;-1;-1;-1;;Finnland Border
+203;11169;impassable;-1;-1;-1;-1;-1;;Finnland Border
+167;11169;impassable;-1;-1;-1;-1;-1;;Finnland Border
+167;9128;impassable;-1;-1;-1;-1;-1;;Finnland Border
+3069;9128;impassable;-1;-1;-1;-1;-1;;Finnland Border
+3069;11104;impassable;-1;-1;-1;-1;-1;;Finnland Border
+6061;11104;impassable;-1;-1;-1;-1;-1;;Finnland Border
+6061;9064;impassable;-1;-1;-1;-1;-1;;Finnland Border
+6061;9092;impassable;-1;-1;-1;-1;-1;;Finnland Border
+6092;3097;impassable;-1;-1;-1;-1;-1;;Finnland Border
+9116;3097;impassable;-1;-1;-1;-1;-1;;Finnland Border
+6092;6061;impassable;-1;-1;-1;-1;-1;;Finnland Border
+9116;6183;impassable;-1;-1;-1;-1;-1;;Finnland Border
+9116;11142;impassable;-1;-1;-1;-1;-1;;Finnland Border
+9116;9140;impassable;-1;-1;-1;-1;-1;;Finnland Border
+
 2003;5047;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
 2003;5017;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
 2088;5017;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER

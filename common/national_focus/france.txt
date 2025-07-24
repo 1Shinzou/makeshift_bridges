@@ -2762,10 +2762,10 @@ q
 	focus = {
 		id = FRA_naval_rearmament
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 46
-		y = 1
+		x = 47
+		y = 0
 		cost = 10
-		prerequisite = { focus = FRA_begin_rearmament }
+		# prerequisite = { focus = FRA_begin_rearmament }
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {

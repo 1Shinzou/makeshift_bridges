@@ -5441,8 +5441,7 @@ focus = {
 			has_intelligence_agency = yes
 		}
 		allow_branch = {
-			has_global_flag = fall_of_france
-			has_dlc = "La Resistance"
+
 		}
 
 		x = 0

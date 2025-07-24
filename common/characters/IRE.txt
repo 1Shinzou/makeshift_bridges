@@ -429,84 +429,7 @@ characters={
 			}
 		}
 	}
-	IRE_thomas_ohiggins={
-		advisor={
-			slot = political_advisor
-			idea_token = IRE_thomas_ohiggins
-			available  = {
-				has_completed_focus  = IRE_The_IRA_Dictatorship 
-			}
-			allowed = {
-					original_tag = IRE
-				}
-				traits = {
-					IRE_Blueshirt_Council
-				}
-				cost = 75
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="Thomas F. O'Higgins"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_3"
-			}
-		}
-	}
-	IRE_sean_murray={
-		advisor={
-			slot = political_advisor
-			idea_token = IRE_sean_murray
-			available = {
-				has_completed_focus = IRE_legalise_the_PCI
-			}
-			allowed = {
-				original_tag = IRE
-			}
-			traits = {
-				IRE_Communist_Sympathiser
-			}
-			cost = 75
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-		# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="Sean Murray"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_4"
-			}
-		}
-	}
-	IRE_joseph_macrory={
-		advisor={
-			slot = political_advisor
-			idea_token = IRE_joseph_macrory
-			available = {
-				has_completed_focus = IRE_Snakes_and_sins
-			}
-			allowed = {
-					original_tag = IRE
-				}
-				traits = {
-					IRE_Advocate_of_St_Patrick
-				}
-				cost = 75
-				ai_will_do = {
-					factor = 1.000
-				}
-		}
-		# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="Joseph MacRory"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_5"
-			}
-		}
-	}
+
 	
 	IRE_Lugaid_OConnor={
 		name= "Lugaid O'Connor"
@@ -651,7 +574,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { infantry_officer infantry_leader ambusher }
+			traits = { infantry_officer  ambusher }
 			skill = 2
 			attack_skill = 3
 			defense_skill = 2
@@ -688,7 +611,7 @@ characters={
 		}
 		corps_commander = {
 			desc = IRE_jj_oconnell_theorist_desc
-			traits = { career_officer infantry_leader organizer }
+			traits = { career_officer  organizer }
 			skill = 3
 			attack_skill = 2
 			defense_skill = 3
@@ -713,7 +636,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { career_officer urban_assault_specialist }
+			traits = { career_officer }
 			skill = 3
 			attack_skill = 3
 			defense_skill = 3
@@ -737,7 +660,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { war_hero infantry_leader trickster hill_fighter }
+			traits = { war_hero  trickster hill_fighter }
 			skill = 4
 			attack_skill = 5
 			defense_skill = 3
@@ -796,7 +719,7 @@ characters={
 			}
 		}
 		field_marshal = {
-			traits = { career_officer light_infantry_officer infantry_leader trickster }
+			traits = { career_officer light_infantry_officer  trickster }
 			skill = 3
 			attack_skill = 2
 			defense_skill = 3

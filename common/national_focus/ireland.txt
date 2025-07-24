@@ -117,9 +117,9 @@ focus_tree = {
 		icon = GFX_focus_generic_horse_studs
 		prerequisite = { focus = IRE_The_Emergency_Powers_Act }
 		prerequisite = { focus = IRE_Treaty_Port_Proposition }
-		relative_position_id = IRE_Treaty_Port_Proposition
-		x = 2
-		y = 1
+		relative_position_id = IRE_The_Emergency_Powers_Act
+		x = 0
+		y = 2
 
 		cost = 5
 
@@ -966,7 +966,7 @@ focus_tree = {
 						is_owned_and_controlled_by = ROOT
 					}
 				}
-				135 = { set_state_category = megalopolis }
+				135 = { set_state_category = megalopolis  }
 			}
 		}
 	}
@@ -1005,7 +1005,7 @@ focus_tree = {
 						is_owned_and_controlled_by = ROOT
 					}
 				}
-				134 = { set_state_category = megalopolis }
+				134 = { set_state_category = megalopolis  }
 			}
 		}
 	}
@@ -1181,7 +1181,7 @@ focus_tree = {
 		text = "Retrain the Irishmen"
 		icon = GFX_focus_ETH_freedom_at_gunpoint							
 			
-		x = -1
+		x = 0
 		y = 1
 	
 		cost = 5
@@ -1259,7 +1259,7 @@ focus_tree = {
 		text = "Invest in Irish Motor Industries"
 		icon = GFX_focus_generic_purchase_mechanized_equipment							
 
-		x = 1
+		x = 0
 		y = 1
 	
 		cost = 5
@@ -1290,7 +1290,7 @@ focus_tree = {
 		text = "Tank Warfare"
 		icon = GFX_focus_NOR_rikstanken							
 
-		x = -1
+		x = 0
 		y = 1
 	
 		cost = 5
@@ -1318,7 +1318,7 @@ focus_tree = {
 		text = "Expand our Artillery"
 		icon = GFX_focus_generic_anti_tank_guns							
 
-		x = 1
+		x = 0
 		y = 1
 	
 		cost = 5
@@ -1347,11 +1347,11 @@ focus_tree = {
 		icon = GFX_focus_generic_supply_line							
 			
 		x = -4
-		y = 1
+		y = 2
 	
 		cost = 7.2
 		
-		prerequisite = { focus = IRE_Irish_Army }
+		prerequisite = { focus = IRE_Expand_Procurement_Department } prerequisite = { focus = IRE_Irish_Military_Academy }
 		relative_position_id = IRE_Irish_Army
 		
 		available = {
@@ -1597,49 +1597,15 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = IRE_anti_non_contact_committee
-		text = "The Hazardous Shamrocks"
-		prerequisite = { focus = IRE_naval_rearmament_focus }
-		icon = GFX_focus_generic_mine_warfare
-		x = 2
-		y = 1
-		relative_position_id = IRE_naval_rearmament_focus
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-
-		allow_branch = {
-			has_dlc = "Man the Guns"
-		}
-
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			add_tech_bonus = {
-				name = IRE_anti_non_contact_committee
-				bonus = 1.0
-				uses = 1
-				category = naval_minelaying
-			}
-			add_tech_bonus = {
-				name = IRE_anti_non_contact_committee
-				bonus = 1.0
-				uses = 2
-				category = naval_minesweeping
-			}
-		}
-	}
 
 	focus = {
 		id = IRE_Cruiser_Initiative
 		text = "Cruiser Initatives"
-		prerequisite = { focus = IRE_naval_rearmament_focus }
-		prerequisite = { focus = IRE_service_focus }
+		
+		prerequisite = { focus = IRE_amphibious_focus }
 		icon = GFX_focus_generic_cruiser_submarines
-		x = 3
-		y = 2
+		x = 0
+		y = 1
 		offset = {
 			x = -1
 			y = 0
@@ -1647,7 +1613,7 @@ focus_tree = {
 				NOT = { has_dlc = "Man the Guns" }
 			}
 		}
-		relative_position_id = IRE_naval_rearmament_focus
+		relative_position_id = IRE_amphibious_focus
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -1668,11 +1634,11 @@ focus_tree = {
 	focus = {
 		id = IRE_destroyer_focus
 		text = "Begin the Destroyer Lines"
-		prerequisite = { focus = IRE_naval_rearmament_focus }
+		prerequisite = { focus = IRE_Irish_Army}
 		icon = GFX_focus_SWE_italian_destroyers
-		x = -1
-		y = 2
-		relative_position_id = IRE_naval_rearmament_focus
+		x = 6
+		y = 1
+		relative_position_id = IRE_Irish_Army
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -1725,7 +1691,7 @@ focus_tree = {
 		text = "Convoy System Priority"
 		prerequisite = { focus = IRE_destroyer_focus }
 		icon = GFX_goal_generic_navy_cruiser
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = IRE_destroyer_focus
 		cost = 5
@@ -1743,10 +1709,11 @@ focus_tree = {
 	focus = {
 		id = IRE_anti_submarine_training_school
 		text = "Anti-Submarine Training School"
-		prerequisite = { focus = IRE_convoy_focus }
+		prerequisite = { focus = IRE_destroyer_focus }
+		prerequisite = { focus = IRE_naval_rearmament_focus }
 		icon = GFX_SOV_submarine_warfare_ccp_2d_sov_compatibility
-		x = 0
-		y = 2
+		x = -2
+		y = 1
 		offset = {
 			x = 0
 			y = -1
@@ -1754,7 +1721,7 @@ focus_tree = {
 				NOT = { has_dlc = "Man the Guns" }
 			}
 		}
-		relative_position_id = IRE_convoy_focus
+		relative_position_id = IRE_destroyer_focus
 		cost = 7.2
 		ai_will_do = {
 			factor = 1
@@ -1777,11 +1744,11 @@ focus_tree = {
 	focus = {
 		id = IRE_waves_focus
 		text = "Gain a Foothold on Doctrine"
-		prerequisite = { focus = IRE_naval_rearmament_focus }
+		prerequisite = { focus = IRE_a_s_warfare  focus = IRE_Cruiser_Initiative }
 		icon = GFX_focus_generic_naval_discipline
-		x = 1
-		y = 2
-		relative_position_id = IRE_naval_rearmament_focus
+		x = 2
+		y = 1
+		relative_position_id = IRE_Cruiser_Initiative
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -1804,7 +1771,7 @@ focus_tree = {
 		prerequisite = { focus = IRE_waves_focus }
 		mutually_exclusive = { focus = IRE_battleship_focus }
 		icon = GFX_goal_generic_navy_carrier
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = IRE_waves_focus
 		cost = 5
@@ -1831,7 +1798,7 @@ focus_tree = {
 		prerequisite = { focus = IRE_waves_focus }
 		mutually_exclusive = { focus = IRE_carrier_focus }
 		icon = GFX_goal_generic_navy_battleship
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = IRE_waves_focus
 		cost = 5
@@ -1887,7 +1854,7 @@ focus_tree = {
 		text = "Expand the Repair Yards"
 		prerequisite = { focus = IRE_battleship_focus focus = IRE_carrier_focus }
 		icon = GFX_focus_POL_develop_polish_shipbuilding
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = IRE_battleship_focus
 		cost = 5

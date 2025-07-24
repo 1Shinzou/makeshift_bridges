@@ -404,12 +404,12 @@ IRE_IRA_balance_of_power_category = {
 		allowed = {
 			original_tag = IRE
 		}
-		days_remove = 70
+		days_remove = 35
 		
 		remove_effect = {
 			add_power_balance_value = {
 				id = IRE_IRA_political_balance
-				value = -0.15
+				value = -0.2
 			}
 			add_stability = 0.02
 		}
@@ -463,12 +463,12 @@ IRE_IRA_balance_of_power_category = {
 		name = "Denounce the IRA"
 		cost = 35
 		icon = GFX_decision_generic_political_discourse
-		days_remove = 70
+		days_remove = 35
 		
 		remove_effect = {
 			add_power_balance_value = {
 				id = IRE_IRA_political_balance
-				value = 0.15
+				value = 0.2
 			}
 			add_manpower = -750
 		}

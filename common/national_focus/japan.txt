@@ -12,7 +12,7 @@
 
 	default = no
 
-	continuous_focus_position = { x = 200 y = 850 }
+	continuous_focus_position = { x = 200 y = 1800 }
 
 	focus = {
 		id = JAP_the_unthinkable_option
@@ -789,9 +789,9 @@
 			focus = JAP_challenge_the_zaibatsus
 			focus = JAP_ally_with_the_zaibatsus
 		}
-		x = -5
-		y = 1
-		relative_position_id = JAP_showa_restoration
+		x = -2
+		y = 0
+		relative_position_id = JAP_guide_the_zaibatsus
 
 		cost = 10
 
@@ -993,7 +993,7 @@
 		id = JAP_purge_the_kodoha_faction
 		icon = GFX_goal_generic_major_war
 		mutually_exclusive = { focus = JAP_the_unthinkable_option focus = JAP_support_the_kodoha_faction focus = JAP_strengthen_civilian_government }
-		x = 3
+		x = 8
 		y = 0
 
 		cost = 8
@@ -1028,12 +1028,12 @@
 		icon = GFX_focus_SWI_embrace_rote_drei
 		cost = 5
 		prerequisite = { 
-			focus = JAP_liaison_conference
+			focus = JAP_modern_shogunate
+			focus = JAP_showa_restoration
 		}
-		
-		x = 0
+		x = -9
 		y = 1
-		relative_position_id = JAP_liaison_conference
+		relative_position_id = JAP_showa_restoration
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -1055,11 +1055,11 @@
 		id = JAP_liaison_conference
 		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { 
-			focus = JAP_modern_shogunate
-			focus = JAP_showa_restoration
+			focus = JAP_black_dragon_society
 		}
-		x = 12
-		y = 2
+		relative_position_id = JAP_black_dragon_society
+		x = 0
+		y = 1
 
 		cost = 10
 
@@ -1088,14 +1088,49 @@
 			
 		}
 	}
+	
+	focus = { 
+		id = JAP_nomonhan_incident
+		icon = GFX_focus_attack_soviet
+		cost = 5
+		prerequisite = { 
+			focus = JAP_liaison_conference
+		}
+		relative_position_id = JAP_liaison_conference
+		
+		available = { 
+		}
+		x = 2
+		y = 1
+		
+		
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = { 
+		 add_tech_bonus = {
+				name = "Type 2 Ka-Mi"
+				bonus = 2.0
+				uses = 1
+				category = armor
+				}	
+			}
+		}
 
 	focus = {
 		id = JAP_greater_east_asian_co_prosperity_sphere
 		icon = GFX_goal_generic_alliance
-		prerequisite = { focus = JAP_liaison_conference }
-		x = 2
+		prerequisite = { 
+			focus = JAP_modern_shogunate
+			focus = JAP_showa_restoration
+		}
+		x = 5
 		y = 1
-		relative_position_id = JAP_liaison_conference
+		relative_position_id = JAP_showa_restoration
 
 		cost = 5
 
@@ -1131,11 +1166,11 @@
 		id = JAP_intervene_in_china
 		icon = GFX_focus_attack_china
 		prerequisite = { 
-			focus = JAP_greater_east_asian_co_prosperity_sphere
+			focus = JAP_liaison_conference
 		}
 		will_lead_to_war_with = CHI
-		x = 2
-		y = 2
+		x = -2
+		y = 1
 		relative_position_id = JAP_liaison_conference
 
 		cost = 5
@@ -1286,10 +1321,14 @@
 	focus = {
 		id = JAP_develop_chinese_resources
 		icon = GFX_goal_generic_construct_civilian
-		prerequisite = { focus = JAP_intervene_in_china }
-		x = 2
+		prerequisite = { 
+			focus = JAP_secure_china
+		}
+
+		
+		x = 0
 		y = 1
-		relative_position_id = JAP_intervene_in_china
+		relative_position_id = JAP_secure_china
 
 		cost = 5
 
@@ -1335,11 +1374,8 @@
 		id = JAP_strike_south_doctrine
 		icon = GFX_focus_jap_strike_south
 		
-		prerequisite = { 
-			focus = JAP_sign_tripartite_pact 
-			#focus = JAP_non_aggression_pact_with_the_soviet_union
+		prerequisite = { focus = JAP_sign_tripartite_pact
 		}
-		
 		x = 0
 		y = 1
 		relative_position_id = JAP_sign_tripartite_pact
@@ -1387,11 +1423,11 @@
 	focus = {
 		id = JAP_bypass_the_philippines
 		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = JAP_non_aggression_pact_with_the_soviet_union }
+		prerequisite = { focus = JAP_strike_south_doctrine }
 		mutually_exclusive = { focus = JAP_secure_the_philippines }
-		x = -1
+		x = -2
 		y = 1
-		relative_position_id = JAP_non_aggression_pact_with_the_soviet_union
+		relative_position_id = JAP_strike_south_doctrine
 
 		cost = 5
 
@@ -1415,7 +1451,7 @@
 		completion_reward = {
 			add_timed_idea = {
 				idea = JAP_theater_prep
-				days = 120
+				days = 180
 			}
 			add_tech_bonus = {
 				name = JAP_bypass_the_philippines
@@ -1423,59 +1459,50 @@
 				uses = 1
 				category = tp_tech
 			}
-		}
-	}
-
-
-	focus = {
-		id = JAP_non_aggression_pact_with_the_soviet_union
-		icon = GFX_goal_generic_dangerous_deal
-		prerequisite = { 
-			#focus = JAP_strike_south_doctrine
-			focus = JAP_intervene_in_china
-		}
-		prerequisite = { 
-			focus = JAP_strike_south_doctrine
-			#focus = JAP_intervene_in_china
-		}
-		x = 0
-		y = 3
-		relative_position_id = JAP_liaison_conference
-		dynamic = yes  
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-			OR = {
-				has_non_aggression_pact_with = SOV
-				has_war_with = SOV
+			SOV = { country_event = { id = wtt_japan.11 }
 			}
 		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			SOV = { country_event = { id = wtt_japan.11 } }
-		}
 	}
+	
+	
+	focus = {
+		id = JAP_secure_the_philippines
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = JAP_strike_south_doctrine }
+		mutually_exclusive = { focus = JAP_bypass_the_philippines }
+		x = 2
+		y = 1
+		relative_position_id = JAP_strike_south_doctrine
 
+		will_lead_to_war_with = PHI
+
+		cost = 5
+				
+		search_filters = { FOCUS_FILTER_RESEARCH }
+			
+			completion_reward = {
+			add_timed_idea = {
+				idea = JAP_secure_prep
+				days = 180
+			}
+			add_tech_bonus = {
+				name = JAP_bypass_the_philippines
+				bonus = 1.0
+				uses = 1
+				category = tp_tech
+			}
+			SOV = { country_event = { id = wtt_japan.11 }
+							}
+						}
+			}
+					
 	focus = {
 		id = JAP_strike_on_the_southern_resource_area
 		icon = GFX_focus_generic_strike_at_democracy3
-		prerequisite = { focus = JAP_bypass_the_philippines }
-		x = -1
-		y = 2
-		relative_position_id = JAP_non_aggression_pact_with_the_soviet_union
+		prerequisite = { focus = JAP_bypass_the_philippines focus = JAP_secure_the_philippines }
+		x = -2
+		y = 1
+		relative_position_id = JAP_secure_the_philippines
 
 		will_lead_to_war_with = ENG
 		will_lead_to_war_with = MAL
@@ -1558,6 +1585,11 @@
 			}
 			declare_war_on = {
 				target = HOL
+				type = take_state_focus
+				generator = { 206 }
+			}
+			declare_war_on = {
+				target = IRE
 				type = take_state_focus
 				generator = { 206 }
 			}
@@ -1659,12 +1691,11 @@
 	focus = {
 		id = JAP_sign_tripartite_pact
 		icon = GFX_goal_anschluss
-		prerequisite = { 
-			focus = JAP_liaison_conference
-		}
-		x = -2
+		prerequisite = { focus = JAP_greater_east_asian_co_prosperity_sphere
+			}
+		x = 0
 		y = 1
-		relative_position_id = JAP_liaison_conference
+		relative_position_id = JAP_greater_east_asian_co_prosperity_sphere
 
 		cost = 5
 
@@ -2461,9 +2492,9 @@
 			focus = JAP_guide_the_zaibatsus
 			focus = JAP_nationalize_the_zaibatsus
 		}
-		relative_position_id = JAP_showa_restoration
-		x = -1
-		y = 1
+		relative_position_id = JAP_guide_the_zaibatsus
+		x = 2
+		y = 0
 
 		cost = 10
 
@@ -2622,12 +2653,12 @@
 		id = JAP_prepare_for_war_with_the_soviet_union
 		icon = GFX_goal_anti_comintern_pact
 		prerequisite = {
-			focus = JAP_non_aggression_pact_with_the_soviet_union
+			focus = JAP_nomonhan_incident
 		}
-		x = 1
+		x = 0
 		y = 1
-		relative_position_id = JAP_non_aggression_pact_with_the_soviet_union
-		dynamic = yes  
+		relative_position_id = JAP_nomonhan_incident
+			dynamic = yes  
 
 		cost = 5
 
@@ -2721,7 +2752,6 @@
 		x = 0
 		y = 1
 		relative_position_id = JAP_prepare_for_war_with_the_soviet_union
-
 		cost = 1
 
 		ai_will_do = {
@@ -2950,9 +2980,9 @@
 			focus = JAP_guide_the_zaibatsus
 			focus = JAP_nationalize_the_zaibatsus
 		}
-		x = 1
-		y = 1
-		relative_position_id = JAP_showa_restoration
+		x = 2
+		y = 0
+		relative_position_id = JAP_challenge_the_zaibatsus
 
 		cost = 10
 
@@ -3153,7 +3183,8 @@
 	focus = {
 		id = JAP_the_manchurian_project
 		icon = GFX_focus_jap_manchurian_project
-		x = 21
+		relative_position_id = JAP_support_the_kodoha_faction
+		x = 12
 		y = 0
 
 		cost = 10
@@ -3804,7 +3835,7 @@
 		id = JAP_fighter_modernization
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = JAP_army_expansion_law focus = JAP_new_naval_estimates }
-		x = 8
+		x = 7
 		y = 2
 		relative_position_id = JAP_army_expansion_law
 
@@ -3948,7 +3979,7 @@
 		prerequisite = { focus = JAP_first_air_fleet
 		focus = JAP_range_focus  }
 		
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = JAP_first_air_fleet
 
@@ -4207,7 +4238,7 @@
 	focus = {
 		id = JAP_new_naval_estimates
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 17
+		x = 15
 		y = 0
 		relative_position_id = JAP_army_expansion_law
 

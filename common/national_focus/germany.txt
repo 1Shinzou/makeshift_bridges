@@ -5379,6 +5379,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			remove_ideas = r56_ger_naval_treaty
 		}
 	}
 

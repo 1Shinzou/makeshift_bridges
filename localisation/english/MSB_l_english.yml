@@ -52,6 +52,8 @@ RAJ_ghandi_path_tt:0 "Have Gandhi as country leader. When Gandhi's assassination
 
 # GER
 GER_msb_anschluss_eq_trigger_tt:0 "More than §Y40.000§! infantry equipment in the army"
+ r56_ger_naval_treaty:0 "[ENG.GetAdjective]-[GER.GetAdjective] Naval Treaty"
+ r56_ger_naval_treaty_desc:0 "Recent talks with [ENG.GetNameDef] has largely loosened the naval restrictions upon us dictated by the Treaty of Versailles, thus allowing us to massively increase our naval capacity. However, restrictions do still exist upon our naval production and will remain to do so until we take the step to liberate our navy of the treaty entirely."
 
 italian_arms_discount:0 "Bresica Small Arms Industry"
 #greater_italy_required_other_states:0 "Italy or a subject of Italy control \n§YSuez§! \n§YCorsica§! \n§YSavoy§! \n§YZara§! \n§YDalmatia§! \n§YLjubljana§! \n§YMalta§! \n§YCrete§! \n§YDodecaneso§!"

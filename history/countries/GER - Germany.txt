@@ -762,6 +762,7 @@ add_to_faction = GER
 
 # Setup of National Spirits
 add_ideas = {
+	r56_ger_naval_treaty
 	sour_loser
 	limited_exports
 	limited_conscription

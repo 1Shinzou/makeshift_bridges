@@ -3475,8 +3475,8 @@ focus = {
 	focus = {
 		id = FRA_rally_defectors
 		icon = GFX_focus_fra_milice
-		x = 16
-		y = 7
+		x = 19
+		y = 10
 	
 		
 		cost = 1
@@ -3485,7 +3485,7 @@ focus = {
 			factor = 1
 		}
 		allow_branch = {
-			has_global_flag = fall_of_france
+		#	has_global_flag = fall_of_france
 		}
 		
 	

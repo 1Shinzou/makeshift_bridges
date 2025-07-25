@@ -860,6 +860,14 @@ focus_tree = {
 				IRE_economic_downturn_industrial_capacity_factory = 0.05
 				tooltip = industrial_capacity_factory_tt
 			}
+				if = {
+				limit = {
+					113 = { 
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				113 = { set_state_category = megalopolis  }
+			}
 
 		}
 	}

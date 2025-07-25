@@ -1,0 +1,24 @@
+state={ 
+	id=1018
+	name="STATE_1018"
+	manpower = 25457
+	
+	state_category = wasteland
+
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 2
+		}
+
+
+		add_core_of = WST
+	}
+
+	provinces={
+		1143 2068 4913 7943 8028 12764 7148 12091 12033 5078 
+	}
+
+
+	local_supplies=9.0 
+}

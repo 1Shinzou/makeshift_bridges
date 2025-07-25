@@ -85,6 +85,7 @@ STRATEGICREGION_303:0 "Aswan"
 
 # States
 STATE_1017:0 "North Wales"
+STATE_1018:0 "South Mersa Matruh"
 
 # STRAITS
  OTRANTO_STRAIT:0 "Strait of Otranto"

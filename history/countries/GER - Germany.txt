@@ -760,7 +760,6 @@ set_popularities = {
 create_faction = Axis
 add_to_faction = GER
 add_to_faction = ITA
-add_to_faction = IRE
 
 # Setup of National Spirits
 add_ideas = {

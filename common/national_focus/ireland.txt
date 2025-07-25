@@ -80,7 +80,7 @@ focus_tree = {
 		x = 5
 		y = 1
 	
-		cost = 7.2
+		cost = 10
 		
 		prerequisite = { focus = IRE_Fianna_fail }
 		relative_position_id = IRE_Fianna_fail
@@ -268,7 +268,7 @@ focus_tree = {
 		x = -5
 		y = 1
 	
-		cost = 7.2
+		cost = 10
 		
 		prerequisite = { focus = IRE_Fianna_fail }
 		relative_position_id = IRE_Fianna_fail
@@ -303,7 +303,7 @@ focus_tree = {
 		x = -1
 		y = 1
 	
-		cost = 7.2
+		cost = 10
 		
 		prerequisite = { focus = IRE_Strengthen_the_welfare_state }
 		relative_position_id = IRE_Strengthen_the_welfare_state
@@ -342,7 +342,7 @@ focus_tree = {
 		x = 1
 		y = 1
 	
-		cost = 7.2
+		cost = 10
 		
 		prerequisite = { focus = IRE_Strengthen_the_welfare_state }
 		relative_position_id = IRE_Strengthen_the_welfare_state
@@ -353,24 +353,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 	
 		completion_reward = {
-			if = {
-				limit = {
-					134 = { #Galway
-						is_owned_and_controlled_by = ROOT
-					}
-				}
-				134 = { set_state_category = large_city }
-			}
-			if = {
-				limit = {
-					135 = { #Cork
-						is_owned_and_controlled_by = ROOT
-					}
-				}
-				135 = { set_state_category = large_city }
-			}
+		
 
-			custom_effect_tooltip = generic_skip_one_line_tt
 
 			every_core_state = {
 				limit = {
@@ -390,7 +374,7 @@ focus_tree = {
 		x = 0
 		y = 2
 	
-		cost = 7.2
+		cost = 10
 		
 		prerequisite = { focus = IRE_Housing_Development focus = IRE_Reform_the_punt }
 		relative_position_id = IRE_Strengthen_the_welfare_state
@@ -418,7 +402,7 @@ focus_tree = {
 		x = 0
 		y = 1
 	
-		cost = 7.2
+		cost = 10
 		
 		prerequisite = { focus = IRE_Trinity_College_Dublin }
 		relative_position_id = IRE_Trinity_College_Dublin
@@ -490,7 +474,7 @@ focus_tree = {
 		x = 0
 		y = 1
 	
-		cost = 7.2
+		cost = 10
 		
 		prerequisite = { focus = IRE_Fianna_fail }
 		relative_position_id = IRE_Fianna_fail
@@ -560,10 +544,23 @@ focus_tree = {
 		relative_position_id = IRE_The_Constitution_Act
 		
 		available = {
-			is_power_balance_in_range = {
+			OR = {
+				is_power_balance_in_range = {
 				id = IRE_IRA_political_balance
 				range < IRE_centre_range
 			}
+			NOT = {
+				has_power_balance = {
+				id = IRE_IRA_political_balance
+			}
+
+			}
+
+			}
+		
+			
+			
+					
 		}
 	
 		search_filters = { FOCUS_FILTER_HISTORICAL }
@@ -622,9 +619,18 @@ focus_tree = {
 		relative_position_id = IRE_The_Constitution_Act
 		
 		available = {
-			is_power_balance_in_range = {
+			OR = {
+				is_power_balance_in_range = {
 				id = IRE_IRA_political_balance
 				range < IRE_centre_range
+			}
+			NOT = {
+				has_power_balance = {
+				id = IRE_IRA_political_balance
+			}
+
+			}
+
 			}
 		}
 	
@@ -652,7 +658,7 @@ focus_tree = {
 		x = 0
 		y = 1
 	
-		cost = 7.2
+		cost = 10
 		
 		prerequisite = { focus = IRE_Expression_of_Irish_Unity focus = IRE_Treaty_Port_Proposition }
 		relative_position_id = IRE_The_Irish_Language_Act
@@ -854,6 +860,14 @@ focus_tree = {
 				IRE_economic_downturn_industrial_capacity_factory = 0.05
 				tooltip = industrial_capacity_factory_tt
 			}
+				if = {
+				limit = {
+					113 = { 
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				113 = { set_state_category = megalopolis  }
+			}
 
 		}
 	}
@@ -1022,7 +1036,7 @@ focus_tree = {
 		prerequisite = { focus = IRE_Attract_Foreign_Capital }
 		relative_position_id = IRE_The_Coal_Cattle_Pact
 		
-		cost = 7.2
+		cost = 10
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
@@ -1079,7 +1093,7 @@ focus_tree = {
 		prerequisite = { focus = IRE_promote_resource_extraction focus = IRE_Stimulate_the_economy }
 		relative_position_id = IRE_Build_Railways
 		
-		cost = 5
+		cost = 10
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 	
@@ -1349,7 +1363,7 @@ focus_tree = {
 		x = -4
 		y = 2
 	
-		cost = 7.2
+		cost = 10
 		
 		prerequisite = { focus = IRE_Expand_Procurement_Department } prerequisite = { focus = IRE_Irish_Military_Academy }
 		relative_position_id = IRE_Irish_Army
@@ -1722,7 +1736,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = IRE_destroyer_focus
-		cost = 7.2
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -1826,7 +1840,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = IRE_naval_rearmament_focus
-		cost = 7.2
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -2111,7 +2125,7 @@ focus_tree = {
 		x = 0
 		y = 1
 	
-		cost = 7.2
+		cost = 10
 		
 		available = {
 		}
@@ -2218,7 +2232,7 @@ focus_tree = {
 		x = -1
 		y = 2
 	
-		cost = 7.2
+		cost = 10
 		
 		available = {
 		}
@@ -2269,7 +2283,7 @@ focus_tree = {
 		x = 1
 		y = 2
 	
-		cost = 7.2
+		cost = 10
 		
 		available = {
 		}

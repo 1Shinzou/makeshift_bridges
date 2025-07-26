@@ -342,25 +342,7 @@ characters={
 			}
 		}
 	}
-	IRE_sean_lemass={
-		advisor={
-			slot = political_advisor
-			idea_token = IRE_sean_lemass
-			allowed  = {
-					original_tag  = IRE
-				}
-				traits  = {
-					captain_of_industry 
-				}
-		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
-		name="Seán Lemass"
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_5"
-			}
-		}
-	}
+
 	IRE_douglas_hyde={
 		advisor={
 			slot = political_advisor
@@ -503,27 +485,7 @@ characters={
 			}
 		}
 	}
-	IRE_padraig_hennessy={
-		name= "Pádraig Hennessy"
-		portraits={
-			army={
-				small="GFX_idea_ENG_maxwell_aitken"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = IRE_padraig_hennessy
-			allowed  = {
-				original_tag  = IRE
-			}
-			traits  = {
-				war_industrialist 
-			}
-			ai_will_do  = {
-				base = 2
-			}
-		}
-	}
+
 	IRE_Michael_Fitzpatrick={
 		name= "Michael Fitzpatrick"
 		portraits={

@@ -1,8 +1,8 @@
 
-state={ 
+state={
 	id=452
 	name="STATE_452"
-	manpower = 21090
+	manpower = 52556
 	
 	state_category = wasteland
 
@@ -30,7 +30,7 @@ state={
 	}
 
 	provinces={
-		7079 9989 10061 11910 11967      
+		7079 9989 10061 11910 11967 5078 12033 12091 7148 12764 4913 8028 2068 7943 1143
 	}
 
 

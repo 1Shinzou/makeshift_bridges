@@ -178,7 +178,7 @@ characters={
 					original_tag = IRE
 				}
 				traits = {
-					army_commando_2
+					army_commando_1
 				}
 				cost = 100
 				ai_will_do = {
@@ -705,7 +705,7 @@ characters={
 			slot = high_command
 			idea_token = IRE_eamon_broy_high_command
 			ledger = army
-			traits = { army_CombinedArms_2 }
+			traits = { army_CombinedArms_1 }
 			cost = 100
 		}
 	}

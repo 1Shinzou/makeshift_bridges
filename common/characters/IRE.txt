@@ -180,7 +180,7 @@ characters={
 				traits = {
 					army_commando_1
 				}
-				cost = 100
+				cost = 50
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -622,7 +622,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { war_hero  trickster hill_fighter }
+			traits = { war_hero  trickster }
 			skill = 4
 			attack_skill = 5
 			defense_skill = 3
@@ -668,7 +668,7 @@ characters={
 			idea_token = IRE_eamon_broy_high_command
 			ledger = army
 			traits = { army_CombinedArms_1 }
-			cost = 100
+			cost = 50
 		}
 	}
 	

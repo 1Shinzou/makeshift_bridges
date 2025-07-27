@@ -53,7 +53,7 @@ focus_tree = {
 		x = 8
 		y = 0
 	
-		cost = 5
+		cost = 10
 		
 
 
@@ -771,7 +771,7 @@ focus_tree = {
 		x = 20
 		y = 0
 	
-		cost = 5
+		cost = 10
 		
 	
 		
@@ -796,7 +796,7 @@ focus_tree = {
 		prerequisite = { focus = IRE_The_Trade_War }
 		relative_position_id = IRE_The_Trade_War
 		
-		cost = 5
+		cost = 10
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 	
@@ -825,7 +825,7 @@ focus_tree = {
 		prerequisite = { focus = IRE_The_Trade_War }
 		relative_position_id = IRE_The_Trade_War
 		
-		cost = 5
+		cost = 10
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 	
@@ -849,7 +849,7 @@ focus_tree = {
 		prerequisite = { focus = IRE_The_Trade_War }
 		relative_position_id = IRE_The_Trade_War
 		
-		cost = 5
+		cost = 10
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 	
@@ -884,7 +884,7 @@ focus_tree = {
 		prerequisite = { focus = IRE_Buy_Irish_Produce }
 		relative_position_id = IRE_The_Coal_Cattle_Pact
 		
-		cost = 5
+		cost = 10
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 	
@@ -911,7 +911,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = IRE_Attract_Foreign_Capital
-		cost = 5
+		cost = 10
 		available = {
 		}
 
@@ -956,7 +956,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = IRE_Grant_Construction_Subsidies
-		cost = 5
+		cost = 10
 		available = {
 		}
 
@@ -980,7 +980,7 @@ focus_tree = {
 						is_owned_and_controlled_by = ROOT
 					}
 				}
-				135 = { set_state_category = megalopolis  }
+				135 = { set_state_category = city  }
 			}
 		}
 	}
@@ -997,7 +997,7 @@ focus_tree = {
 		prerequisite = { focus = IRE_Encourage_Increased_Tillage }
 		relative_position_id = IRE_The_Coal_Cattle_Pact
 		
-		cost = 5
+		cost = 10
 
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 	
@@ -1019,7 +1019,7 @@ focus_tree = {
 						is_owned_and_controlled_by = ROOT
 					}
 				}
-				134 = { set_state_category = megalopolis  }
+				134 = { set_state_category = city  }
 			}
 		}
 	}
@@ -1122,7 +1122,7 @@ focus_tree = {
 		x = 40
 		y = 0
 	
-		cost = 5
+		cost = 10
 		
 
 		
@@ -1224,7 +1224,7 @@ focus_tree = {
 		x = -6
 		y = 1
 	
-		cost = 5
+		cost = 10
 		
 		prerequisite = { focus = IRE_Irish_Army }
 		relative_position_id = IRE_Irish_Army
@@ -1928,7 +1928,7 @@ focus_tree = {
 		x = 28
 		y = 0
 	
-		cost = 5
+		cost = 10
 		
 		
 		available = {
@@ -1962,7 +1962,7 @@ focus_tree = {
 		x = 2
 		y = 1
 	
-		cost = 5
+		cost = 10
 		
 		available = {
 		}
@@ -2075,7 +2075,7 @@ focus_tree = {
 		x = 0
 		y = 1
 	
-		cost = 5
+		cost = 10
 		
 		available = {
 		}

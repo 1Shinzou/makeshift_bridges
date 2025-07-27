@@ -279,14 +279,6 @@ NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { -- supremacy multipliers for differe
 		0.0, -- RESERVE_FLEET
 		0.25, -- NAVAL_INVASION_SUPPORT
 	}
-	
-NDefines.NNavy.AGGRESSION_SETTINGS_VALUES = { -- ships will use this values while deciding to attack enemies
-		0,		-- do not engage
-		2.0,	-- low
-		8.0,	-- medium
-		20.0,	-- high
-		10000,	-- I am death incarnate!
-	}
 
 NDefines.NNavy.MISSION_FUEL_COSTS = {  -- fuel cost for each mission
 		0.0, -- HOLD (consumes fuel HOLD_MISSION_MOVEMENT_COST fuel while moving)

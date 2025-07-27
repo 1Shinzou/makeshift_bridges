@@ -250,7 +250,7 @@ focus_tree = {
 	focus = {
 		id = FIN_align_the_agrarian_league
 		icon = GFX_focus_generic_workers
-		prerequisite = { focus = FIN_political_unity focus = FIN_social_democracy }
+		prerequisite = { focus = FIN_political_unity  }
 
 		x = -3
 		y = 1
@@ -279,7 +279,7 @@ focus_tree = {
 	focus = {
 		id = FIN_the_finnish_swedish_peoples_party
 		icon = GFX_focus_generic_industrialists
-		prerequisite = { focus = FIN_social_democracy focus = FIN_political_unity }
+		prerequisite = {  focus = FIN_political_unity }
 
 		x = 2
 		y = 0

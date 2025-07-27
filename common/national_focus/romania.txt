@@ -118,7 +118,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-
+			set_rule = { can_join_factions = yes }
+			GER = { add_to_faction = ROOT }
 			add_popularity = {
 				popularity = 0.05
 				ideology = fascism

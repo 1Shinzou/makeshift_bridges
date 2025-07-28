@@ -244,8 +244,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4199;10013;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
 4199;4097;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
 7215;4097;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
-12100;1111;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
 12100;4097;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
+12100;1111;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
 12100;989;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
 12857;5046;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
 12857;7203;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
@@ -256,25 +256,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 13228;10094;impassable;-1;-1;-1;-1;-1;;Gibraltar
 4135;10094;impassable;-1;-1;-1;-1;-1;;Gibraltar
 4135;7153;impassable;-1;-1;-1;-1;-1;;Gibraltar
-10113;2400;impassable;-1;-1;-1;-1;-1;;Spainish Africa;Atlantic;Border;;
-9945;2400;impassable;-1;-1;-1;-1;-1;;Spainish Africa;Atlantic;Border;;
-9945;5407;impassable;-1;-1;-1;-1;-1;;Spainish Africa;Med;Border;;
-12087;5407;impassable;-1;-1;-1;-1;-1;;Spainish Africa;Med;Border;;
-4199;5407;impassable;-1;-1;-1;-1;-1;;Spainish Africa;Med;Border;;
-7215;5407;impassable;-1;-1;-1;-1;-1;;Spainish Africa;Med;Border;;
-12100;5407;impassable;-1;-1;-1;-1;-1;;Spainish Africa;Med;Border;;
-7114;5454;impassable;-1;-1;-1;-1;-1;;Spainish Africa;Med;Border;;
-9845;8871;impassable;-1;-1;-1;-1;-1;;Spainish Africa;Med;Border;;
-12100;8793;impassable;-1;-1;-1;-1;-1;;Spainish Africa;Med;Border;;
-9793;8871;impassable;-1;-1;-1;-1;-1;;Mallorca
-9793;8845;impassable;-1;-1;-1;-1;-1;;Mallorca
-13071;2135;impassable;-1;-1;-1;-1;-1;;Canary Islands
-13071;2246;impassable;-1;-1;-1;-1;-1;;Canary Islands
-13071;210;impassable;-1;-1;-1;-1;-1;;Canary Islands
-13071;826;impassable;-1;-1;-1;-1;-1;;Canary Islands
-9945;758;sea;;-1;-1;-1;-1;Ceuta-LaCoruna
-
-
 
 12359;7602;impassable;-1;-1;-1;-1;-1;;Iran Big Front
 12359;10351;impassable;-1;-1;-1;-1;-1;;Iran Big Front

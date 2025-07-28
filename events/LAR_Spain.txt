@@ -567,7 +567,7 @@ country_event = {
 							engineer = { x = 0 y = 1 }
 						}
 					}
-					290 = {
+					174 = {
 						create_unit = {
 							division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
 							owner = SPA

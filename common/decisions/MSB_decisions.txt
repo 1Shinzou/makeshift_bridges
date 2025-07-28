@@ -153,34 +153,6 @@ operations = {
 
     political_actions = {
 
-        uk_texas_oil = {
-            icon = GFX_decision_oil
-            allowed = {
-                tag = ENG
-            }
-            fire_only_once = yes
-            cost = 0
-            ai_will_do = {
-                factor = 0
-            }
-            available = {
-                ENG = {
-                    has_war = yes
-                }
-            }
-            targets = {
-                USA
-            }
-            complete_effect = {
-                USA = {
-                    give_resource_rights = {
-					receiver = ENG
-					state = 375
-				}
-                }
-            }
-        }
-
 	move_capital_to_cascablanca = {
 		fire_only_once = yes
 		allowed = {

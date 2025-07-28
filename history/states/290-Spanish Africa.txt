@@ -13,8 +13,7 @@ state={
 
 	history={
 		owner = SPR
-		add_core_of = WST
-		add_core_of = WST
+		add_core_of = SPR
 		victory_points = {
 			9945 3
 		}

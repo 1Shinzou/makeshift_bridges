@@ -1046,7 +1046,6 @@ focus_tree = {
 
 		allow_branch = {
 			has_dlc = "Gotterdammerung"
-			has_completed_
 			has_completed_focus = wuw_HUN_strengthen_the_turani_vadaszok
 		}
 
@@ -4268,8 +4267,8 @@ focus_tree = {
 		icon = GFX_focus_generic_aircraft_production
 		prerequisite = { focus = wuw_HUN_make_the_magyar_legiero_known }
 		#mutually_exclusive = { focus = wuw_HUN_hungarian_tradition }
-		x = -5
-		y = 2
+		x = -3
+		y = 1
 		relative_position_id = wuw_HUN_make_the_magyar_legiero_known
 
 		search_filters = { FOCUS_FILTER_AIR_XP FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
@@ -4342,139 +4341,8 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = wuw_HUN_expand_on_the_weiss_wm_16
-		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = wuw_HUN_make_the_magyar_legiero_known }
-		#mutually_exclusive = { focus = wuw_HUN_hungarian_tradition }
-		x = -3
-		y = 2
-		relative_position_id = wuw_HUN_make_the_magyar_legiero_known
 
-		search_filters = { FOCUS_FILTER_RESEARCH }
 
-		cost = 10
-
-		ai_will_do = {
-			factor = 3
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = wuw_HUN_expand_on_the_weiss_wm_16
-				bonus = 0.3
-				ahead_reduction = 1
-				uses = 2
-				category = medium_air
-			}
-		}
-	}
-
-	focus = {
-		id = wuw_HUN_develop_the_weiss_wm_21_solyom
-		icon = GFX_focus_generic_cas_aircraft
-		prerequisite = { focus = wuw_HUN_expand_on_the_weiss_wm_16 focus = wuw_HUN_the_matyasfold_fighter_factory }
-		#mutually_exclusive = { focus = wuw_HUN_hungarian_tradition }
-		x = 1
-		y = 1
-		relative_position_id = wuw_HUN_the_matyasfold_fighter_factory
-
-		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL }
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 3
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-
-		completion_reward = {
-
-			add_tech_bonus = {
-				name = HUN_solyom_development
-				bonus = 0.5
-				uses = 1
-				category = medium_air
-			}
-
-			add_tech_bonus = {
-				name = HUN_solyom_development
-				bonus = 0.15
-				uses = 3
-				category = cat_air_bombs
-				category = cat_air_engine
-			}
-
-		}
-	}
-
-	focus = {
-		id = wuw_HUN_weiss_manfred_wm_23_ezust_nyil
-		icon = GFX_goal_generic_air_fighter2
-		prerequisite = { focus = wuw_HUN_expand_on_the_weiss_wm_16 }
-		#mutually_exclusive = { focus = wuw_HUN_hungarian_tradition }
-		x = 0
-		y = 2
-		relative_position_id = wuw_HUN_expand_on_the_weiss_wm_16
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 3
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = wuw_HUN_weiss_manfred_wm_23_ezust_nyil
-				bonus = 0.3
-				uses = 1
-				category = light_air
-			}
-			add_tech_bonus = {
-				name = wuw_HUN_weiss_manfred_wm_23_ezust_nyil
-				bonus = 0.5
-				uses = 1
-				category = cat_air_guns
-			}
-		}
-	}
 
 	focus = {
 		id = wuw_HUN_establish_the_mavag_aircraft_factory
@@ -4482,7 +4350,7 @@ focus_tree = {
 		prerequisite = { focus = wuw_HUN_make_the_magyar_legiero_known }
 		#mutually_exclusive = { focus = wuw_HUN_hungarian_tradition }
 		x = -1
-		y = 2
+		y = 1
 		relative_position_id = wuw_HUN_make_the_magyar_legiero_known
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
@@ -4551,51 +4419,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = wuw_HUN_the_mavag_heja
-		icon = GFX_focus_usa_escort_fighters
-		prerequisite = { focus = wuw_HUN_establish_the_mavag_aircraft_factory }
-		mutually_exclusive = { focus = wuw_HUN_develop_laszlo_vargas_design }
-		x = 0
-		y = 1
-		relative_position_id = wuw_HUN_establish_the_mavag_aircraft_factory
 
-		search_filters = { FOCUS_FILTER_AIR_XP FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL }
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-
-		completion_reward = {
-
-			air_experience = 30
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			add_tech_bonus = {
-				name = HUN_light_fighter_effort
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = light_fighter
-			}
-
-		}
-	}
 
 	focus = {
 		id = wuw_HUN_repulo_muszaki_intezet
@@ -4603,7 +4427,7 @@ focus_tree = {
 		prerequisite = { focus = wuw_HUN_make_the_magyar_legiero_known }
 		mutually_exclusive = { focus = wuw_HUN_joint_air_development }
 		x = 1
-		y = 2
+		y = 1
 		relative_position_id = wuw_HUN_make_the_magyar_legiero_known
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -4631,55 +4455,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = wuw_HUN_develop_laszlo_vargas_design
-		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = wuw_HUN_repulo_muszaki_intezet }
-		mutually_exclusive = { focus = wuw_HUN_the_mavag_heja }
-		x = 0
-		y = 1
-		relative_position_id = wuw_HUN_repulo_muszaki_intezet
 
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 15
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-
-		completion_reward = {
-
-			add_tech_bonus = {
-				name = HUN_laszlo_varga_design
-				bonus = 0.5
-				ahead_reduction = 1
-				uses = 2
-				category = light_fighter
-				category = cas_bomber
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			custom_effect_tooltip = {
-				localization_key = available_scientist_one_line_tt
-				CHARACTER = HUN_laszlo_varga
-			}	
-
-		}
-	}
 
 	#focus = {
 	#	id = wuw_HUN_the_szekesfehervar_sosto_plant
@@ -4743,8 +4519,8 @@ focus_tree = {
 		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = wuw_HUN_make_the_magyar_legiero_known }
 		mutually_exclusive = { focus = wuw_HUN_repulo_muszaki_intezet }
-		x = 4
-		y = 2
+		x = 3
+		y = 1
 		relative_position_id = wuw_HUN_make_the_magyar_legiero_known
 
 		search_filters = { FOCUS_FILTER_RESEARCH }

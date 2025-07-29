@@ -51,7 +51,7 @@ focus_tree = {
 	focus = {
 		id = SOV_infrastructure_effort_nsb
 
-		icon = GFX_goal_generic_soviet_construction
+		icon = GFX_focus_ARG_invite_ghioldi_back_to_argentina
 		x = 1
 		y = 0
 		cost = 5
@@ -453,7 +453,7 @@ focus_tree = {
 	focus = {
 		id = SOV_reorganize_the_pc_of_heavy_industry
 
-		icon = GFX_sov_third_five_year_plan_2
+		icon = GFX_focus_ARG_in_memory_of_yrigoyen
 		prerequisite = { focus = SOV_third_five_year_plan }
 		x = -2
 		y = 2
@@ -650,7 +650,7 @@ focus_tree = {
 	focus = {
 		id = SOV_shift_to_armaments_production
 
-		icon = GFX_SOV_shift_to_armaments_production_ccp_2d_sov_compatibility
+		icon = GFX_sov_third_five_year_plan_2
 		prerequisite = { focus = SOV_third_five_year_plan }
 		x = 2
 		y = 2
@@ -845,7 +845,7 @@ focus_tree = {
 	focus = {
 		id = SOV_synthetic_rubber
 
-		icon = GFX_SOV_synthetic_rubber_ccp_2d_sov_compatibility
+		icon = GFX_focus_ARG_immigration_wave
 		prerequisite = { focus = SOV_steel_casting_industry }
 		x = -1
 		y = 1
@@ -919,7 +919,7 @@ focus_tree = {
 	focus = {
 		id = SOV_oil_production
 
-		icon = GFX_SOV_oil_production_ccp_2d_sov_compatibility
+		icon = GFX_focus_ARG_improve_patagonia
 		prerequisite = { focus = SOV_steel_casting_industry }
 		x = 1
 		y = 1
@@ -3690,7 +3690,7 @@ focus_tree = {
 	focus = {
 		id = SOV_pc_of_mortar_armament
 
-		icon = GFX_sov_katyusha_old
+		icon = GFX_focus_ARG_our_own_path
 		prerequisite = { focus = SOV_pc_of_mechanical_engineering }
 		x = 0
 		y = 2
@@ -6073,7 +6073,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_the_stalin_constitution
-		icon = GFX_sov_cult_of_personality
+		icon = GFX_focus_ARG_improving_the_islands
 		prerequisite = { focus = SOV_the_centre }
 		x = 1
 		y = 1
@@ -6489,7 +6489,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_the_workers_dictatorship
-		icon = GFX_SOV_the_workers_dictatorship_ccp_2d_sov_compatibility
+		icon = GFX_focus_ARG_invite_spanish_nationalists
 		prerequisite = { focus = SOV_the_anti_soviet_trotskyist_center }
 		x = 0
 		y = 1
@@ -6857,7 +6857,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_stalins_cult_of_personality
-		icon = GFX_focus_SOV_stalins_cult_of_personality
+		icon = GFX_sov_cult_of_personality
 		prerequisite = { focus = SOV_the_bloc_of_rights_and_trotskyites }
 		x = 0
 		y = 1
@@ -6896,7 +6896,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_they_will_know_fear
-		icon = GFX_SOV_they_will_know_fear_ccp_2d_sov_compatibility
+		icon = GFX_focus_ARG_rapid_urbanization
 		prerequisite = { focus = SOV_stalins_cult_of_personality }
 		x = -3
 		y = 1
@@ -6930,7 +6930,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_inheritor_of_the_mantle_of_lenin
-		icon = GFX_sov_cult_of_personality_old
+		icon = GFX_focus_ARG_pan_american_cooperation
 		prerequisite = { focus = SOV_stalins_cult_of_personality }
 		x = -1
 		y = 1
@@ -6997,7 +6997,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_the_faithful_servant_of_lenin
-		icon = GFX_SOV_the_berlin_moscow_axis_ccp_2d_sov_compatibility
+		icon = GFX_focus_ARG_islas_del_atlantico_sur
 		prerequisite = { focus = SOV_stalins_cult_of_personality }
 		x = 1
 		y = 1
@@ -7131,7 +7131,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_great_commander
-		icon = GFX_SOV_great_commander_ccp_2d_sov_compatibility
+		icon = GFX_focus_ARG_preparations_for_war
 		prerequisite = { focus = SOV_inheritor_of_the_mantle_of_lenin }
 		prerequisite = { focus = SOV_leader_of_the_party_and_the_people }
 		x = -1
@@ -7167,7 +7167,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_architect_of_communism
-		icon = GFX_focus_SOV_third_rome
+		icon = GFX_focus_ARG_peronism
 		prerequisite = { focus = SOV_the_faithful_servant_of_lenin }
 		prerequisite = { focus = SOV_leader_of_the_party_and_the_people }
 		x = 1
@@ -7193,7 +7193,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_father_of_nations
-		icon = GFX_SOV_father_of_nations_ccp_2d_sov_compatibility
+		icon = GFX_focus_ARG_paraguayan_ultimatum
 		prerequisite = { focus = SOV_great_commander focus = SOV_architect_of_communism }
 		x = 1
 		y = 1
@@ -7636,7 +7636,7 @@ focus = {
 
 focus = {
 	id = SOV_socialist_realism
-	icon = GFX_SOV_socialist_realism_ccp_2d_sov_compatibility
+	icon = GFX_focus_ARG_no_gods_no_masters
 	prerequisite = { focus = SOV_socialist_emulation }
 	x = 0
 	y = 1
@@ -8449,72 +8449,10 @@ focus = {
 		search_filters = {}
 
 		completion_reward = {
-			if = {
-				limit = {
-					country_exists = EST
-				}
-				EST = {
-					if = {
-						limit = { ROOT = { has_government = fascism } }
-						add_timed_idea = { idea = fascist_influence days = 1095 }
-					}
-					if = {
-						limit = { ROOT = { has_government = democratic } }
-						add_timed_idea = { idea = democratic_influence days = 1095 }
-					}
-					if = {
-						limit = { ROOT = { has_government = communism } }
-						add_timed_idea = { idea = communist_influence days = 1095 }
-					}
-					hidden_effect = {
-						country_event = { id = generic.1 }
-					}
-				}
+			146 = {
+				transfer_state_to = SOV
 			}
-			if = {
-				limit = {
-					country_exists = LAT
-				}
-				LAT = {
-					if = {
-						limit = { ROOT = { has_government = fascism } }
-						add_timed_idea = { idea = fascist_influence days = 1095 }
-					}
-					if = {
-						limit = { ROOT = { has_government = democratic } }
-						add_timed_idea = { idea = democratic_influence days = 1095 }
-					}
-					if = {
-						limit = { ROOT = { has_government = communism } }
-						add_timed_idea = { idea = communist_influence days = 1095 }
-					}
-					hidden_effect = {
-						country_event = { id = generic.1 }
-					}
-				}
-			}
-			if = {
-				limit = {
-					country_exists = LIT
-				}
-				LIT = {
-					if = {
-						limit = { ROOT = { has_government = fascism } }
-						add_timed_idea = { idea = fascist_influence days = 1095 }
-					}
-					if = {
-						limit = { ROOT = { has_government = democratic } }
-						add_timed_idea = { idea = democratic_influence days = 1095 }
-					}
-					if = {
-						limit = { ROOT = { has_government = communism } }
-						add_timed_idea = { idea = communist_influence days = 1095 }
-					}
-					hidden_effect = {
-						country_event = { id = generic.1 }
-					}
-				}
-			}
+		
 		}
 	}
 

@@ -2771,61 +2771,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CAN_aluminium_company_of_canada
-		icon = GFX_goal_generic_positive_trade_relations 
-		prerequisite = { focus = CAN_supply_the_empire }
-		x = -2
-		y = 4
-		relative_position_id = CAN_strengthen_the_commonwealth_ties
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-			controls_state = 682
-			controls_state = 863
-			controls_state = 468
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			682 = {
-				add_resource = {
-					type = aluminium
-					amount = 20
-				}
-			}
-			863 = {
-				add_resource = {
-					type = aluminium
-					amount = 8
-				}
-			}
-			468 = {
-				add_resource = {
-					type = aluminium
-					amount = 8
-				}
-			}
-		}
-	}
-
-	focus = {
 		id = CAN_turner_valley_oilfield
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = CAN_supply_the_empire }
-		x = 0
+		x = -2
 		y = 4
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
@@ -2903,7 +2852,7 @@ focus_tree = {
 	focus = {
 		id = CAN_canadian_citizenship_act
 		icon = GFX_focus_eng_decolonization
-		x = 3
+		x = 1
 		y = 1
 		prerequisite = { focus = CAN_supply_the_empire }
 		relative_position_id = CAN_supply_the_empire
@@ -2945,7 +2894,7 @@ focus_tree = {
 		prerequisite = { focus = CAN_canadian_citizenship_act }
 		relative_position_id = CAN_canadian_citizenship_act
 
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 10
@@ -3059,7 +3008,7 @@ focus_tree = {
 	focus = {
 		id = CAN_rcaf_station_borden
 		icon = GFX_goal_generic_build_airforce
-		x = 25
+		x = 24
 		y = 0
 
 		cost = 10
@@ -3622,7 +3571,7 @@ focus_tree = {
 	focus = {
 		id = CAN_halifax_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 29
+		x = 28
 		y = 0
 
 		cost = 10

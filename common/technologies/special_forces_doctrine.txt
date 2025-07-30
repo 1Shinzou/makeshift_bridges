@@ -857,10 +857,6 @@ technologies = {
 		}
 		
 		
-		on_research_complete = {
-			add_ideas = GEN_cheaper_amphib
-		}
-		
 		doctrine = yes	
 		research_cost = 2.25
 		

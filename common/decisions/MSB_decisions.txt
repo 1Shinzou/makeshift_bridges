@@ -293,6 +293,33 @@ Technologies = {
         	}
     	}
     }
+
+    hosttool_amtrac = {
+        # icon = generic_operation
+        allowed = {}
+        fire_only_once = no
+        cost = 0
+        ai_will_do = {
+            factor = 0
+        }
+        visible = {}
+        available = {
+           date > 1939.6.1
+        }
+        complete_effect = {
+            SWE = {
+                create_production_license = {
+                    target = ROOT
+                        equipment = {
+                            type = amphibious_mechanized_equipment_1
+                            version = 0
+                            new_prioritised = yes
+                        }
+                    cost_factor = 0
+                }
+            }
+        }
+	}
     
     hosttool_aa2 = {
             # icon = generic_operation

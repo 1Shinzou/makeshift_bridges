@@ -464,7 +464,117 @@ Technologies = {
                         }
                     }
                 }
+
+    hosttool_arty2 = {
+        # icon = generic_operation
+        allowed = {
+        }
+        fire_only_once = no
+        cost = 0
+        ai_will_do = {
+            factor = 0
+        }
+        
+        available = {
+            AND = {
+                date > 1938.02.1
+                
+            }
+        }
+        complete_effect = {
+            SWE = {
+                create_production_license = {
+                    target = ROOT
+                    equipment = {
+                        type = artillery_equipment_2
+                        version = 0
+                        
+                    }
+                    cost_factor = 0
+                }
+            }
+        }
+	}
+
+    hosttool_rocket_arty1 = {
+		allowed = {
+		}
+		fire_only_once = no
+		cost = 0
+		ai_will_do = {
+			factor = 0
+        }
+		available = {
+			date > 1939.06.01
+		}
+		complete_effect = {
+			SWE = {
+				create_production_license = {
+					target = ROOT
+                	equipment = {
+                        type = rocket_artillery_equipment_1
+                        version = 0
+                                    
+                        }
+                    cost_factor = 0
+                }
+            }
+        }
+    }
+
+	hosttool_arty3 = {
+        allowed = {
+        }
+        fire_only_once = no
+        cost = 0
+        ai_will_do = {
+        	factor = 0
+        }
+                    
+        available = {
+            date > 1941.1.1
+        }
+        complete_effect = {
+            SWE = {
+                create_production_license = {
+                    target = ROOT
+                    equipment = {
+                    	type = artillery_equipment_3
+                    	version = 0                
+                    }
+                    cost_factor = 0
+                }
 			}
+        }
+    }
+
+	hosttool_rocket_arty2 = {
+        allowed = {
+        }
+        fire_only_once = no
+        cost = 0
+        ai_will_do = {
+        	factor = 0
+        }
+                    
+        available = {
+            date > 1941.08.1
+        }
+        complete_effect = {
+            SWE = {
+                create_production_license = {
+                    target = ROOT
+                    equipment = {
+                    	type = rocket_artillery_equipment_2
+                    	version = 0                
+                    }
+                    cost_factor = 0
+                }
+			}
+        }
+    }
+}
+
 templates = {
 	Hide_Templates = {
 		icon = decision_generic_decision

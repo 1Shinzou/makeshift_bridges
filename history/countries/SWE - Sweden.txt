@@ -89,6 +89,11 @@ set_technology = {
 	improved_infantry_weapons = 1
 	improved_infantry_weapons_2 = 1
 	advanced_heavy_tank_chassis = 1
+	artillery1 = 1
+	artillery4 = 1
+	rocket_artillery = 1
+	rocket_artillery4 = 1
+
 }
 
 create_equipment_variant = {

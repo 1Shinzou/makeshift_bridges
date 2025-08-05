@@ -35,7 +35,7 @@ ENG_propaganda_campaigns = {
 		remove_effect = {
 			set_variable = { ENG_propaganda_campaign_to_remove = 2 }
 			ENG_reset_propaganda_campaign_slot_effect = yes
-			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+			hidden_effect = { FROM = { country_event = { id = msb.7 hours = 1} } }
 		}
 	}
 
@@ -71,7 +71,7 @@ ENG_propaganda_campaigns = {
 		remove_effect = {
 			set_variable = { ENG_propaganda_campaign_to_remove = 3 }
 			ENG_reset_propaganda_campaign_slot_effect = yes
-			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+			hidden_effect = { FROM = { country_event = { id = msb.7 hours = 1} } }
 		}
 	}
 
@@ -110,7 +110,7 @@ ENG_propaganda_campaigns = {
 		remove_effect = {
 			set_variable = { ENG_propaganda_campaign_to_remove = 4 }
 			ENG_reset_propaganda_campaign_slot_effect = yes
-			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+			hidden_effect = { FROM = { country_event = { id = msb.7 hours = 1} } }
 		}
 	}
 
@@ -149,7 +149,7 @@ ENG_propaganda_campaigns = {
 		remove_effect = {
 			set_variable = { ENG_propaganda_campaign_to_remove = 5 }
 			ENG_reset_propaganda_campaign_slot_effect = yes
-			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+			hidden_effect = { FROM = { country_event = { id = msb.7 hours = 1} } }
 		}
 	}
 
@@ -187,7 +187,7 @@ ENG_propaganda_campaigns = {
 		remove_effect = {
 			set_variable = { ENG_propaganda_campaign_to_remove = 6 }
 			ENG_reset_propaganda_campaign_slot_effect = yes
-			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+			hidden_effect = { FROM = { country_event = { id = msb.7 hours = 1} } }
 		}
 	}
 
@@ -224,7 +224,7 @@ ENG_propaganda_campaigns = {
 		remove_effect = {
 			set_variable = { ENG_propaganda_campaign_to_remove = 7 }
 			ENG_reset_propaganda_campaign_slot_effect = yes
-			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+			hidden_effect = { FROM = { country_event = { id = msb.7 hours = 1} } }
 		}
 	}
 
@@ -267,7 +267,7 @@ ENG_propaganda_campaigns = {
 		remove_effect = {
 			set_variable = { ENG_propaganda_campaign_to_remove = 8 }
 			ENG_reset_propaganda_campaign_slot_effect = yes
-			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+			hidden_effect = { FROM = { country_event = { id = msb.7 hours = 1} } }
 		}
 	}
 	
@@ -306,7 +306,7 @@ ENG_propaganda_campaigns = {
 		remove_effect = {
 			set_variable = { ENG_propaganda_campaign_to_remove = 9 }
 			ENG_reset_propaganda_campaign_slot_effect = yes
-			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+			hidden_effect = { FROM = { country_event = { id = msb.7 hours = 1} } }
 		}
 	}
 	
@@ -340,7 +340,7 @@ ENG_propaganda_campaigns = {
 		remove_effect = {
 			set_variable = { ENG_propaganda_campaign_to_remove = 10 }
 			ENG_reset_propaganda_campaign_slot_effect = yes
-			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+			hidden_effect = { FROM = { country_event = { id = msb.7 hours = 1} } }
 			remove_ideas = ROM_local_development
 		}
 	}
@@ -378,7 +378,7 @@ ENG_propaganda_campaigns = {
 		remove_effect = {
 			set_variable = { ENG_propaganda_campaign_to_remove = 11 }
 			ENG_reset_propaganda_campaign_slot_effect = yes
-			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+			hidden_effect = { FROM = { country_event = { id = msb.7 hours = 1} } }
 		}
 	}
 	
@@ -423,7 +423,7 @@ ENG_propaganda_campaigns = {
 		remove_effect = {
 			set_variable = { ENG_propaganda_campaign_to_remove = 12 }
 			ENG_reset_propaganda_campaign_slot_effect = yes
-			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+			hidden_effect = { FROM = { country_event = { id = msb.7 hours = 1} } }
 		}
 	}
 	
@@ -458,7 +458,7 @@ ENG_propaganda_campaigns = {
 		remove_effect = {
 			set_variable = { ENG_propaganda_campaign_to_remove = 13 }
 			ENG_reset_propaganda_campaign_slot_effect = yes
-			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+			hidden_effect = { FROM = { country_event = { id = msb.7 hours = 1} } }
 		}
 	}
 }

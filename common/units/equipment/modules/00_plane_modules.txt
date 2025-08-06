@@ -1195,9 +1195,6 @@ equipment_modules = {
 				weight = 4
 				air_agility = -15
 			}
-			add_average_stats = {
-				naval_strike_targetting = 4
-			}
 		}
 		dismantle_cost_ic = 3.5
 	}
@@ -1348,7 +1345,6 @@ equipment_modules = {
 		mission_type_stats = {
 			limit = {
 				naval_bomber
-				port_strike
 			}
 			add_stats = {
 				air_agility = -12
@@ -1357,6 +1353,19 @@ equipment_modules = {
 			}
 			add_average_stats = {
 				naval_strike_targetting = 4
+			}
+		}
+		mission_type_stats = {
+			limit = {
+				port_strike
+			}
+			add_stats = {
+				air_agility = -12
+				weight = 5
+				naval_strike_attack = 12
+			}
+			add_average_stats = {
+				naval_strike_targetting = 2
 			}
 		}
 		dismantle_cost_ic = 1.5
@@ -1380,7 +1389,6 @@ equipment_modules = {
 		mission_type_stats = {
 			limit = {
 				naval_bomber
-				port_strike
 			}
 			add_stats = {
 				air_agility = -12
@@ -1389,6 +1397,19 @@ equipment_modules = {
 			}
 			add_average_stats = {
 				naval_strike_targetting = 8
+			}
+		}
+		mission_type_stats = {
+			limit = {
+				port_strike
+			}
+			add_stats = {
+				air_agility = -12
+				weight = 8
+				naval_strike_attack = 17
+			}
+			add_average_stats = {
+				naval_strike_targetting = 4
 			}
 		}
 		dismantle_cost_ic = 1.5
@@ -1412,7 +1433,6 @@ equipment_modules = {
 		mission_type_stats = {
 			limit = {
 				naval_bomber
-				port_strike
 			}
 			add_stats = {
 				air_agility = -12
@@ -1421,6 +1441,19 @@ equipment_modules = {
 			}
 			add_average_stats = {
 				naval_strike_targetting = 10
+			}
+		}
+		mission_type_stats = {
+			limit = {
+				port_strike
+			}
+			add_stats = {
+				air_agility = -12
+				weight = 11
+				naval_strike_attack = 22
+			}
+			add_average_stats = {
+				naval_strike_targetting = 5
 			}
 		}
 		dismantle_cost_ic = 1.5

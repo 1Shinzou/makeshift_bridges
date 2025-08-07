@@ -181,26 +181,25 @@ on_actions = {
 				}
 			}
 			if = {
-				limit = {
-					date > 1941.7.31
-					NOT = { GER = {has_war_with = SOV}}
-				}
+				limit = {date > 1941.7.31
+				NOT = { GER = {has_war_with = SOV}}
+			}
 				GER = {
 					declare_war_on = {
-						target = SOV
-						type = annex_everything
+					target = SOV
+					type = annex_everything
 					}
 				}
 			}
 			if = {
 				limit = {
-					date > 1941.2.28
+					date > 1941.7.31
 					NOT = { JAP = {has_war_with = USA}}
 				}
 				JAP = {
 					declare_war_on = {
-						target = USA
-						type = annex_everything
+					target = USA
+					type = annex_everything
 					}
 				}
 			}

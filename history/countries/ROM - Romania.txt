@@ -1,10 +1,12 @@
 ﻿capital = 46
 oob = "ROM_1936"
 set_naval_oob = "ROM_1936_naval_mtg"
-# create_intelligence_agency = yes
+create_intelligence_agency = yes
+add_to_tech_sharing_group = axis_research 
 set_research_slots = 3
 set_stability = 0.6
 set_war_support = 0.3
+set_rule = { can_be_spymaster = no }
 set_variable = {
     var = min_fuel
     value = 0.800

@@ -1451,7 +1451,7 @@
 		completion_reward = {
 			add_timed_idea = {
 				idea = JAP_theater_prep
-				days = 180
+				days = 365
 			}
 			add_tech_bonus = {
 				name = JAP_bypass_the_philippines
@@ -1483,7 +1483,7 @@
 			completion_reward = {
 			add_timed_idea = {
 				idea = JAP_secure_prep
-				days = 180
+				days = 365
 			}
 			add_tech_bonus = {
 				name = JAP_bypass_the_philippines
@@ -1505,8 +1505,8 @@
 		relative_position_id = JAP_secure_the_philippines
 
 		will_lead_to_war_with = ENG
-		will_lead_to_war_with = MAL
-		will_lead_to_war_with = INS
+		will_lead_to_war_with = USA
+		will_lead_to_war_with = FRA
 
 		cost = 1
 		available = { date > 1941.01.01 }

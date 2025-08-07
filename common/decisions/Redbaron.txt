@@ -14,7 +14,7 @@ MOD_countdown_to_victory_cat = {
 				option = ENABLED
 			}
 		}
-		days_mission_timeout = 500
+		days_mission_timeout = 365
 
 		activation = {
 			check_variable = {
@@ -51,7 +51,7 @@ MOD_countdown_to_victory_cat = {
 				option = ENABLED
 			}
 		}
-		days_mission_timeout = 500
+		days_mission_timeout = 365
 
 		activation = {
 			check_variable = {

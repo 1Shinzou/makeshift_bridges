@@ -101,7 +101,7 @@ vp_system = {
 	default = {
 		name = "ENABLED"
 		text = "Enabled"
-		desc = "Enable the Victory Points System (Hold 11/15 VP's for 365 days to win)"
+		desc = "Enable the Victory Points System (Hold 11/15 VP's for 500 days to win)"
 	}
 	option = {
 		name = "DISABLED"

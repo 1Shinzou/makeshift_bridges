@@ -22,11 +22,11 @@
 
 
 MOD_countdown_to_victory_cat:0 "Victory!"
-vp_container_desc:0 "The winner of the game is the team who controls §Y11§! or more of the §Y15§! following Cities for §Y365 days§!:\n\n§YParis§! - [GetParisOwner]\n§YAmsterdam§! - [GetAmsterdamOwner]\n§YOslo§! - [GetOsloOwner]\n§YRome§! - [GetRomeOwner]\n\n§YGomel§! - [GetGomelOwner]\n§YLeningrad§! - [GetLeningradOwner]\n§YMoscow§! - [GetMoscowOwner]\n§YStalingrad§! - [GetStalingradOwner]\n\n§YBenghasi§! - [GetBenghasiOwner]\n§YCairo§! - [GetCairoOwner]\n\n§YIwo Jima§! - [GetIwoJimaOwner]\n§YSingapore§! - [GetSingaporeOwner]\n§YBatavia§! - [GetBataviaOwner]\n§YHawaii§! - [GetHawaiiOwner]\n§YDelhi§! - [GetDelhiOwner]\n\n\n§YCurrent Score§!:\n\n[GER.GetFlag] §RAxis§!: [?global.axis_score]/§Y15§!\n\n[ENG.GetFlag] §CAllies§!: [?global.allies_score]/§Y15§!\n"
+vp_container_desc:0 "The winner of the game is the team who controls §Y11§! or more of the §Y15§! following Cities for §Y500 days§!:\n\n§YParis§! - [GetParisOwner]\n§YAmsterdam§! - [GetAmsterdamOwner]\n§YOslo§! - [GetOsloOwner]\n§YRome§! - [GetRomeOwner]\n\n§YGomel§! - [GetGomelOwner]\n§YLeningrad§! - [GetLeningradOwner]\n§YMoscow§! - [GetMoscowOwner]\n§YStalingrad§! - [GetStalingradOwner]\n\n§YBenghasi§! - [GetBenghasiOwner]\n§YCairo§! - [GetCairoOwner]\n\n§YIwo Jima§! - [GetIwoJimaOwner]\n§YSingapore§! - [GetSingaporeOwner]\n§YBatavia§! - [GetBataviaOwner]\n§YHawaii§! - [GetHawaiiOwner]\n§YDelhi§! - [GetDelhiOwner]\n\n\n§YCurrent Score§!:\n\n[GER.GetFlag] §RAxis§!: [?global.axis_score]/§Y15§!\n\n[ENG.GetFlag] §CAllies§!: [?global.allies_score]/§Y15§!\n"
 
 vp_ticking_desc:0 "§YVictory is imminent. You can make this Pop-Up go away by clicking the box above.§!"
 
-vp_overview_text:0 "The winner of the game is the team who controls §Y11§! or more of the following §Y15§! Cities for §Y365 days§!"
+vp_overview_text:0 "The winner of the game is the team who controls §Y11§! or more of the following §Y15§! Cities for §Y500 days§!"
 vp_score_text:0 "[GER.GetFlag] §RAxis§!: [?global.axis_score]/§Y15§!                [ENG.GetFlag] §CAllies§!: [?global.allies_score]/§Y15§!"
 
 vp_victory_paris:0"§YParis§! - [GetParisOwner]"

@@ -31,7 +31,7 @@ JAP_propaganda_campaigns = {
 		remove_effect = {
 			set_variable = { JAP_propaganda_campaign_to_remove = 2 }
 			JAP_reset_propaganda_campaign_slot_effect = yes
-			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+			hidden_effect = { FROM = { country_event = { id = msb.7 hours = 1} } }
 		}
 	}
 
@@ -66,7 +66,7 @@ JAP_propaganda_campaigns = {
 		remove_effect = {
 			set_variable = { JAP_propaganda_campaign_to_remove = 3 }
 			JAP_reset_propaganda_campaign_slot_effect = yes
-			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+			hidden_effect = { FROM = { country_event = { id = msb.7 hours = 1} } }
 		}
 	}
 
@@ -103,7 +103,7 @@ JAP_propaganda_campaigns = {
 		remove_effect = {
 			set_variable = { JAP_propaganda_campaign_to_remove = 4 }
 			JAP_reset_propaganda_campaign_slot_effect = yes
-			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+			hidden_effect = { FROM = { country_event = { id = msb.7 hours = 1} } }
 		}
 	}
 
@@ -140,7 +140,7 @@ JAP_propaganda_campaigns = {
 		remove_effect = {
 			set_variable = { JAP_propaganda_campaign_to_remove = 5 }
 			JAP_reset_propaganda_campaign_slot_effect = yes
-			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+			hidden_effect = { FROM = { country_event = { id = msb.7 hours = 1} } }
 		}
 	}
 
@@ -179,7 +179,7 @@ JAP_propaganda_campaigns = {
 		remove_effect = {
 			set_variable = { JAP_propaganda_campaign_to_remove = 6 }
 			JAP_reset_propaganda_campaign_slot_effect = yes
-			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+			hidden_effect = { FROM = { country_event = { id = msb.7 hours = 1} } }
 		}
 	}
 
@@ -220,7 +220,7 @@ JAP_propaganda_campaigns = {
 		remove_effect = {
 			set_variable = { JAP_propaganda_campaign_to_remove = 7 }
 			JAP_reset_propaganda_campaign_slot_effect = yes
-			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+			hidden_effect = { FROM = { country_event = { id = msb.7 hours = 1} } }
 		}
 	}
 	
@@ -258,7 +258,7 @@ JAP_propaganda_campaigns = {
 		remove_effect = {
 			set_variable = { JAP_propaganda_campaign_to_remove = 8 }
 			JAP_reset_propaganda_campaign_slot_effect = yes
-			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+			hidden_effect = { FROM = { country_event = { id = msb.7 hours = 1} } }
 
 		}
 	}
@@ -298,7 +298,7 @@ JAP_propaganda_campaigns = {
 		remove_effect = {
 			set_variable = { JAP_propaganda_campaign_to_remove = 9 }
 			JAP_reset_propaganda_campaign_slot_effect = yes
-			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+			hidden_effect = { FROM = { country_event = { id = msb.7 hours = 1} } }
 			remove_ideas = AUS_domestic_air_production
 		}
 	}	
@@ -356,7 +356,7 @@ JAP_propaganda_campaigns = {
 		remove_effect = {
 			set_variable = { JAP_propaganda_campaign_to_remove = 10 }
 			JAP_reset_propaganda_campaign_slot_effect = yes
-			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+			hidden_effect = { FROM = { country_event = { id = msb.7 hours = 1} } }
 		}
 	}	
 
@@ -395,7 +395,7 @@ JAP_propaganda_campaigns = {
 		remove_effect = {
 			set_variable = { JAP_propaganda_campaign_to_remove = 11 }
 			JAP_reset_propaganda_campaign_slot_effect = yes
-			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+			hidden_effect = { FROM = { country_event = { id = msb.7 hours = 1} } }
 		}
 	}	
 
@@ -434,7 +434,7 @@ JAP_propaganda_campaigns = {
 		remove_effect = {
 			set_variable = { JAP_propaganda_campaign_to_remove = 12 }
 			JAP_reset_propaganda_campaign_slot_effect = yes
-			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+			hidden_effect = { FROM = { country_event = { id = msb.7 hours = 1} } }
 			
 		}
 	}	
@@ -493,7 +493,7 @@ JAP_propaganda_campaigns = {
 		remove_effect = {
 			set_variable = { JAP_propaganda_campaign_to_remove = 13 }
 			JAP_reset_propaganda_campaign_slot_effect = yes
-			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+			hidden_effect = { FROM = { country_event = { id = msb.7 hours = 1} } }
 		}
 	}
 }

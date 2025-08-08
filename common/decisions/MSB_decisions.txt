@@ -127,6 +127,7 @@ operations = {
                     has_capitulated = yes
 					is_ai = yes
 				}
+				JAP = {has_war = no }
 			}
 			targets = {
 				HOL	

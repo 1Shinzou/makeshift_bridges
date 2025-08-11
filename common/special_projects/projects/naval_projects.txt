@@ -1723,7 +1723,7 @@ sp_naval_super_heavy_battleship = {
 				limit = { 
 					has_dlc = "Man the Guns"
 					}
-			has_tech = improved_ship_hull_heavy
+			has_tech = basic_ship_hull_heavy
 				
 			}
 			#else = {

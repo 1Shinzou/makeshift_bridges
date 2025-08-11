@@ -42,3 +42,5 @@
   ASG_equipment_graph_legend_JAP:0 "[JAP.GetFlag]§W JAP §! [?JAP.ASG_equipment_score|1]"
   ASG_equipment_graph_legend_ENG:0 "[ENG.GetFlag]§O ENG §! [?ENG.ASG_equipment_score|1]"
   ASG_equipment_graph_legend_ITA:0 "[ITA.GetFlag]§G ITA §! [?ITA.ASG_equipment_score|1]"
+
+ VICTORY_POINTS_9522:0 "§RAachen§!"

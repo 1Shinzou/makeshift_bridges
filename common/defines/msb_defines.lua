@@ -242,7 +242,7 @@ NDefines.NAir.COMBAT_MULTIPLANE_CAP = 3							-- How many planes can shoot at ea
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.7						-- Higher value = more shot down planes
 -- Bombing Fix
 NDefines.NSupply.RAILWAY_FLOW_PENALTY_PER_DAMAGED = 4.9
-NDefines.NAir.AIR_WING_BOMB_DAMAGE_FACTOR = 0.6 --Chrom Bombing Fix; HMM = 0.6
+NDefines.NAir.AIR_WING_BOMB_DAMAGE_FACTOR = 0.5 --Chrom Bombing Fix; HMM = 0.6
 NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.09 -- Vanilla 0.07
 NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = 0 --Vanilla -0.12
  ---AS KAR MOD --- FUCK FLICKERING ----

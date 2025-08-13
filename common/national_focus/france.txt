@@ -5080,11 +5080,17 @@ focus = {
 		
 		completion_reward = {
 			army_experience = 10
-        		add_equipment_to_stockpile = {
+        	add_equipment_to_stockpile = {
         		type = infantry_equipment_1
-			amount = 5000
-			producer = ENG
-			 }
+				amount = 5000
+				producer = ENG
+			}
+			add_tech_bonus = {
+				name = FRA_british_equipement
+				bonus = 0.5
+				uses = 1
+				category = cat_anti_tank
+			}	
 		}
 	}
 	focus = {
@@ -5121,14 +5127,20 @@ focus = {
 			army_experience = 10
 			add_equipment_to_stockpile = {
         		type = artillery_equipment_1
-			amount = 8000
-			producer = USA
+				amount = 8000
+				producer = USA
 			}
 			add_equipment_to_stockpile = {
         		type = infantry_equipment_1
-			amount = 10000
-			producer = USA
-			 }
+				amount = 10000
+				producer = USA
+			}
+			add_tech_bonus = {
+				name = FRA_usa_equipement
+				bonus = 0.5
+				uses = 1
+				category = cat_anti_tank
+			}	
 		}
 	}
 	focus = {

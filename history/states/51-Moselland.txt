@@ -22,7 +22,7 @@ state = {
 			587 5 # Köln
 		}
 		victory_points = {
-			9522 10 # Aachen
+			9522 1 # Aachen
 		}
 
 		#victory_points = {

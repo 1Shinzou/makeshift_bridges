@@ -6907,8 +6907,9 @@ focus_tree = {
 			surrender_progress > 0.25
 			has_defensive_war = yes
 			has_war_with_major = yes
-			
 		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
@@ -7892,9 +7893,10 @@ focus = {
 			surrender_progress > 0.35
 			has_war_with_major = yes
 		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		
 		completion_reward = {
-
-
 			if = {
 				limit = {
 					has_government = communism

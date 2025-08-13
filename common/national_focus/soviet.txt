@@ -7895,7 +7895,7 @@ focus = {
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = yes
-		
+
 		completion_reward = {
 			if = {
 				limit = {
@@ -8092,79 +8092,13 @@ focus = {
 		}
 	}
 
-		focus = {
-		id = SOV_the_threat_from_the_land_of_the_rising_sun
-		icon = GFX_focus_attack_japan
+	focus = {
+		id = SOV_prepare_a_war_with_japan
+		icon = GFX_focus_AST_war_japan
 		prerequisite = { focus = SOV_the_comintern }
 		x = 6
 		y = 1
 		relative_position_id = SOV_the_comintern
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_civil_war = yes
-			}	
-		}
-		
-		mutually_exclusive = { focus = SOV_reconcile_japan }
-
-		available = {
-			any_country = {
-				SOV_is_free_chinese_tag = yes
-				has_war_with = JAP
-			}
-			is_subject = no
-		}
-		
-		search_filters = {}
-
-		completion_reward = {
-			JAP = { add_opinion_modifier = { target = SOV modifier = SOV_supported_china_bad } }
-			every_other_country = {
-				limit = {
-					SOV_is_free_chinese_tag = yes
-				}
-				if = {
-					limit = {
-						ROOT = { has_government = communism }
-					}
-					add_ideas = SOV_support_in_china_communism
-				}
-				else_if = {
-					limit = {
-						ROOT = { has_government = democratic }
-					}
-					add_ideas = SOV_support_in_china_democratic
-				}
-				else_if = {
-					limit = {
-						ROOT = { has_government = fascism }
-					}
-					add_ideas = SOV_support_in_china_fascism
-				}
-				else_if = {
-					limit = {
-						ROOT = { has_government = neutrality }
-					}
-					add_ideas = SOV_support_in_china_neutrality
-				}
-				add_opinion_modifier = { target = SOV modifier = SOV_supported_china_good }
-			}
-		}
-	}
-
-
-
-	focus = {
-		id = SOV_prepare_a_war_with_japan
-		icon = GFX_focus_AST_war_japan
-		prerequisite = { focus = SOV_the_threat_from_the_land_of_the_rising_sun }
-		x = 0
-		y = 1
-		relative_position_id = SOV_the_threat_from_the_land_of_the_rising_sun
 		cost = 5
 
 		ai_will_do = {
@@ -8235,7 +8169,7 @@ focus = {
 		mutually_exclusive = { focus = SOV_recover_the_kuril_islands }
 
 		available = {
-			surrender_progress < 0.01
+			surrender_progress < 0.20
 			country_exists = JAP
 			NOT = { is_in_faction_with = JAP }
 			NOT = { has_war_together_with = JAP }
@@ -8353,7 +8287,7 @@ focus = {
 		mutually_exclusive = { focus = SOV_end_the_khalkhin_gol_conflict }
 
 		available = {
-			surrender_progress < 0.01
+			surrender_progress < 0.20
 			country_exists = JAP
 			NOT = {
 				JAP = { is_in_faction_with = ROOT } 

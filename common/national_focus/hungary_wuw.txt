@@ -4569,153 +4569,8 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = wuw_HUN_the_arado_ar_96
-		icon = GFX_focus_generic_cryptologic_bomb
-		prerequisite = { focus = wuw_HUN_joint_air_development }
-		#mutually_exclusive = { focus = wuw_HUN_repulö_muszaki_intezet }
-		x = -1
-		y = 1
-		relative_position_id = wuw_HUN_joint_air_development
 
-		search_filters = { FOCUS_FILTER_RESEARCH }
 
-		cost = 10
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-
-		completion_reward = {
-
-			add_tech_bonus = {
-				name = HUN_light_fighter_effort
-				bonus = 0.25
-				uses = 1
-				category = light_fighter
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			add_ideas = HUN_recon_airplane_focus
-
-		}
-	}
-
-	focus = {
-		id = wuw_HUN_extensive_licensing_programs
-		icon = GFX_focus_generic_license_production
-		prerequisite = { focus = wuw_HUN_joint_air_development }
-		#mutually_exclusive = { focus = wuw_HUN_repulö_muszaki_intezet }
-		x = 1
-		y = 1
-		relative_position_id = wuw_HUN_joint_air_development
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 5
-		}
-
-		available = {
-
-			IF = {
-				limit = {
-					NOT = {
-						has_dlc = "By Blood Alone"
-					}
-				}
-				NOT = {
-					has_tech = fighter3
-					has_tech = heavy_fighter3
-				}
-			}
-			ELSE = {
-				NOT = {
-					has_tech = advanced_small_airframe
-					has_tech = advanced_medium_airframe
-				}
-			}
-			OR = {
-				GER = {
-					custom_trigger_tooltip = {
-						tooltip = fighter_tt
-						OR = {
-							is_available_fighter_HUN = yes
-							is_available_heavy_fighter_HUN = yes
-						}
-					}
-				}
-				FRA = {
-					custom_trigger_tooltip = {
-						tooltip = fighter_tt
-						OR = {
-							is_available_fighter_HUN = yes
-							is_available_heavy_fighter_HUN = yes
-						}
-					}
-				}
-				ITA = {
-					custom_trigger_tooltip = {
-						tooltip = fighter_tt
-						OR = {
-							is_available_fighter_HUN = yes
-							is_available_heavy_fighter_HUN = yes
-						}
-					}
-				}
-				ENG = {
-					custom_trigger_tooltip = {
-						tooltip = fighter_tt
-						OR = {
-							is_available_fighter_HUN = yes
-							is_available_heavy_fighter_HUN = yes
-						}
-					}
-				}
-				USA = {
-					custom_trigger_tooltip = {
-						tooltip = fighter_tt
-						OR = {
-							is_available_fighter_HUN = yes
-							is_available_heavy_fighter_HUN = yes
-						}
-					}
-				}
-			}
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-
-		completion_reward = {
-
-			add_ideas = HUN_license_foreign
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			country_event = DOD_hungary.150
-
-		}
-	}
 
 	focus = {
 		id = wuw_HUN_allied_manufacturing_programs
@@ -4723,7 +4578,7 @@ focus_tree = {
 		prerequisite = { focus = wuw_HUN_joint_air_development }
 		#mutually_exclusive = { focus = wuw_HUN_repulö_muszaki_intezet }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = wuw_HUN_joint_air_development
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }

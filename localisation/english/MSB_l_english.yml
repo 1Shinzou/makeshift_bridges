@@ -40,7 +40,7 @@ continuous_reduce_air_training_time:0 "Airforce Training"
 tradeback_is_cancer:0"No Tradeback"
 tradeback_is_cancer_no_export:0"No Tradeback - no exports for playable countries"
 uk_hf3_usa:"Advanced Heavy Fighter"
- game_check:0 "Game Rule Check"
+game_check:0 "Game Rule Check"
 
 # LL Decision
  E_ll:"Air Decision Lend Lease"
@@ -54,8 +54,8 @@ RAJ_ghandi_path_tt:0 "Have Gandhi as country leader. When Gandhi's assassination
 
 # GER
 GER_msb_anschluss_eq_trigger_tt:0 "More than §Y40.000§! infantry equipment in the army"
- r56_ger_naval_treaty:0 "[ENG.GetAdjective]-[GER.GetAdjective] Naval Treaty"
- r56_ger_naval_treaty_desc:0 "Recent talks with [ENG.GetNameDef] has largely loosened the naval restrictions upon us dictated by the Treaty of Versailles, thus allowing us to massively increase our naval capacity. However, restrictions do still exist upon our naval production and will remain to do so until we take the step to liberate our navy of the treaty entirely."
+r56_ger_naval_treaty:0 "[ENG.GetAdjective]-[GER.GetAdjective] Naval Treaty"
+r56_ger_naval_treaty_desc:0 "Recent talks with [ENG.GetNameDef] has largely loosened the naval restrictions upon us dictated by the Treaty of Versailles, thus allowing us to massively increase our naval capacity. However, restrictions do still exist upon our naval production and will remain to do so until we take the step to liberate our navy of the treaty entirely."
 
 italian_arms_discount:0 "Bresica Small Arms Industry"
 #greater_italy_required_other_states:0 "Italy or a subject of Italy control \n§YSuez§! \n§YCorsica§! \n§YSavoy§! \n§YZara§! \n§YDalmatia§! \n§YLjubljana§! \n§YMalta§! \n§YCrete§! \n§YDodecaneso§!"
@@ -71,12 +71,15 @@ USA_all_in:0 "All-In"
 USA_victory_plan:0 "Implement The Victory Plan"
 USA_victory_plan_desc:0 "In 1941, a team of officers led by General Albert Wedemeyer on behalf of General George C. Marshall drew up the Victory Program, whose premise was that the Soviet Union would be defeated that year, and that to defeat Nazi Germany would require the United States to raise by the summer of 1943 a force of 215 divisions comprising 8.7 million men."
 
-# VP NAMES MAP MODDING
+
+# Map Modding
+
+# VP NAMES
   VICTORY_POINTS_7985:0 "Maradah"
   VICTORY_POINTS_4057:0 "Marsa Al Brega"
   VICTORY_POINTS_3761:0 "To Berlin"
+  VICTORY_POINTS_9522:0 "§Aachen§!"
 
-# Map Modding
 # Strategic Region 
 STRATEGICREGION_299:0 "Strait of Sicily"
 STRATEGICREGION_300:0 "Balearic Sea"

@@ -3280,7 +3280,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_uranverein
-		icon = GFX_focus_wonderweapons
+		icon = GFX_focus_ARG_fascist_researchers
 		prerequisite = { focus = GER_improve_the_logistics_system focus = GER_defend_the_vaterland }
 		x = 1
 		y = 1

@@ -25,7 +25,9 @@ state = {
 
 		buildings = {
 			infrastructure = 2
-
+			7827 = {
+				land_facility = 1 #Somewhewre in nevada... i have no supply 
+			} 
 			# Hoover Dam
 			4799 = { dam_mountain = 1 }
 

@@ -226,6 +226,11 @@ country_event = {
 
 	option = { 	
 		name = usa.6.a
+		trigger = { 
+			NOT = {
+				has_completed_focus = USA_reestablish_the_gold_standard 
+			}
+		}
 		ai_chance = {
 			factor = 75
 			modifier = {
@@ -266,6 +271,11 @@ country_event = {
 
 	option = {
 		name = usa.6.b
+		trigger = { 
+			NOT = {
+				has_completed_focus = USA_continue_the_new_deal
+			}
+		}
 		ai_chance = {
 			factor = 25
 			modifier = {
@@ -474,7 +484,7 @@ country_event = {
 		}
 	}
 
-	option = { 
+	###################option = { 
 		name = usa.8.b
 		set_party_name = { ideology = democratic long_name = USA_democratic_party name = USA_democratic_party }
 		add_ideas = new_deal

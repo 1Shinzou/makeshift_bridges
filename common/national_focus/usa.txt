@@ -1331,7 +1331,7 @@ focus_tree = {
 		prerequisite = { focus = USA_arsenal_of_democracy }
 		available = {
 			OR = {
-				date > 1937.9.1
+				date > 1938.1.1
 				has_war_support > 0.3
 			}
 			democratic > 0.95
@@ -1938,8 +1938,8 @@ focus_tree = {
 			factor = 2
 		}
 		completion_reward = {
-			unlock_decision_tooltip = { decision = USA_deversus_brazil = yes show_modifiers = yes } 
-			unlock_decision_tooltip = { decision = USA_deversus_mexico = yes show_modifiers = yes } 
+			#unlock_decision_tooltip = { decision = USA_deversus_brazil = yes show_modifiers = yes } 
+			#unlock_decision_tooltip = { decision = USA_deversus_mexico = yes show_modifiers = yes } 
 			hidden_effect = {
 				CUB = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
 				HAI = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }

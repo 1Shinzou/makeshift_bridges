@@ -360,6 +360,43 @@ ideas = {
 				consumer_goods_factor = -0.1
 			}
 		}
+
+		ENG_american_payment = {
+			removal_cost = -1
+
+			picture = NOR_printing_money
+				
+			allowed = { 
+				alwyas = yes
+				}
+
+			allowed_civil_war = {
+				always = yes
+			}
+					
+			modifier = {
+				consumer_goods_factor = 0.20
+			}
+		}
+		
+		ENG_american_aid = {
+			removal_cost = -1
+
+			picture = NOR_printing_money
+				
+			allowed = { 
+				alwyas = yes
+				}
+
+			allowed_civil_war = {
+				always = yes
+			}
+					
+			modifier = {
+				industrial_capacity_factory = 0.075
+			}
+		}
+		
 		ENG_colonial_investors = {
 			
 			picture = generic_economic_increase

@@ -147,7 +147,6 @@ focus_tree = {
 		y = 0
 		cost = 5
 		allow_branch = {
-			has_dlc = "Man the Guns"
 			if = {
 				limit = {
 					has_game_rule = {
@@ -429,7 +428,6 @@ focus_tree = {
 			factor = 1
 		}
 		allow_branch = {
-			has_dlc = "Man the Guns"
 			if = {
 				limit = {
 					has_game_rule = {
@@ -1846,7 +1844,6 @@ focus_tree = {
 			x = -6
 			y = 0
 			trigger = { # Hide The Gold Standard
-				NOT = { has_dlc = "Man The Guns" }
 				AND = {
 					has_completed_focus = USA_continue_the_new_deal
 				}
@@ -3861,7 +3858,7 @@ focus_tree = {
 		id = USA_escort_effort
 		icon = GFX_goal_generic_navy_anti_submarine
 		prerequisite = { focus = USA_fleet_submarines }
-		mutually_exclusive = { focus = USA_naval_radar }
+		# mutually_exclusive = { focus = USA_naval_radar }
 		x = 0
 		y = 1
 		relative_position_id = USA_fleet_submarines

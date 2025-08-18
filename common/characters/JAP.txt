@@ -194,7 +194,7 @@ characters={
 				original_tag = JAP
 			}
 			traits = {
-				army_chief_offensive_3
+				army_chief_offensive_2
 			}
 		}
 		corps_commander={
@@ -268,7 +268,7 @@ characters={
 				original_tag = JAP
 			}
 			traits = {
-				army_commando_3
+				army_commando_2
 			}
 		
 		}

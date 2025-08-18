@@ -483,25 +483,6 @@ country_event = {
 			country_event = usa.30
 		}
 	}
-
-	###################option = { 
-		name = usa.8.b
-		set_party_name = { ideology = democratic long_name = USA_democratic_party name = USA_democratic_party }
-		add_ideas = new_deal
-		retire_country_leader = yes
-		add_political_power = 120
-		set_variable_to_random = {
-          var = election_factor
-          min = 0.6
-          max = 0.8
-      }
-		add_to_variable = { election_factor = -0.6 }
-		USA_election_senate = yes
-		USA_election_house = yes
-		USA_flip_support = yes
-		custom_effect_tooltip = usa_congress_elections_tt_good
-		country_event = usa.31
-	}
 }
 
 # Election of 1944: Roosevelt vs Thomas E. Dewey

@@ -1517,7 +1517,7 @@ ideas = {
 
 			modifier = {
 				land_bunker_effectiveness_factor = 0.15
-				max_dig_in = 7.5
+				max_dig_in_factor = 0.1
 				production_speed_bunker_factor = 0.1
 				production_speed_coastal_bunker_factor = 0.1
 			}

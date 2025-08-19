@@ -631,7 +631,7 @@
 
 	focus = {
 		id = FRA_military_factories
-		icon = GFX_SOV_national_unification_ccp_2d_sov_compatibility
+		icon = GFX_goal_generic_construct_mil_factory
 		available = {
 		}
 		prerequisite = { focus = FRA_industrial_expansion focus = FRA_colonial_industry }

@@ -1400,7 +1400,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		available = {
 			democratic > 0.95
-			date > 1939.9.1
 		}
 		completion_reward = {
 			add_ideas = wartime_industry_focus
@@ -2582,7 +2581,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_war_department }
 		relative_position_id = USA_war_department
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1

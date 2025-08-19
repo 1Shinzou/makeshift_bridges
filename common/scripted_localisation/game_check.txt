@@ -274,7 +274,7 @@ defined_text = {
                 option = on
             }
         }
-        localization_key = "check_red_gamerules_on"
+        localization_key = "check_green_gamerules_on"
     }
     text = {
         trigger = {
@@ -283,7 +283,7 @@ defined_text = {
                 option = off
             }
         }
-        localization_key = "check_green_gamerules_off"
+        localization_key = "check_red_gamerules_off"
     }
 }
 

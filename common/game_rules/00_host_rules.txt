@@ -180,14 +180,14 @@ hospitals = {
 	group = "MSB Rules"
 	icon = "GFX_decision_generic_cavalry"
 	option = {
-		name = on
-		text = "ROn"
-		desc = "You're ALLOWED to research Hospital 2 and onwards technology(NOT Recommmended)"
+		name = off
+		text = "ROff"
+		desc = "You're NOT ALLOWD TO research Hospital 2 technology"
 	}
 	default = {
-		name = off
-		text = "GOff"
-		desc = "You're NOT ALLOWD TO research Hospital 2technology(Recommmended)"
+		name = on
+		text = "GOn"
+		desc = "You're ALLOWED to research Hospital 2 and onwards technology"
 	}
 }
 

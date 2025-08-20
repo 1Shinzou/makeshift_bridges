@@ -1000,13 +1000,16 @@
 		id = FRA_global_integration
 		icon = GFX_focus_POL_support_global_falangism
 		x = 1
-		y = 3
-
+		y = 1
+		offset = {
+			x = 0
+			y = 2
+		}
 		
 		prerequisite = { focus = FRA_colonial_industry }
 		mutually_exclusive = { }
 		relative_position_id = FRA_invest_in_the_colonies
-		cost = 10
+		cost = 5
 	
 		ai_will_do = {
 			factor = 1
@@ -2033,17 +2036,6 @@
 			factor = 1
 		}
 		allow_branch = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					has_completed_focus = FRA_revive_the_national_bloc
-				}
-			}
 			NOT = {
 				has_global_flag = fall_of_france
 			}
@@ -2272,10 +2264,8 @@
 		x = 6	
 		y = 1
 		
-
 		prerequisite = {
-			focus = FRA_agricultural_protectionism
-			focus = FRA_reform_the_labour_laws
+			focus = FRA_reform_the_labour_laws focus = FRA_agricultural_protectionism
 		}
 		relative_position_id = FRA_reform_the_labour_laws
 		cost = 10
@@ -2476,49 +2466,23 @@
 		}
 	}
 
+	
 
-	focus = {
-		id = FRA_agricultural_protectionism
-		icon = GFX_goal_generic_defence
-		x = 0
-		y = 1
-		
-		prerequisite = {
-			focus = FRA_revive_the_national_bloc
-
-		}
-		relative_position_id = FRA_revive_the_national_bloc
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			add_ideas = { FRA_agricultural_protectionism }
-		}
-	}
-
+	
 	focus = {
 		id = FRA_laissez_faire
 		icon = GFX_goal_generic_consumer_goods
-		x = 0
+		x = 3
 		y = 1
 		
 		prerequisite = {
 			focus = FRA_agricultural_protectionism
+		}
+		prerequisite = {
+			#focus = FRA_review_foreign_policy
+		}
+		mutually_exclusive = { 
+			#focus = FRA_agricultural_protectionism 
 		}
 		relative_position_id = FRA_agricultural_protectionism
 		cost = 5
@@ -2550,8 +2514,162 @@
 			custom_effect_tooltip = FRA_laissez_faire_tt
 		}
 	}
+	
+	focus = {
+		id = FRA_agricultural_protectionism
+		icon = GFX_goal_generic_defence
+		x = 0
+		y = 1
+		
+		prerequisite = {
+			focus = FRA_revive_the_national_bloc
+
+		}
+		mutually_exclusive = { 
+			#focus = FRA_laissez_faire
+		 }
+		relative_position_id = FRA_revive_the_national_bloc
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = { FRA_agricultural_protectionism }
+		}
+	}
+
+	focus = {
+		id = FRA_aid_small_businesses
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_agricultural_protectionism
+		}
+		relative_position_id = FRA_agricultural_protectionism
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
 
 		focus = {
+		id = FRA_rebuild_the_military
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_aid_small_businesses
+		}
+		relative_position_id = FRA_aid_small_businesses
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+			num_of_military_factories > 34
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_ideas = { FRA_rebuild_the_military }
+		}
+	}
+
+	focus = {
+		id = FRA_venerate_the_craftsman
+		icon = GFX_goal_generic_production
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_rebuild_the_military
+		}
+		relative_position_id = FRA_rebuild_the_military
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = { FRA_venerate_the_craftsman }
+		}
+	}
+	
+	focus = {
 		id = FRA_stimulate_the_dynamic_market
 		icon = GFX_goal_generic_construct_civilian
 		x = 1
@@ -2686,123 +2804,6 @@
 			add_ideas = { FRA_entrepeneurship }
 		}
 	}
-	
-
-	focus = {
-		id = FRA_aid_small_businesses
-		icon = GFX_goal_generic_consumer_goods
-		x = 3
-		y = -1
-		prerequisite = { 
-			focus = FRA_agricultural_protectionism
-		}
-		relative_position_id = FRA_promote_entrepeneurship
-		
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			
-		}
-		
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			random_owned_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					is_core_of = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-		focus = {
-		id = FRA_rebuild_the_military
-		icon = GFX_goal_generic_construct_mil_factory
-		x = 0
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = { 
-			focus = FRA_aid_small_businesses
-		}
-		relative_position_id = FRA_aid_small_businesses
-		
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			
-		}
-		
-		bypass = {
-			num_of_military_factories > 34
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-			add_ideas = { FRA_rebuild_the_military }
-		}
-	}
-
-	focus = {
-		id = FRA_venerate_the_craftsman
-		icon = GFX_goal_generic_production
-		x = 0
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = { 
-			focus = FRA_rebuild_the_military
-		}
-		relative_position_id = FRA_rebuild_the_military
-		
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			
-		}
-		
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			add_ideas = { FRA_venerate_the_craftsman }
-		}
-	}
-	
-
-	
 	focus = {
 		id = FRA_naval_rearmament
 		icon = GFX_goal_generic_construct_naval_dockyard
@@ -3503,7 +3504,10 @@ focus = {
 			factor = 4
 		}
 		completion_reward = {
-			add_ideas = FRA_rearmament_policy
+			add_timed_idea = {
+				idea = FRA_rearmament_policy
+				days = 120
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -3522,12 +3526,15 @@ focus = {
 			factor = 4
 		}
 		completion_reward = {
-			add_ideas = FRA_increase_military_spendings
+			add_timed_idea = {
+				idea = FRA_increase_military_spendings
+				days = 120
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
-	focus = {
+focus = {
 		id = FRA_further_the_reforms
 		icon = GFX_focus_SOV_merge_plants
 		cost = 5
@@ -3544,7 +3551,11 @@ focus = {
 			factor = 4
 		}
 		completion_reward = {
-			add_ideas = FRA_further_the_reforms	
+			add_timed_idea = {
+				idea = FRA_further_the_reforms
+				days = 180
+			}
+			
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -3591,9 +3602,6 @@ focus = {
 				NOT = {
 					has_completed_focus = FRA_form_the_popular_front
 				}
-			}
-			NOT = {
-				has_global_flag = fall_of_france
 			}
 		}
 

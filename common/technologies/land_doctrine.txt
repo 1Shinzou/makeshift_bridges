@@ -599,6 +599,7 @@ technologies = {
 	firebrigades = { #Branch focused on mobile warfares
 		xp_research_type = army
 		xp_unlock_cost = 100
+		enable_tactic = tactic_partisan_sweeps
 		xor={
 			volkssturm
 		}
@@ -2871,6 +2872,7 @@ technologies = {
 	}
 	
 	deep_operations = {
+		enable_tactic = tactic_partisan_sweeps
 		category_tanks = {
 			max_organisation = 10
 		}
@@ -3383,8 +3385,14 @@ technologies = {
 		infantry = {
 			combat_width = -0.4
 		}
-		
-		# experience_loss_factor = 0.5 AsKar Experience Loss
+
+		field_hospital = {
+			battalion_mult = {
+				category = category_light_infantry
+				experience_loss_factor = 0.03
+				add = yes
+			}
+		}
 
 		land_reinforce_rate = 0.15		
 		
@@ -3460,18 +3468,6 @@ technologies = {
 		
 		ai_research_weights = {
 			industry = 2.0
-		}
-	}
-
-	masterful_blitz = {
-		enable_tactic = tactic_masterful_blitz
-
-		doctrine = yes
-		research_cost = 1
-
-		#set at gamestart
-		allow = {
-			always = no
 		}
 	}
 	

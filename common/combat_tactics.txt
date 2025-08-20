@@ -704,7 +704,6 @@ tactic_defender_hb_skillful_defence = {
 	base =  { factor = 2 }
 	picture = defender_hb_skillful_defence
 	display_phase = hold_bridge
-	
 	combat_width = -0.25
 	attacker = 0.1
 	defender = 0.05
@@ -727,6 +726,8 @@ tactic_guerrilla_tactics = { #People's army defender tactic. also for German vol
 		factor = 4
 	}
 	picture = tactic_guerrilla_tactics
+
+	countered_by = tactic_partisan_sweeps
 	
 	combat_width = -0.5
 	attacker = -0.7
@@ -883,12 +884,47 @@ tactic_barrage = { #Superior firepower attacker tactic
 }
 
 tactic_masterful_blitz = { #Improved version of Blitz for Soviets
-	only_show_for = SOV
-	
-	is_attacker = yes
+    # only_show_for = SOV
+
+    is_attacker = yes
+    trigger = {
+        is_attacker = yes
+        hardness > 0.3
+        phase = no
+        OR = {
+            skill > 2
+            has_trait = panzer_leader
+            skill_advantage > 1
+        }
+    }
+
+    active = no
+
+    base =  { 
+        factor = 20
+        modifier = {
+            add = 5
+            OR = {
+                has_trait = panzer_expert
+                has_trait = combined_arms_expert
+            }
+        }
+    }
+
+    picture = SOV_tank_desant_blitz
+
+    attacker_movement_speed = 0.5
+    attacker = 0.2
+    defender = -0.2
+}
+
+#Anti-Partisan, purpose is to counter guerrilla 
+tactic_partisan_sweeps = {
+
+    is_attacker = yes
 	trigger = {
 		is_attacker = yes
-		hardness > 0.5
+		hardness > 0.3
 		phase = no
 		OR = {
 			skill > 2
@@ -896,11 +932,11 @@ tactic_masterful_blitz = { #Improved version of Blitz for Soviets
 			skill_advantage > 1
 		}
 	}
-	
-	active = no
-	
-	base =  { 
-		factor = 4
+    
+    active = no
+
+   	base =  { 
+		factor = 5
 		modifier = {
 			add = 4
 			OR = {
@@ -909,13 +945,11 @@ tactic_masterful_blitz = { #Improved version of Blitz for Soviets
 			}
 		}
 	}
-	
-	picture = SOV_tank_desant_blitz
-	countered_by = tactic_elastic_defense
-	
-	attacker_movement_speed = 0.5
+    
+    picture = partisan_sweeps
+    
+    attacker = 0.1
 	combat_width = 0.1
-	attacker = 0.2
 	defender = -0.2
 }
 

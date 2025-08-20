@@ -81,15 +81,15 @@
 	focus = {
 	id = FRA_develop_the_countryside
 	icon = GFX_focus_ARG_capitalize_the_beef_industry
-	x = -1
+	x = -5
 	y = 1
 	offset = {
 		x = 0
 		y = 0
 	}
-	prerequisite = { focus = FRA_devalue_the_franc }
+	prerequisite = { focus = FRA_metropolitan_france }
 	mutually_exclusive = { }
-	relative_position_id = FRA_devalue_the_franc
+	relative_position_id = FRA_metropolitan_france
 	cost = 5
 
 	ai_will_do = {
@@ -135,7 +135,7 @@
 	focus = {
 	id = FRA_expand_the_salau_mine
 	icon = GFX_focus_generic_tungsten
-	x = 0
+	x = -7
 	y = 1
 	offset = {
 		x = 0
@@ -181,7 +181,7 @@
 	focus = {
 	id = FRA_develop_the_potash_mines
 	icon = GFX_focus_generic_mining_industry
-	x = -1
+	x = -5
 	y = 2
 	offset = {
 		x = 0
@@ -228,7 +228,7 @@
 	focus = {
 	id = FRA_the_baux_de_provence_mine
 	icon = GFX_focus_generic_aluminum
-	x = 1
+	x = -6
 	y = 2
 	offset = {
 		x = 0
@@ -281,12 +281,10 @@
 		y = 0
 	}
 	prerequisite = { 
-		focus = FRA_develop_the_potash_mines
-		focus = FRA_expand_the_salau_mine
-		focus = FRA_the_baux_de_provence_mine
+		focus = FRA_ivory_coast_rubber
 	}
 	mutually_exclusive = { }
-	relative_position_id = FRA_develop_the_potash_mines
+	relative_position_id = FRA_global_integration
 	cost = 5
 
 	ai_will_do = {
@@ -358,7 +356,7 @@
 	focus = {
 	id = FRA_tonkin_mines
 	icon = GFX_focus_generic_tungsten
-	x = 0
+	x = -4
 	y = 1
 	offset = {
 		x = 0
@@ -635,7 +633,7 @@
 		available = {
 		}
 		prerequisite = { focus = FRA_industrial_expansion focus = FRA_colonial_industry }
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = FRA_industrial_expansion
 		cost = 10
@@ -689,7 +687,7 @@
 	focus = {
 		id = FRA_invest_in_the_colonies
 		icon = GFX_focus_ITA_grande_rivolta_rurale
-		x = 2
+		x = 4
 		y = 1
 		offset = {
 			x = 0
@@ -1063,7 +1061,7 @@
 		available = {
 		}
 		prerequisite = { focus = FRA_algerie_france focus = FRA_invest_in_west_africa focus = FRA_invest_in_indochina focus = FRA_invest_in_syria }
-		x = -2
+		x = 2
 		y = 1
 		relative_position_id = FRA_invest_in_west_africa
 		cost = 5
@@ -1127,7 +1125,7 @@
 		focus = {
 		id = FRA_global_integration
 		icon = GFX_focus_POL_support_global_falangism
-		x = 0
+		x = 4
 		y = 1
 		offset = {
 			x = 0
@@ -1166,8 +1164,9 @@
 	focus = {
 		id = FRA_begin_rearmament
 		icon = GFX_focus_generic_mass_production
-		x = 34
+		x = -12
 		y = 0
+		relative_position_id = FRA_form_the_popular_front
 		
 		prerequisite = {}
 		mutually_exclusive = { }
@@ -1246,7 +1245,7 @@
 	focus = {
 		id = FRA_firepower_kills
 		icon = GFX_goal_generic_army_artillery
-		x = -5
+		x = -3
 		y = 1
 		
 		prerequisite = { focus = FRA_defensive_focus }
@@ -1283,7 +1282,7 @@
 	focus = {
 		id = FRA_methodical_battle
 		icon = GFX_goal_generic_cavalry
-		x = -2
+		x = -1
 		y = 1
 		
 		prerequisite = { focus = FRA_defensive_focus }
@@ -1891,7 +1890,7 @@
 	focus = {
 		id = FRA_battle_of_maneuver
 		icon = GFX_goal_generic_position_armies
-		x = 2
+		x = 1
 		y = 1
 		
 		prerequisite = { focus = FRA_aggressive_focus }
@@ -1979,7 +1978,7 @@
 	focus = {
 		id = FRA_air_dominance
 		icon = GFX_goal_generic_air_fighter2
-		x = 5
+		x = 3
 		y = 1
 		
 		prerequisite = { focus = FRA_aggressive_focus }
@@ -2137,7 +2136,7 @@
 	focus = {
 		id = FRA_form_the_popular_front
 		icon = GFX_focus_focus_fra_revolution_utmost
-		x = 19
+		x = 33
 		y = 0
 	
 		
@@ -3371,7 +3370,7 @@ focus = {
 		mutually_exclusive = {
 			
 		}
-		x = 1
+		x = -1
 		y = 2
 		relative_position_id = FRA_colonial_industry
 		

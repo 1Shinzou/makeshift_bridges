@@ -4066,9 +4066,10 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_bomber_modernization
-				bonus = 2.0
+				bonus = 1.0
 				uses = 1
-				category = cat_heavy_fighter				
+				category = cas_bomber
+				category = tactical_bomber					
 			}
 		}
 	}

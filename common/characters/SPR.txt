@@ -638,7 +638,6 @@ characters={
 			}
 		}
 	}
-
 	SPR_mohamed_meziane={
 		name=SPR_mohamed_meziane
 		portraits={
@@ -648,10 +647,10 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trickster career_officer harsh_leader trait_SPA_nationalist_sympathies organizer panzer_leader cavalry_leader infantry_leader commando skilled_staffer hill_fighter desert_fox }
+			traits={ trickster career_officer harsh_leader trait_SPA_nationalist_sympathies organizer cavalry_leader infantry_leader commando skilled_staffer hill_fighter desert_fox }
 			skill = 6
-			attack_skill = 6
-			defense_skill = 7
+			attack_skill = 4
+			defense_skill = 6
 			planning_skill = 4
 			logistics_skill = 5
 			legacy_id=1109
@@ -722,13 +721,13 @@ characters={
 			}
 			
 			field_marshal={
-				traits={ trait_cautious trait_SPA_nationalist_sympathies thorough_planner organisational_leader }
-				skill=3
-				attack_skill=2
-				defense_skill=2
-				planning_skill=4
-				logistics_skill=2
-				legacy_id=1111
+				traits={ brilliant_strategist trait_reckless trait_SPA_nationalist_sympathies cavalry_leader infantry_leader organizer ranger }
+				skill = 6
+				attack_skill = 5
+				defense_skill = 6
+				planning_skill = 2
+				logistics_skill = 3
+				legacy_id=1112
 				visible = {
 					OR = {
 						NOT = { has_global_flag = spanish_civil_war }
@@ -823,10 +822,10 @@ characters={
 			}
 
 			corps_commander={
-				traits={ brilliant_strategist trait_reckless trait_SPA_nationalist_sympathies cavalry_leader infantry_leader organizer panzer_leader ranger }
+				traits={ brilliant_strategist trait_reckless trait_SPA_nationalist_sympathies cavalry_leader panzer_leader organizer ranger }
 				skill = 6
-				attack_skill = 5
-				defense_skill = 6
+				attack_skill = 6
+				defense_skill = 5
 				planning_skill = 2
 				logistics_skill = 3
 				legacy_id=1112
@@ -954,13 +953,13 @@ characters={
 				}
 			}
 			
-			corps_commander={
-				traits={ infantry_officer trait_SPA_nationalist_sympathies }
-				skill=3
-				attack_skill=2
-				defense_skill=3
-				planning_skill=3
-				logistics_skill=2
+		corps_commander={
+			traits={ trickster trait_SPA_nationalist_sympathies organizer cavalry_leader panzer_leader commando skilled_staffer hill_fighter desert_fox }
+			skill = 6
+			attack_skill = 6
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 5
 				legacy_id=1113
 			}
 		}
@@ -1542,9 +1541,9 @@ characters={
 				}
 			}
 			traits = {
-				army_chief_drill_2
+				army_chief_drill_3
 			}
-			cost = 100
+			cost = 50
 		}
 	}
 

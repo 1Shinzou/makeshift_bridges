@@ -267,13 +267,33 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { trait_reckless cavalry_leader }
-			skill = 3
-			attack_skill = 4
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 3
+			traits = { trait_reckless cavalry_leader organizer cavalry_leader panzer_leader commando trait_engineer }
+			skill = 6
+			attack_skill = 6
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 5
 			legacy_id = 1205
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = BUL_ivan_markov
+			allowed = {
+				has_dlc = "Battle for the Bosporus"
+				original_tag = BUL
+			}
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			traits = {
+				army_chief_morale_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 
@@ -286,10 +306,10 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { old_guard infantry_leader organizer panzer_leader }
+			traits = { old_guard infantry_leader organizer cavalry_leader }
 			skill = 6
-			attack_skill = 6
-			defense_skill = 4
+			attack_skill = 4
+			defense_skill = 6
 			planning_skill = 3
 			logistics_skill = 3
 			legacy_id = 1206
@@ -376,10 +396,10 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { trait_reckless harsh_leader trait_BUL_zveno_member organizer panzer_leader cavalry_leader infantry_leader commando skilled_staffer}
+			traits = { trait_reckless harsh_leader trait_BUL_zveno_member organizer cavalry_leader infantry_leader commando skilled_staffer }
 			skill = 6
-			attack_skill = 6
-			defense_skill = 4
+			attack_skill = 3
+			defense_skill = 7
 			planning_skill = 4
 			logistics_skill = 5
 			legacy_id = 1210
@@ -395,14 +415,34 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { organizer }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 2
+			traits = { organizer cavalry_leader panzer_leader cavalry_leader }
+			skill = 6
+			attack_skill = 6
+			defense_skill = 4
+			planning_skill = 3
 			logistics_skill = 3
 			legacy_id = 1211
 		}
+		advisor = {
+			slot = army_chief
+			idea_token = BUL_angel_dotsev
+			allowed = {
+				has_dlc = "Battle for the Bosporus"
+				original_tag = BUL
+			}
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			traits = {
+				army_chief_drill_3
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}	
 	}
 
 	BUL_nikola_nakov = {

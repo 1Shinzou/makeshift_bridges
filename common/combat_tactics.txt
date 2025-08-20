@@ -731,7 +731,6 @@ tactic_guerrilla_tactics = { #People's army defender tactic. also for German vol
 	combat_width = -0.5
 	attacker = -0.7
 	defender = -0.6
-	countered_by = tactic_masterful_blitz
 }
 
 tactic_human_wave_tactics = { #People's army attacker tactic
@@ -889,7 +888,7 @@ tactic_masterful_blitz = { #Improved version of Blitz for Soviets
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
-		hardness > 0.3
+		hardness > 0.5
 		phase = no
 		OR = {
 			skill > 2
@@ -901,7 +900,7 @@ tactic_masterful_blitz = { #Improved version of Blitz for Soviets
 	active = no
 	
 	base =  { 
-		factor = 30
+		factor = 4
 		modifier = {
 			add = 4
 			OR = {
@@ -912,12 +911,14 @@ tactic_masterful_blitz = { #Improved version of Blitz for Soviets
 	}
 	
 	picture = SOV_tank_desant_blitz
+	countered_by = tactic_elastic_defense
 	
 	attacker_movement_speed = 0.5
 	combat_width = 0.1
 	attacker = 0.2
 	defender = -0.2
 }
+
 
 tactic_urban_defense = { 
 	is_attacker = no

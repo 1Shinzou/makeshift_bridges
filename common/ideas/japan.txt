@@ -50,7 +50,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				compliance_gain = 0.05
+				compliance_gain = 0.02
 			}
 		}
 

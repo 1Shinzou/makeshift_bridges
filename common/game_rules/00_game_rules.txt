@@ -21,6 +21,480 @@
 #	}
 # }
 
+
+select_host_country = {
+	name = "Select Host for Host Tool"
+	group = "Host Tool"
+	icon = GFX_volunteers
+	default = {
+		name = GER
+		text = "Germany"
+		desc = ""
+	}
+	option = {
+		name = ITA
+		text = "Italy"
+		desc = ""
+	}
+	option = {
+		name = ROM
+		text = "Romania"
+		desc = ""
+	}
+	option = {
+		name = HUN
+		text = "Hungary"
+		desc = ""
+	}
+	option = {
+		name = BUL
+		text = "Bulgaria"
+		desc = ""
+	}
+	option = {
+		name = FIN
+		text = "Finland"
+		desc = ""
+	}
+	option = {
+		name = ENG
+		text = "United Kingdom"
+		desc = ""
+	}
+	option = {
+		name = USA
+		text = "USA"
+		desc = ""
+	}
+	option = {
+		name = CAN
+		text = "Canada"
+		desc = ""
+	}
+	option = {
+		name = SAF
+		text = "South Africa"
+		desc = ""
+	}
+	option = {
+		name = RAJ
+		text = "British Raj"
+		desc = ""
+	}
+	option = {
+		name = AST
+		text = "Australia"
+		desc = ""
+	}
+	option = {
+		name = JAP
+		text = "Japan"
+		desc = ""
+	}
+	option = {
+		name = SOV
+		text = "Soviet Union"
+		desc = ""
+	}
+	option = {
+		name = FRA
+		text = "France"
+		desc = ""
+	}
+	option = {
+		name = BRA
+		text = "Brazil"
+		desc = ""
+	}
+	option = {
+		name = MEX
+		text = "Mexico"
+		desc = ""
+	}
+	option = {
+		name = SPR
+		text = "Spain"
+		desc = ""
+	}
+}
+
+vp_system = {
+	name = "Victory Points System"
+	group = "MSB Rules"
+	icon = GFX_decision_infiltrate_state
+	default = {
+		name = "ENABLED"
+		text = "Enabled"
+		desc = "Enable the Victory Points System (Hold 11/15 VP's for 365 days to win)"
+	}
+	option = {
+		name = "DISABLED"
+		text = "Disabled"
+		desc = "Disable the Victory Points System"
+	}
+
+}
+
+danzig_date_lock = {
+	name = "Danzig or War"
+	group = "MSB Rules"
+	icon = GFX_decision_border_war
+	default = {
+		name = locked
+		text = "June 1939"
+		desc = "Germany cannot take the Focus 'Danzig or War' before June 1st 1939"
+	}
+	option = {
+		name = not_locked
+		text = "Always available"
+		desc = "Germany can always take the Focus 'Danzig or War' no matter the date"
+	}
+}
+
+barb_date_lock = {
+	name = "War with the USSR"
+	group = "MSB Rules"
+	icon = "GFX_decision_SOV_socialism_in_one_country"
+	default = {
+		name = locked
+		text = "June 1941"
+		desc = "Germany cannot take the Focus 'War with the USSR' before June 1st 1941"
+	}
+	option = {
+		name = not_locked
+		text = "Always available"
+		desc = "Germany can always take the Focus 'War with the USSR' no matter the date"
+	}
+}
+
+china_war_difficulty = {
+	name = "China War" 
+	group = "MSB Rules"
+	icon = "GFX_decision_jap_conquer_china"
+	option = {
+		name = no
+		text = "REasy"
+		desc = "China will get no divisions at all (Not Recommmended)"
+	}
+	default = {
+		name = yes
+		text = "GNormal"
+		desc = "China will get 62 divisions in total which are all fully equipped (Recommended)"
+	}
+}
+
+scw_difficulty = {
+	name = "Spanish Civil War" 
+	group = "MSB Rules"
+	icon = GFX_decision_spa_garrison_control_total
+	option = {
+		name = easy
+		text = "REasy"
+		desc = "The Spain player will receive 20 extra fully equipped divisions. (Not Recommmended)"
+	}
+	default = {
+		name = normal
+		text = "GNormal"
+		desc = "The Spanish Civil War will be played without any additional spawn-ins. (Recommmended)"
+	}
+}
+
+hospitals = {
+	name = "Allow Hospital 2"
+	group = "MSB Rules"
+	icon = "GFX_decision_generic_cavalry"
+	option = {
+		name = off
+		text = "ROff"
+		desc = "You're NOT ALLOWD TO research Hospital 2 technology"
+	}
+	default = {
+		name = on
+		text = "GOn"
+		desc = "You're ALLOWED to research Hospital 2 and onwards technology"
+	}
+}
+
+auto_tech_rush = {
+	name = "Auto Tech Rush"
+	group = "MSB Rules"
+	icon = "GFX_decision_generic_research"
+	default = {
+		name = on
+		text = "GOn"
+		desc = "There will be decisions for auto-tech rushing (Recommmended)"
+	}
+	option = {
+		name = off
+		text = "ROff"
+		desc = "There will NOT be decisions for auto-tech rushing (Not Recommmended)"
+	}
+}
+
+tradebacks = {
+	name = "Tradeback Idea"
+	group = "MSB Rules"
+	icon = GFX_decision_generic_forestry
+	default = {
+		name = off
+		text = "GOff"
+		desc = "No tradeback idea (Recommmended)"
+	}
+	option = {
+		name = on
+		text = "ROn"
+		desc = "Everyone has a tradeback idea that givens -100% missing resource penalty. (Not Recommmended)"
+	}
+}
+
+Germany_Cancel_Mefo = {
+	name = "Germany MEFO Bills"
+	group = "Economic Adjustments"
+	icon = GFX_decision_ger_mefo_bills
+	default = {
+		name = Germany_no_cancel_MEFO_Bills
+		text = "Cannot cancel"
+		desc = ""
+	}
+	option = {
+		name = Germany_cancel_MEFO_Bills
+		text = "Can cancel"
+		desc = ""
+	}
+
+}
+
+ger_autarky = {
+	name = "Germany Autarky Achieved"
+	group = "Economic Adjustments"
+	icon = GFX_decision_ger_reichskommissariats
+	default = {
+		name = banned
+		text = "GOff"
+		desc = ""
+	}
+	option = {
+		name = allowed
+		text = "ROn"
+		desc = ""
+	}
+
+}
+
+sov_closed_eco = {
+	name = "Soviet Closed Economy"
+	group = "Economic Adjustments"
+	icon = "GFX_decision_SOV_secure_the_administration"
+	default = {
+		name = on
+		text = "GOn"
+		desc = "Soviets start the game on closed eco with free trade bonuses which cannot be changed (Recommmended)"
+	}
+	option = {
+		name = off
+		text = "ROff"
+		desc = "Soviets start on export focus (Not Recommmended)"
+	}
+}
+
+japan_closed_eco = {
+	name = "Japan Closed Economy"
+	group = "Economic Adjustments"
+	icon = "GFX_decision_jap_pacific_guardian"
+	default = {
+		name = on
+		text = "GOn"
+		desc = "Japan starts the game on closed eco with free trade bonuses which cannot be changed"
+	}
+	option = {
+		name = off
+		text = "ROff"
+		desc = "Japan starts on limited exports"
+	}
+	
+}
+    
+  
+ger_boost = {
+	name = "German Civ Boost"
+	group = "Economic Adjustments"
+	icon = "GFX_decision_generic_merge_plant_materiel"
+	default = {
+		name = off
+		text = "GOff"
+		desc = "Germany won't have civilian factories buff (Recommmended)"
+	}
+	option = {
+		name = ger4
+		text = "ROn-4"
+		desc = "Germany gets 4 Civilian factories (Not Recommmended)"
+	}
+	option = {
+		name = ger8
+		text = "ROn-8"
+		desc = "Germany gets 8 Civilian factories (Not Recommmended)"
+	}
+	option = {
+		name = ger12
+		text = "ROn-12"
+		desc = "Germany gets 12 Civilian factories (Not Recommmended)"
+	}
+} 
+jap_boost = {
+	name = "Japan Civ Boost"
+	group = "Economic Adjustments"
+	icon = GFX_decision_generic_merge_plant_materiel
+	default = {
+		name = off
+		text = "GOff"
+		desc = "Japan won't have civilian factories buff (Recommmended)"
+	}
+	option = {
+		name = jap4
+		text = "ROn-4"
+		desc = "Japan gets 4 Civilian factories (Not Recommmended)"
+	}
+	option = {
+		name = jap8
+		text = "ROn-8"
+		desc = "Japan gets 8 Civilian factories (Not Recommmended)"
+	}
+	option = {
+		name = jap12
+		text = "ROn-12"
+		desc = "Japan gets 12 Civilian factories (Not Recommmended)"
+	}
+}          
+
+ita_boost = {
+	name = "Italy Civ Boost"
+	group = "Economic Adjustments"
+	icon = "GFX_decision_generic_merge_plant_materiel"
+	default = {
+		name = off
+		text = "GOff"
+		desc = "Italy won't have civilian factories buff (Recommmended)"
+	}
+	option = {
+		name = ita4
+		text = "ROn-4"
+		desc = "Italy gets 4 Civilian factories (Not Recommmended)"
+	}
+	option = {
+		name = ita8
+		text = "ROn-8"
+		desc = "Italy gets 8 Civilian factories (Not Recommmended)"
+	}
+	option = {
+		name = ita12
+		text = "ROn-12"
+		desc = "Italy gets 12 Civilian factories (Not Recommmended)"
+	}
+}
+sov_boost = {
+	name = "Soviets Civ Boost"
+	group = "Economic Adjustments"
+	icon = "GFX_decision_generic_merge_plant_materiel"
+	default = {
+		name = off
+		text = "GOff"
+		desc = "Soviets won't have civilian factories buff (Recommmended)"
+	}
+	option = {
+		name = sov4
+		text = "ROn-4"
+		desc = "Soviets gets 4 Civilian factories (Not Recommmended)"
+	}
+	option = {
+		name = sov8
+		text = "ROn-8"
+		desc = "Soviets gets 8 Civilian factories (Not Recommmended)"
+	}
+	option = {
+		name = sov12
+		text = "ROn-12"
+		desc = "Soviets gets 12 Civilian factories (Not Recommmended)"
+	}
+} 
+
+eng_boost = {
+	name = "Britain Civ Boost"
+	group = "Economic Adjustments"
+	icon = "GFX_decision_generic_merge_plant_materiel"
+	default = {
+		name = off
+		text = "GOff"
+		desc = "Britain won't have civilian factories buff (Recommmended)"
+	}
+	option = {
+		name = eng4
+		text = "ROn-4"
+		desc = "Britain gets 4 Civilian factories (Not Recommmended)"
+	}
+	option = {
+		name = eng8
+		text = "ROn-8"
+		desc = "Britain gets 8 Civilian factories (Not Recommmended)"
+	}
+	option = {
+		name = eng12
+		text = "ROn-12"
+		desc = "Britain gets 12 Civilian factories (Not Recommmended)"
+	}
+}
+fra_boost = {
+	name = "France Civ Boost"
+	group = "Economic Adjustments"
+	icon = "GFX_decision_generic_merge_plant_materiel"
+	default = {
+		name = off
+		text = "GOff"
+		desc = "France won't have civilian factories buff (Recommmended)"
+	}
+	option = {
+		name = fra4
+		text = "ROn-4"
+		desc = "France gets 4 Civilian factories (Not Recommmended)"
+	}
+	option = {
+		name = fra8
+		text = "ROn-8"
+		desc = "France gets 8 Civilian factories (Not Recommmended)"
+	}
+	option = {
+		name = fra12
+		text = "ROn-12"
+		desc = "France gets 12 Civilian factories (Not Recommmended)"
+	}
+}
+usa_boost = {
+	name = "USA Civ Boost"
+	group = "Economic Adjustments"
+	icon = "GFX_decision_generic_merge_plant_materiel"
+	default = {
+		name = off
+		text = "GOff"
+		desc = "USA won't have civilian factories buff (Recommmended)"
+	}
+	option = {
+		name = usa4
+		text = "ROn-4"
+		desc = "USA gets 4 Civilian factories (Not Recommmended)"
+	}
+	option = {
+		name = usa8
+		text = "ROn-8"
+		desc = "USA gets 8 Civilian factories (Not Recommmended)"
+	}
+	option = {
+		name = usa12
+		text = "ROn-12"
+		desc = "USA gets 12 Civilian factories (Not Recommmended)"
+	}
+}
+
+# VANILLA GAME RULES 
+
 allow_wargoals = {
 	name = "RULE_ALLOW_WARGOALS"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
@@ -30,7 +504,7 @@ allow_wargoals = {
 		text = RULE_OPTION_ALWAYS_FREE
 		desc = "RULE_ALLOW_WARGOALS_ALWAYS_FREE_DESC"
 	}
-	default = {
+	option = {
 		name = "LIMITED"
 		text = "RULE_OPTION_LIMITED"
 		desc = "RULE_ALLOW_WARGOALS_LIMITED_DESC"
@@ -65,7 +539,7 @@ allow_wargoals = {
 		text = RULE_OPTION_FOCUSES_ONLY_38
 		desc = "RULE_ALLOW_WARGOALS_FOCUSES_ONLY_38_DESC"
 	}
-	option = {
+	default = {
 		name = "FOCUSES_ONLY_UNTIL_39"
 		text = RULE_OPTION_FOCUSES_ONLY_39
 		desc = "RULE_ALLOW_WARGOALS_FOCUSES_ONLY_39_DESC"
@@ -186,7 +660,7 @@ allow_volunteers = {
 		text = "RULE_OPTION_FREE"
 		desc = "RULE_ALLOW_VOLUNTEERS_FREE_DESC"
 	}
-	default = {
+	option = {
 		name = "LIMITED"
 		text = "RULE_OPTION_LIMITED"
 		desc = "RULE_ALLOW_VOLUNTEERS_LIMITED_DESC"
@@ -196,7 +670,7 @@ allow_volunteers = {
 		text = "RULE_OPTION_SAME_IDEOLOGY"
 		desc = "RULE_ALLOW_VOLUNTEERS_SAME_IDEOLOGY_DESC"
 	}
-	option = {
+	default = {
 		name = BLOCKED
 		text = "RULE_OPTION_BLOCKED"
 		desc = "RULE_ALLOW_VOLUNTEERS_BLOCKED_DESC"
@@ -582,7 +1056,6 @@ allow_scorched_earth = {
 #		desc = "RULE_ALLOW_IDEOLOGY_CHANGE_USA_BLOCKED_DESC"
 #	}
 #}
-
 
 
 

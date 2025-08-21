@@ -1843,7 +1843,8 @@ operation_steal_tech_civilian = { ### 12 3/35
 	operatives = 3
 	cost_multiplier = 0.05
 
-	visible = {
+	visible = { #civi steal
+		always = no
 		num_of_operatives > 0
 		network_national_coverage = {
 			target = FROM
@@ -2402,7 +2403,8 @@ operation_steal_tech_army = { ### 16 3/55
 	operatives = 3
 	cost_multiplier = 0.05
 
-	visible = {
+	visible = { #army steal
+		always = no
 		num_of_operatives > 1
 		network_national_coverage = {
 			target = FROM
@@ -2667,7 +2669,8 @@ operation_steal_tech_navy = { ### 17 3/55
 	operatives = 3
 	cost_multiplier = 0.05
 
-	visible = {
+	visible = { #navy steal
+		always = no
 		num_of_operatives > 1
 		network_national_coverage = {
 			target = FROM
@@ -2889,7 +2892,8 @@ operation_steal_tech_airforce = { ### 18 3/55
 	operatives = 3
 	cost_multiplier = 0.05
 
-	visible = {
+	visible = { #air steal 
+		always = no
 		num_of_operatives > 1
 		network_national_coverage = {
 			target = FROM

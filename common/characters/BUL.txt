@@ -267,12 +267,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { trait_reckless cavalry_leader organizer cavalry_leader panzer_leader commando trait_engineer }
-			skill = 6
-			attack_skill = 6
-			defense_skill = 4
-			planning_skill = 4
-			logistics_skill = 5
+			traits = { trait_reckless cavalry_leader }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
 			legacy_id = 1205
 		}
 		advisor = {
@@ -415,11 +415,11 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { organizer cavalry_leader panzer_leader cavalry_leader }
-			skill = 6
-			attack_skill = 6
-			defense_skill = 4
-			planning_skill = 3
+			traits = { organizer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
 			logistics_skill = 3
 			legacy_id = 1211
 		}

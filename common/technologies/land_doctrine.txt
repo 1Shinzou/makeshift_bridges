@@ -1152,19 +1152,23 @@ technologies = {
 		}
 		
 		artillery_brigade = {
-			combat_width = -0.3
+			combat_width = -0.2
 		}
 
 		rocket_artillery_brigade = {
-			combat_width = -0.3
+			combat_width = -0.2
 		}
 
 		mot_artillery_brigade = {
-			combat_width = -0.3
+			combat_width = -0.2
 		}
 
 		mot_rocket_artillery_brigade = {
-			combat_width = -0.3
+			combat_width = -0.2
+		}
+
+		motorized_rocket_brigade = {
+			combat_width = -0.2
 		}
 
 		signal_company = {
@@ -1278,9 +1282,11 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		category_all_infantry = {
-			breakthrough = 0.20
+			breakthrough = 0.15
 		}	
-		
+		category_all_armor = {
+			breakthrough = 0.10
+		}
 		
 		enable_tactic = tactic_blitz
 		

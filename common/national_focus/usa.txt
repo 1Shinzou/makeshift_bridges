@@ -122,8 +122,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			add_political_power = 150
-
-			add_offsite_building = { type = industrial_complex level = 10 } 
 			
 			hidden_effect = {
 				if = {
@@ -623,7 +621,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			add_political_power = 150
-			add_offsite_building = { type = industrial_complex level = 10 } 
 		}
 	}
 	focus = {
@@ -659,7 +656,7 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
-			add_offsite_building = { type = industrial_complex level = 10 } 
+			add_offsite_building = { type = industrial_complex level = 15 } 
 			USA_great_depression_level_down = yes
 			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 230 }
 			USA_congress_small_opposition = yes
@@ -701,7 +698,7 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
-			add_offsite_building = { type = industrial_complex level = 10 } 
+			add_offsite_building = { type = industrial_complex level = 15 } 
 			USA_great_depression_level_down = yes
 			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 230 }
 			custom_effect_tooltip = USA_great_depression_cooldown_tt
@@ -744,7 +741,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
-			add_offsite_building = { type = industrial_complex level = 10 } 
+			add_offsite_building = { type = industrial_complex level = 15 } 
 			USA_great_depression_level_down = yes
 			USA_congress_medium_opposition = yes
 			custom_effect_tooltip = federal_housing_tt

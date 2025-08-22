@@ -83,13 +83,13 @@ technologies = {
 	interwar_artillery = {
 
 		artillery = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		artillery_brigade = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		mot_artillery_brigade = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		category_self_propelled_artillery = {
 			soft_attack = 0.10
@@ -224,13 +224,13 @@ technologies = {
 	artillery2 = {
 
 		artillery = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		artillery_brigade = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		mot_artillery_brigade = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		category_self_propelled_artillery = {
 			soft_attack = 0.1
@@ -285,13 +285,13 @@ technologies = {
 	artillery3 = {
 
 		artillery = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		artillery_brigade = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		mot_artillery_brigade = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		category_self_propelled_artillery = {
 			soft_attack = 0.05
@@ -392,13 +392,13 @@ technologies = {
 	artillery5 = {
 
 		artillery = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		artillery_brigade = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		mot_artillery_brigade = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		category_self_propelled_artillery = {
 			soft_attack = 0.05
@@ -517,16 +517,16 @@ technologies = {
 	rocket_artillery2 = {
 
 		rocket_artillery = {
-			soft_attack = 0.1
+			soft_attack = 0.15
 		}
 		rocket_artillery_brigade = {
-			soft_attack = 0.1
+			soft_attack = 0.15
 		}
 		mot_rocket_artillery_brigade = {
-			soft_attack = 0.1
+			soft_attack = 0.15
 		}
 		motorized_rocket_brigade = {
-			soft_attack = 0.1
+			soft_attack = 0.15
 		}
 
 		path = {
@@ -562,16 +562,16 @@ technologies = {
 	rocket_artillery3 = {
 
 		rocket_artillery = {
-			soft_attack = 0.1
+			soft_attack = 0.15
 		}
 		rocket_artillery_brigade = {
-			soft_attack = 0.1
+			soft_attack = 0.15
 		}
 		mot_rocket_artillery_brigade = {
-			soft_attack = 0.1
+			soft_attack = 0.15
 		}
 		motorized_rocket_brigade = {
-			soft_attack = 0.1
+			soft_attack = 0.15
 		}
 
 		path = {

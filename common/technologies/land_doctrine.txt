@@ -1168,7 +1168,7 @@ technologies = {
 		}
 
 		motorized_rocket_brigade = {
-			combat_width = -0.2
+			combat_width = -0.3
 		}
 
 		signal_company = {

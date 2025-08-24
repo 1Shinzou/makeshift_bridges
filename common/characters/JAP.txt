@@ -331,11 +331,11 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ inflexible_strategist trait_reckless JAP_samurai_lineage }
-			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=2
+			traits={ inflexible_strategist trait_reckless JAP_samurai_lineage organizer infantry_leader panzer_leader trickster }
+			skill= 5
+			attack_skill=4
+			defense_skill=4
+			planning_skill=3
 			logistics_skill=2
 			legacy_id=0
 		}

@@ -292,14 +292,14 @@ JAP_propaganda_campaigns = {
 		complete_effect = {
 			set_variable = { JAP_new_propaganda_campaign = 9 }
 			JAP_pick_propaganda_campaign_slot_effect = yes
-			add_ideas = AUS_domestic_air_production
+			add_ideas = JAP_domestic_air_production
 		}
 
 		remove_effect = {
 			set_variable = { JAP_propaganda_campaign_to_remove = 9 }
 			JAP_reset_propaganda_campaign_slot_effect = yes
 			hidden_effect = { FROM = { country_event = { id = msb.7 hours = 1} } }
-			remove_ideas = AUS_domestic_air_production
+			remove_ideas = JAP_domestic_air_production
 		}
 	}	
 

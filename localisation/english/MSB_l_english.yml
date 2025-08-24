@@ -104,7 +104,6 @@ USA_lend_lease_act_name:0 "Lend Lease Act"
 USA_lend_lease_act_desc:0 "The large democracies of the world are under assault. If they lose the battle, it is only a question of time before war comes to our shores. We must do what we can to support them - even if they can not pay for the equipment immediately."
 USA_PAYMENTS_ACT_NAME:0 "Demand Payments Act"
 
-
 USA_victory_plan_desc:0 "In 1941, a team of officers led by General Albert Wedemeyer on behalf of General George C. Marshall drew up the Victory Program, whose premise was that the Soviet Union would be defeated that year, and that to defeat Nazi Germany would require the United States to raise by the summer of 1943 a force of 215 divisions comprising 8.7 million men."
 USA_hollywood_propaganda_desc:0 "Hollywood played a vital role in boosting morale by producing patriotic films and war documentaries that encouraged support for the Allied cause. Many celebrities participated in USO tours, entertaining troops overseas and raising spirits on the front lines. The film industry also collaborated with the government to create propaganda and training films that educated both soldiers and the public."
 USA_rubber_reserve_company_landon_desc:0 "The USA needs companies to develop synthetic rubber to reduce reliance on foreign sources of natural rubber, which can be vulnerable during global conflicts or supply chain disruptions. Synthetic rubber is essential for manufacturing tires, military equipment, and various industrial products, making it critical for national security and economic stability."
@@ -118,9 +117,12 @@ USA_incendiary_bombs_desc:0 "Incendiary bombs were used extensively during World
 USA_supreme_allied_commander_europe_desc:0 "The Supreme Headquarters Allied Expeditionary Force (SHAEF) was the high command responsible for planning and executing the Allied invasion of Nazi-occupied Europe during World War II. Led by General Dwight D. Eisenhower, SHAEF coordinated the efforts of American, British, and other Allied forces to successfully liberate Western Europe."
 USA_supreme_allied_commander_asia_desc:0 "The Supreme Commander for the Allied Powers (SCAP) was the title given to General Douglas MacArthur during the post-World War II occupation of Japan. SCAP oversaw Japan’s reconstruction, democratization, and disarmament, helping transform the country into a peaceful and prosperous nation."
 
-## UK
+# UK ENG
 ENG_american_payment:0 "Payments To America"
 ENG_american_aid:0 "American Aid"
+
+# JAP
+JAP_domestic_air_production: "Domestic Aircraft Production"
 
 
 

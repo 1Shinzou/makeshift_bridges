@@ -69,7 +69,7 @@ characters={
 			attack_skill=5
 			defense_skill=6
 			planning_skill=4
-			logistics_skill=5
+			logistics_skill=6
 			legacy_id=0
 		}
 	}
@@ -203,7 +203,7 @@ characters={
 			attack_skill=6
 			defense_skill=6
 			planning_skill=4
-			logistics_skill=5
+			logistics_skill=6
 			legacy_id=0
 		}
 	}
@@ -277,9 +277,9 @@ characters={
 			traits = { organizer infantry_leader trait_engineer naval_invader commando trickster trait_mountaineer jungle_rat }
 			skill=8
 			attack_skill=5
-			defense_skill=5
+			defense_skill=6
 			planning_skill=3
-			logistics_skill=5
+			logistics_skill=6
 			legacy_id=0
 		}
 	}
@@ -404,10 +404,10 @@ characters={
 		corps_commander={
 			traits={ old_guard trait_reckless cavalry_officer inflexible_strategist trait_reckless organizer infantry_leader panzer_leader cavalry_leader trickster }
 			skill=5
-			attack_skill=4
-			defense_skill=2
+			attack_skill=5
+			defense_skill=5
 			planning_skill=4
-			logistics_skill=4
+			logistics_skill=6
 			legacy_id=0
 		}
 	}
@@ -481,9 +481,9 @@ characters={
 			traits={ trait_reckless infantry_officer JAP_samurai_lineage career_officer politically_connected fortress_buster organizer infantry_leader trickster trait_engineer }
 			skill=6
 			attack_skill=5
-			defense_skill=5
+			defense_skill=6
 			planning_skill=5
-			logistics_skill=5
+			logistics_skill=6
 			legacy_id=0
 		}
 	}
@@ -551,9 +551,9 @@ characters={
 			traits={ career_officer politically_connected fortress_buster organizer infantry_leader trickster trait_engineer }
 			skill=8
 			attack_skill=5
-			defense_skill=5
+			defense_skill=6
 			planning_skill=5
-			logistics_skill=5
+			logistics_skill=6
 			legacy_id=0
 		}
 	}
@@ -569,7 +569,7 @@ characters={
 		corps_commander={
 			traits={ career_officer politically_connected fortress_buster organizer infantry_leader panzer_leader trickster }
 			skill=5
-			attack_skill=4
+			attack_skill=5
 			defense_skill=5
 			planning_skill=5
 			logistics_skill=5
@@ -663,9 +663,9 @@ characters={
 			traits = {  commando naval_invader infantry_leader infantry_expert trait_engineer hill_fighter ranger trait_mountaineer }
 			skill=7
 			attack_skill=5
-			defense_skill=5
+			defense_skill=6
 			planning_skill=3
-			logistics_skill=5
+			logistics_skill=6
 			legacy_id=0
 		}
 	}

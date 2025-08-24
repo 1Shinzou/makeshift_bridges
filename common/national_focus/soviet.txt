@@ -4061,7 +4061,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = SOV_military_engineering_university
-		cost = 10
+		cost = 5
 
 		available = {
 			has_full_control_of_state = 219 #MOSCOW
@@ -4200,10 +4200,10 @@ focus_tree = {
 					instant_build = yes
 				}
 			
-				hidden_effect = {
-					damage_building = { type = arms_factory damage = 0.5 }
-					damage_building = { type = industrial_complex damage = 0.5 }
-				}
+			#	hidden_effect = {
+			#		damage_building = { type = arms_factory damage = 0.5 }
+			#		damage_building = { type = industrial_complex damage = 0.5 }
+			#	}
 			}
 			if = {
 				limit = {
@@ -4226,10 +4226,10 @@ focus_tree = {
 						instant_build = yes
 					}
 				
-					hidden_effect = {
-						damage_building = { type = arms_factory damage = 0.5 }
-						damage_building = { type = industrial_complex damage = 0.5 }
-					}
+				#	hidden_effect = {
+				#		damage_building = { type = arms_factory damage = 0.5 }
+				#		damage_building = { type = industrial_complex damage = 0.5 }
+				#	}
 				}
 			}
 			if = {
@@ -4253,13 +4253,13 @@ focus_tree = {
 						instant_build = yes
 					}
 				
-					hidden_effect = {
-						damage_building = { type = arms_factory damage = 0.5 }
-						damage_building = { type = industrial_complex damage = 0.5 }
-					}
+				#	hidden_effect = {
+				#		damage_building = { type = arms_factory damage = 0.5 }
+				#		damage_building = { type = industrial_complex damage = 0.5 }
+				#	}
 				}
 			}
-			custom_effect_tooltip = SOV_relocate_industry_repair_tt
+			# custom_effect_tooltip = SOV_relocate_industry_repair_tt
 		}
 	}
 

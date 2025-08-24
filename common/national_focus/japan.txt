@@ -3274,17 +3274,15 @@
 		}
 
 		completion_reward = {
-			
-			#mark_focus_tree_layout_dirty = yes
 			JAP= {
-				give_resource_rights = {
-					receiver = JAP
-					state = 716
-				}
-				give_resource_rights = {
-					receiver = JAP
-					state = 714
-				}
+			#	give_resource_rights = {
+			#		receiver = JAP
+			#		state = 716
+			#	}
+			#	give_resource_rights = {
+			#		receiver = JAP
+			#		state = 714
+			#	}
 				add_resource = {
 					type = steel
 					amount = 48
@@ -3374,10 +3372,10 @@
 
 
 		completion_reward = {
-				give_resource_rights = {
-					receiver = JAP
-					state = 714
-				}
+			#	give_resource_rights = {
+			#		receiver = JAP
+			#		state = 714
+			#	}
 
 			714 = {
 				add_resource = {

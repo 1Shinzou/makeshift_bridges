@@ -557,12 +557,12 @@ characters = {
 		
 		corps_commander = {
 			visible = { has_completed_focus = GER_adopt_new_panzer_doctrine }
-			traits = { trait_reckless media_personality armor_officer war_hero trickster }
-			skill = 4
-			attack_skill = 5
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 2
+			traits = { trait_reckless media_personality armor_officer war_hero trickster cavalry_officer panzer_leader trait_engineer skilled_staffer cavalry_leader organizer ranger commando urban_assault_specialist camouflage_expert } 
+			skill = 8
+			attack_skill = 6
+			defense_skill = 7
+			planning_skill = 7
+			logistics_skill = 6
 			legacy_id = 4
 		}
 	}
@@ -681,13 +681,18 @@ characters = {
 				small = GFX_portrait_GER_fedor_von_bock_small
 			}
 		}
+		advisor = {
+			slot = high_command
+			idea_token = GER_fedor_von_bock
+			traits = { army_CombinedArms_2 }
+		}
 		corps_commander = {
-			traits = { cavalry_officer harsh_leader brilliant_strategist }
-			skill = 4
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 4
-			logistics_skill = 3
+			traits = { harsh_leader brilliant_strategist cavalry_officer panzer_leader trickster trait_engineer skilled_staffer cavalry_leader organizer ranger commando urban_assault_specialist camouflage_expert } 
+			skill = 8
+			attack_skill = 6
+			defense_skill = 7
+			planning_skill = 6
+			logistics_skill = 6
 			legacy_id = 9
 		}
 	}
@@ -700,18 +705,13 @@ characters = {
 				small = GFX_portrait_GER_maximilian_von_weichs_small
 			}
 		}
-		advisor = {
-			slot = high_command
-			idea_token = GER_maximilian_von_weichs
-			traits = { army_CombinedArms_2 }
-		}
 		corps_commander = {
-			traits = { cavalry_officer panzer_leader trickster trait_engineer skilled_staffer cavalry_leader organizer ranger commando urban_assault_specialist camouflage_expert } 
-			skill = 8
-			attack_skill = 7
-			defense_skill = 7
-			planning_skill = 7
-			logistics_skill = 6
+			traits = { cavalry_officer }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
 			legacy_id = 11
 		}
 	}

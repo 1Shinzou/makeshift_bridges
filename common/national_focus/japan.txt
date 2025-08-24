@@ -4041,11 +4041,11 @@
 						type = cv_small_plane_airframe_3
 						allow_without_tech = yes #Makes no difference since focus grants appropriate tech (above), but it improves tooltip
 						modules = {
-							fixed_main_weapon_slot = heavy_mg_4x
-							fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+							fixed_main_weapon_slot = light_mg_2x
+							fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
 							fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
 							engine_type_slot = engine_3_1x
-							special_type_slot_1 = drop_tanks
+							special_type_slot_1 = fuel_tanks_small
 							special_type_slot_2 = armor_plate_small
 							special_type_slot_3 = self_sealing_fuel_tanks_small	
 						}

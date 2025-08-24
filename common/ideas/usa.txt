@@ -1715,15 +1715,19 @@ ideas = {
 				production_speed_synthetic_rubber_refinery_factor = 0.2
 			}
 			equipment_bonus = {
-				fighter_equipment = {
+				small_plane_airframe = {
 					air_range = 0.5 instant = yes
 					build_cost_ic = -0.5 instant = yes
 				}
-				heavy_fighter_equipment = {
+				medium_plane_airframe = {
 					air_range = 0.5 instant = yes
 					build_cost_ic = -0.5 instant = yes
 				}
-				cv_fighter_equipment = {
+				cv_small_plane_airframe = {
+					air_range = 0.5 instant = yes
+					build_cost_ic = -0.5 instant = yes
+				}
+				large_plane_airframe = {
 					air_range = 0.5 instant = yes
 					build_cost_ic = -0.5 instant = yes
 				}

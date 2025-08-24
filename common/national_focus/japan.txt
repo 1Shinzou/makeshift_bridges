@@ -4026,7 +4026,10 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			custom_effect_tooltip = JAP_the_zero_tt
-			hidden_effect = {  
+			hidden_effect = { 
+				enable_equipment_modules = {
+					drop_tanks
+				}	 
 				if = {
 					limit = {
 						NOT = {

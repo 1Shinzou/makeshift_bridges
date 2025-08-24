@@ -15371,21 +15371,6 @@ focus_tree = {
 
         available = {
             is_subject = no
-           
-
-            if = {
-                limit = {
-                    is_ai = yes
-                }
-                date > 1947.8.15
-               OR = {
-                    is_historical_focus_on = yes
-                    has_game_rule = {
-                        rule = RAJ_ai_behavior
-                        option = GOE_HISTORICAL
-                    }
-                }
-            }
         }
         
         bypass = {

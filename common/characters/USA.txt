@@ -768,8 +768,8 @@ characters={
 				original_tag = USA
 			}
 			available  = {
-				has_completed_focus  = USA_reestablish_the_gold_standard
-				has_completed_focus = USA_war_plan_orange
+				#has_completed_focus  = USA_reestablish_the_gold_standard
+				#has_completed_focus = USA_war_plan_orange
 			}
 			traits = {
 				navy_chief_decisive_battle_2

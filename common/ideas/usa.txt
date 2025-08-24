@@ -981,7 +981,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_navy_bonus
+			picture = generic_navy_submarines
 			
 			equipment_bonus = {
 
@@ -1771,6 +1771,25 @@ ideas = {
 				naval_invasion_capacity = 100
 				navy_max_range_factor = 1
 				air_range_factor = 0.30
+			}
+		}
+
+		USA_navy_funding = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_navy_bonus
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.05
 			}
 		}
 	

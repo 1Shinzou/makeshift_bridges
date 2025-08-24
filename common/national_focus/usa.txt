@@ -3952,7 +3952,7 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-		add_ideas = ENG_secure_the_imperial_shipping_routes 
+		add_ideas = USA_navy_funding
 			add_doctrine_cost_reduction = {
 				name = USA_fund_the_navy
 				uses = 3

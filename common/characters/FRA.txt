@@ -23,7 +23,7 @@ characters={
 		}
 		country_leader={
 			ideology=socialism
-			traits={ stout_defender economist conservative_nationalist }
+			traits={ stout_defender economist }
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -1269,7 +1269,7 @@ characters={
 				has_completed_focus  = FRA_buy_time 
 				has_government  = democratic 
 			}
-			cost  = 75.000
+			cost  = 50
 			traits  = {
 				appeaser 
 			}

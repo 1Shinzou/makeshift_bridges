@@ -19,7 +19,7 @@ ideas = {
 
 			modifier = {
 				production_speed_arms_factory_factor = 0.1
-				production_factory_start_efficiency_factor = 0.05
+				production_factory_start_efficiency_factor = 0.1
 			}
 		}
 
@@ -37,8 +37,8 @@ ideas = {
 			picture = prc_low_popular_support3
 
 			modifier = {
+				production_factory_max_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
-				local_resources_factor = 0.05
 			}
 		}
 
@@ -1294,7 +1294,7 @@ ideas = {
 
 			allowed_civil_war = {
 				tag = FRA
-						
+				}		
 			available = {
 				has_focus_tree = french_focus
 			}
@@ -1302,15 +1302,13 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				conscription_factor = -0.25
 				industrial_capacity_factory = -0.1
 				industrial_capacity_dockyard = -0.1
 			}
-		}
+		
 	}
 		FRA_inefficient_economy_2 = {
 			picture = generic_local_self_management
-			name = FRA_inefficient_economy_1
 			allowed = {
 				original_tag = FRA
 				always = no
@@ -1769,7 +1767,24 @@ ideas = {
 			}
 		}
 		
-		
+		FRA_class_collaboration = {
+			
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			picture = SOV_scientist_defect
+
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				global_building_slots_factor = 0.15
+			}
+		}
 		
 	}
 	

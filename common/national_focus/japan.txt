@@ -1335,11 +1335,11 @@
 		id = JAP_strike_south_doctrine
 		icon = GFX_focus_jap_strike_south
 		
-		prerequisite = { focus = JAP_sign_tripartite_pact
+		prerequisite = { focus = JAP_non_aggression_pact_with_the_soviet_union
 		}
 		x = 0
 		y = 1
-		relative_position_id = JAP_sign_tripartite_pact
+		relative_position_id = JAP_non_aggression_pact_with_the_soviet_union
 
 		cost = 5
 
@@ -1648,11 +1648,13 @@
 	focus = {
 		id = JAP_sign_tripartite_pact
 		icon = GFX_goal_anschluss
-		prerequisite = { focus = JAP_non_aggression_pact_with_the_soviet_union
-			}
-		x = 0
+		prerequisite = { 
+			focus = JAP_modern_shogunate
+			focus = JAP_showa_restoration
+		}
+		x = 5
 		y = 1
-		relative_position_id = JAP_non_aggression_pact_with_the_soviet_union
+		relative_position_id = JAP_showa_restoration
 
 		cost = 5
 
@@ -1739,12 +1741,11 @@
 		id = JAP_non_aggression_pact_with_the_soviet_union
 		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { 
-			focus = JAP_modern_shogunate
-			focus = JAP_showa_restoration
+			focus = JAP_sign_tripartite_pact
 		}
-		x = 5
+		x = 0
 		y = 1
-		relative_position_id = JAP_showa_restoration
+		relative_position_id = JAP_sign_tripartite_pact
 
 		cost = 5
 		dynamic = yes  

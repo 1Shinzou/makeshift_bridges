@@ -30,10 +30,12 @@ ideas = {
 			
 			removal_cost = -1
 	
-
 			modifier = {
 				industry_air_damage_factor = -0.1
 				army_morale_factor = 0.1
+			}
+			rule = {
+				can_join_factions = no
 			}
 		}
 	

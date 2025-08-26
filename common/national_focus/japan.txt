@@ -1121,46 +1121,7 @@
 			}
 		}
 
-	focus = {
-		id = JAP_greater_east_asian_co_prosperity_sphere
-		icon = GFX_goal_generic_alliance
-		prerequisite = { 
-			focus = JAP_modern_shogunate
-			focus = JAP_showa_restoration
-		}
-		x = 5
-		y = 1
-		relative_position_id = JAP_showa_restoration
 
-		cost = 5
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available = {
-			is_subject = no
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			set_rule = { can_create_factions = yes }
-			create_faction = JAP_greater_east_asian_co_prosperity_sphere
-			IF = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				JAP_create_ignatius_lincoln_operative = yes
-			}
-		}
-	}
 
 	focus = {
 		id = JAP_intervene_in_china
@@ -1459,8 +1420,6 @@
 				uses = 1
 				category = tp_tech
 			}
-			SOV = { country_event = { id = wtt_japan.11 }
-			}
 		}
 	}
 	
@@ -1491,8 +1450,6 @@
 				uses = 1
 				category = tp_tech
 			}
-			SOV = { country_event = { id = wtt_japan.11 }
-							}
 						}
 			}
 					
@@ -1691,11 +1648,11 @@
 	focus = {
 		id = JAP_sign_tripartite_pact
 		icon = GFX_goal_anschluss
-		prerequisite = { focus = JAP_greater_east_asian_co_prosperity_sphere
+		prerequisite = { focus = JAP_non_aggression_pact_with_the_soviet_union
 			}
 		x = 0
 		y = 1
-		relative_position_id = JAP_greater_east_asian_co_prosperity_sphere
+		relative_position_id = JAP_non_aggression_pact_with_the_soviet_union
 
 		cost = 5
 
@@ -1775,6 +1732,45 @@
 				}
 				country_event = { id = wtt_japan.109 days = 1 }
 			}
+		}
+	}
+
+	focus = {
+		id = JAP_non_aggression_pact_with_the_soviet_union
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { 
+			focus = JAP_modern_shogunate
+			focus = JAP_showa_restoration
+		}
+		x = 5
+		y = 1
+		relative_position_id = JAP_showa_restoration
+
+		cost = 5
+		dynamic = yes  
+
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+			OR = {
+				has_non_aggression_pact_with = SOV
+				has_war_with = SOV
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			SOV = { country_event = { id = wtt_japan.11 } }
 		}
 	}
 

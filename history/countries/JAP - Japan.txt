@@ -26,6 +26,10 @@ set_power_balance = {
 					
 		set_value = 0	
 	}
+
+create_faction = JAP_greater_east_asian_co_prosperity_sphere
+add_to_faction = JAP
+
 609 = {
 	start_resistance = yes
 	set_compliance = 5

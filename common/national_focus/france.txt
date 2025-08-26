@@ -3024,6 +3024,8 @@
 		}
 		prerequisite = {
 			focus = FRA_class_collaboration
+		}
+			prerequisite = {
 			focus = FRA_venerate_the_craftsman
 		}
 		relative_position_id = FRA_class_collaboration
@@ -3196,9 +3198,6 @@
 		
 		prerequisite = {
 			focus = FRA_economic_devolution
-			focus = FRA_venerate_the_craftsman
-		}
-		prerequisite = {
 			focus = FRA_venerate_the_craftsman
 		}
 		relative_position_id = FRA_venerate_the_craftsman

@@ -808,8 +808,8 @@ ideas = {
 			
 			modifier = {
 				# special_forces_cap = 0.05
-				naval_invasion_capacity = 20
-				naval_invasion_planning_bonus_speed = 0.5
+				naval_invasion_capacity = 30
+				naval_invasion_planning_bonus_speed = 0.7
 			}
 		}
 

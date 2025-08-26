@@ -462,8 +462,8 @@ technologies = {
 		}
 		
 		marines_special_forces_contribution_factor = -0.25
-		naval_invasion_capacity = 5
-		naval_invasion_planning_bonus_speed = 0.2 # MSB change
+		naval_invasion_capacity = 10
+		naval_invasion_planning_bonus_speed = 0.3 # MSB change
 		category_special_forces = {
 			max_organisation = 5
 			soft_attack = 0.05

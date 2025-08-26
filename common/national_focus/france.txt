@@ -216,7 +216,7 @@
 		}	
 	focus = {
 		id = FRA_metropolitan_france
-		icon = GFX_focus_generic_modernize_industry
+		icon = GFX_focus_FRA_invest_in_the_metropole
 		available = {
 			any_owned_state = {
 				is_core_of = ROOT
@@ -1285,7 +1285,7 @@
 		}
 
 	offset = {
-			x = -8
+			x = -13
 			y = 0
 			trigger = {
 				has_game_rule = {
@@ -2250,7 +2250,8 @@
 
 	focus = {
 		id = FRA_form_the_popular_front
-		icon = GFX_focus_focus_fra_revolution_utmost
+		icon = GFX_focus_socialism_democratic
+		#GFX_focus_FRA_pop_front
 		x = 14
 		y = 0
 		relative_position_id = FRA_conseil_national_economique
@@ -2323,8 +2324,8 @@
 
 	focus = {
 		id = FRA_revive_the_national_bloc
-		icon = GFX_focus_generic_strike_at_democracy2
-		x = 8
+		icon = GFX_focus_FRA_revolution_nationale
+		x = 12
 		y = 0
 		relative_position_id = FRA_form_the_popular_front
 		
@@ -2335,7 +2336,7 @@
 		}
 
 	offset = {
-			x = -8
+			x = -12
 			y = 0
 			trigger = {
 				has_game_rule = {
@@ -2387,7 +2388,7 @@
 			focus = FRA_reform_the_labour_laws
 		}
 		relative_position_id = FRA_reform_the_labour_laws
-		x = -4
+		x = 0
 		y = 1
 		ai_will_do = {
 			factor = 4
@@ -2404,7 +2405,7 @@
 	
 	focus = {
 		id = FRA_reform_the_labour_laws
-		icon = GFX_goal_generic_production
+		icon = GFX_focus_generic_public_works
 		x = 0
 		y = 1
 		
@@ -2477,18 +2478,193 @@
 	}
 
 	focus = {
+		id = FRA_up_with_jean_darc
+		icon = GFX_focus_up_joan_of_arc
+		x = -1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_compromise_with_the_leagues
+		}
+		relative_position_id = FRA_compromise_with_the_leagues
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_ideas = FRA_up_with_jean_darc2
+		}
+	}
+
+		focus = {
+		id = FRA_celebrate_motherhood
+		icon = GFX_focus_generic_population_growth
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_compromise_with_the_leagues
+		}
+		relative_position_id = FRA_compromise_with_the_leagues
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			#add_ideas = FRA_celebrate_motherhood
+		}
+	}
+
+	focus = {
+		id = FRA_compromise_with_the_leagues
+		icon = GFX_focus_FRA_utilize_leagues
+		x = 6
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_agricultural_protectionism
+		}
+		relative_position_id = FRA_agricultural_protectionism
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_ideas = FRA_up_with_jean_darc2
+		}
+	}
+
+
+	focus = {
+		id = FRA_encourage_french_patriotism
+		icon = GFX_focus_FRA_army_reform
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_up_with_jean_darc
+		}
+		prerequisite = { 
+			focus = FRA_celebrate_motherhood
+		}
+		relative_position_id = FRA_up_with_jean_darc
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_ideas = FRA_up_with_jean_darc2
+		}
+	}
+
+
+	focus = {
+		id = FRA_government_reform
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = FRA_encourage_french_patriotism
+		}
+		relative_position_id = FRA_encourage_french_patriotism
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			#add_ideas = 
+		}
+	}
+
+
+
+
+	focus = {
 		id = FRA_the_blum_viollette_proposal
 		icon = GFX_goal_generic_improve_relations
-		x = -4
-		y = 0
-		relative_position_id = FRA_review_foreign_policy
+		x = -6
+		y = 1
+		relative_position_id = FRA_reform_the_labour_laws
 
 
 		mutually_exclusive = {
 			# focus = FRA_support_daladier
 		 }
 		prerequisite = {
-			focus = FRA_reform_the_labour_laws focus = FRA_agricultural_protectionism
+			focus = FRA_reform_the_labour_laws 
+			#focus = FRA_agricultural_protectionism
 			#focus = FRA_protect_the_rights_of_man
 		}
 		
@@ -2638,7 +2814,7 @@
 
 
 	offset = {
-			x = -8
+			x = -12
 			y = 0
 			trigger = {
 				has_game_rule = {
@@ -2974,7 +3150,7 @@
 	focus = {
 		id = FRA_freedom_front
 		icon = GFX_goal_generic_national_unity
-		x = 4
+		x = 0
 		y = 1
 		
 		prerequisite = {
@@ -3104,7 +3280,7 @@
 
 		focus = {
 		id = FRA_rebuild_the_military
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_focus_army
 		x = -2
 		y = 1
 		mutually_exclusive = { focus = FRA_laissez_faire }
@@ -3522,7 +3698,7 @@ focus = {
 
 		focus = {
 		id = FRA_continue_mandat
-		icon = GFX_focus_generic_africa_defense
+		icon = GFX_focus_FRA_decolonization
 		cost = 20
 			prerequisite = {
 			focus = FRA_military_factories focus = FRA_industrial_expansion focus = FRA_colonial_industry

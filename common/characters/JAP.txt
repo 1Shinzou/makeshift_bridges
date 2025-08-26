@@ -1368,31 +1368,13 @@ characters={
 			slot = political_advisor
 			idea_token = sanzo_nosaka
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Waking the Tiger"
-					}
-					has_completed_focus = JAP_the_unthinkable_option 
-				}
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
+
 			}
 			allowed = {
 				original_tag = JAP
 			}
 			traits = {
-				communist_revolutionary 
-			}
-			do_effect = {
-				NOT = {
-					has_government = communism 
-				}
+				captain_of_industry
 			}
 			ai_will_do = {
 				factor = 0.000
@@ -1411,31 +1393,13 @@ characters={
 			slot = political_advisor
 			idea_token = kijuro_shidehara
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Waking the Tiger"
-					}
-					has_completed_focus = JAP_strengthen_civilian_government 
-				}
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
+
 			}
 			allowed = {
 				original_tag = JAP
 			}
 			traits = {
-				democratic_reformer 
-			}
-			do_effect = {
-				NOT = {
-					has_government = democratic 
-				}
+				quartermaster_general
 			}
 			ai_will_do = {
 				factor = 0.000

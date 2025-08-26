@@ -1,0 +1,51 @@
+#####-----> Mod by Sig "GreatExperiment" Altre 
+####-----> Reorganized by Pordy <><> <><> <><>
+spriteTypes = {
+
+###------> Ty for Icons @ Altre they're sick! ##
+
+	SpriteType = {
+		name = "GFX_focus_FRA_revolution_nationale"
+		texturefile = "gfx/interface/goals/revolution_nationale.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_FRA_army_reform"
+		texturefile = "gfx/interface/goals/focus_FRA_victory_is_ours.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_army"
+		texturefile = "gfx/interface/goals/FRA_army.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_FRA_invest_in_the_metropole"
+		texturefile = "gfx/interface/goals/european_france.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_socialism_democratic"
+		texturefile = "gfx/interface/goals/socialism_democratic.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_focus_FRA_decolonization"
+		texturefile = "gfx/interface/goals/focus_FRA_decolonization.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_FRA_utilize_leagues"
+		texturefile = "gfx/interface/goals/FRA_utilize_leagues.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_FRA_char_de_bataille"
+		texturefile = "gfx/interface/goals/dev_mbt.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_FRA_pop_front"
+		texturefile = "gfx/interface/goals/FRA_continue_popfront.dds"
+	}

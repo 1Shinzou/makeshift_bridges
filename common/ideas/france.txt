@@ -37,8 +37,8 @@ ideas = {
 			picture = prc_low_popular_support3
 
 			modifier = {
-				production_factory_max_efficiency_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_start_efficiency_factor = 0.05
 			}
 		}
 
@@ -365,7 +365,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_speed_industrial_complex_factor = 0.075
+				production_speed_industrial_complex_factor = 0.10
 			}
 		}
 		FRA_entrepeneurship = {
@@ -655,6 +655,7 @@ ideas = {
 			
 			modifier = {
 				production_factory_max_efficiency_factor = 0.1
+				production_factory_start_efficiency_factor = 0.05
 			}
 		}
 		FRA_occupation_costs_4 = {

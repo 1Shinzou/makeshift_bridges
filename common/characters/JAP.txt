@@ -198,7 +198,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer infantry_officer organizer infantry_leader cavalry_leader trickster }
+			traits={ career_officer infantry_officer organizer infantry_leader cavalry_leader trickster trait_engineer }
 			skill=8
 			attack_skill=6
 			defense_skill=6
@@ -567,7 +567,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer politically_connected fortress_buster organizer infantry_leader panzer_leader trickster }
+			traits={ career_officer politically_connected fortress_buster organizer infantry_leader panzer_leader trickster trait_engineer }
 			skill=5
 			attack_skill=5
 			defense_skill=5

@@ -15,6 +15,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+		name = "GFX_FRA_army_reform"
+		texturefile = "gfx/interface/goals/army_reform.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_focus_army"
 		texturefile = "gfx/interface/goals/FRA_army.dds"
 	}

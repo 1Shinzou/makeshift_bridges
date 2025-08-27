@@ -3612,8 +3612,8 @@
 
 			set_party_name = { 
 		    	ideology = democratic 
-		    	long_name = "Parti Radical" 
-		    	name = "Parti Radical"
+		    	long_name = "Parti socialiste" 
+		    	name = "Parti socialiste"
 			}
 			swap_ideas = {
 				remove_idea = FRA_inefficient_economy_2

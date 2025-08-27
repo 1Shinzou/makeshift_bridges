@@ -19,7 +19,7 @@ ideas = {
 
 			modifier = {
 				production_speed_arms_factory_factor = 0.1
-				production_factory_start_efficiency_factor = 0.1
+				production_factory_start_efficiency_factor = 0.15
 			}
 		}
 
@@ -640,6 +640,30 @@ ideas = {
 				neutrality_drift = 0.025
 			}
 		}
+
+		FRA_up_with_jean_darc2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				political_power_gain = 0.05
+				war_support_factor = 0.05
+			}
+
+			picture = SWI_spirit_of_helvetia_aggressive_war
+			
+			removal_cost = -1			
+			
+		}
+
 		FRA_venerate_the_craftsman = {
 			picture = generic_production_bonus
 			allowed = {
@@ -654,7 +678,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_factory_max_efficiency_factor = 0.1
+				line_change_production_efficiency_factor = 0.25
 				production_factory_start_efficiency_factor = 0.05
 			}
 		}
@@ -1356,6 +1380,7 @@ ideas = {
 			}
 		}
 		FPM_disjointed_government = {
+			name = "Improving Government"
 			
 			allowed = {
 				original_tag = FRA
@@ -1375,8 +1400,29 @@ ideas = {
 			picture = generic_disjointed_gov
 			
 			modifier = {
-				political_power_cost = 0.8
-				stability_factor = -0.10
+				political_power_cost = 0.4
+				stability_factor = -0.05
+				surrender_limit = -0.125
+			}
+		}
+
+		
+		FRA_celebrate_motherhood = {
+
+			picture = ITA_battaglie_per_la_nascite
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			modifier = {
+				monthly_population = 0.3
+				political_power_factor = 0.05
 			}
 		}
 		FPM_union_sacree = {

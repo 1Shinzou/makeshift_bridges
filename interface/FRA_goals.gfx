@@ -88,3 +88,4 @@ spriteTypes = {
 		name = "GFX_goal_cuba_support_the_confederation_of_cuban_workers"
 		texturefile = "gfx/interface/goals/fra/goal_cuba_support_the_confederation_of_cuban_workers.dds"
 	}
+}

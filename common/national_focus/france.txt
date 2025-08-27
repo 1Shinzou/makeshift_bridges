@@ -739,7 +739,7 @@
 		x = 0
 		y = 1
 		relative_position_id = FRA_colonial_industry
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -2397,11 +2397,27 @@
 			GER = { has_completed_focus = GER_demand_sudetenland }
 		}
 		completion_reward = {
-			add_ideas = FRA_increase_military_spendings
-			add_ideas = partial_economic_mobilisation	
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}	
+			add_ideas = FRA_increase_military_spendings	
+				if = {
+				limit = {
+					OR = {
+						has_idea = low_economic_mobilisation
+						has_idea = civilian_economy
+						#has_country_flag = USA_the_giant_wakes_added_civ_eco
+					}
+				}
+				add_ideas = partial_economic_mobilisation
+				#set_country_flag = FRA_sudenten_partial_eco_added
+			}
+			if = {	
+				limit = {	
+					has_idea = partial_economic_mobilisation
+				}
+				add_political_power = 120
+			}
+			search_filters = { FOCUS_FILTER_INDUSTRY }
+		}	
+	}
 	
 	focus = {
 		id = FRA_reform_the_labour_laws
@@ -2507,6 +2523,7 @@
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = FRA_up_with_jean_darc2
+			custom_effect_tooltip = FRA_compromise_with_the_leagues_warning
 		}
 	}
 
@@ -2540,7 +2557,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
-			#add_ideas = FRA_celebrate_motherhood
+			add_ideas = FRA_celebrate_motherhood
 		}
 	}
 
@@ -2563,7 +2580,7 @@
 			factor = 1
 		}
 		available = {
-			
+			NOT = { has_completed_focus = FRA_defensive_strategems }
 		}
 		
 		bypass = {
@@ -2573,9 +2590,14 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_ideas = FRA_up_with_jean_darc2
-		}
-	}
+			add_stability = -0.05
+			remove_ideas = FRA_political_violence
+			add_popularity = { 
+					ideology = democratic popularity = 1
+				} 
+				custom_effect_tooltip = FRA_compromise_with_the_leagues_warning1
+				}
+			}
 
 
 	focus = {
@@ -2610,7 +2632,8 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_ideas = FRA_up_with_jean_darc2
+			add_manpower = 250000
+			add_war_support = 0.10
 		}
 	}
 
@@ -2644,7 +2667,11 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			#add_ideas = 
+			stability_factor = 0.10
+			swap_ideas = { 
+				remove_idea = FPM_disjointed_government1
+				add_idea = FPM_disjointed_government
+			}
 		}
 	}
 
@@ -3123,6 +3150,7 @@
 		id = FRA_defensive_strategems
 		icon = GFX_focus_fra_french_union
 		available = {
+			NOT = { has_completed_focus = FRA_compromise_with_the_leagues }
 			custom_trigger_tooltip = {
 				tooltip = FRA_strengthen_government_support_tooltip
 				NOT = { has_idea = FRA_strengthen_government_support_focus }
@@ -3142,8 +3170,17 @@
 		}
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			remove_ideas = FPM_disjointed_government1
 			# set_rule = { can_send_volunteers = yes }
+			if = { 
+				limit = { 
+					 has_completed_focus = FRA_revive_the_national_bloc
+						}
+			remove_ideas = FPM_disjointed_government1
+			custom_effect_tooltip = FRA_compromise_with_the_leagues_warning2
+			}
+			else = {
+				 remove_ideas = FPM_disjointed_government1
+			}
 		}
 	}
 
@@ -3231,6 +3268,13 @@
 					instant_build = yes
 				}
 			}
+			if = {
+				limit = { has_idea = FRA_inefficient_economy_2 }
+				swap_ideas = {
+					remove_idea = FRA_inefficient_economy_2
+					add_idea = FRA_inefficient_economy_1
+				}
+			}
 		}
 	}
 
@@ -3239,7 +3283,8 @@
 	
 	focus = {
 		id = FRA_laissez_faire
-		icon = GFX_focus_RAJ_trickle_down_economics
+		icon = GFX_focus_generic_economic_recovery
+		#GFX_focus_RAJ_trickle_down_economics
 		x = 0
 		y = 1
 		prerequisite = {
@@ -3440,7 +3485,7 @@
 	
 	focus = {
 		id = FRA_economic_devolution
-		icon = GFX_focus_generic_economic_recovery
+		icon = GFX_focus_RAJ_trickle_down_economics
 		x = -1
 		y = 1
 		

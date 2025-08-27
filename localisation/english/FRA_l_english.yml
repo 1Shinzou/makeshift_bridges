@@ -35,11 +35,14 @@ FRA_support_blum_desc:0 "Blum's reforms aren't as effective as the [FRA.GetAdjec
 FRA_reynaud_economic_reforms:0 "Reynaud's Economic Reform"
 FRA_reynaud_economic_reforms_desc:0 "To put [FRA.GetNameDef] back to work, it will be necessary to review some of the achievements of the Matignon agreements. Appointing a moderate from the right, Paul Reynaud, as Finance Minister will make it possible to push through these reforms. Thus, the 40-hour workweek must be limited if not eliminated, taxes increased, and the franc devalued again. "
 FRA_compromise_with_the_leagues_desc:0 "It is a sad fact that political violence has become commonplace in France. If the country is to survive the threat of communist revolution, we must not shy away from the help of people who can and will meet the communist thugs in the street if it comes to that."
-FRA_compromise_with_the_leagues:0 "Compromise With The Leagues"
+FRA_compromise_with_the_leagues:0 "Compromise with the Leagues"
 FRA_encourage_french_patriotism:0 "Encourage French Patriotism"
 FRA_encourage_french_patriotism_desc:0 "During the midst of political violence, French patriotism has been overshadowed by division and unrest. Now, more than ever, we should embrace the French nation and stand united in its enduring values of liberty, equality, and fraternity."
 FRA_government_reform_desc:0 "The French government must commit to meaningful reforms that prioritize social equity, economic opportunity, and transparent governance. By modernizing institutions and actively engaging with citizens, we can build a stronger, more united nation for future generations."
 FRA_government_reform:0 "Government Reforms"
+FRA_compromise_with_the_leagues_warning:0 "§R This idea will go away upon Capitulation!§R"
+FRA_compromise_with_the_leagues_warning1:0 "§R Doing this focus will lock you from completing focus §YDefensive Strategems§Y"
+FRA_compromise_with_the_leagues_warning2:0 "§R Doing this focus will lock you from completing focus §YCompromise with the Leagues§Y"
 
 
   #### COMPAGNIES ####

@@ -106,7 +106,7 @@ spriteTypes = {
 
 SpriteType = {
 		name = "GFX_focus_FRA_invest_alg"
-		texturefile = "gfx/interface/goals/focus_FRA_soviet_industry.dds"
+		texturefile = "gfx/interface/goals/FRA_invest_alg.dds"
 	}
 
 	SpriteType = {
@@ -138,7 +138,7 @@ SpriteType = {
 		name = "GFX_focus_liberation2"
 		texturefile = "gfx/interface/goals/liberation2.dds"
 	}
-	
+
 	SpriteType = {
 		name = "GFX_focus_FRA_maginot_line"
 		texturefile = "gfx/interface/goals/FRA_maginot_line.dds"
@@ -152,4 +152,14 @@ SpriteType = {
 SpriteType = {
 		name = "GFX_focus_b1_bis"
 		texturefile = "gfx/interface/goals/b1_bis.dds"
+	}
+
+SpriteType = {
+		name = "GFX_focus_FRA_invest_syr"
+		texturefile = "gfx/interface/goals/FRA_invest_syr.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_FRA_estienne"
+		texturefile = "gfx/interface/goals/fpm_focus_FRA_esienne.dds"
 	}

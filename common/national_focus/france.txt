@@ -437,6 +437,7 @@
 	focus = {
 		id = FRA_algerie_france
 		icon = GFX_focus_generic_industry_1
+		#GFX_focus_FRA_invest_alg
 		available = {
 			any_state = {
 				OR = {
@@ -531,6 +532,7 @@
 	focus = {
 		id = FRA_invest_in_west_africa
 		icon = GFX_focus_generic_industry_1
+		#GFX_focus_FRA_african_fac
 		x = -1
 		y = 1
 
@@ -592,11 +594,11 @@
 		}
 	}
 
-	
 
 	focus = {
 		id = FRA_invest_in_syria
 		icon = GFX_focus_generic_industry_1
+		#GFX_focus_FRA_invest_syr
 		x = 1
 		y = 1
 
@@ -1396,7 +1398,7 @@
 	}
 	focus = {
 		id = FRA_methodical_battle
-		icon = GFX_goal_generic_cavalry
+		icon = GFX_focus_liberation2
 		x = -1
 		y = 1
 		
@@ -1473,7 +1475,7 @@
 	}
 	focus = {
 		id = FRA_extend_the_maginot_line
-		icon = GFX_focus_BEL_eben_emael_fortress
+		icon = GFX_focus_FRA_maginot_line
 		prerequisite = { focus = FRA_alpine_forts }
 		x = 0
 		y = 1
@@ -1502,7 +1504,7 @@
 	}
 	focus = {
 		id = FRA_infantry_focus
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_FRA_groupes_francs
 		prerequisite = { focus = FRA_firepower_kills }
 		x = 0
 		y = 1
@@ -1533,7 +1535,7 @@
 	}
 	focus = {
 		id = FRA_heavy_armor_focus
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_focus_b1_bis
 		prerequisite = { focus = FRA_artillery_focus }
 		x = 0
 		y = 1
@@ -2004,7 +2006,7 @@
 	}
 	focus = {
 		id = FRA_battle_of_maneuver
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_focus_FRA_degaulle
 		x = 1
 		y = 1
 		
@@ -2036,7 +2038,7 @@
 	}
 	focus = {
 		id = FRA_motorized_focus
-		icon = GFX_goal_generic_army_motorized
+		icon = GFX_focus_generic_truck
 		prerequisite = { focus = FRA_battle_of_maneuver }
 		x = 0
 		y = 1
@@ -2052,7 +2054,7 @@
 	}
 	focus = {
 		id = FRA_mechanized_focus
-		icon = GFX_goal_generic_build_tank
+		icon = GFX_focus_generic_mechanized
 		prerequisite = { focus = FRA_motorized_focus }
 		x = 0
 		y = 1
@@ -2070,7 +2072,7 @@
 	}
 	focus = {
 		id = FRA_light_medium_armor
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_focus_FRA_estienne
 		prerequisite = { focus = FRA_mechanized_focus }
 		x = 0
 		y = 1
@@ -2092,7 +2094,7 @@
 	}
 	focus = {
 		id = FRA_air_dominance
-		icon = GFX_goal_generic_air_fighter2
+		icon = GFX_focus_FRA_air_force
 		x = 3
 		y = 1
 		
@@ -2123,7 +2125,7 @@
 	}
 	focus = {
 		id = FRA_cas_focus
-		icon = GFX_goal_generic_CAS
+		icon = GFX_focus_FRA_croix_de_feu
 	 	prerequisite = { 
 	 		focus = FRA_air_dominance
 	 	}
@@ -2145,7 +2147,7 @@
 	}
 	focus = {
 		id = FRA_air_ground_cooperation
-		icon = GFX_goal_generic_air_bomber
+		icon = GFX_focus_HUN_establish_the_mavag_aircraft_factory
 		x = 0
 		y = 2
 		
@@ -2181,7 +2183,7 @@
 	}
 	focus = {
 		id = FRA_flying_artillery
-		icon = GFX_goal_poland_goal
+		icon = GFX_focus_generic_cas_aircraft
 		x = 0
 		y = 3
 		
@@ -2212,7 +2214,7 @@
 	}
 	focus = {
 		id = FRA_army_reform
-		icon = GFX_focus_chi_army_reform
+		icon = GFX_FRA_army_reform
 		prerequisite = { 
 			focus = FRA_light_medium_armor 
 			focus = FRA_heavy_armor_focus 

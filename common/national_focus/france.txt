@@ -2382,7 +2382,7 @@
 
 	focus = {
 		id = FRA_aftermath_of_sudetenland_crisis
-		icon = GFX_focus_ARG_defense_and_democracy
+		icon = GFX_focus_BRA_end_the_state_of_emergency
 		cost = 5
 		prerequisite = {
 			focus = FRA_reform_the_labour_laws
@@ -2444,7 +2444,7 @@
 		
 	focus = {
 		id = FRA_agricultural_protectionism
-		icon = GFX_goal_generic_defence
+		icon = GFX_focus_generic_farmland
 		x = 0
 		y = 1
 		
@@ -2808,7 +2808,7 @@
 	}
 	focus = {
 		id = FRA_review_foreign_policy
-		icon = GFX_goal_support_democracy
+		icon = GFX_focus_FRA_foreign_politics
 		x = 6
 		y = 1
 
@@ -2851,7 +2851,7 @@
 
 	focus = {
 		id = FRA_buy_time
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_chi_reach_out_to_france
 		x = 0
 		y = 1
 		prerequisite = {
@@ -3042,7 +3042,7 @@
 
 	focus = {
 		id = FRA_strengthen_government_support
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_france_first
 		available = {
 		}
 	 	prerequisite = {
@@ -3149,14 +3149,15 @@
 
 	focus = {
 		id = FRA_freedom_front
-		icon = GFX_goal_generic_national_unity
-		x = 0
-		y = 1
+		icon = GFX_focus_generic_catholic_dominion
+		x = 1
+		y = 2
 		
 		prerequisite = {
-			focus = FRA_agricultural_protectionism
+			focus = FRA_venerate_the_craftsman
+			focus = FRA_economic_devolution
 		}
-		relative_position_id = FRA_agricultural_protectionism
+		relative_position_id = FRA_venerate_the_craftsman
 		cost = 5
 
 		ai_will_do = {
@@ -3164,7 +3165,7 @@
 		}
 
 		available = {
-			GER = { has_completed_focus = GER_demand_sudetenland }
+			
 		}
 		
 		bypass = {
@@ -3191,7 +3192,7 @@
 
 	focus = {
 		id = FRA_aid_small_businesses
-		icon = GFX_goal_generic_consumer_goods
+		icon = GFX_focus_DEN_no_regulations
 		x = 1
 		y = 1
 		offset = {
@@ -3238,15 +3239,14 @@
 	
 	focus = {
 		id = FRA_laissez_faire
-		icon = GFX_goal_generic_consumer_goods
-		x = 2
+		icon = GFX_focus_RAJ_trickle_down_economics
+		x = 0
 		y = 1
-		mutually_exclusive = { focus = FRA_rebuild_the_military }
 		prerequisite = {
-			focus = FRA_freedom_front
+			focus = FRA_agricultural_protectionism
 		}
 		
-		relative_position_id = FRA_freedom_front
+		relative_position_id = FRA_agricultural_protectionism
 		cost = 5
 
 		ai_will_do = {
@@ -3254,7 +3254,7 @@
 		}
 
 		available = {
-			
+			GER = { has_completed_focus = GER_demand_sudetenland }
 		}
 		
 		bypass = {
@@ -3283,15 +3283,15 @@
 		icon = GFX_focus_army
 		x = -2
 		y = 1
-		mutually_exclusive = { focus = FRA_laissez_faire }
+		mutually_exclusive = { focus = FRA_protect_the_rights_of_man }
 		offset = {
 			x = 0
 			y = 0
 		}
 		prerequisite = { 
-			focus = FRA_freedom_front
+			focus = FRA_laissez_faire
 		}
-		relative_position_id = FRA_freedom_front
+		relative_position_id = FRA_laissez_faire
 		
 		cost = 5
 		ai_will_do = {
@@ -3314,7 +3314,8 @@
 
 	focus = {
 		id = FRA_class_collaboration
-		icon = GFX_focus_CHL_revise_the_social_classes
+		icon = GFX_goal_FRA_class_collaboration
+		#GFX_focus_CHL_revise_the_social_classes
 		cost = 5
 		prerequisite = {
 			focus = FRA_rebuild_the_military
@@ -3334,7 +3335,7 @@
 
 	focus = {
 		id = FRA_venerate_the_craftsman
-		icon = GFX_goal_generic_production
+		icon = GFX_focus_generic_land_reclamation
 		x = 1
 		y = 1
 		offset = {
@@ -3368,15 +3369,14 @@
 
 	focus = {
 		id = FRA_protect_the_rights_of_man
-		icon = GFX_goal_generic_demand_territory
-		x = 1
-		y = 2
-		
+		icon = GFX_focus_AUS_lawmaking_leniency
+		x = 2
+		y = 1
+		mutually_exclusive = { focus = FRA_rebuild_the_military }
 		prerequisite = {
-			focus = FRA_economic_devolution
-			focus = FRA_venerate_the_craftsman
+			focus = FRA_laissez_faire
 		}
-		relative_position_id = FRA_venerate_the_craftsman
+		relative_position_id = FRA_laissez_faire
 		cost = 5
 
 		ai_will_do = {
@@ -3403,7 +3403,7 @@
 	
 	focus = {
 		id = FRA_stimulate_the_dynamic_market
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_focus_generic_currency_reforms
 		x = 0
 		y = 2
 		prerequisite = {
@@ -3412,7 +3412,7 @@
 		prerequisite = {
 			focus = FRA_promote_entrepeneurship
 		}
-		relative_position_id = FRA_laissez_faire
+		relative_position_id = FRA_protect_the_rights_of_man
 		cost = 10
 
 		ai_will_do = {
@@ -3440,14 +3440,14 @@
 	
 	focus = {
 		id = FRA_economic_devolution
-		icon = GFX_goal_generic_positive_trade_relations
+		icon = GFX_focus_generic_economic_recovery
 		x = -1
 		y = 1
 		
 		prerequisite = {
-			focus = FRA_laissez_faire
+			focus = FRA_protect_the_rights_of_man
 		}
-		relative_position_id = FRA_laissez_faire
+		relative_position_id = FRA_protect_the_rights_of_man
 		cost = 5
 
 		ai_will_do = {
@@ -3504,14 +3504,14 @@
 	}
 	focus = {
 		id = FRA_promote_entrepeneurship
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_focus_AFG_promote_the_counter_elite
 		x = 1
 		y = 1
 		
 		prerequisite = {
-			focus = FRA_laissez_faire
+			focus = FRA_protect_the_rights_of_man
 		}
-		relative_position_id = FRA_laissez_faire
+		relative_position_id = FRA_protect_the_rights_of_man
 		cost = 5
 
 		ai_will_do = {
@@ -3537,7 +3537,7 @@
 
 		focus = {
 		id = FRA_support_blum
-		icon = GFX_focus_generic_democratic_europe
+		icon = GFX_support_blum
 		x = 2
 		y = 1
 		mutually_exclusive = { focus = FRA_support_daladier }
@@ -3572,7 +3572,7 @@
 	
 	focus = {
 		id = FRA_support_daladier
-		icon = GFX_focus_generic_self_management
+		icon = GFX_support_daladier
 		cost = 5
 		prerequisite = {
 			focus = FRA_aftermath_of_sudetenland_crisis
@@ -3637,7 +3637,7 @@
 
 	focus = {
 		id = FRA_further_the_reforms
-		icon = GFX_focus_SOV_merge_plants
+		icon = GFX_goal_cuba_support_the_confederation_of_cuban_workers
 		cost = 5
 		prerequisite = {
 			focus = FRA_support_blum
@@ -3662,7 +3662,7 @@
 
 focus = {
 		id = FRA_reynaud_economic_reforms
-		icon = GFX_goal_generic_consumer_goods
+		icon = GFX_goal_FRA_reynaud_economic_reforms
 		cost = 5
 
 		prerequisite = {

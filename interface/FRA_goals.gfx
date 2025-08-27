@@ -49,3 +49,37 @@ spriteTypes = {
 		name = "GFX_focus_FRA_pop_front"
 		texturefile = "gfx/interface/goals/FRA_continue_popfront.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_focus_FRA_foreign_politics"
+		texturefile = "gfx/interface/goals/FRA_foreign_politics.dds"
+	}
+	SpriteType = {
+		name = "GFX_support_blum"
+		texturefile = "gfx/interface/goals/fra/r56_goal_FRA_blum.dds"
+	}
+
+	spriteType = {
+		name = "GFX_support_daladier"
+		texturefile = "gfx/interface/goals/fra/r56_goal_FRA_daladier.dds"
+	}
+
+	spriteType = {
+		name = "GFX_france_first"
+		texturefile = "gfx/interface/goals/fra/r56_goal_FRA_francefirst.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_FRA_class_collaboration"
+		texturefile = "gfx/interface/goals/fra/r56_goal_FRA_class_collaboration.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_FRA_reynaud_economic_reforms"
+		texturefile = "gfx/interface/goals/fra/r56_goal_FRA_reynaud_economic_reforms.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_cuba_support_the_confederation_of_cuban_workers"
+		texturefile = "gfx/interface/goals/fra/goal_cuba_support_the_confederation_of_cuban_workers.dds"
+	}

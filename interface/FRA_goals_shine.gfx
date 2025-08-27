@@ -292,3 +292,228 @@ SpriteType = {
 		}
 		legacy_lazy_load = no
 	}
+
+	SpriteType = {
+		name = "GFX_focus_FRA_foreign_politics_shine"
+		texturefile = "gfx/interface/goals/FRA_foreign_politics.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FRA_foreign_politics.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/FRA_foreign_politics.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+   		name = "GFX_support_blum_shine"
+    	texturefile = "gfx/interface/goals/fra/r56_goal_FRA_blum.dds"
+    	effectFile = "gfx/FX/buttonstate.lua"
+    	animation = {
+    	animationmaskfile = "gfx/interface/goals/fra/r56_goal_FRA_blum.dds"
+      	animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+      	animationrotation = -90.0
+      	animationlooping = no
+      	animationtime = 0.75
+      	animationdelay = 0
+      	animationblendmode = "add"
+      	animationtype = "scrolling"
+      	animationrotationoffset = { x = 0.0 y = 0.0 }
+      	animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+
+    animation = {
+      	animationmaskfile = "gfx/interface/goals/fra/r56_goal_FRA_blum.dds"
+      	animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+      	animationrotation = 90.0
+      	animationlooping = no
+      	animationtime = 0.75
+    	animationdelay = 0
+      	animationblendmode = "add"
+      	animationtype = "scrolling"
+      	animationrotationoffset = { x = 0.0 y = 0.0 }
+      	animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+  }
+
+  SpriteType = {
+    	name = "GFX_support_daladier_shine"
+    	texturefile = "gfx/interface/goals/fra/r56_goal_FRA_daladier.dds"
+   			 effectFile = "gfx/FX/buttonstate.lua"
+    	animation = {
+      	animationmaskfile = "gfx/interface/goals/fra/r56_goal_FRA_daladier.dds"
+      	animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+     	 animationrotation = -90.0
+      	animationlooping = no
+      	animationtime = 0.75
+      	animationdelay = 0
+     	animationblendmode = "add"
+     	 animationtype = "scrolling"
+     	 animationrotationoffset = { x = 0.0 y = 0.0 }
+     	 animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+
+    animation = {
+      	animationmaskfile = "gfx/interface/goals/fra/r56_goal_FRA_daladier.dds"
+      	animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+     	animationrotation = 90.0
+      	animationlooping = no
+      	animationtime = 0.75
+    	animationdelay = 0
+      	animationblendmode = "add"
+     	animationtype = "scrolling"
+      	animationrotationoffset = { x = 0.0 y = 0.0 }
+      	animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+  }
+
+SpriteType = {
+    name = "GFX_france_first_shine"
+    texturefile = "gfx/interface/goals/fra/r56_goal_FRA_francefirst.dds"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+      animationmaskfile = "gfx/interface/goals/fra/r56_goal_FRA_francefirst.dds"
+      animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+      animationrotation = -90.0
+      animationlooping = no
+      animationtime = 0.75
+      animationdelay = 0
+      animationblendmode = "add"
+      animationtype = "scrolling"
+      animationrotationoffset = { x = 0.0 y = 0.0 }
+      animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+
+    animation = {
+      animationmaskfile = "gfx/interface/goals/fra/r56_goal_FRA_francefirst.dds"
+      animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+      animationrotation = 90.0
+      animationlooping = no
+      animationtime = 0.75
+      animationdelay = 0
+      animationblendmode = "add"
+      animationtype = "scrolling"
+      animationrotationoffset = { x = 0.0 y = 0.0 }
+      animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+  }
+
+SpriteType = {
+    name = "GFX_goal_FRA_class_collaboration_shine"
+    texturefile = "gfx/interface/goals/fra/r56_goal_FRA_class_collaboration.dds"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+      animationmaskfile = "gfx/interface/goals/fra/r56_goal_FRA_class_collaboration.dds"
+      animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+      animationrotation = -90.0
+      animationlooping = no
+      animationtime = 0.75
+      animationdelay = 0
+      animationblendmode = "add"
+      animationtype = "scrolling"
+      animationrotationoffset = { x = 0.0 y = 0.0 }
+      animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+
+    animation = {
+      animationmaskfile = "gfx/interface/goals/fra/r56_goal_FRA_class_collaboration.dds"
+      animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+      animationrotation = 90.0
+      animationlooping = no
+      animationtime = 0.75
+      animationdelay = 0
+      animationblendmode = "add"
+      animationtype = "scrolling"
+      animationrotationoffset = { x = 0.0 y = 0.0 }
+      animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+  }
+
+
+SpriteType = {
+    name = "GFX_goal_FRA_reynaud_economic_reforms_shine"
+    texturefile = "gfx/interface/goals/fra/r56_goal_FRA_reynaud_economic_reforms.dds"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+      animationmaskfile = "gfx/interface/goals/fra/r56_goal_FRA_reynaud_economic_reforms.dds"
+      animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+      animationrotation = -90.0
+      animationlooping = no
+      animationtime = 0.75
+      animationdelay = 0
+      animationblendmode = "add"
+      animationtype = "scrolling"
+      animationrotationoffset = { x = 0.0 y = 0.0 }
+      animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+
+    animation = {
+      animationmaskfile = "gfx/interface/goals/fra/r56_goal_FRA_reynaud_economic_reforms.dds"
+      animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+      animationrotation = 90.0
+      animationlooping = no
+      animationtime = 0.75
+      animationdelay = 0
+      animationblendmode = "add"
+      animationtype = "scrolling"
+      animationrotationoffset = { x = 0.0 y = 0.0 }
+      animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+  }
+
+SpriteType = {
+    name = "GFX_goal_cuba_support_the_confederation_of_cuban_workers_shine"
+    texturefile = "gfx/interface/goals/fra/goal_cuba_support_the_confederation_of_cuban_workers.dds"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+      animationmaskfile = "gfx/interface/goals/fra/goal_cuba_support_the_confederation_of_cuban_workers.dds"
+      animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+      animationrotation = -90.0
+      animationlooping = no
+      animationtime = 0.75
+      animationdelay = 0
+      animationblendmode = "add"
+      animationtype = "scrolling"
+      animationrotationoffset = { x = 0.0 y = 0.0 }
+      animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+
+    animation = {
+      animationmaskfile = "gfx/interface/goals/fra/goal_cuba_support_the_confederation_of_cuban_workers.dds"
+      animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+      animationrotation = 90.0
+      animationlooping = no
+      animationtime = 0.75
+      animationdelay = 0
+      animationblendmode = "add"
+      animationtype = "scrolling"
+      animationrotationoffset = { x = 0.0 y = 0.0 }
+      animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+  }

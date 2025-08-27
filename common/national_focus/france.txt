@@ -2448,6 +2448,10 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			country_event = {
+				id = msb.8
+				hours = 12
+			}
 			add_ideas = { FRA_matignon_agreements }
 			if = {
 				limit = {

@@ -111,6 +111,6 @@ FRA_compromise_with_the_leagues_warning2:0 "§R Doing this focus will lock you f
 
 # Events
 
- msb_france.1.t:0 "Leon Blum Resigns"
- msb_france.1.d:0 "With inflation rising 46%, the imposition of the 40-hour week proved highly inefficient, as the industry had a difficult time adjusting to it. The economic confusion hindered the rearmament effort, and the rapid growth of [GER.GetAdjective] armaments forced Blum to abandon the social reform programs of the Popular Front that had counted heavily on. Léon Blum resigns, the Parlement refusing to give him the means to solve the economic crisis."
- msb_france.1.a:0 "Edouard Daladier and the radicals will form a new government."
+ msb.8.t:0 "Leon Blum Resigns"
+ msb.8.d:0 "With inflation rising 46%, the imposition of the 40-hour week proved highly inefficient, as the industry had a difficult time adjusting to it. The economic confusion hindered the rearmament effort, and the rapid growth of [GER.GetAdjective] armaments forced Blum to abandon the social reform programs of the Popular Front that had counted heavily on. Léon Blum resigns, the Parlement refusing to give him the means to solve the economic crisis."
+ msb.8.a:0 "Edouard Daladier and the radicals will form a new government."

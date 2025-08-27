@@ -128,9 +128,9 @@ country_event = {
 # event for the collapse of the popular front - switch Blum with Daladier
 # Blum resigns
 country_event = {
-	id = msb_france.1
-	title = msb_france.1.t
-	desc = msb_france.1.d
+	id = msb.8
+	title = msb.8.t
+	desc = msb.8.d
 	picture = GFX_report_event_tur_political_rally
 
 	trigger = {
@@ -143,7 +143,7 @@ country_event = {
 		days = 30
 	}
 	option = {
-		name = msb_france.1.a
+		name = msb.8.a
 		retire_country_leader = yes
 		promote_character = FRA_edouard_daladier
 		set_party_name = { 

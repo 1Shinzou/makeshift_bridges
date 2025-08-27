@@ -88,4 +88,68 @@ spriteTypes = {
 		name = "GFX_goal_cuba_support_the_confederation_of_cuban_workers"
 		texturefile = "gfx/interface/goals/fra/goal_cuba_support_the_confederation_of_cuban_workers.dds"
 	}
-}
+
+	SpriteType = {
+		name = "GFX_focus_FRA_weygand_plan"
+		texturefile = "gfx/interface/goals/focus_fra_weygand_plan.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_FRA_gamelin_plan"
+		texturefile = "gfx/interface/goals/focus_fra_gamelin_plan.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_FRA_syria"
+		texturefile = "gfx/interface/goals/focus_FRA_syria.dds"
+	}
+
+SpriteType = {
+		name = "GFX_focus_FRA_invest_alg"
+		texturefile = "gfx/interface/goals/focus_FRA_soviet_industry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_FRA_invest_fra"
+		texturefile = "gfx/interface/goals/focus_FRA_soviet_industry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_FRA_degaulle"
+		texturefile = "gfx/interface/goals/fpm_focus_FRA_degaulle.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_FRA_groupes_francs"
+		texturefile = "gfx/interface/goals/fpm_focus_FRA_groupes_franc.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_FRA_african_fac"
+		texturefile = "gfx/interface/goals/fpm_focus_FRA_african_fac.dds"
+	}
+
+SpriteType = {
+		name = "GFX_focus_FRA_croix_de_feu"
+		texturefile = "gfx/interface/goals/fpm_focus_FRA_croix_de_feu.dds"
+	}
+
+SpriteType = {
+		name = "GFX_focus_liberation2"
+		texturefile = "gfx/interface/goals/liberation2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_FRA_maginot_line"
+		texturefile = "gfx/interface/goals/FRA_maginot_line.dds"
+	}
+
+SpriteType = {
+		name = "GFX_focus_FRA_air_force"
+		texturefile = "gfx/interface/goals/FRA_air_force.dds"
+	}
+
+SpriteType = {
+		name = "GFX_focus_b1_bis"
+		texturefile = "gfx/interface/goals/b1_bis.dds"
+	}

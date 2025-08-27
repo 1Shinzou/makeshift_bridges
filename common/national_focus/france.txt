@@ -3666,17 +3666,17 @@
 			factor = 4
 		}
 		completion_reward = {
-			add_ideas = FRA_rearmament_policy
-		search_filters = { 
-				FOCUS_FILTER_INDUSTRY
-			}
 			add_tech_bonus = {
 				name = FRA_rearmament_policy
 				category = industry
 				uses = 1
 				bonus = 2
 			}
+			add_ideas = FRA_rearmament_policy
 		}
+		search_filters = { 
+				FOCUS_FILTER_INDUSTRY
+			}
 	}
 
 
@@ -3694,15 +3694,15 @@
 			factor = 4
 		}
 		completion_reward = {
-			add_ideas = FRA_further_the_reforms
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		add_tech_bonus = {
+			add_tech_bonus = {
 				name = FRA_further_the_reforms
 				category = industry
 				uses = 2
 				bonus = 2
 			}
+			add_ideas = FRA_further_the_reforms
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 
 focus = {

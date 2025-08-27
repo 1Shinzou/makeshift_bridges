@@ -4480,3 +4480,32 @@ country_event = {
 		effect_tooltip = { FRA = { transfer_state = 543 } }
 	}
 }
+
+##### MSB #####
+
+# event for the collapse of the popular front - switch Blum with Daladier
+# Blum resigns
+country_event = {
+	id = msb_france.1
+	title = msb_france.1.t
+	desc = msb_france.1.d
+	picture = GFX_report_event_generic_rally
+
+	trigger = {
+		original_tag = FRA
+		GER = { has_completed_focus = GER_anschluss }
+		NOT = { has_completed_focus = FRA_revive_the_national_bloc }
+	}
+
+	option = {
+		name = msb_france.1.a
+		retire_country_leader = yes
+		promote_character = FRA_edouard_daladier
+		set_party_name = { 
+		    ideology = democratic 
+		    long_name = "Parti Radical" 
+		    name = "Parti Radical"
+		}
+		set_country_flag = blum_resigned
+	}
+}

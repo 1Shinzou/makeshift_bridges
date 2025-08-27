@@ -3184,6 +3184,61 @@
 		}
 	}
 
+
+	focus = {
+		id = FRA_aid_small_businesses
+		icon = GFX_focus_DEN_no_regulations
+		x = 1
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = FRA_class_collaboration
+		}
+		prerequisite = {
+			focus = FRA_venerate_the_craftsman
+		}
+		relative_position_id = FRA_class_collaboration
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			554 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_idea = FRA_inefficient_economy_2 }
+				swap_ideas = {
+					remove_idea = FRA_inefficient_economy_2
+					add_idea = FRA_inefficient_economy_1
+				}
+			}
+		}
+	}
+
+
+	
+
 	focus = {
 		id = FRA_freedom_front
 		icon = GFX_focus_generic_catholic_dominion
@@ -3227,59 +3282,6 @@
 		}
 	}	
 
-	focus = {
-		id = FRA_aid_small_businesses
-		icon = GFX_focus_DEN_no_regulations
-		x = 1
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = {
-			focus = FRA_class_collaboration
-		}
-			prerequisite = {
-			focus = FRA_venerate_the_craftsman
-		}
-		relative_position_id = FRA_class_collaboration
-		
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			
-		}
-		
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			554 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			if = {
-				limit = { has_idea = FRA_inefficient_economy_2 }
-				swap_ideas = {
-					remove_idea = FRA_inefficient_economy_2
-					add_idea = FRA_inefficient_economy_1
-				}
-			}
-		}
-	}
-
-
-	
 	
 	focus = {
 		id = FRA_laissez_faire
@@ -3607,14 +3609,22 @@
 		available_if_capitulated = yes
 		completion_reward = {
 			add_stability = 0.1
-			retire_country_leader = yes
-			promote_character = FRA_leon_blum
 
+		if = { 
+			limit = { 
+				has_country_leader = { character = FRA_edouard_daladier }
+ 
+			}
+			retire_country_leader = yes
+
+		}
+			promote_character = FRA_leon_blum
 			set_party_name = { 
 		    	ideology = democratic 
 		    	long_name = "Parti socialiste" 
 		    	name = "Parti socialiste"
 			}
+
 			swap_ideas = {
 				remove_idea = FRA_inefficient_economy_2
 				add_idea = FRA_inefficient_economy_1

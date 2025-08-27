@@ -2072,7 +2072,7 @@
 	}
 	focus = {
 		id = FRA_light_medium_armor
-		icon = GFX_focus_FRA_estienne
+		icon = GFX_focus_FRA_renault_ue
 		prerequisite = { focus = FRA_mechanized_focus }
 		x = 0
 		y = 1
@@ -5122,7 +5122,7 @@ focus = {
 	focus = {
 		id = FRA_the_maquis
 		icon = GFX_focus_focus_fra_maquis
-		x = -4
+		x = -3
 		y = 1
 		offset = {
 			x = 0

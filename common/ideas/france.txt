@@ -59,6 +59,24 @@ ideas = {
 				industrial_capacity_factory = 0.1
 			}
 		}
+
+		FRA_increase_military_spendings2 = {
+		name = FRA_increase_military_spendings
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			picture = generic_war_preparation
+
+			modifier = {
+				industrial_capacity_factory = 0.2
+			}
+		}
 	
 
 

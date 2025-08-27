@@ -160,6 +160,7 @@ SpriteType = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_FRA_estienne"
-		texturefile = "gfx/interface/goals/fpm_focus_FRA_esienne.dds"
+		name = "GFX_focus_FRA_renault_ue"
+		texturefile = "gfx/interface/goals/renault_ue.dds"
 	}
+}

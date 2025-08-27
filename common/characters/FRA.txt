@@ -140,7 +140,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ brilliant_strategist cavalry_leader organizer war_hero trickster }
+			traits={ brilliant_strategist panzer_leader cavalry_leader organizer war_hero trickster }
 			skill=4
 			attack_skill=4
 			defense_skill=4

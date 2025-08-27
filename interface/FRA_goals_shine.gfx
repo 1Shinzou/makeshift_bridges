@@ -975,7 +975,7 @@ SpriteType = {
 		legacy_lazy_load = no
 	}
 
-		}
+
 	SpriteType = {
 		name = "GFX_FRA_invest_syr_shine"
 		texturefile = "gfx/interface/goals/FRA_invest_syr.dds"
@@ -1007,13 +1007,12 @@ SpriteType = {
 		}
 		legacy_lazy_load = no
 	}
-
-		SpriteType = {
-		name = "GFX_focus_FRA_estienne_shine"
-		texturefile = "gfx/interface/goals/fpm_focus_FRA_esienne.dds"
+	SpriteType = {
+		name = "GFX_focus_FRA_renault_ue_shine"
+		texturefile = "gfx/interface/goals/renault_ue.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/fpm_focus_FRA_esienne.dds"
+			animationmaskfile = "gfx/interface/goals/renault_ue.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1026,7 +1025,7 @@ SpriteType = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/fpm_focus_FRA_esienne.dds"
+			animationmaskfile = "gfx/interface/goals/renault_ue.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -1039,3 +1038,4 @@ SpriteType = {
 		}
 		legacy_lazy_load = no
 	}
+}

@@ -26,7 +26,7 @@
 		x = 7
 		y = 0
 		mutually_exclusive = { }
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -2072,7 +2072,7 @@
 	}
 	focus = {
 		id = FRA_light_medium_armor
-		icon = GFX_focus_FRA_estienne
+		icon = GFX_focus_FRA_renault_ue
 		prerequisite = { focus = FRA_mechanized_focus }
 		x = 0
 		y = 1
@@ -3358,6 +3358,7 @@
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = { FRA_rebuild_the_military }
+			army_experience = 100
 		}
 	}
 
@@ -3792,6 +3793,10 @@ focus = {
 			factor = 2
 		}
 		available = {
+			any_owned_state = {
+				is_on_continent = europe 
+				is_controlled_by = ROOT
+			}
 				ROOT = {
 					controls_state = 778
 					controls_state = 779
@@ -3998,7 +4003,7 @@ focus = {
 				
 	focus = {
 		id = FRA_general_work_council
-		icon = GFX_goal_generic_construction
+		icon = GFX_focus_generic_industrialists
 		x = 0
 		y = 2
 	
@@ -5118,7 +5123,7 @@ focus = {
 	focus = {
 		id = FRA_the_maquis
 		icon = GFX_focus_focus_fra_maquis
-		x = -4
+		x = -3
 		y = 1
 		offset = {
 			x = 0

@@ -2955,7 +2955,7 @@
 
 	focus = {
 		id = FRA_departements_doutremer
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_focus_fra_le_deluge
 		x = 1
 		y = 2
 	

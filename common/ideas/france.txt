@@ -646,9 +646,6 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			cancel = {
-				has_global_flag = fall_of_france
-			}
 
 			allowed_civil_war = {
 				always = yes

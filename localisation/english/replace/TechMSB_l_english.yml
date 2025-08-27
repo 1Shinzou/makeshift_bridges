@@ -9,3 +9,9 @@ sp_land_super_heavy_railway_gun: "Railway Gun"
 # GER FOCUS
 GER_gain_autarkic_economy_lock_free_trade_tt: "§RLock§! §Y$free_trade$§!. Gain §Y$autarkic_economy$§!."
 
+# FRANCE EVENT
+
+ france.31.t:0 "[ROOT.GetLeader] Resigns"
+ france.31.d:0 "With the outbreak of yet another war, it must fall to fresh leadership to fight. Whilst few would doubt that [ROOT.GetLeader] has been a fine prime minister, he simply could not contend with the extraordinary set of circumstances in which France has found herself. We can but pray there is light at the end of the tunnel."
+ france.31.a:0 "Monsieur Reynaud shall seek to form a government."
+

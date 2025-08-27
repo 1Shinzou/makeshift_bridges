@@ -3358,6 +3358,7 @@
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = { FRA_rebuild_the_military }
+			army_experience = 100
 		}
 	}
 

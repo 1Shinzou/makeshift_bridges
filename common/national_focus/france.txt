@@ -26,7 +26,7 @@
 		x = 7
 		y = 0
 		mutually_exclusive = { }
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -3792,6 +3792,10 @@ focus = {
 			factor = 2
 		}
 		available = {
+			any_owned_state = {
+				is_on_continent = europe 
+				is_controlled_by = ROOT
+			}
 				ROOT = {
 					controls_state = 778
 					controls_state = 779
@@ -3998,7 +4002,7 @@ focus = {
 				
 	focus = {
 		id = FRA_general_work_council
-		icon = GFX_goal_generic_construction
+		icon = GFX_focus_generic_industrialists
 		x = 0
 		y = 2
 	

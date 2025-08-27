@@ -38,7 +38,6 @@ ideas = {
 
 			modifier = {
 				production_factory_max_efficiency_factor = 0.10
-				production_factory_start_efficiency_factor = 0.10
 			}
 		}
 
@@ -316,7 +315,7 @@ ideas = {
 			
 			modifier = {
 				economy_cost_factor = -0.5
-				conversion_cost_civ_to_mil_factor = -0.5
+				#conversion_cost_civ_to_mil_factor = -0.5
 			}
 		}
 		FRA_expanded_citizenship = {

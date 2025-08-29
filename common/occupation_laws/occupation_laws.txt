@@ -432,6 +432,12 @@ harsh_quotas_occupation = {
 		custom_modifier_tooltip = "factory_sabotage_decrease_tooltip"
 	}
 
+	visible = {
+		NOT = { 
+			original_tag = FRA
+			}
+		}
+
 	ai_will_do = {
 		# enabled if has damaged factories
 		# gets higher score if more are damaged

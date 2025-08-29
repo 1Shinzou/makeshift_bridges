@@ -640,29 +640,6 @@ ideas = {
 			
 		}
 
-		FRA_up_with_jean_darc2 = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			modifier = {
-				army_attack_factor = 0.05
-				army_core_defence_factor = 0.05
-				political_power_gain = 0.05
-				war_support_factor = 0.05
-			}
-
-			picture = SWI_spirit_of_helvetia_aggressive_war
-			
-			removal_cost = -1			
-			
-		}
-
 		FRA_revolution_ideas = {
 
 			allowed = {

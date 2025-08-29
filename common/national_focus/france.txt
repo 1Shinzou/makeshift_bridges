@@ -3780,123 +3780,52 @@ focus = {
 	}
 
 
-		focus = { #### Fuck Sly ###
-		id = FRA_continue_mandat
-		icon = GFX_focus_FRA_decolonization
-		cost = 52.2
-			prerequisite = {
-			focus = FRA_military_factories focus = FRA_industrial_expansion focus = FRA_colonial_industry
-		}
-
-	
-		mutually_exclusive = {
-			
-		}
+	focus = {
+		id = FRA_global_integration
+		icon = GFX_focus_generic_resource_extraction
 		x = 0
 		y = 1
-		relative_position_id = FRA_military_factories
 		
+		prerequisite = { focus = FRA_colonial_industry focus = FRA_military_factories focus = FRA_industrial_expansion  }
+		mutually_exclusive = { }
+		relative_position_id = FRA_military_factories
+		cost = 10
+	
 		ai_will_do = {
-			factor = 2
+			factor = 1
 		}
+	
 		available = {
-			any_owned_state = {
-				is_on_continent = europe 
-				is_controlled_by = ROOT
-			}
-				ROOT = {
-					controls_state = 778
-					controls_state = 779
-					controls_state = 780
-				}
-		}
-		completion_reward = {
-			add_ideas = { FRA_global_investments }
-
-			if = {
-				limit = {
-					778 = {
-						controller = {
-							OR = {
-								tag = ROOT
-								is_subject_of = ROOT
-							}
-
-						}
-					}
-				}
-				778 = {
-					add_building_construction = {
-							type = infrastructure
-							level = 1
-							instant_build = yes
-						}
-
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_extra_state_shared_building_slots = 10
-				}
-			}
-			if = {
-				limit = {
-					779 = {
-						controller = {
-							OR = {
-								tag = ROOT
-								is_subject_of = ROOT
-							}
-						}
-					}
-				}
-				779 = {
-					add_building_construction = {
-							type = infrastructure
-							level = 1
-							instant_build = yes
-						}
-
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_extra_state_shared_building_slots = 10
-				}
-			}
-			if = {
-				limit = {
-					780 = {
-						controller = {
-							OR = {
-								tag = ROOT
-								is_subject_of = ROOT
-							}
-						}
-					}
-				}
-				780 = {
 				
-					add_building_construction = {
-							type = infrastructure
-							level = 1
-							instant_build = yes
-						}
-
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_extra_state_shared_building_slots = 10
-					}
-				}
-	  		}
 		}
+			
+		bypass = {
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			539 = { 
+				add_resource = {
+					type = steel
+					amount = 24
+				}
+				add_resource = {
+					type = oil
+					amount = 24
+				}
+				add_resource = {
+					type = tungsten
+					amount = 24
+				}
+			}
 
-
+			add_ideas = { FRA_global_investments }
+		}
+	}	
 	focus = {
 		id = FRA_form_the_state_arsenals
 		icon = GFX_goal_generic_construct_mil_factory
@@ -4138,21 +4067,6 @@ focus = {
 	
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 		completion_reward = {
-			539 = { 
-				add_resource = {
-					type = rubber
-					amount = 12
-				}
-				add_resource = {
-					type = oil
-					amount = 12
-				}
-				add_resource = {
-					type = tungsten
-					amount = 22
-				}
-			}
-
 			
 			add_timed_idea = { 
 				idea = FRA_eco_post_cap_idea 

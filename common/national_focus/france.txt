@@ -38,10 +38,7 @@
 		}
 
 		available = {
-			OR = { 
-				has_completed_focus = FRA_form_the_popular_front
-				has_completed_focus = FRA_revive_the_national_bloc
-				}
+
 			}
 		
 		bypass = {

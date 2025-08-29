@@ -433,10 +433,8 @@ harsh_quotas_occupation = {
 	}
 
 	visible = {
-		NOT = { 
-			original_tag = FRA
-			}
-		}
+		NOT = { has_government = democratic }
+	}
 
 	ai_will_do = {
 		# enabled if has damaged factories

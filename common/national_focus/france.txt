@@ -38,8 +38,11 @@
 		}
 
 		available = {
-			
-		}
+			OR = { 
+				has_completed_focus = FRA_form_the_popular_front
+				has_completed_focus = FRA_revive_the_national_bloc
+				}
+			}
 		
 		bypass = {
 
@@ -52,7 +55,7 @@
 		
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-				random_owned_state = {
+				20 = {
 				limit = {
 					is_controlled_by = ROOT
 					is_core_of = ROOT
@@ -2980,7 +2983,8 @@
 								size > 0
 							}
 						}
-						add_extra_state_shared_building_slots = 3
+						#add_extra_state_shared_building_slots = 3
+						add_manpower = 33846
 					}
 				}
 			add_state_core = 310
@@ -2992,7 +2996,8 @@
 								size > 0
 							}
 						}
-						add_extra_state_shared_building_slots = 3
+						#add_extra_state_shared_building_slots = 3
+						add_manpower = 33846
 					}
 				}
 			add_state_core = 706
@@ -3004,7 +3009,8 @@
 								size > 0
 							}
 						}
-						add_extra_state_shared_building_slots = 3
+						#add_extra_state_shared_building_slots = 3
+						add_manpower = 33846
 					}
 				}
 			add_state_core = 730
@@ -3016,7 +3022,8 @@
 								size > 0
 							}
 						}
-						add_extra_state_shared_building_slots = 3
+						#add_extra_state_shared_building_slots = 3
+						add_manpower = 33846
 					}
 				}
 		
@@ -3274,6 +3281,14 @@
 					ideology = democratic popularity = 1
 				} 
 			remove_ideas = FRA_political_violence
+			553 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 			#FRA_communism_riot_effect = yes
 			}
 		}
@@ -3765,10 +3780,10 @@ focus = {
 	}
 
 
-		focus = {
+		focus = { #### Fuck Sly ###
 		id = FRA_continue_mandat
 		icon = GFX_focus_FRA_decolonization
-		cost = 20
+		cost = 52.2
 			prerequisite = {
 			focus = FRA_military_factories focus = FRA_industrial_expansion focus = FRA_colonial_industry
 		}
@@ -3796,21 +3811,6 @@ focus = {
 				}
 		}
 		completion_reward = {
-			539 = { 
-				add_resource = {
-					type = rubber
-					amount = 12
-				}
-				add_resource = {
-					type = oil
-					amount = 12
-				}
-				add_resource = {
-					type = tungsten
-					amount = 22
-				}
-			}
-
 			add_ideas = { FRA_global_investments }
 
 			if = {
@@ -3837,7 +3837,7 @@ focus = {
 						level = 1
 						instant_build = yes
 					}
-					add_extra_state_shared_building_slots = 5
+					add_extra_state_shared_building_slots = 10
 				}
 			}
 			if = {
@@ -3863,7 +3863,7 @@ focus = {
 						level = 1
 						instant_build = yes
 					}
-					add_extra_state_shared_building_slots = 5
+					add_extra_state_shared_building_slots = 10
 				}
 			}
 			if = {
@@ -3890,7 +3890,7 @@ focus = {
 						level = 1
 						instant_build = yes
 					}
-					add_extra_state_shared_building_slots = 5
+					add_extra_state_shared_building_slots = 10
 					}
 				}
 	  		}
@@ -4138,6 +4138,21 @@ focus = {
 	
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 		completion_reward = {
+			539 = { 
+				add_resource = {
+					type = rubber
+					amount = 12
+				}
+				add_resource = {
+					type = oil
+					amount = 12
+				}
+				add_resource = {
+					type = tungsten
+					amount = 22
+				}
+			}
+
 			
 			add_timed_idea = { 
 				idea = FRA_eco_post_cap_idea 
@@ -4391,7 +4406,7 @@ focus = {
 		completion_reward = {
 			add_offsite_building = {
 				type = industrial_complex
-				level = 12
+				level = 8
 			}
 
 		}
@@ -5754,10 +5769,8 @@ focus = {
 			}
 		}
 		bypass = {
-			NOT = {
-				FRA = { is_ally_with = USA }
+			
 			}
-		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_ARMY_XP}

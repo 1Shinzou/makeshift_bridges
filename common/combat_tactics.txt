@@ -721,6 +721,11 @@ tactic_guerrilla_tactics = { #People's army defender tactic. also for German vol
 		NOT = {
 			AND = {
 				is_fighting_in_terrain = plains
+				#is_fighting_in_terrain = desert
+			}
+			AND = {
+				#is_fighting_in_terrain = plains
+				is_fighting_in_terrain = desert
 			}
 		}
 	}

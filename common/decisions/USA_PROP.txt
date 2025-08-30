@@ -58,7 +58,7 @@ USA_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			consumer_goods_factor = -0.09
+			consumer_goods_factor = -0.10
 		}
 
 		complete_effect = {
@@ -94,7 +94,7 @@ USA_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			industrial_capacity_factory = 0.075
+			industrial_capacity_factory = 0.10
 		}
 
 		complete_effect = {

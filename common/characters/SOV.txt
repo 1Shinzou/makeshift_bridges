@@ -844,7 +844,7 @@ characters = {
 		corps_commander = {
 			traits = {  panzer_leader trickster trait_engineer skilled_staffer cavalry_leader  organizer ranger commando}
 			skill = 6
-			attack_skill = 5
+			attack_skill = 6
 			defense_skill = 7
 			planning_skill = 6
 			logistics_skill = 7
@@ -1020,7 +1020,7 @@ characters = {
 			skill = 8
 			attack_skill = 5
 			defense_skill = 7
-			planning_skill = 6
+			planning_skill = 5
 			logistics_skill = 7
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }

@@ -634,11 +634,11 @@ generic_high_agility_fighter_aircraft_organization = {
 		name = generic_mio_initial_trait_high_agility_fighters_designer
 
 		equipment_bonus = {
-			air_attack = 0.1
+			air_attack = 0.15
 			air_defence = 0.15
 			air_agility = 0.15
 			maximum_speed = 0.15
-			air_range = 0.1
+			air_range = 0.15
 			thrust = 0.1
 		}
 	}

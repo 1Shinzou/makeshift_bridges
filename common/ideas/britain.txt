@@ -433,10 +433,8 @@ ideas = {
 			picture = generic_army_war_college
 			
 			modifier = {
-				air_range_factor = 0.05
-				air_superiority_efficiency = 0.05
-				experience_gain_air = 0.05
-				air_ace_generation_chance_factor = 0.25
+				air_range_factor = 0.1
+				air_superiority_efficiency = 0.1
 
 			}
 		}
@@ -1094,7 +1092,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				research_speed_factor = 0.05
+				research_speed_factor = 0.07
 			}
 		}
 		
@@ -1116,6 +1114,12 @@ ideas = {
 			
 			equipment_bonus = {
 				small_plane_airframe = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				cv_small_plane_airframe = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				medium_plane_airframe = {
 					build_cost_ic = -0.1 instant = yes
 				}
 			}

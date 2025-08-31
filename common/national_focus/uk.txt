@@ -859,7 +859,7 @@ focus_tree = {
 	focus = {
 		id = ENG_public_school_funding
 		text = ENG_public_school_funding
-		icon =  GFX_focus_SWE_education_reform
+		icon =  GFX_focus_research
 		prerequisite = { focus = ENG_time_of_economic_prosperity }
 		x = 0
 		y = 7
@@ -1550,9 +1550,9 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = uk_jet_focus
+		id = raf_fighter_command
 		prerequisite = { focus = aircraft_production_focus }
-		icon = GFX_focus_generic_jet_planes
+		icon = GFX_focus_PER_raf_planes
 		x = 0
 		y = 1
 		relative_position_id = aircraft_production_focus
@@ -1560,19 +1560,30 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
+		available = {
+			date > 1942.1.1
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
+
+			add_ideas = ENG_quality_RAF_pilots
+
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 1
+			}
+
 			add_tech_bonus = {
 				name = uk_jet_focus
 				bonus = 1.0
-				uses = 4
+				uses = 2 # was 4 
 				category = jet_technology
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
+
 	focus = {
 		id = naval_rearmament_focus
 		prerequisite = { focus = general_rearmament_focus }
@@ -1810,7 +1821,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = uk_destroyer_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1886,7 +1897,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = uk_waves_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 4
 		}	
@@ -1970,7 +1981,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = naval_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2798,7 +2809,7 @@ focus_tree = {
 		}
 
 		available = {
-			date > 1941.1.1
+			# date > 1941.1.1
 			OR = {
 				CAN = { is_in_faction_with = ENG }
 				SAF = { is_in_faction_with = ENG }
@@ -2824,7 +2835,8 @@ focus_tree = {
 			}
 			ENG = {
 				# add_ideas = ENG_the_plan
-				add_ideas = ENG_quality_RAF_pilots
+				# add_ideas = ENG_quality_RAF_pilots
+				add_ideas = ENG_british_commonwealth_air_training_plan
 			}
 		}
 	}
@@ -4483,7 +4495,6 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_stability = -0.05
 			add_ideas = Increased_enlistment
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }

@@ -2646,7 +2646,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 25
@@ -2657,7 +2657,7 @@ focus_tree = {
 		}
 
 		available = {
-			date > 1941.1.1
+			date > 1942.1.1
 		}
 		
 		bypass = {

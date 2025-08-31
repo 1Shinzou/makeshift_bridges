@@ -4320,7 +4320,7 @@ focus_tree = {
 
 			GER_modify_airforce_modifier = yes
 			add_to_variable = { 
-				GER_military_air_range_factor = 0.15
+				GER_military_air_range_factor = 0.1
 				tooltip = air_range_factor_tt
 			}
 			add_to_variable = { 
@@ -4851,7 +4851,7 @@ focus_tree = {
 		cost = 5
 		available = {
 			has_war_with_major = yes
-			has_tech = cavity_magnatron
+			is_special_project_completed = sp:sp_air_radar
 			custom_trigger_tooltip = {
 				tooltip = GER_controls_atlantic_coast_brittany_finnmark_tt
 				OR = {

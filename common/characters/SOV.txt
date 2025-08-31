@@ -170,13 +170,13 @@ characters = {
 			}
 		}
 
-		corps_commander = {
-			traits = { media_personality armor_officer war_hero winter_specialist }
-			skill = 5
+		field_marshal = {
+			traits = { war_hero brilliant_strategist winter_specialist panzer_leader combined_arms_expert logistics_wizard thorough_planner aggressive_assaulter defensive_doctrine trickster trait_engineer  cavalry_leader organizer ranger }
+			skill = 8
 			attack_skill = 5
-			defense_skill = 2
-			planning_skill = 4
-			logistics_skill = 5
+			defense_skill = 7
+			planning_skill = 5
+			logistics_skill = 7
 			legacy_id = 410
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -217,13 +217,15 @@ characters = {
 			}
 		}
 
-		corps_commander = {
-			traits = { brilliant_strategist trait_cautious armor_officer }
-			skill = 4
-			attack_skill = 3
-			defense_skill = 4
-			planning_skill = 2
-			logistics_skill = 4
+		field_marshal = {
+			traits = { 
+			#brilliant_strategist 
+			offensive_doctrine combined_arms_expert camouflage_expert  panzer_leader trickster trait_engineer skilled_staffer cavalry_leader expert_improviser fortress_buster organizer ranger commando }
+			skill = 6
+			attack_skill = 6
+			defense_skill = 7
+			planning_skill = 6
+			logistics_skill = 7
 			legacy_id = 402
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -842,12 +844,12 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = {  panzer_leader trickster trait_engineer skilled_staffer cavalry_leader  organizer ranger commando}
-			skill = 6
-			attack_skill = 6
-			defense_skill = 7
-			planning_skill = 6
-			logistics_skill = 7
+			traits = { trickster skilled_staffer cavalry_officer winter_specialist inflexible_strategist }
+			skill = 5
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -1016,12 +1018,13 @@ characters = {
 			traits = { army_CombinedArms_2}
 		}
 		corps_commander = {
-			traits = { brilliant_strategist winter_specialist panzer_leader trickster trait_engineer  cavalry_leader organizer ranger }
-			skill = 8
-			attack_skill = 5
-			defense_skill = 7
-			planning_skill = 5
-			logistics_skill = 7
+			traits = { brilliant_strategist winter_specialist trickster trait_cautious political_commissar cavalry_leader
+			}
+			skill = 5
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}

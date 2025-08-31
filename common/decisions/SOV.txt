@@ -10959,6 +10959,7 @@ SOV_industry_relocation = {
 					has_state_category = large_city
 					has_state_category = megalopolis
 					has_state_category = metropolis
+					has_state_category = rural
 				}
 				infrastructure > 1
 			}

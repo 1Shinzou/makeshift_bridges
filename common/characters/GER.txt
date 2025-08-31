@@ -687,7 +687,7 @@ characters = {
 			traits = { army_CombinedArms_2 }
 		}
 		corps_commander = {
-			traits = { harsh_leader cavalry_officer panzer_leader trickster trait_engineer skilled_staffer cavalry_leader organizer ranger commando urban_assault_specialist camouflage_expert } 
+			traits = { harsh_leader cavalry_officer panzer_leader trickster trait_engineer skilled_staffer cavalry_leader ranger commando urban_assault_specialist camouflage_expert } 
 			skill = 8
 			attack_skill = 7
 			defense_skill = 7

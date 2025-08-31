@@ -3743,6 +3743,7 @@ focus_tree = {
 		relative_position_id = ITA_increase_production
 		cost = 5
 		available = {
+			has_tech = experimental_rockets
 		}
 
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -4940,7 +4941,7 @@ focus_tree = {
 		x = 9
 		y = 0
 		relative_position_id = ITA_army_primacy_bba
-		cost = 5
+		cost = 10
 		available = {
 		}
 
@@ -4953,7 +4954,14 @@ focus_tree = {
 				name = ITA_air_innovations_bba #fighter_bonus
 				bonus = 1
 				uses = 1
-				category = light_fighter
+				technology = improved_small_airframe
+			}
+
+				add_tech_bonus = {
+				name = ITA_air_innovations_bba #fighter_bonus
+				bonus = 1
+				uses = 1
+				technology = engines_3
 			}
 
 			add_doctrine_cost_reduction = {
@@ -4984,7 +4992,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = ITA_citta_dell_aria
-				bonus = 0.5
+				bonus = 0.25
 				uses = 3 # was 4
 				category = air_equipment
 			}
@@ -8952,7 +8960,7 @@ focus_tree = {
 		id = ITA_devotion
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = ITA_to_live_as_a_lion focus = ITA_boost_the_grand_council_of_fascism }
-		prerequisite = { focus = ITA_strengthen_the_regime }
+		#prerequisite = { focus = ITA_strengthen_the_regime }
 
 		x = -6
 		y = 2

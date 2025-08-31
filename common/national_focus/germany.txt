@@ -7902,7 +7902,7 @@ focus_tree = {
 				category = armor
 				category = artillery
 				category = naval_equipment
-				category = air_equipment
+				category = rocketry
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt

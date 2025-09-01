@@ -1217,6 +1217,7 @@ set_popularities = {
 	complete_national_focus = GER_concentrated_armament_program
 	complete_national_focus = GER_zentrale_planung
 	complete_national_focus = GER_armament_rationalization
+	complete_national_focus = GER_create_rustungsstab
 	complete_national_focus = GER_totaler_krieg
 	# Politcal
 	complete_national_focus = GER_reorganize_the_wehrmacht

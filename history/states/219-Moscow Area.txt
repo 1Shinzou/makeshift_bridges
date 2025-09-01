@@ -32,10 +32,10 @@ state={
             }
 		}
 		add_core_of = SOV
-		1939.1.1 = {
+		1941.1.1 = {
 			buildings = {
 				industrial_complex = 4
-				arms_factory = 10
+				arms_factory = 20
 				3391 = {
 					land_facility = 1 # Mytischi
 				}

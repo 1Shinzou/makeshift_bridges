@@ -5453,8 +5453,8 @@ focus_tree = {
 
 		completion_reward = {
 
-			SOV_markian_popov = { add_logistics = 4 }
-			SOV_vasily_kuznetsov = { add_logistics = 4 }
+			SOV_georgy_zhukov = { add_logistics = 4 }
+			SOV_konstantin_rokossovsky = { add_logistics = 4 }
 
 			add_to_variable = { SOV_the_red_army_army_org_factor = 0.05 }
 			set_variable = { SOV_the_red_army_experience_gain_army_factor = 0 }

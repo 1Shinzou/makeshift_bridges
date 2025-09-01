@@ -15,12 +15,13 @@ state={
 			10696 3 
 		}
 		add_core_of = SOV
-		1939.1.1 = {
+		1941.1.1 = {
 			buildings = {
-				arms_factory = 2
+				arms_factory = 8
+				industrial_complex = 2
+				}
 			}
 		}
-	}
 
 	provinces={
 		1709 1800 1835 4700 7800 10568 10626 10696 12546 12580 12652 

@@ -222,9 +222,9 @@ characters = {
 				offensive_doctrine combined_arms_expert camouflage_expert  panzer_leader trickster trait_engineer skilled_staffer cavalry_leader expert_improviser fortress_buster organizer ranger commando
 			} 
 			skill = 6
-			attack_skill = 5
+			attack_skill = 6
 			defense_skill = 7
-			planning_skill = 5
+			planning_skill = 6
 			logistics_skill = 7
 			legacy_id = 402
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }

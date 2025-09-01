@@ -40,10 +40,12 @@ state = {
 			air_base = 3
 		}
 
-		1939.1.1 = {
+		1941.1.1 = {
 			buildings = {
 				air_base = 6
 				radar_station = 1
+				arms_factory = 10
+				synthetic_refinery = 3
 			}
 		}
 	

@@ -1166,7 +1166,7 @@ set_popularities = {
 		henschel
 
 		# Concern
-		ig_faben
+		GER_organization_todt
 		
 		# Political Advisors
 		walther_funk
@@ -1174,9 +1174,10 @@ set_popularities = {
 		GER_franz_seldte
 
 		# Military Advisors
-		ludwig_beck
+		franz_halder
 		gerd_von_rundstedt
 		goering
+		erwin_rommel
 
 		# Laws
 		totaler_krieg_economy
@@ -1224,28 +1225,29 @@ set_popularities = {
 	complete_national_focus = GER_bribe_senior_officers
 	complete_national_focus = GER_befriend_japan
 	complete_national_focus = GER_autonomy_in_the_kriegsschulen
-	complete_national_focus = GER_innovative_warfare
+	unlock_national_focus = GER_innovative_warfare
 	complete_national_focus = GER_around_maginot
 	complete_national_focus = GER_war_with_france
 	complete_national_focus = GER_the_swiss_gold
+	unlock_national_focus = GER_treaty_with_the_ussr
 	# ARMY TREE 
 	complete_national_focus = GER_expanding_the_luftwaffe
 	complete_national_focus = GER_aeronautical_research_institute
 	complete_national_focus = GER_develop_modern_maneuver_warfare
 	complete_national_focus = GER_adopt_new_panzer_doctrine
 	complete_national_focus = GER_panzer_troops_school
-	complete_national_focus = GER_advanced_panzer_research
+	unlock_national_focus = GER_advanced_panzer_research
 	complete_national_focus = GER_instill_auftragstaktik
-	complete_national_focus = GER_panzergrenadier
+	unlock_national_focus = GER_panzergrenadier
 	complete_national_focus = GER_improve_the_logistics_system
 	complete_national_focus = GER_kriegslokomotiven
-	complete_national_focus = GER_expand_kummersdorfs_capacity
+	unlock_national_focus = GER_expand_kummersdorfs_capacity
 	## INNER CIRCLE COMPLETED AT THIS POINT
 	complete_national_focus = GER_fuhrerprinzip
-	complete_national_focus = GER_ascension_of_todt
+	#complete_national_focus = GER_ascension_of_todt
 	complete_national_focus = GER_form_organization_todt
 	complete_national_focus = GER_party_chancellor_hess
-	complete_national_focus = GER_optimize_reich_labour_service
+	unlock_national_focus = GER_optimize_reich_labour_service
 	complete_national_focus = GER_rally_the_industrialists
 	complete_national_focus = GER_total_control_over_domestic_affairs
 	complete_national_focus = GER_ascension_of_goebbels
@@ -1287,14 +1289,14 @@ set_popularities = {
 				}
 				custom_effect_tooltip = GER_improve_autarkic_economy_tt
 			}
-			else = { #Get the improved version of the Trade Law
-				swap_ideas = {
-					remove_idea = autarkic_economy
-					add_idea = autarkic_economy_improved
-				}
-			}
+			#else = { #Get the improved version of the Trade Law
+				#swap_ideas = {
+					#remove_idea = autarkic_economy
+					#add_idea = autarkic_economy_improved
+			#}
+		#}
 
-	activate_decision = women_in_the_workforce
+	#activate_decision = women_in_the_workforce
 
 	every_other_country = {
 		limit = {
@@ -1312,6 +1314,11 @@ set_popularities = {
 		}
 	}
 	# END OF AUTARKIC ECONOMY
+
+	#### VARIABLES
+
+	add_to_variable = { GER_blitzkrieg_army_armor_attack_factor = 0.10 }
+	add_to_variable = { GER_blitzkrieg_breakthrough_factor = 0.10 }
 
 	# Establish the Reichswerke 
 

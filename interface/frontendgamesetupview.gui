@@ -531,15 +531,15 @@ guiTypes = {
 		containerWindowType = {
 			name ="bookmarks"
 			position = { x = 0 y = 165 } 
-			size = { width = 550 height = 420 } # Skibidi 2 rows instead of 1x4 now is 2x2 , now its 1x3 because idk lol
+			size = { width = 550 height = 420 } # Skibidi 2 rows instead of 1x4 now is 2x2 , now its 1x4 because idk lol
 
 			gridboxType = {
 				name ="bookmarks_grid"
-				position = { x = 0 y = 0 }
+				position = { x = -135 y = 0 }
 				size = { width = 100%% height = 100%% }
 				slotsize = { width = 275 height = 210 }
 				add_horizontal = yes
-				max_slots = { x = 5 y = 2 } # Changed to 1x3 grid
+				max_slots = { x = 5 y = 2 } # Changed to 1x4 grid
 				format = "UPPER_LEFT"
 			}
 		}

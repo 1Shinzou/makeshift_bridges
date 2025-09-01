@@ -311,9 +311,10 @@ spriteTypes = {
         name = "GFX_select_date_no_asia"
         texturefile = "gfx/interface/select_date_no_asia.dds"
     }
+
 	spriteType = {
-        name = "GFX_select_date_no_asia_scrap"
-        texturefile = "gfx/interface/select_date_no_asia_scrap.dds"
+        name = "GFX_select_date_barb"
+        texturefile = "gfx/interface/select_date_barb.dds"
     }
 	spriteType = {
         name = "GFX_select_date_scrap"

@@ -3,7 +3,7 @@ bookmarks = {
 		name = "Barbarossa"
 		desc = "GER_BLITZKRIEG_DESC"
 		date = 1941.1.1.12
-		picture = "GFX_select_date_1936"
+		picture = "GFX_select_date_barb"
 		default_country = "GER"
 		default = yes
 
@@ -28,9 +28,9 @@ bookmarks = {
 			focuses = {
 				
 			}	
+			
 		}
         ROM ={
-            minor = yes
 			history = "  "
 			ideology = fascism
 			#available = { has_dlc = "Arms Against Tyranny" } 
@@ -41,24 +41,7 @@ bookmarks = {
 				
 			}
 		}
-
- 	HUN = {
-			minor = yes
-			history = "HUN_GATHERING_STORM_DESC"
-			ideology = neutrality
-			available = {  NOT = { has_dlc = "Gotterdammerung" } }
-			ideas = {
-				HUN_treaty_of_triannon
-				HUN_gombos_trade_treaty
-			}
-			focuses = {
-				HUN_proclaim_the_restoration_of_austria_hungary
-				HUN_secret_rearmament
-				HUN_renounce_the_treaty_of_trianon
-			}
-		}
-	HUN = {
-			minor = yes
+		HUN = {
 			history = "HUN_GATHERING_STORM_DESC"
 			ideology = neutrality
 			available = { has_dlc = "Gotterdammerung" }

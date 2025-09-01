@@ -31,7 +31,10 @@ state = {
 			5187 = { dam = 1 }
 
 		}
-		
+			1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 	provinces = {
 		2183 2189 5181 5187 10665 12645

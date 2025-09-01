@@ -31,13 +31,9 @@ state= {
 			10404 3 
 		}
 
-		1938.10.25 = {
-			if = {
-				limit = {
-					NOT = { has_dlc = "Waking the Tiger" }
-				}
-				CHI = { transfer_state = PREV }
-			}
+		1941.1.1 = {
+		owner = WST
+		add_core_of = WST
 		}
 
 	}

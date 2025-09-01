@@ -29,13 +29,9 @@ state = {
 
 		}
 		
-		1939.1.1 = {
-			buildings = {
-				dockyard = 1
-				911 = {
-					naval_facility = 1 # Toulon arsenal
-				}
-			}
+		1941.1.1 = {
+		owner = WST
+		add_core_of = WST
 		}
 	}
 

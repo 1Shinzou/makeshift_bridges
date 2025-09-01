@@ -20,7 +20,10 @@ state={
 		victory_points = {
 			4435 1 # Gangtok
 		}
-
+	1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 
 	provinces={

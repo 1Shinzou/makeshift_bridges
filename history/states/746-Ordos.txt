@@ -26,15 +26,9 @@ state={
 			infrastructure = 1
 		}
 
-		1938.10.25 = {
-			controller = JAP
-		}
-		
-		1939.1.1 = {
-			
-			owner = PRC
-			controller = MAN
-
+		1941.1.1 = {
+		owner = WST
+		add_core_of = WST
 		}
 	}
 	manpower=500000

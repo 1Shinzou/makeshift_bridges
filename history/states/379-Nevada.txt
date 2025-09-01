@@ -34,7 +34,10 @@ state = {
 		victory_points = {
 			4799 5 # Las Vegas
 		}
-		
+			1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 
 	provinces = {

@@ -32,11 +32,9 @@ state = {
 		}
 		add_core_of = ITA
 		add_core_of = WST
-		1939.1.1 = {
-			buildings = {
-				dockyard = 2
-				industrial_complex = 5
-			}
+	1941.1.1 = {
+		owner = WST
+		add_core_of = WST
 		}
 
 	}

@@ -32,6 +32,10 @@ state={
 		victory_points = { #Viipuri
 			9206 3 
 		}
+		1941.1.1 = {
+		owner = SOV
+		add_core_of = SOV
+		}
 		
 
 	}

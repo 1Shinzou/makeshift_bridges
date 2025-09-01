@@ -13,8 +13,11 @@ state={
 		1936.1.1.14 = { owner = RAJ add_core_of = AST }
 
         owner = AST
-
 		add_core_of = AST
+			1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 	state_category = pastoral
 	manpower=50000

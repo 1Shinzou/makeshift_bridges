@@ -51,6 +51,10 @@ state = {
 			remove_claim_by = HUN
 			add_core_of = HUN
 		}
+		1941.1.1 = {
+		owner = HUN
+		add_core_of = HUN
+		}
 	}
 	
 	provinces = {

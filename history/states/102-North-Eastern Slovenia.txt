@@ -17,6 +17,10 @@ state=
 		}
 		add_core_of = YUG
 		add_claim_by = ITA
+			1941.1.1 = {
+		owner = GER
+		add_core_of = GER
+		}
 	}
 	provinces={
 		596 665 3631 3654 6672 9596

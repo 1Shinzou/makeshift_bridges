@@ -27,11 +27,9 @@ state={
 		victory_points = {
 			12384 10 
 		}
-
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 4
-			}
+	1941.1.1 = {
+		owner = WST
+		add_core_of = WST
 		}
 
 	}

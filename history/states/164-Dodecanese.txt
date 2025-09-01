@@ -22,7 +22,10 @@ state=
 			}
 		}
 		add_core_of = GRE
-
+	1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 		### CHANGED TO A MROE ROBUST SYSTEM
 		##CONTROLLED BY ITALY AT GAME START -> ITALIAN NAMES
 		#set_state_name = STATE_164_ITA

@@ -12,6 +12,10 @@ state={
         owner = CAN
 
 		add_core_of = CAN
+			1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 	manpower=10
 	state_category = wasteland

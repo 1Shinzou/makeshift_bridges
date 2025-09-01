@@ -22,8 +22,9 @@ state={
 			dockyard = 1
 		}
 
-		1938.10.25 = {
-			controller = JAP
+		1941.1.1 = {
+		owner = WST
+		add_core_of = WST
 		}
 	}
 

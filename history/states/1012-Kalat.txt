@@ -19,6 +19,10 @@ state={
 		victory_points = {
 			8098 1 # Kalat
 		}
+			1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 	
 	buildings_max_level_factor=1.000

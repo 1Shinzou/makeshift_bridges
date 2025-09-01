@@ -24,6 +24,10 @@ state={
 		add_core_of = ENG
 		add_core_of = IRE
 		add_core_of = WST
+			1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 
 	provinces={

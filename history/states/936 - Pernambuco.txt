@@ -31,6 +31,10 @@ state = {
 		victory_points = {
 			5168 5 
 		}
+			1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 
 	provinces = {

@@ -21,6 +21,10 @@ state=
 				naval_base = 1
 			}
 		}
+			1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 	provinces={
 		1905 5068 8094 10777 10833 10921 12759 12814

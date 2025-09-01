@@ -45,11 +45,9 @@ state = {
 			11960 20 # Kyoto
 		}
 
-		1939.1.1 = {
-			buildings = {
-				arms_factory = 3
-				industrial_complex = 5
-			}
+		1941.1.1 = {
+		owner = WST
+		add_core_of = WST
 		}
 
 	}

@@ -21,7 +21,10 @@ state={
 		victory_points = {
 			1908 5
 		}
-
+	1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 	state_category = rural
 	manpower=11786000

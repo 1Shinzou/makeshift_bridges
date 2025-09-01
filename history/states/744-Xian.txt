@@ -19,11 +19,10 @@ state={
 		victory_points = {
 			7418 1 
 		}
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
+		1941.1.1 = {
+		owner = WST
+		add_core_of = WST
 		}
-
 	}
 	manpower=9000000
 	buildings_max_level_factor=1.000

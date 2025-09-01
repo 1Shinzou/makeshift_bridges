@@ -20,6 +20,9 @@ state={
 		victory_points = {
 			1321 3 
 		}
-
+	1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 }

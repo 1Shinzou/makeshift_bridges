@@ -47,14 +47,9 @@ state = {
 			9950 20 # Nagasaki
 		}
 
-		1939.1.1 = {
-			buildings = {
-				dockyard = 4
-				industrial_complex = 3
-				7110 = {
-					naval_facility = 1 # Sasebo Naval Arsenal
-				}
-			}
+		1941.1.1 = {
+		owner = WST
+		add_core_of = WST
 		}
 
 	}

@@ -19,6 +19,10 @@ state={
 			4057 3 
 		}
 		add_core_of = WST
+			1941.1.1 = {
+		owner = WST
+		add_core_of = WST
+		}
 	}
 
 	provinces={

@@ -27,6 +27,10 @@ state={
 			9660 20 
 		}
 		add_core_of = HUN
+			1941.1.1 = {
+		owner = HUN
+		add_core_of = HUN
+		}
 	}
 
 	provinces={

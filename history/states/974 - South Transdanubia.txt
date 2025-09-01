@@ -30,7 +30,10 @@ state = {
 			industrial_complex = 1
 			air_base = 2
 		}
-		
+			1941.1.1 = {
+		owner = HUN
+		add_core_of = HUN
+		}
 	}
 
 	provinces = {

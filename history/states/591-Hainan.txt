@@ -30,16 +30,9 @@ state={
 			}
 
 		}
-
-		1938.10.25 = {
-			if = {
-				limit = {
-					NOT = { has_dlc = "Waking the Tiger" }
-				}
-				remove_core_of = CHI
-				CHI = { transfer_state = PREV }
-			}
-			controller = JAP
+	1941.1.1 = {
+		owner = WST
+		add_core_of = WST
 		}
 	}
 

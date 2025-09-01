@@ -32,10 +32,10 @@ state = {
 			industrial_complex = 1
 		}
 		
-		1939.1.1 = {
+		1941.1.1 = {
 			buildings = {
 				synthetic_refinery = 3
-				arms_factory = 2
+				arms_factory = 7
 				# From "The Four Year Plan"
 				industrial_complex = 2
 			}

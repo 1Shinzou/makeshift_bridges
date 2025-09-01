@@ -29,12 +29,12 @@ state = {
 			}
 		}
 		
-		1939.1.1 = {
+		1941.1.1 = {
 			buildings = {
-				synthetic_refinery = 3
+				synthetic_refinery = 1
 				anti_air_building = 5
 				dockyard = 7
-				arms_factory = 3
+				arms_factory = 5
 			}
 		}
 	}

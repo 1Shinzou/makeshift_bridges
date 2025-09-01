@@ -35,10 +35,12 @@ state = {
 			air_base = 3
 		}
 		
-		1939.1.1 = {
+		1941.1.1 = {
 			buildings = {
-				industrial_complex = 4
+				industrial_complex = 10
+				arms_factory = 10
 				dockyard = 3
+				synthetic_refinery = 3
 				241 = {
 					naval_facility = 1 # Wilhelmshaven Naval Dockyards
 				}

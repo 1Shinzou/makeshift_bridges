@@ -37,7 +37,7 @@ state = {
 				synthetic_refinery = 3
 				arms_factory = 7
 				# From "The Four Year Plan"
-				industrial_complex = 2
+				industrial_complex = 1
 			}
 		}
 	}

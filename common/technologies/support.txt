@@ -884,7 +884,7 @@ technologies = {
 			equipment_capture_factor = 0.05
 		}
 
-		armored_maintenance = {
+		armored_maintenance = { 
 			reliability_factor = 0.02
 			recovery = 0.03
 			equipment_capture_factor = 0.1

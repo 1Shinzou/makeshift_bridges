@@ -1,0 +1,21 @@
+﻿
+### Important focus and else stuff
+instant_effect = {
+	add_political_power = 2000
+	add_command_power = 150
+	set_stability = 1
+	set_war_support = 0.95 
+	set_research_slots = 3
+	add_ideas = {
+		#laws
+		tot_economic_mobilisation
+		service_by_requirement
+		free_trade
+	}
+	#ADVISORS
+	add_ideas = {
+		mikhail_kalinin
+		nikita_khrushchyov
+		SOV_nikolay_voznesensky
+	}
+}

@@ -6,6 +6,7 @@ instant_effect = {
 	set_stability = 1
 	set_war_support = 0.95 
 	set_research_slots = 4
+	set_convoys = 1000
 	add_ideas = {
 		SOV_tula_arms_plant
 		SOV_gosproyektstroy_3_usa_civ

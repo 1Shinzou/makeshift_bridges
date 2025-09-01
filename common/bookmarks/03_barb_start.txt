@@ -1,0 +1,85 @@
+bookmarks = {
+	bookmark = {
+		name = "Barbarossa"
+		desc = "GER_BLITZKRIEG_DESC"
+		date = 1941.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "GER"
+		default = yes
+
+		"GER"={
+			history = "GER_BLITZKRIEG_DESC"
+			ideology = fascism
+			available = { has_dlc = "Waking the Tiger" }
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"SOV"={
+			history = "SOV_BLITZKRIEG_DESC"
+			ideology = communism
+			available = { has_dlc = "No Step Back" }
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}	
+		}
+        ROM ={
+            minor = yes
+			history = "  "
+			ideology = fascism
+			#available = { has_dlc = "Arms Against Tyranny" } 
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+
+ 	HUN = {
+			minor = yes
+			history = "HUN_GATHERING_STORM_DESC"
+			ideology = neutrality
+			available = {  NOT = { has_dlc = "Gotterdammerung" } }
+			ideas = {
+				HUN_treaty_of_triannon
+				HUN_gombos_trade_treaty
+			}
+			focuses = {
+				HUN_proclaim_the_restoration_of_austria_hungary
+				HUN_secret_rearmament
+				HUN_renounce_the_treaty_of_trianon
+			}
+		}
+	HUN = {
+			minor = yes
+			history = "HUN_GATHERING_STORM_DESC"
+			ideology = neutrality
+			available = { has_dlc = "Gotterdammerung" }
+			ideas = {
+				HUN_treaty_of_triannon_wuw
+				HUN_gombos_trade_treaty
+				HUN_hungarian_national_defense_association
+			}
+			focuses = {
+				wuw_HUN_proclaim_greater_hungary
+				wuw_HUN_strengthen_horthys_reign
+				wuw_HUN_invite_german_investors
+			}
+		}
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

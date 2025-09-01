@@ -1598,6 +1598,8 @@ if = {
 }
 1941.1.1 = {
 	set_oob = "SOV_1941_nsb"
+	set_air_oob = "SOV_1941_air_bba"
+	set_naval_oob = "SOV_1941_naval_mtg"
 	remove_dynamic_modifier = { modifier = SOV_second_five_year_plan_dynamic_modifier }
 	add_dynamic_modifier = { modifier = SOV_third_five_year_plan_dynamic_modifier }
 	swap_ideas = {

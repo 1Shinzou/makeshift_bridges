@@ -1,11 +1,6 @@
-﻿##### Division Templates #####
-
-
-	#########################
-	## STARTING PRODUCTION ##
-	#########################
+﻿
+#####EVERYTHING IMPORTANT FOR 41#####
 instant_effect = {
-	
 	add_political_power = 2000
 	add_command_power = 150
 	set_stability = 1

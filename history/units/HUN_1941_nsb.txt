@@ -4,7 +4,7 @@ instant_effect = {
 	set_war_support = 0.9
 	add_political_power = 2000
 	add_command_power = 150
-	set_research_slots = 3
+	set_research_slots = 4 # slot focus was completed smh dead ass fuck this game
 	
 	# COMPLETING FOCUSES
 	set_technology = {

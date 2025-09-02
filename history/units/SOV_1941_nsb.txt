@@ -395,6 +395,11 @@ instant_effect = {
 		complete_mio_trait = SOV_mio_trait_merge_nkmz_plant
 		complete_mio_trait = SOV_mio_trait_merge_magnitogorsk_metallurgical_plant
 	}
+	mio:SOV_morozov_design_bureau_organization = {
+		complete_mio_trait = SOV_mio_trait_merge_plant_no_174
+		complete_mio_trait = SOV_mio_trait_merge_plant_no_112
+		complete_mio_trait = SOV_mio_trait_merge_ural_heavy_machine_building_plant
+	}
 
 	complete_special_project = {
     project = sp:sp_land_flamethrower_tank
@@ -423,6 +428,11 @@ instant_effect = {
 		name = "PPSh-41"
 		type = infantry_equipment_2
 		design_team = mio:SOV_tula_arms_plant_organization
+	} 
+	create_equipment_variant = {
+		name = "Armored Support Vehicle B"
+		type = armored_support_vehicle_1
+		design_team = mio:SOV_kharkov_organization
 	} 
 	create_equipment_variant = {
 		name = "ZIS-5"
@@ -508,6 +518,55 @@ instant_effect = {
 					}
 					icon = "GFX_SOV_advanced_medium_tank_medium"
 				}
+		create_equipment_variant = {
+			name = "T-60"
+			type = light_tank_chassis_3
+			design_team = mio:SOV_morozov_design_bureau_organization
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_high_velocity_cannon
+					turret_type_slot = tank_light_three_man_tank_turret
+					suspension_type_slot = tank_wheeled_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_petrol_electric_engine
+					special_type_slot_1 = tank_radio_3
+					special_type_slot_2 = auto_loader
+					special_type_slot_3 = smoke_launchers
+					special_type_slot_4 = wet_ammo_storage
+					special_type_slot_5 = easy_maintenance
+				}
+
+				upgrades = {
+							tank_nsb_engine_upgrade = 17
+							tank_nsb_armor_upgrade = 17
+					}
+					icon = "GFX_SOV_advanced_light_tank_medium"
+				}
+
+		create_equipment_variant = {
+			name = "Medium Flame Tank II"
+			type = medium_tank_flame_chassis_2
+			design_team = mio:SOV_morozov_design_bureau_organization
+				parent_version = 0
+				modules = {
+					main_armament_slot = flamethrower
+					turret_type_slot = tank_medium_three_man_tank_turret
+					suspension_type_slot = tank_bogie_suspension
+					armor_type_slot = tank_riveted_armor
+					engine_type_slot = tank_petrol_electric_engine
+					special_type_slot_1 = tank_radio_3
+					special_type_slot_2 = extra_ammo_storage
+					special_type_slot_3 = smoke_launchers
+					special_type_slot_4 = wet_ammo_storage
+					special_type_slot_5 = easy_maintenance
+				}
+
+				upgrades = {
+							tank_nsb_engine_upgrade = 17
+							tank_nsb_armor_upgrade = 14
+					}
+					icon = "GFX_SOV_improved_medium_tank_medium"
+				}
 
 	add_equipment_production = {
 		equipment = {
@@ -518,6 +577,18 @@ instant_effect = {
 		progress = 1
 		efficiency = 100
 		industrial_manufacturer = mio:SOV_tula_arms_plant_organization
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = armored_support_vehicle_1
+			creator = SOV
+			version_name = "Armored Support Vehicle B"
+		}
+		requested_factories = 10
+		progress = 1
+		efficiency = 100
+		industrial_manufacturer = mio:SOV_mytishchy_machine_building_plant_organization
 	}
 	add_equipment_production = {
 			equipment = {
@@ -535,7 +606,7 @@ instant_effect = {
 			creator = SOV
 			version_name = "T34-85"
 		}
-		requested_factories = 70
+		requested_factories = 67
 		progress = 1
 		efficiency = 100
 		industrial_manufacturer = mio:SOV_mytishchy_machine_building_plant_organization
@@ -547,7 +618,7 @@ instant_effect = {
 			creator = SOV
 			version_name = "SU-85"
 		}
-		requested_factories = 70
+		requested_factories = 67
 		progress = 1
 		efficiency = 100
 		industrial_manufacturer = mio:SOV_mytishchy_machine_building_plant_organization
@@ -564,14 +635,37 @@ instant_effect = {
 		efficiency = 100
 		industrial_manufacturer = mio:SOV_mytishchy_machine_building_plant_organization
 	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_chassis_3
+			creator = SOV
+			version_name = "T-60"
+		}
+		requested_factories = 5
+		progress = 1
+		efficiency = 100
+		industrial_manufacturer = mio:SOV_mytishchy_machine_building_plant_organization
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = medium_tank_flame_chassis_2
+			creator = SOV
+			version_name = "Medium Flame Tank II"
+		}
+		requested_factories = 4
+		progress = 1
+		efficiency = 100
+		industrial_manufacturer = mio:SOV_mytishchy_machine_building_plant_organization
+	}
 	
-		add_equipment_production = {
+	add_equipment_production = {
 		equipment = {
 			type = mechanized_equipment_1
 			creator = SOV
 			version_name = "BTR M1941 B"
 		}
-		requested_factories = 25
+		requested_factories = 22
 		progress = 1
 		efficiency = 100
 		industrial_manufacturer = mio:SOV_gaz_organization
@@ -609,7 +703,7 @@ instant_effect = {
 	#### STOCKPILES FOR JAN 41 ####
 	add_equipment_to_stockpile = { 
 		type = mechanized_equipment_1
-		amount = 14000
+		amount = 15000
 		producer = SOV
 		variant_name = "BTR M1941 B"
 	}
@@ -673,6 +767,24 @@ instant_effect = {
 		amount = 2000
 		producer = SOV
 		variant_name = "ZSU-37-2"
+	}
+	add_equipment_to_stockpile = { 
+		type = light_tank_chassis_3
+		amount = 2000
+		producer = SOV
+		variant_name = "T-60"
+	}
+	add_equipment_to_stockpile = { 
+		type = medium_tank_flame_chassis_2
+		amount = 900
+		producer = SOV
+		variant_name = "Medium Flame Tank II"
+	}
+	add_equipment_to_stockpile = { 
+		type = armored_support_vehicle_1
+		amount = 2000
+		producer = SOV
+		variant_name = "Armored Support Vehicle B"
 	}
 }
 

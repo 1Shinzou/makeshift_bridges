@@ -212,7 +212,7 @@ set_popularities = {
 		}
 	}
 
-	###################### ROMANIA IN 1941 START 
+	###################### ROMANIA IN 1941 START ######################
 
 	1941.1.1 = {
 		set_oob = "ROM_1941_nsb"

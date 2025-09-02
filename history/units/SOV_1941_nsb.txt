@@ -411,13 +411,29 @@ instant_effect = {
 
 
 	create_equipment_variant = {
-	name = "BTR M1941 B"
-	type = mechanized_equipment_1
-	parent_version = 0
-	upgrades = {
-		mech_cost_upgrade = 5
-	}
-} 
+		name = "BTR M1941 B"
+		type = mechanized_equipment_1
+		parent_version = 0
+		upgrades = {
+			mech_cost_upgrade = 5
+		}
+		design_team = mio:SOV_gaz_organization
+	} 
+	create_equipment_variant = {
+		name = "PPSh-41"
+		type = infantry_equipment_2
+		design_team = mio:SOV_tula_arms_plant_organization
+	} 
+	create_equipment_variant = {
+		name = "ZIS-5"
+		type = motorized_equipment_1
+		design_team = mio:SOV_gaz_organization
+	} 
+	create_equipment_variant = {
+		name = "KS-19 100 mm"
+		type = anti_air_equipment_3
+		design_team = mio:SOV_grabin_design_bureau_organization
+	} 
 
 	create_equipment_variant = {
 			name = "SU-85"
@@ -551,34 +567,37 @@ instant_effect = {
 		efficiency = 100
 		industrial_manufacturer = mio:SOV_gaz_organization
 	}
-		add_equipment_production = {
-			equipment = {
-				type = support_equipment_1
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "SOV" 
+		}
+		requested_factories = 15
+		progress = 1
+		efficiency = 100
+		industrial_manufacturer = mio:SOV_tula_arms_plant_organization_support
+	}
+	add_equipment_production = {
+		equipment = {
+				type = motorized_equipment_1
 				creator = "SOV" 
 			}
-				requested_factories = 15
-				progress = 1
-				efficiency = 100
-			}
-		add_equipment_production = {
+		requested_factories = 5
+		progress = 1
+		efficiency = 100
+		industrial_manufacturer = mio:SOV_gaz_organization
+	}
+	add_equipment_production = {
 			equipment = {
-			type = motorized_equipment_1
-			creator = "SOV" 
+				type = anti_air_equipment_3
+				creator = "SOV" 
 			}
-			requested_factories = 5
-			progress = 1
-			efficiency = 100
-			}
-		add_equipment_production = {
-			equipment = {
-			type = anti_air_equipment_3
-			creator = "SOV" 
-			}
-			requested_factories = 14
-			progress = 1
-			efficiency = 50
-			}	
-		}
+		requested_factories = 14
+		progress = 1
+		efficiency = 50
+		industrial_manufacturer = mio:SOV_grabin_design_bureau_organization
+	}	
+}
 
 
 	#####################

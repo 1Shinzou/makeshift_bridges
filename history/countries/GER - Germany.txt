@@ -1108,29 +1108,18 @@ if = {
 # SETUP THE 1941 SCENARIO
 1941.1.1 = {
 
-set_oob = "GER_1941_nsb"
-set_air_oob = "Ger_1941_air"
-set_naval_oob = "Ger_1941_navy"
-
-# Setup German Politics
-set_politics = {
-	ruling_party = fascism
-	last_election = "1933.3.5"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	democratic = 0
-	fascism = 100
-	communism = 0
-	neutrality = 0
-}
+	set_oob = "GER_1941_nsb"
+	set_air_oob = "GER_1941_air_bba"
+	set_naval_oob = "GER_1941_naval_mtg"
 	# Setting up the required world tension
 	add_named_threat = { 
 		threat = 100 
 		name = 1941_bookmark_threat 
 	}
-		
+	add_timed_idea = {
+		idea = add_production_efficiency_41
+		days = 2
+	}
 	# Adding Ministers and Ideas
 	add_ideas = {
 
@@ -1173,7 +1162,8 @@ set_popularities = {
 	# This has already been done at this point
 	set_country_flag = GER_constructed_the_westwall
 	set_country_flag = GER_loyalty_to_the_fuhrer_flag
-
+	#Decisions gang
+	
 	# The Abwehr has already been established at this point 
 	if = {
 		limit = {
@@ -1181,61 +1171,4 @@ set_popularities = {
 		}
 		create_intelligence_agency = yes
 	}
-	# COMPLETING FOCUSES
-
-	# ECONOMY
-	complete_national_focus = GER_construct_the_reichsautobahn
-	complete_national_focus = GER_institute_price_controls
-	complete_national_focus = GER_accelerate_the_rearmament_program
-	complete_national_focus = GER_establish_production_targets
-	complete_national_focus = GER_build_the_rur_dam
-	complete_national_focus = GER_kdf_wagen_factories
-	complete_national_focus = GER_coal_liquefaction
-	complete_national_focus = GER_establish_buna_werke
-	complete_national_focus = GER_concentrated_armament_program
-	complete_national_focus = GER_zentrale_planung
-	complete_national_focus = GER_armament_rationalization
-	complete_national_focus = GER_create_rustungsstab
-	complete_national_focus = GER_totaler_krieg
-	# Politcal
-	complete_national_focus = GER_reorganize_the_wehrmacht
-	complete_national_focus = GER_bribe_senior_officers
-	complete_national_focus = GER_befriend_japan
-	complete_national_focus = GER_autonomy_in_the_kriegsschulen
-	unlock_national_focus = GER_innovative_warfare
-	complete_national_focus = GER_around_maginot
-	complete_national_focus = GER_war_with_france
-	complete_national_focus = GER_the_swiss_gold
-	unlock_national_focus = GER_treaty_with_the_ussr
-	# ARMY TREE 
-	complete_national_focus = GER_expanding_the_luftwaffe
-	complete_national_focus = GER_aeronautical_research_institute
-	complete_national_focus = GER_develop_modern_maneuver_warfare
-	complete_national_focus = GER_adopt_new_panzer_doctrine
-	complete_national_focus = GER_panzer_troops_school
-	unlock_national_focus = GER_advanced_panzer_research
-	complete_national_focus = GER_instill_auftragstaktik
-	unlock_national_focus = GER_panzergrenadier
-	complete_national_focus = GER_improve_the_logistics_system
-	complete_national_focus = GER_kriegslokomotiven
-	unlock_national_focus = GER_expand_kummersdorfs_capacity
-
-	## INNER CIRCLE COMPLETED AT THIS POINT
-
-	complete_national_focus = GER_fuhrerprinzip
-	#complete_national_focus = GER_ascension_of_todt
-	complete_national_focus = GER_form_organization_todt
-	complete_national_focus = GER_party_chancellor_hess
-	unlock_national_focus = GER_optimize_reich_labour_service
-	complete_national_focus = GER_rally_the_industrialists
-	complete_national_focus = GER_total_control_over_domestic_affairs
-	complete_national_focus = GER_ascension_of_goebbels
-	complete_national_focus = GER_ministry_of_public_enlightenment
-	complete_national_focus = GER_fund_the_film_department
-	complete_national_focus = GER_propaganda_master
-	complete_national_focus = GER_ascension_of_goring
-	complete_national_focus = GER_prioritize_the_four_year_plan
-	complete_national_focus = GER_plenipotentiary_of_the_four_year_plan
-	complete_national_focus = GER_integration_of_puppet_economies
-	complete_national_focus = GER_loyalty_to_the_fuhrer
-	}
+}

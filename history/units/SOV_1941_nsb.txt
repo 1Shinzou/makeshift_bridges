@@ -466,16 +466,15 @@ instant_effect = {
 				tank_nsb_engine_upgrade = 0
 				tank_nsb_armor_upgrade = 0
 			}
-			icon = "GFX_SOV_advanced_medium_td"
-		}
-
+		icon = "GFX_SOV_advanced_medium_td"
+	}
 	create_equipment_variant = {
 		name = "ZSU-37-2"
 			type = heavy_tank_aa_chassis_2
 			design_team = mio:SOV_kirov_organization
 				parent_version = 0
 				modules = {
-				main_armament_slot = tank_anti_air_cannon_3
+					main_armament_slot = tank_anti_air_cannon_3
 					turret_type_slot = tank_heavy_three_man_tank_turret
 					suspension_type_slot = tank_christie_suspension
 					armor_type_slot = tank_welded_armor
@@ -486,14 +485,12 @@ instant_effect = {
 					special_type_slot_4 = sloped_armor
 					special_type_slot_5 = easy_maintenance
 				}
-
 				upgrades = {
-							tank_nsb_engine_upgrade = 17
-							tank_nsb_armor_upgrade = 17
-					}
-					icon = "GFX_SOV_advanced_heavy_tank_medium"
+					tank_nsb_engine_upgrade = 17
+					tank_nsb_armor_upgrade = 17
 				}
-		
+			icon = "GFX_SOV_advanced_heavy_tank_medium"
+		}
 		create_equipment_variant = {
 		name = "T34-85"
 			type = medium_tank_chassis_2
@@ -511,13 +508,12 @@ instant_effect = {
 					special_type_slot_4 = secondary_turret_small_cannon
 					special_type_slot_5 = easy_maintenance
 				}
-
 				upgrades = {
-							tank_nsb_engine_upgrade = 14
-							tank_nsb_armor_upgrade = 14
-					}
-					icon = "GFX_SOV_advanced_medium_tank_medium"
+					tank_nsb_engine_upgrade = 14
+					tank_nsb_armor_upgrade = 14
 				}
+			icon = "GFX_SOV_advanced_medium_tank_medium"
+		}
 		create_equipment_variant = {
 			name = "T-60"
 			type = light_tank_chassis_3
@@ -535,21 +531,19 @@ instant_effect = {
 					special_type_slot_4 = wet_ammo_storage
 					special_type_slot_5 = easy_maintenance
 				}
-
 				upgrades = {
-							tank_nsb_engine_upgrade = 17
-							tank_nsb_armor_upgrade = 17
-					}
-					icon = "GFX_SOV_advanced_light_tank_medium"
+					tank_nsb_engine_upgrade = 17
+					tank_nsb_armor_upgrade = 17
 				}
-
+			icon = "GFX_SOV_advanced_light_tank_medium"
+		}
 		create_equipment_variant = {
 			name = "Medium Flame Tank II"
 			type = medium_tank_flame_chassis_2
 			design_team = mio:SOV_morozov_design_bureau_organization
 				parent_version = 0
 				modules = {
-					main_armament_slot = flamethrower
+					main_armament_slot = advanced_flamethrower
 					turret_type_slot = tank_medium_three_man_tank_turret
 					suspension_type_slot = tank_bogie_suspension
 					armor_type_slot = tank_riveted_armor
@@ -560,13 +554,12 @@ instant_effect = {
 					special_type_slot_4 = wet_ammo_storage
 					special_type_slot_5 = easy_maintenance
 				}
-
 				upgrades = {
-							tank_nsb_engine_upgrade = 17
-							tank_nsb_armor_upgrade = 14
-					}
-					icon = "GFX_SOV_improved_medium_tank_medium"
+					tank_nsb_engine_upgrade = 17
+					tank_nsb_armor_upgrade = 14
 				}
+			icon = "GFX_SOV_improved_medium_tank_medium"
+		}
 
 	add_equipment_production = {
 		equipment = {
@@ -598,7 +591,7 @@ instant_effect = {
 			requested_factories = 2
 			progress = 1
 			efficiency = 100
-		}
+	}
 	
 	add_equipment_production = {
 		equipment = {
@@ -747,24 +740,24 @@ instant_effect = {
 	}
 	add_equipment_to_stockpile = { 
 		type = motorized_equipment_1
-		amount = 20000
+		amount = 25000
 		producer = SOV
 	}
 	add_equipment_to_stockpile = { 
 		type = medium_tank_destroyer_chassis_2
-		amount = 12000
+		amount = 10000
 		producer = SOV
 		variant_name = "SU-85"
 	}
 	add_equipment_to_stockpile = { 
 		type = medium_tank_chassis_2
-		amount = 12000
+		amount = 10000
 		producer = SOV
 		variant_name = "T34-85"
 	}
 	add_equipment_to_stockpile = { 
 		type = heavy_tank_aa_chassis_2
-		amount = 2000
+		amount = 1670
 		producer = SOV
 		variant_name = "ZSU-37-2"
 	}
@@ -776,7 +769,7 @@ instant_effect = {
 	}
 	add_equipment_to_stockpile = { 
 		type = medium_tank_flame_chassis_2
-		amount = 900
+		amount = 750
 		producer = SOV
 		variant_name = "Medium Flame Tank II"
 	}
@@ -785,6 +778,12 @@ instant_effect = {
 		amount = 2000
 		producer = SOV
 		variant_name = "Armored Support Vehicle B"
+	}
+	#Convoy
+	add_equipment_to_stockpile = { 
+		type = convoy_1
+		amount = 2000
+		producer = SOV
 	}
 }
 

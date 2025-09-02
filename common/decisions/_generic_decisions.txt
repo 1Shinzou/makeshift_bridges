@@ -1,5 +1,55 @@
 political_actions = {
 
+	winter_of_1941_tick = {
+
+		allowed = { 
+				has_game_rule = {
+					rule = larp_barb
+					option = larpbarb
+			}
+			has_start_date > 1941.1.1
+			}
+		available = {
+				hidden_trigger = { always = no }
+			}
+
+		days_mission_timeout = 340
+		is_good = no
+		fire_only_once = yes
+		timeout_effect = {
+				add_timed_idea = { 
+				idea = winter_of_1941 days = 80
+			}
+		}
+	}
+
+	winter_of_1942_tick = {
+
+		allowed = { 
+				has_game_rule = {
+					rule = larp_barb
+					option = larpbarb
+			}
+			has_start_date > 1941.1.1
+			}
+		available = {
+				hidden_trigger = { always = no }
+			}
+
+		activation = {
+			has_idea = winter_of_1941
+		}
+
+		days_mission_timeout = 360
+		is_good = no
+		fire_only_once = yes
+		timeout_effect = {
+				add_timed_idea = { 
+				idea = winter_of_1942 days = 60
+			}
+		}
+	}
+	
 	
 	targeted_race_for_the_bomb = {
 

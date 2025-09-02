@@ -984,7 +984,7 @@ E_ll = {
 			activate_mission = GER_recieving_ll_1		
 		}
 	}
-}
+}	
 
 
 

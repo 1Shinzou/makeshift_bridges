@@ -493,6 +493,22 @@ usa_boost = {
 	}
 }
 
+larp_barb = {
+	name = "Barbarossa Larp"
+	group = "Economic Adjustments"
+	icon = "GFX_decision_generic_merge_plant_materiel"
+	default = {
+		name = off
+		text = "GOff"
+		desc = "Standard MSB Barbarossa--no funnies, we love Shinzou"
+	}
+	option = {
+		name = larpbarb
+		text = "ROn"
+		desc = "Operation Barbarossa will have larp events"
+	}
+}
+
 # VANILLA GAME RULES 
 
 allow_wargoals = {

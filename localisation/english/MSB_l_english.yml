@@ -30,6 +30,11 @@ msb.5.t: "No-Asia 1941 USA Support"
 msb.5.desc: "The east coast of the USA has been annexed to the UK."
 msb.5.a: "Thanks for the Info"
 
+# Larp Barb Ideas
+winter_of_1941:0 "Winter of 1941"
+winter_of_1941_tick:0 "Winter of 1941"
+winter_of_1942:0 "Winter of 1942"
+winter_of_1942_tick:0 "Winter of 1942"
 
 
 add_convoy:0 "Add Convoy"

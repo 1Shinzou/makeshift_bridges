@@ -1185,6 +1185,10 @@ set_popularities = {
 
 	}
 	
+	add_timed_idea = {
+		idea = tradeback_is_cancer
+		days = 60
+	}
 	
 	# BARB MINORS
 	add_to_faction = ROM

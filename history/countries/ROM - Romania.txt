@@ -215,44 +215,9 @@ set_popularities = {
 	###################### ROMANIA IN 1941 START 
 
 	1941.1.1 = {
-	OOB = "ROM_1941"
-	set_stability = 0.8
-	set_war_support = 0.9
-	add_political_power = 200
-	add_command_power = 150
-	set_research_slots = 5
-
-	remove_ideas = {
-		ROM_iron_guard
-	}
-
-	add_ideas = {
-	## national spirit
-	ROM_german_influence
-	ROM_preserve_greater_romania2
-	ROM_expanded_axis_oil_trade2
-	ROM_iron_guard2
-	ROM_the_resource_curse_2
-	ROM_grand_army
-	## economy
-	limited_exports
-	war_economy
-	#service_by_requirement
-	limited_conscription
-	ROM_ROMLOC
-	ROM_nicolae_malaxa
-	## high command
-
-	ROM_ion_antonescu
-	ROM_gheorghe_avramescu
-	ROM_gheorghe_mihail
-	ROM_ermil_gheorghiu
-	
-	# theorist
-	ROM_gheorghe_potopeanu
-	}
-
-
+		set_oob = "ROM_1941_nsb"
+		set_air_oob = ""
+		set_naval_oob = "ROM_1936_naval_mtg"
 	set_politics = {
 		ruling_party = neutrality
 		last_election = "1937.10.1"
@@ -265,7 +230,7 @@ set_popularities = {
 		communism = 0
 		neutrality = 40
 	}
-
+	
 	### Focus Completion ### 
 
 	complete_national_focus = ROM_national_recovery
@@ -311,87 +276,42 @@ set_popularities = {
 	unlock_national_focus = ROM_encourage_trade_with_germany
 	unlock_national_focus = ROM_trade_treaty_with_germany
 
-	set_technology = {
+	add_ideas = {
+	## national spirit
+	ROM_german_influence
+	ROM_preserve_greater_romania2
+	ROM_expanded_axis_oil_trade2
+	ROM_iron_guard2
+	ROM_the_resource_curse_2
+	ROM_grand_army
 
-		# Infantry
-		interwar_artillery = 1
-		interwar_antitank = 1
-		infantry_weapons2 = 1
-		improved_infantry_weapons = 1
-		support_weapons = 1
-		support_weapons2 = 1
-		paratroopers = 1
-		improved_infantry_weapons_2 = 1
-		advanced_infantry_weapons = 1
-		tech_engineers2 = 1
-		tech_field_hospital = 1
-    	tech_logistics_company = 1
-    	tech_logistics_company2 = 1
-		artillery1 = 1
-		artillery2 = 1
-		antiair1 = 1
-		antitank1 = 1
-		antitank2 = 1
-		antitank3 = 1
-		antitank4 = 1
-		antitank5 = 1
-		sp_armored_advanced_flamethrower_tech = 1
+	## economy
+	limited_exports
+	war_economy
+	#service_by_requirement
+	limited_conscription
+	ROM_ROMLOC
+	ROM_nicolae_malaxa
+	## high command
 
-		# Doctrines
-		mass_assault = 1
-		pocket_defence = 1
-		defence_in_depth = 1
-		peoples_army = 1
-		human_infantry_offensive = 1
-		large_front_offensive = 1
-		human_wave_offensive = 1
-		guerilla_warfare = 1
-		# Air
-		formation_flying = 1		
-		dive_bombing = 1
-		direct_ground_support = 1
+	ROM_ion_antonescu
+	ROM_gheorghe_avramescu
+	ROM_gheorghe_mihail
+	ROM_ermil_gheorghiu
+	
+	# theorist
+	ROM_gheorghe_potopeanu
+	}
 
-		# Electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		# Industry
-		excavation1 = 1
-		excavation2 = 1
-		excavation3 = 1
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		assembly_line_production = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_processing = 1
-		rubber_processing = 1
-		fuel_silos = 1
-		fuel_refining = 1
-		fuel_refining2 = 2
-		fuel_refining3 = 1
-		fuel_refining4 = 1
-		fuel_refining5 = 1
-		improved_oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		construction4 = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
-		concentrated_industry3 = 1
-		concentrated_industry4 = 1
+	add_timed_idea = {
+		idea = tradeback_is_cancer
+		days = 60
+	}
+		remove_ideas = {
+			ROM_iron_guard
+			}
 		}
 
-	add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 73510 }
-	add_equipment_to_stockpile = { type = support_equipment_1 amount = 2134 }
-	add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 1050 } #Ti
-	add_equipment_to_stockpile = { type = artillery_equipment_2 amount = 730 }
-	add_equipment_to_stockpile = { type = anti_tank_equipment_2 amount = 1000 }
-	
-	}
 
 	
 	

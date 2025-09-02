@@ -1,44 +1,33 @@
 ideas = { 
     country = { 
-            winter_of_1941 = {
+        winter_of_1941 = {
                 picture = NORDIC_army_democratic
-
                 allowed = { 
                     always = no
                 }
-             modifier = {
+            modifier = {
 				army_attack_factor = -0.50
                 army_defence_factor = -0.25
                 winter_attrition_factor = 0.20
             }
         }
-    }
-     country = { 
-            winter_of_1942 = {
+        winter_of_1942 = {
                 picture = NORDIC_army_democratic
-
-                allowed = { 
-                    always = no
-                }
-             modifier = {
+            allowed = { 
+                always = no
+            }
+            modifier = {
 				army_attack_factor = -0.30
                 army_defence_factor = -0.10
                 winter_attrition_factor = 0.10
             }
         }
-    }
-    country = { 
-            click_barb = {
-                picture = generic_acquire_tanks
-
+        click_barb = {
+            picture = generic_acquire_tanks
             allowed = { 
-				has_game_rule = {
-					rule = larp_barb
-					option = larpbarb
+                always = no
 			}
-			has_start_date > 1941.1.1
-			}
-             modifier = {
+            modifier = {
                 army_defence_factor = -0.35
                 division_speed_factor = -0.15
             }

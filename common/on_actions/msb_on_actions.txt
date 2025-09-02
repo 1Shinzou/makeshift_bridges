@@ -545,7 +545,10 @@ on_actions = {
 			if = {
                 limit = {
                     FROM = { tag = CHI }
-                    has_game_rule = china_war_difficulty
+                    has_game_rule = {
+						rule = china_war_difficulty
+						option = no
+					}
                 }
                 if = {
                     limit = {

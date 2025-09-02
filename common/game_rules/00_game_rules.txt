@@ -503,7 +503,7 @@ larp_barb = {
 		desc = "Standard MSB Barbarossa--no funnies, we love Shinzou"
 	}
 	option = {
-		name = larpbarb
+		name = on
 		text = "ROn"
 		desc = "Operation Barbarossa will have larp events"
 	}

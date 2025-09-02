@@ -211,3 +211,189 @@ set_popularities = {
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
+
+	###################### ROMANIA IN 1941 START 
+
+	1941.1.1 = {
+	OOB = "ROM_1941"
+	set_stability = 0.8
+	set_war_support = 0.9
+	add_political_power = 200
+	add_command_power = 150
+	set_research_slots = 5
+
+	remove_ideas = {
+		ROM_iron_guard
+	}
+
+	add_ideas = {
+	## national spirit
+	ROM_german_influence
+	ROM_preserve_greater_romania2
+	ROM_expanded_axis_oil_trade2
+	ROM_iron_guard2
+	ROM_the_resource_curse_2
+	ROM_grand_army
+	## economy
+	limited_exports
+	war_economy
+	#service_by_requirement
+	limited_conscription
+	ROM_ROMLOC
+	ROM_nicolae_malaxa
+	## high command
+
+	ROM_ion_antonescu
+	ROM_gheorghe_avramescu
+	ROM_gheorghe_mihail
+	ROM_ermil_gheorghiu
+	
+	# theorist
+	ROM_gheorghe_potopeanu
+	}
+
+
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1937.10.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 10
+		fascism = 50
+		communism = 0
+		neutrality = 40
+	}
+
+	### Focus Completion ### 
+
+	complete_national_focus = ROM_national_recovery
+	complete_national_focus = ROM_autarky
+	complete_national_focus = ROM_national_defense_industry
+	complete_national_focus = ROM_reduce_reliance_on_foreign_imports
+	complete_national_focus = ROM_more_efficient_agricultural_procurement
+	complete_national_focus = ROM_hunedoara_steel_works
+	complete_national_focus = ROM_institute_a_royal_dictatorship
+	complete_national_focus = ROM_sentinels_of_the_motherland
+	complete_national_focus = ROM_arrest_general_antonescu
+	complete_national_focus = ROM_nationalize_the_oil
+	complete_national_focus = ROM_army_war_college
+	complete_national_focus = ROM_expand_the_army
+	complete_national_focus = ROM_expand_the_war_industry
+	complete_national_focus = ROM_hunedoara_steel_works
+	complete_national_focus = ROM_expand_the_axis_oil_trade
+	complete_national_focus = ROM_ensure_agricultural_self_sufficiency
+
+
+
+	### Focus Completion Manually ###
+
+	unlock_national_focus = ROM_expand_the_university_of_bucharest
+	unlock_national_focus = ROM_bucharest_technical_institute
+	unlock_national_focus = ROM_for_the_preservation_of_greater_romania
+	unlock_national_focus = ROM_reject_french_containment_strategies
+	unlock_national_focus = ROM_the_decay_of_democracy
+	unlock_national_focus = ROM_elections_of_1937
+	unlock_national_focus = ROM_fascist_economics
+	unlock_national_focus = ROM_form_the_front_of_national_rebirth
+	unlock_national_focus = ROM_german_romanian_oil_exploitation_company
+	unlock_national_focus = ROM_romanian_rearmament
+	unlock_national_focus = ROM_expand_small_arms_manufacturing
+	unlock_national_focus = ROM_deploy_reserve_divisions
+	unlock_national_focus = ROM_import_and_convert_antique_artillery
+	unlock_national_focus = ROM_organizing_logistics
+	unlock_national_focus = ROM_grand_army
+	unlock_national_focus = ROM_support_the_war_industry
+	unlock_national_focus = ROM_operetta_fascism 
+	unlock_national_focus = ROM_the_royal_foundation
+	unlock_national_focus = ROM_army_maneuvers
+	unlock_national_focus = ROM_encourage_trade_with_germany
+	unlock_national_focus = ROM_trade_treaty_with_germany
+
+	set_technology = {
+
+		# Infantry
+		interwar_artillery = 1
+		interwar_antitank = 1
+		infantry_weapons2 = 1
+		improved_infantry_weapons = 1
+		support_weapons = 1
+		support_weapons2 = 1
+		paratroopers = 1
+		improved_infantry_weapons_2 = 1
+		advanced_infantry_weapons = 1
+		tech_engineers2 = 1
+		tech_field_hospital = 1
+    	tech_logistics_company = 1
+    	tech_logistics_company2 = 1
+		artillery1 = 1
+		artillery2 = 1
+		antiair1 = 1
+		antitank1 = 1
+		antitank2 = 1
+		antitank3 = 1
+		antitank4 = 1
+		antitank5 = 1
+		sp_armored_advanced_flamethrower_tech = 1
+
+		# Doctrines
+		mass_assault = 1
+		pocket_defence = 1
+		defence_in_depth = 1
+		peoples_army = 1
+		human_infantry_offensive = 1
+		large_front_offensive = 1
+		human_wave_offensive = 1
+		guerilla_warfare = 1
+		# Air
+		formation_flying = 1		
+		dive_bombing = 1
+		direct_ground_support = 1
+
+		# Electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		# Industry
+		excavation1 = 1
+		excavation2 = 1
+		excavation3 = 1
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		assembly_line_production = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
+		rubber_processing = 1
+		fuel_silos = 1
+		fuel_refining = 1
+		fuel_refining2 = 2
+		fuel_refining3 = 1
+		fuel_refining4 = 1
+		fuel_refining5 = 1
+		improved_oil_processing = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		construction4 = 1
+		concentrated_industry = 1
+		concentrated_industry2 = 1
+		concentrated_industry3 = 1
+		concentrated_industry4 = 1
+		}
+
+	add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 73510 }
+	add_equipment_to_stockpile = { type = support_equipment_1 amount = 2134 }
+	add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 1050 } #Ti
+	add_equipment_to_stockpile = { type = artillery_equipment_2 amount = 730 }
+	add_equipment_to_stockpile = { type = anti_tank_equipment_2 amount = 1000 }
+	
+	}
+
+	
+	
+
+

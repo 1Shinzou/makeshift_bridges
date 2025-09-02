@@ -580,7 +580,7 @@ create_equipment_variant = {
 				special_type_slot_5 = easy_maintenance
 			}
 			upgrades = {
-				tank_nsb_engine_upgrade = 5
+				tank_nsb_engine_upgrade = 0
 				tank_nsb_armor_upgrade = 0
 			}
 			icon = "GFX_GER_advanced_medium_td"

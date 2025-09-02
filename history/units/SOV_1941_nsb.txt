@@ -186,7 +186,7 @@ instant_effect = {
 	complete_national_focus = SOV_claim_on_bessarabia
 	complete_national_focus = SOV_the_komsomol
 	complete_national_focus = SOV_the_new_soviet_woman
-	complete_national_focus = SOV_superior_war_machines
+	unlock_national_focus = SOV_superior_war_machines
 	complete_national_focus = SOV_the_means_to_wage_war
 	complete_national_focus = SOV_pc_of_mortar_armament
 	unlock_national_focus = SOV_soviet_artillery
@@ -372,7 +372,143 @@ instant_effect = {
 		scientist = GER_konrad_zuse
 		state = 219
 	}
-}
+
+	# Equipment
+
+
+	create_equipment_variant = {
+	name = "BTR M1941 B"
+	type = mechanized_equipment_1
+	parent_version = 0
+	upgrades = {
+		mech_cost_upgrade = 5
+	}
+} 
+
+	create_equipment_variant = {
+			name = "SU-85"
+			type = medium_tank_destroyer_chassis_2
+			design_team = mio:SOV_kirov_organization
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_high_velocity_cannon_3
+				turret_type_slot = tank_medium_fixed_superstructure_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = empty
+				special_type_slot_2 = squeezebore_adaptor
+				special_type_slot_3 = secondary_turret_small_cannon
+				special_type_slot_4 = secondary_turret_small_cannon
+				special_type_slot_5 = easy_maintenance
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 0
+				tank_nsb_armor_upgrade = 0
+			}
+			icon = "GFX_SOV_advanced_medium_td"
+		}
+
+	create_equipment_variant = {
+		name = "T-34-85"
+			type = medium_tank_chassis_2
+			design_team = mio:SOV_OKMO_organization
+				parent_version = 0
+				modules = {
+				main_armament_slot = tank_medium_cannon_3
+					turret_type_slot = tank_medium_three_man_tank_turret
+					suspension_type_slot = tank_torsion_bar_suspension
+					armor_type_slot = tank_riveted_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_1 = tank_radio_3
+					special_type_slot_2 = squeezebore_adaptor
+					special_type_slot_3 = secondary_turret_small_cannon
+					special_type_slot_4 = secondary_turret_small_cannon
+					special_type_slot_5 = easy_maintenance
+				}
+
+				upgrades = {
+							tank_nsb_engine_upgrade = 14
+							tank_nsb_armor_upgrade = 14
+					}
+					icon = "GFX_SOV_advanced_medium_tank_medium"
+				}
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_2
+			creator = SOV
+		}
+		requested_factories = 45
+		progress = 0.1
+		efficiency = 100
+		industrial_manufacturer = mio:SOV_tula_arms_plant_organization
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = medium_tank_chassis_2
+			creator = SOV
+			version_name = "T-34-85"
+		}
+		requested_factories = 80
+		progress = 0.1
+		efficiency = 100
+		industrial_manufacturer = mio:SOV_mytishchy_machine_building_plant_organization
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = medium_tank_destroyer_chassis_2
+			creator = SOV
+			version_name = "SU-85"
+		}
+		requested_factories = 80
+		progress = 0.1
+		efficiency = 100
+		industrial_manufacturer = mio:SOV_mytishchy_machine_building_plant_organization
+	}
+	
+		add_equipment_production = {
+		equipment = {
+			type = mechanized_equipment_1
+			creator = SOV
+			version_name = "BTR M1941 B"
+		}
+		requested_factories = 25
+		progress = 0.1
+		efficiency = 100
+		industrial_manufacturer = mio:SOV_gaz_organization
+	}
+		add_equipment_production = {
+			equipment = {
+				type = support_equipment_1
+				creator = "SOV" 
+			}
+				requested_factories = 15
+				progress = 0.2
+				efficiency = 100
+			}
+		add_equipment_production = {
+			equipment = {
+			type = motorized_equipment_1
+			creator = "SOV" 
+			}
+			requested_factories = 5
+			progress = 1
+			efficiency = 100
+			}
+		add_equipment_production = {
+			equipment = {
+			type = anti_air_equipment_3
+			creator = "SOV" 
+			}
+			requested_factories = 14
+			progress = 65
+			efficiency = 50
+			}	
+	}
+
 
 	#####################
 

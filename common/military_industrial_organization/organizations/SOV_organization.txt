@@ -74,7 +74,7 @@
 
 
 SOV_kharkov_organization = {
-	name = kharkiv
+	name = Kharkov
 	include = generic_tank_organization
 	icon = GFX_idea_generic_tank_manufacturer_1
 	

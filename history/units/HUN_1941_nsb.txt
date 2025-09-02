@@ -1,13 +1,13 @@
-	############# 41 START ####
+﻿############# 41 START ####
 instant_effect = {
 	set_stability = 0.8
 	set_war_support = 0.9
-	add_political_power = 200
+	add_political_power = 2000
 	add_command_power = 150
-	set_research_slots = 4
-
+	set_research_slots = 4 # slot focus was completed smh dead ass fuck this game
+	
+	# COMPLETING FOCUSES
 	set_technology = {
-
 		# Infantry
 		interwar_artillery = 1
 		interwar_antitank = 1
@@ -18,20 +18,20 @@ instant_effect = {
 		paratroopers = 1
 		improved_infantry_weapons_2 = 1
 		advanced_infantry_weapons = 1
+		tech_engineers = 1  
 		tech_engineers2 = 1
 		tech_field_hospital = 1
     	tech_logistics_company = 1
     	tech_logistics_company2 = 1
 		artillery1 = 1
 		artillery2 = 1
-		antiair1 = 1
 		antitank1 = 1
 		antitank2 = 1
 		antitank3 = 1
 		antitank4 = 1
 		antitank5 = 1
 		sp_armored_advanced_flamethrower_tech = 1
-
+		motorised_infantry = 1
 		# Doctrines
 		mass_assault = 1
 		pocket_defence = 1
@@ -51,7 +51,8 @@ instant_effect = {
 		radio = 1
 		mechanical_computing = 1
 		computing_machine = 1
-
+		advanced_radio = 1
+		improved_radio = 1
 		# Industry
 		excavation1 = 1
 		excavation2 = 1
@@ -65,7 +66,7 @@ instant_effect = {
 		rubber_processing = 1
 		fuel_silos = 1
 		fuel_refining = 1
-		fuel_refining2 = 2
+		fuel_refining2 = 1
 		fuel_refining3 = 1
 		fuel_refining4 = 1
 		fuel_refining5 = 1
@@ -79,25 +80,38 @@ instant_effect = {
 		concentrated_industry3 = 1
 		concentrated_industry4 = 1
 		}
-
-	add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 73510 }
-	add_equipment_to_stockpile = { type = support_equipment_1 amount = 4134 }
-	add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 1050 } #Ti
-	add_equipment_to_stockpile = { type = artillery_equipment_2 amount = 730 }
-	add_equipment_to_stockpile = { type = anti_tank_equipment_2 amount = 1000 }
-	add_equipment_to_stockpile = { type = train_equipment_1 amount = 50 }
-
-    
+		IF = {
+			limit = {
+				has_dlc = "La Resistance"
+			}
+			set_technology = {
+				armored_car1 = 1
+			}
+			# The Hivatal has already been established at this point 
+			create_intelligence_agency = yes
+		}
+		create_equipment_variant = {
+			name = "Danuvia 43M"
+			type = infantry_equipment_3
+			parent_version = 0
+			design_team = mio:HUN_femaru_fegyver_es_gepgyar_organization
+		} 
+		create_equipment_variant = {
+			name = "43M 75 mm Mk1"
+			type = anti_tank_equipment_3
+			parent_version = 0
+			design_team = mio:HUN_digep_artillery
+		} 
 		add_equipment_production = {
 			equipment = {
-					type = infantry_equipment_3
+				type = infantry_equipment_3
 				creator = "HUN"
-				}
-				requested_factories = 25
-				progress = 0.65
-				efficiency = 65
-				industrial_manufacturer = mio:HUN_cugir_organization
 			}
+			requested_factories = 25
+			progress = 1
+			efficiency = 50
+			industrial_manufacturer = mio:HUN_femaru_fegyver_es_gepgyar_organization
+		}
 		add_equipment_production = {
 			equipment = {
 			type = train_equipment_1
@@ -106,34 +120,40 @@ instant_effect = {
 			requested_factories = 1
 			progress = 1
 			efficiency = 100
-			}
-				
+		}
 		add_equipment_production = {
 			equipment = {
 				type = support_equipment_1
 				creator = "HUN" 
 			}
-				requested_factories = 5
-				progress = 1
-				efficiency = 100
-			}
-
-			add_equipment_production = {
+			requested_factories = 10
+			progress = 1
+			efficiency = 100
+		}
+		add_equipment_production = {
 			equipment = {
 			type = motorized_equipment_1
 			creator = "HUN" 
 			}
-			requested_factories = 1
+			requested_factories = 2
 			progress = 1
 			efficiency = 100
-			}
+		}
 		add_equipment_production = {
 			equipment = {
-			type = anti_tank_equipment_3
-			creator = "HUN" 
+				type = anti_tank_equipment_3
+				creator = "HUN" 
+				version_name = "43M 75 mm Mk1"
 			}
-			requested_factories = 10
-			progress = 65
-			efficiency = 65
-			}
+			requested_factories = 12
+			progress = 1
+			efficiency = 50
+			industrial_manufacturer = mio:HUN_digep_artillery
 		}
+		add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 98000 }
+		add_equipment_to_stockpile = { type = support_equipment_1 amount = 4500 }
+		add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 2500 } #Ti
+		add_equipment_to_stockpile = { type = artillery_equipment_2 amount = 730 }
+		add_equipment_to_stockpile = { type = anti_tank_equipment_2 amount = 2500 }
+		add_equipment_to_stockpile = { type = train_equipment_1 amount = 67 }
+}

@@ -27,6 +27,9 @@ state = {
 				industrial_complex = 2
 			}
 		}
+		1941.1.1 = {
+			add_core_of = ROM
+		}
 	}
 
 	provinces = {

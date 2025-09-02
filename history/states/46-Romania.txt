@@ -29,10 +29,10 @@ state = {
 		}
 		1941.1.1 = {
 			buildings = {
-			infrastructure = 5
-			arms_factory = 15
-			industrial_complex = 6
-			air_base = 3
+				infrastructure = 5
+				arms_factory = 16
+				industrial_complex = 8
+				air_base = 3
 			}
 		}
 		

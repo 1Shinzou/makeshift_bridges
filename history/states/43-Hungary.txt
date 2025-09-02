@@ -27,9 +27,15 @@ state={
 			9660 20 
 		}
 		add_core_of = HUN
-			1941.1.1 = {
-		owner = HUN
-		add_core_of = HUN
+		1941.1.1 = {
+			add_core_of = HUN
+			owner = HUN
+			buildings = {
+				infrastructure = 5
+				arms_factory = 20
+				industrial_complex = 8
+				air_base = 10
+			}
 		}
 	}
 

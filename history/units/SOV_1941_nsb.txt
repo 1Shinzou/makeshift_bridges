@@ -17,11 +17,6 @@ instant_effect = {
 		SOV_collectivized_society
 	}
 
-	add_timed_idea = {
-		idea = tradeback_is_cancer
-		days = 60
-	}
-
 	set_country_flag = { flag = SOV_gosproyektstroy_level_2_flag value = 1 } #USA
 	set_country_flag = { flag = SOV_gosproyektstroy_level_3_flag value = 1 } #CIV
 	IF = {
@@ -327,6 +322,7 @@ instant_effect = {
 			improved_light_tank = 1 
 			basic_heavy_tank = 1    # Should be available in 1936 (T-35)
 			basic_medium_tank = 1 # Should be available in 1936 (T-28)
+			improved_heavy_tank = 1 # KV-1
 		}
 	}
 	if = {
@@ -335,7 +331,9 @@ instant_effect = {
 		}
 		set_technology = {
 			improved_light_tank_chassis = 1
+			advanced_light_tank_chassis = 1
 			basic_heavy_tank_chassis = 1
+			improved_heavy_tank_chassis = 1
 			basic_medium_tank_chassis = 1 
 			improved_medium_tank_chassis = 1
 			engine_tech_2 = 1
@@ -410,7 +408,32 @@ instant_effect = {
 		}
 
 	create_equipment_variant = {
-		name = "T-34-85"
+		name = "ZSU-37-2"
+			type = heavy_tank_aa_chassis_2
+			design_team = mio:SOV_kirov_organization
+				parent_version = 0
+				modules = {
+				main_armament_slot = tank_anti_air_cannon_3
+					turret_type_slot = tank_heavy_three_man_tank_turret
+					suspension_type_slot = tank_christie_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_1 = tank_radio_3
+					special_type_slot_2 = armor_skirts
+					special_type_slot_3 = wet_ammo_storage
+					special_type_slot_4 = sloped_armor
+					special_type_slot_5 = easy_maintenance
+				}
+
+				upgrades = {
+							tank_nsb_engine_upgrade = 17
+							tank_nsb_armor_upgrade = 17
+					}
+					icon = "GFX_SOV_advanced_heavy_tank_medium"
+				}
+		
+		create_equipment_variant = {
+		name = ""
 			type = medium_tank_chassis_2
 			design_team = mio:SOV_OKMO_organization
 				parent_version = 0

@@ -1606,4 +1606,8 @@ if = {
 		remove_idea = trotskyite_plot_nsb
 		add_idea = trotskyite_plot_purged
 	}
+	add_timed_idea = {
+		idea = tradeback_is_cancer
+		days = 60
+	}
 }

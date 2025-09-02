@@ -33,9 +33,13 @@ state = {
 			arms_factory = 1
 			air_base = 1
 		}
-			1941.1.1 = {
-		owner = HUN
-		add_core_of = HUN
+		1941.1.1 = {
+			owner = HUN
+			add_core_of = HUN
+			buildings = {
+				infrastructure = 5
+				industrial_complex = 4
+			}
 		}
 	}
 

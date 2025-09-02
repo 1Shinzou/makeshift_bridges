@@ -18,10 +18,10 @@ state={
 		add_core_of = ROM
 		1941.1.1 = {
 			buildings = {
-			infrastructure = 3
-			arms_factory = 4
-			industrial_complex = 3
-			air_base = 3
+				infrastructure = 5
+				arms_factory = 12
+				industrial_complex = 6
+				air_base = 5
 			}
 		}
 	}

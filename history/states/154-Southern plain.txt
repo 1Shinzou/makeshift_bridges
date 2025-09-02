@@ -30,8 +30,12 @@ state = {
 			11646 1 
 		}
 		1941.1.1 = {
-		owner = HUN
-		add_core_of = HUN
+			owner = HUN
+			add_core_of = HUN
+			buildings = {
+				infrastructure = 5
+				industrial_complex = 3
+			}
 		}
 	}
 

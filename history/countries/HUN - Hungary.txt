@@ -492,12 +492,9 @@ add_breakthrough_progress = {
 
 	###################### HUNGARY IN 1941 START ######################
 
-	1941.1.1 = {
+1941.1.1 = {
 		set_oob = "HUN_1941_nsb"
 	# WITH THE WW DLC
-
-
-
 		set_politics = {
 			ruling_party = neutrality
 			last_election = "1935.3.31"
@@ -505,12 +502,11 @@ add_breakthrough_progress = {
 			elections_allowed = no
 		}
 		set_popularities = {
-			neutrality = 74
-			democratic = 2
-			fascism = 24
+			neutrality = 65
+			democratic = 0
+			fascism = 35
 			communism = 0
 		}
-
 		IF = {
 			limit = {
 				has_dlc = "Arms Against Tyranny"
@@ -523,10 +519,6 @@ add_breakthrough_progress = {
 			}
 			remove_ideas = HUN_treaty_of_triannon_wuw
 		}
-
-		add_political_power = 1100
-		add_command_power = 100
-
 		swap_ideas = {
 			remove_idea = HUN_levente_associations
 			add_idea = HUN_levente_associations_act_of_defense_and_secret_rearmament
@@ -548,9 +540,6 @@ add_breakthrough_progress = {
 			set_country_flag = HUN_gombos_has_died_flag
 			set_country_flag = HUN_horthy_aligned_the_move_flag
 		}
-
-		# COMPLETING FOCUSES
-
 		# ONES THAT CAN JUST BE COMPLETED NORMALLY
 		complete_national_focus = wuw_HUN_continue_the_regency
 		complete_national_focus = wuw_HUN_strengthen_horthys_reign
@@ -570,7 +559,18 @@ add_breakthrough_progress = {
 		complete_national_focus = wuw_HUN_initiate_army_maneuvers
 		complete_national_focus = wuw_HUN_form_the_gyorshadtest
 		complete_national_focus = wuw_HUN_invest_in_ludovica_academy
-
+		complete_national_focus = wuw_HUN_danuvia_submachine_guns
+		complete_national_focus = wuw_HUN_expand_the_hungarian_academy_of_sciences
+		complete_national_focus = wuw_HUN_expand_the_lignite_industry
+		complete_national_focus = wuw_HUN_doctrinal_studies
+		complete_national_focus = wuw_HUN_expand_the_army
+		complete_national_focus = wuw_HUN_magyar_kiralyi_csendorseg
+		complete_national_focus = wuw_HUN_light_infantry_divisions_doctrine
+		complete_national_focus = wuw_HUN_promote_hungarianism
+		complete_national_focus = wuw_HUN_strengthen_the_turani_vadaszok
+		complete_national_focus = wuw_HUN_manred_weiss_steel_and_metal_works
+		complete_national_focus = wuw_HUN_expand_the_aluminum_industry		
+		complete_national_focus = wuw_HUN_the_turul_association		
 		# ONES THAT HAVE TO BE HANDELED MANUALLY
 		unlock_national_focus = wuw_HUN_secret_rearmament
 		unlock_national_focus = wuw_HUN_outlaw_the_party_of_national_will
@@ -578,17 +578,12 @@ add_breakthrough_progress = {
 		unlock_national_focus = wuw_HUN_negotiate_the_restrictions
 		unlock_national_focus = wuw_HUN_announce_the_gyor_program
 		unlock_national_focus = wuw_HUN_renounce_the_treaty_of_trianon
-
 		add_ideas = {
-			war_economy
-			extensive_conscription
+			tot_economic_mobilisation
+			all_adults_serve
+			HUN_secret_rearmament
+			tradeback_is_cancer
 		}
-
-		add_ideas = HUN_secret_rearmament
-
-	complete_special_project = {
-		project = sp:sp_air_radar
-	}
 	IF = {
 		limit = {
 			has_dlc = "La Resistance"
@@ -599,8 +594,6 @@ add_breakthrough_progress = {
 		# The Hivatal has already been established at this point 
 		create_intelligence_agency = yes
 	}
-
-	
 }
 
 

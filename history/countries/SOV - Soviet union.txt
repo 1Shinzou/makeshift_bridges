@@ -1610,4 +1610,8 @@ if = {
 		idea = tradeback_is_cancer
 		days = 60
 	}
+	add_timed_idea = {
+		idea = add_production_efficiency_41
+		days = 2
+	}
 }

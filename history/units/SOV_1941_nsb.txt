@@ -499,7 +499,7 @@ instant_effect = {
 			creator = SOV
 		}
 		requested_factories = 45
-		progress = 0.1
+		progress = 1
 		efficiency = 100
 		industrial_manufacturer = mio:SOV_tula_arms_plant_organization
 	}
@@ -508,10 +508,10 @@ instant_effect = {
 		equipment = {
 			type = medium_tank_chassis_2
 			creator = SOV
-			version_name = "T-34-85"
+			version_name = "T34-85"
 		}
 		requested_factories = 70
-		progress = 0.1
+		progress = 1
 		efficiency = 100
 		industrial_manufacturer = mio:SOV_mytishchy_machine_building_plant_organization
 	}
@@ -523,7 +523,7 @@ instant_effect = {
 			version_name = "SU-85"
 		}
 		requested_factories = 70
-		progress = 0.1
+		progress = 1
 		efficiency = 100
 		industrial_manufacturer = mio:SOV_mytishchy_machine_building_plant_organization
 	}
@@ -535,7 +535,7 @@ instant_effect = {
 			version_name = "ZSU-37-2"
 		}
 		requested_factories = 23
-		progress = 0.1
+		progress = 1
 		efficiency = 100
 		industrial_manufacturer = mio:SOV_mytishchy_machine_building_plant_organization
 	}
@@ -547,7 +547,7 @@ instant_effect = {
 			version_name = "BTR M1941 B"
 		}
 		requested_factories = 25
-		progress = 0.1
+		progress = 1
 		efficiency = 100
 		industrial_manufacturer = mio:SOV_gaz_organization
 	}
@@ -557,7 +557,7 @@ instant_effect = {
 				creator = "SOV" 
 			}
 				requested_factories = 15
-				progress = 0.2
+				progress = 1
 				efficiency = 100
 			}
 		add_equipment_production = {
@@ -575,7 +575,7 @@ instant_effect = {
 			creator = "SOV" 
 			}
 			requested_factories = 14
-			progress = 65
+			progress = 1
 			efficiency = 50
 			}	
 		}

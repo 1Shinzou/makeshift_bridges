@@ -21,6 +21,14 @@ state=
 			6706 1 
 		}
 		add_core_of = ROM
+		1941.1.1 = {
+			buildings = {
+			infrastructure = 3
+			arms_factory = 5
+			industrial_complex = 1
+			air_base = 3
+			}
+		}
 	}
 	provinces=
 	{

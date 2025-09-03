@@ -8,7 +8,8 @@ ideas = {
             modifier = {
 				army_attack_factor = -0.50
                 army_defence_factor = -0.25
-                winter_attrition_factor = 0.20
+                breakthrough_factor = -0.25
+                winter_attrition_factor = 0.25
             }
         }
         winter_of_1942 = {
@@ -19,6 +20,7 @@ ideas = {
             modifier = {
 				army_attack_factor = -0.30
                 army_defence_factor = -0.10
+                breakthrough_factor = -0.10
                 winter_attrition_factor = 0.10
             }
         }
@@ -28,8 +30,22 @@ ideas = {
                 always = no
 			}
             modifier = {
-                army_defence_factor = -0.35
-                breakthrough_factor = 0.35
+                army_defence_factor = -0.40
+                breakthrough_factor = 0.40
+                #army_armor_attack_factor = 0.1
+            }
+        }
+        soviet_winter_offensive = {
+            picture = generic_communist_army
+            allowed = { 
+                always = no
+			}
+            modifier = {
+                army_attack_factor = 0.30
+                army_defence_factor = 0.10
+                army_attack_speed_factor = 0.10
+                breakthrough_factor = 0.30
+                winter_attrition_factor = -0.50
             }
         }
     }

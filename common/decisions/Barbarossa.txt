@@ -38,8 +38,13 @@
 				add_timed_idea = { 
 				idea = winter_of_1941 days = 80
 			}
+			SOV = { 
+			add_timed_idea = { 
+				idea = soviet_winter_offensive days = 30
+			}
 		}
 	}
+}
 	winter_of_1942_tick = {
 		allowed = { 
 			always = no

@@ -7596,7 +7596,9 @@ focus = {
 	mutually_exclusive = { focus = SOV_positive_heroism }
 
 	available = {
-
+		NOT = { 
+			has_start_date = 1941.1.1.12
+		}
 	}
 	
 	search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_PROPAGANDA}

@@ -245,7 +245,10 @@ characters = {
 				}
 			}
 			available = {
+					OR = {
 				has_completed_focus = SOV_positive_heroism
+				has_start_date = 1941.1.1.12
+					}
 				if = {
 					limit = {
 						has_character_flag = SOV_exiled_flag

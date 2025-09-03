@@ -329,6 +329,7 @@ instant_effect = {
 		antitank4 = 1
 		antitank5 = 1
 		sp_armored_advanced_flamethrower_tech = 1
+		railway_gun = 1
 
 		# Doctrines
 		delay = 1
@@ -747,6 +748,30 @@ instant_effect = {
 		amount = 2000
 		producer = GER
 	}
+		create_railway_gun = {
+			equipment = railway_gun_equipment_1
+			name = "German Railway Gun 1"
+		}
+		create_railway_gun = {
+			equipment = railway_gun_equipment_1
+			name = "German Railway Gun 2"
+		}
+		create_railway_gun = {
+			equipment = railway_gun_equipment_1
+			name = "German Railway Gun 3"
+		}
+		create_railway_gun = {
+			equipment = railway_gun_equipment_1
+			name = "German Railway Gun 4"
+		}
+		create_railway_gun = {
+			equipment = railway_gun_equipment_1
+			name = "German Railway Gun 5"
+		}
+		create_railway_gun = {
+			equipment = railway_gun_equipment_1
+			name = "German Railway Gun 6"
+		}
 
 }
 

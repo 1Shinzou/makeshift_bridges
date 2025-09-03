@@ -396,6 +396,8 @@ instant_effect = {
 		mechanised_infantry = 1
 		engine_tech_2 = 1
 		sp_armored_advanced_flamethrower_tech = 1
+		railway_gun = 1
+
 		#Doctrine
 		mobile_warfare = 1
 		delay = 1
@@ -870,6 +872,34 @@ instant_effect = {
 		amount = 2000
 		producer = SOV
 	}
+		create_railway_gun = {
+			equipment = railway_gun_equipment_1
+			name = "Soviet Railway Gun 1"
+		}
+		create_railway_gun = {
+			equipment = railway_gun_equipment_1
+			name = "Soviet Railway Gun 2"
+		}
+		create_railway_gun = {
+			equipment = railway_gun_equipment_1
+			name = "Soviet Railway Gun 3"
+		}
+		create_railway_gun = {
+			equipment = railway_gun_equipment_1
+			name = "Soviet Railway Gun 4"
+		}
+		create_railway_gun = {
+			equipment = railway_gun_equipment_1
+			name = "Soviet Railway Gun 5"
+		}
+		create_railway_gun = {
+			equipment = railway_gun_equipment_1
+			name = "Soviet Railway Gun 6"
+		}
+		create_railway_gun = {
+			equipment = railway_gun_equipment_1
+			name = "Soviet Railway Gun 7"
+		}
 }
 
 

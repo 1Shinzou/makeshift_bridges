@@ -1,18 +1,40 @@
 political_actions = {
 
 	winter_of_1941_tick = {
-
-		allowed = { 
-			has_game_rule = {
-				rule = larp_barb
-				option = on
+		
+		activation = {
+			if = { 
+				limit = {
+				  	AND = { 
+						has_start_date = 1941.1.1.12
+						has_game_rule = {
+						rule = larp_barb
+						option = on
+						}
+				  	}
+				}
 			}
-			has_start_date > 1941.1.1
 		}
+		allowed = { 
+			has_country_flag = barbstart
+		}
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cancel_trigger = {
+			never = yes
+		}
+		
 		days_mission_timeout = 340
 		is_good = no
 		fire_only_once = yes
 		timeout_effect = {
+			activate_mission = winter_of_1942_tick
 				add_timed_idea = { 
 				idea = winter_of_1941 days = 80
 			}
@@ -22,14 +44,10 @@ political_actions = {
 	winter_of_1942_tick = {
 
 		allowed = { 
-			has_game_rule = {
-				rule = larp_barb
-				option = on
-			}
-			has_start_date > 1941.1.1
+			
 		}
 		activation = {
-			has_idea = winter_of_1941
+			
 		}
 
 		days_mission_timeout = 360

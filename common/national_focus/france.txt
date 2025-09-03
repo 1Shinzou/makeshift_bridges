@@ -1337,7 +1337,7 @@
 
 	focus = {
 		id = FRA_defensive_focus
-		icon = GFX_focus_FRA_gamelin_plan
+		icon = GFX_focus_FRA_weygand_plan
 		mutually_exclusive = { focus = FRA_aggressive_focus }
 		x = -1
 		y = 1
@@ -1983,7 +1983,7 @@
 
 	focus = {
 		id = FRA_aggressive_focus
-		icon = GFX_focus_FRA_weygand_plan
+		icon = GFX_focus_FRA_gamelin_plan
 		mutually_exclusive = { focus = FRA_defensive_focus }
 		x = 1
 		y = 1

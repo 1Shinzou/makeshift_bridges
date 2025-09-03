@@ -6,7 +6,7 @@
 			if = { 
 				limit = {
 				  	AND = { 
-						has_start_date = 1941.1.1.12
+						has_start_date = 1941.1.1
 						has_game_rule = {
 						rule = larp_barb
 						option = on
@@ -25,9 +25,9 @@
 		visible = {
 			always = yes
 		}
-
+		
 		cancel_trigger = {
-			never = yes
+			always = no
 		}
 		
 		days_mission_timeout = 340
@@ -40,16 +40,22 @@
 			}
 		}
 	}
-
 	winter_of_1942_tick = {
-
 		allowed = { 
-			
+			always = no
 		}
 		activation = {
 			
 		}
-
+		available = {
+			hidden_trigger = { always = no }
+		}
+		cancel_trigger = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
 		days_mission_timeout = 360
 		is_good = no
 		fire_only_once = yes
@@ -59,6 +65,4 @@
 			}
 		}
 	}
-	
 }
-	

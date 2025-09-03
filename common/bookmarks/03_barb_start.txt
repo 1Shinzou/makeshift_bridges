@@ -66,6 +66,17 @@ bookmarks = {
 					type = convoy
 					amount = 99999
 				}
+			}
+			SOV = {
+				set_country_flag = barbstart
+			}
+			GER = {
+				set_country_flag = barbstart
+			}
+			HUN = {
+				set_country_flag = barbstart
+			}
+			ROM = {
 				set_country_flag = barbstart
 			}
 			randomize_weather = 22345 # <- Obligatory in every bookmark !

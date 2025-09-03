@@ -21,6 +21,21 @@ instant_effect = {
 			special_type_slot_4 = empty
 		}
 	}
+	create_equipment_variant = {
+		name = "F2"
+		type = small_plane_airframe_2
+		design_team = mio:GER_focke_wulf_organization
+		modules = {
+			fixed_main_weapon_slot = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_3 = empty
+			engine_type_slot = engine_3_1x
+			special_type_slot_1 = fuel_tanks_small
+			special_type_slot_2 = armor_plate_small
+			special_type_slot_3 = self_sealing_fuel_tanks_small
+		}
+	}
 	add_equipment_production = {
 		equipment = {
 			type = small_plane_cas_airframe_2
@@ -30,12 +45,18 @@ instant_effect = {
 		requested_factories = 40
 		progress = 1
 		efficiency = 100
-		industrial_manufacturer = mio:GER_alkett_organization
+		industrial_manufacturer = mio:GER_junkers_organization
 	}
 	add_equipment_to_stockpile = { 
 		type = small_plane_cas_airframe_2
 		amount = 2400
 		producer = GER
 		variant_name = "CAS-Greed"
+	}
+	add_equipment_to_stockpile = { 
+		type = small_plane_airframe_2
+		amount = 4000
+		producer = GER
+		variant_name = "F2"
 	}
 }

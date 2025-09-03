@@ -348,9 +348,19 @@ instant_effect = {
 		raider_patrols = 1
 
 		# Air
-		formation_flying = 1		
-		dive_bombing = 1
-		direct_ground_support = 1
+		air_superiority = 1
+		infrastructure_destruction = 1
+		home_defence = 1
+		naval_strike_tactics = 1
+		dogfighting_experience = 1
+		multialtitude_flying = 1
+		logistical_bombing = 1
+		day_bombing = 1
+		air_offense = 1
+		flying_fortress = 1
+		mass_destruction = 1
+		offensive_formations = 1
+
 
 		# Electronics
 		electronic_mechanical_engineering = 1

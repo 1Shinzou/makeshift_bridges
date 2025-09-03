@@ -495,8 +495,8 @@ usa_boost = {
 
 larp_barb = {
 	name = "Barbarossa Larp"
-	group = "Economic Adjustments"
-	icon = "GFX_decision_generic_merge_plant_materiel"
+	group = "Game Rules for the Barbarossa Game Mode"
+	icon = "GFX_decision_revolt"
 	default = {
 		name = off
 		text = "GOff"

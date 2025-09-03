@@ -666,7 +666,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_fair_labour_standards_act
-		icon = GFX_focus_AFG_contact_rural_loyalists
+		icon = GFX_focus_NOR_restore_public_trust_in_the_storting
 		x = 0
 		y = 2
 		prerequisite = { focus = USA_agricultural_adjustment_act }

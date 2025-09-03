@@ -82,7 +82,7 @@ division_template = {
 }
 #####EVERYTHING IMPORTANT FOR 41#####
 instant_effect = {
-	add_political_power = 2000
+	add_political_power = 100
 	add_command_power = 150
 	set_stability = 1
 	set_war_support = 0.95 
@@ -98,9 +98,15 @@ instant_effect = {
 		extensive_conscription
 		SOV_collectivized_society
 		# characters
+		nikita_khrushchyov
+		mikhail_kalinin
 		SOV_vasily_kuznetsov
 		SOV_markian_popov
-		SOV_vsevolod_merkulov
+		vsevolod_merkulov
+		konstantin_rokossovsky
+		nikolay_vatutin
+		aleksandr_novikov
+		nikolay_kuznetsov
 	}
 
 	set_country_flag = { flag = SOV_gosproyektstroy_level_2_flag value = 1 } #USA

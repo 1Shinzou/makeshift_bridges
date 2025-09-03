@@ -154,28 +154,6 @@ IF = {
 
 	### OPINION MODIFIERS ###
 
-	add_opinion_modifier = {
-		target = GER
-		modifier = HUN_GER_trade_modifier
-	}	
-	GER = {
-		add_opinion_modifier = {
-			target = HUN
-			modifier = HUN_GER_trade_modifier
-		}	
-	}
-
-	add_opinion_modifier = {
-		target = POL
-		modifier = HUN_POL_friendship_modifier
-	}	
-	POL = {
-		add_opinion_modifier = {
-			target = HUN
-			modifier = HUN_POL_friendship_modifier
-		}	
-	}
-
 	IF = {
 		limit = { has_dlc = "Arms Against Tyranny" }
 		add_ideas = { HUN_treaty_of_triannon_aat_wuw }
@@ -233,7 +211,7 @@ IF = {
 		name = "Straussler V-4"
 		type = light_tank_chassis_0
 		parent_version = 0
-		obsolete = no
+		obsolete = yes
 		modules = {
 			main_armament_slot = tank_small_cannon
 			turret_type_slot = tank_light_one_man_tank_turret
@@ -314,20 +292,6 @@ IF = {
 	set_variable = { global.HABSBURG_cavalry_breakthrough_factor = 0.00 }	
 
 }
-
-add_opinion_modifier = { 
-	target = CZE
-	modifier = BFTB_incongruous_neighbors
-}
-add_opinion_modifier = { 
-	target = ROM
-	modifier = BFTB_incongruous_neighbors
-}
-add_opinion_modifier = { 
-	target = YUG
-	modifier = BFTB_incongruous_neighbors
-}
-
 # SETUP HUNGARIAN POLITICS
 set_politics = {
 	ruling_party = neutrality
@@ -580,7 +544,7 @@ add_breakthrough_progress = {
 		unlock_national_focus = wuw_HUN_renounce_the_treaty_of_trianon
 		add_ideas = {
 			tot_economic_mobilisation
-			all_adults_serve
+			service_by_requirement
 			HUN_secret_rearmament
 			tradeback_is_cancer
 		}

@@ -212,12 +212,10 @@ set_popularities = {
 		}
 	}
 
-	###################### ROMANIA IN 1941 START ######################
+###################### ROMANIA IN 1941 START ######################
 
 	1941.1.1 = {
-		set_oob = "ROM_1941_nsb"
-		set_air_oob = ""
-		set_naval_oob = "ROM_1936_naval_mtg"
+	set_oob = "ROM_1941_nsb"
 	set_politics = {
 		ruling_party = neutrality
 		last_election = "1937.10.1"
@@ -225,14 +223,12 @@ set_popularities = {
 		elections_allowed = no
 	}
 	set_popularities = {
-		democratic = 10
-		fascism = 50
+		democratic = 5
+		fascism = 55
 		communism = 0
 		neutrality = 40
 	}
-	
 	### Focus Completion ### 
-
 	complete_national_focus = ROM_national_recovery
 	complete_national_focus = ROM_autarky
 	complete_national_focus = ROM_national_defense_industry
@@ -243,17 +239,14 @@ set_popularities = {
 	complete_national_focus = ROM_sentinels_of_the_motherland
 	complete_national_focus = ROM_arrest_general_antonescu
 	complete_national_focus = ROM_nationalize_the_oil
-	complete_national_focus = ROM_army_war_college
+	complete_national_focus = ROM_modern_at_guns
+	complete_national_focus = ROM_modern_at_guns_2
 	complete_national_focus = ROM_expand_the_army
 	complete_national_focus = ROM_expand_the_war_industry
 	complete_national_focus = ROM_hunedoara_steel_works
 	complete_national_focus = ROM_expand_the_axis_oil_trade
 	complete_national_focus = ROM_ensure_agricultural_self_sufficiency
-
-
-
 	### Focus Completion Manually ###
-
 	unlock_national_focus = ROM_expand_the_university_of_bucharest
 	unlock_national_focus = ROM_bucharest_technical_institute
 	unlock_national_focus = ROM_for_the_preservation_of_greater_romania
@@ -277,43 +270,38 @@ set_popularities = {
 	unlock_national_focus = ROM_trade_treaty_with_germany
 
 	add_ideas = {
-	## national spirit
-	ROM_german_influence
-	ROM_preserve_greater_romania2
-	ROM_iron_guard
-	ROM_grand_army
+		## national spirit
+		ROM_german_influence
+		ROM_preserve_greater_romania2
+		ROM_iron_guard
+		ROM_grand_army
 
-	## economy
-	limited_exports
-	war_economy
-	#service_by_requirement
-	limited_conscription
-	ROM_ROMLOC
-	ROM_nicolae_malaxa
-	## high command
+		## economy
+		closed_economy
+		tot_economic_mobilisation
+		all_adults_serve
+		ROM_ROMLOC
+		ROM_nicolae_malaxa
+		tradeback_is_cancer
+		## high command
 
-	ROM_ion_antonescu
-	ROM_gheorghe_avramescu
-	ROM_gheorghe_mihail
-	ROM_ermil_gheorghiu
-	
-	# theorist
-	ROM_gheorghe_potopeanu
+		ROM_ion_antonescu
+		ROM_gheorghe_avramescu
+		ROM_gheorghe_mihail
+		ROM_ermil_gheorghiu
+		
+		# theorist
+		ROM_gheorghe_potopeanu
 	}
 
 	add_timed_idea = {
 		idea = tradeback_is_cancer
 		days = 60
 	}
-		remove_ideas = {
-			ROM_iron_guard
-			ROM_romanian_officers
-			#ROM_king_carol_ii_hedonist
-			}
-		}
-
-
-	
-	
-
+	remove_ideas = {
+		ROM_iron_guard
+		ROM_romanian_officers
+		#ROM_king_carol_ii_hedonist
+	}
+}
 

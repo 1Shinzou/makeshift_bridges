@@ -36,7 +36,7 @@ ideas = {
 			}
 			rule = {
 				can_join_factions = no
-				can_create_factions = yes
+				can_create_factions = no
 			}
 		}
 	

@@ -35,6 +35,9 @@ winter_of_1941:0 "Winter of 1941"
 winter_of_1941_tick:0 "Winter of 1941"
 winter_of_1942:0 "Winter of 1942"
 winter_of_1942_tick:0 "Winter of 1942"
+barbarossa_category:0 "Barbarossa"
+barbarossa_category_desc:0 ""
+
 
 
 add_convoy:0 "Add Convoy"

@@ -6,7 +6,7 @@
 			if = { 
 				limit = {
 				  	AND = { 
-						has_start_date = 1941.1.1
+						has_start_date = 1941.1.1.12
 						has_game_rule = {
 						rule = larp_barb
 						option = on

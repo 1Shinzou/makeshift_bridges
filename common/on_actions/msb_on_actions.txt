@@ -562,9 +562,21 @@ on_actions = {
                     }
                 }
             }
+		if = {
+			limit = {
+				FROM = {
+					original_tag = SOV
+					}
+					has_game_rule = {
+							rule = larp_barb
+							option = on
+					}
+				}
+				SOV = { 
+					load_oob = "SOV_barb"
+				}
+			}
 			
 		}
 	}
-	
-
 }

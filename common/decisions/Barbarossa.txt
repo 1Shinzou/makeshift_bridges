@@ -3,20 +3,17 @@
 		winter_of_1941_tick = {
 		
 		activation = {
-			if = { 
-				limit = {
-				  	AND = { 
-						has_start_date = 1941.1.1.12
+				AND = { 
+						date = 1941.1.2
 						has_game_rule = {
 						rule = larp_barb
 						option = on
 						}
 				  	}
 				}
-			}
-		}
+		
 		allowed = { 
-			has_country_flag = barbstart
+			#has_country_flag = barbstart
 		}
 		available = {
 			hidden_trigger = { always = no }

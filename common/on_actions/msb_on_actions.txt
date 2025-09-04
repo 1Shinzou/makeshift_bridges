@@ -595,4 +595,93 @@ on_actions = {
 			}
 		}
 	}
+	on_naval_invasion = {
+		effect = { 
+			THIS = {
+				if = {
+					limit = {
+						NOT = { CONTROLLER = { tag = ROOT } }
+						NOT = { CONTROLLER = { has_country_flag = notif_disable_inv_warning } }
+					}
+					save_global_event_target_as = invaded_state
+					# If the one getting dropped on, Give the alert
+					CONTROLLER = {
+						set_country_flag = ui_show_invasion_warning
+						set_variable = { ui_invaded_state = PREV }
+						set_variable = { ui_invaded_country = PREV.owner }
+						set_variable = { ui_invader_country = ROOT }
+					}
+					# If its a puppet, alert the overlord
+					if = {
+						limit = { CONTROLLER = { is_puppet = yes } }
+						CONTROLLER = {
+							OVERLORD = {
+								set_country_flag = ui_show_invasion_warning
+								set_variable = { ui_invaded_state = PREV.PREV }
+								set_variable = { ui_invaded_country = PREV.PREV.owner }
+								set_variable = { ui_invader_country = ROOT }
+							}
+						}
+					} 
+					# If its in the same faction as that country landed in, alert them
+					every_country = {
+						if = { 
+							limit = { 
+								THIS = { is_in_faction_with = PREV.PREV.CONTROLLER }
+							}
+							set_country_flag = ui_show_invasion_warning
+							set_variable = { ui_invaded_state = PREV }
+							set_variable = { ui_invaded_country = PREV.CONTROLLER }
+							set_variable = { ui_invader_country = ROOT }
+						}
+					}
+
+				}
+			}
+		}
+	}
+	on_paradrop = {
+		effect = { 
+			THIS = {
+				if = {
+					limit = {
+						NOT = { CONTROLLER = { tag = ROOT } }
+						NOT = { CONTROLLER = { has_country_flag = notif_disable_para_warning } }
+					}
+					# If the one getting dropped on, Give the alert
+					CONTROLLER = {
+						set_country_flag = ui_show_paradrop_warning
+						set_variable = { ui_invaded_state = PREV }
+						set_variable = { ui_invaded_country = PREV.owner }
+						set_variable = { ui_invader_country = ROOT }
+					}
+					save_global_event_target_as = paradropped_state
+					# If its a puppet, alert the overlord
+					if = {
+						limit = { CONTROLLER = { is_puppet = yes } }
+						CONTROLLER = {
+							OVERLORD = {
+								set_country_flag = ui_show_paradrop_warning
+								set_variable = { ui_invaded_state = PREV.PREV }
+								set_variable = { ui_invaded_country = PREV.PREV.owner }
+								set_variable = { ui_invader_country = ROOT }
+							}
+						}
+					} 
+					# If its in the same faction as that country landed in, alert them
+					every_country = {
+						if = { 
+							limit = { 
+								THIS = { is_in_faction_with = PREV.PREV.CONTROLLER } 
+							}
+							set_country_flag = ui_show_paradrop_warning
+							set_variable = { ui_invaded_state = PREV }
+							set_variable = { ui_invaded_country = PREV.CONTROLLER }
+							set_variable = { ui_invader_country = ROOT }
+						}
+					}
+				}
+			}
+		}
+	}	
 }

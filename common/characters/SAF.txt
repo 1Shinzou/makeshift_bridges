@@ -74,7 +74,7 @@ characters={
 		}
 		corps_commander = {
 			traits = {
-				infantry_leader
+				
 			}
 			skill = 3
 			attack_skill = 2
@@ -94,7 +94,7 @@ characters={
 		corps_commander = {
 			traits = {
 				infantry_officer
-				infantry_leader
+				
 				naval_liason
 			}
 			skill = 3

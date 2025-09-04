@@ -10,7 +10,11 @@ ability = {
 			has_ability = makeshift_bridges
 			is_border_war = no
 			OWNER = {
-				has_idea = click_barb
+				has_idea = GER_barbarossa
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
 			}
 		}
 		
@@ -22,7 +26,7 @@ ability = {
 		}
 		
 		cost = 0.05
-		duration = 168
+		duration = 336
 		
 		ai_will_do = {
 			factor = -1

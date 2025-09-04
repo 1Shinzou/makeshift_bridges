@@ -6,7 +6,7 @@ ideas = {
                     always = no
                 }
             modifier = {
-				army_attack_factor = -1
+				army_attack_factor = -0.8
                 army_defence_factor = -0.50
                 breakthrough_factor = -0.50
                 winter_attrition_factor = 0.50
@@ -20,7 +20,7 @@ ideas = {
             modifier = {
 				army_attack_factor = -0.50
                 army_defence_factor = -0.20
-                breakthrough_factor = -0.25
+                breakthrough_factor = -0.30
                 winter_attrition_factor = 0.25
             }
         }
@@ -30,10 +30,14 @@ ideas = {
                 always = no
 			}
             modifier = {
-                #army_defence_factor = -0.40
-                #breakthrough_factor = 0.40
-                #army_armor_attack_factor = 0.1
-               army_morale_factor = 0.25
+                army_defence_factor = -0.20
+                army_attack_factor = -0.20
+                breakthrough_factor = 0.30
+                supply_consumption_factor = -0.3
+                supply_node_range = 0.2
+
+                #army_armor_attack_factor = -0.20
+               #army_morale_factor = 0.25
             }
         }
         soviet_winter_offensive = {
@@ -44,7 +48,7 @@ ideas = {
             modifier = {
                 army_attack_factor = 0.60
                 army_defence_factor = 0.30
-                army_attack_speed_factor = 0.20
+               # army_attack_speed_factor = 0.20
                 breakthrough_factor = 0.50
                 winter_attrition_factor = -0.50
                 command_power_gain_mult = 0.25

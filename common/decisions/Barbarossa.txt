@@ -4,7 +4,7 @@
 		
 		activation = {
 				AND = { 
-						date = 1941.1.2
+						has_start_date = 1941.1.1.12
 						has_game_rule = {
 						rule = larp_barb
 						option = on
@@ -31,15 +31,25 @@
 		is_good = no
 		fire_only_once = yes
 		timeout_effect = {
+			activate_mission = mud_season
 			activate_mission = winter_of_1942_tick
 				add_timed_idea = { 
 				idea = winter_of_1941 days = 80
+			}
+			if = {
+				limit = {
+					NOT = { 
+						tag = SOV
+						}
+					}
+					add_timed_idea = { idea = germans_frozen days = 14 
+				}
 			}
 			SOV = { 
 			add_timed_idea = { 
 				idea = soviet_winter_offensive days = 30
 			}
-		}
+		}	
 	}
 }
 	winter_of_1942_tick = {
@@ -62,8 +72,40 @@
 		is_good = no
 		fire_only_once = yes
 		timeout_effect = {
+				activate_mission = mud_season
 				add_timed_idea = { 
 				idea = winter_of_1942 days = 60
+			SOV = { 
+				add_timed_idea = { 
+				idea = soviet_winter_offensive2 days = 30
+					}
+				}
+			}
+		}
+	}
+
+	mud_season = {
+		allowed = { 
+			always = no
+		}
+		activation = {
+			
+		}
+		available = {
+			hidden_trigger = { always = no }
+		}
+		cancel_trigger = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		days_mission_timeout = 60
+		is_good = no
+		fire_only_once = yes
+		timeout_effect = {
+				add_timed_idea = { 
+				idea = Rasputitsa days = 50
 			}
 		}
 	}

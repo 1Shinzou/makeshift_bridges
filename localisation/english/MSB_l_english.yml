@@ -39,8 +39,12 @@ barbarossa_category:0 "Barbarossa"
 barbarossa_category_desc:0 ""
 soviet_winter_offensive:0 "Soviet Winter Offensive"
 soviet_winter_offensive_desc:0 "As the German advance slows under the weight of harsh weather and extended supply lines, we are steadily receiving reinforcements from the Far East, including seasoned troops redeployed after securing our eastern borders. These fresh forces will bolster our defenses and prepare us for a decisive counteroffensive."
-
-
+mud_season:0 "Mud Season in The East"
+Rasputitsa:0 "Rasputitsa"
+Rasputitsa_desc:0 "During Rasputitsa, we will face extreme difficulties moving troops, vehicles, and supplies as roads turn to deep, sticky mud, making mechanized transport nearly useless. These conditions will slow our offensives, strain logistics, and leave us vulnerable to counterattacks and supply shortages."
+soviet_winter_offensive2:0 "Soviet Winter Offensive"
+soviet_winter_offensive2_desc:0 "The Red Army is likely to use the freezing conditions to launch coordinated attacks with fresh reinforcements. Without adequate winter gear, fortified positions, and supply lines. Forces risk being overwhelmed by both the harsh weather and relentless Soviet assaults."
+germans_frozen:0 "Frozen Germans"
 
 add_convoy:0 "Add Convoy"
 peace_training:0 "Peacetime Training"

@@ -1,27 +1,27 @@
 ideas = { 
     country = { 
         winter_of_1941 = {
-                picture = NORDIC_army_democratic
+                picture = tur_sub_zero_survival_training
                 allowed = { 
                     always = no
                 }
             modifier = {
-				army_attack_factor = -0.50
-                army_defence_factor = -0.25
-                breakthrough_factor = -0.25
-                winter_attrition_factor = 0.25
+				army_attack_factor = -1
+                army_defence_factor = -0.50
+                breakthrough_factor = -0.50
+                winter_attrition_factor = 0.50
             }
         }
         winter_of_1942 = {
-                picture = NORDIC_army_democratic
+                picture = tur_sub_zero_survival_training
             allowed = { 
                 always = yes
             }
             modifier = {
-				army_attack_factor = -0.30
-                army_defence_factor = -0.10
-                breakthrough_factor = -0.10
-                winter_attrition_factor = 0.10
+				army_attack_factor = -0.50
+                army_defence_factor = -0.20
+                breakthrough_factor = -0.25
+                winter_attrition_factor = 0.25
             }
         }
             click_barb = {
@@ -30,9 +30,10 @@ ideas = {
                 always = no
 			}
             modifier = {
-                army_defence_factor = -0.40
-                breakthrough_factor = 0.40
+                #army_defence_factor = -0.40
+                #breakthrough_factor = 0.40
                 #army_armor_attack_factor = 0.1
+               army_morale_factor = 0.25
             }
         }
         soviet_winter_offensive = {
@@ -41,11 +42,56 @@ ideas = {
                 always = no
 			}
             modifier = {
-                army_attack_factor = 0.30
-                army_defence_factor = 0.10
-                army_attack_speed_factor = 0.10
-                breakthrough_factor = 0.30
+                army_attack_factor = 0.60
+                army_defence_factor = 0.30
+                army_attack_speed_factor = 0.20
+                breakthrough_factor = 0.50
                 winter_attrition_factor = -0.50
+                command_power_gain_mult = 0.25
+            }
+        }
+
+        germans_frozen = {
+            picture = tur_sub_zero_survival_training
+            allowed = { 
+             NOT = { 
+                tag = SOV
+             }
+			}
+            modifier = {
+                command_abilities_cost_factor = 0.50
+                army_defence_factor = -0.30
+                dig_in_speed_factor = 0.30
+                winter_attrition_factor = 0.50
+                army_org_factor = -0.15
+				army_morale_factor = -0.10
+                attrition = 0.15
+            }
+        }
+          soviet_winter_offensive2 = {
+            picture = generic_communist_army
+            allowed = { 
+                always = no
+			}
+            modifier = {
+                army_attack_factor = 0.40
+                army_defence_factor = 0.25
+                army_attack_speed_factor = 0.10
+                breakthrough_factor = 0.25
+                winter_attrition_factor = -0.50
+            }
+        }
+          Rasputitsa = {
+                picture = tur_tuz_golu_training_facility
+                allowed = { 
+                    always = no
+                }
+            modifier = {
+				army_attack_factor = -0.50
+                army_defence_factor = -0.20
+                breakthrough_factor = -0.60
+                army_speed_factor = -0.40
+                attrition = 0.20
             }
         }
     }

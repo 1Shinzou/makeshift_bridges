@@ -6923,6 +6923,19 @@ focus_tree = {
 				uses = 1 # was 2
 				category = armor
 			}
+			hidden_effect = {
+			if = {
+				limit = {
+						has_game_rule = {
+						rule = larp_barb
+						option = on
+					}
+				}
+				SOV = { 
+					load_oob = "SOV_barb2"
+				}
+				}
+			}
 		}
 	}
 

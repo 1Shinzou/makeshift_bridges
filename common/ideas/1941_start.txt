@@ -94,5 +94,18 @@ ideas = {
                 attrition = 0.20
             }
         }
+        shinzou_soviet = { 
+            picture = ETH_conservative_high_command
+            allowed = { 
+                always = no
+            }
+            modifier = { 
+                cas_damage_reduction = -0.10
+                disable_strategic_redeployment = 1
+                pocket_penalty = -0.15
+                army_speed_factor = -2
+                army_defence_factor = -0.20
+            }
+        }
     }
 }

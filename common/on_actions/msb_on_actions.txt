@@ -576,7 +576,23 @@ on_actions = {
 					load_oob = "SOV_barb"
 				}
 			}
-			
+		if = {
+			limit = {
+				FROM = {
+					original_tag = SOV
+					}
+					has_game_rule = {
+							rule = larp_barb
+							option = on
+					}
+				}
+				SOV = { 
+					add_timed_idea = { 
+						idea = shinzou_soviet
+						days = 20
+					}
+				}
+			}
 		}
 	}
 }

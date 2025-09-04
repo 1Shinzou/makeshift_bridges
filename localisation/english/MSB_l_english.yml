@@ -45,6 +45,8 @@ Rasputitsa_desc:0 "During Rasputitsa, we will face extreme difficulties moving t
 soviet_winter_offensive2:0 "Soviet Winter Offensive"
 soviet_winter_offensive2_desc:0 "The Red Army is likely to use the freezing conditions to launch coordinated attacks with fresh reinforcements. Without adequate winter gear, fortified positions, and supply lines. Forces risk being overwhelmed by both the harsh weather and relentless Soviet assaults."
 germans_frozen:0 "The Germans are Frozen"
+shinzou_soviet:0 "Surprise Attack"
+
 
 add_convoy:0 "Add Convoy"
 peace_training:0 "Peacetime Training"

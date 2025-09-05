@@ -6057,10 +6057,15 @@ focus = {
 					militia = { x = 0 y = 1 }		
 					militia = { x = 0 y = 2 }		
 					militia = { x = 0 y = 3 }		
-					militia = { x = 0 y = 4 }		
+					militia = { x = 0 y = 4 }	
+					militia = { x = 1 y = 0 }		
+					militia = { x = 1 y = 1 }		
+					militia = { x = 1 y = 2 }		
+					militia = { x = 1 y = 3 }		
+					militia = { x = 1 y = 4 }	
 				}
 				support = {
-					
+					anti_air = { x = 0 y = 0 }
 				}
 			}
 			every_owned_state = {
@@ -6074,7 +6079,7 @@ focus = {
 					owner = ROOT
 				}
 				create_unit = {
-					division = "name = \"2me Demi-Brigade des FFI\" division_template = \"FFI Demi-Brigade\" start_experience_factor = 1"  
+					division = "name = \"2me Demi-Brigade des FFI\" division_template = \"FFI Demi-Brigade\" start_experience_factor = 0"  
 					owner = ROOT
 				}
 				create_unit = {

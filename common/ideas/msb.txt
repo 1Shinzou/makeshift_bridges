@@ -33,7 +33,7 @@ ideas = {
 			removal_cost = -1
 			picture = MEX_politicised_army_2
 			modifier = {
-				max_command_power = 150
+				max_command_power = 220
 				command_power_gain_mult = 0.5
 			}
 		}

@@ -1,5 +1,6 @@
 ﻿l_english:
 
+ ITA_superaereo_ra_tt:0 "$ITA_modify_regia_aeronautica_dynamic_modifier_ns_intro$ \n$MODIFIER_AIR_MISSION_EFFICIENCY$: §G+5%§! \n$MODIFIER_AIR_MISSION_XP_FACTOR$: §G+5%§! \n$MODIFIER_AIR_DOCTRINE_COST_FACTOR$: §G-10.00%§! \n$MODIFIER_AIR_RANGE$: §G+5%§! \n\n"
 
 
 sp_armored_advanced_flamethrower_tech: "Flamethrower"

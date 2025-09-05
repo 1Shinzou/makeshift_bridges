@@ -46,6 +46,8 @@ soviet_winter_offensive2:0 "Soviet Winter Offensive"
 soviet_winter_offensive2_desc:0 "The Red Army is likely to use the freezing conditions to launch coordinated attacks with fresh reinforcements. Without adequate winter gear, fortified positions, and supply lines. Forces risk being overwhelmed by both the harsh weather and relentless Soviet assaults."
 germans_frozen:0 "The Germans are Frozen"
 shinzou_soviet:0 "Surprise Attack"
+SOV_propaganda_do_not_blab2:0 "Do Not Blab!"
+no_intel_advantage:0 "No Intel Advantage"
 
 
 add_convoy:0 "Add Convoy"

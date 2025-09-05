@@ -3483,13 +3483,19 @@ SOV_propaganda_campaigns = {
 		}
 
 		available = {
+			AND = { 
+			has_completed_focus = SOV_smersh
 			SOV_propaganda_poster_slot_available = yes
+			}
 		}
 
 		visible = {
 			OR = {
-				has_completed_focus = SOV_smersh
+				#has_completed_focus = SOV_smersh
 				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
+				NOT = { 
+					has_country_flag = barbstart
+				}
 			}
 		}
 
@@ -3505,6 +3511,90 @@ SOV_propaganda_campaigns = {
 			airforce_intel_to_others = -50
 			civilian_intel_to_others = -50
 			foreign_subversive_activites = -0.25
+		}
+
+		complete_effect = {
+			set_variable = { SOV_new_propaganda_campaign = 17 }
+			SOV_pick_propaganda_campaign_slot_effect = yes
+			SOV_achievement_propaganda_counter_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { SOV_propaganda_campaign_to_remove = 17 }
+			SOV_reset_propaganda_campaign_slot_effect = yes
+
+			set_variable = { SOV_propaganda_cost = SOV_propaganda_do_not_blab_cost }
+			SOV_increase_propaganda_campaign_cost_effect = yes
+			set_variable = { SOV_propaganda_do_not_blab_cost = SOV_propaganda_cost }
+			clear_variable = SOV_propaganda_cost
+
+			custom_effect_tooltip = SOV_propaganda_campaign_cooldown_tt
+		}
+	}
+
+	SOV_propaganda_do_not_blab2 = { # ID = 17
+		priority = 16
+
+		icon = eng_propaganda_campaigns
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 5
+				has_war = yes
+			}
+			modifier = {
+				factor = 5
+				any_enemy_country = {
+					is_major = yes
+				}
+			}
+			modifier = {
+				factor = 0
+				has_intelligence_agency = no
+			}
+			modifier = {
+				factor = 0.1
+				check_variable = { SOV_propaganda_do_not_blab_cost > 30 } #Less likely to do it a third time
+			}
+			modifier = {
+				factor = 0.1
+				check_variable = { SOV_propaganda_do_not_blab_cost > 45 } #Even less likely to do it a fourth time
+			}
+			modifier = {
+				factor = 0
+				check_variable = { SOV_propaganda_do_not_blab_cost > 90 } #Shouldn't even considered doing it a fifth time
+			}
+		}
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			AND = { 
+				has_completed_focus = SOV_smersh
+				SOV_propaganda_poster_slot_available = yes
+			}
+		}
+
+		visible = {
+			OR = {
+				#has_completed_focus = SOV_smersh
+				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
+				has_country_flag = barbstart
+			}
+		}
+
+		days_remove = SOV_default_propaganda_campaign_duration
+
+		days_re_enable = SOV_default_propaganda_campaign_cooldown
+
+		cost = SOV_propaganda_do_not_blab_cost
+
+		modifier = {
+			army_attack_factor = 0.075
+			army_defence_factor = 0.075
 		}
 
 		complete_effect = {

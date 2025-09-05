@@ -255,9 +255,9 @@ ability = {
 		allowed = {
 			has_ability = makeshift_bridges
 			is_border_war = no
+			OWNER = { 
 				NOT = {
-					if = { 
-					has_ability = ger_barb_makeshift_bridges
+					has_idea = GER_barbarossa
 				}
 			}
 		}

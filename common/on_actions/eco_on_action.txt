@@ -2315,6 +2315,22 @@ on_actions = {
 					add_ideas = click_barb
 				}
 			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = larp_barb
+						option = on
+					}
+				}
+				every_country = {
+					limit = {
+						is_playable_country = yes
+					}
+					#add_ideas = tradeback_is_cancer
+					add_ideas = no_intel_advantage
+				}
+			}
+
 
 			if = { #sov civs
 			limit = {

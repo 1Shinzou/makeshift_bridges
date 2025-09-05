@@ -436,8 +436,7 @@
 	
 	focus = {
 		id = FRA_algerie_france
-		icon = GFX_focus_generic_industry_1
-		#GFX_focus_FRA_invest_alg
+		icon = GFX_focus_FRA_invest_alg
 		available = {
 			any_state = {
 				OR = {
@@ -531,8 +530,7 @@
 
 	focus = {
 		id = FRA_invest_in_west_africa
-		icon = GFX_focus_generic_industry_1
-		#GFX_focus_FRA_african_fac
+		icon = GFX_focus_FRA_african_fac
 		x = -1
 		y = 1
 
@@ -597,8 +595,7 @@
 
 	focus = {
 		id = FRA_invest_in_syria
-		icon = GFX_focus_generic_industry_1
-		#GFX_focus_FRA_invest_syr
+		icon = GFX_focus_FRA_invest_syr
 		x = 1
 		y = 1
 
@@ -694,62 +691,8 @@
 		}
 	}
 
-	focus = {
-		id = FRA_extra_research_slot
-		icon = GFX_focus_research
-		available = {
-			if = {
-				limit = { amount_research_slots > 3 }
-				num_of_factories > 75
-			}
-			amount_research_slots < 4
-		}
-		prerequisite = {
-			focus = FRA_industrial_expansion
-			
-			}
-		x = 0
-		y = 1
-		relative_position_id = FRA_industrial_expansion
-		cost = 10
-
-		available_if_capitulated = yes
-
-		ai_will_do = {
-			factor = 1
-		}		
-		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL }
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
 
 	
-	focus = {
-		id = FRA_extra_research_slot_2
-		icon = GFX_focus_research
-		prerequisite = { 
-			focus = FRA_colonial_industry
-		}
-		available = {
-			if = {
-				limit = { amount_research_slots > 3 }
-				num_of_factories > 75
-			}
-			amount_research_slots < 4
-		}
-		x = 0
-		y = 1
-		relative_position_id = FRA_colonial_industry
-		cost = 10
-
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
-
 
 
 	#### END ####
@@ -1649,7 +1592,7 @@
 
 		focus = {
 		id = FRA_self_defense
-		icon = GFX_focus_SWI_fortify_border_with_france
+		icon = GFX_focus_FRA_liberation
 		prerequisite = { 
 			focus = FRA_methodical_battle
 			focus = FRA_firepower_kills
@@ -2950,7 +2893,7 @@
 
 	focus = {
 		id = FRA_departements_doutremer
-		icon = GFX_focus_fra_le_deluge
+		icon = GFX_focus_fra_french_union
 		x = 1
 		y = 2
 	
@@ -3149,7 +3092,7 @@
 
 	focus = {
 		id = FRA_defensive_strategems
-		icon = GFX_focus_fra_french_union
+		icon = GFX_focus_FRA_revise_constitution
 		available = {
 			NOT = { has_completed_focus = FRA_compromise_with_the_leagues }
 			custom_trigger_tooltip = {
@@ -3779,7 +3722,7 @@ focus = {
 
 	focus = {
 		id = FRA_global_integration
-		icon = GFX_focus_generic_resource_extraction
+		icon = GFX_focus_FRA_wine
 		x = 0
 		y = 1
 		
@@ -3805,6 +3748,7 @@ focus = {
 	
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			add_ideas = { FRA_global_investments }
 			539 = { 
 				add_resource = {
 					type = steel
@@ -3819,8 +3763,6 @@ focus = {
 					amount = 24
 				}
 			}
-
-			add_ideas = { FRA_global_investments }
 		}
 	}	
 	focus = {
@@ -3970,7 +3912,7 @@ focus = {
 
 	focus = {
 		id = FRA_dirigisme
-		icon = GFX_focus_generic_the_giant_wakes
+		icon = GFX_focus_FRA_dirigism
 		x = -1
 		y = 2
 		
@@ -4192,7 +4134,7 @@ focus = {
 
 	focus = {
 		id = FRA_appeal_to_the_french_nation
-		icon = GFX_focus_fra_french_union
+		icon = GFX_SOV_collectivist_propaganda_ccp_2d_sov_compatibility
 		x = 5
 		y = 1
 		offset = {

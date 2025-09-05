@@ -100,11 +100,6 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_FRA_syria"
-		texturefile = "gfx/interface/goals/focus_FRA_syria.dds"
-	}
-
-SpriteType = {
 		name = "GFX_focus_FRA_invest_alg"
 		texturefile = "gfx/interface/goals/FRA_invest_alg.dds"
 	}
@@ -163,4 +158,21 @@ SpriteType = {
 		name = "GFX_focus_FRA_renault_ue"
 		texturefile = "gfx/interface/goals/renault_ue.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_FRA_dirigism"
+		texturefile = "gfx/interface/goals/fpm_focus_FRA_dirigism.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_FRA_wine"
+		texturefile = "gfx/interface/goals/wine.dds" 
+	}
+	SpriteType = {
+		name = "GFX_focus_FRA_liberation"
+		texturefile = "gfx/interface/goals/liberation.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_FRA_revise_constitution"
+		texturefile = "gfx/interface/goals/FRA_revise_constitution.dds"
+	}
+
 }

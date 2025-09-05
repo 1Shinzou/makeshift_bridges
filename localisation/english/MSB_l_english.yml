@@ -59,6 +59,7 @@ tradeback_is_cancer:0"No Tradeback"
 tradeback_is_cancer_no_export:0"No Tradeback - no exports for playable countries"
 uk_hf3_usa:"Advanced Heavy Fighter"
 game_check:0 "Game Rule Check"
+extra_cp:0 "Extra Commmand Power"
 
 # LL Decision
  E_ll:"Air Decision Lend Lease"

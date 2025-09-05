@@ -22,4 +22,20 @@ ideas = {
 			cancel_if_invalid = no
 		}
 	}
+	country = {
+		extra_cp = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+
+			}
+			removal_cost = -1
+			picture = MEX_politicised_army_2
+			modifier = {
+				max_command_power = 150
+				command_power_gain_mult = 0.5
+			}
+		}
+	}
 }

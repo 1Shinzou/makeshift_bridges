@@ -62,6 +62,59 @@ operations = {
 		}
 	}
 
+		annex_bulgaria= {
+			# icon = generic_operation
+			allowed = {
+				tag = ITA
+			}
+			fire_only_once = yes
+			cost = 0
+			ai_will_do = {
+				factor = 0
+			}
+			available = {
+				BUL = {
+					is_ai = yes
+				}
+			}
+            visible = {
+				BUL = {
+					is_ai = yes
+				}
+			}
+			targets = {
+				BUL	
+			}
+			complete_effect = {
+                add_ideas = extra_cp
+				BUL = {
+					transfer_units_fraction = {
+						target = ITA
+						size = 1
+						stockpile_ratio = 1
+						army_ratio = 1
+						navy_ratio = 1
+						air_ratio = 1
+						keep_unit_leaders_trigger = {
+							always = no
+						}
+					}
+				}
+				ITA = {
+					annex_country = {
+						target = BUL
+						transfer_troops = yes
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = BUL 
+						is_controlled_by = ITA
+					}
+					add_compliance = 100
+				}
+			}
+		}
 	
 
 		annex_philippines= {

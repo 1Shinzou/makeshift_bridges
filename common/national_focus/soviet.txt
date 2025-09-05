@@ -6902,7 +6902,7 @@ focus_tree = {
 
 		available = {
 			surrender_progress > 0.25
-			has_defensive_war = yes
+			#has_defensive_war = yes
 			has_war_with_major = yes
 		}
 		cancel_if_invalid = no
@@ -6951,9 +6951,17 @@ focus_tree = {
 		mutually_exclusive = { focus = SOV_the_faithful_servant_of_lenin }
 
 		available = {
+			OR = { 
 			custom_trigger_tooltip = {
 				tooltip = SOV_propaganda_campaigns_taken_5_or_greater_tt
 				check_variable = { SOV_propaganda_campaigns_taken = 5 compare = greater_than_or_equals }
+				}
+				if = { 
+					limit = { 
+						has_start_date = 1941.1.1.12
+					}
+					date > 1941.10.1
+				}
 			}
 		}
 		
@@ -7018,9 +7026,17 @@ focus_tree = {
 		mutually_exclusive = { focus = SOV_inheritor_of_the_mantle_of_lenin }
 
 		available = {
+			OR = { 
 			custom_trigger_tooltip = {
 				tooltip = SOV_propaganda_campaigns_taken_5_or_greater_tt
 				check_variable = { SOV_propaganda_campaigns_taken = 5 compare = greater_than_or_equals }
+			}
+			if = { 
+					limit = { 
+						has_start_date = 1941.1.1.12
+					}
+					date > 1941.10.1
+				}
 			}
 		}
 		
@@ -7081,10 +7097,18 @@ focus_tree = {
 		relative_position_id = SOV_inheritor_of_the_mantle_of_lenin
 		cost = 5
 		
-		available = {
+		available = { 
+			OR = { 
 			custom_trigger_tooltip = {
 				tooltip = SOV_propaganda_campaigns_taken_10_or_greater_tt
 				check_variable = { SOV_propaganda_campaigns_taken = 10 compare = greater_than_or_equals }
+			}
+			if = { 
+					limit = { 
+						has_start_date = 1941.1.1.12
+					}
+					date > 1942.3.1
+				}
 			}
 		}
 		
@@ -7152,10 +7176,18 @@ focus_tree = {
 
 		mutually_exclusive = { focus = SOV_architect_of_communism }
 		
-		available = {
+		available = { 
+			OR = { 
 			custom_trigger_tooltip = {
 				tooltip = SOV_propaganda_campaigns_taken_15_or_greater_tt
 				check_variable = { SOV_propaganda_campaigns_taken = 15 compare = greater_than_or_equals }
+			}
+				if = { 
+					limit = { 
+						has_start_date = 1941.1.1.12
+					}
+					date > 1942.6.1
+				}
 			}
 		}
 		
@@ -7188,10 +7220,18 @@ focus_tree = {
 
 		mutually_exclusive = { focus = SOV_great_commander }
 
-		available = {
+		available = { 
+			OR = { 
 			custom_trigger_tooltip = {
 				tooltip = SOV_propaganda_campaigns_taken_15_or_greater_tt
 				check_variable = { SOV_propaganda_campaigns_taken = 15 compare = greater_than_or_equals }
+			}
+			if = { 
+					limit = { 
+						has_start_date = 1941.1.1.12
+					}
+					date > 1942.6.1
+				}
 			}
 		}
 		
@@ -7212,9 +7252,17 @@ focus_tree = {
 		cost = 10
 
 		available = {
+			OR = { 
 			custom_trigger_tooltip = {
 				tooltip = SOV_propaganda_campaigns_taken_20_or_greater_tt
 				check_variable = { SOV_propaganda_campaigns_taken = 20 compare = greater_than_or_equals }
+			}
+			if = { 
+					limit = { 
+						has_start_date = 1941.1.1.12
+					}
+					date > 1943.5.1
+				}
 			}
 		}
 		

@@ -124,6 +124,10 @@ instant_effect = {
 	###################
 	### Purge stuff ###
 	###################
+
+	clr_country_flag = SOV_paranoia_do_not_cancel_focus_flag
+	set_country_flag = { flag = SOV_paranoia_random_purge_cooldown_from_focus_flag days = 15 } #Used to prevent random purges from popping up while this is active
+	set_country_flag = SOV_third_moscow_trial_flag #Used to unlock the next purge focus
 	
 	#ADVISORS
 	add_ideas = {
@@ -260,7 +264,7 @@ instant_effect = {
 
 	#1938
 	unlock_national_focus = SOV_third_five_year_plan # -> 1938
-	unlock_national_focus = SOV_the_bloc_of_rights_and_trotskyites #35 -> Early 1938
+	complete_national_focus = SOV_the_bloc_of_rights_and_trotskyites #35 -> Early 1938
 	complete_national_focus = SOV_expand_the_agitprop #35
 	complete_national_focus = SOV_foreign_experts #35
 	complete_national_focus = SOV_eastern_development #35

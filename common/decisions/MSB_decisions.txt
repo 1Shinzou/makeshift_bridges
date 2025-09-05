@@ -174,6 +174,9 @@ operations = {
 			ai_will_do = {
 				factor = 0
 			}
+			visible = {
+				always = no
+			}
 			available = {
                 date > 1940.03.01
 				HOL = {

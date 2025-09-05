@@ -489,6 +489,12 @@ on_actions = {
                 HOL = {
                     load_oob = "HOL_CHROM_SPAWN"
                 }
+				ENG = { 
+					set_autonomy = {
+						target = HOL
+						autonomous_state = autonomy_integrated_puppet 
+					}
+				}
             }
             if = {
                 limit = {

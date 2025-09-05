@@ -793,7 +793,7 @@ instant_effect = {
 	}
 	add_equipment_to_stockpile = { 
 		type = support_equipment_1
-		amount = 29000
+		amount = 37500
 		producer = SOV
 		variant_name = "Support Equipment"
 	}

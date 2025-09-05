@@ -8,7 +8,7 @@ ideas = {
             modifier = {
 				army_attack_factor = -0.8
                 army_defence_factor = -0.50
-                breakthrough_factor = -0.50
+                breakthrough_factor = -0.60
                 winter_attrition_factor = 0.50
             }
         }
@@ -18,9 +18,9 @@ ideas = {
                 always = yes
             }
             modifier = {
-				army_attack_factor = -0.50
-                army_defence_factor = -0.20
-                breakthrough_factor = -0.30
+				army_attack_factor = -0.60
+                army_defence_factor = -0.30
+                breakthrough_factor = -0.40
                 winter_attrition_factor = 0.25
             }
         }

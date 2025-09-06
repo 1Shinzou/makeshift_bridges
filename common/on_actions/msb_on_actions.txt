@@ -489,12 +489,6 @@ on_actions = {
                 HOL = {
                     load_oob = "HOL_CHROM_SPAWN"
                 }
-				ENG = { 
-					set_autonomy = {
-						target = HOL
-						autonomous_state = autonomy_integrated_puppet 
-					}
-				}
             }
             if = {
                 limit = {
@@ -564,7 +558,7 @@ on_actions = {
                         }
                     }
                     CHI = {
-                        load_oob = "CHI_CHROM_SPAWN"
+                        load_oob = "CHI_CHROM_SPAWN" # TODO_Shinzou  -- broken, china divs dont spawn in
                     }
                 }
             }
@@ -579,7 +573,7 @@ on_actions = {
 					}
 				}
 				SOV = { 
-					load_oob = "SOV_barb"
+					load_oob = "SOV_barb" # USSR Spawn ins for funny scenario
 				}
 			}
 		if = {

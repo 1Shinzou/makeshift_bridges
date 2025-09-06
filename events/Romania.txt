@@ -200,19 +200,19 @@ country_event = { #Iron Guards Gathering
 		}
 	}
 
-	option = { 
-		name = romania.7.a
-		add_popularity = {
-			ideology = fascism 
-			popularity = 0.02
-		}
-		add_political_power = -20
-		ai_chance = {
-		}
-		hidden_effect = {
-			country_event = { id = romania.100 }
-		}
-	}
+	#option = { 
+	#	name = romania.7.a
+	#	add_popularity = {
+		#	ideology = fascism 
+		#	popularity = 0.02
+	#	}
+	#	add_political_power = -20
+	#	ai_chance = {
+	#	}
+	#	hidden_effect = {
+		#	country_event = { id = romania.100 }
+		#}
+#	}
 	option = { 
 		name = romania.7.b
 		add_political_power = -20
@@ -237,19 +237,19 @@ country_event = { #Iron Guards Harassing Minorities
 		}
 	}
 
-	option = { 
-		name = romania.8.a
-		add_popularity = {
-			ideology = fascism 
-			popularity = 0.01
-		}
-		add_stability = -0.01
-		ai_chance = {
-		}
-		hidden_effect = {
-			country_event = { id = romania.100 }
-		}
-	}
+	#option = { 
+	#	name = romania.8.a
+		#add_popularity = {
+		#	ideology = fascism 
+		#	popularity = 0.01
+		#}
+		#add_stability = -0.01
+		#ai_chance = {
+		#}
+		#hidden_effect = {
+		#	country_event = { id = romania.100 }
+	#	}
+	#}
 	option = { 
 		name = romania.8.b
 		add_political_power = -20
@@ -320,19 +320,19 @@ country_event = { #Iron Guards Assassination
 		}
 	}
 
-	option = { 
-		name = romania.10.a
-		add_popularity = {
-			ideology = fascism 
-			popularity = 0.01
-		}
-		add_stability = -0.05
-		ai_chance = {
-		}
-		hidden_effect = {
-			country_event = { id = romania.100 }
-		}
-	}
+	#option = { 
+	#	name = romania.10.a
+	#	add_popularity = {
+		#	ideology = fascism 
+		#	popularity = 0.01
+	#	}
+		#add_stability = -0.05
+		#ai_chance = {
+		#}
+		#hidden_effect = {
+		#	country_event = { id = romania.100 }
+	#	}
+	#}
 	option = { 
 		name = romania.10.b
 		add_popularity = {
@@ -361,21 +361,21 @@ country_event = { #Terror Bombing
 		}
 	}
 
-	option = { 
-		name = romania.11.a
-		add_stability = -0.05
-		random_owned_controlled_state = {
-			damage_building = {
-				type = infrastructure 
-				damage = 3 
-			}
-		}
-		ai_chance = {
-		}
-		hidden_effect = {
-			country_event = { id = romania.100 }
-		}
-	}
+	#option = { 
+		#name = romania.11.a
+		#add_stability = -0.05
+		#random_owned_controlled_state = {
+		#	damage_building = {
+			#	type = infrastructure 
+			#	damage = 3 
+		#	}
+	#	}
+		#ai_chance = {
+	#	}
+	#	hidden_effect = {
+		#	country_event = { id = romania.100 }
+	#	}
+	#}
 	option = { 
 		name = romania.11.b
 		add_political_power = -25

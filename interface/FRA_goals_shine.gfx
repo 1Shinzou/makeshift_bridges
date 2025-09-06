@@ -618,7 +618,7 @@ SpriteType = {
 	}
 
 	SpriteType = {
-		name = "GFX_FRA_invest_alg_shine"
+		name = "GFX_focus_FRA_invest_alg_shine"
 		texturefile = "gfx/interface/goals/FRA_invest_alg.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -945,7 +945,7 @@ SpriteType = {
 
 
 	SpriteType = {
-		name = "GFX_FRA_invest_syr_shine"
+		name = "GFX_focus_FRA_invest_syr_shine"
 		texturefile = "gfx/interface/goals/FRA_invest_syr.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {

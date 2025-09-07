@@ -66,6 +66,7 @@ tradeback_is_cancer_no_export:0"No Tradeback - no exports for playable countries
 uk_hf3_usa:"Advanced Heavy Fighter"
 game_check:0 "Game Rule Check"
 extra_cp:0 "Extra Commmand Power"
+autonomy_exile_integrated_puppet:0 "Allied Government in Exile"
 
 # LL Decision
  E_ll:"Air Decision Lend Lease"

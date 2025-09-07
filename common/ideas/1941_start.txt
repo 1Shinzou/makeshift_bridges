@@ -31,7 +31,7 @@ ideas = {
 			}
             modifier = {
                 army_defence_factor = -0.20
-                army_attack_factor = -0.20
+                army_attack_factor = -0.30
                 breakthrough_factor = 0.30
                 supply_consumption_factor = -0.3
                 supply_node_range = 0.2
@@ -134,9 +134,9 @@ hidden_ideas = {
 
         modifier = { 
            # army_intel_to_others = -50
-            army_intel_factor = -5
-            decryption_factor = -5
-            encryption = -5
+            army_intel_factor = -10
+            decryption_factor = -10
+            encryption = -10
             decryption_power = -100
             #agency_upgrade_time = 5
             }   

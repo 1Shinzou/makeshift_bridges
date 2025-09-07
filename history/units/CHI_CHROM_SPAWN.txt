@@ -15,10 +15,6 @@ division_template = {
 		infantry = { x = 1 y = 3 }
 		infantry = { x = 1 y = 4 }
 	}
-	support = {
-       	artillery = { x = 0 y = 0 }		# Support represents light tanks and other vehicles assigned to 200th Division
-	 	#engineer = { x = 0 y = 1 }
-	}
 }
 
 ### OOB ###
@@ -30,7 +26,7 @@ units = {
 		}
 		location = 9843
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -40,7 +36,7 @@ units = {
 		}
 		location = 9843
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -50,7 +46,7 @@ units = {
 		}
 		location = 9843
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -60,7 +56,7 @@ units = {
 		}
 		location = 9843
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -70,7 +66,7 @@ units = {
 		}
 		location = 11761
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -80,7 +76,7 @@ units = {
 		}
 		location = 11761
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -90,7 +86,7 @@ units = {
 		}
 		location = 11761
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -100,7 +96,7 @@ units = {
 		}
 		location = 11761
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -110,7 +106,7 @@ units = {
 		}
 		location = 10068
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -120,7 +116,7 @@ units = {
 		}
 		location = 10068
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -130,7 +126,7 @@ units = {
 		}
 		location = 10068
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -140,7 +136,7 @@ units = {
 		}
 		location = 10068
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -150,7 +146,7 @@ units = {
 		}
 		location = 4140
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -160,7 +156,7 @@ units = {
 		}
 		location = 4140
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -170,7 +166,7 @@ units = {
 		}
 		location = 4140
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -180,7 +176,7 @@ units = {
 		}
 		location = 4140
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -190,7 +186,7 @@ units = {
 		}
 		location = 12026
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -200,7 +196,7 @@ units = {
 		}
 		location = 12026
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -210,7 +206,7 @@ units = {
 		}
 		location = 12026
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -220,7 +216,7 @@ units = {
 		}
 		location = 12026
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -230,7 +226,7 @@ units = {
 		}
 		location = 6828
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -240,7 +236,7 @@ units = {
 		}
 		location = 6828
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -250,7 +246,7 @@ units = {
 		}
 		location = 6828
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -260,7 +256,7 @@ units = {
 		}
 		location = 6828
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -270,7 +266,7 @@ units = {
 		}
 		location = 10000
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -280,7 +276,7 @@ units = {
 		}
 		location = 10000
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -290,7 +286,7 @@ units = {
 		}
 		location = 10000
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -300,7 +296,7 @@ units = {
 		}
 		location = 10000
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -310,7 +306,7 @@ units = {
 		}
 		location = 7014
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -320,7 +316,7 @@ units = {
 		}
 		location = 7014
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -330,7 +326,7 @@ units = {
 		}
 		location = 7014
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -340,7 +336,7 @@ units = {
 		}
 		location = 7014
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 
@@ -351,7 +347,7 @@ units = {
 		}
 		location = 10480
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division = {
@@ -361,7 +357,7 @@ units = {
 		}
 		location = 10480
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division = {
@@ -371,7 +367,7 @@ units = {
 		}
 		location = 7158
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division = {
@@ -381,7 +377,7 @@ units = {
 		}
 		location = 7158
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division = {
@@ -391,7 +387,7 @@ units = {
 		}
 		location = 12403
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division = {
@@ -401,7 +397,7 @@ units = {
 		}
 		location = 12403
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division = {
@@ -411,7 +407,7 @@ units = {
 		}
 		location = 7048
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division = {
@@ -421,7 +417,7 @@ units = {
 		}
 		location = 7048
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division = {
@@ -431,7 +427,7 @@ units = {
 		}
 		location = 12331
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division = {
@@ -441,7 +437,7 @@ units = {
 		}
 		location = 12331
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division = {
@@ -451,7 +447,7 @@ units = {
 		}
 		location = 1069
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division = {
@@ -461,7 +457,7 @@ units = {
 		}
 		location = 1069
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division = {
@@ -471,7 +467,7 @@ units = {
 		}
 		location = 1069
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division = {
@@ -481,7 +477,7 @@ units = {
 		}
 		location = 1069
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division = {
@@ -491,7 +487,7 @@ units = {
 		}
 		location = 1069
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division = {
@@ -501,7 +497,7 @@ units = {
 		}
 		location = 1069
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division = {
@@ -511,7 +507,7 @@ units = {
 		}
 		location = 1069
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division = {
@@ -521,7 +517,7 @@ units = {
 		}
 		location = 1069
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division = {
@@ -531,7 +527,7 @@ units = {
 		}
 		location = 1069
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division = {
@@ -541,7 +537,7 @@ units = {
 		}
 		location = 1069
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division = {
@@ -551,7 +547,7 @@ units = {
 		}
 		location = 1069
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division = {
@@ -561,7 +557,7 @@ units = {
 		}
 		location = 1069
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division = {
@@ -571,7 +567,7 @@ units = {
 		}
 		location = 9843
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -581,7 +577,7 @@ units = {
 		}
 		location = 9843
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -591,7 +587,7 @@ units = {
 		}
 		location = 9843
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -601,7 +597,7 @@ units = {
 		}
 		location = 9843
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -611,7 +607,7 @@ units = {
 		}
 		location = 11761
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -621,7 +617,7 @@ units = {
 		}
 		location = 11761
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -631,7 +627,7 @@ units = {
 		}
 		location = 11761
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 	division = {
@@ -641,7 +637,7 @@ units = {
 		}
 		location = 11761
 		division_template = "Sanjiao Jun"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 	}
 

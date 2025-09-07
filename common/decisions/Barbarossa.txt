@@ -251,7 +251,7 @@
 					}
 				}
 			}
-		days_mission_timeout = 1120
+		days_mission_timeout = 1000
 		is_good = no
 		fire_only_once = yes
 		timeout_effect = {

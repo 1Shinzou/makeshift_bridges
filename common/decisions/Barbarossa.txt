@@ -32,6 +32,7 @@
 		fire_only_once = yes
 		timeout_effect = {
 			activate_mission = mud_season
+			activate_mission = german_1942_offensive
 			activate_mission = winter_of_1942_tick
 				add_timed_idea = { 
 				idea = winter_of_1941 days = 75
@@ -106,6 +107,34 @@
 		timeout_effect = {
 				add_timed_idea = { 
 				idea = Rasputitsa days = 50
+			}
+		}
+	}
+	german_1942_offensive = {
+		allowed = { 
+			always = no
+		}
+		activation = {
+			
+		}
+		available = {
+			hidden_trigger = { always = no }
+		}
+		cancel_trigger = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		days_mission_timeout = 125
+		is_good = no
+		fire_only_once = yes
+		timeout_effect = { 
+			GER = { 
+			add_timed_idea = { 
+				idea = german_fall_blau
+				days = 70
+				}
 			}
 		}
 	}

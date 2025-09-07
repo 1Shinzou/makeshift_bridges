@@ -111,6 +111,20 @@ ideas = {
                 army_defence_factor = -0.20
             }
         }
+        german_fall_blau = { 
+
+            picture = generic_acquire_tanks
+
+            allowed = { 
+                always = no
+            }
+
+         targeted_modifier = { 
+            tag = SOV
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+            }
+        }
     }
 
 

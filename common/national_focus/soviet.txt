@@ -6933,7 +6933,54 @@ focus_tree = {
 				}
 				SOV = { 
 					load_oob = "SOV_barb2"
+					}
+			265 = { is_owned_and_controlled_by = ROOT }
+				265 = {
+					add_building_construction = {
+						type = supply_node
+						province = 11555
+						level = 1
+						instant_build = yes
+					}
 				}
+				build_railway = {
+					level = 2
+					build_only_on_allied = yes
+					fallback = yes
+					start_province = 9422
+					target_province = 11555
+				}
+			237 = { is_owned_and_controlled_by = ROOT }
+				237 = {
+					add_building_construction = {
+						type = supply_node
+						province = 11724
+						level = 1
+						instant_build = yes
+					}
+				}
+				build_railway = {
+					level = 2
+					build_only_on_allied = yes
+					fallback = yes
+					start_province = 6758
+					target_province = 11724
+				}
+			
+			233 = { is_owned_and_controlled_by = ROOT }
+				
+			233 = {
+					add_building_construction = {
+						type = supply_node
+						province = 9663
+						level = 1
+						instant_build = yes
+					}
+				}
+				build_railway = {
+					level = 2
+					path = { 654 672 11617 11647 9663 3698 717 719 }
+					}
 				}
 			}
 		}

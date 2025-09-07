@@ -540,50 +540,42 @@ on_actions = {
                     load_oob = "GRE_CHROM_SPAWN"
                 }
             }
-		
-
 			if = {
                 limit = {
-                    FROM = { tag = CHI }
-                    has_game_rule = {
-						rule = china_war_difficulty
-						option = no
-					}
+					FROM = { tag = CHI }
+					has_game_rule = {
+                        rule = china_war_difficulty
+                        option = yes
+                    }
                 }
-                if = {
-                    limit = {
-                        has_game_rule = {
-                            rule = china_war_difficulty
-                            option = yes
-                        }
-                    }
-                    CHI = {
-                        load_oob = "CHI_CHROM_SPAWN" # TODO_Shinzou  -- broken, china divs dont spawn in
-                    }
+                CHI = {
+                    load_oob = "CHI_CHROM_SPAWN"
                 }
             }
-		if = {
-			limit = {
-				FROM = {
-					original_tag = SOV
+
+
+			if = {
+				limit = {
+					FROM = {
+						original_tag = SOV
 					}
 					has_game_rule = {
-							rule = larp_barb
-							option = on
+						rule = larp_barb
+						option = on
 					}
 				}
 				SOV = { 
 					load_oob = "SOV_barb" # USSR Spawn ins for funny scenario
 				}
 			}
-		if = {
-			limit = {
-				FROM = {
-					original_tag = SOV
+			if = {
+				limit = {
+					FROM = {
+						original_tag = SOV
 					}
 					has_game_rule = {
-							rule = larp_barb
-							option = on
+						rule = larp_barb
+						option = on
 					}
 				}
 				SOV = { 
@@ -595,6 +587,7 @@ on_actions = {
 			}
 		}
 	}
+
 	on_naval_invasion = {
 		effect = { 
 			THIS = {

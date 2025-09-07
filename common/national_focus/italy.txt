@@ -228,7 +228,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_italian_highways_bba }
 		prerequisite = { focus = ITA_ethiopian_war_logistics_bba }
 
-		x = -7
+		x = -6
 		y = 1
 		relative_position_id = ITA_italian_highways_bba
 		cost = 5
@@ -1734,7 +1734,6 @@ focus_tree = {
 		id = ITA_polizia_dell_africa_italiana
 		icon = GFX_goal_generic_military_sphere
 		prerequisite = { focus = ITA_regional_development }
-		mutually_exclusive = { focus = ITA_strengthen_ascari_corps }
 		x = 3
 		y = 1
 		relative_position_id = ITA_regional_development
@@ -11095,11 +11094,11 @@ focus_tree = {
 	focus = {
         id = ITA_the_fight_overseas
         icon = GFX_focus_generic_africa_defense
-        prerequisite = { focus = ITA_regional_development }
-
-        x = 1
-        y = 1
-        relative_position_id = ITA_regional_development
+		prerequisite = { focus = ITA_the_fourth_shore }
+		prerequisite = { focus = ITA_polizia_dell_africa_italiana }
+		x = 2
+		y = 3
+		relative_position_id = ITA_regional_development
         cost = 5
         available = {
         }
@@ -11658,13 +11657,13 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = ITA_the_fourth_shore
 		icon = GFX_focus_generic_develop_libya
-		prerequisite = { focus = ITA_the_fight_overseas }
+		prerequisite = { focus = ITA_regional_development }
 		
-		relative_position_id = ITA_the_fight_overseas
-		x = 0
+		relative_position_id = ITA_regional_development
+		x = 1
 		y = 1
 
 		cost = 5
@@ -11767,9 +11766,10 @@ focus_tree = {
 		id = ITA_oil_in_tripoli
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = ITA_the_fourth_shore }
-		mutually_exclusive = { focus = ITA_steel_in_tripoli }
+		prerequisite = { focus = ITA_polizia_dell_africa_italiana }
+	#	mutually_exclusive = { focus = ITA_steel_in_tripoli }
 		relative_position_id = ITA_the_fourth_shore
-		x = -1
+		x = 0
 		y = 1
 
 		cost = 5
@@ -11834,9 +11834,10 @@ focus_tree = {
 		id = ITA_steel_in_tripoli
 		icon = GFX_focus_generic_steel
 		prerequisite = { focus = ITA_the_fourth_shore }
-		mutually_exclusive = { focus = ITA_oil_in_tripoli }
+		prerequisite = { focus = ITA_polizia_dell_africa_italiana }
+	#	mutually_exclusive = { focus = ITA_oil_in_tripoli }
 		relative_position_id = ITA_the_fourth_shore
-		x = 1
+		x = 2
 		y = 1
 
 		cost = 5
@@ -11889,10 +11890,13 @@ focus_tree = {
 	focus = {
 		id = ITA_novus_ordo
 		icon = GFX_focus_ITA_strengthen_ascari_corps #ITA_ministry_of_italian_africa?
-		prerequisite = { focus = ITA_steel_in_tripoli focus = ITA_oil_in_tripoli }
-		relative_position_id = ITA_the_fourth_shore
+		prerequisite = {focus = ITA_libyan_railway }
+		prerequisite = {focus = ITA_the_fight_overseas }
+		prerequisite = {focus = ITA_regional_development }
+
+		relative_position_id = ITA_regional_development
 		x = 0
-		y = 2
+		y = 4
 
 		cost = 10
 		available = {

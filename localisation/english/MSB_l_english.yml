@@ -51,7 +51,10 @@ no_intel_advantage:0 "No Intel Advantage"
 SOV_propaganda_sweep_scum_out2:0 "Sweep Scum Out!"
 german_fall_blau:0 "Krieg gegen den Bolschewismus!"
 german_1942_offensive:0 "Inevitable German Summer Offensive"
-
+war_against_humanity:0 "War Against Humanity"
+german_economy:0 "Shattered Economy"
+german_economy_desc:0 "the German economy was severely strained as resources were diverted to the failing war effort and Allied bombing campaigns crippled industrial production. Shortages of food, fuel, and labor led to declining civilian morale and disrupted everyday life across the country."
+economy_of_conquest_barb:0 "Economy of Conquest"
 
 add_convoy:0 "Add Convoy"
 peace_training:0 "Peacetime Training"

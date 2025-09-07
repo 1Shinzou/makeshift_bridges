@@ -10,6 +10,7 @@ ideas = {
                 army_defence_factor = -0.50
                 breakthrough_factor = -0.60
                 winter_attrition_factor = 0.50
+                consumer_goods_factor = 0.80
             }
         }
         winter_of_1942 = {
@@ -56,7 +57,7 @@ ideas = {
         }
 
         germans_frozen = {
-            picture = tur_sub_zero_survival_training
+            picture = SOV_the_road_of_life
             allowed = { 
              NOT = { 
                 tag = SOV
@@ -70,6 +71,7 @@ ideas = {
                 army_org_factor = -0.15
 				army_morale_factor = -0.10
                 attrition = 0.15
+                disable_strategic_redeployment = 1
             }
         }
           soviet_winter_offensive2 = {
@@ -121,8 +123,30 @@ ideas = {
 
          targeted_modifier = { 
             tag = SOV
-				attack_bonus_against = 0.05
+				attack_bonus_against = 0.15
 				defense_bonus_against = 0.05
+            }
+        }
+        war_against_humanity = { 
+
+            picture = GER_iron_front
+            allowed = { 
+                always = no
+            }
+
+            modifier = { 
+                training_time_army_factor = -0.35 
+            }
+        }
+        german_economy = { 
+            picture = generic_economic_crisis
+
+            allowed = { 
+                always = no
+            }
+
+            modifier = { 
+                consumer_goods_factor = 1
             }
         }
     }

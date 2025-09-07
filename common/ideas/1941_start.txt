@@ -123,6 +123,23 @@ ideas = {
 
          targeted_modifier = { 
             tag = SOV
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.05
+            }
+        }
+          german_citidel = { 
+
+            picture = generic_acquire_tanks
+
+            allowed = { 
+               #SOV = { 
+                   # surrender_progress < 0.30
+               # }
+               always = no
+            }
+
+         targeted_modifier = { 
+            tag = SOV
 				attack_bonus_against = 0.15
 				defense_bonus_against = 0.05
             }
@@ -172,11 +189,13 @@ hidden_ideas = {
 
         modifier = { 
            # army_intel_to_others = -50
-            army_intel_factor = -10
+           # army_intel_factor = -10
             decryption_factor = -10
             encryption = -10
             decryption_power = -100
-            #agency_upgrade_time = 5
+            agency_upgrade_time = -10
+           # intel_from_combat_factor = -10
+           # intel_network_gain_factor = -10
             }   
         }
     }

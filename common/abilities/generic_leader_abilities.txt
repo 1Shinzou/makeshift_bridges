@@ -258,6 +258,9 @@ ability = {
 			OWNER = { 
 				NOT = {
 					has_idea = GER_barbarossa
+					has_idea = german_1942_offensive
+					#has_idea = german_citidel
+					ability = ger_barb_makeshift_bridges
 				}
 			}
 		}

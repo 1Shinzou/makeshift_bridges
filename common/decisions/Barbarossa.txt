@@ -143,17 +143,87 @@
 		}
 	}
 
+	zugs_last_offensive = {
+		allowed = { 
+			always = no
+		}
+		activation = {
+			
+		}
+		available = {
+			hidden_trigger = { always = no }
+		}
+		cancel_trigger = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		days_mission_timeout = 90
+		is_good = no
+		fire_only_once = yes
+		timeout_effect = { 
+			GER = { 
+			add_timed_idea = { 
+				idea = german_citidel
+				days = 70
+				}
+			}
+			activate_mission = zugs_successful_offensive
+		}
+	}
+
+	zugs_successful_offensive = {
+		allowed = { 
+			always = no
+		}
+		activation = {
+			
+		}
+		available = {
+			hidden_trigger = { always = no }
+		}
+		cancel_trigger = {
+			#NOT = { 
+				OR = {
+			219 = { 
+				is_controlled_by = GER
+					}
+				195 = { 
+					is_controlled_by = GER
+				}
+				217 = { 
+					is_controlled_by = GER
+					}
+				}
+			}
+		#}
+		visible = {
+			always = no
+		}
+		days_mission_timeout = 70
+		is_good = no
+		fire_only_once = yes
+		timeout_effect = { 
+			GER = { 
+			remove_ideas = german_economy
+			stability_factor = 0.15
+			war_support_factor = 0.15
+			}
+		}
+	}
+
 	
 	economy_of_conquest_barb = { 
-		activation = {
+			activation = {
 				AND = { 
-						has_start_date = 1941.1.1.12
-						has_game_rule = {
-						rule = larp_barb
-						option = on
-						}
-				  	}
+					has_start_date = 1941.1.1.12
+					has_game_rule = {
+					rule = larp_barb
+					option = on
+					}
 				}
+			}
 		
 		allowed = { 
 			#has_country_flag = barbstart
@@ -181,13 +251,16 @@
 					}
 				}
 			}
-		days_mission_timeout = 1095
+		days_mission_timeout = 1120
 		is_good = no
 		fire_only_once = yes
 		timeout_effect = {
 				GER = { 
 			add_ideas = german_economy
+			add_stability = -0.15
+			add_war_support = -0.15
 			}
+			activate_mission = zugs_last_offensive
 		}
 	}
 }

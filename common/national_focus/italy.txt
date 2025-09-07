@@ -2279,12 +2279,13 @@ focus_tree = {
 	focus = {
 		id = ITA_new_industrialization_program
 		icon = GFX_focus_generic_industry_3
-		prerequisite = { focus = ITA_strengthen_northern_industry focus = ITA_modernize_the_mezzogiorno }
+		prerequisite = { focus = ITA_extraction_industry }
 		prerequisite = { focus = ITA_expand_national_universities }
+		prerequisite = { focus = ITA_production_lines }
 
-		x = 1
-		y = 2
-		relative_position_id = ITA_strengthen_northern_industry
+		x = 0
+		y = 4
+		relative_position_id = ITA_economic_reforms
 		cost = 10
 		available = {
 			custom_trigger_tooltip = {
@@ -11181,11 +11182,14 @@ focus_tree = {
 	focus = {
 		id = ITA_extraction_industry
 		icon = GFX_goal_generic_construction2
-		prerequisite = { focus = ITA_redirect_alfa_romeo_production }
+		prerequisite = { 
+			focus = ITA_strengthen_northern_industry
+			focus = ITA_modernize_the_mezzogiorno
+		}
 
-		x = 3
-		y = 1
-		relative_position_id = ITA_redirect_alfa_romeo_production
+		x = 0
+		y = 4
+		relative_position_id = ITA_italian_highways_bba
 		cost = 5
 		available = {
 		}
@@ -11255,53 +11259,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ITA_new_corporations
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = ITA_extraction_industry }
-
-		x = 2
-		y = 1
-		relative_position_id = ITA_extraction_industry
-		cost = 5
-		available = {
-		}
-
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-
-		completion_reward = {
-			add_to_variable = { ITA_iri_production_speed_industrial_complex_factor = -0.35 }
-			add_to_variable = { ITA_iri_conversion_cost_civ_to_mil_factor = 0.15 }
-			custom_effect_tooltip = ITA_new_corporations_iri_tt
-
-			every_core_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				random_select_amount = 3
-
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
 		id = ITA_prepare_for_the_coming_wars
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = ITA_extraction_industry }
+		prerequisite = { focus = ITA_redirect_alfa_romeo_production }
 
 		x = 0
 		y = 1
-		relative_position_id = ITA_extraction_industry
+		relative_position_id = ITA_redirect_alfa_romeo_production
 		cost = 5
 		available = {
 		}
@@ -11459,6 +11423,46 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ITA_new_corporations
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = ITA_improve_the_industries }
+
+		x = 1
+		y = 1
+		relative_position_id = ITA_improve_the_industries
+		cost = 5
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			add_to_variable = { ITA_iri_production_speed_industrial_complex_factor = -0.35 }
+			add_to_variable = { ITA_iri_conversion_cost_civ_to_mil_factor = 0.15 }
+			custom_effect_tooltip = ITA_new_corporations_iri_tt
+
+			every_core_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				random_select_amount = 3
+
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = ITA_production_lines
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = ITA_improve_the_industries }
@@ -11528,12 +11532,11 @@ focus_tree = {
 		id = ITA_expanded_corporatism
 		icon = GFX_focus_ITA_generic_fascist_workers
 		
-	
-		prerequisite = { focus = ITA_production_lines }
+		prerequisite = { focus = ITA_new_industrialization_program }
 		
-		relative_position_id = ITA_economic_reforms
-		x = -0
-		y = 4
+		relative_position_id = ITA_new_industrialization_program
+		x = 0
+		y = 1
 
 		cost = 10
 		available = {}
@@ -12171,29 +12174,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-        id = ITA_stop_the_squandering
-        icon = GFX_focus_mex_privatisation
-      
-		#prerequisite = { focus = ITA_improve_the_industries }
-		prerequisite = { focus = ITA_economic_reforms }
-        relative_position_id = ITA_economic_reforms
-        x = 1
-        y = 2
 
-        cost = 5
-        available = {}
-
-
-        search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_BALANCE_OF_POWER}
-
-        completion_reward = {
-            add_to_variable = { ITA_iri_production_speed_arms_factory_factor = 0.05 } 
-            custom_effect_tooltip = ITA_stop_the_squandering_ricostruzione_industriale_tt
-            add_to_variable = { ITA_military_industry_dm_factory_max_efficiency_factor = 0.05 }
-            custom_effect_tooltip = ITA_stop_the_squandering_military_industry_tt
-        }
-    }
 
 		focus = {
 		id = ITA_italys_destiny

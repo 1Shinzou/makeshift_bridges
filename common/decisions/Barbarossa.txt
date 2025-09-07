@@ -34,7 +34,7 @@
 			activate_mission = mud_season
 			activate_mission = winter_of_1942_tick
 				add_timed_idea = { 
-				idea = winter_of_1941 days = 80
+				idea = winter_of_1941 days = 75
 			}
 			if = {
 				limit = {
@@ -74,7 +74,7 @@
 		timeout_effect = {
 				activate_mission = mud_season
 				add_timed_idea = { 
-				idea = winter_of_1942 days = 60
+				idea = winter_of_1942 days = 75
 			SOV = { 
 				add_timed_idea = { 
 				idea = soviet_winter_offensive2 days = 30
@@ -100,7 +100,7 @@
 		visible = {
 			always = no
 		}
-		days_mission_timeout = 60
+		days_mission_timeout = 75
 		is_good = no
 		fire_only_once = yes
 		timeout_effect = {

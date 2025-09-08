@@ -4698,7 +4698,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_naval_power_projection
-		icon = GFX_goal_generic_build_navy
+		icon = GFX_goal_ITA_Regia_Marina
 
 		x = 11
 		y = 0
@@ -7956,7 +7956,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_strengthen_the_regime
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_focus_ITA_bold_fascism
 		prerequisite = { focus = ITA_la_battaglia_per_le_nascite }
 
 		x = 0
@@ -12266,7 +12266,8 @@ focus_tree = {
 
 		focus = {
 		id = ITA_mare_nostrum_bba
-		icon = GFX_focus_ITA_mare_nostrum
+		icon = GFX_focus_ITA_mare_nostrum2
+		#GFX_focus_ITA_mare_nostrum
 		prerequisite = { focus = ITA_spreading_the_eagles_wings  }
 		mutually_exclusive = { focus = ITA_towards_a_greater_italy }
 		x = 3
@@ -12410,7 +12411,8 @@ focus_tree = {
 
 	focus = {
 		id = ITA_the_italian_legions
-		icon = GFX_focus_generic_fascist_troops
+		icon = GFX_ITA_viva_il_duce
+		#GFX_focus_generic_fascist_troops
 		prerequisite = { focus = ITA_mare_nostrum_bba }
 
 		x = 0
@@ -12965,7 +12967,8 @@ focus = {
 
 	focus = {
 		id = ITA_balkan_ambition
-		icon = GFX_focus_generic_balkans_focus
+		icon = GFX_goal_italy_attack_greece
+		#GFX_focus_generic_balkans_focus
 		prerequisite = { focus = ITA_pact_of_steel }
 	
 

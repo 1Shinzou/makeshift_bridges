@@ -1,0 +1,30 @@
+spriteTypes = {
+
+SpriteType = {
+		name = "GFX_focus_ITA_mare_nostrum2"
+		texturefile = "gfx/interface/goals/ita/focus_ITA_mare_nostrum.dds"
+	}
+
+SpriteType = {
+		name = "GFX_goal_ita_mare_nostrum"
+		texturefile = "gfx/interface/goals/ita/goal_ita_mare_nostrum.dds"
+	}
+  
+SpriteType = {
+		name = "GFX_goal_ITA_Regia_Marina"
+		texturefile = "gfx/interface/goals/ita/goal_ITA_Regia_Marina.dds"
+	}
+    
+SpriteType = {
+		name = "GFX_goal_italy_attack_greece"
+		texturefile = "gfx/interface/goals/ita/goal_italy_attack_greece.dds"
+	}
+SpriteType = {
+		name = "GFX_ITA_viva_il_duce"
+		texturefile = "gfx/interface/goals/ita/ITA_viva_il_duce.dds"
+	}
+SpriteType = {
+		name = "GFX_focus_ITA_bold_fascism"
+		texturefile = "gfx/interface/goals/ita/focus_ITA_bold_fascism.dds"
+	}
+}

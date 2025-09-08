@@ -12106,12 +12106,7 @@ SOV_great_patriotic_war = {
 			any_enemy_country = {
 				SOV_is_major_not_original_sov = yes
 			}
-			OR = {
-				has_completed_focus = SOV_lessons_of_war
-				has_completed_focus = SOV_order_270
-
-			}
-			
+			has_completed_focus = SOV_lessons_of_war
 			surrender_progress > 0.15
 		}
 

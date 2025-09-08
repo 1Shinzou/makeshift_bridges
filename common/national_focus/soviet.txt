@@ -8862,7 +8862,7 @@ focus = {
 	}
 	focus = {
 		id = SOV_war_mobilisation
-		icon = GFX_SOV_the_glory_of_the_red_army_ccp_2d_sov_compatibility
+		icon = GFX_focus_ARG_cut_ties_with_britain
 		x = 20
 		y = 1
 		cost = 5

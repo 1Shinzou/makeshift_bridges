@@ -12108,7 +12108,7 @@ SOV_great_patriotic_war = {
 			}
 			OR = {
 				has_completed_focus = SOV_lessons_of_war
-				has_completed_focus = SOV_order_270
+				has_completed_focus = SOV_study_our_losses
 
 			}
 			

@@ -4124,7 +4124,7 @@ focus_tree = {
 	focus = {
 		id = SOV_move_industry_to_the_urals
 		icon = GFX_sov_move_industry
-		prerequisite = { focus = SOV_military_engineering_university }
+		prerequisite = { focus = SOV_military_engineering_university focus = SOV_war_mobilisation }
 		x = -3
 		y = 1
 		relative_position_id = SOV_military_engineering_university
@@ -4142,6 +4142,25 @@ focus_tree = {
 					}
 				}
 			}
+		}
+		offset = {
+			x = -12
+		    trigger = {
+			has_start_date = 1941.1.1.12
+		}
+		}
+		allow_branch = {
+			OR = {
+				has_start_date = 1941.1.1.12
+				NOT = {
+					has_start_date = 1941.1.1.12
+
+				}
+
+
+			}
+
+			
 		}
 
 		select_effect = {
@@ -4356,6 +4375,14 @@ focus_tree = {
 				has_full_control_of_state = 78
 				has_full_control_of_state = 766
 			}
+		}
+		allow_branch = {
+			NOT = {
+				has_start_date = 1941.1.1.12
+
+			}
+			
+			
 		}
 		
 		search_filters = {}
@@ -4736,6 +4763,14 @@ focus_tree = {
 					SOV = { surrender_progress > 0.1 } #Keep an eye on this, might be too cheesy
 				}
 			}
+		}
+		allow_branch = {
+			NOT = {
+				has_start_date = 1941.1.1.12
+
+			}
+			
+			
 		}
 		
 		search_filters = {FOCUS_FILTER_ARMY_XP}
@@ -6986,6 +7021,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			
 			add_country_leader_trait = stalin_they_will_know_fear
 			add_breakthrough_progress = {
 				specialization = specialization_land
@@ -7058,6 +7094,7 @@ focus_tree = {
 					}
 				}
 			}
+				custom_effect_tooltip = "Y Spawn in divisions in every frontline state"
 		}
 	}
 
@@ -8836,7 +8873,28 @@ focus = {
 		}
 
 		completion_reward = {
-			add_ideas = { SOV_more_airfields }
+			hidden_effect = {
+				create_equipment_variant = {
+						name = "I-15-2" #
+						type = small_plane_airframe_0
+						modules = {
+							fixed_main_weapon_slot = aircraft_cannon_1_2x
+							fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_1x
+							engine_type_slot = engine_2_1x
+							special_type_slot_1 = self_sealing_fuel_tanks_small
+							special_type_slot_2 = fuel_tanks_small 
+						}
+						design_team = mio:SOV_mig_design_bureau_organization
+					}
+			}
+			
+			add_equipment_to_stockpile = {
+				version_name = "I-15-2"
+				type = small_plane_airframe_0
+				amount = 10000
+				producer = SOV
+			}
+				
 		}
 	}
 	
@@ -8900,13 +8958,14 @@ focus = {
 		}
 		completion_reward = {
 			
-			hidden_effect = {
-				set_technology = {
-					sov_slacken_armor_tech = 1
+		
+				
+				swap_ideas = {
+					remove_idea = SOV_tankograd_idea
+					add_idea = SOV_tankograd_idea2
 				}
-				add_ideas = SOV_slacken_armor_idea 
-			}			
-			custom_effect_tooltip = SOV_slacken_armor_tt
+						
+		
 		}
 	}
 	
@@ -8922,16 +8981,7 @@ focus = {
 		completion_reward = {
 			add_ideas = SOV_guards_ideas
 
-			if = {
-				limit = { has_country_flag = RG_armored_division_medium }
-				SOV_increase_RG_cap_medium_double = yes
-			} else_if = {
-				limit = { has_country_flag = RG_armored_division_light }
-				SOV_increase_RG_cap_light_double = yes
-			} else_if = {
-				limit = { has_country_flag = RG_armored_division_heavy }
-				SOV_increase_RG_cap_heavy_double = yes
-			}
+		
 		}
 	}
 
@@ -8957,14 +9007,7 @@ focus = {
 			}
 		}
 		completion_reward = {
-			
-			hidden_effect = {
-				set_technology = {
-					slacken_inf_tech = 1
-				}
-				add_ideas = SOV_slacken_infantry 
-			}
-			custom_effect_tooltip = SOV_slacken_inf_tt
+			add_ideas = SOV_slack_inf
 		}
 	}
 	
@@ -9269,7 +9312,9 @@ focus = {
 		}
 
 		completion_reward = {
-			219 = {
+			
+			hidden_effect = {
+				219 = {
 				add_dynamic_modifier = { modifier = SOV_defend_city }
 				add_building_construction = {
 					type = bunker
@@ -9327,7 +9372,6 @@ focus = {
 					instant_build = yes
 				}
 			}
-			hidden_effect = {
 				hidden_effect = {
 					division_template = {
 						name = "Mobilized Infantry"
@@ -9433,7 +9477,7 @@ focus = {
 				}
 			}
 
-			custom_effect_tooltip = SOV_defend_moscow_tt
+				custom_effect_tooltip = "Y Spawn in divisions to defend Moscow"
 		}
 	}
 	
@@ -9467,7 +9511,9 @@ focus = {
 		}
 
 		completion_reward = {
-			217 = {
+			
+			hidden_effect = {
+				217 = {
 				add_dynamic_modifier = { modifier = SOV_defend_city }
 				add_building_construction = {
 					type = bunker
@@ -9542,7 +9588,6 @@ focus = {
 					instant_build = yes
 				}
 			}
-			hidden_effect = {
 				hidden_effect = {
 					division_template = {
 						name = "Mobilized Infantry"
@@ -9624,7 +9669,7 @@ focus = {
 					}
 				}
 			}
-			custom_effect_tooltip = SOV_defend_stalingrad_tt
+			custom_effect_tooltip = "Y Spawn in divisions to defend Stalingrad"
 		}
 	}
 	
@@ -9658,7 +9703,9 @@ focus = {
 		}
 
 		completion_reward = {
-			195 = {
+			
+			hidden_effect = {
+					195 = {
 				add_dynamic_modifier = { modifier = SOV_defend_city }
 				add_building_construction = {
 					type = bunker
@@ -9754,7 +9801,6 @@ focus = {
 					add_dynamic_modifier = { modifier = SOV_seraya_loshad_battery scope = SOV }
 				}
 			}
-			hidden_effect = {
 				division_template = {
 					name = "Mobilized Infantry"
 					priority = 0
@@ -9809,7 +9855,7 @@ focus = {
 					create_unit = { division = "division_template = \"Mobilized Infantry\" start_experience_factor = 0.20 start_manpower_factor = 1 force_equipment_variants = { infantry_equipment_1 = { owner = \"SOV\" } } force_equipment_variants = { squad_equipment_0 = { owner = \"SOV\" } }" owner = SOV }
 				}
 			}
-			custom_effect_tooltip = SOV_defend_leningrad_tt
+			custom_effect_tooltip = "Y Spawn in divisions to defend Leningrad"
 		}
 	}
 
@@ -9896,7 +9942,9 @@ focus = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = SOV_propaganda_for_the_motherland
+			
 
 			if = {
 				limit = {
@@ -9946,9 +9994,13 @@ focus = {
 		}
 
 		completion_reward = {
-			unlock_decision_category_tooltip = SOV_organise_partisans
 			set_technology = {
 				militia_tech = 1
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 20000
+				producer = SOV
 			}
 		}
 	}
@@ -9977,15 +10029,7 @@ focus = {
 		}
 
 		completion_reward = {
-			hidden_effect = {
-				SOV_check_equipment_stockpile = yes
-				USA = {
-					country_event = {  id = soviet.3100 }
-				}
-				ENG = {
-					country_event = {  id = soviet.3100 }
-				}
-			}
+			
 			hidden_effect = {
 				division_template = {
 					name = "Strelki"
@@ -10073,7 +10117,7 @@ focus = {
 				}
 
 			}
-			custom_effect_tooltip = SOV_frontline_mob_tt
+			custom_effect_tooltip = "Y Spawn in divisions in every frontline state"
 
 			if = {
 				limit = { has_country_flag = RG_armored_division_medium }
@@ -10199,7 +10243,7 @@ focus = {
 					}
 				}
 			}
-			custom_effect_tooltip = SOV_frontline_mob_tt2
+			custom_effect_tooltip = "Y Bring in reserves from the far east"
 		}
 	}
 
@@ -10285,9 +10329,8 @@ focus = {
 		}
 
 		completion_reward = {
-			add_timed_idea = { idea = SOV_coordinate_industry_idea days = 270 }
-			add_offsite_building = { type = industrial_complex level = 3 }
-			add_offsite_building = { type = arms_factory level = 3 }
+			add_offsite_building = { type = industrial_complex level = 10 }
+			add_offsite_building = { type = arms_factory level = 10 }
 		}
 	}
 	
@@ -10319,7 +10362,6 @@ focus = {
 		}
 
 		completion_reward = {
-			add_ideas = SOV_gulag_workers
 			custom_effect_tooltip = SOV_penal_battalions_spawn_tt
 
 			unlock_decision_tooltip = SOV_raise_penal_units

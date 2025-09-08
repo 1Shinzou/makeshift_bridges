@@ -739,6 +739,7 @@ ideas = {
 			cancel_if_invalid = no
 		}
 		sov_totaler_krieg_economy = {
+			picture = new_economic_policy
 
 			visible = {
 				original_tag = SOV

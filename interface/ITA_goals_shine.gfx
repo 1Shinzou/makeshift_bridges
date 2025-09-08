@@ -98,7 +98,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_italy_attack_greece"
+		name = "GFX_goal_italy_attack_greece_shine"
 		texturefile = "gfx/interface/goals/ita/goal_italy_attack_greece.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -129,7 +129,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_ITA_viva_il_duce"
+		name = "GFX_ITA_viva_il_duce_shine"
 		texturefile = "gfx/interface/goals/ita/ITA_viva_il_duce.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -160,7 +160,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_focus_ITA_bold_fascism"
+		name = "GFX_focus_ITA_bold_fascism_shine"
 		texturefile = "gfx/interface/goals/ita/focus_ITA_bold_fascism.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {

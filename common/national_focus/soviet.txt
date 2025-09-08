@@ -4330,66 +4330,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = SOV_the_road_of_life
-		icon = GFX_focus_SOV_the_road_of_life
-		prerequisite = { focus = SOV_leningrad_polytechnical_institute }
-		prerequisite = { focus = SOV_move_industry_to_the_urals }
-		x = 1
-		y = 1
-		relative_position_id = SOV_leningrad_polytechnical_institute
-		cost = 5
-
-		available = {
-			OR = {
-				195 = { #LENINGRAD
-					is_controlled_by = ROOT
-					any_neighbor_state = {
-						is_owned_by = ROOT
-						NOT = { is_fully_controlled_by = ROOT }
-					}
-				}
-				219 = { #MOSCOW
-					is_controlled_by = ROOT
-					any_neighbor_state = {
-						is_owned_by = ROOT
-						NOT = { is_fully_controlled_by = ROOT }
-					}
-				}
-				217 = { #STALINGRAD
-					is_controlled_by = ROOT
-					any_neighbor_state = {
-						is_owned_by = ROOT
-						NOT = { is_fully_controlled_by = ROOT }
-					}
-				}
-				137 = { #SEVASTOPOL
-					is_controlled_by = ROOT
-					any_neighbor_state = {
-						is_owned_by = ROOT
-						NOT = { is_fully_controlled_by = ROOT }
-					}
-				}
-				202 = { #Kiev
-					is_controlled_by = ROOT
-					any_neighbor_state = {
-						is_owned_by = ROOT
-						NOT = { is_fully_controlled_by = ROOT }
-					}
-				}
-			}
-		}
-		
-		search_filters = {}
-
-		completion_reward = {
-			add_timed_idea = {
-				idea = SOV_the_road_of_life_ns
-				days = 730
-			}
-		}
-	}
-
+	
 	focus = {
 		id = SOV_the_molotov_line
 		icon = GFX_sov_eastern_security
@@ -5386,10 +5327,8 @@ focus_tree = {
 	focus = {
 		id = SOV_rehabilitated_military
 		icon = GFX_sov_guards_old
-		prerequisite = { focus = SOV_restore_cossack_units focus = SOV_cohesion_first }
-		prerequisite = {
-			focus = SOV_war_mobilisation
-		}
+		prerequisite = { focus = SOV_restore_cossack_units focus = SOV_cohesion_first focus = SOV_war_mobilisation }
+	
 		x = 0
 		y = 2
 		relative_position_id = SOV_strengthen_the_mobilization_plan
@@ -5472,10 +5411,9 @@ focus_tree = {
 	focus = {
 		id = SOV_desperate_measures
 		icon = GFX_sov_great_patriotic
-		prerequisite = { focus = SOV_strengthen_the_mobilization_plan }
-		prerequisite = {
 			focus = SOV_war_mobilisation
-		}
+		prerequisite = { focus = SOV_strengthen_the_mobilization_plan focus = SOV_war_mobilisation }
+
 		x = 3
 		y = 2
 		relative_position_id = SOV_strengthen_the_mobilization_plan
@@ -6969,10 +6907,7 @@ focus_tree = {
 	focus = {
 		id = SOV_stalins_cult_of_personality
 		icon = GFX_sov_cult_of_personality
-		prerequisite = { focus = SOV_the_bloc_of_rights_and_trotskyites  }
-		prerequisite = {
-			focus = SOV_war_mobilisation
-		}
+		prerequisite = { focus = SOV_the_bloc_of_rights_and_trotskyites focus = SOV_war_mobilisation }
 	    x = 0
 		y = 1
 		relative_position_id = SOV_the_bloc_of_rights_and_trotskyites
@@ -7039,7 +6974,7 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = SOV_stalins_cult_of_personality
-		cost = 10
+		cost = 5
 
 		available = {
 			surrender_progress > 0.25
@@ -9066,7 +9001,7 @@ focus = {
 		relative_position_id = SOV_technical_assistance
 		cost = 5
 		
-		available = { ENG = { has_completed_focus = ENG_operation_countenance }}
+		available = { }
 		
 		completion_reward = {
 					every_controlled_state = {

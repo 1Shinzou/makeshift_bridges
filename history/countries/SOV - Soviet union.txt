@@ -3,6 +3,7 @@
 #### NO STEP BACK
 ####
 
+shared_focus = soviet_joint_focus_barb
 
 #You don't want Russian party names? Just remove these lines
 set_party_name = {

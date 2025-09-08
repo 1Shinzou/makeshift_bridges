@@ -9075,10 +9075,10 @@ focus = {
 				add_compliance = 100
 			}
 			229 = {
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 6
+					level = 2
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -9088,10 +9088,10 @@ focus = {
 				}
 			}
 			230 = {
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 6
+					level = 2
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -9118,56 +9118,56 @@ focus = {
 					NOT = {country_exists = KSR}
 				}
 				586 = {
-					add_extra_state_shared_building_slots = 6
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = arms_factory
-						level = 6
+						level = 3
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = infrastructure
-						level = 5
+						level = 1
 						instant_build = yes
 					}
 				}
 				405 = {
-					add_extra_state_shared_building_slots = 6
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = arms_factory
-						level = 6
+						level = 3
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = infrastructure
-						level = 5
+						level = 1
 						instant_build = yes
 					}
 				}
 			}
 			else = {
 				582 = {
-					add_extra_state_shared_building_slots = 6
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = arms_factory
-						level = 6
+						level = 3
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = infrastructure
-						level = 5
+						level = 1
 						instant_build = yes
 					}
 				}
 				572 = {
-					add_extra_state_shared_building_slots = 6
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = arms_factory
-						level = 6
+						level = 3
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = infrastructure
-						level = 5
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -9187,13 +9187,13 @@ focus = {
 		completion_reward = {
  			add_resource = {
 				type = oil
-				amount = 300
-				state = 229
+				amount = 30
+				state = 572
 			}
 	 		add_resource = {
 				type = rubber
-				amount = 300
-				state = 229
+				amount = 30
+				state = 572
 			}
 
 		}
@@ -9210,13 +9210,13 @@ focus = {
 		completion_reward = {
  			add_resource = {
 				type = tungsten
-				amount = 500
-				state = 233
+				amount = 30
+				state = 572
 			}
 	 		add_resource = {
 				type = chromium
-				amount = 500
-				state = 233
+				amount = 30
+				state = 572
 			}
 
 		}
@@ -9258,7 +9258,7 @@ focus = {
 			}
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 20000
+				amount = 40000
 				producer = USA
 			}
 			add_equipment_to_stockpile = {
@@ -9939,8 +9939,6 @@ focus = {
 
 		completion_reward = {
 			add_timed_idea = { idea = SOV_order_270_idea days = 100 }
-			add_offsite_building = { type = industrial_complex level = 15 }
-			add_offsite_building = { type = arms_factory level = 15 }
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = SOV_propaganda_glory_to_partisans
 			unlock_decision_tooltip = SOV_propaganda_death_to_invaders
@@ -10392,8 +10390,8 @@ focus = {
 
 		completion_reward = {
 			add_timed_idea = { idea = SOV_coordinate_industry_idea days = 270 }
-			add_offsite_building = { type = industrial_complex level = 15 }
-			add_offsite_building = { type = arms_factory level = 15 }
+			add_offsite_building = { type = industrial_complex level = 3 }
+			add_offsite_building = { type = arms_factory level = 3 }
 		}
 	}
 	
@@ -10427,8 +10425,7 @@ focus = {
 		completion_reward = {
 			add_ideas = SOV_gulag_workers
 			custom_effect_tooltip = SOV_penal_battalions_spawn_tt
-			add_offsite_building = { type = industrial_complex level = 30 }
-			add_offsite_building = { type = arms_factory level = 30 }
+
 			unlock_decision_tooltip = SOV_raise_penal_units
 			hidden_effect = {
 				set_technology = { penal_infantry = 1 popup = no }

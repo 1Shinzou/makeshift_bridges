@@ -4124,29 +4124,9 @@ focus_tree = {
 	focus = {
 		id = SOV_move_industry_to_the_urals
 		icon = GFX_sov_move_industry
-		prerequisite = { focus = SOV_military_engineering_university SOV_war_mobilisation }
+		prerequisite = { focus = SOV_military_engineering_university }
 		x = -3
 		y = 1
-		offset = {
-			    trigger = {
-			has_start_date = 1941.1.1.12
-		}
-				x =-13
-
-		}
-			allow_branch = {
-			OR = {
-				has_start_date = 1941.1.1.12
-				NOT = {
-					has_start_date = 1941.1.1.12
-
-				}
-
-
-			}
-
-			
-		}
 		relative_position_id = SOV_military_engineering_university
 		cost = 5
 
@@ -4815,18 +4795,6 @@ focus_tree = {
 					SOV = { surrender_progress > 0.1 } #Keep an eye on this, might be too cheesy
 				}
 			}
-		}
-		allow_branch = {
-			
-				NOT = {
-					has_start_date = 1941.1.1.12
-
-				}
-
-
-	
-
-			
 		}
 		
 		search_filters = {FOCUS_FILTER_ARMY_XP}

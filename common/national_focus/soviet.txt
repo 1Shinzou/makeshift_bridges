@@ -5411,7 +5411,6 @@ focus_tree = {
 	focus = {
 		id = SOV_desperate_measures
 		icon = GFX_sov_great_patriotic
-			focus = SOV_war_mobilisation
 		prerequisite = { focus = SOV_strengthen_the_mobilization_plan focus = SOV_war_mobilisation }
 
 		x = 3

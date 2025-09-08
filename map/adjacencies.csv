@@ -286,22 +286,20 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 7560;2000;impassable;-1;-1;-1;-1;-1;;Iran Big Front
 4958;2000;impassable;-1;-1;-1;-1;-1;;Iran Big Front
 
-6669;3656;impassable;-1;-1;-1;-1;-1;;Caucasus
-6669;3658;impassable;-1;-1;-1;-1;-1;;Caucasus
-6671;3658;impassable;-1;-1;-1;-1;-1;;Caucasus
-6671;9626;impassable;-1;-1;-1;-1;-1;;Caucasus
-6671;1530;impassable;-1;-1;-1;-1;-1;;Caucasus
-1599;6671;impassable;-1;-1;-1;-1;-1;;Caucasus
-1599;9702;impassable;-1;-1;-1;-1;-1;;Caucasus
-12380;1599;impassable;-1;-1;-1;-1;-1;;Caucasus
-12380;11708;impassable;-1;-1;-1;-1;-1;;Caucasus
-11708;13123;impassable;-1;-1;-1;-1;-1;;Caucasus
-11708;12450;impassable;-1;-1;-1;-1;-1;;Caucasus
-1539;12450;impassable;-1;-1;-1;-1;-1;;Caucasus
-1539;1467;impassable;-1;-1;-1;-1;-1;;Caucasus
-11674;1467;impassable;-1;-1;-1;-1;-1;;Caucasus
-1610;1467;impassable;-1;-1;-1;-1;-1;;Caucasus
-1610;9715;impassable;-1;-1;-1;-1;-1;;Caucasus
+672;11664;impassable;-1;-1;-1;-1;-1;;Caucasus;;;;
+685;6674;impassable;-1;-1;-1;-1;-1;;Caucasus;;;;
+9649;6674;impassable;-1;-1;-1;-1;-1;;Caucasus;;;;
+11664;6674;impassable;-1;-1;-1;-1;-1;;Caucasus;;;;
+685;9632;impassable;-1;-1;-1;-1;-1;;Caucasus;;;;
+11614;9632;impassable;-1;-1;-1;-1;-1;;Caucasus;;;;
+11609;9632;impassable;-1;-1;-1;-1;-1;;Caucasus;;;;
+11609;1530;impassable;-1;-1;-1;-1;-1;;Caucasus;;;;
+6436;1455;impassable;-1;-1;-1;-1;-1;;Caucasus;;;;
+6436;7554;impassable;-1;-1;-1;-1;-1;;Caucasus;;;;
+6763;7554;impassable;-1;-1;-1;-1;-1;;Caucasus;;;;
+6763;3711;impassable;-1;-1;-1;-1;-1;;Caucasus;;;;
+6763;1450;impassable;-1;-1;-1;-1;-1;;Caucasus;;;;
+11645;1450;impassable;-1;-1;-1;-1;-1;;Caucasus;;;;
 
 
 5563;5364;;-1;-1;-1;-1;-1;Fernando Torres Strait;GDU Torres

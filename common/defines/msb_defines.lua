@@ -261,23 +261,32 @@ NDefines.NNavy.MAX_POSITIONING_BONUS_FROM_SURFACE_DETECTION	= 0.1  -- will clamp
 NDefines.NNavy.HIGHER_SHIP_RATIO_POSITIONING_PENALTY_FACTOR	= 0.75 -- if one side has more ships than the other, that side will get this penalty for each +100% ship ratio it has
 NDefines.NNavy.MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO = 1.5  -- maximum penalty to get from larger fleets
 NDefines.NNavy.MIN_SHIPS_FOR_HIGHER_SHIP_RATIO_PENALTY = 26    -- the minimum fleet size in ships that a fleet must be before having the large fleet penalty applied to them
-NDefines.NNavy.DAMAGE_PENALTY_ON_MINIMUM_POSITIONING = 0.90	-- damage penalty at 0% positioning
+NDefines.NNavy.DAMAGE_PENALTY_ON_MINIMUM_POSITIONING = 0.85	-- damage penalty at 0% positioning
 NDefines.NNavy.COMBAT_BASE_HIT_CHANCE = 0.15
 NDefines.NNavy.HEAVY_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.3  -- heavy gun attack value is divided by this value * 100 and added to shore bombardment modifier
 NDefines.NNavy.LIGHT_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.15 -- light gun attack value is divided by this value * 100 and added to shore bombardment modifier
 NDefines.NNavy.IN_COMBAT_FUEL_COST = 0.5	
 NDefines.NNavy.COMBAT_MIN_HIT_CHANCE = 0.005  									-- never less hit chance then this?  
 NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { -- supremacy multipliers for different mission types
-		0.0, -- HOLD
-		1.0, -- PATROL
-		0.25, -- STRIKE FORCE
-		1.0, -- CONVOY RAIDING
-		0.5, -- CONVOY ESCORT
-		0.3, -- MINES PLANTING
-		0.3, -- MINES SWEEPING
-		0.0, -- TRAIN
-		0.0, -- RESERVE_FLEET
-		0.25, -- NAVAL_INVASION_SUPPORT
+0.0, -- HOLD
+1.0, -- PATROL
+0.25, -- STRIKE FORCE
+1.0, -- CONVOY RAIDING
+0.5, -- CONVOY ESCORT
+0.3, -- MINES PLANTING
+0.3, -- MINES SWEEPING
+0.0, -- TRAIN
+0.0, -- RESERVE_FLEET
+0.25, -- NAVAL_INVASION_SUPPORT
+	}
+NDefines.NNavy.SHIP_TO_FLEET_ANTI_AIR_RATIO									= 0.5	-- total sum of fleet's anti air will be multiplied with this ratio and added to calculations anti-air of individual ships while air damage reduction
+
+NDefines.NNavy.AGGRESSION_SETTINGS_VALUES = { -- ships will use this values while deciding to attack enemies
+		0,		-- do not engage
+		2.0,	-- low
+		8.0,	-- medium
+		20.0,	-- high
+		10000,	-- I am death incarnate!
 	}
 
 NDefines.NNavy.MISSION_FUEL_COSTS = {  -- fuel cost for each mission
@@ -292,13 +301,14 @@ NDefines.NNavy.MISSION_FUEL_COSTS = {  -- fuel cost for each mission
 		0.0, -- RESERVE_FLEET (consumes fuel HOLD_MISSION_MOVEMENT_COST fuel while moving)
 		1.0, -- NAVAL_INVASION_SUPPORT (does not cost fuel at base, only costs while doing bombardment and escorting units)
 	}
-
-NDefines.NAir.PORT_STRIKE_DAMAGE_FACTOR = 0.125	-- How much damage is dealt to ports during a port strike (per plane damage [complex number] * num flying planes * define)
+-- GNF Air
+NDefines.NAir.PORT_STRIKE_DAMAGE_FACTOR = 0.5
 NDefines.NAir.NAVAL_STRIKE_BASE_STR_TO_PLANES_RATIO = 0.03		-- Max airbombers to do port strike comparing to strength
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.025		-- Max planes that can join a combat comparing to the total strength of the ships
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO_PER_DAY = 0.1 -- max extra plane % that can join every day
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_MIN_CAP = 0		-- Min cap for planes that can join naval combat
---Grape Naval Fix AI
+
+-- GNF AI
 NDefines.NAI.CARRIER_TASKFORCE_MAX_CARRIER_COUNT = 3 		-- optimum carrier count for carrier taskforces
 NDefines.NAI.CAPITAL_TASKFORCE_MAX_CAPITAL_COUNT = 6 		-- optimum capital count for capital taskforces
 NDefines.NAI.SCREEN_TASKFORCE_MAX_SHIP_COUNT = 25			-- optimum screen count for screen taskforces

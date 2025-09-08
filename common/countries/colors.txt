@@ -119,8 +119,7 @@ CAN = {
     color_ui = rgb { 155 62 51 }
 }
 CHI = {
-	  color = HSV { .6 1 .8 }
-   # color = rgb { 237 152 18 }
+    color = rgb { 237 152 18 }
     color_ui = rgb { 221  178  83 } 
 }
 ETH = {
@@ -128,11 +127,11 @@ ETH = {
 	color_ui = rgb { 198 169 248 }
 }
 JAP = {
-	color = rgb { 221  178  83  }
+	color = rgb { 230 200 200 }
 	color_ui = rgb { 230 230 230 }
 }
 MEX = {
-	color = RGB { 20 120 20 }
+	color = rgb { 30 140 20 }
 	color_ui = rgb { 99 189 82 }
 }
 NZL = {

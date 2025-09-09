@@ -7667,7 +7667,7 @@ focus = {
 focus = {
 	id = SOV_positive_heroism
 	icon = GFX_sov_positive_heroism
-	prerequisite = { focus = SOV_expand_the_agitprop }
+	prerequisite = { focus = SOV_expand_the_agitprop focus = SOV_war_mobilisation }
 	x = -2
 	y = 1
 	relative_position_id = SOV_expand_the_agitprop
@@ -7678,6 +7678,26 @@ focus = {
 	available = {
 
 	}
+		offset = {
+			y = -1
+			x = -30
+		    trigger = {
+			has_start_date = 1941.1.1.12
+		}
+		}
+		allow_branch = {
+			OR = {
+				has_start_date = 1941.1.1.12
+				NOT = {
+					has_start_date = 1941.1.1.12
+
+				}
+
+
+			}
+
+			
+		}
 	
 	search_filters = {FOCUS_FILTER_PROPAGANDA}
 
@@ -7713,6 +7733,18 @@ focus = {
 	completion_reward = {
 		add_ideas = SOV_stakhanovite_movement
 	}
+	allow_branch = {
+			
+				NOT = {
+					has_start_date = 1941.1.1.12
+
+				}
+
+
+			
+
+			
+		}
 }
 
 focus = {
@@ -9925,7 +9957,7 @@ focus = {
 	focus = {
 		id = SOV_order_270
 		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = SOV_war_mobilisation }
+		prerequisite = { focus = SOV_positive_heroism }
 		x = 0
 		y = 3
 		relative_position_id = SOV_war_mobilisation
@@ -9943,6 +9975,10 @@ focus = {
 				surrender_progress > 0.22
 			}
 			casualties > 500000
+		}
+		allow_branch = {
+			has_start_date = 1941.1.1.12
+			
 		}
 
 		completion_reward = {

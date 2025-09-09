@@ -4275,7 +4275,6 @@ focus_tree = {
 			add_to_variable = { ITA_ra_air_mission_efficiency = 0.05 }
 			add_to_variable = { ITA_ra_air_mission_xp_gain_factor = 0.05 }
 			add_to_variable = { ITA_ra_air_doctrine_cost_factor = -0.1 }
-			add_to_variable = { ITA_ra_air_range_factor = 0.05 }
 			custom_effect_tooltip = ITA_superaereo_ra_tt
 
 			air_experience = 50

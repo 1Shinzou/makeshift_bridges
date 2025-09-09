@@ -231,8 +231,8 @@
 			tag = GER
 		}
 		activation = {
+			has_idea = german_citidel
 
-	
 			}
 	
 		available = {

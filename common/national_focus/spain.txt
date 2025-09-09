@@ -839,7 +839,7 @@ focus_tree = {
 		
 		icon = GFX_the_army_of_africa_model
 
-		x = -7
+		x = -6
 		y = 1
 		relative_position_id = SPA_fuse_the_parties
 		cost = 5

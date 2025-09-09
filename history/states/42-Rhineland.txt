@@ -46,7 +46,7 @@ state = {
 				infrastructure = 5
 				radar_station = 2
 				synthetic_refinery = 3
-				arms_factory = 5
+				arms_factory = 10
 			}
 		}
 	}

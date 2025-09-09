@@ -8881,6 +8881,10 @@ focus = {
 		completion_reward = {
 			add_ideas = sov_totaler_krieg_economy
 
+			add_trait = {
+					character = SOV_iosif_stalin
+					trait = generallissimo
+				}
 			
 		}
 	}

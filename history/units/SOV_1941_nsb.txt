@@ -417,32 +417,54 @@ instant_effect = {
 	}
 	if = {
 		limit = {
-			NOT = { has_dlc = "No Step Back" }
+			has_game_rule = { 
+				rule = larp_barb 
+				option = on
+			}
 		}
 		set_technology = {
-			improved_light_tank = 1 
-			basic_heavy_tank = 1    # Should be available in 1936 (T-35)
-			basic_medium_tank = 1 # Should be available in 1936 (T-28)
-			improved_heavy_tank = 1 # KV-1
+			gwtank = 1
+			basic_light_tank = 1
+			improved_light_tank = 1
+			basic_heavy_tank = 1	# Should be available in 1936 (T-35)
+			advanced_light_tank = 1
+			basic_medium_tank = 1 	# Should be available in 1936 (T-28)
+			improved_medium_tank = 1
+			advanced_medium_tank = 1
+			advanced_medium_td = 1
+			improved_heavy_tank = 1	# KV-1
+			#advanced_heavy_tank = 1
+
 		}
 	}
 	if = {
 		limit = {
-			has_dlc = "No Step Back"
+			NOT = { 
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
 		}
 		set_technology = {
+			gwtank_chassis = 1
+			basic_light_tank_chassis = 1
 			improved_light_tank_chassis = 1
-			advanced_light_tank_chassis = 1
 			basic_heavy_tank_chassis = 1
-			improved_heavy_tank_chassis = 1
+			basic_medium_tank_chassis = 1
+			engine_tech_1 = 1
 			basic_medium_tank_chassis = 1 
 			improved_medium_tank_chassis = 1
+			#advanced_medium_tank_chassis = 1
+			improved_heavy_tank_chassis = 1
+			#advanced_heavy_tank_chassis = 1
 			engine_tech_2 = 1
-			engine_tech_1 = 1
-            engine_tech_3 = 1
-            armor_tech_1 = 1
-            armor_tech_2 = 1
-            armor_tech_3 = 1
+			engine_tech_3 = 1
+			armor_tech_1 = 1
+			armor_tech_2 = 1
+			armor_tech_3 = 1
+			advanced_light_tank_chassis = 1
+			#super_heavy_tank_chassis = 1
 		}
 	}
 	if = {
@@ -535,8 +557,80 @@ instant_effect = {
 		type = anti_air_equipment_3
 		design_team = mio:SOV_grabin_design_bureau_organization
 	} 
+	if = { 
+		limit = { 
+			has_game_rule = { 
+				rule = larp_barb
+				option = on
+			}
+		}
+		create_equipment_variant = {
+			name = "SU-100-2"
+			type = medium_tank_destroyer_equipment_3
+			design_team = mio:SOV_kirov_organization
+			parent_version = 0
+		upgrades = {
+			tank_reliability_upgrade = 0
+			tank_engine_upgrade = 0
+			tank_armor_upgrade = 0
+			tank_at_upgrade = 5
+		}
+			icon = "GFX_SOV_advanced_medium_td"
+			}
+		}
+	if = { 
+		limit = { 
+			has_game_rule = { 
+				rule = larp_barb
+				option = on
+			}
+		}
+		create_equipment_variant = {
+			name = "ISU-57-2"
+			type = heavy_tank_aa_equipment_3
+			design_team = mio:SOV_kirov_organization
+			parent_version = 0
+		upgrades = {
+			tank_reliability_upgrade = 0
+			tank_engine_upgrade = 5
+			tank_armor_upgrade = 5
+			tank_aa_upgrade = 5
+		}
+			icon = "GFX_SOV_advanced_heavy_td"
+			}
+		}
+	if = { 
+		limit = { 
+			has_game_rule = { 
+				rule = larp_barb
+				option = on
+			}
+		}
+		create_equipment_variant = {
+			name = "T-44-85"
+			type = medium_tank_equipment_3
+			design_team = mio:SOV_OKMO_organization
+			parent_version = 0
+			upgrades = {
+			tank_reliability_upgrade = 0
+			tank_engine_upgrade = 0
+			tank_armor_upgrade = 0
+			tank_gun_upgrade = 5
+		}
+			icon = "GFX_SOV_advanced_medium_tank_medium"
+			}
+		}
 
-	create_equipment_variant = {
+		if = {
+		limit = {
+			NOT = { 
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
+		}
+		create_equipment_variant = {
 			name = "SU-85"
 			type = medium_tank_destroyer_chassis_2
 			design_team = mio:SOV_kirov_organization
@@ -557,8 +651,18 @@ instant_effect = {
 				tank_nsb_engine_upgrade = 0
 				tank_nsb_armor_upgrade = 0
 			}
-		#icon = "GFX_SOV_advanced_medium_td"
+		icon = "GFX_SOV_advanced_medium_td"
+		}
 	}
+	if = {
+		limit = {
+			NOT = { 
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
+		}
 	create_equipment_variant = {
 		name = "ZSU-37-2"
 			type = heavy_tank_aa_chassis_2
@@ -581,6 +685,16 @@ instant_effect = {
 					tank_nsb_armor_upgrade = 17
 				}
 			icon = "GFX_SOV_advanced_heavy_tank_medium"
+		}
+	}
+	if = {
+		limit = {
+			NOT = { 
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
 		}
 		create_equipment_variant = {
 		name = "T34-85"
@@ -605,6 +719,16 @@ instant_effect = {
 				}
 			icon = "GFX_SOV_advanced_medium_tank_medium"
 		}
+	}
+	if = {
+		limit = {
+			NOT = { 
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
+		}
 		create_equipment_variant = {
 			name = "T-60"
 			type = light_tank_chassis_3
@@ -627,6 +751,16 @@ instant_effect = {
 					tank_nsb_armor_upgrade = 17
 				}
 			icon = "GFX_SOV_advanced_light_tank_medium"
+		}
+	}
+	if = {
+		limit = {
+			NOT = { 
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
 		}
 		create_equipment_variant = {
 			name = "Medium Flame Tank II"
@@ -651,6 +785,7 @@ instant_effect = {
 				}
 			icon = "GFX_SOV_improved_medium_tank_medium"
 		}
+	}
 
 	add_equipment_production = {
 		equipment = {
@@ -683,7 +818,72 @@ instant_effect = {
 			progress = 1
 			efficiency = 100
 	}
-	
+	if = {
+		limit = {
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
+	add_equipment_production = {
+		equipment = {
+			type = medium_tank_equipment_3
+			creator = SOV
+			version_name = "T-44-85"
+		}
+		requested_factories = 115
+		progress = 1
+		efficiency = 100
+		industrial_manufacturer = mio:SOV_mytishchy_machine_building_plant_organization
+		}
+	}
+	if = {
+		limit = {
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
+	add_equipment_production = {
+		equipment = {
+			type = medium_tank_destroyer_equipment_3
+			creator = SOV
+			version_name = "SU-100-2"
+		}
+		requested_factories = 20
+		progress = 1
+		efficiency = 100
+		industrial_manufacturer = mio:SOV_mytishchy_machine_building_plant_organization
+		}
+	}
+	if = {
+		limit = {
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
+	add_equipment_production = {
+		equipment = {
+			type = heavy_tank_aa_equipment_3
+			creator = SOV
+			version_name = "ZSU-37-2"
+		}
+		requested_factories = 22
+		progress = 1
+		efficiency = 100
+		industrial_manufacturer = mio:SOV_mytishchy_machine_building_plant_organization
+		}
+	}
+	if = {
+		limit = {
+			NOT = { 
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
+		}
 	add_equipment_production = {
 		equipment = {
 			type = medium_tank_chassis_2
@@ -694,8 +894,17 @@ instant_effect = {
 		progress = 1
 		efficiency = 100
 		industrial_manufacturer = mio:SOV_mytishchy_machine_building_plant_organization
+		}
 	}
-	
+	if = {
+		limit = {
+			NOT = { 
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
+		}
 	add_equipment_production = {
 		equipment = {
 			type = medium_tank_destroyer_chassis_2
@@ -706,7 +915,17 @@ instant_effect = {
 		progress = 1
 		efficiency = 100
 		industrial_manufacturer = mio:SOV_mytishchy_machine_building_plant_organization
+		}
 	}
+	if = {
+		limit = {
+			NOT = { 
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
+		}
 
 	add_equipment_production = {
 		equipment = {
@@ -718,7 +937,17 @@ instant_effect = {
 		progress = 1
 		efficiency = 100
 		industrial_manufacturer = mio:SOV_mytishchy_machine_building_plant_organization
+		}
 	}
+	if = {
+		limit = {
+			NOT = { 
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
+		}
 	add_equipment_production = {
 		equipment = {
 			type = light_tank_chassis_3
@@ -729,8 +958,17 @@ instant_effect = {
 		progress = 1
 		efficiency = 100
 		industrial_manufacturer = mio:SOV_mytishchy_machine_building_plant_organization
+		}
 	}
-
+	if = {
+		limit = {
+			NOT = { 
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
+		}
 	add_equipment_production = {
 		equipment = {
 			type = medium_tank_flame_chassis_2
@@ -741,6 +979,7 @@ instant_effect = {
 		progress = 1
 		efficiency = 100
 		industrial_manufacturer = mio:SOV_mytishchy_machine_building_plant_organization
+		}
 	}
 	
 	add_equipment_production = {

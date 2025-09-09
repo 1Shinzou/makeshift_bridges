@@ -444,8 +444,8 @@ instant_effect = {
 		}
 		set_technology = {
 			advanced_light_tank = 1
-			#basic_medium_tank = 1 
-			#improved_medium_tank = 1
+			basic_medium_tank = 1 
+			improved_medium_tank = 1
 			advanced_medium_tank = 1
 			advanced_medium_td = 1
 			improved_heavy_tank = 1

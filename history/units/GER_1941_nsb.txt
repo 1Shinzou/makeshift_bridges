@@ -283,7 +283,9 @@ instant_effect = {
 			state = 64
 		}
 	}
-
+	
+	recruit_character = GER_erich_von_manstein_barb
+	recruit_character = GER_heinz_guderian_barb
 	
 
 	# Setup proper 1941 technologies
@@ -343,7 +345,7 @@ instant_effect = {
 		backhand_blow = 1
 		modern_blitzkrieg = 1
 		#nd_conscription = 1
-		werwolf_guerillas = 1
+		#werwolf_guerillas = 1
 		convoy_interdiction_ti = 1
 		unrestricted_submarine_warfare = 1
 		raider_patrols = 1
@@ -406,16 +408,26 @@ instant_effect = {
 		improved_equipment_conversion = 1
 		advanced_equipment_conversion = 1
 	}
-
+	
 	complete_special_project = {
 		project = sp:sp_air_radar
 		scientist = GER_konrad_zuse
 		state = 62
 	}
+	if = {
+		limit = {
+			NOT = { 
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
+		}
 	complete_special_project = {
 		project = sp:sp_land_flamethrower_tank
 		scientist = GER_konrad_zuse
 		state = 64
+		}
 	}
 	complete_special_project = {
 		project = sp:sp_land_military_engineering_vehicles
@@ -425,22 +437,34 @@ instant_effect = {
 
 	if = {
 		limit = {
-			NOT = {
-				has_dlc = "No Step Back"
-			}
+			has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
 		}
 		set_technology = {
 			advanced_light_tank = 1
-			basic_medium_tank = 1 
-			improved_medium_tank = 1
+			#basic_medium_tank = 1 
+			#improved_medium_tank = 1
 			advanced_medium_tank = 1
+			advanced_medium_td = 1
 			improved_heavy_tank = 1
 			#advanced_heavy_tank = 1
+			gwtank_chassis = -10
+			basic_light_tank_chassis = -10
+			improved_light_tank_chassis = -10
+			basic_medium_tank_chassis = -10
+			basic_heavy_tank_chassis = -10
 		}
 	}
 	if = {
 		limit = {
-			has_dlc = "No Step Back"
+			NOT = { 
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
 		}
 		set_technology = {
 			basic_medium_tank_chassis = 1 
@@ -485,6 +509,59 @@ instant_effect = {
 		type = armored_support_vehicle_1
 		design_team = mio:GER_daimler_benz_organization
 	} 
+	if = { 
+		limit = { 
+			has_game_rule = { 
+				rule = larp_barb
+				option = on
+			}
+		}
+		create_equipment_variant = {
+			name = "JagdpantherPz"
+			type = medium_tank_destroyer_equipment_3
+			design_team = mio:GER_porsche_organization
+			parent_version = 0
+		upgrades = {
+			tank_reliability_upgrade = 0
+			tank_engine_upgrade = 0
+			tank_armor_upgrade = 0
+			tank_at_upgrade = 5
+		}
+			icon = "GFX_GER_advanced_medium_td"
+			}
+		}
+	if = { 
+		limit = { 
+			has_game_rule = { 
+				rule = larp_barb
+				option = on
+			}
+		}
+		create_equipment_variant = {
+			name = "Panther"
+			type = medium_tank_equipment_3
+			design_team = mio:GER_alkett_organization
+			parent_version = 0
+		upgrades = {
+			tank_reliability_upgrade = 0
+			tank_engine_upgrade = 0
+			tank_armor_upgrade = 0
+			tank_gun_upgrade = 5
+		}
+			icon = "GFX_GER_advanced_medium_tank_medium"
+			}
+		}
+
+
+	if = {
+		limit = {
+			NOT = { 
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
+		}
 	create_equipment_variant = {
 			name = "JagdPz IV"
 			type = medium_tank_destroyer_chassis_2
@@ -507,6 +584,16 @@ instant_effect = {
 				tank_nsb_armor_upgrade = 0
 			}
 			icon = "GFX_GER_advanced_medium_td"
+		}
+	}
+	if = {
+		limit = {
+			NOT = { 
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
 		}
 	create_equipment_variant = {
 		name = "Panzer IV"
@@ -531,7 +618,17 @@ instant_effect = {
 			tank_nsb_armor_upgrade = 14
 		}
 		icon = "GFX_GER_improved_medium_tank_medium"
+		}
 	}
+	if = {
+		limit = {
+			NOT = { 
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
+		}
 	create_equipment_variant = {
 		name = "Medium Flame Tank II"
 		type = medium_tank_flame_chassis_2
@@ -555,7 +652,17 @@ instant_effect = {
 			tank_nsb_armor_upgrade = 14
 		}
 		icon = "GFX_GER_improved_medium_tank_medium"
+		}
 	}
+	if = {
+		limit = {
+			NOT = { 
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
+		}
 	create_equipment_variant = {
 			name = "Panzer II-Ausf.C"
 			type = light_tank_chassis_3
@@ -578,6 +685,7 @@ instant_effect = {
 				tank_nsb_armor_upgrade = 17
 			}
 		icon = "GFX_GER_advanced_light_tank_medium"
+		}
 	}
 	add_equipment_production = {
 		equipment = {
@@ -598,6 +706,53 @@ instant_effect = {
 		progress = 1
 		efficiency = 100
 	}
+	if = {
+		limit = {
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
+	add_equipment_production = {
+		equipment = {
+			type = medium_tank_equipment_3
+			creator = GER 
+			version_name = "Panther"
+		}
+		requested_factories = 125
+		progress = 1
+		efficiency = 100
+		industrial_manufacturer = mio:GER_alkett_organization
+		}
+	}
+	if = {
+		limit = {
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
+	add_equipment_production = {
+		equipment = {
+			type = medium_tank_destroyer_equipment_3
+			creator = GER 
+			version_name = "JagdpantherPz"
+		}
+		requested_factories = 20
+		progress = 1
+		efficiency = 100
+		industrial_manufacturer = mio:GER_alkett_organization
+		}
+	}
+	if = {
+		limit = {
+			NOT = { 
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
+		}
 	add_equipment_production = {
 		equipment = {
 			type = medium_tank_chassis_2
@@ -608,7 +763,17 @@ instant_effect = {
 		progress = 1
 		efficiency = 100
 		industrial_manufacturer = mio:GER_alkett_organization
+		}
 	}
+	if = {
+		limit = {
+			NOT = { 
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
+		}
 	add_equipment_production = {
 		equipment = {
 			type = medium_tank_destroyer_chassis_2
@@ -619,7 +784,17 @@ instant_effect = {
 		progress = 1
 		efficiency = 100
 		industrial_manufacturer = mio:GER_alkett_organization
+		}
 	}
+	if = {
+		limit = {
+			NOT = { 
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
+		}
 	add_equipment_production = {
 		equipment = {
 			type = medium_tank_flame_chassis_2
@@ -630,6 +805,7 @@ instant_effect = {
 		progress = 1
 		efficiency = 100
 		industrial_manufacturer = mio:GER_alkett_organization
+		}
 	}
 	add_equipment_production = {
 		equipment = { 
@@ -663,6 +839,15 @@ instant_effect = {
 		efficiency = 100
 		industrial_manufacturer = mio:GER_opel_organization
 	}
+	if = {
+		limit = {
+			NOT = { 
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
+		}
 	add_equipment_production = {
 		equipment = {
 			type = light_tank_chassis_3
@@ -673,6 +858,7 @@ instant_effect = {
 		progress = 1
 		efficiency = 100
 		industrial_manufacturer = mio:GER_alkett_organization
+		}
 	}
 	add_equipment_production = {
 		equipment = {
@@ -691,17 +877,37 @@ instant_effect = {
 		producer = GER
 		variant_name = "Armored Support Vehicle B"
 	}
+	if = {
+		limit = {
+			NOT = { 
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
+		}
 	add_equipment_to_stockpile = { 
 		type = medium_tank_destroyer_chassis_2
 		version_name = "JagdPz IV"
 		amount = 6700
 		producer = GER
+		}
 	}
+	if = {
+		limit = {
+			NOT = { 
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
+		}
 	add_equipment_to_stockpile = { 
 		type = medium_tank_chassis_2
 		version_name = "Panzer IV"
 		amount = 7500
 		producer = GER
+		}
 	}
 	add_equipment_to_stockpile = { 
 		type = mechanized_equipment_1
@@ -730,17 +936,37 @@ instant_effect = {
 		type = train_equipment_1 
 		amount = 200 
 	}
+	if = {
+		limit = {
+			NOT = { 
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
+		}
 	add_equipment_to_stockpile = { 
 		type = light_tank_chassis_3
 		amount = 1400
 		producer = GER
 		variant_name = "Panzer II-Ausf.C"
+		}
 	}
+	if = {
+		limit = {
+			NOT = { 
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
+		}
 	add_equipment_to_stockpile = { 
 		type = medium_tank_flame_chassis_2
 		amount = 820
 		producer = GER
 		variant_name = "Medium Flame Tank II"
+		}
 	}
 	#Convoy
 	add_equipment_to_stockpile = { 

@@ -18,7 +18,7 @@ SpriteType = {
 	}
 SpriteType = {
 		name = "GFX_SPR_franco"
-		texturefile = "gfx/interface/goals/spr/SPR_chadge.dds"
+		texturefile = "gfx/interface/goals/spr/SPR_franco.dds"
 	}
 	SpriteType = {
 		name = "GFX_SPR_legacy"

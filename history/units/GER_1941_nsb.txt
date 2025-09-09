@@ -294,6 +294,8 @@ instant_effect = {
 		# Infantry
 		interwar_artillery = 1
 		interwar_antitank = 1
+		infantry_weapons = 1
+		infantry_weapons1 = 1
 		infantry_weapons2 = 1
 		improved_infantry_weapons = 1
 		#support_weapons = 1
@@ -304,6 +306,18 @@ instant_effect = {
 		#support_weapons3 = 1
 		mechanised_infantry = 1
 		#mechanised_infantry2 = 1
+		
+		marines  = 1
+		paratroopers = 1
+		tech_trucks = 1
+		motorised_infantry = 1
+		gw_artillery = 1
+		interwar_antiair = 1
+		basic_train = 1
+		tech_recon = 1
+		tech_support = 1		
+		tech_engineers = 1
+		tech_mountaineers = 1
 		tech_mountaineers2 = 1
 		tech_engineers2 = 1
 		tech_recon2 = 1
@@ -334,6 +348,7 @@ instant_effect = {
 		railway_gun = 1
 
 		# Doctrines
+		mobile_warfare = 1
 		delay = 1
 		elastic_defence = 1
 		armored_spearhead = 1
@@ -349,6 +364,7 @@ instant_effect = {
 		convoy_interdiction_ti = 1
 		unrestricted_submarine_warfare = 1
 		raider_patrols = 1
+		trade_interdiction = 1
 
 		# Air
 		air_superiority = 1
@@ -394,6 +410,8 @@ instant_effect = {
 		rubber_processing = 1
 		improved_rubber_processing = 1
 		advanced_rubber_processing = 1
+		fuel_silos = 1
+		fuel_refining = 1
 		fuel_refining2 = 1
 		fuel_refining3 = 1
 		improved_oil_processing = 1
@@ -443,6 +461,10 @@ instant_effect = {
 				}
 		}
 		set_technology = {
+			gwtank = 1
+			basic_light_tank = 1
+			improved_light_tank = 1
+			basic_heavy_tank = 1
 			advanced_light_tank = 1
 			basic_medium_tank = 1 
 			improved_medium_tank = 1
@@ -450,11 +472,6 @@ instant_effect = {
 			advanced_medium_td = 1
 			improved_heavy_tank = 1
 			#advanced_heavy_tank = 1
-			gwtank_chassis = -10
-			basic_light_tank_chassis = -10
-			improved_light_tank_chassis = -10
-			basic_medium_tank_chassis = -10
-			basic_heavy_tank_chassis = -10
 		}
 	}
 	if = {
@@ -467,6 +484,12 @@ instant_effect = {
 			}
 		}
 		set_technology = {
+			gwtank_chassis = 1
+			basic_light_tank_chassis = 1
+			improved_light_tank_chassis = 1
+			basic_heavy_tank_chassis = 1
+			basic_medium_tank_chassis = 1
+			engine_tech_1 = 1
 			basic_medium_tank_chassis = 1 
 			improved_medium_tank_chassis = 1
 			#advanced_medium_tank_chassis = 1

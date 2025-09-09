@@ -126,6 +126,11 @@ equipments = {
 		}
 
 		module_count_limit = {
+			module = armor_plate_small
+			count < 2
+		}
+
+		module_count_limit = {
 			module = non_strategic_materials_small
 			count < 2
 		}
@@ -923,6 +928,11 @@ equipments = {
 
 		module_count_limit = {
 			module = self_sealing_fuel_tanks_small
+			count < 2
+		}
+
+		module_count_limit = {
+			module = armor_plate_small
 			count < 2
 		}
 

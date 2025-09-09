@@ -707,6 +707,7 @@ if = {
 		progress = 0.4
 		efficiency = 50
 		industrial_manufacturer = mio:GER_opel_organization
+		}
 	}
 }
 

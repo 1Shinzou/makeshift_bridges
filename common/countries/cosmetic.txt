@@ -104,8 +104,8 @@ MUT_UNIFIED = {
 }
 
 SPQR_UNIFIED = {
-	color = rgb { 153 0 0 }
-	color_ui = rgb { 153 0 0 }
+	color = rgb { 143 12 125 }
+	color_ui = rgb { 143 12 125 }
 }
 
 PER_UNIFIED = {

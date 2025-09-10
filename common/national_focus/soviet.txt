@@ -10360,9 +10360,12 @@ focus = {
 				producer = SOV
 				variant_name = "IS-2"
 						}
+				SOV = { 
+					load_oob = "SOV_barb3"
 					}
 				}
 			}
+		}
 	focus = {
 		id = SOV_coordinate_industry
 		icon = GFX_focus_prc_agrarian_socialism

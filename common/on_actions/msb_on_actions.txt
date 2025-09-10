@@ -492,7 +492,7 @@ on_actions = {
 				ENG = { 
 					set_autonomy = {
 						target = HOL
-						autonomous_state = autonomy_exile_integrated_puppet
+						autonomous_state = autonomy_gov_exile
 					}
 				}
             }

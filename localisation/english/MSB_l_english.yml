@@ -123,7 +123,7 @@ tradeback_is_cancer_no_export:0"No Tradeback - no exports for playable countries
 uk_hf3_usa:"Advanced Heavy Fighter"
 game_check:0 "Game Rule Check"
 extra_cp:0 "Extra Commmand Power"
-autonomy_exile_integrated_puppet:0 "Allied Government in Exile"
+autonomy_gov_exile:0 "Allied Government in Exile"
 
 # LL Decision
  E_ll:"Air Decision Lend Lease"
@@ -145,7 +145,7 @@ GER_heinz_guderian_barb:0 "Heinz Guderian"
 # ITA
 italian_arms_discount:0 "Bresica Small Arms Industry"
 greater_italy_required_other_states:0 "Italy or a subject of Italy control \n§YMatrouh§! \n§YCorsica§! \n§YSavoy§! \n§YZara§! \n§YDalmatia§! \n§YLjubljana§! \n§YMalta§! \n§YCrete§! \n§YDodecaneso§!"
-mare_nostrum_required_other_states:0 "Italy or a subject of Italy control \n§YMatrouh§! \n§YCorsica§! \n§YSavoy§! \n§YZara§! \n§YDalmatia§! \n§YLjubljana§! \n§YMalta§! \n§YCrete§! \n§YDodecaneso§! \n§YCyprus§ \n§YGibraltar§ \n§YSuez§!"
+mare_nostrum_required_other_states:0 "Italy or a subject of Italy control \n§YMatrouh§! \n§YCorsica§! \n§YSavoy§! \n§YZara§! \n§YDalmatia§! \n§YLjubljana§! \n§YMalta§! \n§YCrete§! \n§YDodecaneso§! \n§YCyprus§! \n§YGibraltar§! \n§YSuez§!"
 ITA_mare_nostrum_achieved:0 "Roman Ambitions Achieved"
 
 # SOV

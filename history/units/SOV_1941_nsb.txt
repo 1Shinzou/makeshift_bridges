@@ -43,7 +43,19 @@ division_template = {
 		infantry = { x = 1 y = 4 }
 	}
 }
+
+#####EVERYTHING IMPORTANT FOR 41#####
+instant_effect = {
+
+if = { 
+	limit = { 
+		has_game_rule = {
+			rule = larp_barb
+			option = off
+		}
+	}
 division_template = {
+	priority = 2
 	name = "Soviet Meduim Meta tank"
 	regiments = {
 		mechanized = { x = 0 y = 0 }
@@ -78,10 +90,129 @@ division_template = {
 		logistics_company = { x = 0 y = 3 }
 		armored_engineer = { x = 0 y = 4  }
 		medium_flame_tank = { x = 0 y = 5 }
+		}
 	}
 }
-#####EVERYTHING IMPORTANT FOR 41#####
-instant_effect = {
+if = { 
+	limit = { 
+		has_game_rule = {
+			rule = larp_barb
+			option = on
+		}
+	}
+division_template = {
+	priority = 2
+	name = "Soviet Meduim Meta tank"
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
+		mechanized = { x = 0 y = 4 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
+		mechanized = { x = 1 y = 4 }
+		
+		medium_armor = { x = 2 y = 0 }
+		medium_armor = { x = 2 y = 1 }
+		medium_armor = { x = 2 y = 2 }
+		medium_armor = { x = 2 y = 3 }
+		medium_armor = { x = 2 y = 4 }
+		
+		medium_armor = { x = 3 y = 0 }
+		medium_armor = { x = 3 y = 1 }
+		medium_armor = { x = 3 y = 2 }
+		medium_armor = { x = 3 y = 3 }
+		medium_tank_destroyer_brigade = { x = 3 y = 4 }
+
+		heavy_sp_anti_air_brigade = { x = 4 y = 0 }
+	}
+	support = {
+		field_hospital = { x = 0 y = 0 }
+		light_tank_recon = { x = 0 y = 1  }
+		armored_maintenance ={ x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		armored_engineer = { x = 0 y = 4  }
+		signal_company = { x = 0 y = 5 }
+		}
+	}
+}
+if = { 
+	limit = { 
+		has_game_rule = {
+			rule = larp_barb
+			option = on
+		}
+	}
+division_template = {
+	priority = 2
+	name = "Soviet KV-1s"
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
+		mechanized = { x = 0 y = 4 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
+		mechanized = { x = 1 y = 4 }
+		
+		heavy_armor = { x = 2 y = 0 }
+		heavy_armor = { x = 2 y = 1 }
+		heavy_armor = { x = 2 y = 2 }
+		heavy_armor = { x = 2 y = 3 }
+		heavy_armor = { x = 2 y = 4 }
+		
+		heavy_armor = { x = 3 y = 0 }
+		heavy_armor = { x = 3 y = 1 }
+		heavy_armor = { x = 3 y = 2 }
+		heavy_armor = { x = 3 y = 3 }
+		heavy_armor = { x = 3 y = 4 }
+
+		heavy_sp_anti_air_brigade = { x = 4 y = 0 }
+	}
+	support = {
+		field_hospital = { x = 0 y = 0 }
+		light_tank_recon = { x = 0 y = 1  }
+		armored_maintenance ={ x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		armored_engineer = { x = 0 y = 4  }
+		signal_company = { x = 0 y = 5 }
+		}
+	}
+}
+
+if = { 
+	limit = { 
+		has_game_rule = {
+			rule = larp_barb
+			option = on
+		}
+	}
+units = { 
+	division = {
+		name = kvs
+		location = 306
+		is_name_ordered = yes
+		division_template = "Soviet KV-1s"
+		start_experience_factor = 0.24
+        start_equipment_factor = 1
+		}
+	division = {
+		name = kvs
+		location = 306
+		is_name_ordered = yes
+		division_templateame = "Soviet KV-1s"
+		start_experience_factor = 0.24
+        start_equipment_factor = 1
+		}
+	}
+}
+
 	add_political_power = 100
 	add_command_power = 150
 	set_stability = 1
@@ -103,11 +234,11 @@ instant_effect = {
 		SOV_vasily_kuznetsov
 		SOV_markian_popov
 		vsevolod_merkulov
-		konstantin_rokossovsky
 		nikolay_vatutin
 		aleksandr_novikov
 		nikolay_kuznetsov
-	}
+		konstantin_rokossovsky
+		}
 
 	set_country_flag = { flag = SOV_gosproyektstroy_level_2_flag value = 1 } #USA
 	set_country_flag = { flag = SOV_gosproyektstroy_level_3_flag value = 1 } #CIV
@@ -119,8 +250,6 @@ instant_effect = {
 			project = sp:sp_land_flamethrower_tank
 		}
 	}
-
-
 	###################
 	### Purge stuff ###
 	###################
@@ -345,60 +474,89 @@ instant_effect = {
     	computing_machine = 1
 
 		#industry
+		excavation1 = 1
+		excavation2 = 1
 		basic_machine_tools = 1
 		improved_machine_tools = 1
+		assembly_line_production = 1
 		advanced_machine_tools = 1
+		streamlined_line = 1
 		synth_oil_experiments = 1
+		oil_processing = 1
+		rubber_processing = 1
+		improved_rubber_processing = 1
+		advanced_rubber_processing = 1
+		fuel_silos = 1
+		fuel_refining = 1
 		fuel_refining2 = 1
 		fuel_refining3 = 1 
 		fuel_refining4 = 1
 		fuel_refining5 = 1 
-		excavation1 = 1
+		improved_oil_processing = 1
 		construction1 = 1
 		construction2 = 1
 		construction3 = 1
+		#construction4 = 1
 		concentrated_industry = 1
 		concentrated_industry2 = 1
 		concentrated_industry3 = 1
-		concentrated_industry4 = 1 
-		assembly_line_production = 1
-		streamlined_line = 1
+		concentrated_industry4 = 1
 		improved_equipment_conversion = 1
-        advanced_equipment_conversion = 1
+		advanced_equipment_conversion = 1
 
 		#Army stuff
-		antitank1 = 1
-		antitank2 = 1
-		antitank3 = 1
-		antiair1 = 1
-		antiair2 = 1
-		antiair3 = 1
-		antiair4 = 1
-		antiair5 = 1
+		
+		# Infantry
+	interwar_artillery = 1
+		interwar_antitank = 1
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1
+		improved_infantry_weapons = 1
+		#support_weapons = 1
+		#support_weapons2 = 1
+		paratroopers = 1
+		improved_infantry_weapons_2 = 1
+		advanced_infantry_weapons = 1
+		#support_weapons3 = 1
+		mechanised_infantry = 1
+		#mechanised_infantry2 = 1
+		
+		marines  = 1
+		paratroopers = 1
+		tech_trucks = 1
+		motorised_infantry = 1
+		gw_artillery = 1
+		interwar_antiair = 1
+		basic_train = 1
+		tech_recon = 1
+		tech_support = 1		
+		tech_engineers = 1
+		tech_mountaineers = 1
+		tech_mountaineers2 = 1
 		tech_engineers2 = 1
-		sp_armored_engineer_tech = 1
-		tech_logistics_company = 1
-		tech_logistics_company2 = 1
+		tech_recon2 = 1
+		paratroopers2 = 1
 		tech_field_hospital = 1
-		tech_field_hospital2 = 1        
-		tech_signal_company = 1
-		tech_signal_company2 = 1
+		tech_field_hospital2 = 1		
+    	tech_signal_company = 1
+    	tech_signal_company2 = 1
+    	tech_logistics_company = 1
+    	tech_logistics_company2 = 1
 		tech_logistics_company3 = 1
-		tech_logistics_company = 1
-		tech_logistics_company2 = 1
 		tech_maintenance_company = 1
 		tech_maintenance_company2 = 1
 		sp_armored_engineer_tech = 1
 		sp_armored_maintenance_tech = 1
-		infantry_weapons2 = 1
-		improved_infantry_weapons = 1
-		support_weapons = 1
-		support_weapons2 = 1
-		paratroopers = 1
-		improved_infantry_weapons_2 = 1
-		support_weapons3 = 1
-		mechanised_infantry = 1
-		engine_tech_2 = 1
+		artillery1 = 1
+		artillery2 = 1
+		antiair1 = 1
+		antiair2 = 1
+		antiair3 = 1
+		antitank1 = 1
+		antitank2 = 1
+		antitank3 = 1
+		antitank4 = 1
 		sp_armored_advanced_flamethrower_tech = 1
 		railway_gun = 1
 
@@ -413,6 +571,19 @@ instant_effect = {
         firebrigades = 1
         backhand_blow = 1
         modern_blitzkrieg = 1
+
+		air_superiority = 1
+		infrastructure_destruction = 1
+		home_defence = 1
+		naval_strike_tactics = 1
+		dogfighting_experience = 1
+		multialtitude_flying = 1
+		logistical_bombing = 1
+		day_bombing = 1
+		air_offense = 1
+		flying_fortress = 1
+		mass_destruction = 1
+		offensive_formations = 1
 
 	}
 	if = {
@@ -433,8 +604,9 @@ instant_effect = {
 			advanced_medium_tank = 1
 			advanced_medium_td = 1
 			improved_heavy_tank = 1	# KV-1
+			improved_heavy_spaa = 1
 			#advanced_heavy_tank = 1
-
+			#advanced_heavy_spaa = 1
 		}
 	}
 	if = {
@@ -586,8 +758,8 @@ instant_effect = {
 			}
 		}
 		create_equipment_variant = {
-			name = "ISU-57-2"
-			type = heavy_tank_aa_equipment_3
+			name = "ZSU-37-3"
+			type = heavy_tank_aa_equipment_2
 			design_team = mio:SOV_kirov_organization
 			parent_version = 0
 		upgrades = {
@@ -596,7 +768,7 @@ instant_effect = {
 			tank_armor_upgrade = 5
 			tank_aa_upgrade = 5
 		}
-			icon = "GFX_SOV_advanced_heavy_td"
+			icon = "GFX_SOV_improved_heavy_td"
 			}
 		}
 	if = { 
@@ -620,6 +792,50 @@ instant_effect = {
 			icon = "GFX_SOV_advanced_medium_tank_medium"
 			}
 		}
+	if = { 
+		limit = { 
+			has_game_rule = { 
+				rule = larp_barb
+				option = on
+			}
+		}
+		create_equipment_variant = {
+			name = "KV-1-2"
+			type = heavy_tank_equipment_2
+			design_team = mio:SOV_kirov_organization
+			parent_version = 0
+			upgrades = {
+			tank_reliability_upgrade = 0
+			tank_engine_upgrade = 0
+			tank_armor_upgrade = 0
+			tank_gun_upgrade = 5
+		}
+			icon = "GFX_SOV_improved_heavy_tank_medium"
+			}
+		}
+
+	if = { 
+		limit = { 
+			has_game_rule = { 
+				rule = larp_barb
+				option = on
+			}
+		}
+		create_equipment_variant = {
+			name = "T-60"
+			type = light_tank_equipment_3
+			design_team = mio:SOV_morozov_design_bureau_organization
+			parent_version = 0
+			upgrades = {
+			tank_reliability_upgrade = 0
+			tank_engine_upgrade = 0
+			tank_armor_upgrade = 0
+			tank_gun_upgrade = 5
+		}
+			icon = "GFX_SOV_advanced_light_tank_medium"
+			}
+		}
+
 
 		if = {
 		limit = {
@@ -818,6 +1034,26 @@ instant_effect = {
 			progress = 1
 			efficiency = 100
 	}
+if = {
+		limit = {
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_3
+			creator = SOV
+			version_name = "T-60"
+		}
+		requested_factories = 6
+		progress = 1
+		efficiency = 100
+		industrial_manufacturer = mio:SOV_mytishchy_machine_building_plant_organization
+		}
+	}
+
 	if = {
 		limit = {
 				has_game_rule = { 
@@ -865,9 +1101,9 @@ instant_effect = {
 			}
 	add_equipment_production = {
 		equipment = {
-			type = heavy_tank_aa_equipment_3
+			type = heavy_tank_aa_equipment_2
 			creator = SOV
-			version_name = "ZSU-37-2"
+			version_name = "ZSU-37-3"
 		}
 		requested_factories = 22
 		progress = 1
@@ -981,7 +1217,26 @@ instant_effect = {
 		industrial_manufacturer = mio:SOV_mytishchy_machine_building_plant_organization
 		}
 	}
-	
+		
+if = {
+		limit = {
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
+	add_equipment_production = {
+		equipment = {
+			type = heavy_tank_equipment_2
+			creator = SOV
+			version_name = "KV-1-2"
+		}
+		requested_factories = 10
+		progress = 1
+		efficiency = 100
+		industrial_manufacturer = mio:SOV_mytishchy_machine_building_plant_organization
+		}
+	}
 	add_equipment_production = {
 		equipment = {
 			type = mechanized_equipment_1
@@ -1065,7 +1320,7 @@ instant_effect = {
 	}
 	add_equipment_to_stockpile = { 
 		type = train_equipment_1
-		amount = 350
+		amount = 500
 		producer = SOV
 	}
 	add_equipment_to_stockpile = { 
@@ -1085,6 +1340,38 @@ instant_effect = {
 		producer = SOV
 		variant_name = "T34-85"
 	}
+	#### old tanks
+	add_equipment_to_stockpile = { 
+		type = medium_tank_equipment_3
+		amount = 11500
+		producer = SOV
+		variant_name = "T-44-85"
+	}
+	add_equipment_to_stockpile = { 
+		type = heavy_tank_equipment_2
+		amount = 1000
+		producer = SOV
+		variant_name = "KV-1-2"
+	}
+	add_equipment_to_stockpile = { 
+		type = medium_tank_destroyer_equipment_3
+		amount = 2000
+		producer = SOV
+		variant_name = "SU-100-2"
+	} 
+	add_equipment_to_stockpile = { 
+		type = heavy_tank_aa_equipment_2
+		amount = 1900
+		producer = SOV
+		variant_name = "ZSU-37-3"
+	}
+	add_equipment_to_stockpile = { 
+		type = light_tank_equipment_3
+		amount = 2000
+		producer = SOV
+		variant_name = "T-60"
+	}
+################
 	add_equipment_to_stockpile = { 
 		type = heavy_tank_aa_chassis_2
 		amount = 1670
@@ -1105,7 +1392,7 @@ instant_effect = {
 	}
 	add_equipment_to_stockpile = { 
 		type = armored_support_vehicle_1
-		amount = 2000
+		amount = 2100
 		producer = SOV
 		variant_name = "Armored Support Vehicle B"
 	}

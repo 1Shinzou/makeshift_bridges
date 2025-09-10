@@ -178,7 +178,8 @@ characters = {
 			planning_skill = 5
 			logistics_skill = 7
 			legacy_id = 410
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+			visible = { NOT = { has_game_rule = { rule = larp_barb option = on }}
+			}
 		}
 
 		advisor = {
@@ -206,6 +207,38 @@ characters = {
 			}
 		}		
 	}
+	SOV_georgy_zhukov_barb = {
+		name = SOV_georgy_zhukov
+
+		portraits = {
+			army = {
+				small = "GFX_idea_georgy_zhukov"
+				large = GFX_portrait_SOV_georgy_zhukov
+			}
+		}
+		advisor = {
+			slot = high_command
+			traits = { army_chief_morale_3 }
+		}
+		field_marshal = {
+			visible = { 
+				has_game_rule = { 
+					rule = larp_barb 
+					option = on
+				}
+			}
+			traits = { adaptable war_hero brilliant_strategist aggressive_assaulter winter_specialist panzer_leader combined_arms_expert logistics_wizard thorough_planner defensive_doctrine trickster trait_engineer cavalry_leader organizer ranger urban_assault_specialist }
+			skill = 8
+			attack_skill = 5
+			defense_skill = 7
+			planning_skill = 5
+			logistics_skill = 7
+			legacy_id = 410
+			visible = { visible = { has_game_rule = { rule = larp_barb option = on	} }
+		}
+	
+		}
+	}
 
 	SOV_konstantin_rokossovsky = {
 		name = SOV_konstantin_rokossovsky
@@ -218,44 +251,34 @@ characters = {
 		}
 
 		field_marshal = {
-			traits = { panzer_leader trickster trait_engineer skilled_staffer cavalry_leader ranger commando } 
+			traits = { panzer_leader trickster trait_engineer skilled_staffer cavalry_leader ranger commando organizer } 
 			skill = 6
 			attack_skill = 6
 			defense_skill = 7
 			planning_skill = 6
 			logistics_skill = 7
 			legacy_id = 402
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
-		}
-
+			visible = {
+				NOT = { 
+					has_game_rule = { 
+						rule = larp_barb
+						option = on
+						}
+					}
+				}		
+			}
+				
+		
 		advisor = {
 			slot = high_command
 			idea_token = konstantin_rokossovsky
 			ledger = army
-			allowed = {
-				original_tag = SOV
-				hidden_trigger = {
-					NOT = {
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 403.000
-						}
-					}
-				}
-			}
 			available = {
 					OR = {
-				has_completed_focus = SOV_positive_heroism
-				has_start_date = 1941.1.1.12
+					has_completed_focus = SOV_positive_heroism
+					has_start_date = 1941.1.1.12
 					}
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
-			}
+				}	
 			traits = {
 				army_armored_3
 			}
@@ -264,6 +287,33 @@ characters = {
 				base = 2
 			}
 		}		
+	}
+
+	
+	SOV_konstantin_rokossovsky_barb = {
+		name = SOV_konstantin_rokossovsky
+
+		portraits = {
+			army = {
+				small = "GFX_idea_konstantin_rokossovsky"
+				large = GFX_portrait_SOV_konstantin_rokossovsky
+			}
+		}	
+		field_marshal = {
+			visible = {
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
+			traits = { panzer_leader trickster trait_engineer skilled_staffer cavalry_leader ranger commando organizer combined_arms_expert	camouflage_expert expert_improviser fortress_buster } 
+			skill = 6
+			attack_skill = 6
+			defense_skill = 7
+			planning_skill = 6
+			logistics_skill = 7
+			legacy_id = 402
+		}
 	}
 
 	SOV_aleksandr_vasilevsky = {

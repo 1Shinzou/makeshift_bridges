@@ -4356,7 +4356,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			#More expensive to edit templates, more cheap to produce aircraft
+			More expensive to edit templates, more cheap to produce aircraft
 			add_to_variable = { ITA_military_industry_air_equipment_upgrade_xp_cost = 0.25 }
 			custom_effect_tooltip = ITA_standardization_ra_tt
 
@@ -4414,8 +4414,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
-			#More expensive to edit templates, more cheap to produce aircraft
-			add_to_variable = { ITA_military_industry_air_equipment_upgrade_xp_cost = -0.5 }
+			More expensive to edit templates, more cheap to produce aircraft
+			add_to_variable = { ITA_military_industry_air_equipment_upgrade_xp_cost = -0.025 }
 			custom_effect_tooltip = ITA_specialization_ra_tt
 
 			hidden_effect = {
@@ -8366,7 +8366,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_italys_destiny }
 		mutually_exclusive = { focus = ITA_mare_nostrum_bba }
 
-		x = -3
+		x = -2
 		y = 4
 		relative_position_id = ITA_strengthen_the_regime
 		cost = 5
@@ -8627,7 +8627,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_towards_a_greater_italy }
 		prerequisite = { focus = ITA_devotion }
 		mutually_exclusive = { focus = ITA_capo_supremo }
-		x = -4
+		x = -5
 		y = 1
 		relative_position_id = ITA_towards_a_greater_italy
 		cost = 10
@@ -8749,7 +8749,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_towards_a_greater_italy }
 		prerequisite = { focus = ITA_devotion }
 		mutually_exclusive = { focus = ITA_heroes_of_the_nation }
-		x = -2
+		x = -3
 		y = 1
 		relative_position_id = ITA_towards_a_greater_italy
 		cost = 10
@@ -11181,8 +11181,10 @@ focus_tree = {
 		id = ITA_extraction_industry
 		icon = GFX_goal_generic_construction2
 		prerequisite = { 
-			focus = ITA_strengthen_northern_industry
 			focus = ITA_modernize_the_mezzogiorno
+		}
+		prerequisite = { 
+			focus = ITA_strengthen_northern_industry
 		}
 
 		x = 0
@@ -12184,7 +12186,7 @@ focus_tree = {
 		icon = GFX_focus_ITA_imperial_recognition
 		prerequisite = { focus = ITA_a_greater_purpose }
 
-		x = -3
+		x = -2
 		y = 1
 		relative_position_id = ITA_a_greater_purpose
 		cost = 5
@@ -12199,77 +12201,12 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = ITA_meritocracy
-		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = { focus = ITA_believe_obey_fight }
-		
-		relative_position_id = ITA_believe_obey_fight
-		x = 0
-		y = 1
-
-		cost = 5
-		available = {
-		}
-		
-		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER}
-
-		completion_reward = {
-			add_country_leader_trait = political_reformer_2
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = ITA_vittorio_emanuele_orlando
-
-			custom_effect_tooltip = available_chief_of_army
-			show_ideas_tooltip = ITA_giovanni_duca
-
-			show_unit_leaders_tooltip = ITA_giovanni_duca
-
-			custom_effect_tooltip = {
-				localization_key = available_scientist_one_line_tt
-				CHARACTER = ITA_enrico_fermi
-			}
-			
-			if = {
-				limit = {
-					has_dlc = "La Resistance"					
-				}
-				ITA_create_edgardo_sogno_operative = yes
-			}
-			
-			IF = {
-				limit = {
-					NOT = {
-						has_tech = atomic_research
-					}
-				}
-				add_tech_bonus = {
-					name = ITA_meritocracy
-					bonus = 0.75 # was 1
-					uses = 1
-					category = nuclear
-				}
-				add_breakthrough_progress = {
-					specialization = specialization_nuclear
-					value = 0.25
-				}
-			}
-			ELSE = {
-				add_breakthrough_progress = {
-					specialization = specialization_nuclear
-					value = 0.5
-				}
-			}
-			ITA_bop_very_low_increase_grandi_side_effect = yes
-		}
-	}
-
 		focus = {
 		id = ITA_mare_nostrum_bba
-		icon = GFX_focus_ITA_mare_nostrum2
-		#GFX_focus_ITA_mare_nostrum
+		icon = GFX_focus_ITA_mare_nostrum
 		prerequisite = { focus = ITA_spreading_the_eagles_wings  }
 		mutually_exclusive = { focus = ITA_towards_a_greater_italy }
-		x = 3
+		x = 2
 		y = 4
 		
 		#relative_position_id = ITA_setting_course #Better to use the other one for hiding branches
@@ -12286,18 +12223,18 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			if = {
-				limit = {
-					NOT = { has_rule = can_create_factions }
-				}
-				set_rule = { can_create_factions = yes }
-			}
-			if = {
-				limit = {
-					is_in_faction = no
-				}
-				create_faction = "italy_empire_faction"
-			}
+		#	if = {
+		#		limit = {
+		#			NOT = { has_rule = can_create_factions }
+		#		}
+		#		set_rule = { can_create_factions = yes }
+		#	}
+		#	if = {
+		#		limit = {
+		#			is_in_faction = no
+		#		}
+		#		create_faction = "italy_empire_faction"
+		#	}
 
 			unlock_decision_tooltip = form_roman_empire
 
@@ -12382,33 +12319,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ITA_auxiliaries
-		icon = GFX_focus_ETH_peacekeeping_forces
-		prerequisite = { focus = ITA_mare_nostrum_bba }
-
-		x = -2
-		y = 1
-		relative_position_id = ITA_mare_nostrum_bba
-		cost = 5
-		available = {
-		}
-
-		search_filters = {}
-
-		completion_reward = {
-			custom_effect_tooltip = ITA_ITA_auxiliaries_re_tt
-			add_to_variable = { ITA_re_modifier_army_sub_unit_militia_speed_factor = 0.05 }
-			add_to_variable = { ITA_re_modifier_army_sub_unit_militia_attack_factor = 0.03 }
-
-			custom_effect_tooltip = ITA_blackshirts_div_cap_12_tt
-			hidden_effect = {
-				add_to_variable = { ITA_militias_cap = 12 }
-				set_division_template_cap = {  division_template = "Camicie Nere" division_cap = ITA_militias_cap }
-			}
-		}
-	}
-
-	focus = {
 		id = ITA_the_italian_legions
 		icon = GFX_ITA_viva_il_duce
 		#GFX_focus_generic_fascist_troops
@@ -12486,346 +12396,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ITA_the_king_of_the_skies
-		icon = GFX_focus_generic_long_range_aircraft
-		prerequisite = { focus = ITA_all_roads_lead_to_rome }
-
-		x = -2
-		y = 1
-		relative_position_id = ITA_all_roads_lead_to_rome
-		cost = 10
-		available = {
-			has_full_control_of_state = 2
-			if = {
-				limit = {
-					has_dlc = "By Blood Alone"
-				}
-				has_tech = advanced_large_airframe
-				has_tech = engines_4
-			}
-		}
-
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
-
-		completion_reward = {
-			random_core_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			add_tech_bonus = {
-				name = ITA_the_king_of_the_skies
-				ahead_reduction = 2
-				bonus = 1.0
-				uses = 1
-				category = heavy_air
-			}
-
-			if = {
-				limit = {
-					has_dlc = "By Blood Alone"
-				}
-				custom_effect_tooltip = ITA_the_king_of_the_skies_military_industry_dm_tt
-				hidden_effect = {
-					add_ideas = ITA_hidden_super_heavy_aircraft_ns
-				}
-
-				ITA_add_the_king_of_the_skies_template_production_and_wing = yes
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			add_breakthrough_progress = {
-				specialization = specialization_air
-				value = 0.5
-			}
-
-			if = {
-				limit = {
-					has_dlc = "Gotterdammerung"
-				}
-				custom_effect_tooltip = ITA_modify_regia_aeronautica_dynamic_modifier_ns_intro
-				if = {
-					limit = {
-						NOT = { is_special_project_completed = sp_air_intercontinental_bomber }
-					}
-					add_to_variable = { 
-						ITA_ra_sp_air_intercontinental_bomber_speed_factor = 0.2
-						tooltip = sp_air_intercontinental_bomber_speed_factor_tt
-					}
-				}
-				if = {
-					limit = {
-						NOT = { is_special_project_completed = sp_air_mothership_aircraft }
-					}
-					add_to_variable = { 
-						ITA_ra_sp_air_mothership_aircraft_speed_factor = 0.2
-						tooltip = sp_air_mothership_aircraft_speed_factor_tt
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = ITA_modern_musculus
-		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = ITA_all_roads_lead_to_rome }
-
-		x = 0
-		y = 1
-		relative_position_id = ITA_all_roads_lead_to_rome
-		cost = 10
-		available = {
-			if = {
-				limit = {
-					has_dlc = "No Step Back"
-				}
-				has_tech = super_heavy_tank_chassis
-			}
-		}
-
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-
-		completion_reward = {
-			random_core_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-
-			if = {
-				limit = {
-					has_dlc = "No Step Back"
-				}
-				custom_effect_tooltip = ITA_modern_musculus_military_industry_dm_tt
-				hidden_effect = {
-					add_ideas = ITA_hidden_super_heavy_tank_ns
-				}
-				
-				ITA_add_modern_musculus_sh_tank_template_and_production = yes
-			}
-			else = {
-				add_tech_bonus = {
-					name = ITA_modern_musculus
-					ahead_reduction = 2
-					bonus = 1.0
-					uses = 1
-					technology = super_heavy_tank
-					technology = super_heavy_td
-					technology = super_heavy_art
-					technology = super_heavy_spaa
-				}
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			add_breakthrough_progress = {
-				specialization = specialization_land
-				value = 0.5
-			}
-			if = {
-				limit = {
-					has_dlc = "Gotterdammerung"
-				}
-				if = {
-					limit = {
-						NOT = { is_special_project_completed = sp_land_land_cruiser }
-					}
-					custom_effect_tooltip = ITA_modify_regio_esercito_dynamic_modifier_ns_intro
-					add_to_variable = { 
-						ITA_re_sp_land_land_cruiser_speed_factor = 0.2
-						tooltip = sp_land_land_cruiser_speed_factor_tt
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = ITA_caligulas_pride
-		icon = GFX_focus_generic_navy_battleship2
-		prerequisite = { focus = ITA_all_roads_lead_to_rome }
-
-		x = 2
-		y = 1
-		relative_position_id = ITA_all_roads_lead_to_rome
-		cost = 5
-		available = {
-			is_special_project_completed = sp:sp_naval_super_heavy_battleship
-			#if = {
-				#limit = {
-					#has_dlc = "Man the Guns"
-				#}
-				#has_tech = ship_hull_super_heavy
-			#}
-			#else = {
-				#has_tech = heavy_battleship
-			#}
-		}
-
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
-
-		completion_reward = {
-			random_core_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				add_tech_bonus = {
-					name = ITA_caligulas_pride
-					ahead_reduction = 2
-					bonus = 1.0
-					uses = 1
-					category = bb_tech
-					category = bc_tech
-					category = cat_ship_heavy_battery
-				}
-				custom_effect_tooltip = ITA_caligulas_pride_military_industry_dm_tt
-				hidden_effect = {
-					add_ideas = ITA_hidden_super_heavy_bb_ns
-				}
-
-				create_equipment_variant = {
-					name = "Neptunus Class"
-					type = ship_hull_super_heavy_1
-					name_group = ITA_BB_HISTORICAL
-					parent_version = 0
-					allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
-					modules = {
-						front_1_custom_slot = ship_anti_air_2
-						front_2_custom_slot = ship_super_heavy_battery_1
-						mid_1_custom_slot = ship_secondaries_2
-						mid_2_custom_slot = ship_secondaries_2
-						mid_3_custom_slot = ship_anti_air_2
-						rear_1_custom_slot = ship_super_heavy_battery_1
-						rear_2_custom_slot = ship_airplane_launcher_2
-						fixed_ship_battery_slot = ship_super_heavy_battery_1
-						fixed_ship_anti_air_slot = ship_anti_air_2
-						fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-						fixed_ship_radar_slot = ship_radar_1
-						fixed_ship_engine_slot = heavy_ship_engine_3
-						fixed_ship_secondaries_slot = dp_ship_secondaries_2
-						fixed_ship_armor_slot = ship_armor_shbb
-					}
-				}
-
-				#Line Production
-				add_equipment_production = {
-					equipment = {
-						type = ship_hull_super_heavy_1
-						creator = "ITA"
-						version_name = "Neptunus Class"
-					}
-					name = "Neptunus"
-					requested_factories = 2
-					progress = 0.75
-					amount = 1
-				}
-			}
-			else = {
-				if = {
-					limit = {
-						NOT = { has_tech = heavy_battleship2 }
-					}
-					add_tech_bonus = {
-						name = ITA_caligulas_pride
-						ahead_reduction = 2
-						bonus = 1.0
-						uses = 1
-						category = shbb_tech
-					}
-				}
-
-				create_equipment_variant = {
-					name = "Neptunus Class"
-					type = SH_battleship_1
-					allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
-					upgrades = {
-						ship_reliability_upgrade = 2
-						ship_engine_upgrade = 2
-						ship_armor_upgrade = 3
-						ship_gun_upgrade = 3
-					}
-				}
-
-				#Line Production
-				add_equipment_production = {
-					equipment = {
-						type = SH_battleship_1
-						creator = "ITA"
-						version_name = "Neptunus Class"
-					}
-					name = "Neptunus"
-					requested_factories = 2
-					progress = 0.6
-					amount = 1
-				}
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-			
-			add_breakthrough_progress = {
-				specialization = specialization_naval
-				value = 0.5
-			}
-
-			if = {
-				limit = {
-					has_dlc = "Gotterdammerung"
-				}
-				if = {
-					limit = {
-						NOT = { is_special_project_completed = sp_naval_ice_carrier }
-					}
-					custom_effect_tooltip = ITA_modify_regia_marina_dynamic_modifier_ns_intro
-					add_to_variable = { 
-						ITA_rm_sp_naval_ice_carrier_speed_factor = 0.2
-						tooltip = sp_naval_ice_carrier_speed_factor_tt
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
         id = ITA_a_greater_purpose
         icon = GFX_focus_generic_italy_first
         prerequisite = { focus = ITA_strengthen_the_regime  }
@@ -12878,7 +12448,7 @@ focus = {
         icon = GFX_focus_generic_spread_fascism
         prerequisite = { focus = ITA_a_greater_purpose }
         relative_position_id = ITA_a_greater_purpose
-        x = 3
+        x = 2
         y = 1
 
         cost = 5

@@ -142,8 +142,11 @@ r56_ger_naval_treaty_desc:0 "Recent talks with [ENG.GetNameDef] has largely loos
 GER_erich_von_manstein_barb:0 "Erich von Manstein"
 GER_heinz_guderian_barb:0 "Heinz Guderian"
 
+# ITA
 italian_arms_discount:0 "Bresica Small Arms Industry"
-#greater_italy_required_other_states:0 "Italy or a subject of Italy control \n§YSuez§! \n§YCorsica§! \n§YSavoy§! \n§YZara§! \n§YDalmatia§! \n§YLjubljana§! \n§YMalta§! \n§YCrete§! \n§YDodecaneso§!"
+greater_italy_required_other_states:0 "Italy or a subject of Italy control \n§YMatrouh§! \n§YCorsica§! \n§YSavoy§! \n§YZara§! \n§YDalmatia§! \n§YLjubljana§! \n§YMalta§! \n§YCrete§! \n§YDodecaneso§!"
+mare_nostrum_required_other_states:0 "Italy or a subject of Italy control \n§YMatrouh§! \n§YCorsica§! \n§YSavoy§! \n§YZara§! \n§YDalmatia§! \n§YLjubljana§! \n§YMalta§! \n§YCrete§! \n§YDodecaneso§! \n§YCyprus§ \n§YGibraltar§ \n§YSuez§!"
+ITA_mare_nostrum_achieved:0 "Roman Ambitions Achieved"
 
 # SOV
 SOV_collectivized_society:0 "Collectivized Society"

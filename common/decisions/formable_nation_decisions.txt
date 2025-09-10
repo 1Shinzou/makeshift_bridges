@@ -4887,7 +4887,7 @@ form_mutapa_category = {
 	}
 }
 
-form_roman_empire_category = {
+form_roman_empire_category = { #rome
 
 	form_roman_empire = {
 
@@ -4903,9 +4903,141 @@ form_roman_empire_category = {
 
 		available = {
 			is_subject = no
-
+			has_completed_focus = ITA_mare_nostrum_bba
+			custom_trigger_tooltip = {
+				tooltip = greater_italy_required_states
+				controls_state = 852 # Istria
+				controls_state = 736 # Litorale
+				controls_state = 160 # Veneto
+				controls_state = 39 # Alto Adige
+				controls_state = 850 # Trentino
+				controls_state = 159 # Lombardia
+				controls_state = 158 # Piedmonte
+				controls_state = 161 # Emilia Romagna
+				controls_state = 162 # Toscana 
+				controls_state = 157 # Abruzzo
+				controls_state = 2 # Latium
+				controls_state = 849 # Puglia
+				controls_state = 117 # Campania
+				controls_state = 156 # Calabria
+				controls_state = 115 # Sicilia
+				controls_state = 114 # Sardegna
+			}  
+			custom_trigger_tooltip = {
+				tooltip = mare_nostrum_required_other_states
+				AND = {
+					OR = {
+						ITA = { 
+						controls_state = 1 # Corsica 
+						}
+						any_country = {
+							is_subject_of = ITA
+							controls_state = 1 # Corsica
+						}
+					}
+					OR = {
+						ITA = { 
+						controls_state = 452 # Matrouh
+						}
+						any_country = {
+							is_subject_of = ITA
+							controls_state = 452 # Matrouh
+						}
+					}
+					OR = {
+						ITA = { 
+						controls_state = 735 # Savoy 
+						}
+						any_country = {
+							is_subject_of = ITA
+							controls_state = 735 # Savoy
+						}
+					}
+					OR = {
+						ITA = { 
+						controls_state = 163 # Zara 
+						}
+						any_country = {
+							is_subject_of = ITA
+							controls_state = 163 # Zara
+						}
+					}
+					OR = {
+						ITA = { 
+						controls_state = 103 # Dalmatia 
+						}
+						any_country = {
+							is_subject_of = ITA
+							controls_state = 103 # Dalmatia
+						}
+					}
+					OR = {
+						ITA = { 
+						controls_state = 853 # Ljubljana 
+						}
+						any_country = {
+							is_subject_of = ITA
+							controls_state = 853 # Ljubljana
+						}
+					}
+					OR = {
+						ITA = { 
+						controls_state = 116 # Malta 
+						}
+						any_country = {
+							is_subject_of = ITA
+							controls_state = 116 # Malta
+						}
+					}
+					OR = {
+						ITA = { 
+						controls_state = 182 # Crete 
+						}
+						any_country = {
+							is_subject_of = ITA
+							controls_state = 182 # Crete
+						}
+					}
+					OR = {
+						ITA = { 
+						controls_state = 164 # Dodecaneso 
+						}
+						any_country = {
+							is_subject_of = ITA
+							controls_state = 164 # Dodecaneso
+						}
+					}
+					OR = {
+						ITA = { 
+						controls_state = 183 # Cyprus 
+						}
+						any_country = {
+							is_subject_of = ITA
+							controls_state = 183 # Cyprus
+						}
+					}
+					OR = {
+						ITA = { 
+						controls_state = 118 # Gibraltar 
+						}
+						any_country = {
+							is_subject_of = ITA
+							controls_state = 118 # Gibraltar
+						}
+					}
+					OR = {
+						ITA = { 
+						controls_state = 446 # Suez 
+						}
+						any_country = {
+							is_subject_of = ITA
+							controls_state = 446 # Suez
+						}
+					}
+				}
+			}
 		}
-
+			
 		visible = {
 			original_tag = ITA
 			NOT = { has_global_flag = form_roman_empire_flag }

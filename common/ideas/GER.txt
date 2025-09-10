@@ -2237,12 +2237,12 @@ ideas = {
 			 	production_speed_anti_air_building_factor = 0.25
 			}
 
-			#equipment_bonus = {
-			#	small_plane_airframe = {
-			#		build_cost_ic = -0.05 
-			#		instant = yes
-			#	}
-			#}
+			equipment_bonus = {
+				small_plane_airframe = {
+					build_cost_ic = -0.025
+					instant = yes
+				}
+			}
 		}
 
 		GER_the_kammhuber_line = {

@@ -478,6 +478,7 @@ generic_medium_aircraft_organization = {
 		limit_to_equipment_type = { mio_cat_eq_all_medium_plane }
 
 		equipment_bonus = {
+			air_attack = 0.1
 			air_defence = 0.2
 		    surface_detection = 0.2
 			air_bombing = 0.15

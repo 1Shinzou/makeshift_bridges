@@ -8881,10 +8881,7 @@ focus = {
 		completion_reward = {
 			add_ideas = sov_totaler_krieg_economy
 
-			add_trait = {
-					character = SOV_iosif_stalin
-					trait = generallissimo
-				}
+			add_country_leader_trait = generallissimo
 			
 		}
 	}
@@ -9015,12 +9012,10 @@ focus = {
 		cost = 5
 
 		completion_reward = {
-			add_ideas = SOV_guards_ideas
-
-		
+			add_timed_idea = { idea = SOV_guards_ideas days = 365
+			}
 		}
 	}
-
 	focus = {
 		id = SOV_slacken_inf
 		icon = GFX_focus_SOV_builder_of_the_red_army
@@ -10332,6 +10327,7 @@ focus = {
 		cost = 5
 
 		available = {
+			date > 1942.1.1
 
 		}
 
@@ -10342,9 +10338,31 @@ focus = {
 		search_filters = {focus_FILTER_ARMY_XP}
 
 		completion_reward = {
-	
-		}
-	}
+			set_technology = { advanced_heavy_tank = 1
+			}
+			hidden_effect = { 
+				create_equipment_variant = {
+				name = "IS-2"
+				type = heavy_tank_equipment_3
+				design_team = mio:SOV_kirov_organization
+				parent_version = 0
+				upgrades = {
+				tank_reliability_upgrade = 0
+				tank_engine_upgrade = 0
+				tank_armor_upgrade = 5
+				tank_gun_upgrade = 5
+				}
+				icon = "GFX_SOV_advanced_heavy_tank_medium"
+				}
+				add_equipment_to_stockpile = { 
+				type = heavy_tank_equipment_3
+				amount = 1000
+				producer = SOV
+				variant_name = "IS-2"
+						}
+					}
+				}
+			}
 	focus = {
 		id = SOV_coordinate_industry
 		icon = GFX_focus_prc_agrarian_socialism

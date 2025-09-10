@@ -30,13 +30,17 @@ ideas = {
             allowed = { 
                 always = no
 			}
+            equipment_bonus = {
+                mechanized_equipment = { 
+                hardness = -0.1
+                    }
+                }
             modifier = {
                 army_defence_factor = -0.10
                 #army_attack_factor = -0.30
                 breakthrough_factor = 0.10
                 supply_consumption_factor = -0.3
                 supply_node_range = 0.2
-
                 #army_armor_attack_factor = -0.20
                #army_morale_factor = 0.25
             }

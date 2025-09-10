@@ -147,6 +147,7 @@ if = {
 		}
 	}
 division_template = {
+	division_names_group = SOV_TANK_01
 	priority = 2
 	name = "Soviet KV-1s"
 	regiments = {
@@ -195,17 +196,21 @@ if = {
 	}
 units = { 
 	division = {
-		name = kvs
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 306
-		is_name_ordered = yes
 		division_template = "Soviet KV-1s"
-		start_experience_factor = 0.24
+		start_experience_factor = 0.2
         start_equipment_factor = 1
 		}
 	division = {
-		name = kvs
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
 		location = 306
-		is_name_ordered = yes
 		division_templateame = "Soviet KV-1s"
 		start_experience_factor = 0.24
         start_equipment_factor = 1

@@ -254,7 +254,7 @@ equipments = {
 		armor_value = 10
 
 		#Offensive Abilities
-		soft_attack = 13
+		soft_attack = 15
 		hard_attack = 4
 		ap_attack = 10
 		air_attack = 0
@@ -285,11 +285,11 @@ equipments = {
 		reliability = 0.8
 		#Defensive Abilities
 		defense = 5
-		breakthrough = 36
+		breakthrough = 45
 		armor_value = 15
 
 		#Offensive Abilities
-		soft_attack = 16
+		soft_attack = 19
 		hard_attack = 6
 		ap_attack = 30
 		air_attack = 0		
@@ -315,19 +315,19 @@ equipments = {
 		reliability = 0.8
 		#Defensive Abilities
 		defense = 6
-		breakthrough = 46
+		breakthrough = 55
 		armor_value = 30
 
 		#Offensive Abilities
-		soft_attack = 22
-		hard_attack = 9
+		soft_attack = 25
+		hard_attack = 10
 		ap_attack = 50
 		air_attack = 0	
 		fuel_consumption = 2.4
 		build_cost_ic = 10 
 		resources = {
 			#oil = 2
-			steel = 4
+			steel = 3
 		}
 	}
 
@@ -719,7 +719,7 @@ equipments = {
 		armor_value = 80
 
 		#Offensive Abilities
-		soft_attack = 34
+		soft_attack = 35
 		hard_attack = 20
 		ap_attack = 81
 		air_attack = 0
@@ -748,10 +748,10 @@ equipments = {
 		#Defensive Abilities
 		defense = 9
 		breakthrough = 66
-		armor_value = 90
+		armor_value = 100
 
 		#Offensive Abilities
-		soft_attack = 38
+		soft_attack = 40
 		hard_attack = 25
 		ap_attack = 91
 		air_attack = 0
@@ -936,7 +936,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 6
 		breakthrough = 1.5
-		armor_value = 80
+		armor_value = 70
 
 		#Offensive Abilities
 		soft_attack = 6
@@ -972,7 +972,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 7
 		breakthrough = 1.8
-		armor_value = 90
+		armor_value = 100
 
 		#Offensive Abilities
 		soft_attack = 8
@@ -1012,13 +1012,13 @@ equipments = {
 		defense = 2.5
 		breakthrough = 2.5
 		hardness = 0.65
-		armor_value = 45
+		armor_value = 50
 
 		#Offensive Abilities
 		soft_attack = 4.5
 		hard_attack = 3
 		ap_attack = 40
-		air_attack = 22
+		air_attack = 26
 
 		build_cost_ic = 12
 		
@@ -1049,13 +1049,13 @@ equipments = {
 		#Defensive Abilities
 		defense = 3
 		breakthrough = 3
-		armor_value = 50
+		armor_value = 70
 
 		#Offensive Abilities
 		soft_attack = 6
 		hard_attack = 4.5
 		ap_attack = 60
-		air_attack = 32
+		air_attack = 42
 		
 		build_cost_ic = 13
 		fuel_consumption = 0.9
@@ -1085,20 +1085,20 @@ equipments = {
 		#Defensive Abilities
 		defense = 3.5
 		breakthrough = 3.5
-		armor_value = 58
+		armor_value = 100
 
 		#Offensive Abilities
 		soft_attack = 7.5
 		hard_attack = 6
 		ap_attack = 70
-		air_attack = 43
+		air_attack = 50
 		
 		build_cost_ic = 14
 		fuel_consumption = 0.9
 		resources = {
 			#oil = 2
 			tungsten = 2
-			steel = 4
+			steel = 2
 		}		
 	}
 
@@ -1122,8 +1122,8 @@ equipments = {
 		armor_value = 70
 
 		#Offensive Abilities
-		soft_attack = 15
-		hard_attack = 12
+		soft_attack = 20
+		hard_attack = 25
 		ap_attack = 35
 		air_attack = 0
 
@@ -1166,15 +1166,15 @@ equipments = {
 		armor_value = 110
 
 		#Offensive Abilities
-		soft_attack = 27
-		hard_attack = 30
-		ap_attack = 111
+		soft_attack = 30
+		hard_attack = 35
+		ap_attack = 130
 		fuel_consumption = 4.4
 		build_cost_ic = 20
 		resources = {
 #			oil = 1
 			steel = 2
-			chromium = 1
+			chromium = 2
 		}
 	}
 
@@ -1199,13 +1199,13 @@ equipments = {
 		#Offensive Abilities
 		soft_attack = 35
 		hard_attack = 40
-		ap_attack = 131
+		ap_attack = 150
 		fuel_consumption = 4.4
 		build_cost_ic = 21
 		resources = {
 			#oil = 1
 			steel = 2
-			chromium = 2
+			chromium = 4
 		}
 	}
 
@@ -1450,13 +1450,13 @@ equipments = {
 		defense = 2
 		breakthrough = 2
 		hardness = 0.8
-		armor_value = 45
+		armor_value = 70
 
 		#Offensive Abilities
 		soft_attack = 4.5
 		hard_attack = 4
 		ap_attack = 25
-		air_attack = 17
+		air_attack = 30
 		
 		build_cost_ic = 25
 		resources = {
@@ -1482,23 +1482,23 @@ equipments = {
 
 		#Misc Abilities
 		maximum_speed = 6
-		reliability = 0.8
+		reliability = 1
 		#Defensive Abilities
-		defense = 3
-		breakthrough = 3
-		armor_value = 68
+		defense = 5
+		breakthrough = 7
+		armor_value = 110
 
 		#Offensive Abilities
 		soft_attack = 6
 		hard_attack = 4.5
 		ap_attack = 60
-		air_attack = 33
+		air_attack = 50
 		fuel_consumption = 1.1
-		build_cost_ic = 27
+		build_cost_ic = 21
 		resources = {
 			#oil = 1
-			steel = 3
-			chromium = 3
+			steel = 2
+			chromium = 2
 		}
 	}
 
@@ -1521,15 +1521,15 @@ equipments = {
 
 		
 		#Defensive Abilities
-		defense = 3.5
-		breakthrough = 3.5
-		armor_value = 90
+		defense = 6
+		breakthrough = 20
+		armor_value = 130
 
 		#Offensive Abilities
 		soft_attack = 7.5
 		hard_attack = 6
 		ap_attack = 88
-		air_attack = 75
+		air_attack = 58
 		fuel_consumption = 1.1
 		build_cost_ic = 21
 		resources = {

@@ -592,6 +592,7 @@ if = {
 		gerd_von_rundstedt
 		goering
 		erwin_rommel
+		heinz_guderian
 
 		# Laws
 		totaler_krieg_economy

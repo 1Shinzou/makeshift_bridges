@@ -13,31 +13,7 @@ division_template = {
 		infantry = { x = 1 y = 4 }
 	}
 }
-division_template = {
-	name = "40CW Mountaneer/32CW with doctrine"
-	regiments = {
-		mountaineers = { x = 0 y = 0 }
-		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }
-		mountaineers = { x = 0 y = 3 }
-		mountaineers = { x = 0 y = 4 }
-		mountaineers = { x = 1 y = 0 }
-		mountaineers = { x = 1 y = 1 }
-		mountaineers = { x = 1 y = 2 }
-		mountaineers = { x = 1 y = 3 }
-		mountaineers = { x = 1 y = 4 }
-		mountaineers = { x = 2 y = 0 }
-		mountaineers = { x = 2 y = 1 }
-		mountaineers = { x = 2 y = 2 }
-		mountaineers = { x = 2 y = 3 }
-		mountaineers = { x = 2 y = 4 }
-		mountaineers = { x = 3 y = 0 }
-		mountaineers = { x = 3 y = 1 }
-		mountaineers = { x = 3 y = 2 }
-		mountaineers = { x = 3 y = 3 }
-		mountaineers = { x = 3 y = 4 }
-	}
-}
+
 division_template = {
 	name = "Garrison"
 	regiments = {
@@ -68,8 +44,21 @@ division_template = {
 		cavalry = { x = 4 y = 4 }
 	}
 }
+
+
+instant_effect = { 
+
+if = { 
+	limit = { 
+		has_game_rule = {
+			rule = larp_barb
+			option = off
+		}
+	}
 division_template = {
-	name = "German Meduim Meta tank"
+
+	name = "German Medium Metar tank"
+	priority = 2
 	regiments = {
 		mechanized = { x = 0 y = 0 }
 		mechanized = { x = 0 y = 1 }
@@ -102,10 +91,57 @@ division_template = {
 		logistics_company = { x = 0 y = 3 }
 		armored_engineer = { x = 0 y = 4  }
 		medium_flame_tank = { x = 0 y = 5 }
+		}
 	}
 }
 
-instant_effect = { 
+if = { 
+	limit = { 
+		has_game_rule = {
+			rule = larp_barb
+			option = on
+		}
+	}
+
+division_template = {
+	name = "German Medium Meta tank"
+	priority = 2
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
+		mechanized = { x = 0 y = 4 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
+		mechanized = { x = 1 y = 4 }
+		
+		medium_armor = { x = 2 y = 0 }
+		medium_armor = { x = 2 y = 1 }
+		medium_armor = { x = 2 y = 2 }
+		medium_armor = { x = 2 y = 3 }
+		medium_armor = { x = 2 y = 4 }
+		
+		medium_armor = { x = 3 y = 0 }
+		medium_armor = { x = 3 y = 1 }
+		medium_armor = { x = 3 y = 2 }
+		medium_armor = { x = 3 y = 3 }
+		medium_armor = { x = 3 y = 4 }
+		medium_tank_destroyer_brigade = { x = 4 y = 0 }
+	}
+	support = {
+		field_hospital = { x = 0 y = 0 }
+		light_tank_recon = { x = 0 y = 1  }
+		armored_maintenance ={ x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		armored_engineer = { x = 0 y = 4  }
+		signal_company = { x = 0 y = 5 }
+		}
+	}
+}
+
 
 	# Starting Stats of various kinds for the 39 scenario
 	set_stability = 1
@@ -553,6 +589,30 @@ instant_effect = {
 			icon = "GFX_GER_advanced_medium_td"
 			}
 		}
+	
+	if = { 
+		limit = { 
+			has_game_rule = { 
+				rule = larp_barb
+				option = on
+			}
+		}
+		create_equipment_variant = {
+			name = "Panzerkampfwagen Leopard"
+			type = light_tank_equipment_3
+			design_team = mio:GER_henschel_organization
+			parent_version = 0
+			upgrades = {
+			tank_reliability_upgrade = 0
+			tank_engine_upgrade = 0
+			tank_armor_upgrade = 0
+			tank_gun_upgrade = 5
+		}
+			icon = "GFX_GER_advanced_light_tank_medium"
+			}
+		}
+
+
 	if = { 
 		limit = { 
 			has_game_rule = { 
@@ -572,6 +632,27 @@ instant_effect = {
 			tank_gun_upgrade = 5
 		}
 			icon = "GFX_GER_advanced_medium_tank_medium"
+			}
+		}
+	if = { 
+		limit = { 
+			has_game_rule = { 
+				rule = larp_barb
+				option = on
+			}
+		}
+		create_equipment_variant = {
+			name = "Tiger"
+			type = heavy_tank_equipment_2
+			design_team = mio:GER_porsche_organization
+			parent_version = 0
+			upgrades = {
+			tank_reliability_upgrade = 0
+			tank_engine_upgrade = 0
+			tank_armor_upgrade = 0
+			tank_gun_upgrade = 5
+		}
+			icon = "GFX_GER_improved_heavy_tank_medium"
 			}
 		}
 
@@ -738,6 +819,25 @@ instant_effect = {
 			}
 	add_equipment_production = {
 		equipment = {
+			type = light_tank_equipment_3
+			creator = GER 
+			version_name = "Panzerkampfwagen Leopard"
+		}
+		requested_factories = 7
+		progress = 1
+		efficiency = 100
+		industrial_manufacturer = mio:GER_alkett_organization
+		}
+	}
+	if = {
+		limit = {
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
+	add_equipment_production = {
+		equipment = {
 			type = medium_tank_equipment_3
 			creator = GER 
 			version_name = "Panther"
@@ -804,6 +904,26 @@ instant_effect = {
 			version_name = "JagdPz IV"
 		}
 		requested_factories = 75
+		progress = 1
+		efficiency = 100
+		industrial_manufacturer = mio:GER_alkett_organization
+		}
+	}
+		
+	if = {
+		limit = {
+				has_game_rule = { 
+				rule = larp_barb
+				option = on
+				}
+			}
+	add_equipment_production = {
+		equipment = {
+			type = heavy_tank_equipment_2
+			creator = GER
+			version_name = "Tiger"
+		}
+		requested_factories = 10
 		progress = 1
 		efficiency = 100
 		industrial_manufacturer = mio:GER_alkett_organization
@@ -896,7 +1016,7 @@ instant_effect = {
 	}
 	add_equipment_to_stockpile = { 
 		type = armored_support_vehicle_1
-		amount = 1000
+		amount = 1500
 		producer = GER
 		variant_name = "Armored Support Vehicle B"
 	}
@@ -932,6 +1052,32 @@ instant_effect = {
 		producer = GER
 		}
 	}
+		#### old tanks
+	add_equipment_to_stockpile = { 
+		type = medium_tank_equipment_3
+		amount = 11000
+		producer = SOV
+		variant_name = "Panther"
+	}
+	add_equipment_to_stockpile = { 
+		type = heavy_tank_equipment_2
+		amount = 1000
+		producer = SOV
+		variant_name = "Tiger"
+	}
+	add_equipment_to_stockpile = { 
+		type = medium_tank_destroyer_equipment_3
+		amount = 2100
+		producer = SOV
+		variant_name = "JagdpantherPz"
+	} 
+	add_equipment_to_stockpile = { 
+		type = light_tank_equipment_3
+		amount = 2000
+		producer = GER
+		variant_name = "Panzerkampfwagen Leopard" 	
+	}
+################
 	add_equipment_to_stockpile = { 
 		type = mechanized_equipment_1
 		amount = 10000

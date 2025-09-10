@@ -615,14 +615,20 @@ characters = {
 				small = GFX_idea_manstein
 			}
 		}
+		advisor = { 
+			slot = high_command
+			traits = {
+				army_regrouping_2
+			}
+		}
 		
 		field_marshal = {
 				visible = {
-						has_game_rule = { 
-						rule = larp_barb
-						option = on
-						}
-					}
+					has_game_rule = { 
+					rule = larp_barb
+					option = on
+				}
+			}
 			traits = { adaptable brilliant_strategist logistics_wizard thorough_planner aggressive_assaulter panzer_leader trickster trait_engineer skilled_staffer cavalry_leader organizer ranger urban_assault_specialist }
 			skill = 6
 			attack_skill = 4
@@ -682,6 +688,13 @@ characters = {
 			army = {
 				large = GFX_portrait_GER_heinz_guderian
 				small = GFX_idea_heinz_guderian
+			}
+		}
+
+		advisor = { 
+			slot = high_command
+			traits = {
+				army_CombinedArms_2
 			}
 		}
 		

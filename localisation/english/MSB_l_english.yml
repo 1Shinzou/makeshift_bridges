@@ -104,7 +104,8 @@ SOV_partisan_organisation:0 "Partisan Organisation"
 SOV_partisan_organisation_desc:0 "We must intensify partisan efforts behind enemy lines to disrupt German supply routes, communications, and troop movements. These courageous fighters will weaken the invaders from within, creating chaos and paving the way for our advancing Red Army."
 SOV_more_airfields:0 "More Airfields"
 SOV_more_airfields_desc:0 "To rapidly build our air force, we must use simple, inexpensive parts that allow for mass production without compromising essential performance. This approach will ensure a steady supply of aircraft to overwhelm the enemy and gain control of the skies."
-
+SOV_georgy_zhukov_barb:0 "Goergy Zhukov"
+SOV_konstantin_rokossovsky_barb:0 "Konstantin Rokossovsky"
 
 
 

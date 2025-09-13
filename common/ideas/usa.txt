@@ -359,6 +359,7 @@ ideas = {
 			
 			modifier = {
 				max_planning = 0.05
+				planning_speed = -0.15
 			}
 		}
 		USA_war_department = {	
@@ -477,7 +478,8 @@ ideas = {
 			
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.05 instant = yes
+					#build_cost_ic = -0.05 instant = yes
+					reliability = 0.10
 					}
 				}
 			}

@@ -256,10 +256,10 @@ focus_tree = {
 		}
 
 		available = {
-			congress_medium_support_trigger = yes
+			#congress_medium_support_trigger = yes
 				NOT = {
 				has_country_leader = { ruling_only = yes character = USA_franklin_delano_roosevelt }
-		}
+			}
 		}
 		
 		bypass = {
@@ -401,18 +401,12 @@ focus_tree = {
 		completion_reward = {
 				remove_ideas = USA_rubber_in_asia
 				add_ideas = USA_no_rubber_in_asia
-			add_tech_bonus = {
-				name = USA_rubber_reserve_company
-				bonus = 1.0
-				uses = 2
-				technology = rubber_processing
-				technology = improved_rubber_processing
-				technology = advanced_rubber_processing
-				technology = modern_rubber_processing
+			set_technology = {
+				improved_rubber_processing = 1
+				advanced_rubber_processing = 1
 			}
 		}
 	}
-	
 	focus = {
 		id = USA_america_first
 		icon = GFX_focus_USA_King_for_CNO
@@ -2966,22 +2960,22 @@ focus_tree = {
 		completion_reward = {
 		add_ideas = tank_destroyer_effort
 				}
-			}
-			### IF U WANT TO REVERT FOCUS 
-			IF = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}	
-				custom_effect_tooltip = available_mio_tt
-				show_mio_tooltip = USA_tank_destroyer_board_organization
-				mio:USA_tank_destroyer_board_organization = {
-					add_mio_size = 2
-				}
-			}
-			ELSE = {
-				custom_effect_tooltip = available_designer
-				show_ideas_tooltip = tank_destroyer_board
 		}
+			### IF U WANT TO REVERT FOCUS 
+			#IF = {
+				#limit = {
+				#	has_dlc = "Arms Against Tyranny"
+				#}	
+				#custom_effect_tooltip = available_mio_tt
+				#show_mio_tooltip = USA_tank_destroyer_board_organization
+				#mio:USA_tank_destroyer_board_organization = {
+				#	add_mio_size = 2
+				#}
+			#}
+			#ELSE = {
+			#	custom_effect_tooltip = available_designer
+			#	show_ideas_tooltip = tank_destroyer_board
+	#	}
 	focus = {
 		id = USA_main_battle_tanks
 		icon = GFX_focus_generic_combined_arms

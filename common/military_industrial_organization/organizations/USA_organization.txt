@@ -181,7 +181,6 @@ USA_north_american_aviation_organization = {
 	allowed = {	
 		OR = {
 			original_tag = USA
-			original_tag = ENG
 			original_tag = PHI 
 		}
 	}

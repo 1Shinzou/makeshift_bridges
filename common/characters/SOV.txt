@@ -4266,6 +4266,90 @@ SOV_vladimir_kotelnikov = {
 	}
 }
 
+# custom scientists 
+
+	SOV_Boris_Georgievich_Chilikin = {
+		name = SOV_Boris_Georgievich_Chilikin
+		portraits = {
+			army = {
+				large = GFX_portrait_SOV_Boris_Georgievich_Chilikin
+			}
+		}
+		scientist = {
+			traits = {
+				scientist_trait_surface_ship_specialist
+			}
+			skills = {
+				specialization_naval = 2
+			}
+		}
+	}
+	SOV_Boris_Mikhailovich_Malinin = {
+		name = SOV_Boris_Mikhailovich_Malinin
+		portraits = {
+			army = {
+				large = GFX_portrait_SOV_Boris_Mikhailovich_Malinin
+			}
+		}
+		scientist = {
+			traits = {
+				scientist_trait_submarine_specialist
+			}
+			skills = {
+				specialization_naval = 2
+			}
+		}
+	}
+	SOV_Mikhail_Ilyich_Koshkin = {
+		name = SOV_Mikhail_Ilyich_Koshkin
+		portraits = {
+			army = {
+				large = GFX_portrait_SOV_Mikhail_Ilyich_Koshkin
+			}
+		}
+		scientist = {
+			traits = {
+				scientist_trait_armored_specialist
+				scientist_trait_gifted_engineer
+			}
+			skills = {
+				specialization_land = 3
+			}
+		}
+	}
+	SOV_Joseph_Yakovlevich_Kotin = {
+		name = SOV_Joseph_Yakovlevich_Kotin
+		portraits = {
+			army = {
+				large = GFX_portrait_SOV_Joseph_Yakovlevich_Kotin
+			}
+		}
+		scientist = {
+			traits = {
+				scientist_trait_armored_specialist
+			}
+			skills = {
+				specialization_land = 3
+			}
+		}
+	}
+	SOV_Vasily_Gavrilovich_Grabin = {
+		name = SOV_Vasily_Gavrilovich_Grabin
+		portraits = {
+			army = {
+				large = GFX_portrait_SOV_Vasily_Gavrilovich_Grabin
+			}
+		}
+		scientist = {
+			traits = {
+				scientist_trait_artillery_specialist
+			}
+			skills = {
+				specialization_land = 3
+			}
+		}
+	}
+
 
 
 }

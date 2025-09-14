@@ -43,7 +43,7 @@ autonomy_state = {
 	}
 
 	allowed = {
-		tag = has_country_leader
+		tag = HOL
 	}
 
 	allowed_levels_filter = {

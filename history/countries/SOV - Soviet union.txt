@@ -141,6 +141,14 @@ recruit_character = SOV_bronislav_kaminski
 recruit_character = SOV_pyotr_krasnov
 recruit_character = SOV_konstantin_nechayev
 
+# MSB Science
+
+recruit_character = SOV_Boris_Georgievich_Chilikin
+recruit_character = SOV_Boris_Mikhailovich_Malinin
+recruit_character = SOV_Mikhail_Ilyich_Koshkin
+recruit_character = SOV_Joseph_Yakovlevich_Kotin
+recruit_character = SOV_Vasily_Gavrilovich_Grabin
+
 if = {
 	limit = {
 		has_dlc = "No Step Back"

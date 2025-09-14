@@ -1178,7 +1178,7 @@ focus_tree = {
 		
 			
 					
-			random_owned_controlled_state = {
+			random_core_state = {
 				limit = {
 					free_building_slots = {
 						building = air_base
@@ -1196,7 +1196,7 @@ focus_tree = {
 				}
 				set_state_flag = air_rearmament_focus_2AirBase
 			}
-			random_owned_controlled_state = {
+			random_core_state = {
 				limit = {
 					free_building_slots = {
 						building = air_base
@@ -1214,7 +1214,7 @@ focus_tree = {
 				}			
 				set_state_flag = air_rearmament_focus_2AirBase
 			}
-			random_owned_controlled_state = {
+			random_core_state = {
 				limit = {
 					free_building_slots = {
 						building = air_base
@@ -1233,7 +1233,7 @@ focus_tree = {
 				}			
 				set_state_flag = air_rearmament_focus_2AirBase
 			}
-			random_owned_controlled_state = {
+			random_core_state = {
 				limit = {
 					free_building_slots = {
 						building = air_base
@@ -1252,7 +1252,7 @@ focus_tree = {
 				}			
 				set_state_flag = air_rearmament_focus_2AirBase
 			}
-			random_owned_controlled_state = {
+			random_core_state = {
 				limit = {
 					free_building_slots = {
 						building = air_base
@@ -1288,7 +1288,7 @@ focus_tree = {
 						}			
 					}
 				}
-				random_owned_controlled_state = {
+				random_core_state = {
 					limit = {
 						free_building_slots = {
 							building = air_base
@@ -1302,7 +1302,7 @@ focus_tree = {
 					}			
 					set_state_flag = air_rearmament_focus_2AirBase
 				}
-				random_owned_controlled_state = {
+				random_core_state = {
 					limit = {
 						free_building_slots = {
 							building = air_base
@@ -1316,7 +1316,7 @@ focus_tree = {
 					}			
 					set_state_flag = air_rearmament_focus_2AirBase
 				}
-				random_owned_controlled_state = {
+				random_core_state = {
 					limit = {
 						free_building_slots = {
 							building = air_base
@@ -1330,7 +1330,7 @@ focus_tree = {
 					}			
 					set_state_flag = air_rearmament_focus_2AirBase
 				}
-				random_owned_controlled_state = {
+				random_core_state = {
 					limit = {
 						free_building_slots = {
 							building = air_base
@@ -1548,40 +1548,6 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = british_fighter_discount
 		}
-	}
-	focus = {
-		id = raf_fighter_command
-		prerequisite = { focus = aircraft_production_focus }
-		icon = GFX_focus_PER_raf_planes
-		x = 0
-		y = 1
-		relative_position_id = aircraft_production_focus
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			date > 1941.10.01
-		}
-		available_if_capitulated = yes
-
-		completion_reward = {
-
-			add_ideas = ENG_quality_RAF_pilots
-
-			add_breakthrough_progress = {
-				specialization = specialization_air
-				value = 1
-			}
-
-			add_tech_bonus = {
-				name = uk_jet_focus
-				bonus = 1.0
-				uses = 2 # was 4 
-				category = jet_technology
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
 	focus = {

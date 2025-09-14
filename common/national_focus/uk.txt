@@ -1178,7 +1178,7 @@ focus_tree = {
 		
 			
 					
-			random_owned_controlled_state = {
+			random_core_state = {
 				limit = {
 					free_building_slots = {
 						building = air_base
@@ -1196,7 +1196,7 @@ focus_tree = {
 				}
 				set_state_flag = air_rearmament_focus_2AirBase
 			}
-			random_owned_controlled_state = {
+			random_core_state = {
 				limit = {
 					free_building_slots = {
 						building = air_base
@@ -1214,7 +1214,7 @@ focus_tree = {
 				}			
 				set_state_flag = air_rearmament_focus_2AirBase
 			}
-			random_owned_controlled_state = {
+			random_core_state = {
 				limit = {
 					free_building_slots = {
 						building = air_base
@@ -1233,7 +1233,7 @@ focus_tree = {
 				}			
 				set_state_flag = air_rearmament_focus_2AirBase
 			}
-			random_owned_controlled_state = {
+			random_core_state = {
 				limit = {
 					free_building_slots = {
 						building = air_base
@@ -1252,7 +1252,7 @@ focus_tree = {
 				}			
 				set_state_flag = air_rearmament_focus_2AirBase
 			}
-			random_owned_controlled_state = {
+			random_core_state = {
 				limit = {
 					free_building_slots = {
 						building = air_base
@@ -1288,7 +1288,7 @@ focus_tree = {
 						}			
 					}
 				}
-				random_owned_controlled_state = {
+				random_core_state = {
 					limit = {
 						free_building_slots = {
 							building = air_base
@@ -1302,7 +1302,7 @@ focus_tree = {
 					}			
 					set_state_flag = air_rearmament_focus_2AirBase
 				}
-				random_owned_controlled_state = {
+				random_core_state = {
 					limit = {
 						free_building_slots = {
 							building = air_base
@@ -1316,7 +1316,7 @@ focus_tree = {
 					}			
 					set_state_flag = air_rearmament_focus_2AirBase
 				}
-				random_owned_controlled_state = {
+				random_core_state = {
 					limit = {
 						free_building_slots = {
 							building = air_base
@@ -1330,7 +1330,7 @@ focus_tree = {
 					}			
 					set_state_flag = air_rearmament_focus_2AirBase
 				}
-				random_owned_controlled_state = {
+				random_core_state = {
 					limit = {
 						free_building_slots = {
 							building = air_base

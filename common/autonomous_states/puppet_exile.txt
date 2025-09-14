@@ -42,6 +42,13 @@ autonomy_state = {
 		always = yes
 	}
 
+	allowed = {
+		tag = has_country_leader
+	}
+
+	allowed_levels_filter = {
+		autonomy_gov_exile
+	}
 	
 	can_take_level = {
             always = no

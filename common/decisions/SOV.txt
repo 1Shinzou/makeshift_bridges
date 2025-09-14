@@ -11180,7 +11180,7 @@ SOV_industry_relocation = {
 
 		cancel_if_not_visible = no
 
-		cost = 10
+		cost = 25
 
 		days_remove = SOV_industrial_relocation_days
 

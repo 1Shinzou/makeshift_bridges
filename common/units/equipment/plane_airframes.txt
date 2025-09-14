@@ -534,6 +534,10 @@ equipments = {
 				}
 			}
 		}
+		module_count_limit = {
+			module = armor_plate_small
+			count < 3
+		}
 	}
 
 	small_plane_airframe_4 = { #modern
@@ -659,6 +663,10 @@ equipments = {
 					plane_special_module_defense_turret
 				}
 			}
+		}
+		module_count_limit = {
+			module = armor_plate_small
+			count < 4
 		}
 	}
 
@@ -803,6 +811,10 @@ equipments = {
 			engine_type_slot = jet_engine_axial_1x
 			special_type_slot_1 = empty
 			special_type_slot_2 = empty
+		}
+		module_count_limit = {
+			module = armor_plate_small
+			count < 4
 		}
 	}
 

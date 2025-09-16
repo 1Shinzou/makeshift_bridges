@@ -1164,7 +1164,9 @@ ideas = {
 				attack_bonus_against = 0.10
 				defense_bonus_against = 0.05
 			}
-
+			modifier = {
+				supply_node_range = 0.1
+			}
 		}
 
 		GER_alpine_warfare_idea = {

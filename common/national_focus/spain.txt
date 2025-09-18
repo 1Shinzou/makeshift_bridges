@@ -2923,6 +2923,16 @@ focus_tree = {
 						trait = caudillo_2
 					}
 				}
+			if = {
+					limit = {
+						has_country_leader = { ruling_only = yes character = SPA_francisco_franco }
+					}
+				SPA_francisco_franco = { 
+						set_portraits = { 
+							civilian = { large = GFX_portrait_spain_francisco_franco_old }
+						}
+					}
+				}
 			}
 		}
 	}

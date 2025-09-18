@@ -433,7 +433,7 @@ harsh_quotas_occupation = {
 	}
 
 	visible = {
-		NOT = { has_government = democratic }
+		NOT = { original_tag = FRA }
 	}
 
 	ai_will_do = {

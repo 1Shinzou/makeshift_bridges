@@ -2929,7 +2929,7 @@ focus_tree = {
 					}
 				SPA_francisco_franco = { 
 						set_portraits = { 
-							civilian = { large = GFX_portrait_spain_francisco_franco_old }
+							civilian = { large = GFX_francisco_franco_generalissimo }
 						}
 					}
 				}

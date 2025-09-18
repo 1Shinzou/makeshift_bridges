@@ -151,6 +151,8 @@ ITA_mare_nostrum_achieved:0 "Roman Ambitions Achieved"
 # SOV
 SOV_collectivized_society:0 "Collectivized Society"
 stalin_they_will_know_fear:0 "They will know Fear"
+SOV_the_road_of_life2:0 "Road of Life"
+SOV_the_road_of_life2_desc:0 "With several of our cities threatened and under siege, we must focus on getting the fighting forces in those places the support they need to hold out, whatever the cost may be."
 
 # USA
 USA_vic_plan:0 "Victory Plan"

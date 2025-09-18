@@ -3167,7 +3167,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			554 = {
+			695 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -3228,12 +3228,22 @@
 			#FRA_communism_riot_effect = yes
 			}
 			remove_ideas = FRA_political_violence
-			553 = {
+			695 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
 					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			hidden_effect = { 
+				695 = { 
+					set_compliance = 100
 				}
 			}
 		}
@@ -3417,7 +3427,7 @@
 			focus = FRA_promote_entrepeneurship
 		}
 		relative_position_id = FRA_protect_the_rights_of_man
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1

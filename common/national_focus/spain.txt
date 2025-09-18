@@ -24,7 +24,7 @@ focus_tree = {
 
 	default = no
 
-	continuous_focus_position = { x = 50 y = 2500 }
+	continuous_focus_position = { x = 700 y = 2500 }
 
 	initial_show_position = {
 		x = 33
@@ -107,7 +107,7 @@ focus_tree = {
 		
 		
 		icon = GFX_SPR_legacy
-		x = 6
+		x = 24
 		y = 0
 		offset = {
 			x = -14
@@ -401,7 +401,7 @@ focus_tree = {
 		}
 		
 		icon = GFX_goal_generic_national_unity
-		x = 25
+		x = 45
 		y = 0
 		offset = {
 			x = -19

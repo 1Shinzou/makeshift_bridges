@@ -3094,16 +3094,16 @@ GER_hilfskreuzer_cat = {
 		custom_cost_text = decision_cost_20_convoy_10_NavXP
 
 		custom_cost_trigger = {
-			has_navy_experience > 9
+			has_navy_experience > 99
 			has_equipment = {
-				convoy > 19
+				convoy > 199
 			}
 		}
 
 		fire_only_once = no
 		available = {	
 			has_equipment = {
-   				convoy > 19
+   				convoy > 199
 	  		}
 		}
 		days_remove = 25
@@ -3115,6 +3115,11 @@ GER_hilfskreuzer_cat = {
 			#}
 		}
 		remove_effect = {
+			add_equipment_to_stockpile = { 
+				type = convoy_1
+				amount = -200 
+			}
+			navy_experience = -100
 			if = {
 				limit = {
 					has_dlc = "Man the Guns"

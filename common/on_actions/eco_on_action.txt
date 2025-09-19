@@ -2524,7 +2524,7 @@ on_actions = {
 			ITA = {
 				add_offsite_building = {
 					type = industrial_complex
-					level = ita8
+					level = 8
 				}
 			}
 		}

@@ -1079,7 +1079,7 @@ focus_tree = {
 
 		available = {
 			if = {
-				FRA = { has_capitulated = yes
+				ENG = { has_war = yes
 				}
 				date < 1942.1.1
 				}

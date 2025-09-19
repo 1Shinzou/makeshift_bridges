@@ -448,8 +448,14 @@ focus_tree = {
 		add_offsite_building = { type = industrial_complex level = 5 }
 			add_stability = 0.10
 			add_ideas = USA_banking_sector_deregulation
+			MEX = { 
+				give_resource_rights = { 
+					receiver = USA
+					state = 315
+					} 
 				}
-		   }
+			}	
+		}
 		    
 	
 	

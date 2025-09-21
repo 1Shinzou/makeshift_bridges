@@ -3311,7 +3311,7 @@
 			factor = 1
 		}
 		available = {
-			
+			has_war_support > 0.45
 		}
 		
 		bypass = {

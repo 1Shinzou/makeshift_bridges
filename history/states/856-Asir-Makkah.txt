@@ -17,7 +17,7 @@ state= {
 	state_category = wasteland
 
 	provinces = {
-		1923 2090 5037 8073 10786 12883 
+		1923 2090 5037 10786 12883 
 	}
 
 	buildings_max_level_factor = 1.000

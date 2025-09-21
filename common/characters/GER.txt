@@ -599,10 +599,10 @@ characters = {
 			}
 			traits = { brilliant_strategist panzer_leader trickster trait_engineer skilled_staffer cavalry_leader organizer ranger }
 			skill = 6
-			attack_skill = 5
+			attack_skill = 4
 			defense_skill = 7
 			planning_skill = 6
-			logistics_skill = 7
+			logistics_skill = 6
 			legacy_id = 5
 		}
 	}

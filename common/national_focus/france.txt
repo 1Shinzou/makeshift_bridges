@@ -3415,6 +3415,7 @@
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			add_stability = 0.10
+			add_political_power = 75
 		}
 	}
 	

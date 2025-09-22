@@ -19,17 +19,26 @@ state={
 		}
 
 		victory_points = {
-			10061 2 # Mersa Matruh
+			10061 3 # Mersa Matruh
 		}
 
 		victory_points = {
-			9989 1 #Sidi Barrani
+			9989 2 #Sidi Barrani
+		}
+
+		victory_points = {
+			8030 1
+		}
+
+		victory_points = {
+			4913 1
 		}
 
 		add_core_of = WST
-			1941.1.1 = {
-		owner = WST
-		add_core_of = WST
+
+		1941.1.1 = {
+			owner = WST
+			add_core_of = WST
 		}
 	}
 

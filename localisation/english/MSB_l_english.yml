@@ -220,6 +220,9 @@ JAP_domestic_air_production: "Domestic Aircraft Production"
 # Map Modding
 
 # VP NAMES
+  VICTORY_POINTS_10749:0 "Musus"
+  VICTORY_POINTS_8030:0 "El-Shaif"
+  VICTORY_POINTS_4913:0 "Siwa Oasis"
   VICTORY_POINTS_5004:0 "Jalu"
   VICTORY_POINTS_4057:0 "El Agheila"
   VICTORY_POINTS_3761:0 "To Berlin"

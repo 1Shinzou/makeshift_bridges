@@ -614,7 +614,7 @@ technologies = {
 			leads_to_tech = marines_expeditionary 
 			research_cost_coeff = 1
 		}
-		
+		naval_invasion_planning_bonus_speed = 0.5 # MSB change
 		unit_marine_design_cost_factor = -0.50
 
 		marine = {

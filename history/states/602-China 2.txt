@@ -20,6 +20,7 @@ state={
 			infrastructure = 3 #was: 5
 			industrial_complex = 2
 			arms_factory = 2
+			air_base = 5
 		}
 		1939.1.1 = {
 			buildings = {

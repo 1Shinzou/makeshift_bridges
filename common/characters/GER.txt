@@ -588,7 +588,7 @@ characters = {
 			}
 		}
 		
-		corps_commander = {
+		field_marshal = {
 			visible = {
 				NOT = { 
 					has_game_rule = { 

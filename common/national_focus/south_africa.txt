@@ -673,7 +673,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_status_of_the_union_act
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 15
@@ -704,7 +704,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_representation_of_natives_act
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -735,7 +735,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_native_laws_amendment_act
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -800,7 +800,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SAF_voortrekker_monument
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2

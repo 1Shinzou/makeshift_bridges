@@ -8938,7 +8938,7 @@ focus_tree = {
 			}
 		}
 
-		x = 13
+		x = 12
 		y = 1
 		relative_position_id = ITA_triumph_in_africa_bba
 		cost = 5
@@ -9080,7 +9080,7 @@ focus_tree = {
 		prerequisite = {  focus = ITA_foreign_affairs }
 	
 		x = 0
-		y = 3
+		y = 2
 		relative_position_id = ITA_foreign_affairs
 		cost = 5
 
@@ -9128,7 +9128,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_pact_of_steel }
 
 		x = -2
-		y = 1
+		y = 2
 		relative_position_id = ITA_pact_of_steel
 		cost = 5
 		available = {
@@ -9149,6 +9149,7 @@ focus_tree = {
 		prerequisite = { 
 			focus = ITA_german_military_cooperation 
 			focus = ITA_treaty_with_germany
+			focus = ITA_befriend_japan
 		}
 
 		x = 1
@@ -9184,6 +9185,7 @@ focus_tree = {
 		prerequisite = { 
 			focus = ITA_german_military_cooperation 
 			focus = ITA_treaty_with_germany
+			focus = ITA_befriend_japan
 		}
 
 		x = 3
@@ -9217,8 +9219,8 @@ focus_tree = {
 		icon = GFX_focus_chi_mission_to_germany
 		prerequisite = { focus = ITA_pact_of_steel }
 
-		x = 2
-		y = 1
+		x = 0
+		y = 2
 		relative_position_id = ITA_pact_of_steel
 		cost = 5
 		available = {
@@ -9228,6 +9230,12 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			GER = {
+				add_relation_modifier = {
+					target = ROOT
+					modifier = ITA_military_agreements
+				}
+			}
 			if = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
@@ -9275,8 +9283,8 @@ focus_tree = {
 		icon = GFX_focus_chi_collaboration_with_the_japanese
 		prerequisite = { focus = ITA_pact_of_steel  }
 
-		x = 4
-		y = 1
+		x = 2
+		y = 2
 		relative_position_id = ITA_pact_of_steel
 		cost = 5
 

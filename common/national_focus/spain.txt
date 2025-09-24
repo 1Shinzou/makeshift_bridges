@@ -714,15 +714,9 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = SPA_the_condor_legion
-				bonus = 1.0
+				bonus = 1.5
 				uses = 1
-				category = light_fighter
-			}
-			add_tech_bonus = {
-				name = SPA_the_condor_legion
-				bonus = 1.0
-				uses = 1
-				category = cas_bomber
+				category = armor
 			}
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = SPA_wilhelm_ritter_von_thoma

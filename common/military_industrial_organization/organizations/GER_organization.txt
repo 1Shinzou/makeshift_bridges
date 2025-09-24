@@ -29,6 +29,39 @@ GER_porsche_organization = {
 		}
 		
 	}
+	add_trait = {
+		token = GER_mio_trait_hoesch_facilities
+		name = GER_mio_trait_hoesch_facilities
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+
+		position = { x=@tank_hoesch_X y=@tank_hoesch_Y }
+
+		visible = {
+			FROM = { original_tag = GER }
+		}
+
+		available = {
+			#FROM = {
+			#	NOT = { has_country_flag = GER_hoesch_facilities_trait_taken_flag }
+			#}
+		}
+
+		on_complete = {
+			#custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
+			FROM = {
+				set_country_flag = GER_hoesch_facilities_trait_taken_flag
+			}
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
 }
 
 GER_henschel_organization = {
@@ -50,6 +83,39 @@ GER_henschel_organization = {
 		}
 		
 	}
+	add_trait = {
+		token = GER_mio_trait_hoesch_facilities
+		name = GER_mio_trait_hoesch_facilities
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+
+		position = { x=@tank_hoesch_X y=@tank_hoesch_Y }  
+		
+		visible = {
+			FROM = { original_tag = GER }
+		}
+
+		available = {
+			#FROM = {
+			#	NOT = { has_country_flag = GER_hoesch_facilities_trait_taken_flag }
+			#}
+		}
+
+		on_complete = {
+			#custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
+			FROM = {
+				set_country_flag = GER_hoesch_facilities_trait_taken_flag
+			}
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
 }
 
 GER_man_organization = {
@@ -67,6 +133,39 @@ GER_man_organization = {
 			original_tag = MAN
 			original_tag = BUL
 			original_tag = SIA
+		}
+	}
+	add_trait = {
+		token = GER_mio_trait_hoesch_facilities
+		name = GER_mio_trait_hoesch_facilities
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+
+		position = { x=@tank_hoesch_X y=@tank_hoesch_Y }  
+		
+		visible = {
+			FROM = { original_tag = GER }
+		}
+
+		available = {
+		#	FROM = {
+		#		NOT = { has_country_flag = GER_hoesch_facilities_trait_taken_flag }
+		#	}
+		}
+
+		on_complete = {
+			#custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
+			FROM = {
+				set_country_flag = GER_hoesch_facilities_trait_taken_flag
+			}
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+
+		ai_will_do = {
+			base = 2
 		}
 	}
 }
@@ -89,6 +188,39 @@ GER_alkett_organization = {
 			original_tag = SIA
 		}
 	}
+	add_trait = {
+		token = GER_mio_trait_hoesch_facilities
+		name = GER_mio_trait_hoesch_facilities
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+
+		position = { x=@tank_hoesch_X y=@tank_hoesch_Y }  
+		
+		visible = {
+			FROM = { original_tag = GER }
+		}
+
+		available = {
+		#	FROM = {
+		#		NOT = { has_country_flag = GER_hoesch_facilities_trait_taken_flag }
+		#	}
+		}
+
+		on_complete = {
+			#custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
+			FROM = {
+				set_country_flag = GER_hoesch_facilities_trait_taken_flag
+			}
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
 }
 
 GER_daimler_benz_organization = {
@@ -103,6 +235,39 @@ GER_daimler_benz_organization = {
 			original_tag = SPR
 			original_tag = BUL
 			original_tag = HUN
+		}
+	}
+	add_trait = {
+		token = GER_mio_trait_hoesch_facilities
+		name = GER_mio_trait_hoesch_facilities
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+
+		position = { x=@tank_hoesch_X y=@tank_hoesch_Y }  
+		
+		visible = {
+			FROM = { original_tag = GER }
+		}
+
+		available = {
+		#	FROM = {
+		#		NOT = { has_country_flag = GER_hoesch_facilities_trait_taken_flag }
+		#	}
+		}
+
+		on_complete = {
+			#custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
+			FROM = {
+				set_country_flag = GER_hoesch_facilities_trait_taken_flag
+			}
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+
+		ai_will_do = {
+			base = 2
 		}
 	}
 

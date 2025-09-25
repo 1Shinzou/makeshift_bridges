@@ -279,6 +279,32 @@ set_technology = {
 	interwar_antiair = 1
 	basic_train = 1
 }
+
+if = {
+	limit = {
+		NOT = {
+		has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+		basic_heavy_tank = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		improved_light_tank_chassis = 1
+		engine_tech_1 = 1
+	}
+}
+
 if = {
 	limit = {
 		NOT = { has_dlc = "By Blood Alone" }

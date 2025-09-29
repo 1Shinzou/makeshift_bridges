@@ -118,10 +118,12 @@ autonomous_occupation = {
 	icon = 2
 	sound_effect = "Martial_Law_Interface_Autonomous_Occupation_Unique_DEM"
 
+	fallback_law = foreign_civilian_oversight
+
 	visible = {
 		has_government = democratic #? on design
 	}
-
+	
 	state_modifier = {
 		resistance_target 				= +0.10
 		compliance_gain 				= 0.02

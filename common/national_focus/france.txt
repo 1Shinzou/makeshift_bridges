@@ -2034,7 +2034,7 @@
 			add_tech_bonus = {
 				name = FRA_light_medium_armor
 				bonus = 1.5
-				uses = 2
+				uses = 1
 				category = cat_light_armor
 				category = cat_medium_armor
 			}

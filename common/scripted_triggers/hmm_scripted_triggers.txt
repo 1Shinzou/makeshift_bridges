@@ -22,7 +22,7 @@ is_playable_country = {
 		tag = SAF
 		tag = SOV
 		tag = PHI
-		tag = IRE
+
 	}
 }
 
@@ -106,6 +106,7 @@ ai_manpower = {
 		tag = DEN
 		tag = ALB
 		tag = EFR
+		tag = IRE
 
 	}
 }

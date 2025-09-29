@@ -228,11 +228,6 @@ if = {
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.4
 	}
-		set_autonomy = {
-		target = IRE
-		autonomous_state = autonomy_dominion
-		freedom_level = 0.4
-	}
 	set_autonomy = {
 		target = AST
 		autonomous_state = autonomy_dominion

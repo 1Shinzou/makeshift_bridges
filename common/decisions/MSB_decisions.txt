@@ -247,6 +247,24 @@ operations = {
 		}
 	}
 
+	move_capital_to_brest = {
+		fire_only_once = yes
+		allowed = {
+			tag = FRA
+		}
+		visible = {
+			tag = FRA
+			NOT = {
+				controls_state = 16
+			}
+		}
+		complete_effect = {
+			set_capital = {
+				state = 14
+			}
+		}
+	}
+
 	move_capital_to_Kazan = {
 		fire_only_once = yes
 		allowed = {

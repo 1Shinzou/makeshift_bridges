@@ -147,6 +147,14 @@ italian_arms_discount:0 "Bresica Small Arms Industry"
 greater_italy_required_other_states:0 "Italy or a subject of Italy control \n§YMatrouh§! \n§YCorsica§! \n§YSavoy§! \n§YZara§! \n§YDalmatia§! \n§YLjubljana§! \n§YMalta§! \n§YCrete§! \n§YDodecaneso§!"
 mare_nostrum_required_other_states:0 "Italy or a subject of Italy control \n§YMatrouh§! \n§YCorsica§! \n§YSavoy§! \n§YZara§! \n§YDalmatia§! \n§YLjubljana§! \n§YMalta§! \n§YCrete§! \n§YDodecaneso§! \n§YCyprus§! \n§YGibraltar§! \n§YSuez§!"
 ITA_mare_nostrum_achieved:0 "Roman Ambitions Achieved"
+ITA_follow_pariani_plan:0 "Follow Pariani's Plan"
+ITA_follow_pariani_plan_desc:0 "Alberto Pariani, head of the general staff, promoted a doctrine of rapid mobile advance, supported by heavy support artillery."
+ITA_follow_pariani_plan_re_tt:0 "$ITA_modify_regio_esercito_dynamic_modifier_ns_intro$ \n$MODIFIERS_ARMY_ATTACK_FACTOR$: §G+5.0%§! \n$MODIFIER_MAX_COMMAND_POWER_MULT$: §G+10%§! \n\n"
+ITA_incease_fiat_presence_in_the_south:0 "Increase Fiat's Presence in the South"
+ITA_incease_fiat_presence_in_the_south_desc:0 "One of our largest car and tank manufacturers, Fiat, is already well established in the north. We could encourage the creation of plants in the south and thus increase our industrial potential."
+ITA_po_valley_mettalurgy:0 "Po Valley's Metallurgy"
+ITA_po_valley_mettalurgy_desc:0 "The Po Valley is home to a large part of Italian industry, particularly metalworking in Turin and Genoa. This industry is vital, and we should support it as a priority."
+
 
 # SOV
 SOV_collectivized_society:0 "Collectivized Society"

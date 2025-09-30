@@ -2820,6 +2820,7 @@ SOV_propaganda_campaigns = {
 					random_unit_leader = {
 						limit = {
 							is_assigned = yes
+							has_trait = ranger
 							NOT = { has_trait = trait_SOV_determined }
 						}
 						add_timed_unit_leader_trait = {
@@ -2831,6 +2832,7 @@ SOV_propaganda_campaigns = {
 				else = {
 					random_unit_leader = {
 						limit = {
+							has_trait = ranger
 							NOT = { has_trait = trait_SOV_determined }
 						}
 						add_timed_unit_leader_trait = {

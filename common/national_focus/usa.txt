@@ -229,22 +229,6 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
-		random_core_state = {
-				limit = {
-					is_controlled_by = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = industrial_complex
-					level = 5
-					instant_build = yes
-				}
-			} 
 			add_timed_idea = { idea = USA_adjusted_compensation_payment days = 70 }
 			USA_great_depression_level_down = yes
 			if = {
@@ -286,22 +270,6 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
-			random_core_state = {
-				limit = {
-					is_controlled_by = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = industrial_complex
-					level = 5
-					instant_build = yes
-				}
-			}
 			add_ideas = USA_gold_standard
 			if = {
 				limit = {
@@ -341,22 +309,6 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-			random_core_state = {
-				limit = {
-					is_controlled_by = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = industrial_complex
-					level = 5
-					instant_build = yes
-				}
-			}
 			USA_great_depression_level_down = yes
 			add_ideas = isolation
 			add_timed_idea = {
@@ -392,22 +344,6 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
-			random_core_state = {
-				limit = {
-					is_controlled_by = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = industrial_complex
-					level = 5
-					instant_build = yes
-				}
-			}
 			add_ideas = civilian_economy
 			USA_great_depression_level_down = yes
 			USA_congress_medium_opposition = yes
@@ -449,23 +385,34 @@ focus_tree = {
 		icon = GFX_focus_ARG_immigration_wave
 		prerequisite = { focus = USA_institute_of_american_sciences }
 		available = {
-			date > 1941.5.1
+			has_war_with = JAP
 		}
 		x = 0
 		y = 1
 		relative_position_id = USA_institute_of_american_sciences
-		cost = 5
+		cost = 10
 		#ai_will_do = {
 		#	factor = 1
 		#}
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-				remove_ideas = USA_rubber_in_asia
-				add_ideas = USA_no_rubber_in_asia
-			set_technology = {
-				improved_rubber_processing = 1
-				advanced_rubber_processing = 1
+			remove_ideas = USA_rubber_in_asia
+			add_ideas = USA_no_rubber_in_asia
+
+			add_tech_bonus = {
+				name = USA_rubber_reserve_company
+				bonus = 1.0
+				uses = 2
+				technology = rubber_processing
+				technology = improved_rubber_processing
+				technology = advanced_rubber_processing
+				technology = modern_rubber_processing
 			}
+
+			#set_technology = {
+			#	improved_rubber_processing = 1
+			#	advanced_rubber_processing = 1
+			#}
 		}
 	}
 
@@ -758,10 +705,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 10
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 10
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -815,10 +762,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 10
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 10
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -873,10 +820,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 10
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 10
+					level = 5
 					instant_build = yes
 				}
 			}

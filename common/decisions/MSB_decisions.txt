@@ -336,6 +336,7 @@ Technologies = {
 
             complete_effect = {
               	set_technology = { advanced_medium_airframe = 1 }
+				add_ideas = air_support_focus
             }
     }
 

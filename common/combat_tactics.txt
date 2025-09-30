@@ -719,14 +719,7 @@ tactic_guerrilla_tactics = { #People's army defender tactic. also for German vol
 			has_trait = trickster
 		}
 		NOT = {
-			AND = {
-				is_fighting_in_terrain = plains
-				#is_fighting_in_terrain = desert
-			}
-			AND = {
-				#is_fighting_in_terrain = plains
-				is_fighting_in_terrain = desert
-			}
+			is_fighting_in_terrain = plains
 		}
 	}
 	

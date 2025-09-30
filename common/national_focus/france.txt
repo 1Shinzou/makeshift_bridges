@@ -4893,6 +4893,7 @@ focus = {
 		available_if_capitulated = yes
 		completion_reward = {
 			army_experience = 20	
+			add_potential_special_forces_tree = yes	
 			add_ideas = { FRA_kieffer_idea }
 		}
 	}
@@ -5612,7 +5613,7 @@ focus = {
 			}
 			add_tech_bonus = {
 				name = FRA_british_equipement
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = cat_anti_tank
 			}	
@@ -5631,9 +5632,9 @@ focus = {
 		relative_position_id = FRA_british_equipement
 		cost = 5
 		available = {
-			any_enemy_country = {
-				has_war_with = USA
-			}
+			#any_enemy_country = {
+			#	has_war_with = USA
+			#}
 			FRA = { is_ally_with = USA }
 			NOT = {
 				has_war_with = USA
@@ -5660,7 +5661,7 @@ focus = {
 			}
 			add_tech_bonus = {
 				name = FRA_usa_equipement
-				bonus = 2
+				bonus = 1
 				uses = 1
 				category = cat_anti_tank
 			}	

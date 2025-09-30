@@ -8639,7 +8639,16 @@ focus = {
 			146 = {
 				transfer_state_to = SOV
 			}
-		
+
+			hidden_effect = {
+				FIN = { 
+					add_timed_idea = { 
+						idea = winter_war_ns 
+						days = 365 
+					}
+					complete_national_focus = FIN_a_cry_for_help
+				}
+			}
 		}
 	}
 

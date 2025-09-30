@@ -758,69 +758,15 @@ focus_tree = {
 		}
 	}
 	
+
 	focus = {
-		id = FIN_reach_out_to_scandinavia
-		icon = GFX_focus_generic_nordic_territory
+		id = FIN_moderate_politics
+		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = { focus = FIN_finnish_neutrality }
 
 		x = 0
 		y = 1
 		relative_position_id = FIN_finnish_neutrality
-		cost = 5
-		available = {
-		}
-
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-			every_other_country = {
-				limit = {
-					NORDIC_is_nordic = yes
-					NOT = { has_war_with = ROOT }
-				}
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = FIN_nordic_amity
-				}
-				ROOT = {
-					add_opinion_modifier = {
-						target = PREV
-						modifier = FIN_nordic_amity
-					}
-				}
-			}
-
-			hidden_effect = {
-				every_other_country = {
-					limit = {
-						NORDIC_is_nordic = yes
-						NOT = { has_war_with = ROOT }
-					}
-					add_ai_strategy = {
-						type = befriend 
-						id = ROOT
-						value = 25
-					}
-					ROOT = {
-						add_ai_strategy = {
-							type = befriend 
-							id = PREV
-							value = 25
-						}
-					}
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = FIN_moderate_politics
-		icon = GFX_goal_generic_neutrality_focus
-		prerequisite = { focus = FIN_reach_out_to_scandinavia }
-
-		x = 0
-		y = 1
-		relative_position_id = FIN_reach_out_to_scandinavia
 		cost = 5
 		available = {
 			has_government = neutrality
@@ -841,7 +787,7 @@ focus_tree = {
 
 		x = 4
 		y = 0
-		relative_position_id = FIN_reach_out_to_scandinavia
+		relative_position_id = FIN_moderate_politics
 
 		cost = 5
 

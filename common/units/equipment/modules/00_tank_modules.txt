@@ -638,6 +638,27 @@ equipment_modules = {
 		
 	}
 
+	r56_tank_anti_tank_rifle_gun = {
+		abbreviation = "ag1"
+		category = tank_small_main_armament
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+
+		add_stats = {
+			soft_attack = 3
+			hard_attack = 6
+			ap_attack = 15
+			build_cost_ic = 0.5
+		}
+		dismantle_cost_ic = 0.5
+
+		can_convert_from = {
+			module_category = tank_small_main_armament
+			convert_cost_ic = 0.5
+		}
+		xp_cost = 1
+	}
+
 	flamethrower = { #Hans, hol den Flammenwerfer!
 		abbreviation = "flt"
 		category = tank_flamethrower

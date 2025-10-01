@@ -1921,11 +1921,12 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		
 		research_cost = 1
-		start_year = 1938
+		start_year = 1939
 		folder = {
 			name = infantry_folder
-			position = { x = 4 y = @1938 }
+			position = { x = 4 y = @1939 }
 		}
 		
 		categories = {
@@ -1966,10 +1967,13 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 1940
+		start_year = 1941
 		folder = {
 			name = infantry_folder
-			position = { x = 4 y = @1940 }
+			position = { x = 4 y = @1941 }
+		}
+		sub_technologies = {
+			armored_car_at_upgrade
 		}
 		
 		categories = {
@@ -1979,9 +1983,7 @@ technologies = {
 		}
 		special_project_specialization = { specialization_land }
 		
-		sub_technologies = {
-			armored_car_at_upgrade
-		}
+
 
 		ai_will_do = {
 			factor = 1

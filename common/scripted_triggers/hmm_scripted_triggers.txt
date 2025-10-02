@@ -161,3 +161,7 @@ ai_black = {
 DIPLOMACY_PEACE_PROPOSAL_ENABLE_TRIGGER = {
 	always = no
 }
+
+is_vichy_france = {
+	original_tag = EFR
+}

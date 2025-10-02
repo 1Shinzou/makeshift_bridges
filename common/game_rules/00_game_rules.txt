@@ -134,7 +134,21 @@ vp_system = {
 	}
 
 }
-
+vichy_france = {
+	name = "Vichy France"
+	group = "MSB Rules"
+	icon = "GFX_decision_eng_trade_unions_support"
+	default = {
+		name = forced
+		text = "RForce"
+		desc = "Germany has to make Vichy (Not Recommmended)"
+	}
+	option = {
+		name = banned
+		text = "GBanned"
+		desc = "Germany can't make Vichy (Recommmended)"
+	}
+}
 danzig_date_lock = {
 	name = "Danzig or War"
 	group = "MSB Rules"

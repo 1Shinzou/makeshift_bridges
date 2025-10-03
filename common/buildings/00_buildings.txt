@@ -176,7 +176,6 @@ buildings = {
 		land_fort = 1
 		value = 1
 		infrastructure_construction_effect = yes
-		allied_build = yes
 		level_cap = {
 			province_max = 10
 		}		
@@ -194,7 +193,6 @@ buildings = {
 		naval_fort = 1
 		value = 1
 		infrastructure_construction_effect = yes
-		allied_build = yes
 		level_cap = {
 			province_max = 10
 		}

@@ -29,39 +29,6 @@ operations = {
         }
     }
 
-	case_anton = {
-
-		icon = GFX_decision_ger_reichskommissariats
-		priority = 10
-		available = {
-			OR = {
-				EFR = {
-					has_war = yes
-				}
-				if = {
-					has_war_with = SOV
-				}
-			}
-			
-			
-			
-		}
-
-		visible = {
-			tag = GER
-			EFR = { exists = yes }
-		}
-
-		fire_only_once = yes
-
-		complete_effect = {
-			annex_country = {
-				target = EFR
-				transfer_troops = no
-			}
-		}
-	}
-
 		annex_bulgaria= {
 			# icon = generic_operation
 			allowed = {
@@ -266,6 +233,7 @@ operations = {
 			}
 		}
 	}
+
 	move_capital_to_paris = {
 		fire_only_once = no
 		allowed = {
@@ -285,70 +253,7 @@ operations = {
 			}
 		}
 	}
-	 FRA_annex_IRE = {
-        # icon used to be here rip icon 04/29/2024
-        targets = {
-            IRE
-        }
-        fire_only_once = yes
 
-        available = {
-            original_tag = FRA
-            IRE = { is_ai = yes }
-            #date > 1940.01.01
-            FRA = {has_capitulated = yes}
-        }
-        visible = {
-            original_tag = FRA
-            IRE = { is_ai = yes }
-            is_ai = NO
-            country_exists = IRE
-        }
-        complete_effect = {
-            hidden_effect = {
-                113 = {
-                    set_building_level = {
-                        type = industrial_complex
-                        level = 0
-                    }
-                    set_building_level = {
-                        type = arms_factory
-                        level = 0
-                    }
-                }
-                134 = {
-                    set_building_level = {
-                        type = industrial_complex
-                        level = 0
-                    }
-                    set_building_level = {
-                        type = arms_factory
-                        level = 0
-                    }
-                }
-                135 = {
-                    set_building_level = {
-                        type = industrial_complex
-                        level = 0
-                    }
-                    set_building_level = {
-                        type = arms_factory
-                        level = 0
-                    }
-                }
-            }
-            FRA = { 
-                annex_country = { target = IRE transfer_troops = yes }
-                    every_state = {
-                    limit = {
-                        is_core_of = IRE
-                        is_controlled_by = FRA
-                    }
-                    set_compliance = 100
-                }
-            }
-        }
-    }
 	move_capital_to_Kazan = {
 		fire_only_once = yes
 		allowed = {

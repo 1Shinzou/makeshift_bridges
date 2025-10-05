@@ -296,9 +296,9 @@ GER_seize_gold_reserves_cat = {
 		target_trigger = {
 			FROM = {
 				has_country_flag = GER_has_capitulated_to_germany
-				NOT = { #Don't seize France's gold reserves too soon; set up Vichy France first. Set in event France.10 and cleared in event france.14
-					has_country_flag = GER_dont_seize_gold_reserves_flag
-				}
+				#NOT = { #Don't seize France's gold reserves too soon; set up Vichy France first. Set in event France.10 and cleared in event france.14
+				#	has_country_flag = GER_dont_seize_gold_reserves_flag
+				#}
 				any_core_state = {
 					is_controlled_by = ROOT
 					NOT = { is_core_of = ROOT }
@@ -3268,87 +3268,31 @@ GER_case_anton_category = {
 		icon = generic_operation
 
 		available = {
-			original_tag = GER
-			has_war = yes
-			has_government = fascism
-			any_country_with_original_tag = {
-				original_tag_to_check = FRA
-				has_government = fascism
-				OR = {
-					is_subject_of = GER
-					has_focus_tree = vichy_french_focus
-				}
-				NOT = { has_war_with = GER }
-				NOT = { has_country_flag = case_anton }
-				custom_trigger_tooltip = {
-					tooltip = GER_case_anton_tt2
-					count_triggers = {
-						amount = 3 # lost control of ca half french north africa
-						458 = { CONTROLLER = { has_war_with = ROOT } }
-						459 = { CONTROLLER = { has_war_with = ROOT } }
-						460 = { CONTROLLER = { has_war_with = ROOT } }
-						461 = { CONTROLLER = { has_war_with = ROOT } }
-						462 = { CONTROLLER = { has_war_with = ROOT } }
-						513 = { CONTROLLER = { has_war_with = ROOT } }
-						665 = { CONTROLLER = { has_war_with = ROOT } }
-					}
-				}
-			}
-			divisions_in_state = { state = 31 size < 1 }
-			divisions_in_state = { state = 25 size < 1 }
-			divisions_in_state = { state = 22 size < 1 }
-			divisions_in_state = { state = 21 size < 1 }
-			divisions_in_state = { state = 851 size < 1 }
-			divisions_in_state = { state = 32 size < 1 }
-			divisions_in_state = { state = 22 size < 1 }
-			divisions_in_state = { state = 26 size < 1 }
-			divisions_in_state = { state = 33 size < 1 }
-			divisions_in_state = { state = 20 size < 1 }
 			OR = {
-				ITA = { owns_state = 735 }
-				divisions_in_state = { state = 735 size < 1 }
+				EFR = {
+					has_war = yes
+				}
+				if = {
+					has_war_with = SOV
+				}
 			}
 		}
 
-		cost = 50
 		fire_only_once = yes
 
 		visible = {
 			original_tag = GER
 			has_government = fascism
-			any_country_with_original_tag = {
-				original_tag_to_check = FRA
-				has_government = fascism
-				OR = {
-					is_subject_of = GER
-					has_focus_tree = vichy_french_focus
-				}
-				NOT = { has_war_with = GER }
-			}
+			has_global_flag = fall_of_france
 		}
-		ai_will_do = {
-			factor = 25
 
-			modifier = {
-				factor = 0
-				VIC = { is_ai = no }
-			}
-		}
 		complete_effect = {
-			custom_effect_tooltip = GER_case_anton_tt
-			hidden_effect = {
-				random_other_country = {
-					limit = {
-						original_tag = FRA
-						has_government = fascism
-						OR = {
-							is_subject_of = GER
-							has_focus_tree = vichy_french_focus
-						}
-					}
-					set_country_flag = case_anton
-					activate_mission = FRA_case_anton_mission
-				}
+			set_country_flag = case_anton
+			# clr_country_flag = GER_dont_seize_gold_reserves_flag
+			#custom_effect_tooltip = GER_case_anton_tt
+			annex_country = {
+				target = EFR
+				transfer_troops = no
 			}
 		}
 	}

@@ -124,6 +124,7 @@ uk_hf3_usa:"Advanced Heavy Fighter"
 game_check:0 "Game Rule Check"
 extra_cp:0 "Extra Commmand Power"
 autonomy_gov_exile:0 "Allied Government in Exile"
+fall_of_france: "Fall of France"
 
 # LL Decision
  E_ll:"Air Decision Lend Lease"

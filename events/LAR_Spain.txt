@@ -608,6 +608,7 @@ country_event = {
 						type = train_equipment_1
 						amount = 50
 					}
+					add_ideas = tot_economic_mobilisation
 					add_ideas = extensive_conscription
 
 					division_template = {

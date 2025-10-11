@@ -603,6 +603,13 @@ country_event = {
 						}
 						# has_completed_focus = SPA_the_army_of_africa
 					}
+					
+					add_equipment_to_stockpile = {
+						type = train_equipment_1
+						amount = 50
+					}
+					add_ideas = extensive_conscription
+
 					division_template = {
 						name = "Noob assistance"
 						template_counter = 20

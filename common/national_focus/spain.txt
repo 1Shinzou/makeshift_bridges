@@ -855,10 +855,6 @@ focus_tree = {
 			army_experience = 50
 			random_owned_controlled_state = {
 				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-					}
 					is_core_of = ROOT
 				}
 				set_state_flag = SPA_the_national_and_popular_army_of_spain_2mil
@@ -1263,10 +1259,6 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-					}
 					is_core_of = ROOT
 				}
 				set_state_flag = SPA_expand_the_war_industry_2mil
@@ -1279,10 +1271,6 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-					}
 					is_core_of = ROOT
 					NOT = { has_state_flag = SPA_expand_the_war_industry_2mil }
 				}
@@ -1378,10 +1366,6 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-					}
 					is_core_of = ROOT
 				}
 				set_state_flag = SPA_support_the_war_industry_1civ
@@ -1394,10 +1378,6 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-					}
 					is_core_of = ROOT
 					NOT = { has_state_flag = SPA_support_the_war_industry_1civ }
 				}
@@ -1411,10 +1391,6 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-					}
 					is_core_of = ROOT
 					NOT = { has_state_flag = SPA_support_the_war_industry_1civ }
 				}
@@ -1688,10 +1664,6 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-					}
 					is_core_of = ROOT
 				}
 				set_state_flag = SPA_capitalist_economic_aid_2civ
@@ -1860,10 +1832,6 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-					}
 					is_core_of = ROOT
 				}
 				set_state_flag = SPA_the_spanish_miracle_2civ
@@ -1876,10 +1844,6 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-					}
 					is_core_of = ROOT
 					NOT = { has_state_flag = SPA_the_spanish_miracle_2civ }
 				}
@@ -1893,10 +1857,6 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-					}
 					is_core_of = ROOT
 					NOT = { has_state_flag = SPA_the_spanish_miracle_2civ }
 				}
@@ -1910,10 +1870,6 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-					}
 					is_core_of = ROOT
 				}
 				set_state_flag = SPA_the_spanish_miracle_2mil
@@ -1926,10 +1882,6 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-					}
 					is_core_of = ROOT
 					NOT = { has_state_flag = SPA_the_spanish_miracle_2mil }
 				}
@@ -2187,10 +2139,6 @@ focus_tree = {
 			remove_ideas = SPA_recovering_from_civil_war_3
 			random_owned_controlled_state = {
 				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-					}
 					is_core_of = ROOT
 				}
 				set_state_flag = SPA_ensure_agricultural_self_sufficiency_2civ
@@ -2203,10 +2151,6 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-					}
 					is_core_of = ROOT
 					NOT = { has_state_flag = SPA_ensure_agricultural_self_sufficiency_2civ }
 				}
@@ -2221,10 +2165,6 @@ focus_tree = {
 
 			random_owned_controlled_state = {
 				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-					}
 					is_core_of = ROOT
 					NOT = { has_state_flag = SPA_ensure_agricultural_self_sufficiency_2civ }
 				}

@@ -1212,7 +1212,7 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.05
 				}
-		    }
+	}
 		    
 	focus = {
 		id = USA_lend_lease_act
@@ -1224,7 +1224,7 @@ focus_tree = {
 		relative_position_id = USA_neutrality_act
 
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1237,7 +1237,7 @@ focus_tree = {
 				date < 1942.1.1
 				}
 					has_war_support > 0.4
-				}
+			}
 			democratic > 0.95
 			custom_trigger_tooltip = {
 				tooltip = USA_lend_lease_act_neutrality_tt
@@ -1265,54 +1265,64 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-						has_completed_focus = USA_reestablish_the_gold_standard
-					}
-					add_timed_idea = { 
-									idea = USA_accumulated_wealth_tax_act days = 180
-								}
-					add_stability = 0.05
+					has_completed_focus = USA_reestablish_the_gold_standard
+				}
+
+				add_timed_idea = { 
+					idea = USA_accumulated_wealth_tax_act days = 180
+				}
+
+				#add_stability = 0.05
+
 				ENG = { 
 					add_timed_idea = { 
-							idea = ENG_american_payment days = 180 
-						}
+						idea = ENG_american_payment days = 180 
 					}
 				}
+			}
+
 			if = {
 				limit = {
-						has_completed_focus = USA_continue_the_new_deal
+					has_completed_focus = USA_continue_the_new_deal
+				}
+
+				add_timed_idea = { 
+					idea = USA_state_funds_refused days = 180 
+				}
+
+				#add_war_support = 0.05
+
+				ENG = { 
+					add_timed_idea = {
+						idea = ENG_american_aid days = 180
 					}
-						add_timed_idea = { 
-										idea = USA_state_funds_refused days = 180 
-									}
-						ENG = { 
-							add_timed_idea = {
-										idea = ENG_american_aid days = 180
-									}
-							add_war_support = 0.05
-							}
-						}
+				}
+			}
+
 			else = {
 				add_ideas = USA_lend_lease_act_dummy #should never get here, just for tooltip purposes
 			}
+
 			if = {
 				limit = {
-						has_completed_focus = USA_continue_the_new_deal
-						}
-						swap_ideas = {
-						remove_idea = USA_neutrality_act
-						add_idea = USA_lend_lease_act_na
-						}
-					}
+					has_completed_focus = USA_continue_the_new_deal
+				}
+				swap_ideas = {
+					remove_idea = USA_neutrality_act
+					add_idea = USA_lend_lease_act_na
+				}
+			}
+
 			if = {
 				limit = {
 					has_completed_focus = USA_reestablish_the_gold_standard
-					}	
-					swap_ideas = {
+				}	
+				swap_ideas = {
 					remove_idea = USA_neutrality_act
 					add_idea = USA_lend_lease_act_li
-					}
 				}
 			}
+
 			if = {
 				limit = {
 					has_war_support > 0.6
@@ -1338,6 +1348,8 @@ focus_tree = {
 				USA_congress_medium_opposition = yes
 			}
 		}
+	}
+
 	focus = {
 		id = USA_arsenal_of_democracy
 		icon = GFX_focus_generic_the_giant_wakes
@@ -1647,6 +1659,7 @@ focus_tree = {
 					}
 				}
 				random_owned_controlled_state = {
+					prioritize = { 393 }
 					limit = { 
 						is_core_of = USA
 						free_building_slots = {
@@ -1714,6 +1727,7 @@ focus_tree = {
 					}
 				}
 				random_owned_controlled_state = {
+					prioritize = { 377 }
 					limit = { 
 						is_core_of = USA
 						NOT = {
@@ -1784,6 +1798,7 @@ focus_tree = {
 					}
 				}
 				random_owned_controlled_state = {
+					prioritize = { 374 }
 					limit = { 
 						is_core_of = USA
 						NOT = {
@@ -3209,7 +3224,7 @@ focus_tree = {
 				name = USA_armored_infantry
 				uses = 2
 				bonus = 1.0
-				category = motorized_equipment
+				category = cat_mechanized_equipment
 			}
 		}
 	}

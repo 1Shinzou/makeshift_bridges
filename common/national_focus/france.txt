@@ -4012,7 +4012,7 @@ focus = {
 		
 	
 		available = {
-			has_global_flag = fall_of_france
+			has_capitulated = yes
 		}
 		
 		bypass = {

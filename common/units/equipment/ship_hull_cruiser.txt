@@ -114,7 +114,7 @@ equipments = {
 		hg_attack = 0
 		
 		torpedo_attack = 0
-		sub_attack = 0.1
+		sub_attack = 0
 		
 		anti_air_attack = 0
 		
@@ -1083,7 +1083,7 @@ equipments = {
 		manpower = 1800
 		build_cost_ic = 3500
 		naval_speed = 23
-		surface_visibility = 15
+		surface_visibility = 22
 		naval_range = 7500
 		max_strength = 220
 		resources = {
@@ -1151,7 +1151,7 @@ equipments = {
 		hg_attack = 0
 		naval_speed = 20
 		reliability = 0.80
-		surface_visibility = 15
+		surface_visibility = 20
 		naval_range = 1500
 		module_slots = {
 			fixed_ship_battery_slot = {

@@ -191,14 +191,7 @@ NDefines_Graphics.NGraphics.DRAW_SHADOWS_CUTOFF = 0
 NDefines_Graphics.NGraphics.DRAW_SHADOWS_FADE_LENGTH = 0
 NDefines_Graphics.NGraphics.DRAW_FOW_CUTOFF = 0
 NDefines_Graphics.NGraphics.DRAW_FOW_FADE_LENGTH = 0
---new graphics
 
---NDefines.NGraphics.COUNTRY_COLOR_SATURATION_MODIFIER = 0.85 -- 0.6
---NDefines.NGraphics.COUNTRY_COLOR_BRIGHTNESS_MODIFIER = 0.8 -- 0.8
-NDefines.NMapMode.MAP_MODE_TERRAIN_TRANSPARENCY = 0.2
---test
-NDefines_Graphics.NMapMode.MAP_MODE_TERRAIN_TRANSPARENCY = 0.8
-NDefines_Graphics.NGraphics.BORDER_WIDTH = 1
 -------------------------------------------------------------------------------------------
 NDefines.NMilitary.TRAINING_MAX_LEVEL = 10
 NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 10

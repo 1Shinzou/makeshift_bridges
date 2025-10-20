@@ -1752,6 +1752,9 @@ technologies = {
 	}
 
 	railway_gun = {
+		allow_branch = {
+			always = no
+		}
 
 		allow = {
 			land_facility > 0

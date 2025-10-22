@@ -22,11 +22,12 @@
   ENG_french_alliance_desc:0 "Only [ROOT.GetNameDef] and the [FRA.GetNameDef] remain of the old Triple Entente with Russia forever changed. If history is doomed to repeat itself, we must ensure that these two nations, bastions of democracy and liberty in Europe, remain Allies."
 
   ENG_the_home_army:0 "The Home Army"
-ENG_quality_RAF_pilots:0 "Quality RAF Pilots"
   ENG_the_home_army_desc:0 "As the threat of conflict on our homeland becomes ever more clear it is ideal we form a home militia mostly comprised of Great War veterans to slow down any foreign invaders in time for professional troops to reorganize and retaliate."
-
- ENG_special_operations_executive:0 "Special Operations Executive"
- ENG_special_operations_executive_desc:0 "Forming a dedicated department of our intelligence agency to assist foreign resistance organisations and infiltrate enemy institutions will greatly help us gain the upper hand and also in our future operations."
+  ENG_raf:0 "The Royal Air Force"
+  ENG_raf_desc:0 "The Royal Air Force fights for us in the skies!"
+  ENG_raf_idea:0 "The RAF"
+  ENG_special_operations_executive:0 "Special Operations Executive"
+  ENG_special_operations_executive_desc:0 "Forming a dedicated department of our intelligence agency to assist foreign resistance organisations and infiltrate enemy institutions will greatly help us gain the upper hand and also in our future operations."
 
   ENG_reconciliation_with_ussr:0 "Reconciliation with the [SOV.GetAdjective]s"
   ENG_reconciliation_with_ussr_desc:0 "Despite our differences and mutual distain for eachother, [SOV.GetNameDef] presents a vital step in countering the greater threat posed against the world's peace. We must set aside our differences and learn to work together to achieve a common goal, for now."
@@ -75,8 +76,8 @@ ENG_harness_churchills_figure_desc:0 "We must utilize the influential power his 
  ENG_state_of_the_economy:0 "State Of The Economy"
  ENG_state_of_the_economy_two:0 "State Of The Economy"
  ENG_state_of_the_economy_three:0 "State Of The Economy"
- ENG_state_of_the_economy_four:0 "State Of The Economy"
- ENG_state_of_the_economy_five:0 "State Of The Economy"
+ ENG_state_of_the_economy_four:0 "A Strong Economy"
+ ENG_state_of_the_economy_five:0 "Time Of Economic Prosperity"
 welsh_miners_exploited:0 "Welsh Miners Exploited"
 ENG_public_school_funding:0 "Public School Funding"
 ENG_devaluated_pound:0 "Devaluated Pound"

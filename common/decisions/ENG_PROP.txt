@@ -50,6 +50,7 @@ ENG_propaganda_campaigns = {
 
 		available = {
 			ENG_propaganda_poster_slot_available = yes
+			has_completed_focus = ENG_time_of_economic_prosperity
 		}
 
 		days_remove = 365
@@ -125,6 +126,7 @@ ENG_propaganda_campaigns = {
 
 		available = {
 			ENG_propaganda_poster_slot_available = yes
+			has_completed_focus = ENG_expand_the_secret_intelligence_service_focus 
 		}
 
 		days_remove = 365
@@ -164,7 +166,7 @@ ENG_propaganda_campaigns = {
 
 		available = {
 			ENG_propaganda_poster_slot_available = yes
-			has_completed_focus = air_rearmament_focus
+			has_completed_focus = ENG_raf
 			has_war = yes
 		}
 
@@ -322,7 +324,7 @@ ENG_propaganda_campaigns = {
 		available = {
 			ENG_propaganda_poster_slot_available = yes
 			has_completed_focus = aircraft_production_focus
-			has_war_with = JAP
+			has_tech = advanced_small_airframe
 		}
 
 		days_remove = 365
@@ -438,6 +440,7 @@ ENG_propaganda_campaigns = {
 
 		available = {
 			ENG_propaganda_poster_slot_available = yes
+			has_completed_focus = limited_rearmament_focus
 		}
 
 		days_remove = 365
@@ -447,7 +450,7 @@ ENG_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			consumer_goods_factor = -0.15
+			consumer_goods_factor = -0.1
 		}
 
 		complete_effect = {

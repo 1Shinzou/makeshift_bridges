@@ -1780,7 +1780,7 @@ focus_tree = {
 				}
 				add_resource = {
 					type = steel
-					amount = 16
+					amount = 8
 				}
 			}
 		}
@@ -2298,7 +2298,7 @@ focus_tree = {
 				162 = {
 					add_resource = {
 						type = steel
-						amount = 12
+						amount = 24
 					}
 				}
 			}
@@ -2532,16 +2532,16 @@ focus_tree = {
 					159 = {
 						free_building_slots = {
 							building = arms_factory
-							size > 3
+							size > 1
 							include_locked = yes
 						}
 					}
 				}
 				159 = { #LOMBARDY (Milano)
-					add_extra_state_shared_building_slots = 4
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
-						level = 4
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -2552,7 +2552,7 @@ focus_tree = {
 						is_controlled_by = ROOT
 						free_building_slots = {
 							building = arms_factory
-							size > 3
+							size > 1
 							include_locked = yes
 						}
 					}
@@ -2560,7 +2560,7 @@ focus_tree = {
 					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = arms_factory
-						level = 4
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -4175,7 +4175,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = ITA_air_innovations_bba
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -7718,24 +7718,10 @@ focus_tree = {
 
 		mutually_exclusive = { focus = ITA_convene_the_grand_council focus = ITA_defy_the_duce }
 
-		allow_branch = {
-			if = {
-				limit = {
-					has_dlc = "By Blood Alone"
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = { has_completed_focus = ITA_defy_the_duce }
-				NOT = { has_completed_focus = ITA_convene_the_grand_council }
-			}
-		}
-
 		x = 0
 		y = 2
 		relative_position_id = ITA_triumph_in_africa_bba
-		cost = 5
+		cost = 10
 		available = {
 			has_country_leader = {
 				character = ITA_benito_mussolini
@@ -7749,21 +7735,7 @@ focus_tree = {
 			add_country_leader_trait = lion_tamer
 
 			ITA_bop_very_low_increase_effect = yes
-
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				mark_focus_tree_layout_dirty = yes
-			}
-		upgrade_economy_law = yes
-		add_ideas = SPA_expand_conscription
 		}
-		
-
 	}
 	
 	focus = {
@@ -11285,7 +11257,7 @@ focus_tree = {
 					}
 					add_resource = {
 						type = steel
-						amount = 12
+						amount = 8
 					}
 				}
 			}
@@ -11321,108 +11293,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ITA_prepare_for_the_coming_wars
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = ITA_redirect_alfa_romeo_production }
-
-		x = 0
-		y = 1
-		relative_position_id = ITA_redirect_alfa_romeo_production
-		cost = 5
-		available = {
-		}
-
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-
-		completion_reward = {
-			random_core_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				set_state_flag = ITA_prepare_for_the_coming_wars
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_core_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					NOT = { has_state_flag = ITA_prepare_for_the_coming_wars }
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				set_state_flag = ITA_prepare_for_the_coming_wars
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_core_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					NOT = { has_state_flag = ITA_prepare_for_the_coming_wars }
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				set_state_flag = ITA_prepare_for_the_coming_wars
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_core_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					NOT = { has_state_flag = ITA_prepare_for_the_coming_wars }
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				set_state_flag = ITA_prepare_for_the_coming_wars
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-
-			#Clear stuff thanks
-			hidden_effect = {
-				every_core_state = {
-					limit = {
-						has_state_flag = ITA_prepare_for_the_coming_wars
-					}
-					clr_state_flag = ITA_prepare_for_the_coming_wars
-				}
-			}
-		}
-	}
-
-	focus = {
 		id = ITA_mobilize_the_railway_guns
 		icon = GFX_focus_generic_railway_gun    
-		prerequisite = { focus = ITA_superesercito }
 		prerequisite = { focus = ITA_italian_tankettes }
 		prerequisite = { focus = ITA_reorganize_regio_esercito }
 
@@ -11434,6 +11306,7 @@ focus_tree = {
 
 		available = {
 			has_tech = armored_train
+			has_war = yes
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}

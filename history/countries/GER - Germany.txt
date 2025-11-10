@@ -223,6 +223,7 @@ add_dynamic_modifier = { modifier = GER_navy_fascist_modifier }
 
 #AIRFORCE
 #REMINDER to always update the fake NS if these numbers are altered!
+set_variable = { GER_military_air_superiority_efficiency_factor = 0 }
 set_variable = { GER_military_air_accidents_factor = 0.10 }
 set_variable = { GER_military_air_manpower_requirement_factor = 0.10 }
 set_variable = { GER_military_air_agility_factor = 0 }

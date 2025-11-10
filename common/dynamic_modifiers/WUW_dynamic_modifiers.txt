@@ -728,6 +728,7 @@ GER_airforce_modifier = { #Airforce NS
 	enable = { always = yes }
 	icon = GFX_idea_GER_airforce
 
+	air_superiority_efficiency = GER_military_air_superiority_efficiency_factor
 	air_accidents_factor = GER_military_air_accidents_factor
 	air_manpower_requirement_factor = GER_military_air_manpower_requirement_factor
 	air_agility_factor = GER_military_air_agility_factor

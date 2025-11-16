@@ -213,6 +213,22 @@ scw_difficulty = {
 	}
 }
 
+killable_fin = {
+	name = "Finland Border"
+	group = "BHVM game rules"
+	icon = "GFX_decision_generic_coastal_fortification"
+	default = {
+		name = off
+		text = "GImpassable"
+		desc = "Finland's Border to the Soviet Union cannont be crossed"
+	}
+	option = {
+		name = on
+		text = "RPassable"
+		desc = "Finland's Border to the Soviet Union can be crossed"
+	}
+}
+
 hospitals = {
 	name = "Allow Hospital 2"
 	group = "MSB Rules"

@@ -479,6 +479,7 @@ ideas = {
 			equipment_bonus = {
 				armor = {
 					#build_cost_ic = -0.05 instant = yes
+					instant = yes
 					reliability = 0.10
 					}
 				}
@@ -1186,7 +1187,8 @@ ideas = {
 			removal_cost = -1
 
 			equipment_bonus = {
-				category_all_armor = {
+				armor = {
+					instant = yes
 					hard_attack = 0.05
 				}
 			}
@@ -1211,7 +1213,8 @@ ideas = {
 			removal_cost = -1
 
 			equipment_bonus = {
-				category_all_armor = {
+				armor = {
+					instant = yes
 					soft_attack = 0.05
 					}
 				}

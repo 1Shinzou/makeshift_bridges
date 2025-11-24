@@ -1,37 +1,10 @@
 state = {
 	id = 718
 	name = "STATE_718"
-	manpower = 1656749
+	manpower = 1
 	state_category = pastoral
 
-	resources = {
-		rubber = 3.000
-	}
-
 	history = {
-
-		owner = BEL
-
-		IF = {
-			limit = {
-				has_dlc = "Gotterdammerung"
-			}
-			transfer_state_to = COG
-			add_dynamic_modifier = {
-				modifier = COG_state_loyal_to_free_congo_modifier
-			}
-		}
-
-		buildings = {
-			infrastructure = 1
-		}
-
-		victory_points = {
-			1950 3 # Stanleyville
-		}
-
-		add_core_of = COG
-
 	}
 
 	provinces = {

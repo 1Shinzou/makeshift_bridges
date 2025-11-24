@@ -6,7 +6,8 @@ state={
 	}
 	history={
 		owner = RAJ
-		add_core_of = TUM
+		add_core_of = PAK
+		
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
@@ -14,10 +15,7 @@ state={
 		victory_points = { 	10772 15 }
 		victory_points = { 	10898 1 }
 		victory_points = { 10173 3 }
-	1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
+
 	}
 	state_category = town
 	manpower=16024000

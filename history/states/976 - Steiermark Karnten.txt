@@ -8,6 +8,7 @@ state = {
 	resources = {
 		steel = 15 # was: 8
 		aluminium = 1 # was: 1
+		coal = 1 #initial distribution /5 total
 	}
 
 	history = {
@@ -36,11 +37,6 @@ state = {
 			owner = GER
 			controller = GER
 			add_core_of = GER
-		}
-		1941.1.1 = {
-			buildings = {
-				arms_factory = 5
-			}
 		}
 	}
 

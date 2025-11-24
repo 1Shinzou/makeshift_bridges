@@ -9,6 +9,7 @@ state={
 	
 	resources={
 		aluminium=7 # was: 10
+		coal = 2 # initial distribution
 	}
 
 	history={
@@ -26,11 +27,6 @@ state={
 		}
 		add_core_of = YUG
 		add_core_of = WST
-		add_claim_by = ITA
-			1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
 	}
 
 	provinces={

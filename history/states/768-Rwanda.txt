@@ -2,16 +2,37 @@ state = {
 	id = 768
 	name = "STATE_768" # Rwanda
 	
-	state_category = wasteland
-	manpower = 1
+	state_category = pastoral
+	manpower = 1716564
 
-	
+	resources = {
+		tungsten = 3
+	}
 
 	history = {
-	1941.1.1 = {
-		owner = WST
-		add_core_of = WST
+
+		owner = BEL
+
+		IF = {
+			limit = {
+				has_dlc = "Gotterdammerung"
+			}
+			transfer_state_to = COG
+			add_dynamic_modifier = {
+				modifier = COG_rwandan_separatism_modifier
+			}	
 		}
+
+		add_core_of = WST
+
+		victory_points = {
+			9962 1
+		}
+
+		buildings = {
+			infrastructure = 1
+		}
+
 	}
 
 	provinces = {
@@ -19,5 +40,5 @@ state = {
 	}
 
 	buildings_max_level_factor = 1.000
-	local_supplies=0.0 
+	local_supplies = 1.0 
 }

@@ -7,12 +7,7 @@ state = {
 
 	history = {
 
-		# Less Minors + Scraping
-		1936.1.1.15 = { owner = ROM add_core_of = ROM }
-		1936.1.1.14 = { owner = ROM add_core_of = ROM }
-
-        owner = HUN
-
+		owner = HUN
 		add_core_of = HUN
 
 		buildings = {
@@ -29,14 +24,7 @@ state = {
 		victory_points = {
 			11646 1 
 		}
-		1941.1.1 = {
-			owner = HUN
-			add_core_of = HUN
-			buildings = {
-				infrastructure = 5
-				industrial_complex = 3
-			}
-		}
+		
 	}
 
 	provinces = {

@@ -6,17 +6,12 @@ state = {
 	state_category = city
 	
 	resources = {
-		aluminium = 11
+		aluminium = 3 # was: 4
 	}
 
 	history = {
 
-		# Less Minors + Scraping
-		1936.1.1.15 = { owner = SAF add_core_of = SAF }
-		1936.1.1.14 = { owner = SAF add_core_of = SAF }
-
-        owner = CAN
-
+		owner = CAN
 		add_core_of = CAN
 		add_core_of = WST
 
@@ -39,10 +34,7 @@ state = {
 		victory_points = {
 			10230 1
 		}
-	1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
+
 	}
 
 	provinces = {

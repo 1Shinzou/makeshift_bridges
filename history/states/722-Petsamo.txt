@@ -6,16 +6,7 @@ state={
 	state_category = enclave
 
 	history={
-		# Less Minors + Scraping
-		1936.1.1.15 = { owner = GER add_core_of = GER }
-		1936.1.1.14 = { owner = GER add_core_of = GER }
-		add_core_of = FIN
-		1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
-        owner = FIN
-
+		owner = FIN
 
 		victory_points = { #Petsamo
 			9140 1
@@ -28,7 +19,7 @@ state={
 			}
 		}
 		add_core_of = FIN
-		add_core_of = WST
+		
 
 	}
 	

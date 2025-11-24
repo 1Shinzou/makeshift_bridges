@@ -18,15 +18,11 @@ state = {
 		}
 		owner = SWE
 		add_core_of = SWE
-		add_core_of = WST
+		
 		
 		buildings = {
 			infrastructure = 2
 			#industrial_complex = 1 was 1
-		}
-			1941.1.1 = {
-		owner = WST
-		add_core_of = WST
 		}
 	}
 

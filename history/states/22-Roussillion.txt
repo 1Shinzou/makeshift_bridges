@@ -9,7 +9,7 @@ state={
 	
 	resources={
 		steel=27 #was:70 was: 136
-		aluminium=5 # was: 50
+		aluminium=50 # was: 96
 	}
 
 	history={
@@ -22,12 +22,8 @@ state={
 			industrial_complex = 2
 			air_base = 2
 		}
-		add_core_of = EFR
-		add_core_of = FRA
-		1941.1.1 = {
-		owner = WST
 		add_core_of = WST
-		}
+		add_core_of = FRA
 	}
 
 	provinces={

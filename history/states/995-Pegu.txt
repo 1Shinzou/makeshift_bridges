@@ -8,8 +8,8 @@ state = {
 	
 	history = {
 
-		owner = RAJ
-		add_core_of = TUM
+		owner = ENG
+		add_core_of = WST
 
 		buildings = {
 			infrastructure = 2
@@ -23,14 +23,16 @@ state = {
 		victory_points = {
 			1330 15 # Rangoon
 		}
-	1941.1.1 = {
-		owner = WST
-		add_core_of = WST
+
+		victory_points = {
+			10344 1 # Taungoo
 		}
+
 	}
 
 	provinces = {
 		1330 1650 10154 10283 10344 12127 
+		1417 7441 12256	
 	}
 
 	buildings_max_level_factor = 1.000

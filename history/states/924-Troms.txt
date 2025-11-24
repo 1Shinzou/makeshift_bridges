@@ -15,7 +15,7 @@ state = {
 		}
 		owner = NOR
 		add_core_of = NOR
-		add_core_of = WST
+		
 		
 		buildings = {
 			infrastructure = 1
@@ -24,10 +24,6 @@ state = {
 			11050 = {
 				naval_base = 2
 			}
-		}
-			1941.1.1 = {
-		owner = WST
-		add_core_of = WST
 		}
 	}
 

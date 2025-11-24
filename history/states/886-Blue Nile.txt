@@ -9,10 +9,6 @@ state = {
 		buildings = {
 			infrastructure = 1
 		}
-			1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
 	}
 	provinces = {
 		1914 4918 10743 10784 12862 12887 

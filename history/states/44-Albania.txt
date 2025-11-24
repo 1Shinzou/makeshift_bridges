@@ -26,7 +26,7 @@ state = {
 			infrastructure = 2 
 			arms_factory = 1
 			industrial_complex = 1
-			air_base = 8
+			air_base = 3
 			11767 = {
 				naval_base = 4
 			}
@@ -42,10 +42,6 @@ state = {
 			controller = ITA
 			remove_claim_by = ITA
 
-		}
-			1941.1.1 = {
-		owner = WST
-		add_core_of = WST
 		}
 
 	}

@@ -5,19 +5,8 @@ state={
 		5214 13340 13361
 	}
 	history={
-		# No Asia + Scraping
-		1936.1.1.13 = { owner = WST add_core_of = WST }
-		1936.1.1.14 = { owner = WST add_core_of = WST }
-
-        # Less Minors
-		1936.1.1.15 = { owner = USA add_core_of = USA }
-
-        owner = BRA
-		add_core_of = BRA
-			1941.1.1 = {
 		owner = WST
 		add_core_of = WST
-		}
 	}
 	manpower=10000
 	buildings_max_level_factor=1.000

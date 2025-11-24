@@ -21,9 +21,10 @@ state={
 
 		}
 		add_core_of = FRA
-		1941.1.1 = {
-		owner = WST
-		add_core_of = WST
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 4
+			}
 		}
 	}
 

@@ -1,22 +1,25 @@
-state={
-	id=786
-	name="STATE_786" # Mauritanian Desert
-	manpower = 1
+state = {
+	id = 786
+	name = "STATE_786" # Mauritanian Desert
+	manpower = 124200
 	
 	state_category = wasteland
-	impassable = yes
+	#impassable = yes
 
-	history={
-		1941.1.1 = {
+	history = {
+
 		owner = WST
 		add_core_of = WST
+
+		buildings = {
+			infrastructure = 0
 		}
+
+	}
+		# unused MSB
+	provinces = {
+		10786
 	}
 
-	provinces={
-		2047 2170 7424 
-		
-	}
-
-	local_supplies=0.0 
+	local_supplies = 0.0 
 }

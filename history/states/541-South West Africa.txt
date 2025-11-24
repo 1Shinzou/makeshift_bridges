@@ -9,18 +9,14 @@ state={
 		owner = SAF
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
 
 		}
 		victory_points = {
 			4879 1 
 		}
 		add_core_of = SAF
-		add_core_of = WST
-	1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
+		add_core_of = NMB
+
 	}
 
 	provinces={

@@ -16,16 +16,13 @@ state = {
 		buildings = {
 			infrastructure = 1
 			dockyard = 1
-			arms_factory = 2
+			arms_factory = 1
 			6626 = {
 				naval_base = 5
 			}
 
 		}
-	1941.1.1 = {
-		owner = GER
-		add_core_of = GER
-		}
+
 	}
 
 	provinces = {

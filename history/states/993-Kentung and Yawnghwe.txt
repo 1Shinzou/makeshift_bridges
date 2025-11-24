@@ -6,14 +6,15 @@ state = {
 	manpower = 216959
 	
 	history = {
-		owner = RAJ
-		add_core_of = TUM
-		buildings = {
-			infrastructure = 1
-		}
-			1941.1.1 = {
-		owner = WST
+		owner = ENG
 		add_core_of = WST
+
+		buildings = {
+			infrastructure = 0
+		}
+
+		victory_points = {
+			7909 1 # Kyaingtong
 		}
 	}
 

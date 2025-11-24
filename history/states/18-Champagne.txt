@@ -23,10 +23,6 @@ state={
 			air_base = 10
 		}
 		add_core_of = FRA
-			1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
 	}
 
 	provinces={

@@ -13,17 +13,13 @@ state = {
 	history = {
 		owner = NOR
 		add_core_of = NOR
-		add_core_of = WST
+		
 		
 		victory_points = {
 			3048 1
 		}
 		buildings = {
 			infrastructure = 2
-		}
-			1941.1.1 = {
-		owner = WST
-		add_core_of = WST
 		}
 	}
 

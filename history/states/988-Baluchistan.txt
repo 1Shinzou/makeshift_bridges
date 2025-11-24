@@ -9,6 +9,8 @@ state={
 	history={
 		owner = RAJ
 		add_core_of = RAJ
+		add_core_of = PAK
+		
 		buildings = {
 			infrastructure = 1
 		}
@@ -16,10 +18,7 @@ state={
 		victory_points = {
 			5105 3 # Quetta
 		}
-	1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
+
 	}
 
 	buildings_max_level_factor=1.000

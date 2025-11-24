@@ -27,10 +27,7 @@ state = {
 		victory_points = {
 			2050 5 # Lagos
 		}
-	1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
+
 	}
 
 	provinces = {

@@ -7,6 +7,7 @@ state={
 	state_category = city
 	resources = {
 		steel = 18
+		coal = 23 #initial distribution
 		
 	}
 
@@ -25,9 +26,11 @@ state={
 				naval_base = 6
 			}
 		}
-		1941.1.1 = {
-		owner = WST
-		add_core_of = WST
+		1939.1.1 = {
+			buildings = {
+				dockyard = 5
+				industrial_complex = 2
+			}
 		}
 	}
 

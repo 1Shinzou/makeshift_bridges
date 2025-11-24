@@ -17,11 +17,11 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = SPR
-			1941.1.1 = {
-		owner = WST
-		add_core_of = WST
+		strategic_province_location = {
+			natural_harbor = 13071
 		}
+
+		add_core_of = SPR
 	}
 
 	provinces={

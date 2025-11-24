@@ -14,15 +14,11 @@ state={
 
 		}
 		add_core_of = FRA
-	1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
+
 	}
 
 	provinces={
-		743 9710 
-		#11697 
+		743 9710 11697 
 	}
 	manpower=280723
 	buildings_max_level_factor=1.000

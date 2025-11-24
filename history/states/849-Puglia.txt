@@ -25,6 +25,12 @@ state = {
 			air_base = 5
 			11837 = { #Taranto
 				naval_base = 10
+				naval_headquarters = {
+					level = 1
+					allowed = {
+						has_dlc = "No Compromise, No Surrender"
+					}
+				}
 			}
 			9784 = { #Bari
 				naval_base = 3
@@ -33,9 +39,10 @@ state = {
 		add_core_of = ITA
 		add_core_of = WST
 
-		1941.1.1 = {
-		owner = WST
-		add_core_of = WST
+		1939.1.1 = {
+			buildings = {
+				dockyard = 5
+			}
 		}
 	}
 	provinces = {

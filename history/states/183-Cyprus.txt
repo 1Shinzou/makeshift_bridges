@@ -11,7 +11,7 @@ state= {
 	history=
 	{
 		owner = ENG
-		add_core_of = WST
+		add_core_of = CYP
 		victory_points = {
 			11984 5
 		}
@@ -25,10 +25,7 @@ state= {
 				naval_base = 2
 			}
 		}
-	1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
+
 	}
 	provinces= { 7193 11984 }
 

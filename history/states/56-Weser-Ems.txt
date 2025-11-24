@@ -31,16 +31,20 @@ state = {
 			fuel_silo = 1
 			241 = {
 				naval_base = 8
+				naval_headquarters = {
+					level = 1
+					allowed = {
+						has_dlc = "No Compromise, No Surrender"
+					}
+				}
 			}
 			air_base = 3
 		}
 		
-		1941.1.1 = {
+		1939.1.1 = {
 			buildings = {
-				industrial_complex = 5
-				arms_factory = 10
+				industrial_complex = 4
 				dockyard = 3
-				synthetic_refinery = 3
 				241 = {
 					naval_facility = 1 # Wilhelmshaven Naval Dockyards
 				}

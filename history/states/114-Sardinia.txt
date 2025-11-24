@@ -3,6 +3,10 @@ state = {
 	name = "STATE_114"
 	manpower = 991921
 	
+	resources = {
+		coal = 1 # initial distribution
+	}
+
 	state_category = town
 	
 	history = {
@@ -27,10 +31,6 @@ state = {
 		}
 		add_core_of = ITA
 		add_core_of = WST
-			1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
 	}
 	provinces = {
 		902 6891 9772 9863 11755 11773 11824 11874 	

@@ -10,7 +10,8 @@ state={
 	history = {
 		owner = RAJ
 		add_core_of = TUM
-
+		add_core_of = PAK
+		
 
 		buildings = {
 			infrastructure = 1 #was: 5
@@ -18,10 +19,6 @@ state={
 
 		victory_points = {
 			8098 1 # Kalat
-		}
-			1941.1.1 = {
-		owner = WST
-		add_core_of = WST
 		}
 	}
 	

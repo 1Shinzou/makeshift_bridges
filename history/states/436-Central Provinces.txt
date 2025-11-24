@@ -8,6 +8,7 @@ state={
 	
 	resources={
 		chromium=4 # was: 6
+		coal = 7 #initial distribution
 	}
 
 	history={
@@ -19,10 +20,7 @@ state={
 		victory_points = {
 			4950 5
 		}
-	1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
+
 	}
 
 	provinces={

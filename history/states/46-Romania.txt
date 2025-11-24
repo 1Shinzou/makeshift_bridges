@@ -6,7 +6,7 @@ state = {
 		oil = 44 # was: 70
 	}
 
-	state_category = megalopolis
+	state_category = city
 
 	history = {
 
@@ -26,15 +26,6 @@ state = {
 			arms_factory = 3
 			industrial_complex = 1
 			air_base = 3
-		}
-		1941.1.1 = {
-			add_manpower = 750000
-			buildings = {
-				infrastructure = 5
-				arms_factory = 16
-				industrial_complex = 8
-				air_base = 3
-			}
 		}
 		
 	}

@@ -13,7 +13,7 @@ state={
 
 	history={
 		owner = HOL
-		add_core_of = WST
+		add_core_of = INS
 		victory_points = {
 			7381 5
 		}
@@ -32,10 +32,6 @@ state={
 			4608 = {
 				naval_base = 3
 			}
-		}
-			1941.1.1 = {
-		owner = WST
-		add_core_of = WST
 		}
 	}
 

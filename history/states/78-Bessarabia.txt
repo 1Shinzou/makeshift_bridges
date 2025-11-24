@@ -7,7 +7,7 @@ state=
 	state_category = town
 	
 	history= {
-		add_core_of = WST
+		
 		owner = ROM
 		victory_points = {
 			3707 1
@@ -17,14 +17,10 @@ state=
 			air_base = 2
 		}
 		add_core_of = ROM
-			1941.1.1 = {
-		owner = SOV
-		add_core_of = SOV
-		}
 	}
 	provinces=
 	{
-414 565 3407 3577 3707 3724 6600 9683 11686 11705 	}
+		414 565 3407 3577 3707 3724 6600 9683 11686 11705 	}
 
 	local_supplies=4.0 
 }

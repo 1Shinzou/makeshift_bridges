@@ -23,11 +23,6 @@ state = {
 			}
 		}
 		add_core_of = GRE
-		add_claim_by = ITA
-			1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
 	}
 	provinces = {
 		1164 4170 9940 12058

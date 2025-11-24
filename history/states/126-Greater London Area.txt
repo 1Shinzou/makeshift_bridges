@@ -20,6 +20,12 @@ state={
 			air_base = 10
 			11374 = {
 				naval_base = 10
+				naval_headquarters = {
+					level = 1
+					allowed = {
+						has_dlc = "No Compromise, No Surrender"
+					}
+				}
 			}
 
 			6103 = { 
@@ -33,9 +39,11 @@ state={
 
 		}
 		add_core_of = ENG
-		1941.1.1 = {
-		owner = WST
-		add_core_of = WST
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 4
+				industrial_complex = 4
+			}
 		}
 	}
 

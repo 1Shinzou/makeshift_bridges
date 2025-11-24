@@ -11,7 +11,7 @@ state={
 	}
 
 	history={
-		add_core_of = WST
+		
 		owner = ENG
 		victory_points = {
 			200 5 #Aberdeen
@@ -24,10 +24,6 @@ state={
 			dockyard = 2
 		}
 		add_core_of = ENG
-			1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
 	}
 
 	provinces={

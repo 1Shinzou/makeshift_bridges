@@ -7,7 +7,7 @@ state={
 	state_category = city
 	
 	resources={
-		aluminium=1 # was: 11
+		aluminium=11 # was: 18
 	}
 
 	history={
@@ -21,9 +21,10 @@ state={
 			air_base = 2
 		}
 		add_core_of = FRA
-		1941.1.1 = {
-		owner = WST
-		add_core_of = WST
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 3
+			}
 		}
 	}
 

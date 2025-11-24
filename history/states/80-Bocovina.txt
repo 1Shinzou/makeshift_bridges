@@ -2,6 +2,10 @@ state={
 	id=80
 	name="STATE_80"
 	manpower = 474600
+
+	resources = {
+		coal = 1 #initial distribution
+	}
 	
 	state_category = rural
 	
@@ -16,11 +20,7 @@ state={
 			arms_factory = 1
 		}
 		add_core_of = ROM
-		add_core_of = WST
-			1941.1.1 = {
-		owner = SOV
-		add_core_of = SOV
-		}
+		
 	}
 	provinces={
 		577 9548

@@ -15,20 +15,17 @@ state = {
 			741 1 
 		}
 		buildings = {
-			industrial_complex = 1
+		
 			infrastructure = 2
 			
 		}
 		add_core_of = SOV
-		add_core_of = WST
-		add_core_of = WST
+		
+		
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 2
 			}
-		}
-		1941.1.1 = {
-			add_core_of = ROM
 		}
 	}
 

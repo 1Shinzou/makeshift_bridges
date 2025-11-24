@@ -6,7 +6,6 @@ state={
 	
 	history={
 		owner = ENG
-		add_core_of = WST
 		buildings = {
 			infrastructure = 2
 			12251 = {
@@ -14,10 +13,11 @@ state={
 
 			}
 		}
-	1941.1.1 = {
-		owner = WST
-		add_core_of = WST
+
+		victory_points = {
+			12251 1 #Port Blair 
 		}
+
 	}
 	provinces={
 		10321 12251 

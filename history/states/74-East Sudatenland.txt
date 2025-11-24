@@ -3,6 +3,10 @@ state = {
 	name = "STATE_74"
 	manpower = 820000
 	
+	resources = {
+		coal = 12 # initial distribution / 60 total
+	}
+
 	state_category = rural
 	
 	history = {
@@ -27,11 +31,6 @@ state = {
 			owner = GER
 			controller = GER
 			add_core_of = GER
-		}
-		1941.1.1 = {
-			buildings = {
-				arms_factory = 5
-			}
 		}
 	}
 

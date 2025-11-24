@@ -6,12 +6,17 @@ state={
 	}
 
 	history={
-		owner = WST
-	
-		add_core_of = WST
+		owner = MON
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			7843 1 #Ulaangom
+		}
+		add_core_of = MON
 	}
-	manpower=1
+	manpower=149000
 	buildings_max_level_factor=1.000
-	state_category= wasteland
+	state_category=pastoral
 	local_supplies=0.000
 }

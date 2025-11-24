@@ -24,13 +24,6 @@ state={
 		victory_points = {
 			1349 25
 		}
-		victory_points = {
-		#	9975 10 
-		}
-	1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
 	}
 
 	provinces={

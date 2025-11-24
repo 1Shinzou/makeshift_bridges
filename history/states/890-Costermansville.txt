@@ -1,17 +1,36 @@
 state = {
 	id = 890
 	name = "STATE_890"
-	manpower = 1
-	state_category = wasteland
+	manpower = 710035
+	state_category = pastoral
 	
-	
+	resources = {
+		rubber = 3.000
+	}
 	
 	history = {
 
-	1941.1.1 = {
-		owner = WST
-		add_core_of = WST
+		owner = BEL
+		add_core_of = COG
+
+		IF = {
+			limit = {
+				has_dlc = "Gotterdammerung"
+			}
+			transfer_state_to = COG
+			add_dynamic_modifier = {
+				modifier = COG_state_loyal_to_free_congo_modifier
+			}
 		}
+
+		victory_points = {
+			4941 1 # Albertville
+		}
+
+		buildings = {
+			infrastructure = 1
+		}
+
 	}
 	
 	provinces = {
@@ -19,5 +38,5 @@ state = {
 	}
 	
 	buildings_max_level_factor = 1.000
-	local_supplies=0.0
+	local_supplies = 0.000
 }

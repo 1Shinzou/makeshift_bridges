@@ -24,9 +24,10 @@ state={
 		add_claim_by = GRE
 		add_claim_by = ITA
 
-		1941.1.1 = {
-		owner = WST
-		add_core_of = WST
+		1939.4.12 = {
+			owner = ITA
+			controller = ITA
+			remove_claim_by = ITA
 		}
 	}
 

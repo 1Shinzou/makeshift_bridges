@@ -20,10 +20,8 @@ state={
 				naval_base = 4
 			}
 		}
-	1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
+		add_core_of = PAK
+
 	}
 
 	provinces={

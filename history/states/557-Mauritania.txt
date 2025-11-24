@@ -15,15 +15,11 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-	
-	1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
+
 	}
 
 	provinces={
-		12082 7992 5077 5034 8058
+		7992 5077 5034 8058 10814
 	}
 
 	local_supplies=0.0 

@@ -16,11 +16,7 @@ state={
 
 		}
 		add_core_of = LIT
-		add_core_of = SOV
-	1941.1.1 = {
-		owner = SOV
-		add_core_of = SOV
-		}
+
 	}
 
 	provinces={

@@ -19,7 +19,7 @@ state = {
 		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 3
+			industrial_complex = 1
 			air_base = 10
 			dockyard = 1
 			10074 = {
@@ -42,10 +42,6 @@ state = {
 		}
 		add_core_of = ITA
 		add_core_of = WST
-			1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
 
 	}
 

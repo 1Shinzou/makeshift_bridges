@@ -2,33 +2,34 @@ state = {
 	id = 596
 	name = "STATE_596"
 	manpower = 21230700
-	state_category = city
+	state_category = town
 
 	history = {
 
-				# No Asia + Scraping
-		1936.1.1.13 = { owner = WST add_core_of = WST }
-		1936.1.1.14 = { owner = WST add_core_of = WST }
-
-        owner = CHI
-
-       # Less Minors
-		1936.1.1.15 = { owner = CHI add_core_of = CHI }
+		owner = CHI
 		add_core_of = CHI
 		
 		
 		victory_points = { 
 			9974 1 # Ningbo
 		}
+
 		victory_points = { 
 			7191 1 # Hangzhou
+		}
+
+		victory_points = { 
+			1055 1 # Wenzhou
+		}
+
+		victory_points = { 
+			7174 1 # Quzhou
 		}
 		
 		buildings = {
 
 			infrastructure = 2
 			air_base = 1 # Ningbo Lishe Airbase
-			dockyard = 1
 
 			7191 = {
 				naval_base = 1
@@ -47,9 +48,18 @@ state = {
 			}
 		}
 
-			1941.1.1 = {
-		owner = WST
-		add_core_of = WST
+		1938.10.25 = {		
+			JAP = {
+				set_province_controller = 1055
+				set_province_controller = 1096
+				set_province_controller = 4042
+				set_province_controller = 7058
+				set_province_controller = 7191
+				set_province_controller = 9974
+				set_province_controller = 10014
+				set_province_controller = 10101
+				set_province_controller = 11991
+			} 			
 		}
 	}
 

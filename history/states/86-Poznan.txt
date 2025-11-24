@@ -9,7 +9,7 @@ state = {
 
 		owner = POL
 		add_core_of = POL
-		add_claim_by = WST
+		add_claim_by = PRE
 
 		victory_points = {
 			6558 10 # Poznan
@@ -33,14 +33,8 @@ state = {
 			air_base = 3
 		}
 		
-			1941.1.1 = {
-		owner = GER
-		add_core_of = GER
-		}
-		1941.1.1 = {
-			buildings = {
-				arms_factory = 1
-			}
+		1938.3.12 = {
+			add_claim_by = GER
 		}
 	}
 

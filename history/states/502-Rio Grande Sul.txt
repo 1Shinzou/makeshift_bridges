@@ -4,17 +4,14 @@ state={
 	name="STATE_502"
 	manpower = 2959600
 	
+	resources = {
+		coal = 8 # initial distribution = with infra 3.2 / 3 total	#boosted by 6 to reduce US import necessity
+	}
+
 	state_category = town
 
 	history={
-		# No Asia + Scraping
-		1936.1.1.13 = { owner = WST add_core_of = WST }
-		1936.1.1.14 = { owner = WST add_core_of = WST }
-
-        # Less Minors
-		1936.1.1.15 = { owner = USA add_core_of = USA }
-
-        owner = BRA
+		owner = WST
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 1
@@ -23,14 +20,11 @@ state={
 				naval_base = 3
 			}
 		}
-		add_core_of = BRA
+		add_core_of = WST
 		victory_points = {
 			10447 3 
 		}
-	1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
+
 	}
 
 	provinces={

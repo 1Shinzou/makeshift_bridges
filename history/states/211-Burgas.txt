@@ -8,11 +8,7 @@ state={
 	state_category = town
 
 	history={
-		# Scraping
-		1936.1.1.14 = { owner = ITA add_core_of = ITA }
-
-        owner = BUL
-
+		owner = BUL
 		victory_points = { #Varna
 			9783 5
 		}
@@ -39,10 +35,6 @@ state={
 			}
 		}
 		add_core_of = BUL
-			1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
 	}
 
 	provinces={

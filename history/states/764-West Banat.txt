@@ -16,11 +16,8 @@ state={
 			infrastructure = 3 #was: 6
 		}
 		add_core_of = YUG
-		add_claim_by = HUN
-			1941.1.1 = {
-		owner = HUN
-		add_core_of = HUN
-		}
+		add_core_of = WST
+		add_core_of = WST
 	}
 
 	provinces={

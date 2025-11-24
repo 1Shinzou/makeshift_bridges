@@ -29,16 +29,13 @@ state={
 		}
 		owner = ETH
 		add_core_of = ETH
-		add_core_of = ETH
+		add_core_of = AFA
 		1936.6.1 = {
 			owner = ITA
 			controller = ITA
 
 		}
-	1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
+
 	}
 
 	provinces={

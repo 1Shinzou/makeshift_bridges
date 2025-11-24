@@ -8,6 +8,7 @@ state = {
 		
 		owner = ENG
 		add_core_of = WST
+
 		victory_points = {
 			8051 1 # Doha
 		}
@@ -17,10 +18,6 @@ state = {
 			8051 = {
 				naval_base = 2
 			}
-		}
-			1941.1.1 = {
-		owner = WST
-		add_core_of = WST
 		}
 	}
 

@@ -11,15 +11,7 @@ state={
 	}
 
 	history={
-		# No Asia + Scraping
-		1936.1.1.13 = { owner = WST add_core_of = WST }
-		1936.1.1.14 = { owner = WST add_core_of = WST }
-
-        owner = JAP
-
-       # Less Minors
-		1936.1.1.15 = { owner = JAP add_core_of = JAP }
-
+		owner = MAN
 		add_core_of = CHI
 		add_core_of = MAN
 		
@@ -33,10 +25,7 @@ state={
 		victory_points = {
 			10433 1 
 		}
-	1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
+
 	}
 
 	provinces={

@@ -58,11 +58,7 @@ state = {
 			controller = GER
 			add_core_of = GER
 		}
-	1941.1.1 = {
-			buildings = {
-				arms_factory = 8
-			}
-		}
+
 	}
 
 	provinces = {

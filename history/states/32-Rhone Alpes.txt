@@ -8,7 +8,7 @@ state={
 	
 	resources={
 		steel=16 #was:30 was: 56
-		aluminium=3 # was: 30
+		aluminium=30 # was: 58
 	}
 
 	history={
@@ -19,12 +19,8 @@ state={
 		victory_points = {
 			3768 1 
 		}
-		add_core_of = EFR
-		add_core_of = FRA
-		1941.1.1 = {
-		owner = WST
 		add_core_of = WST
-		}
+		add_core_of = FRA
 	}
 
 	provinces={

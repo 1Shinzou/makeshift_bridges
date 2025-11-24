@@ -14,11 +14,7 @@ state={
 			infrastructure = 2
 		}
 		add_core_of = POL
-		add_core_of = SOV
-			1941.1.1 = {
-		owner = SOV
-		add_core_of = SOV
-		}
+		add_core_of = WST
 	}
 
 	provinces={

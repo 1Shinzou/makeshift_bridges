@@ -7,17 +7,13 @@ state = {
 	
 	resources = {
 		steel = 8 # was: 12.000
-		aluminium = 29 # was: 14.000
+		aluminium = 9 # was: 14.000
+		coal = 2 # initial distribution = with infra 3.2 / 36 total
 	}
 
 	history = {
 
-		# Less Minors + Scraping
-		1936.1.1.15 = { owner = SAF add_core_of = SAF }
-		1936.1.1.14 = { owner = SAF add_core_of = SAF }
-
-        owner = CAN
-
+		owner = CAN
 		add_core_of = CAN
 
 		buildings = {
@@ -28,10 +24,7 @@ state = {
 		victory_points = {
 			7899 1 
 		}
-	1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
+
 	}
 
 	provinces = {

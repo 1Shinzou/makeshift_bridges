@@ -3,7 +3,7 @@ state=
 	id=270
 	name="STATE_270"
 	manpower = 40
-	state_category = enclave
+	state_category = tiny_island
 	
 	history=
 	{
@@ -13,14 +13,6 @@ state=
 			1280 = {
 				naval_base = 1
 			}
-		}
-			1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
-			1941.1.1 = {
-		owner = WST
-		add_core_of = WST
 		}
 	}
 	provinces={

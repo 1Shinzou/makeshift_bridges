@@ -4,6 +4,7 @@ state={
 	manpower = 3962157
 	resources={
 		chromium=60 # was: 116
+		coal = 4 #initial distribution
 	}
 	
 	state_category = city
@@ -29,10 +30,6 @@ state={
 			4696 1 
 		}
 		add_core_of = SAF
-			1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
 	}
 
 	provinces={

@@ -2,6 +2,11 @@ state = {
 	id = 127
 	name = "STATE_127" # Sussex
 	manpower = 3193383
+
+	resources = {
+		coal = 6 #initial distribution
+	}
+
 	state_category = large_city
 
 	history = {
@@ -38,9 +43,11 @@ state = {
 			}
 		}
 		
-		1941.1.1 = {
-		owner = WST
-		add_core_of = WST
+		1939.1.1 = {
+			buildings = {
+				dockyard = 3
+				industrial_complex = 2
+			}
 		}
 
 	}

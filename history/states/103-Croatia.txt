@@ -27,11 +27,8 @@ state={
 			}
 		}
 		add_core_of = YUG
-		add_claim_by = ITA #added by focus
-			1941.1.1 = {
-		owner = WST
+		#add_claim_by = ITA #added by focus
 		add_core_of = WST
-		}
 	}
 
 	provinces={

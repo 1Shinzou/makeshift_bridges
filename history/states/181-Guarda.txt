@@ -7,11 +7,12 @@ state = {
 	
 	resources = {
 		tungsten = 95 #was 150 # was: 300
+		coal = 1 #initial distribution
 	}
 
 	history = {
 
-		owner =POR
+		owner = POR
 		add_core_of = POR
 
 		victory_points = {
@@ -30,10 +31,7 @@ state = {
 			#11885 = { dam = 1 }
 			
 		}
-			1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
+		
 	}
 
 	provinces = {

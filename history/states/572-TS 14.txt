@@ -4,6 +4,9 @@ state={
 	name="STATE_572" # Chelyabinsk
 	manpower = 2074932
 	
+	resources = {
+		coal = 8 # initial distribution
+	}
 	state_category = town
 
 	history={
@@ -17,11 +20,6 @@ state={
 
 		}
 		add_core_of = SOV
-		1941.1.1 = {
-			buildings = {
-				arms_factory = 8
-				}
-			}
 	}
 
 	provinces={

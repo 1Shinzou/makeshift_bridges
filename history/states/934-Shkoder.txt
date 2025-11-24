@@ -5,6 +5,7 @@ state = {
 	resources = {
 		aluminium = 1.000
         chromium = 1.000
+        coal = 1 # initial distribution = with infra 1.4 / 1 total
 	}
 
 	history = {
@@ -23,10 +24,7 @@ state = {
 		    controller = ITA
 		    remove_claim_by = ITA
 		}
-	1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
+
 	}
 
 	provinces = {

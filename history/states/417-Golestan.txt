@@ -5,8 +5,13 @@ state={
 	manpower = 796396
 	state_category = rural
 
+	resources = {
+		steel=4
+		chromium=5
+	}
+
 	history={
-		owner = PER
+		owner = WST
 		victory_points = {
 			8040 3 
 		}
@@ -16,11 +21,7 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = PER
-			1941.1.1 = {
-		owner = WST
 		add_core_of = WST
-		}
 	}
 
 	provinces={

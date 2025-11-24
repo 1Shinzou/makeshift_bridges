@@ -3,11 +3,10 @@ state={
 	name="STATE_112"
 	resources={
 		tungsten= 32 #was: 50.000
-		# rubber= 30
 	}
 
 	history={
-		owner =POR
+		owner = POR
 		victory_points = {
 			11805 20 
 		}
@@ -25,10 +24,7 @@ state={
 			}
 		}
 		add_core_of = POR
-	1941.1.1 = {
-		owner = WST
-		add_core_of = WST
-		}
+
 	}
 
 	provinces={

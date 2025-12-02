@@ -7,7 +7,7 @@ state = {
 
 	history = {
 
-		owner = PHI
+		owner = USA
 		add_core_of = PHI
 
 		buildings = {

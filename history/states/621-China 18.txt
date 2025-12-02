@@ -14,7 +14,7 @@ state = {
 		
 		add_core_of = CHI
 		
-		add_core_of = MEN
+		
 
 		victory_points = {
 			7158 1 # Ulanqab 

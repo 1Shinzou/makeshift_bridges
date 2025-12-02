@@ -72,7 +72,7 @@ set_technology = {
 	gw_artillery = 1
 	interwar_antiair = 1
 	 
-	base_strike = 1
+	
 	motorised_infantry = 1
 	fuel_silos = 1
 	fuel_refining = 1
@@ -304,7 +304,7 @@ if = {
 
 		#doctrines
 		#Air
-		air_superiority = 1
+		
 		infrastructure_destruction = 1
 		naval_strike_tactics = 1
 

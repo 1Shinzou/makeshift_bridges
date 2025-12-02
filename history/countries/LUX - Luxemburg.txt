@@ -74,7 +74,7 @@ recruit_character = LUX_felix_of_luxembourg
 		interwar_antiair = 1
 		
 		#doctrines
-		air_superiority = 1
+		
 		
 		 
 		pocket_defence = 1

@@ -400,10 +400,10 @@ division_template = {
 		convoy_interdiction_ti = 1
 		unrestricted_submarine_warfare = 1
 		raider_patrols = 1
-		trade_interdiction = 1
+		
 
 		# Air
-		air_superiority = 1
+		
 		infrastructure_destruction = 1
 		home_defence = 1
 		naval_strike_tactics = 1

@@ -214,10 +214,10 @@ if = {
 		interwar_artillery = 1
 
 		#doctrines
-		air_superiority = 1
+		
 		grand_battle_plan = 1
 		 
-		fleet_in_being = 1
+		
 		battlefleet_concentration = 1
 		convoy_sailing = 1
 

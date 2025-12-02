@@ -27,7 +27,7 @@ set_technology = {
 	tech_engineers = 1
 	tech_recon = 1
 	 
-	fleet_in_being = 1
+	
 }
 if = {
 	limit = {
@@ -167,10 +167,10 @@ if = {
 		support_weapons2 = 1
 
 		#doctrines
-		air_superiority = 1
+		
 		grand_battle_plan = 1
 		 
-		fleet_in_being = 1
+		
 		battlefleet_concentration = 1
 		submarine_operations = 1
 

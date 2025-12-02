@@ -579,7 +579,7 @@ units = {
         backhand_blow = 1
         modern_blitzkrieg = 1
 
-		air_superiority = 1
+		
 		infrastructure_destruction = 1
 		home_defence = 1
 		naval_strike_tactics = 1

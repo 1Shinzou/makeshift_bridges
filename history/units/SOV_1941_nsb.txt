@@ -568,9 +568,9 @@ units = {
 		railway_gun = 1
 
 		#Doctrine
-		mobile_warfare = 1
+		 
 		delay = 1
-        elastic_defence = 1
+        
         armored_spearhead = 1
         schwerpunk = 1
         blitzkrieg = 1

@@ -100,7 +100,7 @@ set_technology = {
 	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	trench_warfare = 1
+	 
 	fleet_in_being = 1
 	fuel_silos = 1
 	fuel_refining = 1
@@ -298,7 +298,7 @@ if = {
 
 			grand_battle_plan = 1
 
-		trench_warfare = 1
+		 
 		prepared_defense = 1
 		battlefleet_concentration = 1
 		subsidiary_carrier_role = 1

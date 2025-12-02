@@ -77,7 +77,7 @@ instant_effect = {
 		sp_armored_advanced_flamethrower_tech = 1
 
 		# Doctrines
-		mass_assault = 1
+		 
 		pocket_defence = 1
 		defence_in_depth = 1
 		peoples_army = 1

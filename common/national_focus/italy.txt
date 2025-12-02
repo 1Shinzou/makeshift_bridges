@@ -3286,7 +3286,7 @@ focus_tree = {
 					}
 					set_technology = {
 						trench_warfare = 0
-						mobile_warfare = 1
+						 
 					}
 				}
 			}

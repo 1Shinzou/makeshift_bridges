@@ -66,14 +66,7 @@ sub_units = {
 		urban = {
 			attack = -0.05
 		}
-		plains = {
-			attack = 0.10
-			movement = 0.15
-			defence = 0.05
-		}
-		desert = {
-			movement = 0.1
-		}
+
 		amphibious = {
 			attack = -0.4
 		}
@@ -143,7 +136,7 @@ sub_units = {
 		}
 
 		plains = {
-			movement = 0.10
+			movement = 0.15
 		}
 
 		urban = {
@@ -152,9 +145,9 @@ sub_units = {
 		}
 
 		desert = {
-			attack = 0.10
+			attack = 0.05
 			defence = 0.05
-			movement = 0.15
+			movement = 0.1
 		}
 
 		amphibious = {

@@ -6,8 +6,8 @@ upgrades = {
 		cost = land
 
 		linear_cost = {
-			cost_by_level = 0
-			cost_by_level_for_licensed_equipment = 0
+			cost_by_level = 1
+			cost_by_level_for_licensed_equipment = 5
 		}
 
 		level_requirements = {
@@ -27,12 +27,12 @@ upgrades = {
 
 		resource_cost_thresholds = {
 			10 = { #higher level engines do require more strategic resources
-				#chromium = 0
+				#chromium = 1
 			}
 		}
 
 		#maximum_speed = 0.1
-		reliability = -0.01
+		reliability = -0.015
 		add_stats = {
 			fuel_consumption = 0.05
 			build_cost_ic = 0.1
@@ -46,8 +46,8 @@ upgrades = {
 		cost = land
 
 		linear_cost = {
-			cost_by_level = 0
-			cost_by_level_for_licensed_equipment = 0
+			cost_by_level = 1
+			cost_by_level_for_licensed_equipment = 2
 		}
 
 		level_requirements = {
@@ -67,19 +67,19 @@ upgrades = {
 
 		resource_cost_thresholds = { # resource values defined here are TOTAL added cost, not cumulative
 			5 = { #more armor requires more resources
-				steel = 0
+				steel = 1 
 			}
 			10 = {
-				#steel = 1
-				#chromium = 0
+				steel = 1
+				#chromium = 1
 			}
 			15 = {
-				#steel = 1
-				#chromium = 0
+				steel = 1
+				#chromium = 2
 			}
 		}
 
-		reliability = -0.01
+		reliability = -0.015
 		#armor_value = 0.085
 		add_stats = {
 			maximum_speed = -0.1

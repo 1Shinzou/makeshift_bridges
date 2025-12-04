@@ -392,7 +392,21 @@ country_event = {
 					SPD = {
 						transfer_state = 41
 					}
-					
+					41 = {
+						set_state_flag = SPR_sided_with_republicans_flag
+						create_unit = {
+							division = "division_template = \"Guarnición Republicana\" start_experience_factor = 0.1" 
+							owner = SPD
+							allow_spawning_on_enemy_provs = yes
+							count = 1
+						}
+						create_unit = {
+							division = "division_template = \"Guarnición Nacionalista\" start_experience_factor = 0.1" 
+							owner = SPA
+							allow_spawning_on_enemy_provs = yes
+							count = 2
+						}
+					}
 				}
 				# If Madrid is controlled by Nationalists, but a random state exists that has total Republican garrison control, give that as capital first
 				if = {

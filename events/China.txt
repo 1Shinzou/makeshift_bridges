@@ -1376,7 +1376,7 @@ country_event = {
 		}
 		OR = {
 			owns_state = 608 #Beijing
-			owns_state = 613 #Nanjing
+			owns_state = 1035 #Nanjing
 		}
 	}
 
@@ -1397,7 +1397,17 @@ country_event = {
 		trigger = {
 			owns_state = 608
 		}
-		set_capital = { state = 608 }
+		set_capital = {
+			state = 608
+			remember_old_capital = no
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		set_province_name = { id = 9843 name = PRC_beijing_capital_name }
+		608 = {
+			set_state_name = PRC_beijing_capital_name
+		}
 	}
 
 	#Move to Nanjing
@@ -1407,15 +1417,15 @@ country_event = {
 			base = 10
 			modifier = {
 				factor = 0
-				NOT = { 613 = { is_controlled_by = PRC } }
+				NOT = { 1035 = { is_controlled_by = PRC } }
 			}
 		}
 		trigger = {
-			owns_state = 613
+			owns_state = 1035
 		}
 		custom_effect_tooltip = CHI_nanjing_tt
 		hidden_effect = {
-			set_capital = { state = 613 }
+			set_capital = { state = 1035 }
 		}
 	}
 

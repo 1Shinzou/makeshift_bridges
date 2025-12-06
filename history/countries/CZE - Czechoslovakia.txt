@@ -49,7 +49,6 @@ set_technology = {
 	fuel_silos = 1
 	basic_train = 1
 }
-
 recruit_character = CZE_karl_albrecht
 recruit_character = CZE_edvard_benesh
 recruit_character = CZE_jaroslav_krejchi
@@ -132,7 +131,6 @@ if = {
 		CZE_skoda_works
 		CZE_divided_nation
 }
-	give_guarantee = YUG
 	give_guarantee = ROM
 }
 

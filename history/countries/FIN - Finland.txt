@@ -173,7 +173,7 @@ set_research_slots = 3
 
 ### COUNTRY LEADERS ###
 store_core_states_on_game_start = yes
-#Set Kokoomus as Non-Aligned party
+#Set Kokoomus as Non-Aligned party #TODO_Manu: I can now kill the old string and be done with this
 set_party_name = {
 	ideology = neutrality
 	name = FIN_neutrality_party_kokoomus
@@ -427,8 +427,10 @@ set_technology = {
 	tech_recon = 1
 	tech_engineers = 1
 	basic_train = 1
+	tech_mountaineers = 1
+	marines  = 1
+	paratroopers = 1 
 }
-
 if = {
 	limit = { NOT = { has_dlc = "Man the Guns" } }
 	set_technology = {
@@ -491,14 +493,15 @@ set_convoys = 5
 		dispersed_industry3 = 1
 		
 		#doctrines
-		#force_rotation = 1
-		#fighter_baiting = 1
+		force_rotation = 1
+		fighter_baiting = 1
 
+		grand_battle_plan = 1
+		 
+		
+		battlefleet_concentration = 1
+		submarine_operations = 1
 	}
-
-set_grand_doctrine = grand_battleplan
-set_grand_doctrine = new_fleet_in_being
-set_grand_doctrine = new_operational_integrity
 
 	complete_special_project = {
 		project = sp:sp_air_radar
@@ -594,16 +597,12 @@ set_grand_doctrine = new_operational_integrity
 	if = {
 		limit = { has_dlc = "By Blood Alone" }
 			set_air_oob = "FIN_1939_air_bba"
-			set_technology = { 
-				bba_early_transport_plane = 1 
-			}
 		else = {
 			set_air_oob = "FIN_1939_air_legacy"
 			set_technology = {
 				early_fighter = 1
 				early_bomber = 1
 				CAS1 = 1		
-				early_transport_plane = 1
 			}
 		}
 	}

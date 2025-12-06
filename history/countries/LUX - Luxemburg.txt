@@ -74,7 +74,11 @@ recruit_character = LUX_felix_of_luxembourg
 		interwar_antiair = 1
 		
 		#doctrines
-		#air_superiority = 1
+		
+		
+		 
+		pocket_defence = 1
+		defence_in_depth = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1
@@ -91,10 +95,6 @@ recruit_character = LUX_felix_of_luxembourg
 		concentrated_industry = 1
 		concentrated_industry2 = 1
 	}
-
-set_grand_doctrine = grand_battleplan
-set_grand_doctrine = new_strategic_destruction
-
 	complete_special_project = {
 		project = sp:sp_air_radar
 	}

@@ -20,10 +20,10 @@ starting_train_buffer = 2
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "FRA_1936_naval_mtg"
-		set_war_support = 0.1
+		set_war_support = 0.10
 	else = {
 		set_naval_oob = "FRA_1936_naval_legacy"
-		set_war_support = 0.15
+		set_war_support = 0.10
 	}
 }
 
@@ -58,30 +58,7 @@ if = {
 	}
 }
 
-if = {
-	limit = {
-		OR = {
-			has_dlc = "Together for Victory"
-			has_dlc = "Man the Guns"
-		}
-	}
-	set_autonomy = {
-		target = SYR
-		autonomous_state = autonomy_colony
-		freedom_level = 0.5
-	}
-	set_autonomy = {
-		target = LEB
-		autonomous_state = autonomy_colony
-		freedom_level = 0.5
-	}
-	else = {
-		puppet = SYR
-		puppet = LEB
-	}
-}
-
-set_research_slots = 3
+set_research_slots = 4
 IF = {
 	limit = {
 		has_dlc = "Gotterdammerung"
@@ -117,18 +94,19 @@ set_technology = {
 	tech_engineers = 1
 	tech_recon = 1
 	tech_mountaineers = 1
+	marines  = 1
+	paratroopers = 1 
 	tech_trucks = 1
 	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
+	 
+	
 	fuel_silos = 1
 	fuel_refining = 1
 	basic_train = 1
 	basic_fortification_tech = 1
 }
-
-set_grand_doctrine = grand_battleplan
-set_grand_doctrine = new_fleet_in_being
 
 if = {
 	limit = {
@@ -195,7 +173,7 @@ if = {
 		basic_battery = 1
 		basic_heavy_battery = 1
 		basic_light_battery = 1
-		#basic_medium_battery = 1
+		basic_medium_battery = 1
 		basic_torpedo = 1
 		basic_depth_charges = 1
 		basic_heavy_armor_scheme = 1
@@ -241,6 +219,7 @@ if = {
 	    FRA_matignon_agreements
 		#laws
 		partial_economic_mobilisation
+		FRA_no_cap
 	}
 
 	complete_national_focus = FRA_begin_rearmament
@@ -312,10 +291,19 @@ if = {
 
 		#doctrines
 		#Air
-		#force_rotation = 1
-		#ighter_baiting = 1
-		#low_echelon_support = 1
-		#dispersed_fighting = 1
+		force_rotation = 1
+		fighter_baiting = 1
+		low_echelon_support = 1
+		dispersed_fighting = 1
+
+			grand_battle_plan = 1
+
+		 
+		prepared_defense = 1
+		battlefleet_concentration = 1
+		subsidiary_carrier_role = 1
+		convoy_sailing = 1
+		submarine_operations = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1
@@ -338,16 +326,6 @@ if = {
 		dispersed_industry2 = 1
 		dispersed_industry3 = 1
 	}
-
-set_grand_doctrine = grand_battleplan
-set_grand_doctrine = new_fleet_in_being
-set_grand_doctrine = new_operational_integrity
-set_sub_doctrine = great_war_infantry
-add_mastery = {
-    amount = 100
-    sub_doctrine = great_war_infantry
-}
-
 	complete_special_project = {
 		project = sp:sp_air_radar
 	}
@@ -428,12 +406,13 @@ set_popularities = {
 
 add_ideas = {
 	FRA_victors_of_wwi
-	FRA_disjointed_government
+	FPM_disjointed_government1
 	FRA_protected_by_the_maginot_line
 	limited_conscription
 	FRA_full_employment
 	FRA_political_violence
 	FRA_inefficient_economy_2
+	low_economic_mobilisation
 }
 
 give_guarantee = CZE
@@ -496,26 +475,17 @@ recruit_character = FRA_paul_baudouin
 recruit_character = FRA_maurice_gauche
 recruit_character = FRA_jacques_duclos
 recruit_character = FRA_marcel_bucard
-recruit_character = FRA_georges_valois
+#recruit_character = FRA_georges_valois
 recruit_character = FRA_marcel_deat
 
 recruit_character = FRA_irene_joliot_curie
 recruit_character = FRA_frederic_joliot_curie
 recruit_character = FRA_francois_hussenot
 recruit_character = FRA_louis_renault
+recruit_character = FRA_emile_rimailho
+recruit_character = FRA_eugene_schneider_ii
 recruit_character = FRA_henri_edmond_fouche
 recruit_character = FRA_joseph_bethenod
-
-if = {
-	limit = {
-		OR = {
-			has_dlc = "Gotterdammerung"
-			has_dlc = "No Step Back"
-		}
-	}
-	recruit_character = FRA_emile_rimailho #Artillery Scientist
-	recruit_character = FRA_eugene_schneider_ii #Artillery Scientist
-}
 
 
 if = {

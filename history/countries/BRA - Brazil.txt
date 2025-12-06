@@ -257,9 +257,6 @@ set_technology = {
 	gw_artillery = 1
 	interwar_antiair = 1
 	basic_train = 1	
-	tech_mountaineers = 1
-	marines  = 1
-	paratroopers = 1 
 }
 
 IF = {
@@ -397,13 +394,7 @@ recruit_character = BRA_random_army_chief
 		
 
 		#doctrines
-		
-		grand_battle_plan = 1
-		 
-		
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
+		#air_superiority = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1
@@ -424,6 +415,11 @@ recruit_character = BRA_random_army_chief
 		dispersed_industry = 1
 		dispersed_industry2 = 1
 	}
+
+set_grand_doctrine = grand_battleplan
+set_grand_doctrine = new_fleet_in_being
+set_grand_doctrine = new_strategic_destruction
+
 	complete_special_project = {
 		project = sp:sp_air_radar
 	}

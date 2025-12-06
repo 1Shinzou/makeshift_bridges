@@ -16,6 +16,7 @@ if = {
 			iw_small_airframe = 1
 			aa_lmg = 1
 			engines_1 = 1
+			bba_early_transport_plane = 1
 		}
 	else = {
 		set_air_oob = "SWE_1936_air_legacy"
@@ -25,6 +26,7 @@ if = {
 			naval_bomber1 = 1
 			cv_naval_bomber1 = 1
 			early_bomber = 1
+			early_transport_plane = 1
 		}
 	}
 }
@@ -58,62 +60,20 @@ if = {
 	set_war_support = 0.1
 }
 
-send_embargo = USA
-send_embargo = ENG
-send_embargo = FRA
-send_embargo = MEX
-send_embargo = CAN
-send_embargo = SAF
-send_embargo = RAJ
-send_embargo = AST
-send_embargo = SOV
-send_embargo = NZL
+
 
 set_technology = {
-	tech_trucks = 1
-	interwar_antitank = 1 # 
 	infantry_weapons = 1
 	infantry_weapons1 = 1
+	tech_trucks = 1
 	gw_artillery = 1
 	interwar_antiair = 1
 	tech_recon = 1
 	tech_support = 1		
 	tech_engineers = 1
 	basic_train = 1
-	advanced_infantry_weapons = 1
-	antiair2 = 1
-	antiair5 = 1
-	antitank5 = 1
-	antitank2 = 1
-	mechanised_infantry = 1
-	amphibious_mechanized_infantry = 1
-	improved_infantry_weapons = 1
-	improved_infantry_weapons_2 = 1
-	advanced_heavy_tank_chassis = 1
-	artillery1 = 1
-	artillery4 = 1
-	rocket_artillery = 1
-	rocket_artillery4 = 1
-
+	interwar_antitank = 1 # 
 }
-
-create_equipment_variant = {
-	name = "Cheap Mechanised"
-	type = mechanized_equipment_1
-	parent_version = 0
-	upgrades = {
-		mech_cost_upgrade = 5
-	}
-} 
-
-create_equipment_variant = {
-	name = "Cheap Amtrac"
-	type = amphibious_mechanized_equipment_1
-	parent_version = 0
-	upgrades = {
-		mech_cost_upgrade = 5
-	}
-} 
 
 if = {
 	limit = {
@@ -251,12 +211,7 @@ if = {
 		support_weapons = 1
 
 		#doctrines
-		
-		grand_battle_plan = 1
-		 
-		
-		battlefleet_concentration = 1
-		submarine_operations = 1
+		#air_superiority = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1
@@ -277,6 +232,11 @@ if = {
 		dispersed_industry = 1
 		dispersed_industry2 = 1
 	}
+
+set_grand_doctrine = grand_battleplan
+set_grand_doctrine = new_fleet_in_being
+set_grand_doctrine = new_strategic_destruction
+
 	complete_special_project = {
 		project = sp:sp_air_radar
 	}
@@ -771,6 +731,8 @@ if = {
 	set_variable = { SWE_cross_we_bear_conscription_increase = 0.005 }
 
 	set_variable = { SWE_hygenic_housing_cooldown = 0 }
+
+	set_variable = { SWE_civs_built = 0 }
 
 
 	# Election/BoP Stuff

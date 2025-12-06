@@ -177,6 +177,10 @@ COG = {
 	color = rgb { 152 159 209 }
 	color_ui = rgb { 152 159 209 }
 }
+EFR = {
+	color = rgb { 126  76  120 } 
+	color_ui = rgb { 126  76  120 }
+}
 D01 = {
 	color = rgb { 122 179 97 }
 	color_ui = rgb { 159 233 126 }
@@ -473,32 +477,4 @@ RAA = {
 	color = rgb { 115 115 115 }
 	color_ui = rgb { 122 145 93 }
 }
-DON = {
-	color = rgb { 255 170 0 }
-	color_ui = rgb { 179 119 0 }
-}
-KUB = {
-	color = rgb { 102 102 153 }
-	color_ui = rgb { 61 61 92 }
-}
-EFR = {
-	color = rgb { 126  76  120 } 
-	color_ui = rgb { 126  76  120 }
-}
-MON = {
-	#color = HSV { 0.1 0.15 0.4 }
-	color = rgb { 108 140 42 }
-	color_ui = rgb { 209 247 133 }
-}
-TAN = {
-	color = rgb { 152 130 191 }
-	color_ui = rgb { 198 169 248 }
-}
-SWI = {
-	color = rgb { 224 5 5 }
-	color_ui = rgb { 193 81 81 }
-}
-TUR = {
-	color = rgb { 171 190 152 }
-	color_ui = rgb { 222 247 198 }
-}
+

@@ -15,7 +15,7 @@ state={
 		buildings = {
 		}
 		add_core_of = TUM
-		add_core_of = PAK
+		add_core_of = WST
 		
 		set_compliance = 0
 		start_resistance = yes

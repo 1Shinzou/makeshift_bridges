@@ -11,7 +11,7 @@ state={
 	state_category = rural
 
 	history={
-		owner = TUR
+		owner = CHO
 		victory_points = {
 			10041 1 
 		}
@@ -25,7 +25,7 @@ state={
 			infrastructure = 2
 			industrial_complex = 1
 		}
-		add_core_of = TUR
+		add_core_of = CHO
 	}
 
 	provinces={

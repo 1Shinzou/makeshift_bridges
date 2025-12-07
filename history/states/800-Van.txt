@@ -3,7 +3,7 @@ state={
 	name="STATE_800" #Van
 
 	history={
-		owner = TUR
+		owner = CHO
 		victory_points = {
 			6935 5 
 		}
@@ -23,7 +23,7 @@ state={
 			limit = {
 				NOT = { has_dlc = "Battle for the Bosporus" }
 			}
-			add_core_of = TUR
+			add_core_of = CHO
 			
 		}
 	}

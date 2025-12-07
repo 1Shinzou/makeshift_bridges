@@ -10,7 +10,7 @@ state={
 
 	history= {
 		owner = FRA
-		add_core_of = CHO
+		add_core_of = TUR
 		add_core_of = WST
 		victory_points = {
 			12029 1
@@ -20,7 +20,7 @@ state={
 		}
 
 		1938.9.30 = {
-			owner = CHO
+			owner = TUR
 			controller = TUR
 		}
 	}

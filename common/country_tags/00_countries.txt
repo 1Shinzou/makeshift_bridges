@@ -61,6 +61,7 @@ INS = "countries/Indonesia.txt"
 PAK = "countries/Pakistan.txt"
 MAN = "countries/Manchukou.txt"
 BAN = "countries/Bangladesh.txt"
+AOI = "countries/Italian East Africa.txt"
 
 # SEA 
 EZO = "countries/Ezo Republic.txt"

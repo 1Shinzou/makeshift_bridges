@@ -1718,6 +1718,7 @@ technologies = {
 		special_forces_cap = 0.06
 		special_forces_no_supply_grace = 24
 		special_forces_training_time_factor = -0.1 
+		modifier_army_sub_unit_category_special_forces_max_org_factor = 0.1
 		ranger_battalion = {
 			defense = 0.10
 		}

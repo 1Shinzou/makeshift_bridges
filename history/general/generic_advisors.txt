@@ -20,7 +20,7 @@ every_possible_country = {
 		}
 		IF = {
 			limit = { has_dlc = "Arms Against Tyranny" }
-			NOT = { OR = { tag = ICE tag = DEN tag = SWE tag = NOR } }
+			NOT = { OR = {  tag = DEN tag = SWE tag = NOR } }
 		}
 
 		IF = {
@@ -77,7 +77,7 @@ every_possible_country = {
 		}
 		IF = {
 			limit = { has_dlc = "Arms Against Tyranny" }
-			NOT = { OR = { tag = ICE tag = DEN tag = SWE tag = NOR } }
+			NOT = { OR = {  tag = DEN tag = SWE tag = NOR } }
 		}
 
 		IF = {
@@ -138,7 +138,7 @@ every_possible_country = {
 		}
 		IF = {
 			limit = { has_dlc = "Arms Against Tyranny" }
-			NOT = { OR = { tag = ICE tag = DEN tag = SWE tag = NOR } }
+			NOT = { OR = {  tag = DEN tag = SWE tag = NOR } }
 		}
 		# TODO CHANGE THIS TO THE CORRECT DLC LOCK
 		IF = {
@@ -495,7 +495,7 @@ every_possible_country = {
 
 every_possible_country = { #Iceland is a special case
 	limit = { 
-		original_tag = ICE 
+		original_ 
 		has_dlc = "Arms Against Tyranny"
 	}
 	generate_character = {

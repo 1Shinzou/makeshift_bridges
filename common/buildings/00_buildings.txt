@@ -285,7 +285,6 @@ buildings = {
 		}
 
 		level_cap = {
-			shares_slots = yes
 			state_max = 3
 		}
 	}
@@ -303,10 +302,6 @@ buildings = {
 			modifiers = {
 				max_fuel_building = 100.0 #k
 			}
-		}
-		
-		level_cap = {
-			shares_slots = yes
 		}
 	}
 
@@ -705,7 +700,6 @@ buildings = {
 		infrastructure_construction_effect = yes
 		level_cap = {
 			state_max = 1
-			shares_slots = yes
 			group_by = infrastructure_keystone
 		}
 		state_modifiers = {
@@ -724,7 +718,6 @@ buildings = {
 		infrastructure_construction_effect = yes
 		level_cap = {
 			state_max = 1
-			shares_slots = yes
 			group_by = infrastructure_keystone
 		}
 		state_modifiers = {

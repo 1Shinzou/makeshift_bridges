@@ -63,6 +63,7 @@ MAN = "countries/Manchukou.txt"
 BAN = "countries/Bangladesh.txt"
 
 # SEA 
+# ALL OF THEM NEED TO BE REMOVED INCLUDING THE OTHER CHINA CORES, SEA ON ACTIONS IS THE ISSUE
 EZO = "countries/Ezo Republic.txt"
 OKN = "countries/Okinawa.txt"
 ANU = "countries/Ainu.txt"

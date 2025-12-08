@@ -17,7 +17,11 @@ focus_tree = {
 		}
 		modifier = {
 			add = 1000000
-			tag = CHO
+			tag = TUR
+		}
+		modifier = {
+			add = 1000000
+			tag = SWI
 		}
 		modifier = {
 			add = 1000000
@@ -103,6 +107,10 @@ focus_tree = {
 		modifier = {
 			add = 1000000
 			tag = ALB
+		}
+		modifier = {
+			add = 1000000
+			tag = NZL
 		}
 	}
 	

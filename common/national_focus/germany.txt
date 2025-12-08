@@ -7154,7 +7154,7 @@ focus_tree = {
 			}
 		}
 
-		x = 70
+		x = 71
 		y = 0
 
 
@@ -10504,7 +10504,7 @@ focus_tree = {
 		icon = GFX_focus_GER_support_the_fuhrer
 
 		prerequisite = { focus = GER_remilitarize_the_rhineland }
-		x = -10
+		x = -11
 		y = 7
 		relative_position_id = GER_remilitarize_the_rhineland
 		cost = 5

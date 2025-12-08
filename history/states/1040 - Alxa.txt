@@ -9,8 +9,8 @@ state={
 	state_category = wasteland
 	history={
 
-		owner = WST
-		add_core_of = WST
+		owner = CHI
+		add_core_of = CHI
 
 		victory_points = {
 			4783 1 # Ejin Banner

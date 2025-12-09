@@ -1776,29 +1776,26 @@ technologies = {
 
 	sp_armored_advanced_flamethrower_tech = {
 
-		
-
-	
+		allow = {
+			ROOT = {
+				is_special_project_completed = sp:sp_land_flamethrower_tank
+			}
+		}
 
 		is_special_project_tech = yes
 
 		research_cost = 1
-		start_year = 1938
-		
+		start_year = 1940
+
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 9 y = @1938 }
+			position = { x = 12 y = @1940 }
 		}
 
 		enable_equipment_modules = {
-			flamethrower #MM: Moved to Special Project sp_land_flamethrower_tank			
+			advanced_flamethrower
 		}
 
-		enable_subunits = { #MM: Moved to Special Project sp_land_flamethrower_tank
-            light_flame_tank
-            medium_flame_tank
-            heavy_flame_tank
-        }
 
 		show_effect_as_desc = yes
 		ai_will_do = {

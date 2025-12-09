@@ -1,11 +1,7 @@
 ﻿l_english:
 
 # Tech
-sp_armored_advanced_flamethrower_tech: "Flamethrower"
-GER_sp_land_flamethrower_tank: "Advanced Flamethrower"
 sp_land_super_heavy_railway_gun: "Railway Gun"
-r56_tank_anti_tank_rifle_gun:0 "Anti-Tank Rifle"
-r56_tank_anti_tank_rifle_gun_desc:0 "Adopted from infantry anti-tank rifles, the rifle is a larger caliber self-chambering semi-auto version of its infantry-carried counterpart. It has good enough anti-material penetration. However, anything with more than a modest amount of armor protection would stop the round it fires. Thus limiting its anti-tank performance."
 
 # GER FOCUS
 GER_gain_autarkic_economy_lock_free_trade_tt: "§RLock§! §Y$free_trade$§!. Gain §Y$autarkic_economy$§!."

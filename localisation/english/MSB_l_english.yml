@@ -135,6 +135,8 @@ fall_of_france: "Fall of France"
 
 # RAJ
 RAJ_ghandi_path_tt:0 "Have Gandhi as country leader. When Gandhi's assassination attempt happens shortly after going independent, have finished Viceroy's Bodyguard and keep at least 1 cavalry division in Delhi so he survives."
+RAJ_elephants_for_the_modern_age_tfb: "Elephants for the Modern Age"
+RAJ_elephants_for_the_modern_age_tfb_desc: "The mighty war elephants of the Mughal Empire once dominated the battlefield. Now, we adapt their legacy to the modern age by investing in armored vehicles and mechanized forces, creating unstoppable engines of war to carry our empire to victory."
 
 # GER
 GER_msb_anschluss_eq_trigger_tt:0 "More than §Y40.000§! infantry equipment in the army"

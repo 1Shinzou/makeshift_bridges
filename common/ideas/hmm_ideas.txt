@@ -22,6 +22,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_infantry_bonus
 			modifier = {
+				custom_modifier_tooltip = mastery_peace_training_tt
 				experience_gain_army = 0.3
 				training_time_army_factor = -0.89
 				air_training_xp_gain_factor = 10
@@ -32,6 +33,7 @@ ideas = {
 				army_fuel_consumption_factor = -0.9
 				air_fuel_consumption_factor = -0.9
 				navy_fuel_consumption_factor = -0.99
+				
 			}
 		}
 

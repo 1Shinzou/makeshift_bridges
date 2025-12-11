@@ -22,6 +22,7 @@ IF = {
 			iw_small_airframe = 1
 			engines_1 = 1
 			early_bombs = 1
+			photo_reconnaisance = 1
 			aa_lmg = 1
 		}
 	ELSE = {
@@ -30,15 +31,6 @@ IF = {
 			early_fighter = 1
 			CAS1 = 1
 		}
-	}
-}
-if = {
-	limit = {
-		has_dlc = "La Resistance"
-		has_dlc = "By Blood Alone"
-	}
-	set_technology = {
-					photo_reconnaisance = 1
 	}
 }
 

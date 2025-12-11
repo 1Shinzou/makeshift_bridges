@@ -11,7 +11,7 @@ state={
 
 
 	history={
-		owner = SIA
+		owner = JAP
 		buildings = {
 			infrastructure = 2
 			12230 = {

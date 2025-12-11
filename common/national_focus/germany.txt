@@ -1971,11 +1971,11 @@ focus_tree = {
 		completion_reward = {
 			GER_modify_industrial_modifier = yes
 			add_to_variable = { 
-				GER_industrial_industrial_capacity_factory = 0.1
+				GER_industrial_industrial_capacity_factory = 0.05
 				tooltip = industrial_capacity_factory_tt
 			}
 			add_to_variable = { 
-				GER_industrial_industrial_capacity_dockyard = 0.1
+				GER_industrial_industrial_capacity_dockyard = 0.05
 				tooltip = industrial_capacity_dockyard_tt
 			}
 		}
@@ -1993,6 +1993,7 @@ focus_tree = {
 		cost = 5
 		available = {
 			has_war_with_major = yes
+			has_war_with = SOV
 			OR = {
 				has_war_support > 0.89
 				surrender_progress > 0

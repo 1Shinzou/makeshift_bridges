@@ -50,7 +50,6 @@ if = {
 			basic_medium_airframe = 1
 			iw_large_airframe = 1
 			air_torpedoe_1 = 1
-			photo_reconnaisance = 1
 			bba_early_transport_plane = 1
 		}
 	else = {
@@ -65,6 +64,15 @@ if = {
 			naval_bomber1 = 1
 			early_transport_plane = 1
 		}
+	}
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+		has_dlc = "By Blood Alone"
+	}
+	set_technology = {
+					photo_reconnaisance = 1
 	}
 }
 
@@ -442,7 +450,7 @@ set_popularities = {
 }
 
 # Wowow nice faction
-create_faction = Axis
+create_faction_from_template = faction_template_axis
 add_to_faction = GER
 add_to_faction = ITA
 
@@ -566,7 +574,6 @@ recruit_character = GER_eva_braun
 recruit_character = GER_peter_adolf_thiessen
 recruit_character = GER_gustav_ludwig_hertz
 recruit_character = GER_eduard_grote
-recruit_character = GER_karl_heinrich_emil_becker
 recruit_character = GER_ferdinand_porsche 
 recruit_character = GER_erwin_aders
 recruit_character = GER_hermann_burkhardt
@@ -574,8 +581,7 @@ recruit_character = GER_ulrich_gabler
 recruit_character = GER_hans_von_ohain
 recruit_character = GER_max_kramer
 recruit_character = GER_kurt_tank
-recruit_character = GER_henrich_focke
-recruit_character = GER_helmuth_walter
+recruit_character = GER_hellmuth_walter
 recruit_character = GER_manfred_von_ardenne
 recruit_character = GER_konrad_zuse
 

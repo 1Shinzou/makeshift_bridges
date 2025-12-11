@@ -353,7 +353,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = SOV_finish_the_five_year_plan
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -751,7 +751,7 @@ focus_tree = {
 		completion_reward = {
 			add_to_variable = { SOV_fyp_production_factory_efficiency_gain_factor = 0.05 } #Add efficiency gain
 			add_to_variable = { SOV_fyp_production_factory_start_efficiency_factor = 0.05 } #Add efficiency start
-			add_to_variable = { SOV_fyp_industrial_capacity_factory = 0.02 } #Add small output bonus
+			add_to_variable = { SOV_fyp_industrial_capacity_factory = 0.05 } #Add small output bonus
 			custom_effect_tooltip = SOV_optimize_production_lines_ns_tt
 
 			add_tech_bonus = {
@@ -772,7 +772,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = SOV_reorganize_the_pc_of_heavy_industry
-		cost = 10
+		cost = 5
 
 		available = {
 			any_owned_state = {
@@ -1466,7 +1466,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_eastern_development
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -3337,7 +3337,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_pc_of_mechanical_engineering
-		cost = 10
+		cost = 5
 
 		available = {
 			if = {
@@ -3475,7 +3475,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_pc_of_mechanical_engineering
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -4009,7 +4009,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = SOV_the_means_to_wage_war
-		cost = 10
+		cost = 5
 		dynamic = yes 
 		available = {
 
@@ -7722,7 +7722,7 @@ focus = {
 	x = 0
 	y = 1
 	relative_position_id = SOV_positive_heroism
-	cost = 10
+	cost = 5
 
 	available = {
 
@@ -7754,7 +7754,7 @@ focus = {
 	x = 0
 	y = 1
 	relative_position_id = SOV_revive_the_stakhanovite_movement
-	cost = 10
+	cost = 5
 
 	available = {
 
@@ -8626,7 +8626,11 @@ focus = {
 		available = {	
 				has_war = no
 				is_subject = no
-				date > 1939.1.1
+				OR = {
+					has_idea = SOV_molotov_ribbentrop_pact
+					date > 1939.6.1
+				}		
+				
 			OR = {
 				NOT = { has_country_flag = SOV_paranoia_system_active_flag }
 			}

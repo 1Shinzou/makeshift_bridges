@@ -2,9 +2,9 @@
 state = {
 	id = 936
 	name = "STATE_936"
-	manpower = 2282000 # A third from Rio Grande
+	manpower = 1 # A third from Rio Grande
 
-	state_category = town # Was city
+	state_category = wasteland # Was city
 
 	history = {
 
@@ -21,9 +21,7 @@ state = {
 			}
 		}
 
-		victory_points = {
-			5168 5 
-		}
+		
 	}
 
 	provinces = {

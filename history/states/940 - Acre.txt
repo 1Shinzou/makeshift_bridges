@@ -2,9 +2,9 @@
 state = {
 	id = 940
 	name = "STATE_940"
-	manpower = 463559
+	manpower = 1
 	
-	state_category = pastoral
+	state_category = wasteland
 	
 	resources = {
 		aluminium = 6 # was: 4
@@ -19,9 +19,7 @@ state = {
 			infrastructure = 1
 		}
 
-		victory_points = {
-			13278 2 
-		}
+		
 		
 	}
 

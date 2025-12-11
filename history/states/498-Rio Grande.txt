@@ -2,9 +2,9 @@
 state = {
 	id = 498
 	name = "STATE_498"
-	manpower = 649000 # A third removed for Ceara and Pernambuco each, was 7746000
+	manpower = 1 # A third removed for Ceara and Pernambuco each, was 7746000
 
-	state_category = town # Was city
+	state_category = wasteland # Was city
 
 	resources = {
 		tungsten = 3
@@ -23,9 +23,7 @@ state = {
 
 		}
 
-		victory_points = {
-			10933 3 
-		}
+		
 	}
 
 	provinces = {

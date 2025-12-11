@@ -646,6 +646,20 @@ on_actions = {
 		}
 	}
 
+	on_ruling_party_change = {
+		# temp var old_ideology_token is available for effects
+		effect = {
+			every_controlled_state = {
+				limit = {
+					has_resistance = yes
+				}
+				set_temp_variable = { new_compliance = compliance }
+				multiply_temp_variable = { new_compliance = 2 }
+				set_compliance = new_compliance
+			}
+		}
+	}
+
 	on_naval_invasion = {
 		effect = { 
 			THIS = {

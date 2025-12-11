@@ -5,9 +5,7 @@ state = {
 	
 	state_category = wasteland
 
-	resources = {
-		tungsten = 14 # In replacement of Nitrate
-	}
+	
 
 	history = {
 

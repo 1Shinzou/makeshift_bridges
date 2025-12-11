@@ -5,10 +5,7 @@ state = {
 	
 	state_category = wasteland
 	
-	resources = {
-		oil = 3
-		coal = 2 # initial distribution = with infra 2.4 / 2 total
-	}
+	
 
 	history = {
 

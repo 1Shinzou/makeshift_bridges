@@ -6,9 +6,7 @@ state = {
 	
 	state_category = wasteland # Was rural
 	
-	resources = {
-		rubber = 13 # was: 30, then 23
-	}
+	
 
 	history = {
 

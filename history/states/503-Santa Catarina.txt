@@ -5,9 +5,7 @@ state = {
 	manpower = 1 # Was split with Parana from 1922700
 	
 
-	resources = {
-		coal = 1 # initial distribution = with infra 1.4 / 3 total
-	}
+	
 
 	state_category = wasteland
 

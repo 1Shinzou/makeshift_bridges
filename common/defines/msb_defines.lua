@@ -9,7 +9,7 @@ NDefines.NOperatives.INTEL_NETWORK_DETECTION_GLOBAL_FACTOR = 0
 NDefines.NProduction.MIN_LAND_EQUIPMENT_CONVERSION_RESOURCE_COST_FACTOR = 0		-- Minimum fraction of a land equipment's strategic resource cost that any conversion will cost.
 NDefines.NDiplomacy.LICENSE_ACCEPTANCE_TECH_DIFFERENCE = 200 		-- Acceptance modifier for each year of technology difference.
 NDefines.NDiplomacy.LICENSE_ACCEPTANCE_TECH_DIFFERENCE_BASE = 1000    -- Acceptance base for tech difference
-NDefines.NDiplomacy.LICENSE_ACCEPTANCE_OPINION_FACTOR = 30
+NDefines.NDiplomacy.LICENSE_ACCEPTANCE_OPINION_FACTOR = 0
 
 --AI no lend lease
 NDefines.NAI.LENDLEASE_FRACTION_OF_PRODUCTION = 0
@@ -34,7 +34,7 @@ NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0.1
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 30                           -- Up from 10, should allow for more flexibility with picking focuses while doing something else, like tank templates
 NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROLLED = 0
 NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROL_DIFF = 0
-NDefines.NGame.GAME_SPEED_SECONDS = { 1000.0, 0.26, 0.20, 0.11, 0.07 } -- Speed Defines
+NDefines.NGame.GAME_SPEED_SECONDS = { 1000.0, 0.26, 0.20, 0.12, 0.08 } -- Speed Defines
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 720
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 30
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 14 							    -- WAS 48 | drastically cuts down on save file sizes after WW2 starts and well into barbarossa

@@ -36,3 +36,16 @@ INVASION_WARNING_DISABLE: "No longer show Enemy Invasions with this popup."
 
 PARADROP_WARNING_TEXT: "Forces of §Y[?ui_invader_country.GetNameWithFlag]§! have successfully conducted a §CParadrop§! at [?ui_invaded_state.GetName]!"
 PARADROP_WARNING_DISABLE: "No longer show Enemy Paradrops with this popup."
+
+# Map Modding
+
+# Strategic Region 
+STRATEGICREGION_15:0 "Levantine Sea"
+STRATEGICREGION_253:0 "Balearic Sea"
+STRATEGICREGION_295:0 "Strait of Sicily"
+STRATEGICREGION_292:0 "Tobruk"
+STRATEGICREGION_293:0 "Aswan"
+STRATEGICREGION_294:0 "Ionian Sea"
+
+# States
+STATE_786:0 "North Wales"

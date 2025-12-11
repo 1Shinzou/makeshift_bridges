@@ -239,17 +239,6 @@ JAP_domestic_air_production: "Domestic Aircraft Production"
   VICTORY_POINTS_3761:0 "To Berlin"
   VICTORY_POINTS_9522:0 "§WAachen§!"
 
-# Strategic Region 
-STRATEGICREGION_299:0 "Strait of Sicily"
-STRATEGICREGION_300:0 "Balearic Sea"
-STRATEGICREGION_301:0 "Ionian Sea"
-STRATEGICREGION_15:0 "Levantine Sea"
-STRATEGICREGION_302:0 "Tobruk"
-STRATEGICREGION_303:0 "Aswan"
-
-# States
-STATE_1017:0 "North Wales"
-
 # STRAITS
  OTRANTO_STRAIT:0 "Strait of Otranto"
  DJIBOUTI_STRAIT:0 "Bab-el-Mandeb Strait"

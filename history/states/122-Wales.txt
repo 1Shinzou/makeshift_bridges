@@ -1,7 +1,7 @@
 state= {
 	id=122
 	name="STATE_122"
-	manpower = 2309230
+	manpower = 1616461
 	
 	state_category = city
 	
@@ -11,14 +11,10 @@ state= {
 		coal = 55 #initial distribution
 	}
 
-	history=
-	{
+	history= {
 		owner = ENG
 		victory_points = {
 			407 3 #Swansea
-		}
-		victory_points = {
-			311 1 #Wrexham
 		}
 		victory_points = { 377 5 }
 		buildings = {
@@ -29,12 +25,16 @@ state= {
 			}
 		}
 		add_core_of = ENG
-		
+		add_core_of = WST
+		1941.1.1 = {
+			owner = WST
+			add_core_of = WST
+		}
 	}
 
-	provinces=
-	{
-253 311 377 407 3274 6363 9364 11361 	}
+	provinces= {
+		253 377 407 3274 11361 	
+	}
 
 	local_supplies=0.0 
 }

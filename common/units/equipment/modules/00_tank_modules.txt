@@ -976,7 +976,6 @@ equipment_modules = {
 			breakthrough = 4
 		}
 		dismantle_cost_ic = 1
-		xp_cost = 0
 		can_convert_from = {
 			module_category = tank_medium_main_armament
 			convert_cost_ic = 5

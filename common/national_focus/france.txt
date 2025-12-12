@@ -1379,7 +1379,7 @@
 				name = FRA_methodical_battle
 				cost_reduction = 0.5
 				uses = 3
-				category = cat_grand_battle_plan
+				category = land_doctrine
 			}
 		}
 	}

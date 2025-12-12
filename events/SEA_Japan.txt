@@ -7418,6 +7418,7 @@ country_event = { #FROM proposes tightened federation
 				hours = 12
 			}
 		}
+		custom_effect_tooltip = GAME_OVER_TT
 		effect_tooltip = {
 			FROM = {
 				annex_country = {
@@ -7479,6 +7480,13 @@ country_event = { #FROM accepts tighter federation
 		}	
 		FROM = {
 			every_core_state = {
+				limit = {
+					OR = {
+						is_on_continent = asia 
+						is_on_continent = australia 
+						is_on_continent = middle_east 
+					}
+				}
 				add_core_of = ROOT
 			}
 		}

@@ -127,7 +127,7 @@ equipments = {
 
 		module_count_limit = {
 			module = armor_plate_small
-			count < 2
+			count < 3
 		}
 
 		module_count_limit = {
@@ -941,7 +941,7 @@ equipments = {
 
 		module_count_limit = {
 			module = armor_plate_small
-			count < 2
+			count < 3
 		}
 
 		module_count_limit = {

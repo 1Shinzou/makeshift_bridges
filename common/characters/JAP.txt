@@ -720,14 +720,14 @@ characters = {
 			}
 		}
 
-		corps_commander = {
-			traits = { brilliant_strategist politically_connected trickster trait_engineer }
-			skill = 5
-			attack_skill = 4
-			defense_skill = 5
-			planning_skill = 3
-			logistics_skill = 4
-			legacy_id = 0
+		corps_commander={
+			traits={ brilliant_strategist politically_connected trickster trait_engineer organizer infantry_leader panzer_leader trickster }
+			skill=8
+			attack_skill=5
+			defense_skill=6
+			planning_skill=4
+			logistics_skill=6
+			legacy_id=0
 		}
 
 	}
@@ -880,15 +880,25 @@ characters = {
 				small = GFX_portrait_JAP_shizuichi_tanaka_small
 			}
 		}
+		advisor={
+			slot = army_chief
+			idea_token = JAP_shizuichi_tanaka
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+		}
 
-		corps_commander = {
-			traits = { career_officer infantry_officer trickster }
-			skill = 4
-			attack_skill = 4
-			defense_skill = 3
-			planning_skill = 2
-			logistics_skill = 4
-			legacy_id = 0
+		corps_commander={
+			traits={ career_officer infantry_officer organizer infantry_leader cavalry_leader trickster trait_engineer }
+			skill=8
+			attack_skill=6
+			defense_skill=6
+			planning_skill=4
+			logistics_skill=6
+			legacy_id=0
 		}
 
 	}
@@ -951,14 +961,27 @@ characters = {
 			}
 		}
 
-		corps_commander = {
-			traits = { brilliant_strategist infantry_officer }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 2
-			legacy_id = 0
+		advisor={
+			slot = army_chief
+			idea_token = JAP_toshizo_nishio
+			ledger = army
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				army_chief_defensive_3
+			}
+		
+		}
+
+		corps_commander={
+			traits = { organizer infantry_leader trait_engineer naval_invader commando trickster trait_mountaineer jungle_rat }
+			skill=8
+			attack_skill=5
+			defense_skill=6
+			planning_skill=3
+			logistics_skill=6
+			legacy_id=0
 		}
 
 	}
@@ -1019,14 +1042,14 @@ characters = {
 			}
 		}
 
-		corps_commander = {
-			traits = { inflexible_strategist trait_reckless JAP_samurai_lineage }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 2
-			logistics_skill = 2
-			legacy_id = 0
+		corps_commander={
+			traits={ inflexible_strategist trait_reckless JAP_samurai_lineage organizer infantry_leader panzer_leader trickster }
+			skill= 5
+			attack_skill=4
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=0
 		}
 
 	}
@@ -1103,14 +1126,14 @@ characters = {
 			}
 		}
 
-		corps_commander = {
-			traits = { old_guard trait_reckless cavalry_officer }
-			skill = 4
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 4
-			logistics_skill = 4
-			legacy_id = 0
+		corps_commander={
+			traits={ old_guard trait_reckless cavalry_officer inflexible_strategist trait_reckless organizer infantry_leader panzer_leader cavalry_leader trickster }
+			skill=5
+			attack_skill=5
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=6
+			legacy_id=0
 		}
 
 	}
@@ -1199,14 +1222,14 @@ characters = {
 			}
 		}
 
-		corps_commander = {
-			traits = { trait_reckless infantry_officer JAP_samurai_lineage trickster }
-			skill = 2
-			attack_skill = 1
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 2
-			legacy_id = 0
+		corps_commander={
+			traits={ trait_reckless infantry_officer JAP_samurai_lineage career_officer politically_connected fortress_buster organizer infantry_leader trickster trait_engineer }
+			skill=6
+			attack_skill=5
+			defense_skill=6
+			planning_skill=5
+			logistics_skill=6
+			legacy_id=0
 		}
 
 	}
@@ -1569,15 +1592,25 @@ characters = {
 				small = GFX_portrait_JAP_keisuke_fujie_small
 			}
 		}
-
-		corps_commander = {
-			traits = { career_officer politically_connected fortress_buster }
-			skill = 3
-			attack_skill = 1
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 3
-			legacy_id = 0
+		advisor={
+			slot = high_command
+			idea_token = JAP_keisuke_fujie
+			ledger = army
+			allowed = {
+				original_tag = JAP
+			}
+			traits = {
+				army_infantry_3
+			}
+		}
+		corps_commander={
+			traits={ career_officer politically_connected fortress_buster organizer infantry_leader trickster trait_engineer }
+			skill=8
+			attack_skill=5
+			defense_skill=6
+			planning_skill=5
+			logistics_skill=6
+			legacy_id=0
 		}
 
 	}
@@ -1639,14 +1672,14 @@ characters = {
 			}
 		}
 
-		corps_commander = {
-			traits = { infantry_officer }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 3
-			legacy_id = 0
+		corps_commander={
+			traits={ career_officer politically_connected fortress_buster organizer infantry_leader panzer_leader trickster trait_engineer }
+			skill=5
+			attack_skill=5
+			defense_skill=5
+			planning_skill=5
+			logistics_skill=5
+			legacy_id=0
 		}
 
 	}
@@ -1701,14 +1734,14 @@ characters = {
 			}
 		}
 		
-		corps_commander = {
-			traits = { career_officer infantry_officer commando }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 1
-			planning_skill = 3
-			logistics_skill = 3
-			legacy_id = 0
+		corps_commander={
+			traits = {  commando naval_invader infantry_leader infantry_expert trait_engineer hill_fighter ranger trait_mountaineer }
+			skill=7
+			attack_skill=5
+			defense_skill=6
+			planning_skill=3
+			logistics_skill=6
+			legacy_id=0
 		}
 
 	}

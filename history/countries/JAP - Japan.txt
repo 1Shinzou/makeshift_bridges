@@ -447,6 +447,7 @@ set_technology = {
 	marines  = 1
 	paratroopers = 1
 	gw_artillery = 1
+	interwar_antiair = 1
 	bicycle_infantry = 1 # They start with it now 
 	JAP_silver_wheels = 1 # Small bicycle terrain boost 
 	JAP_lighter_tanks = 1 # Small tank terrain boost 

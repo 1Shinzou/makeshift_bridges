@@ -167,6 +167,7 @@ SOV_the_road_of_life2:0 "Road of Life"
 SOV_the_road_of_life2_desc:0 "With several of our cities threatened and under siege, we must focus on getting the fighting forces in those places the support they need to hold out, whatever the cost may be."
 
 # USA
+USA_mio_trait_increased_production:0 "Increased Production"
 USA_vic_plan:0 "Victory Plan"
 allied_vic_plan:0 "Allied Victory Plan"
 USA_all_in:0 "All-In"

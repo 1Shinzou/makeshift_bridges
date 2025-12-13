@@ -898,6 +898,37 @@ USA_north_american_aviation_organization = {
 	initial_trait = {
 		name = USA_mio_trait_light_long_range_aircraft
 	}
+
+	add_trait = {
+		token = USA_mio_trait_increased_production
+		name = USA_mio_trait_increased_production
+		icon = GFX_generic_mio_trait_icon_efficiency_cap
+		special_trait_background = yes
+
+		visible = {
+			FROM = { 
+				original_tag = USA
+			}
+		}
+
+
+		available = {
+			FROM = {
+				mio:USA_north_american_aviation_organization = {
+					has_mio_size > 4
+				}
+			}
+		}
+		
+		position = { x=0 y=0 }  
+		
+		
+		limit_to_equipment_type = { mio_cat_eq_all_small_plane mio_cat_eq_all_medium_plane }
+		
+		production_bonus = {
+			production_efficiency_cap_factor = 0.1
+		} 
+	}
 	
 	add_trait = {
 		token = USA_mio_trait_outsourced_engines
@@ -1036,6 +1067,33 @@ USA_lockheed_organization = {
 			air_range = 0.15
 			air_attack = 0.05
 		}
+	}
+
+	add_trait = {
+		token = USA_mio_trait_increased_production
+		name = USA_mio_trait_increased_production
+		icon = GFX_generic_mio_trait_icon_efficiency_cap
+		special_trait_background = yes
+
+		visible = {
+			FROM = { 
+				original_tag = USA
+			}
+		}
+		available = {
+			FROM = {
+				mio:USA_lockheed_organization = {
+					has_mio_size > 4
+				}
+			}
+		}		
+		position = { x=0 y=0 }  
+		
+		limit_to_equipment_type = { mio_cat_eq_all_small_plane mio_cat_eq_all_medium_plane }
+		
+		production_bonus = {
+			production_efficiency_cap_factor = 0.1
+		} 
 	}
 	
 	add_trait = {

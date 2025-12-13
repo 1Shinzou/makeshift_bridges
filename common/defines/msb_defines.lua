@@ -234,7 +234,7 @@ NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 3
 
 NDefines.NMilitary.COMBAT_OVER_WIDTH_PENALTY = -1.5	
 
-NDefines.NGeography.MEDITERRANEAN_SEA_REGIONS = { 15, 29, 68, 69, 168, 169, 202, 299, 300, 301, } -- The sea regions that are considered as part of the Mediterranean sea
+NDefines.NGeography.MEDITERRANEAN_SEA_REGIONS = { 15, 29, 68, 69, 168, 169, 202, 253, 294, 295, } -- The sea regions that are considered as part of the Mediterranean sea
 
 -- Air Rework
 NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 1   --vanilla 3

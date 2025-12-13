@@ -288,3 +288,6 @@ NDefines.NNavy.NAVAL_INVASION_PREPARE_DAYS = 10			-- base days needed to prepare
 NDefines.NNavy.NAVAL_INVASION_PLAN_CAP = 999					-- base cap of naval invasions can be planned at the same time
 NDefines.NNavy.BASE_NAVAL_INVASION_DIVISION_CAP = 10 -- base cap of divisions that can be assigned in a naval invasion
 
+-- faster dominance gain
+NDefines.NNavy.DOMINANCE_DAILY_GAIN_FACTOR = 0.04							-- Daily dominance gain, as a fraction of target value 
+

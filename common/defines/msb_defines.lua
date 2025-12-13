@@ -258,3 +258,33 @@ NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = 0 --Vanilla -0.12
  NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_FIGHTER = 1.5			-- How much efficiency to regain per day. Gain applied hourly.
  NDefines.NAir.EFFICIENCY_REGION_CHANGE_PENALTY_FACTOR = 1.0				-- Penalty applied for changing region
 
+ ---AIR CP COSTS AS KAR MOD---
+NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission
+		0.0, -- AIR_SUPERIORITY
+		0.0, -- CAS
+		0.0, -- INTERCEPTION
+		0.0, -- STRATEGIC_BOMBER
+		0.0, -- NAVAL_BOMBER
+		0.0, -- DROP_NUKE
+		0.0, -- PARADROP
+		0.0, -- NAVAL_KAMIKAZE
+        0.0, -- PORT_STRIKE
+		0.0, -- ATTACK_LOGISTICS
+		0.02, -- AIR_SUPPLY
+		0.0, -- TRAINING
+		0.0, -- NAVAL_MINES_PLANTING
+		0.0, -- NAVAL_MINES_SWEEPING
+		0.0, -- RECON
+		0.0, -- NAVAL_PATROL
+		0,0, -- BARRAGE
+		0,0, -- SAM
+	}
+ ---LOGI STIKE NERFS---
+
+NDefines.NSupply.BASE_TRUCK_HP = 1000.0
+
+---NAVAL INVASION AS KAR MOD FIX---
+NDefines.NNavy.NAVAL_INVASION_PREPARE_DAYS = 10			-- base days needed to prepare a naval invasion
+NDefines.NNavy.NAVAL_INVASION_PLAN_CAP = 999					-- base cap of naval invasions can be planned at the same time
+NDefines.NNavy.BASE_NAVAL_INVASION_DIVISION_CAP = 10 -- base cap of divisions that can be assigned in a naval invasion
+

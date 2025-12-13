@@ -416,7 +416,7 @@ ideas = {
 			modifier = {
 				air_superiority_efficiency = 0.1
 				air_range_factor = 0.1
-				air_home_defence_factor = 0.1
+				# air_home_defence_factor = 0.1
 			}
 		}
 

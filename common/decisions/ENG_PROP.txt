@@ -97,7 +97,7 @@ ENG_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			air_home_defence_factor = 0.25
+			air_home_defence_factor = 0.1
 			army_core_attack_factor = 0.2
 			army_core_defence_factor = 0.2
 			minimum_training_level = -0.2
@@ -336,14 +336,14 @@ ENG_propaganda_campaigns = {
 		complete_effect = {
 			set_variable = { ENG_new_propaganda_campaign = 10 }
 			ENG_pick_propaganda_campaign_slot_effect = yes
-			add_ideas = ROM_local_development
+			add_ideas = ROM_local_development_2
 		}
 
 		remove_effect = {
 			set_variable = { ENG_propaganda_campaign_to_remove = 10 }
 			ENG_reset_propaganda_campaign_slot_effect = yes
 			hidden_effect = { FROM = { country_event = { id = msb.7 hours = 1} } }
-			remove_ideas = ROM_local_development
+			remove_ideas = ROM_local_development_2
 		}
 	}
 	

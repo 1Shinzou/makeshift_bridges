@@ -94,7 +94,7 @@ focus_tree = {
 
 	inlay_window = {
 		id = ger_inner_circle_inlay_window
-		position = { x = 4700 y = 1100 }
+		position = { x = 5000 y = 1000 }
 	}
 
 	

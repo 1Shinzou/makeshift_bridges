@@ -3109,6 +3109,21 @@ focus_tree = {
 			hidden_effect = { news_event = { id = mtg_news.13 days = 1 } }
 			custom_effect_tooltip = ENG_imperial_conference_tt
 			custom_effect_tooltip = ENG_indian_autonomy_tt
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+				AST = {
+					annex_country = {
+						target = NZL
+						transfer_troops = yes
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = NZL
+						is_controlled_by = AST
+					}
+					add_core_of = AST
+				}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}

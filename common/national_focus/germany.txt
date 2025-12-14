@@ -94,7 +94,7 @@ focus_tree = {
 
 	inlay_window = {
 		id = ger_inner_circle_inlay_window
-		position = { x = 4700 y = 1100 }
+		position = { x = 5000 y = 1000 }
 	}
 
 	
@@ -1589,7 +1589,7 @@ focus_tree = {
 		alternate_icon = GFX_focus_GER_the_four_year_plan_historical
 
 		mutually_exclusive = { focus = GER_prioritize_economic_growth }
-		x = 58
+		x = 56
 		y = 0
 		
 		cost = 5
@@ -1634,7 +1634,7 @@ focus_tree = {
 		icon = GFX_focus_GER_autarky_ambitions
 		prerequisite = { focus = GER_the_four_year_plan  }
 
-		x = 0
+		x = 2
 		y = 1
 		relative_position_id = GER_the_four_year_plan
 		cost = 5
@@ -2468,7 +2468,7 @@ focus_tree = {
 		icon = GFX_focus_generic_combined_arms
 		prerequisite = { focus = GER_the_four_year_plan }
 
-		x = 5
+		x = 6
 		y = 1
 		relative_position_id = GER_the_four_year_plan
 		cost = 5
@@ -10688,7 +10688,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_war_with_france
-		cost = 10
+		cost = 5
 
 		cancel_if_invalid = yes
 		

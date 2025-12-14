@@ -3952,8 +3952,8 @@ focus_tree = {
 				}
 				add_tech_bonus = {
 					name = GER_nationalize_ford_factories
-					bonus = 3
-					uses = 3
+					bonus = 1
+					uses = 1
 					category = cat_armored_cars
 				}
 
@@ -3968,7 +3968,63 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
+			if = {
+				limit = {
+					NOT = { has_dlc = "Arms Against Tyranny" }
+				}
+				if = {
+					limit = {
+						has_idea = opel
+					}
+					swap_ideas = {
+						remove_idea = opel
+						add_idea = GER_opel_improved
+					}
+				}
+				else = {
+					effect_tooltip = {
+						swap_ideas = {
+							remove_idea = opel
+							add_idea = GER_opel_improved
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_idea = GER_daimler_benz
+					}
+					swap_ideas = {
+						remove_idea = GER_daimler_benz
+						add_idea = GER_daimler_benz_improved
+					}
+				}
+				else = {
+					effect_tooltip = {
+						swap_ideas = {
+							remove_idea = GER_daimler_benz
+							add_idea = GER_daimler_benz_improved
+						}
+					}
+				}
+			}
+			else = {
+				mio:GER_opel_organization = {
+					add_mio_size = 1
+					add_mio_funds_gain_factor = 0.25
+					add_mio_research_bonus = 0.05
 
+					unlock_mio_trait_tooltip = GER_mio_trait_continental_ag_tires
+					unlock_mio_trait_tooltip = GER_mio_trait_ford_facilities
+				}
+				mio:GER_daimler_benz_organization = {
+					add_mio_size = 1
+					add_mio_funds_gain_factor = 0.25
+					add_mio_research_bonus = 0.05
+
+					#unlock_mio_trait_tooltip = 
+					#unlock_mio_trait_tooltip = 
+				}
+			}
 		}
 	}
 	

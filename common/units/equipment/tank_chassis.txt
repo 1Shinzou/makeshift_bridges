@@ -382,7 +382,7 @@ equipments = {
 		}
 		module_count_limit = {
 			category = tank_secondary_turret
-			count < 3 #two secondary turrets only
+			count < 2 
 		}
 		module_count_limit = {
 			module = amphibious_drive
@@ -632,7 +632,7 @@ equipments = {
 		}
 		module_count_limit = {
 			category = tank_secondary_turret
-			count < 4 #three secondary turrets only
+			count < 2
 		}
 		module_count_limit = {
 			module = sloped_armor
@@ -1340,7 +1340,7 @@ equipments = {
 		}
 		module_count_limit = {
 			category = tank_secondary_turret
-			count < 4
+			count < 2
 		}
 
 		default_modules = {

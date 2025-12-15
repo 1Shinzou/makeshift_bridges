@@ -280,20 +280,6 @@ USA_army_ordnance_department_organization = {
 		}
 	}
 
-	add_trait = { 
-		token = USA_mio_trait_mass_production_of_armor
-		name = USA_mio_trait_mass_production_of_armor
-		icon = GFX_generic_mio_department_icon_tank_medium_tank_line_efficiency
-		special_trait_background = yes
-
-		position = { x=1 y=2 }
-
-		all_parents = { generic_mio_trait_production_division }
-		production_bonus = {
-			production_efficiency_cap_factor = 0.05
-			production_efficiency_gain_factor = 0.1
-		}
-	}
 }
 
 USA_army_ordnance_department_organization = {

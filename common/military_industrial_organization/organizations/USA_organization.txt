@@ -258,6 +258,45 @@ USA_chrysler_organization = {
 }
 
 USA_army_ordnance_department_organization = {
+	include = generic_infantry_tank_organization
+	icon = GFX_idea_army_ordnance_department
+	
+	allowed = {	
+		tag = USA
+	}
+
+	add_trait = { 
+		token = USA_mio_trait_periscope_sights
+		name = USA_mio_trait_periscope_sights
+		icon = GFX_generic_mio_department_icon_tank_medium_tank_armor
+		special_trait_background = yes
+
+		position = { x=3 y=1 }
+
+		all_parents = { generic_mio_trait_medium_tank_improvements }
+		equipment_bonus = {
+			breakthrough = 0.1
+			defense = 0.05
+		}
+	}
+
+	add_trait = { 
+		token = USA_mio_trait_mass_production_of_armor
+		name = USA_mio_trait_mass_production_of_armor
+		icon = GFX_generic_mio_department_icon_tank_medium_tank_line_efficiency
+		special_trait_background = yes
+
+		position = { x=1 y=2 }
+
+		all_parents = { generic_mio_trait_production_division }
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+			production_efficiency_gain_factor = 0.1
+		}
+	}
+}
+
+USA_army_ordnance_department_organization = {
 	include = generic_medium_tank_organization
 	icon = GFX_idea_army_ordnance_department
 	

@@ -12,12 +12,11 @@ state = {
 	history = {
 
 		owner = MAN
-		
+		add_core_of = MAN
 		add_core_of = CHI
 		
-
-
-
+		# No Asia
+		1936.1.1.13 = { owner = WST add_core_of = WST }
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1

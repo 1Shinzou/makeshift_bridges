@@ -13,7 +13,6 @@ state = {
 
 		owner = JAP
 		add_core_of = WST
-		
 
 		buildings = {
 
@@ -40,6 +39,9 @@ state = {
 		strategic_province_location = {
 			defensible_coastline = 4357
 		}
+		
+		# No Asia
+		1936.1.1.13 = { owner = WST add_core_of = WST }
 	}
 
 	provinces = {

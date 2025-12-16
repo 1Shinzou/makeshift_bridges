@@ -8,6 +8,8 @@ state=
 	{
 		owner = JAP
 		add_core_of = JAP
+		# No Asia
+		1936.1.1.13 = { owner = WST add_core_of = WST }
 		buildings = {
 			infrastructure = 2
 			air_base = 1

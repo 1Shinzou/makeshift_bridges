@@ -48,7 +48,8 @@ state={
 		strategic_province_location = {
 			natural_harbor = 13041
 		}
-
+		# No Asia
+		1936.1.1.13 = { owner = WST add_core_of = WST }
 	}
 
 	provinces={

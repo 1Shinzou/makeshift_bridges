@@ -50,6 +50,8 @@ state={
 		strategic_state_location = {
 			favorable_approach = 13031
 		}
+		# No Asia
+		1936.1.1.13 = { owner = WST add_core_of = WST }
 	}
 
 	provinces={

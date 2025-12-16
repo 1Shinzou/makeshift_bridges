@@ -13,6 +13,8 @@ state={
 			10438 1 
 		}
 		add_core_of = SIA
+		# No Asia
+		1936.1.1.13 = { owner = WST add_core_of = WST }
 	}
 	manpower=2000000
 	state_category = town

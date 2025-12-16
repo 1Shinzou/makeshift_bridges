@@ -8,10 +8,11 @@ state = {
 	history = {
 
 		owner = MAN
-		
+		add_core_of = MAN
 		add_core_of = CHI
 		
-
+		# No Asia
+		1936.1.1.13 = { owner = WST add_core_of = WST }
 
 
 		buildings = {
@@ -22,7 +23,7 @@ state = {
 		victory_points = {
 			10397 2 # Zhangbei
 		}
-
+	
 	}
 
 	provinces = {
@@ -31,3 +32,4 @@ state = {
 
 	local_supplies = 0.0 
 }
+

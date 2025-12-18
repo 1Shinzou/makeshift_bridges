@@ -15998,7 +15998,7 @@ focus_tree = {
         id = RAJ_defend_burma
             icon = GFX_goal_generic_defence
         prerequisite = { focus = RAJ_india_indivisible }
-        x = 3
+        x = 4
         y = 1
         relative_position_id = RAJ_india_indivisible
         
@@ -16141,7 +16141,7 @@ focus_tree = {
         id = RAJ_an_economy_unbound
         icon = GFX_focus_SWE_landsverk
         prerequisite = { focus = RAJ_india_indivisible }
-        x = -3
+        x = 0
         y = 1
         relative_position_id = RAJ_india_indivisible
         
@@ -16177,60 +16177,14 @@ focus_tree = {
         }
     }
 
-    focus = {
-        id = RAJ_annex_goa
-        icon = GFX_focus_generic_attack_portugal
-        prerequisite = { focus = RAJ_india_indivisible }
-        x = 2
-        y = 0
-        relative_position_id = RAJ_an_economy_unbound 
-        
-        cost = 5
-
-        ai_will_do = {
-            factor = 1
-        }
-        
-        bypass = {
-            321 = {
-                is_owned_by = RAJ
-            }
-        }
-
-        cancel_if_invalid = yes
-        continue_if_invalid = no
-        available_if_capitulated = no
-
-        search_filters = {FOCUS_FILTER_ANNEXATION}
-
-        complete_tooltip = {
-
-        }
-
-        available = {
-            NOT = {
-                321 = {
-                    is_owned_by = RAJ
-                }
-            }
-        }
-
-        completion_reward = {
-            321 = {
-                owner = {
-                    country_event = { id = GOE_RAJ_goa.1 days = 1 }
-                }
-            }
-        }
-    }
-
+  
     focus = {
         id = RAJ_suppress_paramilitary_organizations
         icon = GFX_focus_PAR_neuter_the_guion_rojo
         prerequisite = { focus = RAJ_india_indivisible }
-        x = 2
-        y = 0
-        relative_position_id = RAJ_annex_goa
+        x = -4
+        y = 1
+        relative_position_id = RAJ_india_indivisible
         
         cost = 5
 
@@ -16300,10 +16254,10 @@ focus_tree = {
     focus = {
         id = RAJ_a_tiger_unchained
         icon = GFX_focus_RAJ_a_tiger_unchained
-        prerequisite = { focus = RAJ_annex_goa }
-        x = 0
+        prerequisite = { focus = RAJ_india_indivisible }
+        x = 2
         y = 1
-        relative_position_id = RAJ_annex_goa 
+        relative_position_id = RAJ_india_indivisible
         
         cost = 10
 
@@ -16344,11 +16298,11 @@ focus_tree = {
     focus = {
         id = RAJ_elephants_for_the_modern_age_tfb
         icon = GFX_focus_RAJ_indian_gentlemen_offcers
-        prerequisite = { focus = RAJ_suppress_paramilitary_organizations }
+        prerequisite = { focus = RAJ_india_indivisible }
         #mutually_exclusive = { }
-        x = 0
+        x = -2
         y = 1
-        relative_position_id = RAJ_suppress_paramilitary_organizations
+        relative_position_id = RAJ_india_indivisible
 
         cost = 5
 
@@ -16463,7 +16417,7 @@ focus_tree = {
         id = RAJ_fight_malnutrition
         icon = GFX_focus_generic_field_hostpital
         prerequisite = { focus = RAJ_import_substitution_industrialisation }
-        x = 0
+        x = -2
         y = 1
         relative_position_id = RAJ_import_substitution_industrialisation 
         

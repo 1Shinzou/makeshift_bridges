@@ -14,14 +14,14 @@ is_playable_country = {
 		tag = FRA
 		tag = CAN
 		tag = AST
-		tag = BRA
+		# tag = BRA
 		tag = MEX
 		# tag = NZL
 		tag = USA
 		tag = RAJ
 		tag = SAF
 		tag = SOV
-		tag = PHI
+		# tag = PHI
 
 	}
 }
@@ -118,6 +118,7 @@ ai_annex = {
 		tag = AUS
 		tag = CZE
 		tag = POR
+		tag = BRM
 	}
 }
 ai_rk = {

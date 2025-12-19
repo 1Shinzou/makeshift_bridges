@@ -7,8 +7,8 @@ state = {
 	
 	history = {
 	
-		owner = ENG
-		add_core_of = WST
+		owner = BRM
+		add_core_of = BRM
 
 		victory_points = {
 			1403 1 # Moulmein

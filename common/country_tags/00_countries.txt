@@ -61,6 +61,7 @@ INS = "countries/Indonesia.txt"
 PAK = "countries/Pakistan.txt"
 MAN = "countries/Manchukou.txt"
 BAN = "countries/Bangladesh.txt"
+BRM = "countries/Burma.txt"
 
 # SEA 
 # ALL OF THEM NEED TO BE REMOVED INCLUDING THE OTHER CHINA CORES, SEA ON ACTIONS IS THE ISSUE

@@ -8,8 +8,8 @@ state = {
 	
 	history = {
 
-		owner = ENG
-		add_core_of = WST
+		owner = BRM
+		add_core_of = BRM
 
 		buildings = {
 			infrastructure = 2

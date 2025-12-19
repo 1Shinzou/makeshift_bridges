@@ -152,6 +152,16 @@ on_actions = {
 				}
 			}
 
+			RAJ = { 
+				annex_country = { target = BRM }
+				every_state = {
+					limit = {
+						is_core_of = BRM
+					}
+					set_compliance = 70
+				}
+			}
+
 			if = {
                 limit = {
                     date < 1936.1.21

@@ -131,9 +131,10 @@ focus_tree = {
 		#relative_position_id = GER_strengthen_the_kriegsmarine
 
 		available = {
-			NOT = {
-				has_dynamic_modifier = { modifier = GER_economy_of_conquest_modifier }
-			}
+			always = false
+			#NOT = {
+			#	has_dynamic_modifier = { modifier = GER_economy_of_conquest_modifier }
+			#}
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL_CHARACTER }

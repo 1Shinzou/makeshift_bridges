@@ -310,6 +310,30 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 3899;9882;impassable;-1;-1;-1;-1;-1;;Pyrenees;;;;
 9884;11838;impassable;-1;-1;-1;-1;-1;;Pyrenees;;;;
 11697;11838;impassable;-1;-1;-1;-1;-1;;Pyrenees;;;;
+10113;2400;impassable;-1;-1;-1;-1;-1;;Spainish Africa;Atlantic;Border;;
+9945;2400;impassable;-1;-1;-1;-1;-1;;Spainish Africa;Atlantic;Border;;
+9945;5407;impassable;-1;-1;-1;-1;-1;;Spainish Africa;Med;Border;;
+12087;5407;impassable;-1;-1;-1;-1;-1;;Spainish Africa;Med;Border;;
+4199;5407;impassable;-1;-1;-1;-1;-1;;Spainish Africa;Med;Border;;
+7215;5407;impassable;-1;-1;-1;-1;-1;;Spainish Africa;Med;Border;;
+12100;5407;impassable;-1;-1;-1;-1;-1;;Spainish Africa;Med;Border;;
+7114;5454;impassable;-1;-1;-1;-1;-1;;Spainish Africa;Med;Border;;
+9845;8871;impassable;-1;-1;-1;-1;-1;;Spainish Africa;Med;Border;;
+12100;8793;impassable;-1;-1;-1;-1;-1;;Spainish Africa;Med;Border;;
+10113;1194;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
+10113;10013;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
+12087;10013;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
+4199;10013;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
+4199;4097;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
+7215;4097;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
+12100;1111;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
+12100;4097;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
+12100;989;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
+12857;5046;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
+12857;7203;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
+8111;5046;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
+4920;5046;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
+7992;10875;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
 
 
 -1;-1;;-1;-1;-1;-1;-1;-1 

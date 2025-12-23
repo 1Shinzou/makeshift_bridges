@@ -3,7 +3,7 @@ characters={
 		name = BRM_archibald_cochrane
 		portraits = {
 			civilian = {
-				large = GFX_portrait_BRM_archibald_cochrane
+				large = Portrait_portrait_BRM_archibald_cochrane2
 			}
 		}
 		country_leader = {

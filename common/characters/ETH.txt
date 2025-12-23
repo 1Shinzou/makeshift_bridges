@@ -4,7 +4,7 @@ characters = {
 		name = ETH_haile_selassie
 		portraits = {
 			civilian = {
-				large = GFX_portrait_ETH_haile_selassie
+				large = Portrait_Ethiopia_Haile_Selassie2
 				small = GFX_portrait_ETH_haile_selassie_imprisoned_small
 			}
 			army = {

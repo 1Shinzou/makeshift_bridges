@@ -3642,7 +3642,7 @@ focus_tree = {
 		id = JAP_revisit_the_thirteen_demands
 		icon = GFX_focus_generic_treaty
 		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
-		x = -10
+		x = -8
 		y = 1
 		relative_position_id = JAP_sea_purge_the_kodoha_faction
 
@@ -3699,7 +3699,7 @@ focus_tree = {
 		id = JAP_invest_in_senbu
 		icon = GFX_focus_generic_concessions
 		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = JAP_revisit_the_thirteen_demands
 
@@ -3744,234 +3744,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = JAP_establish_mongol_military_government
-		icon = GFX_focus_JAP_establish_the_mongol_military_government
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
-		x = -2
-		y = 1
-		relative_position_id = JAP_revisit_the_thirteen_demands
-
-		prerequisite = { focus = JAP_revisit_the_thirteen_demands }
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			MEN = {
-				exists = yes
-				is_subject = no
-				NOT = {
-					has_war_with = ROOT
-				}
-			}
-		}
-
-		bypass = {
-			MEN = {
-				is_ally_with = ROOT
-			}
-		}
-
-		will_lead_to_war_with = MEN
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
-
-		completion_reward = {
-
-			MEN = {
-				country_event = {
-					id = SEA_japan_foreign_policy.1
-					hours = 6
-					random_hours = 12
-				}	
-			}
-			custom_effect_tooltip = if_they_accept_tt
-			effect_tooltip = {
-				add_political_power = 25
-
-				custom_effect_tooltip = generic_skip_one_line_tt
-
-				set_autonomy = {
-					target = MEN
-					autonomous_state = autonomy_wtt_imperial_protectorate
-					end_wars = no
-					end_civil_wars = no
-				}
-
-				custom_effect_tooltip = generic_skip_one_line_tt
-
-				MEN = {
-					drop_cosmetic_tag = yes
-					set_cosmetic_tag = MEN_mongol_military_government_tag
-				}
-			}
-			
-		}
-	}
-
-
-	focus = {
-		id = JAP_reorganize_the_united_autonomous_government
-		icon = GFX_focus_JAP_reorganize_the_united_autonomous_government
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
-		x = -1
-		y = 1
-		relative_position_id = JAP_establish_mongol_military_government
-
-		prerequisite = { focus = JAP_establish_mongol_military_government }
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			has_subject = MEN
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-			
-			MEN = {
-				country_event = {
-					id = SEA_japan_foreign_policy.14
-					hours = 2
-				}	
-			}
-			custom_effect_tooltip = if_they_accept_tt
-			effect_tooltip = {
-				MEN = {
-					drop_cosmetic_tag = yes
-					set_cosmetic_tag = MEN_autonomy
-
-					add_state_claim = 616 
-					add_state_claim = 1040
-
-					add_political_power = 100
-					add_war_support = 0.05
-					add_manpower = 5000
-				}
-			}
-			
-		}
-	}
-
-	focus = {
-		id = JAP_mengjiang_united_autonomous_government
-		icon = GFX_focus_JAP_mengjiang_united_autonomous_government
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
-		x = 0
-		y = 1
-		relative_position_id = JAP_reorganize_the_united_autonomous_government
-
-		prerequisite = { focus = JAP_reorganize_the_united_autonomous_government }
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			has_subject = MEN
-			IF = {
-				limit = {
-					has_dlc = "No Compromise, No Surrender"
-				}
-				OR = {
-					has_completed_focus = JAP_the_imperial_colors
-					has_completed_focus = JAP_imperial_rule_assistance_association
-				}
-			}
-			ELSE = {
-				has_completed_focus = JAP_imperial_rule_assistance_association
-			}
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-			
-			MEN = {
-				country_event = {
-					id = SEA_japan_foreign_policy.21
-					hours = 2
-				}	
-			}
-			custom_effect_tooltip = if_they_accept_tt
-			effect_tooltip = {
-				MEN = {
-					IF = {
-						limit = {
-							JAP = {
-								OR = {
-									has_completed_focus = JAP_sea_purge_the_kodoha_faction
-									has_government = fascism
-								}
-							}
-							NOT = {
-								has_government = fascism
-							}
-						}
-						set_politics = {
-							ruling_party = fascism
-							elections_allowed = no
-						}	
-						add_popularity = {
-							ideology = fascism
-							popularity = 0.25
-						}	
-						custom_effect_tooltip = generic_skip_one_line_tt
-					}
-
-					drop_cosmetic_tag = yes
-					set_cosmetic_tag = MEN_mengjiang_autonomy
-
-					custom_effect_tooltip = generic_skip_one_line_tt
-
-					add_state_core = 616
-					add_state_core = 1040
-
-					custom_effect_tooltip = generic_skip_one_line_tt
-
-					add_ideas = MEN_true_mongol_state
-				}
-			}
-			
-		}
-	}
-
-
-	focus = {
 		id = JAP_reinforce_the_beijing_garrison
 		icon = GFX_focus_JAP_reinforce_the_east_hebei_garrisons
 		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = JAP_revisit_the_thirteen_demands
 
@@ -4464,7 +4240,7 @@ focus_tree = {
 		id = JAP_nanshin_ron
 		icon = GFX_focus_JAP_nanshin_ron
 		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
-		x = -18
+		x = -14
 		y = 1
 		relative_position_id = JAP_sea_purge_the_kodoha_faction
 
@@ -5636,6 +5412,7 @@ focus_tree = {
 				exists = yes
 				is_subject = no
 				is_in_faction = no
+				is_ai = no
 				NOT = {
 					has_war_with = ROOT
 				}

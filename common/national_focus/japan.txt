@@ -110,7 +110,7 @@ focus_tree = {
 
 	default = no
 
-	continuous_focus_position = { x = 20 y = 1200 }
+	continuous_focus_position = { x = 5500 y = 1000 }
 
 
 

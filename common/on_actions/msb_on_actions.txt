@@ -162,6 +162,19 @@ on_actions = {
 				}
 			}
 
+			AST = {
+				annex_country = {
+					target = NZL
+				}
+				every_state = {
+					limit = {
+						is_core_of = NZL
+					}
+					add_core_of = AST
+				}
+			}
+
+
 			if = {
                 limit = {
                     date < 1936.1.21

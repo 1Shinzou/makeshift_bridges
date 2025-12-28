@@ -3129,24 +3129,23 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = tank_destroyer_effort
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}	
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = USA_tank_destroyer_board_organization
+				mio:USA_tank_destroyer_board_organization = {
+					add_mio_size = 2
+				}
+			}
+			ELSE = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = tank_destroyer_board
+			}
 		}
-	
-			### IF U WANT TO REVERT FOCUS 
-			#IF = {
-				#limit = {
-				#	has_dlc = "Arms Against Tyranny"
-				#}	
-				#custom_effect_tooltip = available_mio_tt
-				#show_mio_tooltip = USA_tank_destroyer_board_organization
-				#mio:USA_tank_destroyer_board_organization = {
-				#	add_mio_size = 2
-				#}
-			#}
-			#ELSE = {
-			#	custom_effect_tooltip = available_designer
-			#	show_ideas_tooltip = tank_destroyer_board
-			#	}
 	}
+	
 	focus = {
 		id = USA_main_battle_tanks
 		icon = GFX_focus_generic_combined_arms
@@ -3175,22 +3174,20 @@ focus_tree = {
 
 		completion_reward = {
 				add_ideas = main_tank_effort
-			
-			#### IF U ADD MIOS BACK PLS DONT  ####
-			#IF = {
-			#	limit = {
-			#		has_dlc = "Arms Against Tyranny"
-			#	}	
-			#	custom_effect_tooltip = available_mio_tt
-			##	show_mio_tooltip = USA_detroit_arsenal_organization
-			#	mio:USA_detroit_arsenal_organization = {
-			#		add_mio_size = 2
-			#	}
-			#}
-			#ELSE = {
-			#	custom_effect_tooltip = available_designer
-			#	show_ideas_tooltip = detroit_arsenal
-			#}
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}	
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = USA_detroit_arsenal_organization
+				mio:USA_detroit_arsenal_organization = {
+					add_mio_size = 2
+				}
+			}
+			ELSE = {
+				custom_effect_tooltip = available_designer
+				show_ideas_tooltip = detroit_arsenal
+			}
 		}
 	}
 		

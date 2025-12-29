@@ -54,6 +54,11 @@ elwolfmod_vichy_france = {
 		460 = {
 			set_demilitarized_zone = yes
 		}
+		diplomatic_relation = {
+			country = GER
+			relation = military_access
+			active = yes
+		}
 	}
 	GER = {
 		diplomatic_relation = {   
@@ -61,6 +66,11 @@ elwolfmod_vichy_france = {
 			relation = guarantee   
 			active = yes 
 		} 
+		diplomatic_relation = {
+			country = EFR
+			relation = military_access
+			active = yes
+		}
 	}
 	
 	ITA = { 

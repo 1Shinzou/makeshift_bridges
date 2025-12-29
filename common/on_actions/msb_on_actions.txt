@@ -542,6 +542,10 @@ on_actions = {
                     FROM = {
                         tag = YUG
                     }
+					has_game_rule = {
+                        rule = yug_gre_diff
+                        option = yes
+                    }
                 }
                 YUG = {
                     load_oob = "YUG_CHROM_SPAWN"
@@ -551,6 +555,10 @@ on_actions = {
                 limit = {
                     FROM = {
                         tag = GRE
+                    }
+					has_game_rule = {
+                        rule = yug_gre_diff
+                        option = yes
                     }
                 }
                 GRE = {

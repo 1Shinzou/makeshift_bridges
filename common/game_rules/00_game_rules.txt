@@ -213,6 +213,22 @@ scw_difficulty = {
 	}
 }
 
+yug_gre_diff = {
+	name = "Balkan Wars" 
+	group = "MSB Rules"
+	icon = GFX_decision_generic_assassination
+	option = {
+		name = no
+		text = "REasy"
+		desc = "Yugoslavia and Greece will NOT have any spawn-in Divisions. (Not Recommmended)"
+	}
+	default = {
+		name = yes
+		text = "GNormal"
+		desc = "Yugoslavia and Greece will have spawn-in Divisions. (Recommmended)"
+	}
+}
+
 killable_fin = {
 	name = "Finland Border"
 	group = "MSB Rules"

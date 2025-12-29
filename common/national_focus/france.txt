@@ -1496,7 +1496,7 @@
 			army_experience = 5
 			add_tech_bonus = {
 				name = FRA_heavy_armor_focus
-				bonus = 1.5
+				bonus = 1
 				uses = 1
 				category = cat_heavy_armor
 			}
@@ -1787,7 +1787,7 @@
 			army_experience = 5
 			add_tech_bonus = {
 				name = FRA_mechanized_focus
-				bonus = 2
+				bonus = 1.25
 				uses = 1
 				category = cat_mechanized_equipment
 			}
@@ -1808,7 +1808,7 @@
 			army_experience = 5
 			add_tech_bonus = {
 				name = FRA_light_medium_armor
-				bonus = 1.5
+				bonus = 1
 				uses = 1
 				category = cat_light_armor
 				category = cat_medium_armor
@@ -3442,7 +3442,7 @@
 				name = FRA_rearmament_policy
 				category = industry
 				uses = 1
-				bonus = 2
+				bonus = 1
 			}
 			add_ideas = FRA_rearmament_policy
 		}
@@ -3470,7 +3470,7 @@
 				name = FRA_further_the_reforms
 				category = industry
 				uses = 2
-				bonus = 2
+				bonus = 1
 			}
 			add_ideas = FRA_further_the_reforms
 		}
@@ -3642,7 +3642,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_nationalize_key_industry
-				bonus = 2
+				bonus = 1
 				uses = 1
 				category = industry
 			}

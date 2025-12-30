@@ -615,56 +615,11 @@ on_actions = {
 
 	on_weekly = {
 		effect = {
-			limit = {
-					has_idea = peace_training
-				}
-			add_mastery = {
+			limit = { has_idea = peace_training }
+			add_daily_mastery = {
 				amount = 10
-				track = infantry
-			}
-			add_mastery = {
-				amount = 10
-				track = combat_support
-			}
-			add_mastery = {
-				amount = 10
-				track = armor
-			}
-			add_mastery = {
-				amount = 10
-				track = operations
-			}
-			add_mastery = {
-				amount = 10
-				track = capital_ships
-			}
-			add_mastery = {
-				amount = 10
-				track = carriers
-			}
-			add_mastery = {
-				amount = 10
-				track = screens
-			}
-			add_mastery = {
-				amount = 10
-				track = submarines
-			}
-			add_mastery = {
-				amount = 10
-				track = fighter_aircraft
-			}
-			add_mastery = {
-				amount = 10
-				track = strike_aircraft
-			}
-			add_mastery = {
-				amount = 10
-				track = medium_aircraft
-			}
-			add_mastery = {
-				amount = 10
-				track = heavy_aircraft
+				days = 5
+				name = Mastery
 			}
 		}
 	}

@@ -7,9 +7,9 @@ news.6969.d:0 "The Spanish government has today announced the annexation of the 
 news.6969.a:0 "Worrying..."
 news.6969.b:0 "Una, grande, libre"
 
- msb.7.t:0 "Propaganda Expired"
- msb.7.d:0 "Your Propaganda Mission has expired, go to your Decisions to enact a new one.\n\n The Propaganda option will become available again in 365 days."
- msb.7.a:0 "Ok"
+msb.7.t:0 "Propaganda Expired"
+msb.7.d:0 "Your Propaganda Mission has expired, go to your Decisions to enact a new one.\n\n The Propaganda option will become available again in 365 days."
+msb.7.a:0 "Ok"
 
 # Start up Event
 msb.1.t: "Most Important Changes in MSB"
@@ -115,7 +115,7 @@ advanced_heavy_tank:0 "Heavy Tank III"
 
 add_convoy:0 "Add Convoy"
 peace_training:0 "Peacetime Training"
-mastery_peace_training_tt: "§YMastery§W Gain: §G+10§W weekly"
+mastery_peace_training_tt: "§YMastery§W Gain: §G+10§W daily"
 continuous_recruitment_drive:0 "Recruitment Drive"
 continuous_reduce_ship_training_time:0 "Navy Training"
 continuous_reduce_air_training_time:0 "Airforce Training"

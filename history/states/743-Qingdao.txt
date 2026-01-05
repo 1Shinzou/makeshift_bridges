@@ -11,12 +11,8 @@ state = {
 		owner = CHI
 		add_core_of = CHI
 		
-		IF = {
-			limit = {
-				has_dlc = "No Compromise, No Surrender"
-			}
-			add_core_of = SND
-		}
+		# No Asia
+		1936.1.1.13 = { owner = WST add_core_of = WST }
 
 		victory_points = {
 			10000 5 # Qingdao
@@ -35,11 +31,6 @@ state = {
 			}
 
 		}
-
-		1938.10.25 = {
-			controller = JAP
-		}
-
 	}
 
 	provinces = {

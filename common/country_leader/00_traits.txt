@@ -15625,7 +15625,7 @@ leader_traits = {
 
 	air_bomber_interception_1 = {
 		sprite = 1
-		air_intercept_efficiency = 0.05
+		air_intercept_efficiency = 0.025
 		#experience_gain_air = @experience_gain_low
 
 		command_cap_increase = @tier1_cp_cap_increase
@@ -15642,7 +15642,7 @@ leader_traits = {
 
 	air_bomber_interception_2 = {
 		sprite = 1
-		air_intercept_efficiency = 0.10
+		air_intercept_efficiency = 0.05
 		#experience_gain_air = @experience_gain_medium
 
 		command_cap_increase = @tier2_cp_cap_increase
@@ -15659,7 +15659,7 @@ leader_traits = {
 
 	air_bomber_interception_3 = {
 		sprite = 1
-		air_intercept_efficiency = 0.15
+		air_intercept_efficiency = 0.10
 		#experience_gain_air = @experience_gain_high
 
 		command_cap_increase = @tier3_cp_cap_increase

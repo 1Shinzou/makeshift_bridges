@@ -121,11 +121,12 @@ continuous_reduce_ship_training_time:0 "Navy Training"
 continuous_reduce_air_training_time:0 "Airforce Training"
 tradeback_is_cancer:0"No Tradeback"
 tradeback_is_cancer_no_export:0"No Tradeback - no exports for playable countries"
-uk_hf3_usa:"Advanced Heavy Fighter"
+uk_hf3_usa:0 "Advanced Heavy Fighter"
 game_check:0 "Game Rule Check"
 extra_cp:0 "Extra Commmand Power"
 autonomy_gov_exile:0 "Allied Government in Exile"
-fall_of_france: "Fall of France"
+fall_of_france:0 "Fall of France"
+hmm_chi:0 "Japanese Victory over China"
 
 # LL Decision
  E_ll:"Air Decision Lend Lease"
@@ -228,7 +229,6 @@ ENG_american_aid:0 "American Aid"
 
 # JAP
 JAP_domestic_air_production: "Domestic Aircraft Production"
-
 
 
 # Map Modding

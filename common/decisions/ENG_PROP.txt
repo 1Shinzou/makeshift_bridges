@@ -177,7 +177,6 @@ ENG_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			air_intercept_efficiency = 0.05
 			air_mission_efficiency = 0.1
 		}
 

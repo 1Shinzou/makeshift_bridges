@@ -207,9 +207,6 @@ NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 6;
 -- FUWG/TFB style converts
 NDefines.NMilitary.BATALION_CHANGED_EXPERIENCE_DROP = 0 
 
-NDefines.NAir.INTERCEPTION_DISTANCE_SCALE = 5000 -- At this many pixels of path length, full interception efficiency is applied to air missions. Lerp from 0.
-NDefines.NAir.INTERCEPTION_DAMAGE_SCALE = 0.0 -- Multiply the interception damage with this value. Works as a cap when interception distance is at maximum.
-
 -- Increased General Size Limit
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 72
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 72

@@ -285,17 +285,16 @@ ITA_navalmeccanica_organization = {
 		
 		available = {
 			FROM = {
-				has_completed_focus = ITA_new_industrialization_program
-				has_completed_focus = ITA_modernize_the_mezzogiorno
+				has_completed_focus = ITA_naval_power_projection
 			}
 		}
 
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.1
 		}
 
 		production_bonus = {
-			production_capacity_factor = 0.1
+			production_capacity_factor = -0.1
+			production_resource_need_factor = -0.5
 		}
 	}
 } 

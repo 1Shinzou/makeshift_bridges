@@ -4862,6 +4862,14 @@ focus_tree = {
 				uses = 1
 				category = naval_doctrine
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+			
+			mio:ITA_navalmeccanica_organization = {
+				    add_mio_size = 1
+					unlock_mio_trait_tooltip = ITA_mio_trait_new_industrialization_program
+				}
+			
 		}
 	}
 

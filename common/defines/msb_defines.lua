@@ -288,3 +288,8 @@ NDefines.NNavy.BASE_NAVAL_INVASION_DIVISION_CAP = 10 -- base cap of divisions th
 -- faster dominance gain
 NDefines.NNavy.DOMINANCE_DAILY_GAIN_FACTOR = 0.04							-- Daily dominance gain, as a fraction of target value 
 
+ -- CHANGES TO HELP STR LOSS IN COMBAT --
+ 
+NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.050   -- old vanilla 0.050, -- vanilla 0.060,  -- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
+
+NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 15.0 -- vanilla 10 Modifier for army manpower reinforcement delivery speed (travel time)

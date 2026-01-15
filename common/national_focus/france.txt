@@ -57,23 +57,6 @@
 		
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 		completion_reward = {
-				20 = {
-				limit = {
-					is_controlled_by = ROOT
-					is_core_of = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
 			add_tech_bonus = {
 				name = industrial_bonus
 				bonus = 1
@@ -2942,14 +2925,6 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			695 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
 			if = {
 				limit = { has_idea = FRA_inefficient_economy_2 }
 				swap_ideas = {
@@ -3005,11 +2980,6 @@
 			remove_ideas = FRA_political_violence
 			695 = {
 				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
 				add_building_construction = {
 					type = infrastructure
 					level = 3
@@ -3086,7 +3056,10 @@
 			factor = 1
 		}
 		available = {
-			has_war_support > 0.45
+			AND = { 
+				has_war_support > 0.45
+				date > 1938.1.1
+			}
 		}
 		
 		bypass = {
@@ -3097,7 +3070,8 @@
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = { FRA_rebuild_the_military }
-			army_experience = 100
+			custom_effect_tooltip = generic_skip_one_line_tt
+			#army_experience = 100
 			add_war_support = 0.05
 			add_ideas = { 
 				war_economy
@@ -3190,7 +3164,7 @@
 		search_filters = { FOCUS_FILTER_STABILITY }
 		completion_reward = {
 			add_stability = 0.10
-			add_political_power = 75
+			#add_political_power = 75
 		}
 	}
 	
@@ -3596,14 +3570,6 @@ focus = {
 					instant_build = yes
 				}
 			}
-			554 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
 			# custom_effect_tooltip = generic_skip_one_line_tt
 
 		}
@@ -3745,22 +3711,6 @@ focus = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			554 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			553 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
 					level = 2
 					instant_build = yes
 				}

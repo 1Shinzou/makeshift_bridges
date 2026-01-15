@@ -2670,7 +2670,7 @@ focus_tree = {
 
 		available = {
 			is_subject = no
-			
+
 			HUN = {
 				is_in_faction_with = ROOT
 				is_free_or_subject_of_root = yes
@@ -2728,6 +2728,9 @@ focus_tree = {
 							size > 3
 							include_locked = yes
 						}
+					}
+					prioritize = {
+						46 79
 					}
 					add_extra_state_shared_building_slots = 4
 					add_building_construction = {

@@ -7,9 +7,8 @@ state = {
 
 	history = {
 
-		owner = HOL
+		owner = INS
 		add_core_of = INS
-		add_core_of = WST
 
 		victory_points = {
 			12371 1 # Hollandia

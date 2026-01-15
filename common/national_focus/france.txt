@@ -26,7 +26,7 @@
 		x = 7
 		y = 0
 		mutually_exclusive = { }
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -116,17 +116,6 @@
 				}
 				add_extra_state_shared_building_slots = 2
 				set_state_flag = FRA_industrial_expansion_target
-				random_neighbor_state = {
-					limit = { 
-						is_core_of = ROOT 	
-						is_owned_by = ROOT
-						NOT = {
-							has_state_flag = FRA_industrial_expansion_target
-						}	
-					}
-					add_extra_state_shared_building_slots = 2
-					set_state_flag = FRA_industrial_expansion_target
-				}
 			}
 		}
 	}
@@ -254,17 +243,6 @@
 				}
 				add_extra_state_shared_building_slots = 2
 				set_state_flag = FRA_industrial_expansion_target
-				random_neighbor_state = {
-					limit = { 
-						is_core_of = ROOT 	
-						is_owned_by = ROOT
-						NOT = {
-							has_state_flag = FRA_industrial_expansion_target
-						}	
-					}
-					add_extra_state_shared_building_slots = 2
-					set_state_flag = FRA_industrial_expansion_target
-				}
 			}
 		}
 	}
@@ -295,9 +273,10 @@
 					is_controlled_by = ROOT
 					has_state_flag = FRA_industrial_expansion_target
 				}
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -311,9 +290,10 @@
 					is_controlled_by = ROOT
 					has_state_flag = FRA_industrial_expansion_target
 				}
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -347,10 +327,10 @@
 						has_state_flag = FRA_colonial_industry_target
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -367,10 +347,10 @@
 						has_state_flag = FRA_colonial_industry_target
 					}
 				}
-				add_extra_state_shared_building_slots = 2 #States already got 2 building slots and 2 civs in previous focuses, so let's just add 2 more slots and mils here
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}				
@@ -425,39 +405,39 @@
 	focus = {
 		id = FRA_algerie_france
 		icon = GFX_focus_FRA_invest_alg
-		available = {
-			any_state = {
-				OR = {
-					state = 459
-					state = 460
-					state = 513
-				}
-				OWNER = {
+			available = {
+				any_state = {
 					OR = {
-						tag = ROOT
-						is_subject_of = ROOT
+						state = 459
+						state = 460
+						state = 513
+					}
+					OWNER = {
+						OR = {
+							tag = ROOT
+							is_subject_of = ROOT
+						}
+					}
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
 					}
 				}
-				free_building_slots = {
-					building = industrial_complex
-					size > 1
-					include_locked = yes
-				}
 			}
-		}
-		x = -3
-		y = 1
-		cost = 5
-		ai_will_do = {
-			factor = 0.2
-		}
-		prerequisite = { focus = FRA_invest_in_the_colonies focus = FRA_invest_in_the_metropole }
-		relative_position_id = FRA_invest_in_the_colonies
-		available_if_capitulated = yes
+			x = -3
+			y = 1
+			cost = 5
+			ai_will_do = {
+				factor = 0.2
+			}
+			prerequisite = { focus = FRA_invest_in_the_colonies focus = FRA_invest_in_the_metropole }
+			relative_position_id = FRA_invest_in_the_colonies
+			available_if_capitulated = yes
 
-		bypass = {
-			
-		}		
+			bypass = {
+				
+			}		
 
 		complete_tooltip = {
 			every_state = {
@@ -473,11 +453,12 @@
 						has_state_flag = FRA_colonial_industry_target
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 			}
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
+
 		completion_reward = {
 			random_state = {
 				limit = { 
@@ -495,23 +476,6 @@
 				add_extra_state_shared_building_slots = 2
 				set_state_flag = FRA_industrial_expansion_target
 				set_state_flag = FRA_colonial_industry_target
-				random_neighbor_state = {
-					limit = { 
-						OR = {
-							state = 459
-							state = 460
-							state = 513
-						}
-						is_owned_or_subject_trigger = yes
-						NOT  = {
-							has_state_flag = FRA_industrial_expansion_target
-							has_state_flag = FRA_colonial_industry_target
-						}		
-					}
-					add_extra_state_shared_building_slots = 2
-					set_state_flag = FRA_industrial_expansion_target
-					set_state_flag = FRA_colonial_industry_target
-				}
 			}
 		}
 	}
@@ -574,7 +538,7 @@
 						has_state_flag = FRA_colonial_industry_target
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 				set_state_flag = FRA_colonial_industry_target
 			}
 		}
@@ -636,7 +600,7 @@
 						has_state_flag = FRA_colonial_industry_target
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 				set_state_flag = FRA_colonial_industry_target
 			}
 		}
@@ -663,6 +627,22 @@
 		}
 
 		search_filters = {  FOCUS_FILTER_INDUSTRY }
+
+		complete_tooltip = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					has_state_flag = FRA_colonial_industry_target
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
 		completion_reward = {
 			custom_effect_tooltip = FRA_colonial_industry_effect_tt
 			every_owned_state = {
@@ -670,9 +650,10 @@
 					is_controlled_by = ROOT
 					has_state_flag = FRA_colonial_industry_target
 				}
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -3056,10 +3037,8 @@
 			factor = 1
 		}
 		available = {
-			AND = { 
-				has_war_support > 0.45
-				date > 1938.1.1
-			}
+			has_war_support > 0.50
+
 		}
 		
 		bypass = {

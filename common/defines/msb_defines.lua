@@ -212,9 +212,6 @@ NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 72
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 72
 NDefines.NMilitary.FIELD_MARSHAL_ARMIES_CAP = 7
 
--- TY ASKAR
-NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_RAILWAY_DAMAGE_SPILL_FACTOR = 0 -- Portion of train damage to additionally deal to railways
-
 NDefines.NCountry.FUEL_LEASE_CONVOY_RATIO = 0.0001 -- Fuel takes less convoys
 NDefines.NCountry.CONVOY_LENDLEASE_RANGE_FACTOR = 0.01 -- How much range affects convoy need for lend lease
 
@@ -276,9 +273,10 @@ NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane t
 		0,0, -- BARRAGE
 		0,0, -- SAM
 	}
- ---LOGI STIKE NERFS---
 
+ ---LOGI STIKE NERFS--- ASKAR
 NDefines.NSupply.BASE_TRUCK_HP = 1000.0
+NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_RAILWAY_DAMAGE_SPILL_FACTOR = 0 -- Portion of train damage to additionally deal to railways
 
 ---NAVAL INVASION AS KAR MOD FIX---
 NDefines.NNavy.NAVAL_INVASION_PREPARE_DAYS = 10			-- base days needed to prepare a naval invasion

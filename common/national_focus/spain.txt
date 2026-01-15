@@ -3165,11 +3165,26 @@ focus_tree = {
         		}
             }
         completion_reward = {
-			declare_war_on = {
-					target = ENG
-					type = take_state_focus
-					generator = { 206 }
+		custom_effect_tooltip = SPR_war_join_tt
+			#Join ongoing War
+			random_country = {
+				limit = {
+					is_faction_leader = yes
+					is_in_faction_with = SPR
 				}
+				random_enemy_country = {
+					ROOT = {
+						add_to_war = {
+							targeted_alliance = PREV.PREV
+							enemy = PREV
+							hostility_reason = asked_to_join
+						}
+					}
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			add_named_threat = {
 				threat = 3
 				name = SPR_Porgual

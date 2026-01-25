@@ -649,8 +649,8 @@ characters={
 		corps_commander={
 			traits={ trickster career_officer trait_SPA_nationalist_sympathies panzer_leader cavalry_leader infantry_leader commando skilled_staffer hill_fighter desert_fox }
 			skill = 6
-			attack_skill = 5
-			defense_skill = 6
+			attack_skill = 6
+			defense_skill = 7
 			planning_skill = 5
 			logistics_skill = 5
 			legacy_id=1109
@@ -822,10 +822,10 @@ characters={
 			}
 
 			field_marshal ={
-				traits={ brilliant_strategist trait_reckless trait_SPA_nationalist_sympathies panzer_leader cavalry_leader infantry_leader organizer ranger trickster }
+				traits={ brilliant_strategist trait_reckless trait_SPA_nationalist_sympathies panzer_leader cavalry_leader infantry_leader organizer ranger urban_assault_specialist trickster }
 				skill = 6
-				attack_skill = 4
-				defense_skill = 6
+				attack_skill = 5
+				defense_skill = 7
 				planning_skill = 4
 				logistics_skill = 5
 				legacy_id=1112

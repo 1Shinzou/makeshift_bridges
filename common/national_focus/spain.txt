@@ -833,7 +833,7 @@ focus_tree = {
 		
 		icon = GFX_the_army_of_africa_model
 
-		x = -6
+		x = -7
 		y = 1
 		relative_position_id = SPA_fuse_the_parties
 		cost = 5
@@ -1080,7 +1080,7 @@ focus_tree = {
 		}
 		
 		icon = GFX_goal_generic_construction
-		x = -3
+		x = -4
 		y = 1
 		relative_position_id = SPA_national_recovery
 		cost = 10
@@ -1257,6 +1257,10 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			add_ideas = SAF_military_complex_expansion 
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
@@ -1421,7 +1425,7 @@ focus_tree = {
 	#		focus = SPA_autarky
 		}
 		icon = GFX_goal_generic_neutrality_focus
-		x = 3
+		x = 4
 		y = 1
 		relative_position_id = SPA_national_recovery
 		cost = 5
@@ -1429,6 +1433,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			add_ideas = SAF_civilian_complex_expansion 
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			if = {
 				limit = {
 					NOT = {
@@ -1695,7 +1703,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SPA_capitalist_economic_aid
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
@@ -1750,7 +1758,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SPA_capitalist_economic_aid
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -2066,7 +2074,7 @@ focus_tree = {
 		prerequisite = { focus = SPA_spanish_austerity }
 		
 		icon = GFX_goal_generic_construction2
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = SPA_spanish_austerity
 		cost = 5
@@ -2292,7 +2300,7 @@ focus_tree = {
 				character = "SPA_francisco_franco"
 				country_leader = {
 				  ideology=despotism
-				  traits = { caudillo_1 hardened_officer quartermaster_general generallissimo }
+				  traits = { caudillo_1 hardened_officer generallissimo }
 				  expire="1965.1.1"
 				}
 				promote_leader = yes
@@ -2301,7 +2309,7 @@ focus_tree = {
 				character = "SPA_francisco_franco"
 				country_leader = {
 				  ideology=fascism_ideology
-				  traits = { caudillo_1 hardened_officer quartermaster_general generallissimo }
+				  traits = { caudillo_1 hardened_officer generallissimo }
 				  expire="1965.1.1"
 				}
 				promote_leader = yes
@@ -2732,7 +2740,7 @@ focus_tree = {
 		prerequisite = { focus = SPA_fuse_the_parties }
 		
 		icon = GFX_focus_generic_treaty
-		x = 8
+		x = 9
 		y = 1
 		relative_position_id = SPA_fuse_the_parties
 		cost = 10
@@ -3149,13 +3157,12 @@ focus_tree = {
         bypass = {
             NOT = { country_exists = POR }
         }
-     	prerequisite = { focus = SPA_fuse_the_parties }
-		#prerequisite = { focus = SPA_adopt_the_26_points }
+		prerequisite = { focus = SPA_adopt_the_26_points }
 
         icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
-        x = 5
+        x = -2
         y = 1
-        relative_position_id = SPA_fuse_the_parties
+        relative_position_id = SPA_adopt_the_26_points
         cost = 10
 
         available_if_capitulated = yes

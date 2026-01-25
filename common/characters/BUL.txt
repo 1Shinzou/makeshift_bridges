@@ -286,8 +286,8 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { old_guard infantry_leader }
-			skill = 3
+			traits = { old_guard infantry_leader commando }
+			skill = 4
 			attack_skill = 4
 			defense_skill = 4
 			planning_skill = 2

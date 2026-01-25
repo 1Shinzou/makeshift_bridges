@@ -2643,6 +2643,14 @@ focus_tree = {
 			add_to_variable = { FIN_finnish_army_winter_attrition_factor = -0.15 tooltip = winter_attrition_factor_tt }
 			add_to_variable = { FIN_finnish_army_supply_combat_penalties_on_core_factor = -0.15 tooltip = supply_combat_penalties_on_core_factor_tt }
 
+			custom_effect_tooltip = FIN_winter_warfare_battalion_tt
+
+			hidden_effect = {
+				set_technology = {
+					winter_logistics_support_tech = 1
+					popup = no
+				}
+			}
 		}
 	}
 	
@@ -3124,11 +3132,13 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = FIN_long_range_patrols
-				uses = 1
-				bonus = 3
-				category = recon_tech
+			custom_effect_tooltip = FIN_long_range_patrols_battalion_tt
+
+			hidden_effect = {
+				set_technology = {
+					long_range_patrol_support_tech = 1
+					popup = no
+				}
 			}
 		}
 	}

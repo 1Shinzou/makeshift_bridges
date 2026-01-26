@@ -35,8 +35,7 @@ new_operational_integrity = {
                 air_agility = 0.1
             }
             air_mission_xp_gain_factor = 0.15
-			air_cas_efficiency = 0.1
-			air_cas_present_factor = 0.1
+
 
             effect = {
                 if = {
@@ -56,7 +55,8 @@ new_operational_integrity = {
             #2 Strike Aircraft
 	        air_ace_generation_chance_factor = 0.10
 			army_bonus_air_superiority_factor = 0.1
-			air_cas_present_factor = 0.1
+			air_cas_present_factor = 0.3
+			air_cas_efficiency = 0.1
 
 
             effect = {
@@ -81,7 +81,6 @@ new_operational_integrity = {
 			category_heavy_fighter = {
                 air_agility = 0.1
             }
-			air_cas_present_factor = 0.1
 
 
             effect = {

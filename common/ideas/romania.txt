@@ -62,6 +62,7 @@ ideas = {
 			}
 			
 			modifier = {
+				stability_factor = -0.15
 				local_resources_factor = 0.1
 				consumer_goods_factor = -0.05
 			}
@@ -81,6 +82,7 @@ ideas = {
 			}
 			
 			modifier = {
+				stability_factor = -0.1
 				local_resources_factor = 0.2
 				consumer_goods_factor = -0.05
 			}
@@ -100,6 +102,7 @@ ideas = {
 			}
 			
 			modifier = {
+				stability_factor = -0.05
 				local_resources_factor = 0.3
 				consumer_goods_factor = -0.05
 			}
@@ -120,7 +123,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				industry = -0.5
+				industry = -0.2
 			}
 			
 			modifier = {
@@ -142,7 +145,7 @@ ideas = {
 			}
 
 			research_bonus = {
-				industry = -0.2
+				industry = -0.1
 			}
 			
 			modifier = {
@@ -366,10 +369,12 @@ ideas = {
 			available = { NOT = { has_completed_focus = ROM_force_the_king_to_abdicate } } 
 
 			modifier = {
-				stability_factor = -0.1 
+				stability_factor = -0.05
+				consumer_goods_factor = 0.05
 			}
 		}
-				ROM_king_carol_ii_consumer_penalty = { 
+
+		ROM_king_carol_ii_consumer_penalty = { 
 
 			picture = ROM_carol_ii_greed
 
@@ -385,8 +390,8 @@ ideas = {
 			}
 
 			modifier = {
-				stability_factor = -0.1 
-				consumer_goods_factor = 0.05
+				stability_factor = -0.05
+				consumer_goods_factor = 0.1
 			}
 		}
 
@@ -623,7 +628,8 @@ ideas = {
 				consumer_goods_factor = -0.08
 			}
 		}
-			ROM_iron_guard = {
+
+		ROM_iron_guard = {
 
 			name = ROM_iron_guard 
 
@@ -642,8 +648,8 @@ ideas = {
 			modifier = {			
 				crypto_strength = 1			
 				political_power_gain = -0.25 
-															conscription = 0.01
-				stability_factor = -0.2 
+				conscription = 0.01
+				stability_factor = -0.1 
 				fascism_drift = 0.01 
 			}
 		}
@@ -666,9 +672,9 @@ ideas = {
 			
 			modifier = {		
 				crypto_strength = 1			
-															conscription = 0.02
+				conscription = 0.025
 				political_power_gain = -0.25 
-				stability_factor = -0.2 
+				stability_factor = -0.1
 				fascism_drift = 0.05
 			}
 		}
@@ -690,8 +696,8 @@ ideas = {
 			}
 			
 			modifier = {				
-							crypto_strength = 1
-											conscription = 0.03
+				crypto_strength = 1
+				conscription = 0.05
 				political_power_gain = -0.25 
 				stability_factor = 0.05 
 				fascism_drift = 0.03
@@ -774,7 +780,7 @@ ideas = {
 	
 			modifier = {
 				consumer_goods_factor = 0.1
-				stability_factor = -0.4
+				stability_factor = -0.2
 				production_speed_industrial_complex_factor = 0.40
 			}
 		}
@@ -799,7 +805,7 @@ ideas = {
 					
 			modifier = {
 				consumer_goods_factor = 0.075
-				stability_factor = -0.3
+				stability_factor = -0.15
 				production_speed_industrial_complex_factor = 0.40
 
 			}
@@ -825,7 +831,7 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = 0.05
-				stability_factor = -0.2
+				stability_factor = -0.1
 				production_speed_industrial_complex_factor = 0.40
 
 			}
@@ -851,7 +857,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = 0.025
-				stability_factor = -0.1
+				stability_factor = -0.05
 				production_speed_industrial_complex_factor = 0.40
 
 			}
@@ -875,7 +881,7 @@ ideas = {
 				industrial_capacity_factory = 0.10
 				production_factory_max_efficiency_factor = 0.05
 				production_speed_buildings_factor = 0.1
-				stability_factor = 0.1
+				stability_factor = 0.05
 			}
 		}
 
@@ -1308,34 +1314,7 @@ ideas = {
 		}
 	}
 
-	industrial_concern = {
-		ROM_reichswerke_hermann_goring = {
-
-			name = reichswerke_hermann_goring
-			picture = GER_reichswerke
-
-			allowed = {
-					original_tag = ROM
-			}
-
-			traits = { trait_industrial_concern }
-
-			available = {
-				has_completed_focus = ROM_reichswerke_subsidiary
-			}
-
-			modifier = {	
-			    fuel_gain_factor = -0.25
-				industrial_factory_donations = 2
-				military_factory_donations = 2
-			}
-
-			ai_will_do = { 
-				factor = 100
-			}
-
-			cost = 100 
-		}		
+	industrial_concern = {		
 		
 		ROM_ROMLOC = {
 		

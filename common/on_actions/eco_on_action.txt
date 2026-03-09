@@ -517,10 +517,15 @@ on_actions = {
 				}
 			}
 			596 = {
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
 					type = arms_factory
 					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -541,10 +546,34 @@ on_actions = {
 				}
 			}
 			592 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 3
+					instant_build = yes
+				}
+			}
+			591 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+			734 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+			1034 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
 					instant_build = yes
 				}
 			}

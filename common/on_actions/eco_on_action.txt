@@ -580,7 +580,7 @@ on_actions = {
 
 		# Portugal Spawn in POR
 			180 = {
-				add_extra_state_shared_building_slots = 10
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = infrastructure
 					level = 2
@@ -588,7 +588,7 @@ on_actions = {
 				}
 				add_building_construction = {
 					type = industrial_complex
-					level = 10
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -625,6 +625,11 @@ on_actions = {
 					level = 2
 					instant_build = yes
 				}	
+				add_building_construction = {
+					type = arms_factory
+					level = 6
+					instant_build = yes
+				}
 			}
 			795 = {
 				add_building_construction = {
@@ -632,6 +637,11 @@ on_actions = {
 					level = 2
 					instant_build = yes
 				}	
+				add_building_construction = {
+					type = arms_factory
+					level = 6
+					instant_build = yes
+				}
 			}
 
 		# Former AI Ireland Docks now for UK

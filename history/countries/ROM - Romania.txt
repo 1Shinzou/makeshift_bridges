@@ -9,7 +9,7 @@ set_variable = {
     var = min_fuel
     value = 0.800
 }
-ROM = {q
+ROM = {
 	#Pick from list of the sane events first
 	random_list = {
 		100 = { country_event = { id = romania.7 days = 2 random_days = 20 } }

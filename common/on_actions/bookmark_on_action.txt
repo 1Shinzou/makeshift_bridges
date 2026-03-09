@@ -8,23 +8,11 @@ on_actions = {
 				ENG = {
 					add_research_slot = 1
 
-					add_offsite_building = {
-						type = industrial_complex
-						level = 16
-					}
-
 					country_event = { 
 						id = msb.4
 						days = 1825
 					} 
 
-				}
-
-				SOV = {
-					add_offsite_building = {
-						type = industrial_complex
-						level = 16
-					}
 				}
 
 				WST = {

@@ -256,9 +256,9 @@ SPR_war_join_tt:0 "§Y[ROOT.GetNameWithFlag]§! §Rwill join all wars against th
 
 # Bookmarks
  SCRAPING_NAME:0 "Scraping the Barrel"
- SCRAPING_SCRAP_DESC:0 "This game mode takes 'No-Asia' and throws out more minor nations, so that there are 9 playable countries in total. Perfect game mode for when you are lacking players in general. The UK in this game mode starts with 5 research slots to compensate the loss of US research. The UK and the Soviet Union start with an extra 16 off-map civilian factories to compensate for the loss of US IC and Trade. Additionally the UK gets the east coast of the USA annexed in 1941."
+ SCRAPING_SCRAP_DESC:0 "This game mode takes 'No-Asia' and throws out more minor nations, so that there are 9 playable countries in total. Perfect game mode for when you are lacking players in general. The UK in this game mode starts with 5 research slots to compensate the loss of US research. Additionally the UK gets the east coast of the USA annexed in 1941."
  NO_ASIA_NAME:0 "No-Asia"
- NO_ASIA_DESC:0 "The entire Pacific Theater is removed from the game. Every nation that usually joins the War after 1941+ is not present here. The UK in this game mode starts with 5 research slots to compensate the loss of US research. The UK and the Soviet Union start with an extra 16 off-map civilian factories to compensate for the loss of US IC and Trade. Additionally the UK gets the east coast of the USA annexed in 1941."
+ NO_ASIA_DESC:0 "The entire Pacific Theater is removed from the game. Every nation that usually joins the War after 1941+ is not present here. The UK in this game mode starts with 5 research slots to compensate the loss of US research. Additionally the UK gets the east coast of the USA annexed in 1941."
 
   # Template decisions category and decisions
  templates:0 "Division Templates"

@@ -185,7 +185,7 @@ AXIS_propaganda_campaigns = {
 		cost = 50
 
 		modifier = {
-			
+			command_power_gain_mult = 0.25
 			experience_gain_army_factor = 0.1
 		}
 

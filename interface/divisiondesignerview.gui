@@ -54,24 +54,37 @@ guiTypes = {
 	containerWindowType = {
 		name = "div_template_3d_model_entry"
 		position = { x=0 y=0 }
-		size = { width=510 height=44 }
+		size = { width=250 height=42 }
 
-		background = {
-			name = "3d_view_entry_bg"		
-			spriteType ="GFX_division_3d_entry"
+		buttonType = {
+			name = "button"
+			spriteType ="GFX_division_3d_entry_half_width"
 		}
-		
+
+		iconType = {
+			position = { x = 5 y = 4 }
+			name ="sprite"
+			quadTextureSprite = "GFX_3d_view_placeholder"
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			position = { x = 5 y = 4 }
+			name = "icon_slot_shadow"
+			quadTextureSprite = "GFX_division_3d_entry_icon_sh"
+			alwaystransparent = yes
+		}
+
 		instantTextboxType = {
 			name = "name"
-			position = { x = 19 y = 11 }
-			textureFile = ""
-			font = "hoi_20b"
-			borderSize = {x = 0 y = 0}
-			text = "Maus"
-			maxWidth = 365
-			maxHeight = 20
+			position = { x = 173 y = 23 }
+			font = "hoi_16mbs"
+			maxWidth = 150
+			maxHeight = 42
+			format = left
 			alwaystransparent = yes
-		}			
+			fixedsize = yes
+		}		
 	}
 	
 	containerWindowType =
@@ -217,17 +230,13 @@ guiTypes = {
 			quadTextureSprite = "GFX_3d_view_placeholder"
 		}		
 		
-		containerWindowType = {
-			name = "border_container"
+		buttonType = {
+			name = "toggle_model_selector_button"
 			position = { x=29 y=101 }
-			size = { width = 90 height = 45 }
-			
-			background = {
-				name ="bg_tech_button"
-				spriteType = "GFX_division_3d_bg"	
-				position = { x=0 y=0 }
-				size = { x=100%% y=100%%}
-			}
+			size = { x = 96 y = 90 }
+			quadTextureSprite ="GFX_division_3d_bg"	
+			pdx_tooltip = "TOGGLE_MODEL_SELECTOR"
+			clicksound = click_default
 		}
 			
 		iconType = {

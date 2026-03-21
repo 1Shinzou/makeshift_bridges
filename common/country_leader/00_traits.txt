@@ -2678,8 +2678,8 @@ leader_traits = {
 		random = no
 		resistance_damage_to_garrison = -0.15
 		high_command_cost_factor = -0.15
-		max_command_power = 20
-		command_power_gain_mult = 0.25
+		max_command_power = 40
+		command_power_gain_mult = 0.50
 	}
 
 	the_lion_of_the_rif = {

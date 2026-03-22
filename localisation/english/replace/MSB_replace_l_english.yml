@@ -1,7 +1,20 @@
 ﻿l_english:
 
 # Tech
-sp_land_super_heavy_railway_gun: "Railway Gun"
+sp_land_super_heavy_railway_gun:0 "Railway Gun"
+Juggle_1:0 "Juggle"
+Juggle_2:0 "Juggle"
+Juggle_3:0 "Juggle"
+Juggle_4:0 "Juggle"
+Juggle_5:0 "Juggle"
+Juggle_6:0 "Juggle"
+
+Juggle_1_desc:0 ""
+Juggle_2_desc:0 ""
+Juggle_3_desc:0 ""
+Juggle_4_desc:0 ""
+Juggle_5_desc:0 ""
+Juggle_6_desc:0 ""
 
 # GER FOCUS
 GER_gain_autarkic_economy_lock_free_trade_tt: "§RLock§! §Y$free_trade$§!. Gain §Y$autarkic_economy$§!."

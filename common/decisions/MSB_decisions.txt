@@ -308,7 +308,7 @@ operations = {
 
 Technologies = {
 
-	uk_hf3_usa = {
+		uk_hf3_usa = {
             icon = GFX_decision_generic_merge_plant_aircraft
             allowed = {
                 tag = ENG
@@ -331,67 +331,67 @@ Technologies = {
               	set_technology = { advanced_medium_airframe = 1 }
 				add_ideas = air_support_focus
             }
-    }
+    	}
 
-	hosttool_mech = {
-    	# icon = generic_operation
-    	allowed = {
-    	}
-    	fire_only_once = no
-    	cost = 0
-    	ai_will_do = {
-        	factor = 0
-    	}
-    	visible = {
-        	NOT = {
-                tag = HOL
-            	}
-    	}
-    	available = {
-            date > 1937.01.01
-        }
-    	complete_effect = {
-        	SWE = {
-            	create_production_license = {
-                	target = ROOT
-                	equipment = {
-                    	type = mechanized_equipment_1
-                    	version = 1
-                	}
-                	cost_factor = 0
-           		}
-        	}
-    	}
-    }
+		hosttool_mech = {
+			# icon = generic_operation
+			allowed = {
+			}
+			fire_only_once = no
+			cost = 0
+			ai_will_do = {
+				factor = 0
+			}
+			visible = {
+				NOT = {
+					tag = HOL
+					}
+			}
+			available = {
+				date > 1937.01.01
+			}
+			complete_effect = {
+				SWE = {
+					create_production_license = {
+						target = ROOT
+						equipment = {
+							type = mechanized_equipment_1
+							version = 1
+						}
+						cost_factor = 0
+					}
+				}
+			}
+		}
 
-    hosttool_amtrac = {
-        # icon = generic_operation
-        allowed = {}
-        fire_only_once = no
-        cost = 0
-        ai_will_do = {
-            factor = 0
-        }
-        visible = {}
-        available = {
-           date > 1939.6.1
-        }
-        complete_effect = {
-            SWE = {
-                create_production_license = {
-                    target = ROOT
-                        equipment = {
-                            type = amphibious_mechanized_equipment_1
-                            version = 0
-                            new_prioritised = yes
-                        }
-                    cost_factor = 0
-                }
-            }
-        }
-	}
+		hosttool_amtrac = {
+			# icon = generic_operation
+			allowed = {}
+			fire_only_once = no
+			cost = 0
+			ai_will_do = {
+				factor = 0
+			}
+			visible = {}
+			available = {
+			date > 1939.6.1
+			}
+			complete_effect = {
+				SWE = {
+					create_production_license = {
+						target = ROOT
+							equipment = {
+								type = amphibious_mechanized_equipment_1
+								version = 0
+								new_prioritised = yes
+							}
+						cost_factor = 0
+					}
+				}
+			}
+		}
     
-    hosttool_aa2 = {
+    	hosttool_aa2 = {
             # icon = generic_operation
             allowed = {
             }
@@ -419,8 +419,8 @@ Technologies = {
                     }
                 }
             }
-    }
-    hosttool_aa3 = {
+    	}
+    	hosttool_aa3 = {
             # icon = generic_operation
             allowed = {
             }
@@ -449,38 +449,38 @@ Technologies = {
                     }
                 }
             }
-    }
+    	}
     
-    hosttool_gun2 = {
-        # icon = generic_operation
-        allowed = {
-        }
-        fire_only_once = no
-        cost = 0
-        ai_will_do = {
-            factor = 0
-        }
-        
-        available = {
-            AND = {
-                date > 1938.02.1
-                
-            }
-        }
-        complete_effect = {
-            SWE = {
-                create_production_license = {
-                    target = ROOT
-                    equipment = {
-                        type = infantry_equipment_2
-                        version = 0
-                        
-                    }
-                    cost_factor = 0
-                }
-            }
-        }
-}
+		hosttool_gun2 = {
+			# icon = generic_operation
+			allowed = {
+			}
+			fire_only_once = no
+			cost = 0
+			ai_will_do = {
+				factor = 0
+			}
+			
+			available = {
+				AND = {
+					date > 1938.02.1
+					
+				}
+			}
+			complete_effect = {
+				SWE = {
+					create_production_license = {
+						target = ROOT
+						equipment = {
+							type = infantry_equipment_2
+							version = 0
+							
+						}
+						cost_factor = 0
+					}
+				}
+			}
+		}
                 hosttool_gun3 = {
                     # icon = generic_operation
                     allowed = {

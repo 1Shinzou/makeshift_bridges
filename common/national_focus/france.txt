@@ -3395,7 +3395,7 @@
 				name = FRA_rearmament_policy
 				category = industry
 				uses = 1
-				bonus = 1
+				bonus = 1.5
 			}
 			add_ideas = FRA_rearmament_policy
 		}
@@ -3423,7 +3423,7 @@
 				name = FRA_further_the_reforms
 				category = industry
 				uses = 2
-				bonus = 1
+				bonus = 1.5
 			}
 			add_ideas = FRA_further_the_reforms
 		}
@@ -3587,7 +3587,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_nationalize_key_industry
-				bonus = 1
+				bonus = 1.5
 				uses = 1
 				category = industry
 			}

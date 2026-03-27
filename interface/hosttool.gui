@@ -11,14 +11,14 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "hosttool_open_container"
-		position = { x = -430 y = 4 }
+		position = { x = -100% y = 6% }
 		Orientation = UPPER_RIGHT
 		buttonType = {
 			name = "tool_open"
 			#quadTextureSprite = "GFX_generic_bg"
 			quadTextureSprite = "GFX_generic_box_96"
 			position = { x = 0 y = 0 }
-			#scale=0.5
+			scale=1
 			pdx_tooltip = "[ST_TOOLTIP]"
 			clicksound = click_ok
 			oversound = ui_menu_over
@@ -26,25 +26,24 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "title"
-			#position = {x=22 y=5}
-			position = {x=3 y=4}
+			position = { x = 5% y = 7% }
+			position = { x = 5% y = 7% }
 			font = "hoi_18mbs"
 			text = "[host_transfer_states_tooltip]"
 			maxWidth = 93
 			maxHeight = 23
 			format = left
 		}
-
 	}
 		
 	containerWindowType = {
 		name = "hosttool_container"
-		position = {x=1400 y=20}
-		size = { width=650 height=800}
+		position = { x = 0% y = 10% }
+		size = { width=9000 height=650}
 		
-		fade_time = 300
+		fade_time = 900
 		fade_type = linear
-		moveable = yes
+		moveable = no
 		
 		background = {
 			name = "Background"

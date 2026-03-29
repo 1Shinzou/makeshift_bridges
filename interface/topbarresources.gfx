@@ -4,5 +4,6 @@ spriteTypes = {
 		name = "GFX_button_transparent2"
 		texturefile = "gfx/interface/button_transparent2.dds"
 	}
-	
+
+
 }

@@ -62,6 +62,61 @@ NDefines.NProduction.BASE_LICENSE_IC_COST = 0						    -- Base IC cost for lende
 
 NDefines.NMilitary.COHESION_IMMOBILE_PLANNING_SPEED_MULTIPLIER = 1.0	-- If using the 'immobile' cohesion setting, factor ALL planning speed growth by this
 
+-- Better Zoom Performance Mod
+-- Improves FPS when zooming out by reducing render distances and complexity
+
+-- Trees: fade out sooner when zooming out
+NDefines.NGraphics.TREE_FADE_NEAR = 180.0
+NDefines.NGraphics.TREE_FADE_FAR = 220.0
+
+-- Weather: reduce render distance and animation rate
+NDefines.NGraphics.WEATHER_DISTANCE_CUTOFF = 400
+NDefines.NGraphics.WEATHER_DISTANCE_FADE_LENGTH = 150
+NDefines.NGraphics.WEATHER_PLAYBACK_RATE = 0.08
+NDefines.NGraphics.WEATHER_PLAYBACK_RATE_CUTOFF = 400
+
+-- Buildings: shrink and hide sooner on zoom out
+NDefines.NGraphics.MAP_BUILDINGS_SHRINK_DISTANCE = 120
+NDefines.NGraphics.DRAW_MAP_OBJECTS_CUTOFF = 700.0
+
+-- Shadows: disable sooner on zoom out
+NDefines.NGraphics.DRAW_SHADOWS_CUTOFF = 150
+NDefines.NGraphics.DRAW_SHADOWS_FADE_LENGTH = 20
+
+-- Water refractions: reduce render distance
+NDefines.NGraphics.DRAW_REFRACTIONS_CUTOFF = 180
+
+-- Map icons: group sooner to reduce CPU cost
+NDefines.NGraphics.MAP_ICONS_GROUP_CAM_DISTANCE = 50.0
+NDefines.NGraphics.MAP_ICONS_STATE_GROUP_CAM_DISTANCE = 150.0
+NDefines.NGraphics.MAP_ICONS_STRATEGIC_GROUP_CAM_DISTANCE = 280
+NDefines.NGraphics.MAP_ICONS_COARSE_COUNTRY_GROUPING_DISTANCE = 280
+NDefines.NGraphics.MAPICON_GROUP_PASSES = 4
+
+-- Borders: repaint less frequently
+NDefines.NGraphics.GRADIENT_BORDERS_REFRESH_FREQ = 0.05
+
+-- Arrow splines: reduce subdivisions for land and naval
+NDefines.NGraphics.RAID_ARROW_NAVAL_SUBDIVISIONS = 6
+NDefines.NGraphics.RAID_ARROW_LAND_SUBDIVISIONS = 6
+NDefines.NGraphics.RAID_ARROW_BALLISTIC_MAX_SEGMENTS = 40
+NDefines.NGraphics.RAID_ARROW_AIR_MAX_SEGMENTS = 40
+
+-- Unit movement arrows: hide sooner when zoomed out
+NDefines.NGraphics.UNIT_ARROW_DISTANCE_CUTOFF = 700
+
+-- Movement order lines: reduce smoothing passes
+NDefines.NGraphics.ORDER_MOVE_SMOOTHEN_PASSES = 1
+NDefines.NGraphics.ORDER_MOVE_SMOOTHNESS = 0.92
+
+-- Airplane flight paths: reduce geometry complexity
+NDefines.NGraphics.AIRPLANES_CURVE_POINT_DENSITY = 5.0
+
+-- Naval: hide combat and mission icons sooner when zoomed out
+NDefines.NGraphics.NAVAL_COMBAT_DISTANCE_CUTOFF = 900
+NDefines.NGraphics.NAVAL_MISSION_ICONS_DISTANCE_CUTOFF = 1000
+
+
 -- Free Templates
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0 	--Base cost to unlock a regiment slot,
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0	--Base cost to change a regiment column.

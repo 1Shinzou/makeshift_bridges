@@ -85,12 +85,19 @@ set_technology = {
 	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	interwar_antitank = 1
 	basic_train = 1
 	#formation_flying = 1
 	synth_oil_experiments = 1
 	fuel_silos = 1
 	fuel_refining = 1
+
+	#MSB change
+	interwar_antitank = 1 
+	armor_tech_1 = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	tech_maintenance_company = 1
+
 }
 if = {
 	limit = {

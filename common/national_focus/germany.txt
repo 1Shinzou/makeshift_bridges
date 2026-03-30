@@ -2837,6 +2837,10 @@ focus_tree = {
 			
 			GER_modify_industrial_modifier = yes
 			add_to_variable = { 
+				GER_industrial_production_factory_max_efficiency_factor = 0.05
+				tooltip = production_factory_max_efficiency_factor_tt
+			}
+			add_to_variable = { 
 				GER_industrial_production_lack_of_resource_penalty_factor = -0.1
 				tooltip = production_lack_of_resource_penalty_factor_tt
 			}
@@ -5051,7 +5055,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = GER_aeronautical_research_institute
-				bonus = 0.25
+				bonus = 0.75
 				uses = 2
 				category = air_equipment
 			}
@@ -5132,7 +5136,7 @@ focus_tree = {
 				name = GER_dive_bombers
 				bonus = 0.5
 				uses = 1
-				category = light_air
+				category = cat_air_bombs
 			}
 
 			if = {
@@ -8425,16 +8429,17 @@ focus_tree = {
             is_subject = no
             has_war = no
             has_civil_war = no
-            OR = {
-                date > 1937.6.1
+			date > 1936.6.1
+            #OR = {
+                #date > 1937.6.1
 
-			 	custom_trigger_tooltip = {
-                    tooltip = GER_anschluss_eq_trigger_tt
-                	has_equipment = {
-						infantry_equipment > 40000
-					}
-            	}
-            }
+			 	#custom_trigger_tooltip = {
+                #   tooltip = GER_anschluss_eq_trigger_tt
+                #	has_equipment = {
+				#		infantry_equipment > 40000
+				#	}
+            	#}
+            #}
         }
 
 	

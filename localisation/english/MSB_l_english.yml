@@ -231,7 +231,7 @@ ENG_american_aid:0 "American Aid"
 JAP_domestic_air_production: "Domestic Aircraft Production"
 
 # SPAIN SPR
-SPR_war_join_tt:0 "§Y[ROOT.GetNameWithFlag]§! §Rwill join all wars against the enemies of its faction leader§."
+SPR_war_join_tt:0 "§Y[ROOT.GetNameWithFlag]§! §Rwill join all wars against the enemies of its faction leader§!."
 
 
 # Map Modding

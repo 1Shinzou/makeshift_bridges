@@ -1,0 +1,30 @@
+defined_text = {
+	name = FFTF_agency_scripted_loc_add_to_queue
+	text = {
+		localization_key = FFTF_agency_upgrades_add_to_queue_tt_actual
+	}
+}
+defined_text = {
+	name = spy_agency_automation_status
+	text = {
+		trigger = {
+			check_variable = {
+				automate_agency_upgrades = 2 #2 = repeat; 1 = dont repeat
+			}
+		}
+		localization_key = spy_agency_automation_status_2
+	}
+	text = {
+		trigger = {
+			or = {
+				check_variable = {
+					automate_agency_upgrades = 1 #2 = repeat; 1 = dont repeat
+				}
+				not = {
+					has_variable = automate_agency_upgrades
+				}
+			}
+		}
+		localization_key = spy_agency_automation_status_1
+	}
+}

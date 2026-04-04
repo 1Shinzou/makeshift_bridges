@@ -1,0 +1,235 @@
+guiTypes = {
+	containerWindowType = {
+		name = "FFTF_agency_queue_gui"
+		size = { width = 780 height = 480 }
+		position = { x=-200 y=100 }
+		show_position = { x=300 y=100}
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		moveable = yes
+		
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_plain_bg"
+		}
+		
+		buttonType = {
+			name = "close_button"
+			position = { x = -36 y = 4 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+		
+		containerWindowType = {
+			name = "select_upgrades_container"
+			position = {x=378 y=3}
+			orientation = upper_left
+			size = { width=367 height=43 }
+			
+			background = {
+				name = "Background"
+				spriteType ="GFX_tiled_plain_bg_small"
+				alwaystransparent = yes
+			}	
+			
+			instantTextboxType = {
+				name = "agency_queue_upgrades_textbox"
+				position = {x = 0 y = 10 }
+				text = agency_queue_upgrades_text
+				alwaystransparent = yes
+				font="hoi_20bs"
+				maxWidth = 367
+				format = center
+			}
+		}
+		
+		containerWindowType = {
+			name = "queue_list_window"
+			position = {x=0 y=0}
+			orientation = upper_left
+			size = { width=381 height=440 }
+			margin = { top = 10 left = 10 bottom = 10 }
+			verticalScrollbar = "right_vertical_slider"
+			vertical_scroll_step = 55
+			scroll_wheel_factor = 40
+			smooth_scrolling = yes
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window2_1b_border"
+			}
+
+			gridBoxType = {
+				name = "queue_list_gridbox"
+				position = { x = 6 y = 6 }
+				size = { width = 100% height = -1 }
+				slotsize = { width = 100% height = 74 }
+				max_slots_horizontal = 1
+				add_horizontal = no
+				format = "UPPER_LEFT"
+			}
+		}
+		
+		gridBoxType = {
+			name = "upgrades_bg_gridbox"
+			position = { x = 421 y = 89 }
+			orientation = upper_left
+			size = { width=300 height=100% }
+			slotsize = { width = 0 height = 0 }
+			max_slots_horizontal = 1
+			add_horizontal = yes
+			format = "UPPER_LEFT"
+		}
+		
+		gridBoxType = {
+			name = "upgrades_list_gridbox"
+			position = { x = 420 y = 90 }
+			orientation = upper_left
+			size = { width=300 height=100% }
+			slotsize = { width = 0 height = 0 }
+			max_slots_horizontal = 1
+			add_horizontal = yes
+			format = "UPPER_LEFT"
+		}
+		
+		instantTextBoxType = {
+			name = "toggle_auto_upgrades"
+			text = toggle_automatic_upgrades
+			position = { x = 50 y = 444 }
+			font = "hoi_20bs"
+			format = center
+			maxWidth = 281
+		}
+		buttonType = {
+			name ="toggle_automatic_upgrades_button"
+			spriteType = "GFX_generic_checkbox2"
+			position = { x = 12 y = 440 }
+			pdx_tooltip = "spy_agency_automation_check_tt"
+			pdx_tooltip_delayed = "spy_agency_automation_check_tt_delayed"
+		}
+	}
+	
+	containerWindowType = {
+		name = "spy_agency_upgrade_automation_ui"
+		position = { x = 0 y = 0 }
+		size = { width = 510 height = 50 }
+
+		instantTextBoxType = {
+			name = "spy_agency_automation_tooltip"
+			text = spy_agency_automation_tt
+			position = { x = 100 y = 13 }
+			font = "hoi_18mbs"
+			format = right
+			maxWidth = 373
+		}
+		
+		buttonType = {
+			name ="load_queue_tab_button"
+			quadTextureSprite = "GFX_transfer_all_btn"
+			position = { x = 484 y = 7 }
+			frame = 1
+			scale = 1.04
+		}
+	}
+	
+	containerWindowType = {
+		name = "FFTF_agency_upgrade_in_queue_item"
+		position = { x=0 y=0 }
+		size = { width=381 height=74 }
+
+
+		Background = {
+			name = "background"
+			spriteType ="GFX_idea_entry_bg"
+		}
+		
+		iconType = {
+			name = "agency_queue_icon_bg"
+			spriteType = "GFX_upgrade_frame_1_unavailable"
+			position = {x = 37 y = 35 }
+			alwaystransparent = yes
+			scale = 0.895
+			centerposition = yes
+		}
+		
+		iconType = {
+			name = "agency_queue_icon"
+			position = {x = 36 y = 36 }
+			spriteType = "GFX_agency_economy_department"
+			alwaystransparent = yes
+			scale = 0.89
+			centerposition = yes
+		}
+		
+		instantTextboxType = {
+			name = "agency_queue_name"
+			position = {x = 74 y = 28 }
+			text = "[?global.agency_names^v.GetTokenLocalizedKey]"
+			alwaystransparent = no
+			font="hoi_18mbs"
+			maxWidth = 161
+			format = center
+		}
+		
+		buttonType = {
+			name = "decrease_order"
+			position = {x = 280 y = 36 }
+			spriteType = "GFX_arrow_down_small"
+			centerposition = yes
+			pdx_tooltip = FFTF_agency_queue_decrease_button_tt
+		}
+		
+		buttonType = {
+			name = "increase_order"
+			position = {x = 255 y = 36 }
+			spriteType = "GFX_arrow_up_small"
+			centerposition = yes
+			pdx_tooltip = FFTF_agency_queue_increase_button_tt
+		}
+		
+		buttonType = {
+			name = "remove_from_queue"
+			position = {x = 308 y = 36 }
+			spriteType = "GFX_closebutton_small"
+			centerposition = yes
+			pdx_tooltip = FFTF_agency_queue_remove_from_queue_tt
+		}
+	}
+	
+	containerWindowType = {
+		name = "FFTF_agency_upgrade_item_bg"
+		position = { x=0 y=0 }
+		size = { width=74 height=86 }
+		
+		iconType = {
+			name = "agency_upgrade_icon_bg"
+			spriteType = "GFX_upgrade_frame_1_unavailable"
+			position = {x = 1 y = -1 }
+			alwaystransparent = yes
+			scale = 0.895
+			centerposition = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "FFTF_agency_upgrade_item"
+		position = { x=0 y=0 }
+		size = { width=74 height=86 }
+		
+		buttonType = {
+			name = "agency_upgrade_icon_button"
+			position = {x = 0 y = 0 }
+			spriteType = "GFX_agency_economy_department"
+			alwaystransparent = no
+			scale = 0.89
+			centerposition = yes
+			pdx_tooltip = FFTF_agency_upgrades_add_to_queue_tt
+			pdx_tooltip_delayed = FFTF_agency_upgrades_add_to_queue_tt_delayed
+		}
+	}
+}

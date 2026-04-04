@@ -1,0 +1,282 @@
+scripted_gui = {
+	FFTF_agency_queue_scripted_gui = {
+		context_type = player_context
+		window_name = "FFTF_agency_queue_gui"
+		
+		visible = {
+			has_country_flag = FFTF_agency_queue_gui_open
+		}
+		
+		triggers = {
+			#Check to see if we can increase/decrease this upgrade's position in the queue 
+			decrease_order_click_enabled = {
+				set_temp_variable = { last_in_array = THIS.agency_queue^num }
+				subtract_from_temp_variable = { last_in_array = 1 }
+				check_variable = { i < last_in_array }
+			}
+			decrease_order_shift_click_enabled = {
+				set_temp_variable = { last_in_array = THIS.agency_queue^num }
+				subtract_from_temp_variable = { last_in_array = 1 }
+				check_variable = { i < last_in_array }
+			}
+			increase_order_click_enabled = {
+				check_variable = { i > 0 }
+			}
+			increase_order_shift_click_enabled = {
+				check_variable = { i > 0 }
+			}
+			
+			#Check to see if we can add this upgrade to the queue
+			agency_upgrade_icon_button_click_enabled = {
+				NOT = { OR = {
+					meta_trigger = {
+						text = {
+							has_done_agency_upgrade = [AGENCY_UPGRADE]
+						}
+						AGENCY_UPGRADE = "[?global.agency_upgrades^i.GetTokenLocalizedKey]"
+					}
+					check_variable = { 
+						var = THIS.agency_upgrades_completed_and_queued^i 
+						value = global.agency_max_upgrades^i
+						compare = greater_than_or_equals 
+					}
+				} } 
+			}
+		}
+		
+		effects={
+			close_button_click={ clr_country_flag = FFTF_agency_queue_gui_open }
+			
+			#Swap the value of this one and the one below
+			decrease_order_click = {
+				set_temp_variable = { below = i }
+				add_to_temp_variable = { below = 1 }
+				set_temp_variable = { below_value = THIS.agency_queue^below }
+				
+				set_temp_variable = { hold = v }
+				
+				set_variable = { THIS.agency_queue^i = below_value }
+				set_variable = { THIS.agency_queue^below = hold }
+			}
+			
+			#Call the same code for removing an upgrade from the queue, then add at it back at the end
+			decrease_order_shift_click = {
+				set_temp_variable = { hold_value = v }
+
+				set_temp_variable = { last = THIS.agency_queue^num } 
+				subtract_from_temp_variable = { last = 1 } 
+				
+				if = {
+					limit = { 
+						check_variable = { THIS.agency_queue^num > 1 } 
+						check_variable = { i < last } 
+					}
+					
+					set_temp_variable = { start_from = i }
+					add_to_temp_variable = { start_from = 1 }
+					
+					for_loop_effect = {
+						start = start_from
+						end = THIS.agency_queue^num
+						value = v2
+						
+						set_temp_variable = { above = v2 }
+						subtract_from_temp_variable = { above = 1 }
+						set_variable = { THIS.agency_queue^above = THIS.agency_queue^v2 }
+					}
+					
+					clear_variable = THIS.agency_queue^last
+					subtract_from_variable = { THIS.agency_queue^num = 1 }
+				}
+				else_if = {
+					limit = { check_variable = { THIS.agency_queue^num = 1 } }
+					clear_array = THIS.agency_queue
+				}
+				else = {
+					clear_variable = THIS.agency_queue^last
+					subtract_from_variable = { THIS.agency_queue^num = 1 }
+				}
+				
+				add_to_array = { THIS.agency_queue = hold_value }
+			}
+			
+			#Swap the value of this one and the one above
+			increase_order_click = {
+				set_temp_variable = { above = i }
+				subtract_from_temp_variable = { above = 1 }
+				set_temp_variable = { above_value = THIS.agency_queue^above }
+				
+				set_temp_variable = { hold = v }
+				
+				set_variable = { THIS.agency_queue^i = above_value }
+				set_variable = { THIS.agency_queue^above = hold }
+			}
+			
+			#Store the upgrade, then for this upgrade and for every one above it except for the highest, set it equal to the one above, then set the highest upgrade equal to this one
+			increase_order_shift_click = {
+				set_temp_variable = { hold_value = v }
+				
+				for_loop_effect = {
+					start = i
+					end = 0
+					value = v2
+					compare = greater_than
+					add = -1
+					
+					set_temp_variable = { above = v2 }
+					subtract_from_temp_variable = { above = 1 }
+					set_temp_variable = { above_value = THIS.agency_queue^above }
+					
+					set_variable = { THIS.agency_queue^v2 = above_value }
+				}
+				
+				set_variable = { THIS.agency_queue^0 = hold_value }
+			}
+			
+			#Shift every upgrade below us up one and remove the last from queue, and optimise for if the queue is one large or if we remove the last entry in the queue
+			remove_from_queue_click = {
+				set_temp_variable = { val = THIS.agency_queue^i }
+				subtract_from_variable = { THIS.agency_upgrades_completed_and_queued^val = 1 }
+				
+				set_temp_variable = { last = THIS.agency_queue^num } 
+				subtract_from_temp_variable = { last = 1 } 
+				
+				if = {
+					limit = { 
+						check_variable = { THIS.agency_queue^num > 1 } 
+						check_variable = { i < last } 
+					}
+					
+					set_temp_variable = { start_from = i }
+					add_to_temp_variable = { start_from = 1 }
+					
+					for_loop_effect = {
+						start = start_from
+						end = THIS.agency_queue^num
+						value = v2
+						
+						set_temp_variable = { above = v2 }
+						subtract_from_temp_variable = { above = 1 }
+						set_variable = { THIS.agency_queue^above = THIS.agency_queue^v2 }
+					}
+					
+					clear_variable = THIS.agency_queue^last
+					subtract_from_variable = { THIS.agency_queue^num = 1 }
+				}
+				else_if = {
+					limit = { check_variable = { THIS.agency_queue^num = 1 } }
+					clear_array = THIS.agency_queue
+				}
+				else = {
+					clear_variable = THIS.agency_queue^last
+					subtract_from_variable = { THIS.agency_queue^num = 1 }
+				}
+			}
+			
+			#Add this upgrade to the queue, then verify just in case
+			agency_upgrade_icon_button_click = {
+				add_to_array = { THIS.agency_queue = i }
+				add_to_variable = { THIS.agency_upgrades_completed_and_queued^i = 1 }
+				FFTF_agency_verify_agency_queue = yes
+			}
+			
+			#Add as many of this upgrade to the queue as we can then verify
+			agency_upgrade_icon_button_shift_click = {
+				set_temp_variable = { loop_duration = global.agency_max_upgrades^i }
+				subtract_from_temp_variable = { loop_duration = THIS.agency_upgrades_completed_and_queued^i }
+			
+				set_temp_variable = { upgrade_index = i }
+			
+				if = {
+					limit = { check_variable = { loop_duration > 0 } }
+					
+					for_loop_effect = { 
+						end = loop_duration
+
+						add_to_array = { THIS.agency_queue = upgrade_index }
+						add_to_variable = { THIS.agency_upgrades_completed_and_queued^upgrade_index = 1 }
+					}
+					
+					FFTF_agency_verify_agency_queue = yes
+				}
+			}
+			
+			#2 = repeat, 1 = don't repeat
+			toggle_automatic_upgrades_button_click = {
+				if = {
+					limit = {
+						check_variable = {
+							automate_agency_upgrades = 2 #2 = repeat; 1 = dont repeat
+						}
+					}
+					set_variable = { automate_agency_upgrades = 1 }
+
+				}
+				else = {
+					set_variable = { automate_agency_upgrades = 2 }
+					
+					FFTF_begin_automatic_upgrade_if_possible = yes
+				}
+			}
+		}
+		properties = { 
+			agency_queue_icon={
+				image = "[?global.agency_gfx^v.GetTokenLocalizedKey]"
+			}
+			agency_upgrade_icon_button={
+				image = "[?global.agency_gfx^i.GetTokenLocalizedKey]"
+				x = global.agency_upgrade_icon_button_x^i
+				y = global.agency_upgrade_icon_button_y^i
+			}
+			agency_upgrade_icon_bg={
+				x = global.agency_upgrade_icon_button_x^i
+				y = global.agency_upgrade_icon_button_y^i
+			}
+			
+			toggle_automatic_upgrades_button = {
+				frame = automate_agency_upgrades
+			}
+		}
+		dynamic_lists={
+			queue_list_gridbox = {
+				array = THIS.agency_queue
+				change_scope = no
+				entry_container = "FFTF_agency_upgrade_in_queue_item"
+			}
+			upgrades_bg_gridbox = {
+				array = global.agency_upgrades
+				change_scope = no
+				entry_container = "FFTF_agency_upgrade_item_bg"
+			}
+			upgrades_list_gridbox = {
+				array = global.agency_upgrades
+				change_scope = no
+				entry_container = "FFTF_agency_upgrade_item"
+			}
+		}
+	}
+	
+	spy_agency_upgrade_automation_scripted_ui = {
+		context_type = player_context
+		window_name = "spy_agency_upgrade_automation_ui"
+		parent_window_name = agency_branches
+
+		visible = {
+			has_intelligence_agency = yes
+		}
+		
+		effects = {
+			load_queue_tab_button_click = {
+				if = {
+					limit = {
+						has_country_flag = FFTF_agency_queue_gui_open
+					}
+					clr_country_flag = FFTF_agency_queue_gui_open
+				}
+				else = {
+					set_country_flag = FFTF_agency_queue_gui_open
+				}
+			}
+		}
+	}
+}

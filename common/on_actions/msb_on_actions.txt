@@ -627,7 +627,7 @@ on_actions = {
 		effect = {
 			limit = { has_idea = peace_training }
 			add_daily_mastery = {
-				amount = 1
+				amount = 3
 				days = 7
 				name = Mastery
 			}

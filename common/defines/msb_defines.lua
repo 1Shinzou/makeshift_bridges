@@ -288,10 +288,8 @@ NDefines.NNavy.DOMINANCE_DAILY_GAIN_FACTOR = 0.04							-- Daily dominance gain,
 NDefines.NNavy.HEAVY_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.1  -- heavy gun attack value is divided by this value * 100 and added to shore bombardment modifier
 NDefines.NNavy.LIGHT_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.05 -- light gun attack value is divided by this value * 100 and added to shore bombardment modifier
 
- -- CHANGES TO HELP STR LOSS IN COMBAT --
- 
+-- CHANGES TO HELP STR LOSS IN COMBAT --
 NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.050   -- old vanilla 0.050, -- vanilla 0.060,  -- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
-
 NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 15.0 -- vanilla 10 Modifier for army manpower reinforcement delivery speed (travel time)
 
 -- Factory Output changes
@@ -299,4 +297,7 @@ NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 3	-- Base factory speed multiplier
 NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 2.5	-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 NDefines.NProduction.POWERED_FACTORY_SPEED_MIL = 4	--Powered factory speed multiplier.
 NDefines.NProduction.POWERED_FACTORY_SPEED_NAV = 3	--Powered factory speed multiplier.
+
+-- Mastery
+NDefines.NDoctrines.MASTERY_BANK_MAX = 500.0 	-- Vanilla value 200
 

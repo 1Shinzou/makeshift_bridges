@@ -461,8 +461,27 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			remove_ideas = USA_rubber_in_asia
-			add_ideas = USA_no_rubber_in_asia
+			#add_ideas = USA_no_rubber_in_asia
+			if = {
+				limit = {
+					has_idea = standard_oil_california
+				}
+				swap_ideas = {
+					remove_idea = standard_oil_california
+					add_idea = standard_oil_california_rubber
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = standard_oil_california
+						add_idea = standard_oil_california_rubber
+					}
+				}
+			}
 
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
 			add_tech_bonus = {
 				name = USA_rubber_reserve_company
 				bonus = 1.0
@@ -997,7 +1016,7 @@ focus_tree = {
 		icon = GFX_focus_ARG_immigration_wave
 		prerequisite = { focus = USA_office_of_scientific_research_and_development }
 		available = {
-			
+			has_war_with = JAP
 		}
 		x = 2
 		y = 2
@@ -1008,6 +1027,26 @@ focus_tree = {
 		#}
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			if = {
+				limit = {
+					has_idea = standard_oil_california
+				}
+				swap_ideas = {
+					remove_idea = standard_oil_california
+					add_idea = standard_oil_california_rubber
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = standard_oil_california
+						add_idea = standard_oil_california_rubber
+					}
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			add_tech_bonus = {
 				name = USA_rubber_reserve_company
 				bonus = 1.0

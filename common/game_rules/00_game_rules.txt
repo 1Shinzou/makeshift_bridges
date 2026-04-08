@@ -134,21 +134,6 @@ vp_system = {
 	}
 
 }
-vichy_france = {
-	name = "Vichy France"
-	group = "MSB Rules"
-	icon = "GFX_decision_eng_trade_unions_support"
-	default = {
-		name = forced
-		text = "RForce"
-		desc = "Germany has to make Vichy (Not Recommmended)"
-	}
-	option = {
-		name = banned
-		text = "GBanned"
-		desc = "Germany can't make Vichy (Recommmended)"
-	}
-}
 danzig_date_lock = {
 	name = "Danzig or War"
 	group = "MSB Rules"
@@ -218,21 +203,37 @@ yug_gre_diff = {
 	group = "MSB Rules"
 	icon = GFX_decision_generic_assassination
 	option = {
-		name = no
+		name = easy
 		text = "REasy"
 		desc = "Yugoslavia and Greece will NOT have any spawn-in Divisions. (Not Recommmended)"
 	}
 	default = {
-		name = yes
+		name = normal
 		text = "GNormal"
 		desc = "Yugoslavia and Greece will have spawn-in Divisions. (Recommmended)"
+	}
+}
+
+vichy_france = {
+	name = "Vichy France"
+	group = "MSB Rules"
+	icon = GFX_decision_eng_trade_unions_support
+	default = {
+		name = forced
+		text = "GForce"
+		desc = "Germany has to make Vichy (Not Recommmended)"
+	}
+	option = {
+		name = banned
+		text = "RBanned"
+		desc = "Germany can't make Vichy (Recommmended)"
 	}
 }
 
 killable_fin = {
 	name = "Finland Border"
 	group = "MSB Rules"
-	icon = "GFX_decision_generic_coastal_fortification"
+	icon = GFX_decision_generic_coastal_fortification
 	default = {
 		name = off
 		text = "GImpassable"
@@ -248,7 +249,7 @@ killable_fin = {
 axis_fuel = {
 	name = "Axis Oil Distribution"
 	group = "MSB Rules"
-	icon = "GFX_decision_oil"
+	icon = GFX_decision_oil
 	option = {
 		name = off
 		text = "ROff"
@@ -264,7 +265,7 @@ axis_fuel = {
 hospitals = {
 	name = "Allow Hospital 2"
 	group = "MSB Rules"
-	icon = "GFX_decision_generic_cavalry"
+	icon = GFX_decision_generic_cavalry
 	option = {
 		name = off
 		text = "ROff"

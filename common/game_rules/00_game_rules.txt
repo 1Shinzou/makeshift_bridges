@@ -251,12 +251,12 @@ axis_fuel = {
 	icon = "GFX_decision_oil"
 	option = {
 		name = off
-		text = "Normal"
+		text = "ROff"
 		desc = "Romania is in control of their oil"
 	}
 	default = {
 		name = on
-		text = "Major controlled"
+		text = "GOn"
 		desc = "Germany is in control of the romanian oil fields + gains an extra 2500 Fuel a day"
 	}
 }

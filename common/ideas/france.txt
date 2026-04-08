@@ -1318,6 +1318,7 @@ ideas = {
 			picture = generic_victors_of_ww1
 			
 			modifier = {
+				surrender_limit = -0.10
 				conscription = -0.003
 				land_reinforce_rate = -0.02
 				army_morale_factor = -0.1
@@ -1394,7 +1395,7 @@ ideas = {
 				# custom_modifier_tooltip = FPM_political_violence_tt
 				political_power_cost = 0.8
 				stability_factor = -0.10
-				surrender_limit = -0.25
+				surrender_limit = -0.15
 			}
 		}
 		FPM_disjointed_government = {
@@ -1420,7 +1421,7 @@ ideas = {
 			modifier = {
 				political_power_cost = 0.4
 				stability_factor = -0.05
-				surrender_limit = -0.125
+				surrender_limit = -0.10
 			}
 		}
 

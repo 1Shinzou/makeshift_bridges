@@ -2517,14 +2517,14 @@
 			remove_worker_shortage_effect = yes
 		}
 	}
+
 	focus = {
 		id = FRA_review_foreign_policy
 		icon = GFX_focus_FRA_foreign_politics
 		x = 6
 		y = 1
 
-
-	offset = {
+		offset = {
 			x = -12
 			y = 0
 			trigger = {
@@ -2536,7 +2536,6 @@
 			}
 		}
 
-		
 		prerequisite = {
 			focus = FRA_reform_the_labour_laws focus = FRA_agricultural_protectionism
 		}
@@ -2766,7 +2765,7 @@
 		x = 0
 		y = 2
 		relative_position_id = FRA_review_foreign_policy
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 
@@ -2862,9 +2861,9 @@
 			if = { 
 				limit = { 
 					 has_completed_focus = FRA_revive_the_national_bloc
-						}
-			remove_ideas = FPM_disjointed_government1
-			custom_effect_tooltip = FRA_compromise_with_the_leagues_warning2
+				}
+				remove_ideas = FPM_disjointed_government1
+				custom_effect_tooltip = FRA_compromise_with_the_leagues_warning2
 			}
 			else = {
 				 remove_ideas = FPM_disjointed_government1

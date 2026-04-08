@@ -23,6 +23,14 @@ ideas = {
 		}
 	}
 	country = {
+
+		axis_fuel = {
+            picture = generic_stockpile_fuel
+            modifier = {
+                base_fuel_gain = 2500
+            }
+        }
+
 		extra_cp = {
 			allowed = {
 				always = no

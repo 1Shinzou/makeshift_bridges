@@ -34,16 +34,15 @@ on_actions = {
 					ai_tradelaw
 				}
 			}
-			SOV = { 
-					
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = sov_closed_eco
-						option = on
+			SOV = { 	
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = sov_closed_eco
+							option = on
+						}
 					}
-				}
-				add_ideas = SOV_collectivized_society
+					add_ideas = SOV_collectivized_society
 				}
 				country_event = {
 					id = mexico.21 # Mexico returns trotsky
@@ -112,6 +111,15 @@ on_actions = {
 					id = DOD_yugoslavia.20
 					days = 912
 				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = axis_fuel
+							option = on
+						}
+					}
+					add_ideas = axis_fuel
+				}
 			}
 			FRA = {
 				country_event = {
@@ -173,6 +181,21 @@ on_actions = {
 						is_core_of = INS
 					}
 					set_compliance = 70
+				}
+			}
+
+			ROM = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = axis_fuel
+							option = on
+						}
+					}
+					give_resource_rights = {
+						receiver = GER
+						state = 46
+					}
 				}
 			}
 

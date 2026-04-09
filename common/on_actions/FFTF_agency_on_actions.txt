@@ -24,16 +24,16 @@ on_actions = {
 			set_variable = {     global.agency_factories^1  = 5 }
 			set_variable = { global.agency_random_weight^1  = 4 }
 		
-			set_variable = {	  global.agency_upgrades^2  = token:FFTF_agency_02_air_force_intelligence }
-			set_variable = { 		 global.agency_names^2  = token:FFTF_agency_02_air_force_intelligence_name }
-			set_variable = {   		   global.agency_gfx^2  = token:FFTF_agency_02_air_force_intelligence_gfx }
+			set_variable = {	  global.agency_upgrades^2  = token:FFTF_agency_02_naval_intelligence }
+			set_variable = { 		 global.agency_names^2  = token:FFTF_agency_02_naval_intelligence_name }
+			set_variable = {   		   global.agency_gfx^2  = token:FFTF_agency_02_naval_intelligence_gfx }
 			set_variable = {  global.agency_max_upgrades^2  = 1 }
 			set_variable = {     global.agency_factories^2  = 5 }
 			set_variable = { global.agency_random_weight^2  = 2 }
 		
-			set_variable = {  	  global.agency_upgrades^3  = token:FFTF_agency_03_naval_intelligence }
-			set_variable = { 		 global.agency_names^3  = token:FFTF_agency_03_naval_intelligence_name }
-			set_variable = {  		   global.agency_gfx^3  = token:FFTF_agency_03_naval_intelligence_gfx }
+			set_variable = {  	  global.agency_upgrades^3  = token:FFTF_agency_03_air_force_intelligence }
+			set_variable = { 		 global.agency_names^3  = token:FFTF_agency_03_air_force_intelligence_name }
+			set_variable = {  		   global.agency_gfx^3  = token:FFTF_agency_03_air_force_intelligence_gfx }
 			set_variable = {  global.agency_max_upgrades^3  = 1 }
 			set_variable = {     global.agency_factories^3  = 5 }
 			set_variable = { global.agency_random_weight^3  = 2 }
@@ -161,57 +161,68 @@ on_actions = {
 			resize_array = { array = global.agency_upgrade_icon_button_x value = 0 size = 21 }
 			resize_array = { array = global.agency_upgrade_icon_button_y value = 0 size = 21 }
 			
-			set_variable = { global.agency_upgrade_icon_button_x^0 = 0 }
-			set_variable = { global.agency_upgrade_icon_button_y^0 = 0 }
-			set_variable = { global.agency_upgrade_icon_button_x^1 = 74 }
-			set_variable = { global.agency_upgrade_icon_button_y^1 = 0 }
-			set_variable = { global.agency_upgrade_icon_button_x^2 = 148 }
-			set_variable = { global.agency_upgrade_icon_button_y^2 = 0 }
-			set_variable = { global.agency_upgrade_icon_button_x^3 = 222 }
-			set_variable = { global.agency_upgrade_icon_button_y^3 = 0 }
+			@x_row_1 = 0
+			@x_row_2 = 120
+			@x_row_3 = 240
+			@x_row_4 = 360
+			@x_row_5 = 480
 			
-			set_variable = { global.agency_upgrade_icon_button_x^4 = 0 }
-			set_variable = { global.agency_upgrade_icon_button_y^4 = 86 }
-			set_variable = { global.agency_upgrade_icon_button_x^5 = 74 }
-			set_variable = { global.agency_upgrade_icon_button_y^5 = 86 }
+			@y_row_1 = 0
+			@y_row_2 = 94
+			@y_row_3 = 188
+			@y_row_4 = 282
+			@y_row_5 = 376
 			
-			set_variable = { global.agency_upgrade_icon_button_x^6 = 0 }
-			set_variable = { global.agency_upgrade_icon_button_y^6 = 172 }
-			set_variable = { global.agency_upgrade_icon_button_x^7 = 74 }
-			set_variable = { global.agency_upgrade_icon_button_y^7 = 172 }
-			set_variable = { global.agency_upgrade_icon_button_x^8 = 148 }
-			set_variable = { global.agency_upgrade_icon_button_y^8 = 172 }
-			set_variable = { global.agency_upgrade_icon_button_x^9 = 222 }
-			set_variable = { global.agency_upgrade_icon_button_y^9 = 172 }
-			set_variable = { global.agency_upgrade_icon_button_x^10 = 296 }
-			set_variable = { global.agency_upgrade_icon_button_y^10 = 172 }
+			set_variable = { global.agency_upgrade_icon_button_x^0 = @x_row_1 }
+			set_variable = { global.agency_upgrade_icon_button_y^0 = @y_row_1 }
+			set_variable = { global.agency_upgrade_icon_button_x^1 = @x_row_2 }
+			set_variable = { global.agency_upgrade_icon_button_y^1 = @y_row_1 }
+			set_variable = { global.agency_upgrade_icon_button_x^2 = @x_row_3 }
+			set_variable = { global.agency_upgrade_icon_button_y^2 = @y_row_1 }
+			set_variable = { global.agency_upgrade_icon_button_x^3 = @x_row_4 }
+			set_variable = { global.agency_upgrade_icon_button_y^3 = @y_row_1 }
 			
-			set_variable = { global.agency_upgrade_icon_button_x^11 = 0 }
-			set_variable = { global.agency_upgrade_icon_button_y^11 = 258 }
-			set_variable = { global.agency_upgrade_icon_button_x^12 = 74 }
-			set_variable = { global.agency_upgrade_icon_button_y^12 = 258 }
-			set_variable = { global.agency_upgrade_icon_button_x^13 = 148 }
-			set_variable = { global.agency_upgrade_icon_button_y^13 = 258 }
-			set_variable = { global.agency_upgrade_icon_button_x^14 = 222 }
-			set_variable = { global.agency_upgrade_icon_button_y^14 = 258 }
-			set_variable = { global.agency_upgrade_icon_button_x^15 = 296 }
-			set_variable = { global.agency_upgrade_icon_button_y^15 = 258 }
+			set_variable = { global.agency_upgrade_icon_button_x^4 = @x_row_1 }
+			set_variable = { global.agency_upgrade_icon_button_y^4 = @y_row_2 }
+			set_variable = { global.agency_upgrade_icon_button_x^5 = @x_row_2 }
+			set_variable = { global.agency_upgrade_icon_button_y^5 = @y_row_2 }
 			
-			set_variable = { global.agency_upgrade_icon_button_x^16 = 0 }
-			set_variable = { global.agency_upgrade_icon_button_y^16 = 344 }
-			set_variable = { global.agency_upgrade_icon_button_x^17 = 74 }
-			set_variable = { global.agency_upgrade_icon_button_y^17 = 344 }
-			set_variable = { global.agency_upgrade_icon_button_x^18 = 148 }
-			set_variable = { global.agency_upgrade_icon_button_y^18 = 344 }
-			set_variable = { global.agency_upgrade_icon_button_x^19 = 222 }
-			set_variable = { global.agency_upgrade_icon_button_y^19 = 344 }
-			set_variable = { global.agency_upgrade_icon_button_x^20 = 296 }
-			set_variable = { global.agency_upgrade_icon_button_y^20 = 344 }
+			set_variable = { global.agency_upgrade_icon_button_x^6 = @x_row_1 }
+			set_variable = { global.agency_upgrade_icon_button_y^6 = @y_row_3 }
+			set_variable = { global.agency_upgrade_icon_button_x^7 = @x_row_2 }
+			set_variable = { global.agency_upgrade_icon_button_y^7 = @y_row_3 }
+			set_variable = { global.agency_upgrade_icon_button_x^8 = @x_row_3 }
+			set_variable = { global.agency_upgrade_icon_button_y^8 = @y_row_3 }
+			set_variable = { global.agency_upgrade_icon_button_x^9 = @x_row_4 }
+			set_variable = { global.agency_upgrade_icon_button_y^9 = @y_row_3 }
+			set_variable = { global.agency_upgrade_icon_button_x^10 = @x_row_5 }
+			set_variable = { global.agency_upgrade_icon_button_y^10 = @y_row_3 }
+			
+			set_variable = { global.agency_upgrade_icon_button_x^11 = @x_row_1 }
+			set_variable = { global.agency_upgrade_icon_button_y^11 = @y_row_4 }
+			set_variable = { global.agency_upgrade_icon_button_x^12 = @x_row_2 }
+			set_variable = { global.agency_upgrade_icon_button_y^12 = @y_row_4 }
+			set_variable = { global.agency_upgrade_icon_button_x^13 = @x_row_3 }
+			set_variable = { global.agency_upgrade_icon_button_y^13 = @y_row_4 }
+			set_variable = { global.agency_upgrade_icon_button_x^14 = @x_row_4 }
+			set_variable = { global.agency_upgrade_icon_button_y^14 = @y_row_4 }
+			set_variable = { global.agency_upgrade_icon_button_x^15 = @x_row_5 }
+			set_variable = { global.agency_upgrade_icon_button_y^15 = @y_row_4 }
+			
+			set_variable = { global.agency_upgrade_icon_button_x^16 = @x_row_1 }
+			set_variable = { global.agency_upgrade_icon_button_y^16 = @y_row_5 }
+			set_variable = { global.agency_upgrade_icon_button_x^17 = @x_row_2 }
+			set_variable = { global.agency_upgrade_icon_button_y^17 = @y_row_5 }
+			set_variable = { global.agency_upgrade_icon_button_x^18 = @x_row_3 }
+			set_variable = { global.agency_upgrade_icon_button_y^18 = @y_row_5 }
+			set_variable = { global.agency_upgrade_icon_button_x^19 = @x_row_4 }
+			set_variable = { global.agency_upgrade_icon_button_y^19 = @y_row_5 }
+			set_variable = { global.agency_upgrade_icon_button_x^20 = @x_row_5 }
+			set_variable = { global.agency_upgrade_icon_button_y^20 = @y_row_5 }
 			
 			every_possible_country = {
 				resize_array = { array = THIS.agency_upgrades_completed_and_queued value = 0 size = 21 }
 				set_variable = { THIS.agency_selected_upgrade = -1 }
-				set_variable = { THIS.automate_agency_upgrades = 1 }
 				
 				set_variable = { THIS.agency_upgrade_time_days = modifier@agency_upgrade_time }
 				add_to_variable = { THIS.agency_upgrade_time_days = 1 }
@@ -220,6 +231,10 @@ on_actions = {
 					var = THIS.agency_upgrade_time_days
 					min = 1
 				}
+				
+				#GUI stuff
+				set_variable = { THIS.automate_agency_upgrades_choice = 1 }	#1 = off, 2 = on, 3 = queue only
+				set_variable = { THIS.agency_dropdown_visible = 2 }		#2 = hidden, 1 = visible
 			}
 		}
     }

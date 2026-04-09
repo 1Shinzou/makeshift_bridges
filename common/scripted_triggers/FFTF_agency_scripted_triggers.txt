@@ -155,7 +155,7 @@ FFTF_can_start_automated_agency_upgrade = {
 	
 	can_upgrade_intelligence_agency = yes
 	
-	check_variable = { automate_agency_upgrades = 2 }
+	check_variable = { automate_agency_upgrades_choice > 1 }
 	
 	NOT = { has_country_flag = spy_agency_upgrade_in_progress_flag } 
 	check_variable = { modifier@FFTF_is_working_on_agency_upgrades_boolean = 0 }

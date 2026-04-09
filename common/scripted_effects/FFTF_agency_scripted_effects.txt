@@ -2,7 +2,12 @@
 FFTF_agency_verify_agency_queue = {
 	if = {
 		limit = { has_variable = THIS.agency_queue^num }
-		resize_array = { array = THIS.agency_upgrades_in_queue_count size = 21 value = 0 }
+		resize_array = { array = THIS.agency_upgrades_in_queue_count size = THIS.agency_upgrades_completed_and_queued^num value = 0 }
+		
+		if = {
+			limit = { NOT = { check_variable = { THIS.agency_selected_upgrade = -1 } } }
+			add_to_variable = { THIS.agency_upgrades_in_queue_count^agency_selected_upgrade = 1 }
+		}
 		
 		for_each_loop = {
 			array = THIS.agency_queue
@@ -93,16 +98,20 @@ FFTF_agency_upgrade_find_first_valid_in_queue = {
 		}
 	}
 	
-	#If we don't have a selected upgrade, pick a random one
+	#If we don't have a selected upgrade, pick a random one if we are allowed to do so
 	if = {
-		limit = { check_variable = { THIS.agency_selected_upgrade = -1 } can_upgrade_intelligence_agency = yes }
+		limit = { check_variable = { THIS.agency_selected_upgrade = -1 } check_variable = { automate_agency_upgrades_choice = 2 } }
 		FFTF_select_random_agency = yes
 		
 		add_to_variable = { agency_upgrades_completed_and_queued^agency_selected_upgrade = 1 }
 	}
 	
 	#Otherwise, remove the found upgrade from the queue
-	else = {
+	else_if = {
+		limit = { 
+			NOT = { check_variable = { THIS.agency_selected_upgrade = -1 } } 
+		}
+		
 		set_temp_variable = { last = THIS.agency_queue^num } 
 		subtract_from_temp_variable = { last = 1 } 
 		
@@ -208,6 +217,15 @@ FFTF_agency_upgrade_selected_agency = {
 	set_variable = { agency_selected_upgrade = -1 }
 }
 
+#Get this country's agency upgrade time
+FFTF_get_agency_upgrade_time = {
+	set_variable = { THIS.agency_upgrade_time_days = modifier@agency_upgrade_time }
+	add_to_variable = { THIS.agency_upgrade_time_days = 1 }
+	multiply_variable = { THIS.agency_upgrade_time_days = global.agency_upgrade_time_days_base }
+	clamp_variable = { var = THIS.agency_upgrade_time_days min = 1 }
+	round_variable = THIS.agency_upgrade_time_days
+}
+
 #Check if we can start an upgrade, if so get the next upgrade and begin the mission and add the hidden factory idea
 FFTF_begin_automatic_upgrade_if_possible = {
 	if = {
@@ -215,13 +233,7 @@ FFTF_begin_automatic_upgrade_if_possible = {
 			FFTF_can_start_automated_agency_upgrade = yes
 		}
 		
-		set_variable = { THIS.agency_upgrade_time_days = modifier@agency_upgrade_time }
-		add_to_variable = { THIS.agency_upgrade_time_days = 1 }
-		multiply_variable = { THIS.agency_upgrade_time_days = global.agency_upgrade_time_days_base }
-		clamp_variable = {
-			var = THIS.agency_upgrade_time_days
-			min = 1
-		}
+		FFTF_get_agency_upgrade_time = yes
 
 		FFTF_agency_upgrade_find_first_valid_in_queue = yes
 		

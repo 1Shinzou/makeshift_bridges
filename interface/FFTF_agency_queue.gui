@@ -1,13 +1,129 @@
 guiTypes = {
 	containerWindowType = {
+		name = "FFTF_agency_upgrade_selection_option_dropdown_container"
+		position = { x = 7 y = 528 }
+		size = { width = 362 height = 300 }
+		clipping = yes
+		
+
+		containerWindowType = {
+			name = "FFTF_agency_upgrade_selection_option_dropdown_container_inner"
+			position = { x = 0 y = -200 }
+			size = { width = 362 height = 108 }
+			show_position = { x = 0 y = 0 }
+			show_animation_type = decelerated
+			hide_animation_type = accelerated
+			animation_time = 300
+
+
+			background = {
+				name = "background"
+				quadTextureSprite ="GFX_tiled_window_1b_thin_border"
+				position = { x = 0 y = 0 }
+			}
+			
+			containerWindowType = {
+				name = "auto_upgrades_off_button_container"
+				position = { x = 9 y = 9 }
+				size = { width = 325 height = 27 }
+
+				background = {
+					name = "background"
+					quadTextureSprite ="GFX_tiled_generic_bg_1"
+				}
+
+				buttonType = {
+					name = "auto_upgrades_off_button"
+					quadTextureSprite = "GFX_generic_text_bg_325"
+					clicksound = click_default
+					pdx_tooltip = "FFTF_spy_agency_upgrades_off"
+					pdx_tooltip_delayed = "FFTF_spy_agency_upgrades_off_tt_delayed"
+				}
+
+				instantTextboxType = {
+					name = "auto_upgrades_off_button_textbox"
+					position = { x = 15 y = 4 }
+					font = "hoi_18mbs"
+					text = "FFTF_spy_agency_upgrades_off"
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+					multiline = no
+				}
+			}
+			
+			containerWindowType = {
+				name = "auto_upgrades_on_button_container"
+				position = { x = 9 y = 40 }
+				size = { width = 325 height = 27 }
+
+				background = {
+					name = "background"
+					quadTextureSprite ="GFX_tiled_generic_bg_1"
+				}
+
+				buttonType = {
+					name = "auto_upgrades_on_button"
+					quadTextureSprite = "GFX_generic_text_bg_325"
+					clicksound = click_default
+					pdx_tooltip = "FFTF_spy_agency_upgrades_on"
+					pdx_tooltip_delayed = "FFTF_spy_agency_upgrades_on_tt_delayed"
+				}
+
+				instantTextboxType = {
+					name = "auto_upgrades_on_button_textbox"
+					position = { x = 15 y = 4 }
+					font = "hoi_18mbs"
+					text = "FFTF_spy_agency_upgrades_on"
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+					multiline = no
+				}
+			}
+			
+			containerWindowType = {
+				name = "auto_upgrades_queue_only_button_container"
+				position = { x = 9 y = 71 }
+				size = { width = 325 height = 27 }
+
+				background = {
+					name = "background"
+					quadTextureSprite ="GFX_tiled_generic_bg_1"
+				}
+
+				buttonType = {
+					name = "auto_upgrades_queue_only_button"
+					quadTextureSprite = "GFX_generic_text_bg_325"
+					clicksound = click_default
+					pdx_tooltip = "FFTF_spy_agency_upgrades_queue_only"
+					pdx_tooltip_delayed = "FFTF_spy_agency_upgrades_queue_only_tt_delayed"
+				}
+
+				instantTextboxType = {
+					name = "auto_upgrades_queue_only_button_textbox"
+					position = { x = 15 y = 4 }
+					font = "hoi_18mbs"
+					text = "FFTF_spy_agency_upgrades_queue_only"
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+					multiline = no
+				}
+			}
+		}
+	}
+	
+	containerWindowType = {
 		name = "FFTF_agency_queue_gui"
-		size = { width = 780 height = 480 }
+		size = { width = 982 height = 540 }
 		position = { x=-200 y=100 }
 		show_position = { x=300 y=100}
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300
 		moveable = yes
+		clipping = no
 		
 		background = {
 			name = "Background"
@@ -18,7 +134,6 @@ guiTypes = {
 			name = "close_button"
 			position = { x = -36 y = 4 }
 			quadTextureSprite ="GFX_closebutton"
-			buttonFont = "Main_14_black"
 			shortcut = "ESCAPE"
 			Orientation = "UPPER_RIGHT"
 			clicksound = click_close
@@ -27,9 +142,9 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "select_upgrades_container"
-			position = {x=378 y=3}
+			position = {x=3 y=3}
 			orientation = upper_left
-			size = { width=367 height=43 }
+			size = { width=946 height=43 }
 			
 			background = {
 				name = "Background"
@@ -38,8 +153,18 @@ guiTypes = {
 			}	
 			
 			instantTextboxType = {
-				name = "agency_queue_upgrades_textbox"
+				name = "agency_queue_queue_textbox"
 				position = {x = 0 y = 10 }
+				text = agency_queue_queue_text
+				alwaystransparent = yes
+				font="hoi_20bs"
+				maxWidth = 381
+				format = center
+			}
+			
+			instantTextboxType = {
+				name = "agency_queue_upgrades_textbox"
+				position = {x = 496 y = 10 }
 				text = agency_queue_upgrades_text
 				alwaystransparent = yes
 				font="hoi_20bs"
@@ -50,9 +175,9 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "queue_list_window"
-			position = {x=0 y=0}
+			position = {x=3 y=43}
 			orientation = upper_left
-			size = { width=381 height=440 }
+			size = { width=381 height=428 }
 			margin = { top = 10 left = 10 bottom = 10 }
 			verticalScrollbar = "right_vertical_slider"
 			vertical_scroll_step = 55
@@ -77,7 +202,7 @@ guiTypes = {
 		
 		gridBoxType = {
 			name = "upgrades_bg_gridbox"
-			position = { x = 421 y = 89 }
+			position = { x = 441 y = 89 }
 			orientation = upper_left
 			size = { width=300 height=100% }
 			slotsize = { width = 0 height = 0 }
@@ -88,7 +213,7 @@ guiTypes = {
 		
 		gridBoxType = {
 			name = "upgrades_list_gridbox"
-			position = { x = 420 y = 90 }
+			position = { x = 440 y = 90 }
 			orientation = upper_left
 			size = { width=300 height=100% }
 			slotsize = { width = 0 height = 0 }
@@ -97,20 +222,57 @@ guiTypes = {
 			format = "UPPER_LEFT"
 		}
 		
-		instantTextBoxType = {
-			name = "toggle_auto_upgrades"
-			text = toggle_automatic_upgrades
-			position = { x = 50 y = 444 }
-			font = "hoi_20bs"
-			format = center
-			maxWidth = 281
+		gridBoxType = {
+			name = "upgrade_names_gridbox"
+			position = { x = 381 y = 121 }
+			orientation = upper_left
+			size = { width=300 height=100% }
+			slotsize = { width = 0 height = 0 }
+			max_slots_horizontal = 1
+			add_horizontal = yes
+			format = "UPPER_LEFT"
 		}
+		
 		buttonType = {
-			name ="toggle_automatic_upgrades_button"
-			spriteType = "GFX_generic_checkbox2"
-			position = { x = 12 y = 440 }
-			pdx_tooltip = "spy_agency_automation_check_tt"
-			pdx_tooltip_delayed = "spy_agency_automation_check_tt_delayed"
+			name = "clear_queue_button"
+			position = { x = 123 y = 470 }
+			quadTextureSprite = "GFX_sort_button_140x29"
+			buttonFont = "hoi_16mbs"
+			buttonText = clear_queue_text
+			frame = 1
+		}
+		
+		containerWindowType = {
+			name = "upgrade_selection_option_container"
+			position = { x = 17 y = 498 }
+			size = { width = 360 height = 34 }
+
+			buttonType = {
+				name = "expand_agency_dropdown_button"
+				position = { x = 0 y = 3 }
+				quadTextureSprite = "GFX_generic_text_bg_325"
+				clicksound = click_default
+				pdx_tooltip = expand_agency_dropdown_button_tt
+				pdx_tooltip_delayed = expand_agency_dropdown_button_tt_delayed
+			}
+
+			instantTextboxType = {
+				name = "name_textbox"
+				position = { x = 15 y = 6 }
+				font = "hoi_18mbs"
+				text = "[THIS.FFTF_spy_agency_automation_status]"
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+				multiline = no
+			}
+			
+			buttonType = {
+				name = "expand_agency_dropdown_button_arrow"
+				position = { x = 328 y = 6 }
+				spriteType ="GFX_collapse_or_close"
+				frame = 2
+			}
 		}
 	}
 	
@@ -209,10 +371,27 @@ guiTypes = {
 		iconType = {
 			name = "agency_upgrade_icon_bg"
 			spriteType = "GFX_upgrade_frame_1_unavailable"
-			position = {x = 1 y = -1 }
+			position = {x = 0 y = 0 }
 			alwaystransparent = yes
 			scale = 0.895
 			centerposition = yes
+		}
+	}
+	
+	containerWindowType = {
+		name = "FFTF_agency_upgrade_name_bg"
+		position = { x=0 y=0 }
+		size = { width=120 height= 40 }
+		
+		instantTextboxType = {
+			name = "agency_upgrade_name_textbox"
+			position = {x = 0 y = 0 }
+			text = "[?v.GetTokenLocalizedKey]"
+			alwaystransparent = yes
+			font="hoi_16mbs"
+			maxWidth = 120
+			maxHeight = 40
+			format = center
 		}
 	}
 	

@@ -47,6 +47,22 @@ scripted_gui = {
 		effects={
 			close_button_click={ clr_country_flag = FFTF_agency_queue_gui_open }
 			
+			#Toggles the dropdown box
+			expand_agency_dropdown_button_click = {
+				if = {
+					limit = { check_variable = { THIS.agency_dropdown_visible = 2 } }
+					set_variable = { THIS.agency_dropdown_visible = 1 }
+				}
+				else = { set_variable = { THIS.agency_dropdown_visible = 2 } }
+			}
+			expand_agency_dropdown_button_arrow_click = {
+				if = {
+					limit = { check_variable = { THIS.agency_dropdown_visible = 2 } }
+					set_variable = { THIS.agency_dropdown_visible = 1 }
+				}
+				else = { set_variable = { THIS.agency_dropdown_visible = 2 } }
+			}
+			
 			#Swap the value of this one and the one below
 			decrease_order_click = {
 				set_temp_variable = { below = i }
@@ -174,10 +190,20 @@ scripted_gui = {
 			}
 			
 			#Add this upgrade to the queue, then verify just in case
+			#If we are on "queue only", check if it's the first in the queue and start if possible
 			agency_upgrade_icon_button_click = {
 				add_to_array = { THIS.agency_queue = i }
 				add_to_variable = { THIS.agency_upgrades_completed_and_queued^i = 1 }
 				FFTF_agency_verify_agency_queue = yes
+				
+				if = {
+					limit = { 
+						check_variable = { automate_agency_upgrades_choice = 3  }
+						FFTF_can_start_automated_agency_upgrade = yes 
+					}
+					
+					FFTF_begin_automatic_upgrade_if_possible = yes
+				}
 			}
 			
 			#Add as many of this upgrade to the queue as we can then verify
@@ -201,22 +227,17 @@ scripted_gui = {
 				}
 			}
 			
-			#2 = repeat, 1 = don't repeat
-			toggle_automatic_upgrades_button_click = {
-				if = {
-					limit = {
-						check_variable = {
-							automate_agency_upgrades = 2 #2 = repeat; 1 = dont repeat
-						}
-					}
-					set_variable = { automate_agency_upgrades = 1 }
-
-				}
-				else = {
-					set_variable = { automate_agency_upgrades = 2 }
+			#Clears the queue. Duh.
+			clear_queue_button_click = {
+				for_each_loop = {
+					array = THIS.agency_queue
+					value = upgrade_idx
+					index = local_index
 					
-					FFTF_begin_automatic_upgrade_if_possible = yes
+					subtract_from_variable = { THIS.agency_upgrades_completed_and_queued^upgrade_idx = 1 }
 				}
+				
+				clear_array = THIS.agency_queue
 			}
 		}
 		properties = { 
@@ -232,9 +253,12 @@ scripted_gui = {
 				x = global.agency_upgrade_icon_button_x^i
 				y = global.agency_upgrade_icon_button_y^i
 			}
-			
-			toggle_automatic_upgrades_button = {
-				frame = automate_agency_upgrades
+			agency_upgrade_name_textbox={
+				x = global.agency_upgrade_icon_button_x^i
+				y = global.agency_upgrade_icon_button_y^i
+			}
+			expand_agency_dropdown_button_arrow = {
+				frame = agency_dropdown_visible
 			}
 		}
 		dynamic_lists={
@@ -252,6 +276,42 @@ scripted_gui = {
 				array = global.agency_upgrades
 				change_scope = no
 				entry_container = "FFTF_agency_upgrade_item"
+			}
+			upgrade_names_gridbox = {
+				array = global.agency_names
+				change_scope = no
+				entry_container = "FFTF_agency_upgrade_name_bg"
+			}
+		}
+	}
+	
+	FFTF_agency_upgrade_selection_option_dropdown_gui = {
+		context_type = player_context
+		window_name = "FFTF_agency_upgrade_selection_option_dropdown_container"
+		parent_window_name = FFTF_agency_queue_gui
+		
+		visible = {
+			has_country_flag = FFTF_agency_queue_gui_open
+			check_variable = { THIS.agency_dropdown_visible = 1 }
+		}
+		
+		effects = {
+			auto_upgrades_off_button_click = {
+				set_variable = { THIS.automate_agency_upgrades_choice = 1 }
+				
+				set_variable = { THIS.agency_dropdown_visible = 2 }
+			}
+			auto_upgrades_on_button_click = {
+				set_variable = { THIS.automate_agency_upgrades_choice = 2 }
+				
+				set_variable = { THIS.agency_dropdown_visible = 2 }
+				FFTF_begin_automatic_upgrade_if_possible = yes
+			}
+			auto_upgrades_queue_only_button_click = {
+				set_variable = { THIS.automate_agency_upgrades_choice = 3 }
+				
+				set_variable = { THIS.agency_dropdown_visible = 2 }
+				FFTF_begin_automatic_upgrade_if_possible = yes
 			}
 		}
 	}

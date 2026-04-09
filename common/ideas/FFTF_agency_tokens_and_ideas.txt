@@ -30,13 +30,13 @@ ideas={
 		FFTF_agency_01_army_intelligence_name = {}
 		FFTF_agency_01_army_intelligence_gfx = {}
 		
-		FFTF_agency_02_air_force_intelligence = {}
-		FFTF_agency_02_air_force_intelligence_name = {}
-		FFTF_agency_02_air_force_intelligence_gfx = {}
+		FFTF_agency_02_naval_intelligence = {}
+		FFTF_agency_02_naval_intelligence_name = {}
+		FFTF_agency_02_naval_intelligence_gfx = {}
 		
-		FFTF_agency_03_naval_intelligence = {}
-		FFTF_agency_03_naval_intelligence_name = {}
-		FFTF_agency_03_naval_intelligence_gfx = {}
+		FFTF_agency_03_air_force_intelligence = {}
+		FFTF_agency_03_air_force_intelligence_name = {}
+		FFTF_agency_03_air_force_intelligence_gfx = {}
 		
 		FFTF_agency_04_passive_defence = {}
 		FFTF_agency_04_passive_defence_name = {}

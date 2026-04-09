@@ -23,6 +23,19 @@
 
  toggle_automatic_upgrades:0 "Toggle Automatic Upgrades"
 
+ clear_queue_text:0 "Clear Queue"
+ 
+ expand_agency_dropdown_button_tt:0 "[THIS.FFTF_spy_agency_automation_status]"
+ expand_agency_dropdown_button_tt_delayed:0 "[THIS.FFTF_spy_agency_automation_status_tt_delayed]"
+ 
+ FFTF_spy_agency_upgrades_off:0 "Upgrades §ROff§!"
+ FFTF_spy_agency_upgrades_on:0 "Upgrades §GOn§!"
+ FFTF_spy_agency_upgrades_queue_only:0 "Upgrade §YQueue Only§!"
+
+ FFTF_spy_agency_upgrades_off_tt_delayed:0 "No agency upgrades will happen automatically."
+ FFTF_spy_agency_upgrades_on_tt_delayed:0 "Agency upgrades will happen automatically. Upgrades in the queue will be prioritised if possible, and the agency will upgrade randomly if there are no upgrades in the queue that can be done.\n\nUpgrades are weighted so more "important" ones are prioritised."
+ FFTF_spy_agency_upgrades_queue_only_tt_delayed:0 "The agency will only select queued upgrades."
+ 
  FFTF_agency_00_civilian_intelligence:0 "upgrade_economy_civilian"
  FFTF_agency_00_civilian_intelligence_name:0 "$upgrade_economy_civilian$"
  FFTF_agency_00_civilian_intelligence_gfx:0 "GFX_agency_economy_department"
@@ -31,13 +44,13 @@
  FFTF_agency_01_army_intelligence_name:0 "$upgrade_army_department$"
  FFTF_agency_01_army_intelligence_gfx:0 "GFX_agency_army_department"
  
- FFTF_agency_02_air_force_intelligence:0 "upgrade_naval_department"
- FFTF_agency_02_air_force_intelligence_name:0 "$upgrade_naval_department$"
- FFTF_agency_02_air_force_intelligence_gfx:0 "GFX_agency_airforce_department"
+ FFTF_agency_02_naval_intelligence:0 "upgrade_naval_department"
+ FFTF_agency_02_naval_intelligence_name:0 "$upgrade_naval_department$"
+ FFTF_agency_02_naval_intelligence_gfx:0 "GFX_agency_naval_department"
  
- FFTF_agency_03_naval_intelligence:0 "upgrade_airforce_department"
- FFTF_agency_03_naval_intelligence_name:0 "$upgrade_airforce_department$"
- FFTF_agency_03_naval_intelligence_gfx:0 "GFX_agency_naval_department"
+ FFTF_agency_03_air_force_intelligence:0 "upgrade_airforce_department"
+ FFTF_agency_03_air_force_intelligence_name:0 "$upgrade_airforce_department$"
+ FFTF_agency_03_air_force_intelligence_gfx:0 "GFX_agency_airforce_department"
  
  FFTF_agency_04_passive_defence:0 "upgrade_passive_defense"
  FFTF_agency_04_passive_defence_name:0 "$upgrade_passive_defense$"
@@ -111,6 +124,7 @@
  FFTF_agency_queue_increase_button_tt:0 "§YClick§! to §GIncrease§! priority.\n§YShift-Click§! to put on the §GHighest§! priority."
  FFTF_agency_queue_remove_from_queue_tt:0 "§YClick§! to §RRemove§! from the queue."
  
+ agency_queue_queue_text:0 "Queue"
  agency_queue_upgrades_text:0 "Upgrades"
  
  FFTF_agency_upgrades_add_to_queue_tt:0 "[FFTF_agency_scripted_loc_add_to_queue]"

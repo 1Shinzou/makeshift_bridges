@@ -4,27 +4,47 @@ defined_text = {
 		localization_key = FFTF_agency_upgrades_add_to_queue_tt_actual
 	}
 }
+
 defined_text = {
-	name = spy_agency_automation_status
+	name = FFTF_spy_agency_automation_status
 	text = {
 		trigger = {
-			check_variable = {
-				automate_agency_upgrades = 2 #2 = repeat; 1 = dont repeat
-			}
+			check_variable = { automate_agency_upgrades_choice = 1 }
 		}
-		localization_key = spy_agency_automation_status_2
+		localization_key = FFTF_spy_agency_upgrades_off
 	}
 	text = {
 		trigger = {
-			or = {
-				check_variable = {
-					automate_agency_upgrades = 1 #2 = repeat; 1 = dont repeat
-				}
-				not = {
-					has_variable = automate_agency_upgrades
-				}
-			}
+			check_variable = { automate_agency_upgrades_choice = 2 }
 		}
-		localization_key = spy_agency_automation_status_1
+		localization_key = FFTF_spy_agency_upgrades_on
+	}
+	text = {
+		trigger = {
+			check_variable = { automate_agency_upgrades_choice = 3 }
+		}
+		localization_key = FFTF_spy_agency_upgrades_queue_only
+	}
+}
+
+defined_text = {
+	name = FFTF_spy_agency_automation_status_tt_delayed
+	text = {
+		trigger = {
+			check_variable = { automate_agency_upgrades_choice = 1 }
+		}
+		localization_key = FFTF_spy_agency_upgrades_off_tt_delayed
+	}
+	text = {
+		trigger = {
+			check_variable = { automate_agency_upgrades_choice = 2 }
+		}
+		localization_key = FFTF_spy_agency_upgrades_on_tt_delayed
+	}
+	text = {
+		trigger = {
+			check_variable = { automate_agency_upgrades_choice = 3  }
+		}
+		localization_key = FFTF_spy_agency_upgrades_queue_only_tt_delayed
 	}
 }

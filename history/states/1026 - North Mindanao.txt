@@ -7,7 +7,7 @@ state = {
 
 	history = {
 
-		owner = USA
+		owner = PHI
 		add_core_of = PHI
 		# No Asia
 		1936.1.1.13 = { owner = WST add_core_of = WST }

@@ -160,6 +160,16 @@ on_actions = {
 				}
 			}
 
+			USA = { 
+				annex_country = { target = PHI }
+				every_state = {
+					limit = {
+						is_core_of = PHI
+					}
+					set_compliance = 70
+				}
+			}
+
 			RAJ = { 
 				annex_country = { target = BRM }
 				every_state = {

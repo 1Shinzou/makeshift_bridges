@@ -8427,17 +8427,18 @@ focus_tree = {
             is_subject = no
             has_war = no
             has_civil_war = no
-			date > 1936.5.12
-            #OR = {
-                #date > 1937.6.1
+			AND = {
+				date > 1936.4.1
+				OR = {
+					date > 1937.1.1
 
-			 	#custom_trigger_tooltip = {
-                #   tooltip = GER_anschluss_eq_trigger_tt
-                #	has_equipment = {
-				#		infantry_equipment > 40000
-				#	}
-            	#}
-            #}
+					custom_trigger_tooltip = {
+					tooltip = GER_anschluss_eq_trigger_tt
+						has_equipment = {
+							infantry_equipment > 30000
+						}
+					}
+			}	}
         }
 
 	

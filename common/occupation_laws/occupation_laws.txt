@@ -843,16 +843,7 @@ senbu_occupation_law = {
 				}
 			}
 			
-			FROM = { 
-				OR = {
-					is_literally_china = yes
-					tag = MEN
-					tag = MAN
-					tag = KOR
-					tag = MON
-					tag = TIB
-				}
-			}
+			FROM = { capital_scope = { is_on_continent = asia } }
 
 		}
 		

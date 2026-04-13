@@ -34,7 +34,7 @@ allies = {
 		tag = AST
 		tag = BRA
 		tag = MEX
-		# tag = NZL
+		tag = NZL
 		tag = USA
 		tag = RAJ
 		tag = SAF
@@ -158,6 +158,7 @@ ai_black = {
 		tag = PER
 		tag = TUR
 		tag = SWI
+		tag = VEN
 	}
 }
 

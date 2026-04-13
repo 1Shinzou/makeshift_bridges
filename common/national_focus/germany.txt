@@ -8428,7 +8428,7 @@ focus_tree = {
             has_war = no
             has_civil_war = no
 			AND = {
-				date > 1936.4.1
+				date > 1936.5.1
 				OR = {
 					date > 1937.1.1
 

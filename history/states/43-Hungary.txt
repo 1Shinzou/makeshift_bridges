@@ -6,6 +6,7 @@ state={
 	resources = {
 		steel = 6 #was 3 was: 4
 		aluminium = 40 # was: 194
+		rubber=16 # Rubber spawned in Day 1 instead of "Invest in the Magyar ..."
 		coal = 4 #initial distribution
 	}
 	

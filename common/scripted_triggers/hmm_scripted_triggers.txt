@@ -119,6 +119,7 @@ ai_annex = {
 		tag = CZE
 		tag = POR
 		tag = BRM
+		tag = PHI
 	}
 }
 ai_rk = {

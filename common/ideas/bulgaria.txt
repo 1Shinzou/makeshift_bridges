@@ -502,9 +502,9 @@ ideas = {
 			}
 			
 			modifier = {
-				stability_weekly = -0.003
-				political_power_factor = -0.25
-				communism_drift = 0.2
+				# stability_weekly = -0.003
+				# political_power_factor = -0.25
+				communism_drift = 0.1
 			}
 		}
 
@@ -529,9 +529,9 @@ ideas = {
 			}
 			
 			modifier = {
-				stability_weekly = -0.002
-				political_power_factor = -0.25
-				communism_drift = 0.15
+				# stability_weekly = -0.002
+				# political_power_factor = -0.25
+				communism_drift = 0.075
 			}
 		}
 
@@ -556,9 +556,9 @@ ideas = {
 			}
 			
 			modifier = {
-				stability_weekly = -0.001
-				political_power_factor = -0.15
-				communism_drift = 0.05
+				# stability_weekly = -0.001
+				# political_power_factor = -0.15
+				communism_drift = 0.025
 			}
 		}
 

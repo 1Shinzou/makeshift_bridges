@@ -7012,6 +7012,7 @@ focus_tree = {
 
 		available = {
 			surrender_progress > 0.25
+			casualties > 1000000
 			#has_defensive_war = yes
 			has_war_with_major = yes
 		}
@@ -8142,6 +8143,7 @@ focus = {
 		search_filters = {FOCUS_FILTER_PROPAGANDA}
 		available = {
 			surrender_progress > 0.35
+			casualties > 3000000
 			has_war_with_major = yes
 		}
 		cancel_if_invalid = no

@@ -29,10 +29,6 @@ decision_cost_20_convoy_10_NavXP: "£GFX_topbar_convoys §Y200§! £navy_experie
 decision_cost_20_convoy_10_NavXP_blocked: "£GFX_topbar_convoys §R200§! £navy_experience §R100§!"
 decision_cost_20_convoy_10_NavXP_tooltip: "It costs £GFX_topbar_convoys §Y200§! £navy_experience §Y100§! to take the decision"
 
-# SOV
-
- SOV_optimize_production_lines_ns_tt:0 "$SOV_modify_fyp_ns_intro$ \nFactory Output: §G+5.00%§! \n£prod_eff Production Efficiency growth: §G+5.00%§! \nProduction Efficiency Base: §G+5.00%§! \n\n"
-
 # ITA
 ITA_standardization_ra_tt:0 "$ITA_modify_military_industry_dynamic_modifier_ns_intro$ \n$MODIFIER_AIR_EQUIPMENT_UPGRADE_XP_COST$: §R+25%§! \n$ITA_standardization_dynamic_modifier_tt$\n"
 ITA_specialization_ra_tt:0 "$ITA_modify_military_industry_dynamic_modifier_ns_intro$ \n$MODIFIER_AIR_EQUIPMENT_UPGRADE_XP_COST$: §G-50%§! \n$ITA_specialization_dynamic_modifier_tt$\n"

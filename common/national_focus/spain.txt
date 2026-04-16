@@ -904,7 +904,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SPA_the_army_of_africa_model }
 		
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_SPR_armystuff
 		x = -1
 		y = 2
 		relative_position_id = SPA_the_army_of_africa_model
@@ -930,7 +930,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SPA_equipment_modernization }
 		
-		icon = GFX_goal_generic_army_artillery2
+		icon = GFX_SPR_artillery
 		x = -1
 		y = 1
 		relative_position_id = SPA_equipment_modernization
@@ -956,7 +956,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SPA_equipment_modernization }
 		
-		icon = GFX_goal_generic_air_doctrine
+		icon = GFX_SPR_af
 		x = 0
 		y = 2
 		relative_position_id = SPA_equipment_modernization
@@ -990,7 +990,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SPA_equipment_modernization }
 		
-		icon = GFX_goal_generic_special_forces
+		icon = GFX_SPR_army
 		x = 1
 		y = 1
 		relative_position_id = SPA_equipment_modernization
@@ -1079,7 +1079,7 @@ focus_tree = {
 			focus = SPA_the_stabilization_plan
 		}
 		
-		icon = GFX_goal_generic_construction
+		icon = GFX_SPR_economy
 		x = -4
 		y = 1
 		relative_position_id = SPA_national_recovery
@@ -1116,7 +1116,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SPA_fascist_economic_aid }
 		
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_SPR_facilitate
 		x = 0
 		y = 1
 		relative_position_id = SPA_fascist_economic_aid
@@ -1236,7 +1236,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SPA_support_the_war_industry focus = SPA_expand_the_axis_gold_trade }
 		
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_SPR_recovery
 		x = 2
 		y = 1
 		relative_position_id = SPA_support_the_war_industry
@@ -1296,7 +1296,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SPA_support_the_war_industry }
 		
-		icon = GFX_focus_ITA_generic_fascist_workers
+		icon = GFX_SPR_duty
 		x = 0
 		y = 2
 		relative_position_id = SPA_support_the_war_industry
@@ -1316,7 +1316,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SPA_support_the_war_industry }
 		
-		icon = GFX_focus_generic_navy_battleship2
+		icon = GFX_SPR_navy
 		x = -1
 		y = 1
 		relative_position_id = SPA_support_the_war_industry
@@ -1699,7 +1699,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SPA_capitalist_economic_aid }
 		
-		icon = GFX_goal_generic_consumer_goods
+		icon = GFX_SPR_improve
 		x = -1
 		y = 1
 		relative_position_id = SPA_capitalist_economic_aid
@@ -1754,7 +1754,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SPA_capitalist_economic_aid }
 		
-		icon = GFX_goal_generic_production
+		icon = GFX_SPR_domestic
 		x = 1
 		y = 1
 		relative_position_id = SPA_capitalist_economic_aid
@@ -2019,7 +2019,7 @@ focus_tree = {
 			}
 		}
 		
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_SPR_austerity
 		x = 0
 		y = 1
 		relative_position_id = SPA_autarky
@@ -2075,7 +2075,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SPA_spanish_austerity }
 		
-		icon = GFX_goal_generic_construction2
+		icon = GFX_SPR_reduce
 		x = 2
 		y = 1
 		relative_position_id = SPA_spanish_austerity
@@ -2327,7 +2327,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SPA_extol_the_martyrs_of_the_war }
 		
-		icon = GFX_r56_goal_spr_recruitment_drive
+		icon = GFX_SPR_expand
 		x = 0
 		y = 1
 		relative_position_id = SPA_extol_the_martyrs_of_the_war
@@ -2348,7 +2348,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SPA_extol_the_martyrs_of_the_war }
 		
-		icon = GFX_focus_generic_strike_at_democracy1
+		icon = GFX_SPR_religion
 		x = -2
 		y = 1
 		relative_position_id = SPA_extol_the_martyrs_of_the_war
@@ -2402,7 +2402,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SPA_unify_the_nationalist_front }
 		
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_SPR_consolidate
 		x = 3
 		y = 1
 		relative_position_id = SPA_unify_the_nationalist_front

@@ -173,31 +173,35 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY FOCUS_FILTER_USA_CONGRESS}
+		
 		completion_reward = {
-		add_timed_idea = { idea = USA_establishing_the_gold_standard days = 300 }
-		custom_effect_tooltip = available_political_advisor
-		show_ideas_tooltip = USA_william_regnery 
-		add_ideas = USA_rubber_in_asia
+			add_timed_idea = { idea = USA_establishing_the_gold_standard days = 300 }
+		
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = USA_william_regnery 
+
+			#add_ideas = USA_rubber_in_asia
+			
 			add_timed_idea = { idea = USA_staunch_isolationists days = 1200 }
 			add_timed_idea = {
 				idea = USA_civilian_industry
 				days = 1791
-			IF = {
-				limit = {
-					has_idea = new_deal
-				}
-				remove_ideas = new_deal
-			}
-			custom_effect_tooltip = "The New Deal idea will be removed if it is currently instated."
-					hidden_effect = {
-				if = {
+				IF = {
 					limit = {
-						has_game_rule = {
-							rule = obsolete_focus_branches_visibility
-							option = HIDE
-						}
+						has_idea = new_deal
 					}
-					mark_focus_tree_layout_dirty = yes
+					remove_ideas = new_deal
+				}
+				custom_effect_tooltip = "The New Deal idea will be removed if it is currently instated."
+					hidden_effect = {
+					if = {
+						limit = {
+							has_game_rule = {
+								rule = obsolete_focus_branches_visibility
+								option = HIDE
+							}
+						}
+						mark_focus_tree_layout_dirty = yes
 					}
 				}
 			}
@@ -238,13 +242,16 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 5
+					level = 2
 					instant_build = yes
 				}
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			add_timed_idea = { idea = USA_adjusted_compensation_payment days = 70 }
 			USA_great_depression_level_down = yes
 			if = {
@@ -295,13 +302,15 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 5
+					level = 2
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			add_ideas = USA_gold_standard
 			if = {
 				limit = {
@@ -350,13 +359,15 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 5
+					level = 2
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			USA_great_depression_level_down = yes
 			add_ideas = isolation
 			add_timed_idea = {
@@ -401,17 +412,21 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 5
+					level = 2
 					instant_build = yes
 				}
 			}
-			add_ideas = civilian_economy
+
+			custom_effect_tooltip = generic_skip_one_line_tt
 			USA_great_depression_level_down = yes
 			USA_congress_medium_opposition = yes
 			unlock_decision_tooltip = { decision = USA_give_tax_break show_effect_tooltip = yes }
+		
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = civilian_economy
 		}
 	}
 	focus = {
@@ -460,7 +475,7 @@ focus_tree = {
 		#}
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			remove_ideas = USA_rubber_in_asia
+			#remove_ideas = USA_rubber_in_asia
 			#add_ideas = USA_no_rubber_in_asia
 			if = {
 				limit = {
@@ -552,12 +567,6 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = industrial_complex
-					level = 5
-					instant_build = yes
-				}
 			}
 			add_stability = 0.10
 			add_ideas = USA_banking_sector_deregulation
@@ -593,22 +602,14 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			random_core_state = {
-				limit = {
-					is_controlled_by = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = industrial_complex
-					level = 5
-					instant_build = yes
-				}
+			swap_ideas = {
+				remove_idea = USA_gold_standard
+				add_idea = USA_gold_standard_2
 			}
+			add_timed_idea = { idea = USA_privatization days = 365 }
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			368 = {
 				add_extra_state_shared_building_slots = 10
 			}
@@ -618,11 +619,6 @@ focus_tree = {
 			373 = {
 				add_extra_state_shared_building_slots = 10
 			}
-			swap_ideas = {
-				remove_idea = USA_gold_standard
-				add_idea = USA_gold_standard_2
-			}
-			add_timed_idea = { idea = USA_privatization days = 365 }
 		}
 	}
 
@@ -794,10 +790,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 10
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 10
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -851,10 +847,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 10
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 10
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -909,10 +905,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 10
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 10
+					level = 5
 					instant_build = yes
 				}
 			}

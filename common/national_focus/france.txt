@@ -2072,7 +2072,7 @@
 	focus = {
 		id = FRA_aftermath_of_sudetenland_crisis
 		icon = GFX_focus_BRA_end_the_state_of_emergency
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = FRA_reform_the_labour_laws
 		}
@@ -2986,7 +2986,7 @@
 		}
 		
 		relative_position_id = FRA_agricultural_protectionism
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1

@@ -38,10 +38,6 @@ ITA_specialization_dynamic_modifier_tt:0 "§YAll Aircraft Equipment§!: $product
 
 # ITA_ministry_of_italian_africa_occupation_law_tt:0 "Unlocks occupation law in §YYugoslavian§!, §YGreek§!, §YAlbanian§! & §YAfrican§! states:\n"
 
-# FRA
- FRA_colonial_industry_effect_tt:2 "Adds a §YCivilian Factory§! to every colonial state previously invested in.\n"
- FRA_industrial_expansion_effect_tt:1 "Adds a §YCivilian Factory§! to metropolitan states previously invested in.\n"
- FRA_military_factories_effect_tt:1 "Adds a §YMilitary Factory§! to every state previously invested in.\n"
 # FRANCE EVENT
 france.31.t:0 "[ROOT.GetLeader] Resigns"
 france.31.d:0 "With the outbreak of yet another war, it must fall to fresh leadership to fight. Whilst few would doubt that [ROOT.GetLeader] has been a fine prime minister, he simply could not contend with the extraordinary set of circumstances in which France has found herself. We can but pray there is light at the end of the tunnel."

@@ -135,7 +135,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 7304;4360;sea;8614;-1;-1;-1;-1;;New Foundland-Strait
 5407;5382;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar North
 5407;2400;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar South
-2455;2431;;-1;-1;-1;-1;-1;DANISH_BELTS_STRAIT;Øresund
+2455;2506;;-1;-1;-1;-1;-1;DANISH_BELTS_STRAIT;Øresund
 5412;7678;;-1;-1;-1;-1;-1;BOSPHORUS_STRAIT;Bosphorus
 7452;7678;;-1;-1;-1;-1;-1;DARDANELLES_STRAIT;Dardanelles
 2919;2943;;-1;-1;-1;-1;-1;HORMUZ_STRAIT;hormuz
@@ -241,7 +241,16 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 12118;1224;sea;8751;-1;-1;-1;-1;;Cebu-Samar
 5864;5838;;-1;-1;-1;-1;-1;OTRANTO_STRAIT;Otranto Strait
 
+
+5563;5364;;-1;-1;-1;-1;-1;Fernando Torres Strait;GDU Torres
+5563;5613;;-1;-1;-1;-1;-1;Fernando Torres Strait;GDU Torres 2
+
+5838;5864;;-1;-1;-1;-1;-1;OTRANTO_STRAIT;Otranto
 2776;2800;;-1;-1;-1;-1;-1;DJIBOUTI_STRAIT;Djibouti
+2431;2382;;-1;-1;-1;-1;-1;ORESUND_STRAIT;ORESUND
+2431;2408;;-1;-1;-1;-1;-1;THE_BELTS;TheBelts
+5864;5838;;-1;-1;-1;-1;-1;OTRANTO_STRAIT;Otranto Strait
+5681;1452;;-1;-1;-1;-1;-1;SICILY_STRAIT;Strait of Messina
 
 2003;5047;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
 2003;5017;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER

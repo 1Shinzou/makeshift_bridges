@@ -961,7 +961,7 @@ focus_tree = {
 		id = CAN_victory_aircraft_limited
 		icon = GFX_goal_generic_production2
 		prerequisite = { focus = CAN_department_of_munitions_and_supply }
-		x = -2
+		x = -3
 		y = 3
 		relative_position_id = CAN_defence_of_canada_regulations
 
@@ -1108,6 +1108,10 @@ focus_tree = {
 					level = 3
 					instant_build = yes
 				}
+				add_resource = {
+					type = coal
+					amount = 8
+				}	
 			}
 		}
 
@@ -1127,6 +1131,10 @@ focus_tree = {
 					level = 3
 					instant_build = yes
 				}
+				add_resource = {
+					type = coal
+					amount = 8
+				}	
 				set_state_flag = CAN_alberta_coal_towns_IC
 			}
 		}
@@ -1557,7 +1565,7 @@ focus_tree = {
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = CAN_john_inglis_and_company }
 		prerequisite = { focus = CAN_victory_aircraft_limited }
-		x = -2
+		x = -3
 		y = 5
 		relative_position_id = CAN_defence_of_canada_regulations
 
@@ -1595,7 +1603,6 @@ focus_tree = {
 	focus = {
 		id = CAN_defense_research_grants
 		icon = GFX_focus_research
-		prerequisite = { focus = CAN_john_inglis_and_company }
 		prerequisite = { focus = CAN_if_day }
 		x = -3
 		y = 6
@@ -2433,7 +2440,6 @@ focus_tree = {
 
 	focus = {
 		id = CAN_strengthen_the_commonwealth_ties
-		mutually_exclusive = { focus = CAN_patriation }
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		x = 21
 		y = 0
@@ -2676,7 +2682,7 @@ focus_tree = {
 	focus = {
 		id = CAN_camp_x
 		icon = GFX_goal_generic_intelligence_exchange 
-		prerequisite = { focus = CAN_montreal_laboratory_collaboration focus = CAN_permanent_joint_defense_board }
+		prerequisite = { focus = CAN_montreal_laboratory_collaboration }
 		x = 0
 		y = 2
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
@@ -2729,9 +2735,8 @@ focus_tree = {
 	focus = {
 		id = CAN_supply_the_empire
 		icon = GFX_goal_generic_construction2
-		prerequisite = { focus = CAN_camp_x
-						focus = CAN_the_plan
-		 }
+		prerequisite = { focus = CAN_the_plan}
+		prerequisite = { focus = CAN_camp_x }
 		x = -1
 		y = 3
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
@@ -3707,7 +3712,7 @@ focus_tree = {
 				bonus = 0.5
 				ahead_reduction = 2
 				uses = 1
-				category = cl_tech
+				category = ca_tech
 			}
 			IF = {
 				limit = {
@@ -3812,11 +3817,32 @@ focus_tree = {
 				specialization = specialization_naval
 				value = 0.15
 			}
+			if = {
+				limit = {
+					has_doctrine = convoy_escort
+				}
+				add_mastery_bonus = {
+					name = CAN_escort_fleet
+					bonus = 0.2
+					days = 180
+					sub_doctrine = convoy_escort
+				}
+			}
+			else = {
+				add_mastery_bonus = {
+					name = CAN_escort_fleet
+					bonus = 0.1
+					days = 180
+					track = screens
+				}
+			}
+			
+			
 			add_doctrine_cost_reduction = {
 				name = CAN_escort_fleet
 				cost_reduction = 0.25
 				uses = 2
-				category = convoy_defense_tree
+				category = naval_doctrine
 			}
 		}
 	}
@@ -3855,11 +3881,17 @@ focus_tree = {
 				specialization = specialization_naval
 				value = 0.15
 			}
+			add_mastery_bonus = {
+				name = CAN_fleet_in_being
+				bonus = 0.1
+				days = 180
+				grand_doctrine = new_fleet_in_being
+			}
 			add_doctrine_cost_reduction = {
 				name = CAN_fleet_in_being
 				cost_reduction = 0.25
 				uses = 2
-				category = cat_fleet_in_being
+				category = naval_doctrine
 			}			
 		}
 	}

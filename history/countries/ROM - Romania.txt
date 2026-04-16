@@ -3,12 +3,9 @@ oob = "ROM_1936"
 set_naval_oob = "ROM_1936_naval_mtg"
 # create_intelligence_agency = yes
 set_research_slots = 3
-set_stability = 0.4
+set_stability = 0.5
 set_war_support = 0.3
-set_variable = {
-    var = min_fuel
-    value = 0.800
-}
+
 ROM = {
 	#Pick from list of the sane events first
 	random_list = {

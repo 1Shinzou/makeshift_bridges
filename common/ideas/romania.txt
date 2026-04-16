@@ -63,8 +63,7 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.15
-				local_resources_factor = 0.1
-				consumer_goods_factor = -0.05
+				local_resources_factor = 0.05
 			}
 		}
 
@@ -83,8 +82,7 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.1
-				local_resources_factor = 0.2
-				consumer_goods_factor = -0.05
+				local_resources_factor = 0.1
 			}
 		}
 
@@ -103,8 +101,7 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.05
-				local_resources_factor = 0.3
-				consumer_goods_factor = -0.05
+				local_resources_factor = 0.15
 			}
 		}
 
@@ -649,7 +646,7 @@ ideas = {
 				crypto_strength = 1			
 				political_power_gain = -0.25 
 				conscription = 0.01
-				stability_factor = -0.1 
+				stability_factor = -0.05
 				fascism_drift = 0.01 
 			}
 		}
@@ -674,7 +671,7 @@ ideas = {
 				crypto_strength = 1			
 				conscription = 0.025
 				political_power_gain = -0.25 
-				stability_factor = -0.1
+				stability_factor = -0.05
 				fascism_drift = 0.05
 			}
 		}
@@ -766,9 +763,9 @@ ideas = {
 
 		ROM_industrialization_1 = {
 
-			name = SPA_national_recovery
+			name = ROM_industrialization
 
-			picture = SPA_national_recovery
+			picture = ARG_economic_reactivation
 
 			allowed = {
 				original_tag = ROM
@@ -780,16 +777,15 @@ ideas = {
 	
 			modifier = {
 				consumer_goods_factor = 0.1
-				stability_factor = -0.2
-				production_speed_industrial_complex_factor = 0.40
+				production_speed_industrial_complex_factor = 0.2
 			}
 		}
 
 		ROM_industrialization_2 = {
 
-			name = SPA_national_recovery
+			name = ROM_industrialization
 
-			picture = SPA_national_recovery
+			picture = ARG_economic_reactivation
 
 			allowed = {
 				original_tag = ROM
@@ -805,17 +801,16 @@ ideas = {
 					
 			modifier = {
 				consumer_goods_factor = 0.075
-				stability_factor = -0.15
-				production_speed_industrial_complex_factor = 0.40
+				production_speed_industrial_complex_factor = 0.2
 
 			}
 		}
 
 		ROM_industrialization_3 = {
 
-			name = SPA_national_recovery
+			name = ROM_industrialization
 
-			picture = SPA_national_recovery
+			picture = ARG_economic_reactivation
 
 			allowed = {
 				original_tag = ROM
@@ -826,29 +821,28 @@ ideas = {
 			}
 
 			research_bonus = {
-				industry = 0.2
+				industry = 0.15
 			}
 			
 			modifier = {
 				consumer_goods_factor = 0.05
-				stability_factor = -0.1
-				production_speed_industrial_complex_factor = 0.40
+				production_speed_industrial_complex_factor = 0.2
 
 			}
 		}
 
 		ROM_industrialization_4 = {
 
-			name = SPA_national_recovery
+			name = ROM_industrialization
 
-			picture = SPA_national_recovery
+			picture = ARG_economic_reactivation
 
 			allowed = {
 				original_tag = ROM
 			}
 
 			research_bonus = {
-				industry = 0.3
+				industry = 0.2
 			}
 
 			allowed_civil_war = {
@@ -857,17 +851,14 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = 0.025
-				stability_factor = -0.05
-				production_speed_industrial_complex_factor = 0.40
+				production_speed_industrial_complex_factor = 0.2
 
 			}
 		}
 
 		ROM_fully_industralized = {
 
-			name = SPA_national_recovery
-
-			picture = SPA_national_recovery
+			picture = generic_economic_increase
 
 			allowed = {
 				original_tag = ROM
@@ -881,7 +872,7 @@ ideas = {
 				industrial_capacity_factory = 0.10
 				production_factory_max_efficiency_factor = 0.05
 				production_speed_buildings_factor = 0.1
-				stability_factor = 0.05
+				stability_factor = 0.10
 			}
 		}
 
@@ -992,9 +983,8 @@ ideas = {
 			}
 
 			modifier = {
-				stability_factor = 0.2
-				political_power_gain = 0.05
-				drift_defence_factor = 0.50 										
+				stability_factor = 0.1
+				political_power_gain = 0.1										
 			}
 		}
 
@@ -1315,7 +1305,36 @@ ideas = {
 	}
 
 	industrial_concern = {		
-		
+
+		ROM_reichswerke_hermann_goring = {
+
+			name = reichswerke_hermann_goring
+			picture = GER_reichswerke
+
+			allowed = {
+				original_tag = ROM
+			}
+
+			traits = { trait_industrial_concern }
+
+			available = {
+				has_completed_focus = ROM_reichswerke_subsidiary
+			}
+
+			modifier = {	
+				industrial_capacity_factory = 0.1
+				local_resources_factor = 0.1
+				political_power_cost = 0.1
+				stability_factor = -0.1 
+			}
+
+			ai_will_do = { 
+				factor = 100
+			}
+
+			cost = 100 
+		}	
+
 		ROM_ROMLOC = {
 		
 			picture = industrial_concern_1

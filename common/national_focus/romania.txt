@@ -21,7 +21,7 @@ focus_tree = {
 		icon =  GFX_focus_rom_preserve_romania
 		relative_position_id = ROM_national_recovery
 		
-		x = 16
+		x = 17
 		y = 0
 
 		cost = 5
@@ -783,7 +783,7 @@ focus_tree = {
 		id = ROM_romanian_rearmament
 		icon = GFX_focus_generic_combined_arms
 
-		x = 32
+		x = 33
 		y = 0
 
 		cost = 5
@@ -1714,7 +1714,7 @@ focus_tree = {
 		}
 
 		icon = GFX_goal_generic_oil_refinery
-		x = -6
+		x = -7
 		y = 1
 		relative_position_id = ROM_national_recovery
 		cost = 5
@@ -2083,7 +2083,7 @@ focus_tree = {
 		prerequisite = { focus = ROM_national_recovery }
 		
 		icon = GFX_goal_generic_neutrality_focus
-		x = 6
+		x = 7
 		y = 1
 		relative_position_id = ROM_national_recovery
 		cost = 5

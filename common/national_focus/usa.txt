@@ -557,21 +557,14 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_POLITICAL}
+
 		completion_reward = {
-			random_core_state = {
-				limit = {
-					is_controlled_by = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-				}
-			}
 			add_stability = 0.10
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			add_ideas = USA_banking_sector_deregulation
-			}	
-		}
+		}	
+	}
 		    
 	focus = {
 		id = USA_national_prosperity_program
@@ -601,6 +594,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_STABILITY}
+
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = USA_gold_standard
@@ -797,6 +791,8 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			USA_great_depression_level_down = yes
 			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 230 }
 			USA_congress_small_opposition = yes
@@ -837,6 +833,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_USA_CONGRESS}
+		
 		completion_reward = {
 			random_core_state = {
 				limit = {
@@ -854,6 +851,8 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			USA_great_depression_level_down = yes
 			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 230 }
 			custom_effect_tooltip = USA_great_depression_cooldown_tt
@@ -912,6 +911,8 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			USA_great_depression_level_down = yes
 			USA_congress_medium_opposition = yes
 			custom_effect_tooltip = federal_housing_tt

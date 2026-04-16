@@ -765,6 +765,7 @@ ideas = {
 				spotting_chance = 0.2
 			}
 		}
+
 		USA_banking_sector_deregulation = {	
 			picture = generic_foreign_capital
 			allowed = {
@@ -779,8 +780,10 @@ ideas = {
 			
 			modifier = {
 				production_speed_industrial_complex_factor = 0.1
+				global_building_slots_factor = 0.25
 			}
 		}
+
 		USA_privatization = {
 			picture = man_five_year_plan_industry
 			

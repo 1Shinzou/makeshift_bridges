@@ -723,7 +723,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_wpa
-		icon = GFX_focus_generic_low_cost_housing
+		icon = GFX_USA_WPA
 		prerequisite = { focus = USA_continue_the_new_deal }
 		relative_position_id = USA_continue_the_new_deal
 		x = -3
@@ -1906,7 +1906,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_USACE_projects
-		icon = GFX_goal_generic_production
+		icon = GFX_USA_USACE
 		prerequisite = { focus = USA_military_construction }
 		available = {
 			OR = {

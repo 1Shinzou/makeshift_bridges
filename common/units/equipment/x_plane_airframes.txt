@@ -117,6 +117,15 @@ duplicate_archetypes = {
 		forbid_mission_type = training
 	}
 
+	### ADDED MEDIUM NAV MOD
+	medium_plane_naval_bomber_airframe = {
+		archetype = medium_plane_airframe
+		type = naval_bomber
+		picture = archetype_heavy_fighter_equipment
+		air_map_icon_frame = 3
+		interface_overview_category_index = 2
+	}
+
 	# large_plane
 
 	large_plane_maritime_patrol_plane_airframe = {

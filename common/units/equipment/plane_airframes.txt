@@ -1506,6 +1506,7 @@ equipments = {
 					tac_weapon
 					fighter_weapon
 					recon_camera
+					nav_bomber_weapon		### ADDED
 				}
 			}
 
@@ -1751,6 +1752,7 @@ equipments = {
 					tac_weapon
 					fighter_weapon
 					recon_camera
+					nav_bomber_weapon		### ADDED
 				}
 			}
 
@@ -1882,6 +1884,7 @@ equipments = {
 					tac_weapon
 					fighter_weapon
 					recon_camera
+					nav_bomber_weapon		### ADDED
 				}
 			}
 
@@ -2030,6 +2033,7 @@ equipments = {
 					tac_weapon
 					fighter_weapon
 					recon_camera
+					nav_bomber_weapon		### ADDED
 				}
 			}
 
@@ -2190,6 +2194,7 @@ equipments = {
 					tac_weapon
 					fighter_weapon
 					recon_camera
+					nav_bomber_weapon		### ADDED
 				}
 			}
 

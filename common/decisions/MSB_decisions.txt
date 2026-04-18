@@ -29,6 +29,146 @@ operations = {
         }
     }
 
+	fra_join_allies= { 
+		name = FRA_go_with_britain
+		icon = GFX_decision_eng_blackshirt_speech
+		fire_only_once = yes
+		allowed = {
+			tag = FRA
+		}
+		visible = {
+			tag = FRA
+			is_in_faction = no
+		}
+		targets = {
+			ENG	
+		}
+		complete_effect = {
+			ENG = { country_event = { id = britain.13 } }
+		}
+	}
+	move_capital_to_cascablanca = {
+		fire_only_once = yes
+		allowed = {
+			tag = FRA
+		}
+		visible = {
+			tag = FRA
+			NOT = {
+				controls_state = 16
+			}
+		}
+		complete_effect = {
+			set_capital = {
+				state = 461
+			}
+		}
+	}
+	move_capital_to_gabon = {
+		fire_only_once = yes
+		allowed = {
+			tag = FRA
+		}
+		visible = {
+			tag = FRA
+			NOT = {
+				controls_state = 16
+			}
+		}
+		complete_effect = {
+			set_capital = {
+				state = 539
+			}
+		}
+	}
+	move_capital_to_brest = {
+		fire_only_once = no
+		allowed = {
+			tag = FRA
+		}
+		visible = {
+			tag = FRA
+			NOT = {
+				controls_state = 16
+			}
+			controls_state = 14
+			has_capitulated = yes
+		}
+		complete_effect = {
+			set_capital = {
+				state = 14
+			}
+		}
+	}
+	move_capital_to_paris = {
+		fire_only_once = no
+		allowed = {
+			tag = FRA
+		}
+		visible = {
+			tag = FRA
+			NOT = {
+				controls_state = 16
+			}
+			controls_state = 16
+			has_capitulated = yes
+		}
+		complete_effect = {
+			set_capital = {
+				state = 16
+			}
+		}
+	}
+	move_capital_to_Kazan = {
+		fire_only_once = yes
+		allowed = {
+			tag = SOV
+		}
+		visible = {
+			tag = SOV
+			GER = { has_war_with = SOV }
+		}
+		complete_effect = {
+			set_capital = {
+				state = 249
+			}
+		}
+	}
+	move_capital_to_Stalingrad = {
+		fire_only_once = yes
+		allowed = {
+			tag = SOV
+		}
+		visible = {
+			tag = SOV
+			GER = { has_war_with = SOV }
+		}
+		complete_effect = {
+			set_capital = {
+				state = 217
+			}
+		}
+	}
+	move_capital_to_Vladivostok = {
+		fire_only_once = yes
+		allowed = {
+			tag = SOV
+		}
+		visible = {
+			tag = SOV
+			GER = { has_war_with = SOV }
+		}
+		complete_effect = {
+			set_capital = {
+				state = 408
+			}
+		}
+	}
+
+	###################
+	# ANNEX DECISIONS #
+	###################
+
 		annex_bulgaria= {
 			# icon = generic_operation
 			allowed = {
@@ -179,132 +319,6 @@ operations = {
 			}
 		}
     }
-
-    political_actions = {
-
-	move_capital_to_cascablanca = {
-		fire_only_once = yes
-		allowed = {
-			tag = FRA
-		}
-		visible = {
-			tag = FRA
-			NOT = {
-				controls_state = 16
-			}
-		}
-		complete_effect = {
-			set_capital = {
-				state = 461
-			}
-		}
-	}
-
-	move_capital_to_gabon = {
-		fire_only_once = yes
-		allowed = {
-			tag = FRA
-		}
-		visible = {
-			tag = FRA
-			NOT = {
-				controls_state = 16
-			}
-		}
-		complete_effect = {
-			set_capital = {
-				state = 539
-			}
-		}
-	}
-
-	move_capital_to_brest = {
-		fire_only_once = no
-		allowed = {
-			tag = FRA
-		}
-		visible = {
-			tag = FRA
-			NOT = {
-				controls_state = 16
-			}
-			controls_state = 14
-			has_capitulated = yes
-		}
-		complete_effect = {
-			set_capital = {
-				state = 14
-			}
-		}
-	}
-
-	move_capital_to_paris = {
-		fire_only_once = no
-		allowed = {
-			tag = FRA
-		}
-		visible = {
-			tag = FRA
-			NOT = {
-				controls_state = 16
-			}
-			controls_state = 16
-			has_capitulated = yes
-		}
-		complete_effect = {
-			set_capital = {
-				state = 16
-			}
-		}
-	}
-
-	move_capital_to_Kazan = {
-		fire_only_once = yes
-		allowed = {
-			tag = SOV
-		}
-		visible = {
-			tag = SOV
-			GER = { has_war_with = SOV }
-		}
-		complete_effect = {
-			set_capital = {
-				state = 249
-			}
-		}
-	}
-	move_capital_to_Stalingrad = {
-		fire_only_once = yes
-		allowed = {
-			tag = SOV
-		}
-		visible = {
-			tag = SOV
-			GER = { has_war_with = SOV }
-		}
-		complete_effect = {
-			set_capital = {
-				state = 217
-			}
-		}
-	}
-	move_capital_to_Vladivostok = {
-		fire_only_once = yes
-		allowed = {
-			tag = SOV
-		}
-		visible = {
-			tag = SOV
-			GER = { has_war_with = SOV }
-		}
-		complete_effect = {
-			set_capital = {
-				state = 408
-			}
-		}
-	}
-
-}
 
 Technologies = {
 

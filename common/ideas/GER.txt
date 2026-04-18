@@ -1161,11 +1161,8 @@ ideas = {
 
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.15
-				defense_bonus_against = 0.10
-			}
-			modifier = {
-				supply_node_range = 0.1
+				breakthrough_bonus_against = 0.15
+				defense_bonus_against = 0.05
 			}
 		}
 

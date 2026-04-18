@@ -1478,6 +1478,7 @@ equipments = {
 			tactical_bomber
 			heavy_fighter
 			scout_plane
+			naval_bomber ### ADDED
 		}
 		allow_mission_type = training
 		group_by = archetype

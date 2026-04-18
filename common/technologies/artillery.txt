@@ -1308,9 +1308,6 @@ technologies = {
 	}
 
 	antitank4 = {
-		enable_equipment_modules = {
-			tank_high_velocity_cannon_2
-		}
 		
 		category_anti_tank = {
 			hard_attack = 0.1

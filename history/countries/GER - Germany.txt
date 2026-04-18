@@ -98,7 +98,8 @@ set_technology = {
 	mechanical_computing = 1
 	radio = 1
 	tech_maintenance_company = 1
-	tech_maintenance_company2 = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
 
 }
 if = {

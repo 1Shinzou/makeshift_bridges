@@ -76,6 +76,7 @@ if = {
 			tech_mountaineers = 1
 			marines  = 1
 			paratroopers = 1
+			rangers_tech = 1 
 		}
 	else = {
 		set_air_oob = "ENG_1936_air_legacy"

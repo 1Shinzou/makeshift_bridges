@@ -266,6 +266,7 @@ faction_goal_unlock_research = {
 					value = 1.25
 				}
 				add_to_temp_variable = { total_techs = temp_tech }
+				set_temp_variable = { temp_tech = 0 }
 			}
 			else_if = {
 				limit = {

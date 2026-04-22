@@ -170,6 +170,16 @@ on_actions = {
 				}
 			}
 
+			JAP = { 
+				annex_country = { target = MAN }
+				every_state = {
+					limit = {
+						is_core_of = MAN
+					}
+					set_compliance = 70
+				}
+			}
+
 			RAJ = { 
 				annex_country = { target = BRM }
 				every_state = {

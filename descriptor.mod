@@ -1,4 +1,4 @@
-version="1.17"
+version="1.18"
 tags={
 	"Balance"
 	"Fixes"
@@ -23,5 +23,5 @@ replace_path="history/units"
 replace_path="map/strategicregions"
 replace_path="map/supplyareas"
 name="Makeshift Bridges | MSB - DEV"
-supported_version="1.17.*"
+supported_version="1.18.*"
 remote_file_id="3412397442"

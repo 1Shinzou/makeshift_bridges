@@ -49,6 +49,11 @@ country_event = { #MEFO Bills have been cancelled
 
 	is_triggered_only = yes
 
+	trigger = {
+		#Nuh-uh, only trigger this event if you still have the MEFO Bills to avoid exploits where you can have BOTH Economy of Conquest AND Recovering Economy. The game isn't smart enough to handle the genius that is our player base
+		has_dynamic_modifier = { modifier = GER_mefo_bills_modifier }
+	}
+
 	option = { #Continue to rearm - get Economy of Conquest
 		name = germany_mefo_bills.1.a
 		ai_chance = {
@@ -3623,6 +3628,7 @@ country_event = {
 			}
 		}
 
+		GER_lower_CGFF_small = yes
 	}
 }
 
@@ -3717,7 +3723,7 @@ country_event = {
 						}
 					}
 					FROM = {
-						create_faction = GER_mitteleuropa_alliance
+						create_faction_from_template = faction_template_GER_mitteleuropa_alliance
 					}
 				}
 				ROOT = {
@@ -3749,7 +3755,7 @@ country_event = {
 						}
 					}
 					FROM = {
-						create_faction = GER_mitteleuropa_alliance
+						create_faction_from_template = faction_template_GER_mitteleuropa_alliance
 					}
 				}
 				ROOT = {
@@ -3887,7 +3893,7 @@ country_event = {
 				limit = {
 					is_faction_leader = no
 				}
-				create_faction = GER_mitteleuropa_alliance
+				create_faction_from_template = faction_template_GER_mitteleuropa_alliance
 			}
 			FROM = {
 				add_state_claim = 977
@@ -3916,7 +3922,7 @@ country_event = {
 				limit = {
 					is_faction_leader = no
 				}
-				create_faction = GER_mitteleuropa_alliance
+				create_faction_from_template = faction_template_GER_mitteleuropa_alliance
 			}
 			FROM = {
 				add_state_claim = 35
@@ -3957,7 +3963,7 @@ country_event = {
 				limit = {
 					is_faction_leader = no
 				}
-				create_faction = GER_mitteleuropa_alliance
+				create_faction_from_template = faction_template_GER_mitteleuropa_alliance
 			}
 			FROM = {
 				add_state_claim = 977
@@ -3980,7 +3986,7 @@ country_event = {
 				limit = {
 					is_faction_leader = no
 				}
-				create_faction = GER_mitteleuropa_alliance
+				create_faction_from_template = faction_template_GER_mitteleuropa_alliance
 			}
 			FROM = {
 				add_state_claim = 35
@@ -4597,7 +4603,7 @@ country_event = { #Germany integrates us
 	picture = GFX_report_event_german_troops
 
 	is_triggered_only = yes
-
+	
 	option = { #we had a good run
 		name = wuw_GER_diplomacy.81.a
 
@@ -4607,13 +4613,27 @@ country_event = { #Germany integrates us
 				transfer_troops = yes
 			}
 		}
-
-		every_controlled_state = {
-			limit = {
-				is_core_of = ROOT
+		
+		effect_tooltip = {
+			every_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_compliance = 50
+				add_extra_state_shared_building_slots = 1
 			}
-			add_compliance = 50
-			add_extra_state_shared_building_slots = 1
+		}
+		
+		hidden_effect = {
+			FROM = {
+				every_controlled_state = {
+					limit = {
+						is_core_of = ROOT
+					}
+					add_compliance = 50
+					add_extra_state_shared_building_slots = 1
+				}
+			}
 		}
 
 		custom_effect_tooltip = GAME_OVER_TT
@@ -6489,7 +6509,7 @@ country_event = {
 
 		FROM = { # FROM Rejects
 			country_event = { 
-				id = wuw_GER_diplomacy.118
+				id = wuw_GER_diplomacy.119
 				hours = 5 
 				random_hours = 6
 			}

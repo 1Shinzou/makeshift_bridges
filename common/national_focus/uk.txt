@@ -3859,6 +3859,16 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+
+			add_tech_bonus = {
+				name = ENG_revitalize_northern_england
+				bonus = 1.0
+				uses = 1
+				category = dispersed_industry_category
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			131 = {
 				if = {
 					limit = {
@@ -3877,12 +3887,6 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-			}
-			add_tech_bonus = {
-				name = ENG_revitalize_northern_england
-				bonus = 1.0
-				uses = 1
-				category = dispersed_industry_category
 			}
 		}	
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
@@ -3909,6 +3913,9 @@ focus_tree = {
 				uses = 1
 				category = concentrated_industry_category
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			127 = {
 				if = {
 					limit = {
@@ -4044,7 +4051,10 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-		add_ideas = welsh_miners_exploited
+			add_ideas = welsh_miners_exploited
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			786 = {
 				add_building_construction = {
 					type =  dam
@@ -4081,6 +4091,9 @@ focus_tree = {
 		relative_position_id = ENG_Provoke_british_patriotism
 		completion_reward = {
 			add_ideas = ENG_colonial_investors
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			swap_ideas = {
 				remove_idea = ENG_state_of_the_economy_three
 				add_idea = ENG_state_of_the_economy_four
@@ -4103,6 +4116,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_timed_idea = { idea = ENG_devaluated_pound days = 365 }
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
 			swap_ideas = {
 				remove_idea = ENG_state_of_the_economy_two
 				add_idea =  ENG_state_of_the_economy_three
@@ -4157,21 +4173,27 @@ focus_tree = {
 		relative_position_id = ENG_Provoke_british_patriotism
 		
 		completion_reward = {
-				#trade bonuses
-				if = {
-					limit = {
-						has_idea = free_trade
-					}
-					add_political_power = 120
+			#trade bonuses
+			if = {
+				limit = {
+					has_idea = free_trade
 				}
-				else = {
-					add_ideas = free_trade
-				}
-				add_ideas = Trade_expanded
-				swap_ideas = {
-					remove_idea = ENG_state_of_the_economy_three
-					add_idea = ENG_state_of_the_economy_four
-				}
+				add_political_power = 120
+			}
+			else = {
+				add_ideas = free_trade
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_ideas = Trade_expanded
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			swap_ideas = {
+				remove_idea = ENG_state_of_the_economy_three
+				add_idea = ENG_state_of_the_economy_four
+			}
 		}
 	
 	}
@@ -4216,6 +4238,9 @@ focus_tree = {
 			else = {
 				add_ideas = partial_economic_mobilisation
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			swap_ideas = {
 				remove_idea = ENG_state_of_the_economy_two
 				add_idea = ENG_state_of_the_economy_three

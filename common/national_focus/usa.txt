@@ -233,6 +233,10 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
+			add_political_power = 200
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			random_core_state = {
 				limit = {
 					is_controlled_by = ROOT
@@ -253,6 +257,9 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			add_timed_idea = { idea = USA_adjusted_compensation_payment days = 70 }
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
 			USA_great_depression_level_down = yes
 			if = {
 				limit = {
@@ -260,7 +267,6 @@ focus_tree = {
 				}
 				USA_congress_small_opposition = yes
 			}
-			add_political_power = 200
 		}
 	}
 	
@@ -312,6 +318,9 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			add_ideas = USA_gold_standard
+			
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
 			if = {
 				limit = {
 					communism < 0.1 
@@ -367,13 +376,14 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-
-			USA_great_depression_level_down = yes
 			add_ideas = isolation
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_timed_idea = {
 				idea = USA_tariffs
 				days = 720
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			USA_great_depression_level_down = yes
 		}
 	}
 	
@@ -419,14 +429,14 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_ideas = civilian_economy
 			custom_effect_tooltip = generic_skip_one_line_tt
 			USA_great_depression_level_down = yes
 			USA_congress_medium_opposition = yes
 			unlock_decision_tooltip = { decision = USA_give_tax_break show_effect_tooltip = yes }
 		
-			custom_effect_tooltip = generic_skip_one_line_tt
-			add_ideas = civilian_economy
+
 		}
 	}
 	focus = {

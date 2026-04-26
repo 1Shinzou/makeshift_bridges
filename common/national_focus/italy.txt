@@ -1888,7 +1888,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ITA_industria_della_gomma_sintetica
-		#mutually_exclusive = { focus = ITA_modernize_the_mezzogiorno }
+		mutually_exclusive = { focus = ITA_modernize_the_mezzogiorno }
 		cost = 10
 		available = {
 		}
@@ -2065,8 +2065,8 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ITA_industria_della_gomma_sintetica
-		#mutually_exclusive = { focus = ITA_strengthen_northern_industry }
-		cost = 5
+		mutually_exclusive = { focus = ITA_strengthen_northern_industry }
+		cost = 10
 		available = {
 		}
 
@@ -2086,7 +2086,7 @@ focus_tree = {
 				}
 				117 = { #CAMPAGNA (Napoli)
 
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 5
 					if = {
 						limit = {
 							infrastructure < 5
@@ -2096,6 +2096,16 @@ focus_tree = {
 							level = 1
 							instant_build = yes						
 						}
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
 					}
 					add_building_construction = {
 						type = dockyard
@@ -2123,7 +2133,7 @@ focus_tree = {
 					}
 					prioritize = { 156 2 162 } #CALABRIA as main fallback
 
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 5
 					if = {
 						limit = {
 							infrastructure < 5
@@ -2133,6 +2143,16 @@ focus_tree = {
 							level = 1
 							instant_build = yes						
 						}
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
 					}
 					add_building_construction = {
 						type = dockyard
@@ -2148,7 +2168,7 @@ focus_tree = {
 				}
 				849 = { #PUGLIA (Taranto, Bari, Foggia)
 
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 5
 					if = {
 						limit = {
 							infrastructure < 5
@@ -2158,6 +2178,16 @@ focus_tree = {
 							level = 1
 							instant_build = yes						
 						}
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
 					}
 					add_building_construction = {
 						type = dockyard
@@ -2180,7 +2210,7 @@ focus_tree = {
 
 				115 = { #SICILY (Palermo, Messina, Catania)
 
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 5
 					if = {
 						limit = {
 							infrastructure < 5
@@ -2190,6 +2220,16 @@ focus_tree = {
 							level = 1
 							instant_build = yes						
 						}
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
 					}
 					add_building_construction = {
 						type = dockyard
@@ -2208,6 +2248,46 @@ focus_tree = {
 						instant_build = yes
 						province = 7059					
 					}
+				}
+			}
+
+			if = {
+				limit = {
+					has_full_control_of_state = 114
+				}
+				114 = { #SARDINIA (Cagliari)
+					add_extra_state_shared_building_slots = 5
+					if = {
+						limit = {
+							infrastructure < 5
+						}
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes						
+						}
+					}
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						instant_build = yes
+						province = 11773					
+					}			
 				}
 			}
 

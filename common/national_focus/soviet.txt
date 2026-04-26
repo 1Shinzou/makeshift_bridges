@@ -8571,7 +8571,7 @@ focus = {
 
 		completion_reward = {
 			# Estonia
-			custom_effect_tooltip = SOV_estonian_claimed_states_tt
+			#custom_effect_tooltip = SOV_estonian_claimed_states_tt
 			hidden_effect = {
 				EST = {
 					every_owned_state = {
@@ -8607,10 +8607,15 @@ focus = {
 				}
 			}
 			#Activate targeted decisions
-			activate_targeted_decision = { target = EST decision = SOV_send_ultimatum_to_country_baltic }
-			activate_targeted_decision = { target = LAT decision = SOV_send_ultimatum_to_country_baltic }
-			activate_targeted_decision = { target = LIT decision = SOV_send_ultimatum_to_country_baltic }
-
+			#activate_targeted_decision = { target = EST decision = SOV_send_ultimatum_to_country_baltic }
+			#activate_targeted_decision = { target = LAT decision = SOV_send_ultimatum_to_country_baltic }
+			#activate_targeted_decision = { target = LIT decision = SOV_send_ultimatum_to_country_baltic }
+			add_political_power = -225
+			custom_effect_tooltip = generic_skip_one_line_tt
+			annex_country = { target = EST }
+			annex_country = { target = LAT }
+			annex_country = { target = LIT }
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_named_threat = { threat = 1 name = SOV_claims_in_baltic }
 		}
 	}

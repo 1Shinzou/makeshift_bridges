@@ -3747,7 +3747,7 @@ focus = {
 			
 			add_timed_idea = { 
 				idea = FRA_eco_post_cap_idea 
-				days = 60 
+				days = 30
 			}
 			EFR = {
 				every_army_leader = {

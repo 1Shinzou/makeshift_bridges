@@ -8020,6 +8020,10 @@ focus = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
+			add_political_power = 200
+			#custom_effect_tooltip = generic_skip_one_line_tt
+			army_experience = 200
+			custom_effect_tooltip = generic_skip_one_line_tt
 			GER = { 
 				declare_war_on = {
 					target = SOV
@@ -8077,6 +8081,14 @@ focus = {
 					}
 				}
 				complete_national_focus = SOV_rehabilitated_military
+			}
+			if = { 
+				limit = { 
+					NOT = { 
+						has_completed_focus = SOV_positive_heroism
+					}
+				}
+				complete_national_focus = SOV_positive_heroism
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			if = { 

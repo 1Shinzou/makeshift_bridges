@@ -867,7 +867,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
-					tank_radio_module
 					tank_secondary_turret
 				}
 			}
@@ -876,7 +875,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
-					tank_radio_module
 					tank_secondary_turret
 				}
 			}
@@ -885,7 +883,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
-					tank_radio_module
 					tank_secondary_turret
 				}
 			}
@@ -893,6 +890,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
+					tank_secondary_turret
 				}
 			}
 
@@ -900,7 +898,7 @@ equipments = {
 		module_count_limit = {
 			module = sloped_armor
 			count < 2
-		}	
+		}
 		module_count_limit = {
 			module = smoke_launchers
 			count < 2
@@ -945,6 +943,11 @@ equipments = {
 
 		module_count_limit = {
 			module = stabilizer
+			count < 2
+		}
+
+		module_count_limit = {
+			category = tank_secondary_turret
 			count < 2
 		}
 

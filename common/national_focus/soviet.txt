@@ -8583,7 +8583,7 @@ focus = {
 				}
 			}
 			# Latvia
-			custom_effect_tooltip = SOV_latvian_claimed_states_tt
+			#custom_effect_tooltip = SOV_latvian_claimed_states_tt
 			hidden_effect = {
 				LAT = {
 					every_owned_state = {
@@ -8595,7 +8595,7 @@ focus = {
 				}
 			}
 			# Lithuania
-			custom_effect_tooltip = SOV_lithuanian_claimed_states_tt
+			#custom_effect_tooltip = SOV_lithuanian_claimed_states_tt
 			hidden_effect = {
 				LIT = {
 					every_owned_state = {

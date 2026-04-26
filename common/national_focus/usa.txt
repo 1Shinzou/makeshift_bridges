@@ -176,13 +176,14 @@ focus_tree = {
 		
 		completion_reward = {
 			add_timed_idea = { idea = USA_establishing_the_gold_standard days = 300 }
-		
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = USA_william_regnery 
-
+			custom_effect_tooltip = generic_skip_one_line_tt
 			#add_ideas = USA_rubber_in_asia
 			
 			add_timed_idea = { idea = USA_staunch_isolationists days = 1200 }
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_timed_idea = {
 				idea = USA_civilian_industry
 				days = 1791
@@ -192,6 +193,7 @@ focus_tree = {
 					}
 					remove_ideas = new_deal
 				}
+				custom_effect_tooltip = generic_skip_one_line_tt
 				custom_effect_tooltip = "The New Deal idea will be removed if it is currently instated."
 					hidden_effect = {
 					if = {
@@ -1346,7 +1348,7 @@ focus_tree = {
 		relative_position_id = USA_neutrality_act
 
 
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -1385,24 +1387,24 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
+			add_political_power = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
 					has_completed_focus = USA_reestablish_the_gold_standard
 				}
-
 				add_timed_idea = { 
 					idea = USA_accumulated_wealth_tax_act days = 180
 				}
 
 				#add_stability = 0.05
-
+				custom_effect_tooltip = generic_skip_one_line_tt
 				ENG = { 
 					add_timed_idea = { 
-						idea = ENG_american_payment days = 180 
+						idea = ENG_american_payment days = 90
 					}
 				}
 			}
-
 			if = {
 				limit = {
 					has_completed_focus = USA_continue_the_new_deal
@@ -1413,14 +1415,14 @@ focus_tree = {
 				}
 
 				#add_war_support = 0.05
-
+				custom_effect_tooltip = generic_skip_one_line_tt
 				ENG = { 
 					add_timed_idea = {
 						idea = ENG_american_aid days = 180
 					}
 				}
 			}
-
+			custom_effect_tooltip = generic_skip_one_line_tt
 			else = {
 				add_ideas = USA_lend_lease_act_dummy #should never get here, just for tooltip purposes
 			}
@@ -4335,8 +4337,11 @@ focus_tree = {
 		
 		completion_reward = {
 			add_ideas = USA_vic_plan
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = allied_vic_plan
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = USA_all_in
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_offsite_building = {
 				type = industrial_complex
 				level = 30
@@ -4345,7 +4350,7 @@ focus_tree = {
 				type = arms_factory
 				level = 30
 			}
-
+		custom_effect_tooltip = generic_skip_one_line_tt
 			ENG = {
 				add_ideas = allied_vic_plan
 				add_offsite_building = {

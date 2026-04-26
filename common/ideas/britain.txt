@@ -381,7 +381,8 @@ ideas = {
 			}
 					
 			modifier = {
-				industrial_capacity_factory = 0.075
+				industrial_capacity_factory = 0.10
+				war_support_weekly = 0.005
 			}
 		}
 		

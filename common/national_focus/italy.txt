@@ -7027,7 +7027,7 @@ focus_tree = {
 						create_equipment_variant = {
 							name = "Costanzo Ciano Class"
 							type = ship_hull_cruiser_2
-							name_group = ITA_CL_HISTORICAL #TODO_Manu: Namelist (Conte di Savoia, Rex, Neptunia, Oceania, Conte Rosso, Conte Grande, Saturnia, Vulcania, Conte Biancamo, Duilio, Conte verde, Giulio Cesare, Colombo, Tel Aviv) Excluded Roma (Aquila) and Augustus (Sparviero)
+							name_group = ITA_CL_HISTORICAL
 							parent_version = 0
 							allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
 							modules = {
@@ -7050,7 +7050,7 @@ focus_tree = {
 						create_equipment_variant = {
 							name = "Costanzo Ciano Class"
 							type = ship_hull_cruiser_2
-							name_group = ITA_CL_HISTORICAL #TODO_Manu: Namelist (Conte di Savoia, Rex, Neptunia, Oceania, Conte Rosso, Conte Grande, Saturnia, Vulcania, Conte Biancamo, Duilio, Conte verde, Giulio Cesare, Colombo, Tel Aviv) Excluded Roma (Aquila) and Augustus (Sparviero)
+							name_group = ITA_CL_HISTORICAL
 							parent_version = 0
 							allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
 							modules = {
@@ -7177,10 +7177,10 @@ focus_tree = {
 					has_full_control_of_state = 2
 				}
 				2 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -7191,10 +7191,10 @@ focus_tree = {
 					has_full_control_of_state = 849
 				}
 				849 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -7205,10 +7205,10 @@ focus_tree = {
 					has_full_control_of_state = 115
 				}
 				115 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -7221,10 +7221,10 @@ focus_tree = {
 					has_full_control_of_state = 448
 				}
 				448 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -7235,10 +7235,10 @@ focus_tree = {
 					has_full_control_of_state = 550
 				}
 				550 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -7249,10 +7249,10 @@ focus_tree = {
 					has_full_control_of_state = 559
 				}
 				559 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -7265,7 +7265,7 @@ focus_tree = {
 					has_full_control_of_state = 118
 				}
 				118 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
 						level = 1
@@ -7279,7 +7279,7 @@ focus_tree = {
 					has_full_control_of_state = 459
 				}
 				459 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
 						level = 1
@@ -7293,7 +7293,7 @@ focus_tree = {
 					has_full_control_of_state = 458
 				}
 				458 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
 						level = 1
@@ -7307,7 +7307,7 @@ focus_tree = {
 					has_full_control_of_state = 447
 				}
 				447 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
 						level = 1
@@ -7321,7 +7321,7 @@ focus_tree = {
 					has_full_control_of_state = 112
 				}
 				112 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
 						level = 1
@@ -7335,7 +7335,7 @@ focus_tree = {
 					has_full_control_of_state = 169
 				}
 				169 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
 						level = 1
@@ -7349,7 +7349,7 @@ focus_tree = {
 					has_full_control_of_state = 19
 				}
 				19 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
 						level = 1
@@ -7363,7 +7363,7 @@ focus_tree = {
 					has_full_control_of_state = 14
 				}
 				14 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
 						level = 1
@@ -7372,7 +7372,7 @@ focus_tree = {
 				}
 			}
 
-			custom_effect_tooltip = ITA_flotta_d_evasione_dockyards_tt #TODO_Manu: Dynamic tooltip
+			custom_effect_tooltip = ITA_flotta_d_evasione_dockyards_tt
 		}
 	}
 

@@ -11,9 +11,11 @@ set_popularities = {
 	neutrality = 100
 }
 add_ideas = {
-	free_trade
 	ai_idea
 	blm_ai
+	limited_conscription
+	free_trade
+	civilian_economy
 }
 set_research_slots = 0 #optimization
 set_convoys = 500

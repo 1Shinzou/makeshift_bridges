@@ -31,6 +31,16 @@ ideas = {
             }
         }
 
+		march_to_victory = { 
+			picture = SOV_transformation_of_nature
+			modifier = { 
+				production_factory_efficiency_gain_factor = 0.25
+				equipment_conversion_speed = 0.50
+				training_time_army_factor = -0.15
+				supply_node_range = 0.10
+			}
+		}
+
 		extra_cp = {
 			allowed = {
 				always = no

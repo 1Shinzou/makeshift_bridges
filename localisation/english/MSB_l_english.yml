@@ -108,6 +108,8 @@ SOV_georgy_zhukov_barb:0 "Goergy Zhukov"
 SOV_konstantin_rokossovsky_barb:0 "Konstantin Rokossovsky"
 SOV_frontline_mob:0 "Mobilization to the Front"
 SOV_frontline_mob_desc:0 ""
+SOV_anti_sealion:0 "The March of Victory"
+march_to_victory:0 "March to Victory!"
 advanced_heavy_tank:0 "Heavy Tank III"
 
 

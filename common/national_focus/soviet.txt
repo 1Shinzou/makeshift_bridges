@@ -774,19 +774,7 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			any_owned_state = {
-				has_resources_amount = {
-					resource = steel
-					amount > 0
-				}
-				free_building_slots = {
-					building = industrial_complex
-					size > 1
-					include_locked = yes
-				}
-			}
-			SOV_third_five_year_plan_available = yes
-			NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
+			
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -876,14 +864,7 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			has_tech = rubber_processing
-			SOV_third_five_year_plan_available = yes
-			NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
-			has_full_control_of_state = 219 #MOSCOW
-			OR = {
-				has_full_control_of_state = 260 #VORONEZH
-				has_full_control_of_state = 223 #TULA
-			}
+			
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
@@ -7104,7 +7085,7 @@ focus_tree = {
 					}
 				}
 			}
-				custom_effect_tooltip = "Y Spawn in divisions in every frontline state"
+				#custom_effect_tooltip = "Y Spawn in divisions in every frontline state"
 		}
 	}
 
@@ -8009,6 +7990,127 @@ focus = {
 	}
 
 	focus = {
+		id = SOV_anti_sealion
+		icon = GFX_focus_attack_germany
+		prerequisite = { focus = SOV_the_comintern }
+		x = 0
+		y = 1
+		relative_position_id = SOV_the_comintern
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_civil_war = yes
+			}	
+		}
+		
+		mutually_exclusive = { focus = SOV_policy_of_individual_security }
+
+		available = {
+			ENG = { 
+				OR = {
+				has_capitulated = yes
+				surrender_progress > 0.50
+				}
+			}
+		}
+		
+		search_filters = {FOCUS_FILTER_POLITICAL}
+
+		completion_reward = {
+			GER = { 
+				declare_war_on = {
+					target = SOV
+					type = take_state_focus
+					generator = { 50 }
+				}
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_timed_idea = { 
+				idea = march_to_victory
+				days = 120
+			}
+		
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_ideas = sov_totaler_krieg_economy
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = { 
+				limit = { 
+					NOT = { 
+						has_completed_focus = SOV_military_engineering_university
+					}
+				}
+				complete_national_focus = SOV_military_engineering_university
+			}
+			if = { 
+				limit = { 
+					NOT = { 
+						has_completed_focus = SOV_move_industry_to_the_urals
+					}
+				}
+				complete_national_focus = SOV_move_industry_to_the_urals
+			}
+			if = { 
+				limit = { 
+					NOT = { 
+						has_completed_focus = SOV_strengthen_the_mobilization_plan
+					}
+				}
+				complete_national_focus = SOV_strengthen_the_mobilization_plan
+			}
+			if = { 
+				limit = { 
+					NOT = { 
+						has_completed_focus = SOV_cohesion_first
+					}
+				}
+				complete_national_focus = SOV_cohesion_first
+			}
+			if = { 
+				limit = { 
+					NOT = { 
+						has_completed_focus = SOV_rehabilitated_military
+					}
+				}
+				complete_national_focus = SOV_rehabilitated_military
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = { 
+				limit = { 
+					NOT = { 
+						has_tech = antitank1
+					}
+				}
+				set_technology = { 
+					antitank1 = 1
+				}
+			}
+			if = { 
+				limit = { 
+					NOT = { 
+						has_tech = antitank2
+					}
+				}
+				set_technology = { 
+					antitank2 = 1
+				}
+			}
+			hidden_effect = { 
+				#GER = { 
+				#	add_timed_idea = { 
+				#		idea = GER_barbarossa
+				#		days = 100
+				#	}
+				#}
+			}
+		}
+	}
+
+	focus = {
 		id = SOV_send_military_advisors_to_spain
 		icon = GFX_sov_spanish_war
 		prerequisite = { focus = SOV_the_comintern }
@@ -8103,7 +8205,7 @@ focus = {
 		id = SOV_policy_of_collective_security
 		icon = GFX_focus_ger_great_red_menace
 		prerequisite = { focus = SOV_the_comintern }
-		x = 0
+		x = 2
 		y = 1
 		relative_position_id = SOV_the_comintern
 		cost = 5
@@ -8183,7 +8285,7 @@ focus = {
 		id = SOV_middle_east_diplomacy
 		icon = GFX_focus_TUR_treaty_of_saadabad
 		prerequisite = { focus = SOV_the_comintern }
-		x = 2
+		x = 4
 		y = 1
 		relative_position_id = SOV_the_comintern
 		cost = 5
@@ -8353,260 +8455,6 @@ focus = {
 			}
 		}
 	}
-
-	focus = {
-		id = SOV_prepare_a_war_with_japan
-		icon = GFX_focus_AST_war_japan
-		prerequisite = { focus = SOV_the_comintern }
-		x = 5
-		y = 1
-		relative_position_id = SOV_the_comintern
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_civil_war = yes
-			}	
-		}
-		
-		bypass = {
-			has_war_with = JAP
-		}
-
-		available = {
-			date > 1942.1.1
-			#surrender_progress < 0.01
-			country_exists = JAP
-			NOT = {
-				JAP = { is_in_faction_with = ROOT } 
-			}
-			is_subject = no
-		}
-		
-		search_filters = {}
-
-		completion_reward = {
-			add_timed_idea = {
-				idea = SOV_preparations_for_soviet_japanese_war
-				days = 365
-			}
-			every_country = {
-				limit = {
-					is_in_faction_with = ROOT
-					SOV_is_chinese_tag = yes
-					is_in_faction_with = ROOT
-				}
-				hidden_effect = {
-					country_event = NSB_soviet_foreign_politics_events.251
-				}
-				effect_tooltip = {
-					add_timed_idea = {
-						idea = SOV_preparations_for_soviet_japanese_war_china
-						days = 365
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_end_the_khalkhin_gol_conflict
-		icon = GFX_focus_jap_cast_the_die
-		prerequisite = { focus = SOV_prepare_a_war_with_japan }
-		x = -1
-		y = 1
-		relative_position_id = SOV_prepare_a_war_with_japan
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_civil_war = yes
-			}	
-		}
-		
-		mutually_exclusive = { focus = SOV_recover_the_kuril_islands }
-
-		available = {
-			surrender_progress < 0.20
-			country_exists = JAP
-			NOT = { is_in_faction_with = JAP }
-			NOT = { has_war_together_with = JAP }
-			761 = { #Hulunbuir
-				controller = {
-					NOT = { is_in_faction_with = ROOT }
-				}
-			}
-			is_subject = no
-		}
-		
-		search_filters = {}
-
-		completion_reward = {
-			custom_effect_tooltip = SOV_end_the_khalkhin_gol_conflict_wargoal_tt
-			hidden_effect = {
-				every_country = {
-					limit = {
-						OR = {
-							tag = JAP
-							AND = {
-								SOV_is_chinese_tag = yes
-								is_in_faction_with = JAP
-							}
-						}
-					}
-					ROOT = {
-						create_wargoal = {
-							type = puppet_wargoal_focus
-							target = PREV
-						}
-					}
-				}
-			}
-
-			add_state_claim = 761 #Hulunbuir
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-			
-			if = {
-				limit = {
-					has_idea = SOV_preparations_for_soviet_japanese_war
-				}
-				remove_ideas = SOV_preparations_for_soviet_japanese_war
-				every_country = {
-					limit = {
-						is_in_faction_with = ROOT
-						has_idea = SOV_preparations_for_soviet_japanese_war_china
-					}
-					remove_ideas = SOV_preparations_for_soviet_japanese_war_china
-				}
-			}
-			add_timed_idea = {
-				idea = SOV_soviet_japanese_reckoning
-				days = 180
-			}
-			every_country = {
-				limit = {
-					is_in_faction_with = ROOT
-					OR = {
-						SOV_is_chinese_tag = yes
-						capital_scope = {
-							is_on_continent = asia
-						}
-					}
-					
-				}
-				hidden_effect = {
-					country_event = NSB_soviet_foreign_politics_events.252
-				}
-				effect_tooltip = {
-					add_timed_idea = {
-						idea = SOV_soviet_japanese_reckoning_china
-						days = 180
-					}
-				}
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			if = {
-				limit = {
-					is_in_faction_with = MON
-					612 = {
-						controller = {
-							NOT = { is_in_faction_with = ROOT }
-						}
-					}
-				}
-				MON = {
-					add_state_claim = 612 #Chahar
-					add_state_claim = 611 #South Chahar
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_recover_the_kuril_islands
-		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = SOV_prepare_a_war_with_japan }
-		x = 1
-		y = 1
-		relative_position_id = SOV_prepare_a_war_with_japan
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_civil_war = yes
-			}	
-		}
-		
-		mutually_exclusive = { focus = SOV_end_the_khalkhin_gol_conflict }
-
-		available = {
-			surrender_progress < 0.20
-			country_exists = JAP
-			NOT = {
-				JAP = { is_in_faction_with = ROOT } 
-			}
-			JAP = { controls_state = 555 }
-			NOT = { has_war_with = JAP }
-			is_subject = no
-		}
-		
-		search_filters = {}
-
-		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
-				target = JAP
-				expire = 0
-				generator = { 537 555 }
-			}
-
-			if = {
-				limit = {
-					has_idea = SOV_preparations_for_soviet_japanese_war
-				}
-				remove_ideas = SOV_preparations_for_soviet_japanese_war
-				every_country = {
-					limit = {
-						is_in_faction_with = ROOT
-						has_idea = SOV_preparations_for_soviet_japanese_war_china
-					}
-					remove_ideas = SOV_preparations_for_soviet_japanese_war_china
-				}
-			}
-			add_timed_idea = {
-				idea = SOV_soviet_japanese_reckoning
-				days = 180
-			}
-			every_country = {
-				limit = {
-					is_in_faction_with = ROOT
-					SOV_is_chinese_tag = yes
-					is_in_faction_with = ROOT
-				}
-				hidden_effect = {
-					country_event = NSB_soviet_foreign_politics_events.252
-				}
-				effect_tooltip = {
-					add_timed_idea = {
-						idea = SOV_soviet_japanese_reckoning_china
-						days = 180
-					}
-				}
-			}
-
-			custom_effect_tooltip = SOV_recover_the_kuril_islands_decisions_tt
-		}
-	}
-
 
 	focus = {
 		id = SOV_baltic_security

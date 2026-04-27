@@ -43,10 +43,6 @@ france.31.t:0 "[ROOT.GetLeader] Resigns"
 france.31.d:0 "With the outbreak of yet another war, it must fall to fresh leadership to fight. Whilst few would doubt that [ROOT.GetLeader] has been a fine prime minister, he simply could not contend with the extraordinary set of circumstances in which France has found herself. We can but pray there is light at the end of the tunnel."
 france.31.a:0 "Monsieur Reynaud shall seek to form a government."
 
-# SOV
- SOV_optimize_production_lines_ns_tt:0 "$SOV_modify_fyp_ns_intro$ \nFactory Output: §G+5.00%§! \n£prod_eff Production Efficiency growth: §G+5.00%§! \nProduction Efficiency Base: §G+5.00%§! \n\n"
-
-
 # INVASION NOTI
 INVASION_WARNING_TEXT: "Forces of §Y[?ui_invader_country.GetNameWithFlag]§! have successfully conducted a §CNaval Invasion§! at [?ui_invaded_state.GetName]!"
 INVASION_WARNING_DISABLE: "No longer show Enemy Invasions with this popup."

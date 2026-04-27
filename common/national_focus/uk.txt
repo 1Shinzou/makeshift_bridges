@@ -855,8 +855,40 @@ focus_tree = {
 	focus = {
 		id = royal_ordinance_focus
 		available = {
-			threat > 0.30
-		} #at war with major or ger in rhineland or high threat
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				OR = {
+					any_other_country = {
+						has_war_with = ROOT
+						num_of_factories > 30
+					}
+					GER = {
+						has_completed_focus = GER_remilitarize_the_rhineland
+					}
+					threat > 0.2
+					has_idea = ENG_no_further_appeasement_idea
+					NOT = { has_government = democratic }
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_dlc = "Man the Guns" }
+				}
+				OR = {
+					any_other_country = {
+						has_war_with = ROOT
+						num_of_factories > 30
+					}
+					GER = {
+						has_completed_focus = GER_remilitarize_the_rhineland
+					}
+					threat > 0.2
+					NOT = { has_government = democratic }
+				}
+			}
+		} #at war with major or ger in rhineland or high threat war with major or ger in rhineland or high threat
 		
 		prerequisite = {
 			focus = ENG_let_that_lion_roar
@@ -872,6 +904,7 @@ focus_tree = {
 		}
 
 		continue_if_invalid = yes
+
 
 		bypass = {
 			custom_trigger_tooltip =  {
@@ -900,6 +933,8 @@ focus_tree = {
 			}
 			
 		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -935,8 +970,24 @@ focus_tree = {
 				}
 				set_state_flag = royal_ordinance_focus_2AF
 			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = royal_ordinance_focus_2AF
+			}
 		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	
 	focus = {
@@ -3624,7 +3675,6 @@ focus_tree = {
 		}	
 		completion_reward = {
 			remove_ideas = ENG_the_war_to_end_all_wars
-			army_experience = 125
 			set_rule = { can_send_volunteers = yes }
 		}
 	}

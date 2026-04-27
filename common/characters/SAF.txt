@@ -28,12 +28,14 @@ characters={
 				large = "gfx/leaders/SAF/Portrait_SAF_Evered_Poole.png"
 			}
 		}
-		corps_commander = {
+		field_marshal = {
 			traits = {
 				armor_officer
 				trickster
 				career_officer
 				panzer_leader
+				organizer
+				desert_fox
 
 			}
 			skill = 4

@@ -6113,33 +6113,6 @@ country_event = {
 	trigger = {
 		NOT = { has_war_with = GER }
 	}
-
-	option = {
-		name = germany.86.a
-		ai_chance = {
-			base = 20
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		GER = { country_event = { id = germany.87 days = 1 } }
-		effect_tooltip = {
-			GER = {
-				transfer_state = 85
-				add_state_core = 85
-				transfer_state = 807
-				add_state_core = 807
-				remove_state_claim = 86
-				remove_state_claim = 762
-			}
-		}
-		country_event = { id = poland.1 days = 7 }
-		hidden_effect = {
-			news_event = { id = news.203 hours = 6 }
-		}
-	}
-
 	option = {
 		name = germany.86.b
 		ai_chance = {

@@ -294,9 +294,7 @@ NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 15.0 -- vanilla 10 Mod
 
 -- Factory Output changes
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 3	-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
-NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 2.5	-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 NDefines.NProduction.POWERED_FACTORY_SPEED_MIL = 4	--Powered factory speed multiplier.
-NDefines.NProduction.POWERED_FACTORY_SPEED_NAV = 3	--Powered factory speed multiplier.
 
 -- Mastery
 NDefines.NDoctrines.MASTERY_BANK_MAX = 500.0 	-- Vanilla value 200

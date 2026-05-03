@@ -8,6 +8,8 @@ elwolfmod_vichy_france = {
 		remove_ideas = FRA_protected_by_the_maginot_line
 		remove_ideas = FRA_victors_of_wwi
 		remove_ideas = FRA_disjointed_government
+		remove_ideas = FPM_disjointed_government1
+		remove_ideas = FPM_disjointed_government
 		remove_ideas FRA_inefficient_economy_1
 		remove_ideas FRA_inefficient_economy_2
 		add_equipment_to_stockpile = {

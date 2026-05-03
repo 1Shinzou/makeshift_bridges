@@ -961,12 +961,12 @@ equipments = {
 
 		fuel_consumption = 0
 		maximum_speed = 7
-		build_cost_ic = 7
+		build_cost_ic = 16
 		reliability = 1.3
 		armor_value = 65
 		hardness = 0.95
-		soft_attack = 15
-		hard_attack = 15
+		soft_attack = 13
+		hard_attack = 13
 		breakthrough = 20
 		defense = 4
 		

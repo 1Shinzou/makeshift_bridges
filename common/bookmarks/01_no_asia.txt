@@ -12,7 +12,7 @@ bookmarks = {
 			available = { NOT = { has_dlc = "La Resistance" } }
 			ideas = {
 				FRA_victors_of_wwi
-				FRA_disjointed_government
+				FPM_disjointed_government1
 				FRA_protected_by_the_maginot_line
 			}
 			focuses = {
@@ -27,7 +27,7 @@ bookmarks = {
 			available = { has_dlc = "La Resistance" } 
 			ideas = {
 				FRA_victors_of_wwi
-				FRA_disjointed_government
+				FPM_disjointed_government1
 				FRA_protected_by_the_maginot_line
 			}
 			focuses = {

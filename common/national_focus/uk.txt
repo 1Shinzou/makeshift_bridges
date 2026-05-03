@@ -1758,6 +1758,21 @@ focus_tree = {
 				uses = 3
 				category = naval_doctrine
 			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -1900,19 +1915,11 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-			every_state = {
-				limit = { has_state_flag = ENG_expand_the_repair_yards_2dockyard }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-
 		completion_reward = {
+			add_ideas = ENG_expand_the_repair_yards
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
 			random_owned_controlled_state = {
 				limit = {
 					is_coastal = yes
@@ -1931,7 +1938,6 @@ focus_tree = {
 				}
 				set_state_flag = ENG_expand_the_repair_yards_2dockyard
 			}
-			add_ideas = ENG_expand_the_repair_yards
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}

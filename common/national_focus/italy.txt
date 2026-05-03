@@ -4051,18 +4051,11 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = ITA_air_innovations_bba #fighter_bonus
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				technology = improved_small_airframe
 			}
-
-				add_tech_bonus = {
-				name = ITA_air_innovations_bba #fighter_bonus
-				bonus = 1
-				uses = 1
-				technology = engines_3
-			}
-
+			
 			add_doctrine_cost_reduction = {
 				name = air_doc_bonus
 				cost_reduction = 0.5

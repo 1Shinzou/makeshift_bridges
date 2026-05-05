@@ -316,7 +316,7 @@ ideas = {
 			picture = SOV_third_five_year_plan_military
 			
 			modifier = {
-				industrial_capacity_factory = 10 # fra post cap idea
+				industrial_capacity_factory = 15 # fra post cap idea
 				production_lack_of_resource_penalty_factor = -1
 				factory_energy_consumption = -2
 				communism_drift = -0.3

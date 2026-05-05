@@ -134,6 +134,23 @@ vp_system = {
 	}
 
 }
+
+force_attack_last_stand = {
+	name = "Force Attack Last Stand"
+	group = "MSB Rules"
+	icon = "GFX_decision_eng_trade_unions_support"
+	default = {
+		name = on
+		text = "GOn"
+		desc = "Normal like vanilla (Reccomended)"
+	}
+	option = {
+		name = off
+		text = "ROff"
+		desc = "Banned (Not Reccomended)"
+	}
+}
+
 danzig_date_lock = {
 	name = "Danzig or War"
 	group = "MSB Rules"

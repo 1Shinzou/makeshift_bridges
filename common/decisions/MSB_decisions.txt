@@ -48,7 +48,7 @@ operations = {
 		}
 	}
 	move_capital_to_cascablanca = {
-		fire_only_once = yes
+		#fire_only_once = yes
 		allowed = {
 			tag = FRA
 		}
@@ -65,7 +65,7 @@ operations = {
 		}
 	}
 	move_capital_to_gabon = {
-		fire_only_once = yes
+		#fire_only_once = yes
 		allowed = {
 			tag = FRA
 		}
@@ -82,7 +82,7 @@ operations = {
 		}
 	}
 	move_capital_to_brest = {
-		fire_only_once = no
+		#fire_only_once = no
 		allowed = {
 			tag = FRA
 		}
@@ -101,7 +101,7 @@ operations = {
 		}
 	}
 	move_capital_to_paris = {
-		fire_only_once = no
+		#fire_only_once = no
 		allowed = {
 			tag = FRA
 		}

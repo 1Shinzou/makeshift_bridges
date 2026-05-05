@@ -194,7 +194,7 @@ operations = {
 			}
 			complete_effect = {
                 add_ideas = extra_cp
-				SPR = { add_ideas = extra_cp }
+				# SPR = { add_ideas = extra_cp }
 				BUL = {
 					transfer_units_fraction = {
 						target = ITA

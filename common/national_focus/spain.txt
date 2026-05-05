@@ -720,6 +720,20 @@ focus_tree = {
 			}
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = SPA_wilhelm_ritter_von_thoma
+			custom_effect_tooltip = generic_skip_one_line_tt
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = GER_henschel_organization
+
+				mio:GER_henschel_organization = {
+					add_mio_size = 1
+				}
+
+			}
 		}
 	}
 

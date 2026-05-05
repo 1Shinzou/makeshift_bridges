@@ -276,6 +276,9 @@ GER_henschel_organization = {
 				has_dlc = "Graveyard of Empires"
 				has_dlc = "Arms Against Tyranny"
 			}
+			AND = {
+				tag = SPR
+			}
 		}
 	}
 	
@@ -328,6 +331,10 @@ GER_henschel_organization = {
 		IF = {
 			limit = { FROM = { original_tag = PER } }
 			FROM = { has_completed_focus = PER_german_tanks }
+		}
+		IF = {
+			limit = { FROM = { original_tag = SPR } } 
+			FROM = { has_completed_focus = SPA_the_condor_legion }
 		}
 	}
 

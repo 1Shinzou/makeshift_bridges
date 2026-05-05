@@ -87,8 +87,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			add_ideas = ENG_home_army_idea
-
+			add_ideas = Increased_enlistment
 			custom_effect_tooltip = generic_skip_one_line_tt
 			
 			army_experience = 25
@@ -175,6 +174,9 @@
 
 		completion_reward = {
 			army_experience = 50
+
+			add_ideas = ENG_home_army_idea
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_doctrine_cost_reduction = {
 				name = AST_promote_reservists
 				cost_reduction = 0.5

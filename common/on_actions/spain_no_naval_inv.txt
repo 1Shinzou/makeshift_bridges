@@ -1,26 +1,29 @@
 on_actions = {
-	on_naval_invasion = { # FINLAND
+	on_naval_invasion = { # SPAIN
 		effect = {
 			if = {
 				limit = {
 					OR = {
-						state = 148
-						state = 929
-						state = 149
-						state = 722
-						state = 926
-						state = 111
-						state = 928
-						state = 146
-						# state = 145 # aland island removed bcz why not lol
+						state = 177
+						state = 290
+						state = 178
+						state = 783
+						state = 169
+						state = 173
+						state = 167
+						state = 165
+						state = 171
+
+						state = 180
+						state 112
+						state = 179
 					}
 				}
 				if = {
 					limit = {
-						has_game_rule = {
-							rule = killable_fin
-							option = off
-						}
+						SPR = {
+							has_completed_focus = SPA_unite_iberia
+						} 
 					}
 					teleport_armies = {
 						to_state = FROM 
@@ -32,47 +35,51 @@ on_actions = {
 			}
 		}
 	}
-	on_daily_FIN = {
+	on_daily_SPR = {
 		effect = {
 			if = {
 				limit = {
-					has_game_rule = {
-						rule = killable_fin
-						option = off
+					SPR = {
+						has_completed_focus = SPA_unite_iberia
 					} 
 				}
 				every_owned_state = {
-					limit = { NOT = { state = 111 } }
+					limit = { 
+						NOT = {
+							#state = 174
+							#state = 791
+							state = 171
+							state = 41
+						}
+					}
 					set_demilitarized_zone = yes
-					set_state_controller_to = FIN
+					set_state_controller_to = SPR
 				}
 			}
 			if = {
 				limit = {
-					has_game_rule = {
-						rule = killable_fin
-						option = off
+					SPR = {
+						has_completed_focus = SPA_unite_iberia
 					}
-					FIN = { has_offensive_war = yes }
+					SPR = { has_offensive_war = yes }
 				}
-				FIN = { add_ideas = SPR_offensive }
+				SPR = { add_ideas = SPR_offensive }
 			}
 			if = {
 				limit = {
-					has_game_rule = {
-						rule = killable_fin
-						option = off
-					}
+					SPR = {
+						has_completed_focus = SPA_unite_iberia
+					} 
 					GER = {
 						divisions_in_state = {
 							type = infantry
 							size > 0
-							state = 111
+							state = 41
 						}
 					}
 				}
 				every_state = { 
-					limit = { is_core_of = FIN } 
+					limit = { is_core_of = SPR } 
 					teleport_armies = {
 						limit = {
 							OR = {
@@ -94,28 +101,27 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					has_game_rule = {
-						rule = killable_fin
-						option = off
-					} 
+					SPR = {
+						has_completed_focus = SPA_unite_iberia
+					}
 				}
 				every_country = {
 					every_owned_state = {
 						limit = { 
 							OR = {
-								is_core_of = FIN
-								has_state_flag = finnish_demilitarized_zone
+								is_core_of = SPR
+								has_state_flag = spain_demilitarized_zone
 							}
 							NOT = {
 								OR = {
-									state = 146
-									state = 147
-									state = 111
+									#state = 174
+									#state = 791
+									state = 171
+									state = 41
 								}
-								OWNER = { tag = SOV }
-							}
+							}	
 						}
-						set_state_flag = finnish_demilitarized_zone
+						set_state_flag = spain_demilitarized_zone
 						if = {
 							limit = {
 								OWNER = {
@@ -131,18 +137,6 @@ on_actions = {
 							set_demilitarized_zone = yes
 						}
 					}
-				}
-				
-				every_state = {
-					limit = {
-						OR = {
-							state = 146
-							state = 147
-						}
-						OWNER = { tag = SOV }
-					}
-					clr_state_flag = finnish_demilitarized_zone
-					set_demilitarized_zone = no
 				}
 			}
 		}

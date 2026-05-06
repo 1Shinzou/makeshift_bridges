@@ -125,6 +125,12 @@ complete_special_project = {
 	scientist = ENG_robert_watson_watt
 }
 
+complete_special_project = {
+	project = sp:sp_naval_torpedo_cruiser
+	scientist = ENG_charles_goodeve
+	state = 127
+}
+
 add_breakthrough_progress = {
 	specialization = specialization_naval
 	value = 0.6
@@ -597,6 +603,11 @@ recruit_character = ENG_sylvia_pankhurst
 recruit_character = ENG_stewart_menzies
 recruit_character = ENG_maxwell_aitken
 recruit_character = ENG_thomas_moore
+
+recruit_character = ENG_john_cockcroft
+recruit_character = ENG_charles_goodeve
+recruit_character = ENG_nevil_shute
+recruit_character = ENG_robert_watson_watt
 
 
 

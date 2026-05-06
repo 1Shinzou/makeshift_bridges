@@ -415,6 +415,7 @@
 					not = { is_core_of = ROOT }
 					not = { is_on_continent = europe }
 				}
+				add_extra_state_shared_building_slots = 2
 				add_compliance = 10
 			}
 		}
@@ -3506,13 +3507,6 @@ focus = {
 		completion_reward = {
 			add_ideas = { FRA_global_investments }
 			custom_effect_tooltip = generic_skip_one_line_tt
-			every_owned_state = {
-				limit = {
-					not = { is_core_of = ROOT }
-					not = { is_on_continent = europe }
-				}
-				add_extra_state_shared_building_slots = 2
-			}
 			539 = { 
 				add_resource = {
 					type = steel

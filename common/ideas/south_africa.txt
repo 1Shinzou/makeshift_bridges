@@ -219,7 +219,7 @@ ideas = {
 			picture = saf_history_of_segregation
 
 			modifier = {
-				conscription_factor = -0.55
+				conscription_factor = -0.40
 			}
 
 		}
@@ -238,7 +238,7 @@ ideas = {
 			picture = saf_history_of_segregation_2
 
 			modifier = {
-				conscription_factor = -0.40
+				conscription_factor = -0.25
 			}
 
 		}

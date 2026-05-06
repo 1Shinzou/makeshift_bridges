@@ -129,7 +129,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_CAN_army_bits"
+		name = "GFX_CAN_army_bits_shine"
 		texturefile = "gfx/interface/goals/can/CAN_bits.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -161,7 +161,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_CAN_bread"
+		name = "GFX_CAN_bread_shine"
 		texturefile = "gfx/interface/goals/can/CAN_bread.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -193,7 +193,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_CAN_campx"
+		name = "GFX_CAN_campx_shine"
 		texturefile = "gfx/interface/goals/can/CAN_campx.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -225,7 +225,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_CAN_civs"
+		name = "GFX_CAN_civs_shine"
 		texturefile = "gfx/interface/goals/can/CAN_civs.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -257,7 +257,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_CAN_cmp"
+		name = "GFX_CAN_cmp_shine"
 		texturefile = "gfx/interface/goals/can/CAN_cmp.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -289,7 +289,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_CAN_coal"
+		name = "GFX_CAN_coal_shine"
 		texturefile = "gfx/interface/goals/can/CAN_coal.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -321,7 +321,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_CAN_command"
+		name = "GFX_CAN_command_shine"
 		texturefile = "gfx/interface/goals/can/CAN_command.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -353,7 +353,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_CAN_commit"
+		name = "GFX_CAN_commit_shine"
 		texturefile = "gfx/interface/goals/can/CAN_commit.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -417,7 +417,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_CAN_def"
+		name = "GFX_CAN_def_shine"
 		texturefile = "gfx/interface/goals/can/CAN_def.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -449,7 +449,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_CAN_destroyers"
+		name = "GFX_CAN_destroyers_shine"
 		texturefile = "gfx/interface/goals/can/CAN_destroyers.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -481,7 +481,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_CAN_dollar"
+		name = "GFX_CAN_dollar_shine"
 		texturefile = "gfx/interface/goals/can/CAN_dollar.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -513,7 +513,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_CAN_fact"
+		name = "GFX_CAN_fact_shine"
 		texturefile = "gfx/interface/goals/can/CAN_fact.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -545,7 +545,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_CAN_hat"
+		name = "GFX_CAN_hat_shine"
 		texturefile = "gfx/interface/goals/can/CAN_hat.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -577,7 +577,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_CAN_housing"
+		name = "GFX_CAN_housing_shine"
 		texturefile = "gfx/interface/goals/can/CAN_housing.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -609,7 +609,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_CAN_hurricane"
+		name = "GFX_CAN_hurricane_shine"
 		texturefile = "gfx/interface/goals/can/CAN_hurricane.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -641,7 +641,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_CAN_imperial"
+		name = "GFX_CAN_imperial_shine"
 		texturefile = "gfx/interface/goals/can/CAN_imperial.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -673,7 +673,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_CAN_jet_sabre"
+		name = "GFX_CAN_jet_sabre_shine"
 		texturefile = "gfx/interface/goals/can/CAN_jet_sabre.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -705,7 +705,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_CAN_man"
+		name = "GFX_CAN_man_shine"
 		texturefile = "gfx/interface/goals/can/CAN_man.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -737,7 +737,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_CAN_manpower"
+		name = "GFX_CAN_manpower_shine"
 		texturefile = "gfx/interface/goals/can/CAN_manpower.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -769,7 +769,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_CAN_motorized"
+		name = "GFX_CAN_motorized_shine"
 		texturefile = "gfx/interface/goals/can/CAN_motorized.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -801,7 +801,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_CAN_nationa"
+		name = "GFX_CAN_nationa_shine"
 		texturefile = "gfx/interface/goals/can/CAN_nationa.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -833,7 +833,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_CAN_nationalsteel"
+		name = "GFX_CAN_nationalsteel_shine"
 		texturefile = "gfx/interface/goals/can/CAN_nationalsteel.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -897,7 +897,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_CAN_ottawa_uni"
+		name = "GFX_CAN_ottawa_uni_shine"
 		texturefile = "gfx/interface/goals/can/CAN_ottawa_uni.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -929,7 +929,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_CAN_paratroopers"
+		name = "GFX_CAN_paratroopers_shine"
 		texturefile = "gfx/interface/goals/can/CAN_paratroopers.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -993,7 +993,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_CAN_plane"
+		name = "GFX_CAN_plane_shine"
 		texturefile = "gfx/interface/goals/can/CAN_plane.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1025,7 +1025,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_CAN_quebec"
+		name = "GFX_CAN_quebec_shine"
 		texturefile = "gfx/interface/goals/can/CAN_quebec.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1057,7 +1057,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_CAN_radar"
+		name = "GFX_CAN_radar_shine"
 		texturefile = "gfx/interface/goals/can/CAN_radar.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1121,7 +1121,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_CAN_rail2"
+		name = "GFX_CAN_rail2_shine"
 		texturefile = "gfx/interface/goals/can/CAN_rail2.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1185,7 +1185,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_CAN_supply"
+		name = "GFX_CAN_supply_shine"
 		texturefile = "gfx/interface/goals/can/CAN_supply.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1249,7 +1249,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_CAN_valentine"
+		name = "GFX_CAN_valentine_shine"
 		texturefile = "gfx/interface/goals/can/CAN_valentine.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1281,7 +1281,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_CAN_victoryair"
+		name = "GFX_CAN_victoryair_shine"
 		texturefile = "gfx/interface/goals/can/CAN_victoryair.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1313,7 +1313,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_CAN_warbonds"
+		name = "GFX_CAN_warbonds_shine"
 		texturefile = "gfx/interface/goals/can/CAN_warbonds.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -1345,7 +1345,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_CAN_warfuel"
+		name = "GFX_CAN_warfuel_shine"
 		texturefile = "gfx/interface/goals/can/CAN_warfuel.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {

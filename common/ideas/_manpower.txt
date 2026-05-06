@@ -128,14 +128,14 @@ ideas = {
 						original_tag = AST
 						has_dlc = "Together for Victory"
 					}
-					has_completed_focus = AST_citizen_military_forces
+					#has_completed_focus = AST_citizen_military_forces
 				}
 				if = {
 					limit = {
 						original_tag = CAN
 						has_dlc = "Together for Victory"
 					}
-					has_completed_focus = CAN_commit_to_the_war
+					#has_completed_focus = CAN_commit_to_the_war
 				}
 				if = {
 					limit = {
@@ -330,6 +330,7 @@ ideas = {
 				OR = {
 					has_government = fascism
 					has_government = communism
+					has_government = neutrality
 					if = {
 						limit = {
 							PHI_SEA = yes
@@ -369,7 +370,6 @@ ideas = {
 					}
 					AND = {
 						has_war = yes
-						enemies_strength_ratio > 0.5
 						#any_enemy_country = {
 						#	strength_ratio = {
 						#		tag = ROOT
@@ -396,7 +396,7 @@ ideas = {
 						original_tag = AST
 						has_dlc = "Together for Victory"
 					}
-					has_completed_focus = AST_citizen_military_forces
+					#has_completed_focus = AST_citizen_military_forces
 					# has_completed_focus = AST_fight_work_or_perish
 				}
 				if = {
@@ -404,8 +404,8 @@ ideas = {
 						original_tag = CAN
 						has_dlc = "Together for Victory"
 					}
-					has_completed_focus = CAN_commit_to_the_war
-					has_completed_focus = CAN_if_day
+					#has_completed_focus = CAN_commit_to_the_war
+					#has_completed_focus = CAN_if_day
 				}
 				if = {
 					limit = {
@@ -645,7 +645,6 @@ ideas = {
 					SWE_rapid_mob_manpower_law_trigger = yes
 					AND = {
 						has_war = yes
-						enemies_strength_ratio > 0.6
 						#any_enemy_country = {
 						#	strength_ratio = {
 						#		tag = ROOT
@@ -664,20 +663,11 @@ ideas = {
 						original_tag = AST
 						has_dlc = "Together for Victory"
 					}
-					has_completed_focus = AST_citizen_military_forces
-					has_completed_focus = AST_fight_work_or_perish
+					#has_completed_focus = AST_citizen_military_forces
+					#has_completed_focus = AST_fight_work_or_perish
 				}
 
-				if = {
-					limit = {
-						original_tag = CAN
-						has_dlc = "Together for Victory"
-					}
-					OR = {
-						has_completed_focus = CAN_compromise_with_quebec
-						has_completed_focus = CAN_forced_quebec_conscription
-					}
-				}
+
 				if = {
 					limit = {
 						original_tag = RAJ
@@ -898,7 +888,6 @@ ideas = {
 					has_war_support > 0.7
 					surrender_progress > 0
 				}
-				enemies_strength_ratio > 0.75
 				#any_enemy_country = {
 				#	strength_ratio = {
 				#		tag = ROOT
@@ -911,20 +900,11 @@ ideas = {
 						original_tag = AST
 						has_dlc = "Together for Victory"
 					}
-					has_completed_focus = AST_citizen_military_forces
-					has_completed_focus = AST_fight_work_or_perish
+					#has_completed_focus = AST_citizen_military_forces
+					#has_completed_focus = AST_fight_work_or_perish
 				}
 
-				if = {
-					limit = {
-						original_tag = CAN
-						has_dlc = "Together for Victory"
-					}
-					OR = {
-						has_completed_focus = CAN_compromise_with_quebec
-						has_completed_focus = CAN_forced_quebec_conscription
-					}
-				}
+
 				if = {
 					limit = {
 						original_tag = RAJ
@@ -1131,7 +1111,6 @@ ideas = {
 					has_war_support > 0.85
 					surrender_progress > 0.25
 				}
-				enemies_strength_ratio > 1
 				#any_enemy_country = {
 				#	strength_ratio = {
 				#		tag = ROOT
@@ -1143,20 +1122,11 @@ ideas = {
 						original_tag = AST
 						has_dlc = "Together for Victory"
 					}
-					has_completed_focus = AST_citizen_military_forces
-					has_completed_focus = AST_fight_work_or_perish
+					#has_completed_focus = AST_citizen_military_forces
+					#has_completed_focus = AST_fight_work_or_perish
 				}
 
-				if = {
-					limit = {
-						original_tag = CAN
-						has_dlc = "Together for Victory"
-					}
-					OR = {
-						has_completed_focus = CAN_compromise_with_quebec
-						has_completed_focus = CAN_forced_quebec_conscription
-					}
-				}
+
 				if = {
 					limit = {
 						original_tag = RAJ

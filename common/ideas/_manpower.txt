@@ -645,6 +645,7 @@ ideas = {
 					SWE_rapid_mob_manpower_law_trigger = yes
 					AND = {
 						has_war = yes
+						enemies_strength_ratio > 0.6
 						#any_enemy_country = {
 						#	strength_ratio = {
 						#		tag = ROOT
@@ -888,6 +889,7 @@ ideas = {
 					has_war_support > 0.7
 					surrender_progress > 0
 				}
+				enemies_strength_ratio > 0.75
 				#any_enemy_country = {
 				#	strength_ratio = {
 				#		tag = ROOT

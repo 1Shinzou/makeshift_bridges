@@ -95,7 +95,7 @@ categories =  {
 		}
 
 		units = {
-			attack = -0.5
+			attack = -0.6
 			#movement = -0.4
 		}
 
@@ -188,7 +188,7 @@ categories =  {
 		}
 
 		units = {
-			attack = -0.4
+			attack = -0.5
 			#movement = -0.4
 		}
 		supply_flow_penalty_factor = 0.16

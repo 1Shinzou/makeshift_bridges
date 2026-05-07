@@ -8447,23 +8447,34 @@ focus = {
 		search_filters = {}
 
 		completion_reward = {
-			PER = {
-				set_country_flag = SOV_ultimatum_sent_flag
-				country_event = { id = NSB_soviet_foreign_politics_events.210 hours = 16 random_hours = 8 }
+			SOV = {
+				transfer_state = 419 #Tibriz (AZB)
+				transfer_state = 420 #Gilan (AZB)
+				transfer_state = 416 #Khorasan
+				transfer_state = 1000
+				transfer_state = 266
+				transfer_state = 1004
 			}
-
-			effect_tooltip = {
-				custom_effect_tooltip = if_they_accept_tt
-				ROOT = {
-					puppet = PER
+			ENG = {
+				annex_country = {
+					target = PER
+					transfer_troops = no
 				}
-
-				custom_effect_tooltip = if_they_refuse_tt
-				effect_tooltip = {
-					activate_mission = SOV_preparations_for_operation_countenance
-					custom_effect_tooltip = SOV_preparations_for_operation_countenance_tt
+			}
+			ENG = {
+				give_resource_rights = { receiver = SOV state = 411 }
+				give_resource_rights = { receiver = SOV state = 412 }
+				give_resource_rights = { receiver = ENG state = 413 }
+			}
+			every_state = {
+				limit = {
+					is_core_of = PER
+					OR = {
+						is_controlled_by = ENG
+						is_controlled_by = SOV
+					}
 				}
-				custom_effect_tooltip = SOV_preemptive_invasion_of_iran_tt
+				add_compliance = 70
 			}
 		}
 	}

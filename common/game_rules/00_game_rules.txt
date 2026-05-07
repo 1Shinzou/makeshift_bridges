@@ -326,36 +326,7 @@ tradebacks = {
 		desc = "Everyone has a tradeback idea that givens -100% missing resource penalty. (Not Recommmended)"
 	}
 }
-railway_gun= {
-	name = "Select if Railway Gun is allowed or not "
-	group = "MSB Rules"
-	icon = "GFX_decision_generic_ignite_civil_war"
-	default = {
-		name = off
-		text = "You CANNOT research Railway Battery."
-		desc = "###."
-	}
-	option = {
-		name = on
-		text = "You CAN research Railway Battery."
-		desc = "###"
-	}
-}
-super_heavy_railway_gun= {
-	name = "Select if Super Heavy Railway Battery is allowed or not "
-	group = "MSB Rules"
-	icon = "GFX_decision_generic_ignite_civil_war"
-	default = {
-		name = off
-		text = "You CANNOT research Super Heavy Railway Battery."
-		desc = "###."
-	}
-	option = {
-		name = on
-		text = "You CAN research Super Heavy Railway Battery."
-		desc = "###"
-	}
-}
+
 Germany_Cancel_Mefo = {
 	name = "Germany MEFO Bills"
 	group = "Economic Adjustments"

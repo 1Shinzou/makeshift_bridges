@@ -403,7 +403,7 @@ focus_tree = {
 		}
 
 		available = {
-			congress_high_support_trigger = yes
+			#congress_high_support_trigger = yes
 		}
 		
 		bypass = {

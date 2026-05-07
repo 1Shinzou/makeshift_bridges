@@ -4053,7 +4053,7 @@ focus_tree = {
 				name = ITA_air_innovations_bba #fighter_bonus
 				bonus = 0.5
 				uses = 1
-				technology = improved_small_airframe
+				category = light_fighter
 			}
 			
 			add_doctrine_cost_reduction = {

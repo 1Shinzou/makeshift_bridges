@@ -134,6 +134,7 @@ NDefines.NBuildings.OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 1.0 -- You get all 
 
 
 NDefines.NIndustrialOrganisation.DESIGN_TEAM_CHANGE_XP_COST = 0 --Mio costs 0 XP to apply
+NDefines.NIndustrialOrganisation.MAX_FUNDS_FROM_MANUFACTURER_PER_DAY = 0	-- Max funds generated per manufacturer per day. Set to 0 for no Maximum.
 
 --NDefines_Graphics.NAirGfx.MAX_MISSILE_BOMBING_SCENARIOS = 0
 --NDefines_Graphics.NAirGfx.MAX_BOMBING_SCENARIOS = 0
@@ -224,7 +225,6 @@ NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 20
 NDefines.NProduction.FLOATING_HARBOR_MAX_NAV_FACTORIES_PER_LINE = 50
 NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 150 
 NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 10
-NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 3
 
 NDefines.NMilitary.COMBAT_OVER_WIDTH_PENALTY = -1.5	
 

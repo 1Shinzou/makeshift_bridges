@@ -8435,7 +8435,7 @@ focus_tree = {
 					custom_trigger_tooltip = {
 					tooltip = GER_anschluss_eq_trigger_tt
 						has_equipment = {
-							infantry_equipment > 30000
+							infantry_equipment > 40000
 						}
 					}
 			}	}

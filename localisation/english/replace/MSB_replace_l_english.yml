@@ -19,7 +19,7 @@ Juggle_6_desc:0 ""
 # GER FOCUS
 GER_gain_autarkic_economy_lock_free_trade_tt: "§RLock§! §Y$free_trade$§!. Gain §Y$autarkic_economy$§!."
 GER_reichskommissariats_tt: "Allows for the formation of §YReichskommissariats§! which add extra §Ycompliance§! to selected conquered territories.\n"
-GER_anschluss_eq_trigger_tt:0 "More than §Y30.000§! infantry equipment in stockpile"
+GER_anschluss_eq_trigger_tt:0 "More than §Y40.000§! infantry equipment in stockpile"
 
 
 ########################

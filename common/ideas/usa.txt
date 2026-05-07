@@ -725,7 +725,9 @@ ideas = {
 			
 			modifier = {
 				min_export = -0.25
-				resource_trade_cost_bonus_per_factory = -20
+				production_lack_of_resource_penalty_factor = -0.2
+				factory_energy_consumption = -1
+				#resource_trade_cost_bonus_per_factory = -20
 			}
 		}
 		

@@ -519,6 +519,21 @@ on_actions = {
 					}
 				}
 			}
+
+			if = {
+				limit = {
+					FROM = {
+						tag = PER
+					}
+				}
+				
+				ENG = {
+					annex_country = {
+						target = PER
+						transfer_troops = yes
+					}
+				}
+			}
 			
 			if = {
                 limit = {
@@ -631,6 +646,20 @@ on_actions = {
                 }
             }
 
+			if = {
+                limit = {
+                    FROM = {
+                        tag = PER
+                    }
+                }			
+				ENG = {
+					annex_country = {
+						target = PER
+						transfer_troops = yes
+					}
+					load_oob = "PER_CHROM_SPAWN"
+				}
+			}
 
 			if = {
 				limit = {

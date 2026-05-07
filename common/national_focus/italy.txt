@@ -4053,7 +4053,7 @@ focus_tree = {
 				name = ITA_air_innovations_bba #fighter_bonus
 				bonus = 0.5
 				uses = 1
-				technology = improved_small_airframe
+				category = light_fighter
 			}
 			
 			add_doctrine_cost_reduction = {
@@ -11363,6 +11363,10 @@ focus_tree = {
 		available = {
 			has_tech = armored_train
 			has_war = yes
+			has_game_rule = {
+				rule = railway_gun
+				option = on
+			}
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}

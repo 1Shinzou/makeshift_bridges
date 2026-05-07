@@ -1445,7 +1445,7 @@ focus_tree = {
 					name = coastal_command_focus
 					bonus = 1.0
 					uses = 1
-					category = naval_bomber
+					category = cat_torpedoes
 					category = cas_bomber
 					category = cat_air_bombs
 				}

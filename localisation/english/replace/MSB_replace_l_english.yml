@@ -19,7 +19,7 @@ Juggle_6_desc:0 ""
 # GER FOCUS
 GER_gain_autarkic_economy_lock_free_trade_tt: "§RLock§! §Y$free_trade$§!. Gain §Y$autarkic_economy$§!."
 GER_reichskommissariats_tt: "Allows for the formation of §YReichskommissariats§! which add extra §Ycompliance§! to selected conquered territories.\n"
-GER_anschluss_eq_trigger_tt:0 "More than §Y30.000§! infantry equipment in stockpile"
+GER_anschluss_eq_trigger_tt:0 "More than §Y40.000§! infantry equipment in stockpile"
 
 
 ########################
@@ -29,12 +29,6 @@ decision_cost_20_convoy_10_NavXP: "£GFX_topbar_convoys §Y200§! £navy_experie
 decision_cost_20_convoy_10_NavXP_blocked: "£GFX_topbar_convoys §R200§! £navy_experience §R100§!"
 decision_cost_20_convoy_10_NavXP_tooltip: "It costs £GFX_topbar_convoys §Y200§! £navy_experience §Y100§! to take the decision"
 
-# ITA
-ITA_standardization_ra_tt:0 "$ITA_modify_military_industry_dynamic_modifier_ns_intro$ \n$MODIFIER_AIR_EQUIPMENT_UPGRADE_XP_COST$: §R+25%§! \n$ITA_standardization_dynamic_modifier_tt$\n"
-ITA_specialization_ra_tt:0 "$ITA_modify_military_industry_dynamic_modifier_ns_intro$ \n$MODIFIER_AIR_EQUIPMENT_UPGRADE_XP_COST$: §G-50%§! \n$ITA_specialization_dynamic_modifier_tt$\n"
-
-ITA_standardization_dynamic_modifier_tt:0 "§YAll Aircraft Equipment§!: $production_cost_tt$ §G-2.50%§!\n"
-ITA_specialization_dynamic_modifier_tt:0 "§YAll Aircraft Equipment§!: $production_cost_tt$ §R+2.50%§!\n"
 
 # ITA_ministry_of_italian_africa_occupation_law_tt:0 "Unlocks occupation law in §YYugoslavian§!, §YGreek§!, §YAlbanian§! & §YAfrican§! states:\n"
 

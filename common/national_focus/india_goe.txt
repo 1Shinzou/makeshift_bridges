@@ -22647,7 +22647,10 @@ focus = {
         }
 
         available = {
-
+			has_game_rule = {
+				rule = railway_gun
+				option = on
+			}         
         }
         
         bypass = {

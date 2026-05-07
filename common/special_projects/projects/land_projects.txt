@@ -1206,21 +1206,28 @@ sp_land_self_propelled_super_heavy_howitzer = {
 
 sp_land_super_heavy_railway_gun = {
 	specialization = specialization_land
-	visible = {
-		has_game_rule = { rule = super_heavy_railway_gun option = on }
-	}
+
 	project_tags = sp_tag_artillery
 
 	allowed = {
 		has_dlc = "No Step Back"
+		has_game_rule = {
+			rule = railway_gun
+			option = on
+		}
 	}
 
 	available = {
 		FROM = {
-			has_tech = railway_gun
+			has_tech = armored_train
 		}
 	}
-
+	visible = {
+		has_game_rule = {
+			rule = railway_gun
+			option = on 
+		}
+	}
 	prototype_time = sp_time.prototype.long
 
 	complexity = sp_complexity.medium
@@ -1239,18 +1246,18 @@ sp_land_super_heavy_railway_gun = {
 	
 	project_output = {
 		enable_equipments = {
-			super_heavy_railway_gun_equipment_1
+			 railway_gun_equipment_1
 		}
 
 		enable_subunits = {
-			super_heavy_railway_gun
+			railway_gun
 		}
 
 		enable_equipment_modules = {
 			limit = {
 				has_dlc = "Gotterdammerung"
 			}
-			lc_super_heavy_railway_gun
+			lc_hull_mounted_railway_gun 
 		}
 
 		country_effects = {
@@ -1259,41 +1266,23 @@ sp_land_super_heavy_railway_gun = {
 					original_tag = GER
 				}
 				create_railway_gun = {
-					equipment = super_heavy_railway_gun_equipment_1
+					equipment = railway_gun_equipment_1
 					name = "Dora"
 				}
 			}
 			else = {
 				create_railway_gun = {
-					equipment = super_heavy_railway_gun_equipment_1
+					equipment = railway_gun_equipment_1
 				}
 			}
 		}
 	}
 
 	generic_prototype_rewards = {
-		sp_land_generic_reward_scientist_xp_1
-		sp_land_generic_reward_scientist_xp_2
-		sp_land_generic_reward_scientist_xp_3
-		sp_land_generic_reward_army_xp_1
-		sp_land_generic_reward_army_xp_2
-		sp_land_generic_reward_army_xp_3
-		sp_land_generic_reward_major_progress_1
-		sp_land_generic_reward_major_progress_2
-		sp_land_generic_reward_major_progress_3
-		sp_land_generic_reward_test_failure_1
-		sp_land_generic_reward_test_failure_2
-		sp_land_generic_reward_test_failure_3
-		sp_land_generic_reward_artillery_tech_1
-		sp_land_generic_reward_artillery_tech_2
-		sp_land_generic_reward_artillery_tech_3
-		sp_land_generic_reward_artillery_bonus_1
-		sp_land_generic_reward_artillery_bonus_2
-		sp_land_generic_reward_artillery_bonus_3
-		sp_land_generic_reward_resource_scarcity
-		sp_land_generic_reward_critical_failure
+		sp_land_generic_reward_always
 	}
 }
+
 
 
 

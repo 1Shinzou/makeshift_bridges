@@ -295,6 +295,22 @@ hospitals = {
 	}
 }
 
+railway_gun= {
+	name = "Select if Railway Gun is allowed or not "
+	group = "MSB Rules"
+	icon = "GFX_decision_generic_ignite_civil_war"
+	default = {
+		name = off
+		text = "You CANNOT research Railway Battery."
+		desc = "###."
+	}
+	option = {
+		name = on
+		text = "You CAN research Railway Battery."
+		desc = "###"
+	}
+}
+
 auto_tech_rush = {
 	name = "Auto Tech Rush"
 	group = "MSB Rules"

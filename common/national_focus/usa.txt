@@ -1433,14 +1433,14 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_neutrality_act }
 		relative_position_id = USA_neutrality_act
-		cost = 5
+		cost = 2
 
 
 		bypass = {
 
 		}
 		available = {
-			has_tech = improved_radio
+			has_war = yes
 		}
 
 		cancel_if_invalid = yes

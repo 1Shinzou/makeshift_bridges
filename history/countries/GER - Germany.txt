@@ -95,11 +95,7 @@ set_technology = {
 	interwar_antitank = 1 
 	armor_tech_1 = 1
 	electronic_mechanical_engineering = 1
-	mechanical_computing = 1
 	radio = 1
-	tech_maintenance_company = 1
-	tech_field_hospital = 1
-	tech_logistics_company = 1
 
 }
 if = {

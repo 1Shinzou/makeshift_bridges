@@ -9059,7 +9059,6 @@ focus_tree = {
 				#bonus = 1
 				ahead_reduction = 2
 				uses = 1
-				category = armor
 				category = artillery
 				category = naval_equipment
 				category = rocketry

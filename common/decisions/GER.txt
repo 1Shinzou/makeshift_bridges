@@ -6191,7 +6191,7 @@ special_projects = {
 		}
 		days_remove = 180
 		modifier = {
-			civilian_factory_use = 5
+			civilian_factory_use = 3
 		}
 		remove_effect = {
 			28 = {
@@ -6247,6 +6247,19 @@ special_projects = {
 					add_timed_idea = { idea = GER_dismantle_maginot days = 180 }
 				}
 			}
+			if = {
+				limit = {
+					has_dlc = "Peace For Our Time"
+					NOT = {
+						is_special_project_completed = sp:sp_land_large_caliber_kinetic_energy_sabot
+					}
+				}
+
+				custom_effect_tooltip = generic_skip_one_line_tt
+
+				add_timed_idea = { idea = CZE_pfot_fortification_destruction_research days = 180 }
+
+			}
 		}
 	}
 
@@ -6255,6 +6268,27 @@ special_projects = {
 		icon = generic_construction
 
 		available = {
+			if = {
+				limit = {
+					original_tag = CZE
+					has_dlc = "Peace For Our Time"
+				}
+				has_completed_focus = CZE_redirect_the_fortification_councils_funds
+				NOT = {
+					has_completed_focus = CZE_the_second_fortification_program
+				}
+			}
+			else_if = {
+				limit = {
+					original_tag = CZE
+					NOT = {
+						has_dlc = "Peace For Our Time"
+					}
+				}
+				NOT = {
+					has_completed_focus = CZE_sudeten_1
+				}
+			}
 			#has_war = yes
 			controls_state = 69 # Sudetenland
 			controls_state = 972 # Southern Sudetenland
@@ -6270,6 +6304,17 @@ special_projects = {
 			factor = 0
 		}
 		visible = {
+			if = {
+				limit = {
+					original_tag = CZE
+				}
+				NOT = {
+					OR = {
+						has_completed_focus = CZE_the_second_fortification_program
+						has_completed_focus = CZE_sudeten_1
+					}
+				}
+			}
 			#has_war = yes
 			controls_state = 69 # Sudetenland
 			controls_state = 972 # Southern Sudetenland
@@ -6279,50 +6324,54 @@ special_projects = {
 		}
 		days_remove = 180
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 1
 		}
+		custom_cost_trigger = {
+			num_of_civilian_factories_available_for_projects > 0
+		}
+		custom_cost_text = decision_cost_civ_factory_1
 		remove_effect = {
 			69 = {
 				set_building_level = {
 					type = bunker
-					level = 1
+					level = 0
 					province = {
 						all_provinces = yes
 						limit_to_border = no
-						level > 1
+						level > 0
 					}
 				}
 			}
 			74 = {
 				set_building_level = {
 					type = bunker
-					level = 1
+					level = 0
 					province = {
 						all_provinces = yes
 						limit_to_border = no
-						level > 1
+						level > 0
 					}
 				}
 			}
 			9 = {
 				set_building_level = {
 					type = bunker
-					level = 1
+					level = 0
 					province = {
 						all_provinces = yes
 						limit_to_border = no
-						level > 1
+						level > 0
 					}
 				}
 			}
 			75 = {
 				set_building_level = {
 					type = bunker
-					level = 1
+					level = 0
 					province = {
 						all_provinces = yes
 						limit_to_border = no
-						level > 1
+						level > 0
 					}
 				}
 			}
@@ -6348,22 +6397,22 @@ special_projects = {
 				72 = {
 					set_building_level = {
 						type = bunker
-						level = 1
+						level = 0
 						province = {
 							all_provinces = yes
 							limit_to_border = no
-							level > 1
+							level > 0
 						}
 					}
 				}
 				71 = {
 					set_building_level = {
 						type = bunker
-						level = 1
+						level = 0
 						province = {
 							all_provinces = yes
 							limit_to_border = no
-							level > 1
+							level > 0
 						}
 					}
 				}
@@ -6382,11 +6431,11 @@ special_projects = {
 				70 = {
 					set_building_level = {
 						type = bunker
-						level = 1
+						level = 0
 						province = {
 							all_provinces = yes
 							limit_to_border = no
-							level > 1
+							level > 0
 						}
 					}
 				}
@@ -6401,7 +6450,7 @@ special_projects = {
 							}
 						}
 					}
-					664 = {
+					972 = {
 						controller = {
 							OR = {
 								tag = ROOT
@@ -6413,22 +6462,22 @@ special_projects = {
 				73 = {
 					set_building_level = {
 						type = bunker
-						level = 1
+						level = 0
 						province = {
 							all_provinces = yes
 							limit_to_border = no
-							level > 1
+							level > 0
 						}
 					}
 				}
-				664 = {
+				972 = {
 					set_building_level = {
 						type = bunker
-						level = 1
+						level = 0
 						province = {
 							all_provinces = yes
 							limit_to_border = no
-							level > 1
+							level > 0
 						}
 					}
 				}
@@ -6436,6 +6485,19 @@ special_projects = {
 		}
 		complete_effect = {
 			add_timed_idea = { idea = GER_dismantle_czechoslovakian_forts days = 180 }
+			if = {
+				limit = {
+					has_dlc = "Peace For Our Time"
+					NOT = {
+						is_special_project_completed = sp:sp_land_large_caliber_kinetic_energy_sabot
+					}
+				}
+
+				custom_effect_tooltip = generic_skip_one_line_tt
+
+				add_timed_idea = { idea = CZE_pfot_fortification_destruction_research days = 180 }
+
+			}
 		}
 	}
 }

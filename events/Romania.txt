@@ -176,11 +176,10 @@ country_event = {
 
 	immediate = {
 		random_list = {
-			20 = { country_event = { id = romania.7 days = 100 random = 30 } } #Iron Guards Gathering
-			20 = { country_event = { id = romania.8 days = 100 random = 30 } } #Harassing Minorities
-			20 = { country_event = { id = romania.9 days = 100 random = 30 } } #Infiltration in the Army
-			20 = { country_event = { id = romania.10 days = 100 random = 30 } } #Political Assassination
-			20 = { country_event = { id = romania.11 days = 100 random = 30 } } #Terror Bombing
+			25 = { country_event = { id = romania.7 days = 100 random = 30 } } #Iron Guards Gathering
+			25 = { country_event = { id = romania.8 days = 100 random = 30 } } #Harassing Minorities
+			25 = { country_event = { id = romania.9 days = 100 random = 30 } } #Infiltration in the Army
+			25 = { country_event = { id = romania.10 days = 100 random = 30 } } #Political Assassination
 		}				
 	}
 }

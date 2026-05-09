@@ -10419,63 +10419,6 @@ focus_tree = {
 	
 	
 	focus = {
-		id = GER_subjugate_romanian_economy
-		icon = GFX_focus_GER_subjugate_romanian_economy
-		prerequisite = {focus = GER_danzig_or_war }
-
-		x = 0
-		y = 1
-		relative_position_id = GER_danzig_or_war
-		cost = 5
-		available = {
-			ROM = {
-				fascism > 0.35
-				has_full_control_of_state = 46
-				NOT = { has_war_with = ROOT }
-				OR = {
-					is_in_faction = no
-					is_in_faction_with = ROOT
-				}
-				threat > 0.3
-			}
-
-		}
-
-		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
-
-		completion_reward = {
-
-			ROM = {
-				country_event = { 
-					id = wuw_GER_diplomacy.111 
-					days = 2 
-				}
-			}
-
-			custom_effect_tooltip = if_they_accept_tt
-			effect_tooltip = {
-				ROM = {
-					add_ideas = GER_development_of_economic_relations_ns
-					custom_effect_tooltip = generic_skip_one_line_tt
-					add_opinion_modifier = {
-						target = ROOT
-						modifier = GER_trading_partners
-					}
-					add_opinion_modifier = {
-						target = ROOT
-						modifier = GER_align_romania
-					}	
-					custom_effect_tooltip = generic_skip_one_line_tt
-					add_ideas = GER_align_romania
-				}
-				custom_effect_tooltip = war_will_cancel_deal_tt
-			}
-
-		}
-	}
-	
-	
-	focus = {
 		id = GER_around_maginot
 
 		icon = GFX_focus_GER_around_maginot
@@ -11206,93 +11149,19 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = GER_anti_comintern_pact
-
-		icon = GFX_goal_anti_comintern_pact
-		alternate_icon = GFX_focus_GER_anti_comintern_pact
-
-		prerequisite = { focus = GER_remilitarize_the_rhineland }
-
-		x = 5
-		y = 0
-		relative_position_id = GER_reorganize_the_wehrmacht
-		cost = 5
-		
-		bypass = {
-			SOU = {
-				OR = {
-					NOT = {
-						has_government = communism
-					}
-					exists = no
-				}
-			}
-		}
-
-		available = {
-			is_subject = no
-			NOT = { has_government = communism }
-			NOT = { is_in_faction_with = SOU }
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				OR = {
-					has_government = democratic
-					has_government = communism
-				}
-			}
-		}
-
-		search_filters = { FOCUS_FILTER_HISTORICAL }
-
-		completion_reward = {
-			SOU = { add_opinion_modifier = { target = ROOT modifier = pact_against_us } }
-			add_named_threat = { threat = 2 name = GER_anti_comintern_pact }
-			every_other_country = {
-				limit = {
-					NOT = { tag = GER }
-					NOT = { has_war_with = GER }
-					NOT = { is_in_faction_with = SOU }
-					is_subject = no
-					OR = {
-						capital_scope = {
-							is_on_continent = europe
-						}
-						capital_scope = {
-							is_on_continent = asia
-						}
-						num_of_factories > 30
-					}
-					OR = {
-						has_government = fascism 
-						AND = {
-							is_neighbor_of = SOU
-							NOT = { has_government = communism }
-						}
-					}
-				}
-				country_event = germany.5
-			}
-		}
-	}
-
+#BARB FOCUSES
 
 	focus = {
-		id = GER_war_with_the_ussr
+		id = GER_operation_barbarossa
 
-		icon = GFX_focus_attack_soviet
+		icon = GFX_GER_barbarossa
 		alternate_icon = GFX_focus_GER_war_with_the_ussr
 
-		prerequisite = { focus = GER_anti_comintern_pact }
 		prerequisite = { focus = GER_molotov_ribbentrop_pact }
 		mutually_exclusive = { focus = GER_alliance_with_the_ussr }
-		x = 0
-		y = 4
-		relative_position_id = GER_anti_comintern_pact
+		x = 6
+		y = 2
+		relative_position_id = GER_molotov_ribbentrop_pact
 		cost = 0.2
 
 		will_lead_to_war_with = SOV
@@ -11319,12 +11188,9 @@ focus_tree = {
 				}
 				date > 1941.6.21
 			}
-
-			is_subject = no
 		}
 
 		cancel = {
-			is_subject = yes
 			NOT = { country_exists = SOV }
 		}
 
@@ -11403,25 +11269,8 @@ focus_tree = {
 					}
 				}
 			}
-
-			IF = {
-				limit = {
-					KUB = {
-						exists = no
-					}
-					DON = {
-						exists = no
-					}
-					SOV = {
-						NOT = {
-							has_completed_focus = SOV_beaten_but_not_defeated
-						}
-					}
-				}
-				country_event = {
-					id = wuw_GER_legions.8
-				}	
-			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_command_power = 300
 		}
 	}
 
@@ -11621,6 +11470,326 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = GER_vitebsk
+		icon = GFX_GER_vitebsk
+		prerequisite = { focus = GER_operation_barbarossa}
+	    mutually_exclusive = { focus = GER_kiev }
+		mutually_exclusive = { focus = GER_riga }
+		x = 0
+		y = 1
+		cost = 1
+		available = {
+		}
+		relative_position_id = GER_operation_barbarossa
+		bypass = {
+
+		}
+		ai_will_do = {
+			factor = 50
+		}	
+		completion_reward = {
+            207 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
+            96 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
+            206 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
+            241 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
+            243 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
+            242 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
+		}		
+	}
+
+	focus = {
+		id = GER_kiev
+		icon = GFX_GER_ukraine
+		prerequisite = { focus = GER_operation_barbarossa }
+		mutually_exclusive = { focus = GER_vitebsk }
+		mutually_exclusive = { focus = GER_riga }
+		x = 2
+		y = 1
+		cost = 1
+		available = {
+		}
+		relative_position_id = GER_operation_barbarossa
+		bypass = {
+
+		}
+		ai_will_do = {
+			factor = 50
+		}	
+		completion_reward = {
+         202 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }        
+         203 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }        
+         197 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }        
+         226 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }        
+         196 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }        
+         200 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }        
+         259 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }        
+         193 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }        
+         221 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }        
+         220 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }      
+		}		
+	}
+
+	focus = {
+		id = GER_riga
+		icon = GFX_GER_leningrad
+		prerequisite = { focus = GER_operation_barbarossa }
+		mutually_exclusive = { focus = GER_kiev }
+		mutually_exclusive = { focus = GER_vitebsk }
+		x = -2
+		y = 1
+		cost = 1
+		available = {
+		}
+		relative_position_id = GER_operation_barbarossa
+		bypass = {
+
+		}
+		ai_will_do = {
+			factor = 50
+		}	
+		completion_reward = {
+            808 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
+            12 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
+            13 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
+            812 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
+            813 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
+            191 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
+            810 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
+            809 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }      
+		}		
+	}
+	
+	focus = {
+		id = GER_continuetheoffence
+		icon = GFX_GER_unternehmen_fruhlingserwachen
+		prerequisite = { focus = GER_kiev focus = GER_riga focus = GER_vitebsk  }
+		mutually_exclusive = { focus = GER_halttheoffence }
+		x = 1
+		y = 1
+		relative_position_id = GER_vitebsk
+		cost = 1
+
+		available_if_capitulated = yes
+		
+		available = {
+			date > 1942.1.1
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = GER_continuetheoffence
+				days = 180
+			}
+		}
+	}
+
+	focus = {
+		id = GER_halttheoffence
+		icon = GFX_GER_winter
+		prerequisite = { focus = GER_kiev focus = GER_riga focus = GER_vitebsk  }
+		mutually_exclusive = { focus = GER_continuetheoffence }
+		x = -1
+		y = 1
+		relative_position_id = GER_vitebsk
+		cost = 1
+
+		available_if_capitulated = yes
+		
+		available = {
+			date > 1942.1.1
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = GER_stop_the_offensive
+				days = 180
+			}
+		}
+	}
+
+	focus = {
+		id = GER_entrenching
+		icon = GFX_UK_trench
+		prerequisite = { focus = GER_halttheoffence }
+		x = -1
+		y = 1
+		relative_position_id = GER_halttheoffence
+		cost = 1
+
+		available_if_capitulated = yes
+		
+		available = {
+			date > 1942.2.1
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = GER_dig_in
+				days = 100
+			}
+		}
+	}
+
+	focus = {
+		id = GER_typhoon
+		icon = GFX_goal_ger_heavy_tiger_cats
+		prerequisite = { focus = GER_continuetheoffence }
+		x = 1
+		y = 1
+		relative_position_id = GER_continuetheoffence
+		cost = 1
+
+		available_if_capitulated = yes
+		
+		available = {
+			date > 1942.2.1
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = GER_operation_typhoon
+				days = 100
+			}
+		}
+	}
+
+	focus = {
+		id = GER_fallblau
+		icon = GFX_GER_barb
+		x = -1
+		y = 1
+		cost = 1
+		ai_will_do = {
+			factor = 500
+		}
+		available = {
+			date > 1942.6.1
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_continuetheoffence focus = GER_halttheoffence }
+		relative_position_id = GER_continuetheoffence
+
+        search_filters = {FOCUS_FILTER_FRA_POLITICAL_VIOLENCE}
+		completion_reward = {
+			add_timed_idea = {
+				idea = GER_fall_blau
+				days = 180
+			}
+		}
+	}			
+	
+	focus = {
+		id = GER_Leningrad
+		icon = GFX_GER_leningrad
+		x = -2
+		y = 1
+		cost = 1
+		ai_will_do = {
+			factor = 500
+		}
+
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_fallblau }
+		relative_position_id = GER_fallblau
+		mutually_exclusive = { focus = GER_Moscow }
+		mutually_exclusive = { focus = GER_Stalingrad }
+
+
+		completion_reward = {
+	    195 = { add_dynamic_modifier = { modifier = GER_focus_moscow days = 100 } }                
+        146 = { add_dynamic_modifier = { modifier = GER_focus_moscow days = 100 } }                
+        208 = { add_dynamic_modifier = { modifier = GER_focus_moscow days = 100 } }                
+        244 = { add_dynamic_modifier = { modifier = GER_focus_moscow days = 100 } }                
+        263 = { add_dynamic_modifier = { modifier = GER_focus_moscow days = 100 } }                
+        209 = { add_dynamic_modifier = { modifier = GER_focus_moscow days = 100 } }    					
+		}
+	}
+
+	focus = {
+		id = GER_Moscow
+		icon = GFX_GER_moscow
+		x = 0
+		y = 1
+		cost = 1
+		ai_will_do = {
+			factor = 500
+		}
+
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_fallblau }
+		relative_position_id = GER_fallblau
+		mutually_exclusive = { focus = GER_Stalingrad }
+		mutually_exclusive = { focus = GER_Leningrad }
+
+
+		completion_reward = {
+		219 = { add_dynamic_modifier = { modifier = GER_focus_moscow days = 100 } }                
+        242 = { add_dynamic_modifier = { modifier = GER_focus_moscow days = 100 } }                
+        205 = { add_dynamic_modifier = { modifier = GER_focus_moscow days = 100 } }                
+        223 = { add_dynamic_modifier = { modifier = GER_focus_moscow days = 100 } }                
+        254 = { add_dynamic_modifier = { modifier = GER_focus_moscow days = 100 } }                
+        253 = { add_dynamic_modifier = { modifier = GER_focus_moscow days = 100 } }                
+        248 = { add_dynamic_modifier = { modifier = GER_focus_moscow days = 100 } }                
+        247 = { add_dynamic_modifier = { modifier = GER_focus_moscow days = 100 } }                
+        246 = { add_dynamic_modifier = { modifier = GER_focus_moscow days = 100 } }				
+		}
+	}
+
+	focus = {
+		id = GER_Stalingrad
+		icon = GFX_GER_stalingrad
+		x = 2
+		y = 1
+		cost = 1
+		ai_will_do = {
+			factor = 500
+		}
+
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_fallblau }
+		relative_position_id = GER_fallblau
+		mutually_exclusive = { focus = GER_Moscow }
+		mutually_exclusive = { focus = GER_Leningrad }
+
+
+		completion_reward = {
+		217 = { add_dynamic_modifier = { modifier = GER_focus_moscow days = 100 } }                
+        265 = { add_dynamic_modifier = { modifier = GER_focus_moscow days = 100 } }                
+        245 = { add_dynamic_modifier = { modifier = GER_focus_moscow days = 100 } }                
+        238 = { add_dynamic_modifier = { modifier = GER_focus_moscow days = 100 } }                
+        237 = { add_dynamic_modifier = { modifier = GER_focus_moscow days = 100 } }                
+        236 = { add_dynamic_modifier = { modifier = GER_focus_moscow days = 100 } }                
+        407 = { add_dynamic_modifier = { modifier = GER_focus_moscow days = 100 } }                
+        829 = { add_dynamic_modifier = { modifier = GER_focus_moscow days = 100 } }				
+		}
+	}
+
+	focus = {
+		id = GER_citadel
+		icon = GFX_GER_aggressive_wars
+		prerequisite = { focus = GER_Moscow focus = GER_Stalingrad focus = GER_Leningrad }
+		x = 0
+		y = 1
+		relative_position_id = GER_Moscow
+		cost = 1
+
+		available_if_capitulated = yes
+		
+		available = {
+			date > 1943.6.1
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = GER_operation_citadel
+				days = 180
+			}
+		}
+	}
+
+#AFRICA FOCUSES
 
 	focus = {
 		id = GER_war_with_persia

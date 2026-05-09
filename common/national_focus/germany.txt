@@ -10272,6 +10272,15 @@ focus_tree = {
 			if = { 
 				limit = {
 					has_game_rule = {
+						rule = historical_war
+						option = on
+					}	
+				}
+				always = no
+			}
+			if = { 
+				limit = {
+					has_game_rule = {
 						rule = danzig_date_lock
 						option = locked
 					}	
@@ -11148,16 +11157,91 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = GER_anti_comintern_pact
+
+		icon = GFX_goal_anti_comintern_pact
+		alternate_icon = GFX_focus_GER_anti_comintern_pact
+
+		prerequisite = { focus = GER_molotov_ribbentrop_pact }
+
+		x = 2
+		y = 1
+		relative_position_id = GER_molotov_ribbentrop_pact
+		cost = 5
+		
+		bypass = {
+			SOU = {
+				OR = {
+					NOT = {
+						has_government = communism
+					}
+					exists = no
+				}
+			}
+		}
+
+		available = {
+			is_subject = no
+			NOT = { has_government = communism }
+			NOT = { is_in_faction_with = SOU }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_government = democratic
+					has_government = communism
+				}
+			}
+		}
+
+		search_filters = { FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			SOU = { add_opinion_modifier = { target = ROOT modifier = pact_against_us } }
+			add_named_threat = { threat = 2 name = GER_anti_comintern_pact }
+			every_other_country = {
+				limit = {
+					NOT = { tag = GER }
+					NOT = { has_war_with = GER }
+					NOT = { is_in_faction_with = SOU }
+					is_subject = no
+					OR = {
+						capital_scope = {
+							is_on_continent = europe
+						}
+						capital_scope = {
+							is_on_continent = asia
+						}
+						original_tag = TUR
+						original_tag = PER
+						num_of_factories > 30
+					}
+					OR = {
+						has_government = fascism 
+						AND = {
+							is_neighbor_of = SOU
+							NOT = { has_government = communism }
+						}
+					}
+				}
+				country_event = germany.5
+			}
+		}
+	}
 
 #BARB FOCUSES
 
 	focus = {
-		id = GER_operation_barbarossa
+		id = GER_war_with_the_ussr
 
 		icon = GFX_GER_barbarossa
 		alternate_icon = GFX_focus_GER_war_with_the_ussr
 
-		prerequisite = { focus = GER_molotov_ribbentrop_pact }
+		prerequisite = { focus = GER_anti_comintern_pact }
 		mutually_exclusive = { focus = GER_alliance_with_the_ussr }
 		x = 6
 		y = 2
@@ -11178,7 +11262,15 @@ focus_tree = {
 		available_if_capitulated = no
 
 		available = {
-
+			if = { 
+				limit = {
+					has_game_rule = {
+						rule = historical_war
+						option = on
+					}	
+				}
+				always = no
+			}
 			if = { 
 				limit = {
 					has_game_rule = {
@@ -11474,7 +11566,7 @@ focus_tree = {
 	focus = {
 		id = GER_vitebsk
 		icon = GFX_GER_vitebsk
-		prerequisite = { focus = GER_operation_barbarossa}
+		prerequisite = { focus = GER_war_with_the_ussr}
 	    mutually_exclusive = { focus = GER_kiev }
 		mutually_exclusive = { focus = GER_riga }
 		x = 0
@@ -11482,7 +11574,7 @@ focus_tree = {
 		cost = 1
 		available = {
 		}
-		relative_position_id = GER_operation_barbarossa
+		relative_position_id = GER_war_with_the_ussr
 		bypass = {
 
 		}
@@ -11502,7 +11594,7 @@ focus_tree = {
 	focus = {
 		id = GER_kiev
 		icon = GFX_GER_ukraine
-		prerequisite = { focus = GER_operation_barbarossa }
+		prerequisite = { focus = GER_war_with_the_ussr }
 		mutually_exclusive = { focus = GER_vitebsk }
 		mutually_exclusive = { focus = GER_riga }
 		x = 2
@@ -11510,7 +11602,7 @@ focus_tree = {
 		cost = 1
 		available = {
 		}
-		relative_position_id = GER_operation_barbarossa
+		relative_position_id = GER_war_with_the_ussr
 		bypass = {
 
 		}
@@ -11534,7 +11626,7 @@ focus_tree = {
 	focus = {
 		id = GER_riga
 		icon = GFX_GER_leningrad
-		prerequisite = { focus = GER_operation_barbarossa }
+		prerequisite = { focus = GER_war_with_the_ussr }
 		mutually_exclusive = { focus = GER_kiev }
 		mutually_exclusive = { focus = GER_vitebsk }
 		x = -2
@@ -11542,7 +11634,7 @@ focus_tree = {
 		cost = 1
 		available = {
 		}
-		relative_position_id = GER_operation_barbarossa
+		relative_position_id = GER_war_with_the_ussr
 		bypass = {
 
 		}
@@ -11796,10 +11888,10 @@ focus_tree = {
 
 		icon = GFX_focus_generic_attack_iran
 
-		prerequisite = { focus = GER_war_with_the_ussr }
+		prerequisite = { focus = GER_anti_comintern_pact }
 
-		x = 0
-		y = 1
+		x = -4
+		y = 0
 		relative_position_id = GER_war_with_the_ussr
 		cost = 1
 
@@ -11811,7 +11903,7 @@ focus_tree = {
 		}
 		
 		available = {
-		
+			has_completed_focus = GER_war_with_the_ussr
 		}
 		cancel = {
 			NOT = { country_exists = PER }

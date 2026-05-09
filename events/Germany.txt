@@ -6287,7 +6287,7 @@ country_event = {
 				}
 			}
 		}
-		create_wargoal = {
+		declare_war_on = {
 			type = take_state
 			generator = { 85 807 }
 			target = POL

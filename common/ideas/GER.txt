@@ -39,9 +39,9 @@ ideas = {
 				always = no
 			}
 			removal_cost = -1
-			picture = generic_fortify_the_borders
+			picture = Blitzkrieg1
 			modifier = {
-				army_attack_factor = 0.05
+				planning_speed = 0.25
 				winter_attrition_factor = 0.2
 
 			}
@@ -53,8 +53,10 @@ ideas = {
 				always = no
 			}
 			removal_cost = -1
+			picture = SOV_the_road_of_life
 			modifier = {
-				winter_attrition_factor = -0.2
+				planning_speed = -0.25
+				command_power_gain = 0.2
 				acclimatization_cold_climate_gain_factor = 0.2
 			}
 		}
@@ -65,9 +67,10 @@ ideas = {
 				always = no
 			}
 			removal_cost = -1
-			picture = generic_fortify_the_borders
+			picture = ICE_thungur_hnifur
 			modifier = {
-				dig_in_speed_factor = 0.5
+				dig_in_speed_factor = 0.25
+				max_dig_in = 2
 			}
 		}
 
@@ -77,9 +80,9 @@ ideas = {
 				always = no
 			}
 			removal_cost = -1
-			picture = generic_fortify_the_borders
+			picture = generic_acquire_tanks
 			modifier = {
-				out_of_supply_factor = -0.2
+				army_morale_factor = 0.1
 				army_speed_factor = 0.1
 			}
 		}
@@ -90,11 +93,10 @@ ideas = {
 				always = no
 			}
 			removal_cost = -1
-			picture = generic_fortify_the_borders
+			picture = HUN_the_rakosi_battalion_idea
 			modifier = {
-				supply_consumption_factor = -0.1
+				supply_factor = 0.15
 				army_speed_factor = 0.05
-				army_org_factor = 0.05	
 			}
 		}
 
@@ -104,11 +106,10 @@ ideas = {
 				always = no
 			}
 			removal_cost = -1
-			picture = generic_fortify_the_borders
+			picture = HUN_the_rakosi_battalion_idea
 			modifier = {
-				supply_consumption_factor = -0.1
+				supply_factor = 0.15
 				army_speed_factor = 0.05
-				army_org_factor = 0.05
 				army_attack_factor = 0.05
 			}
 		}

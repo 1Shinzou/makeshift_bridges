@@ -335,6 +335,13 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 7992;10875;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
 
 
+10821;5087;impassable;-1;-1;-1;-1;-1;;Raj Northern Border
+10821;1970;impassable;-1;-1;-1;-1;-1;;Raj Northern Border
+5042;1970;impassable;-1;-1;-1;-1;-1;;Raj Northern Border
+5042;8112;impassable;-1;-1;-1;-1;-1;;Raj Northern Border
+5042;4973;impassable;-1;-1;-1;-1;-1;;Raj Northern Border
+
+
 -1;-1;;-1;-1;-1;-1;-1;-1 
 #Start province ID;End province ID;Adjacency type;Through province ID;Starting X position;Starting Y position;Ending X position;Ending Y position;Adjacency rule;Comment
 

@@ -31,6 +31,88 @@ ideas = {
 			}
 		}
 
+		########### LARP BARB TREE ##########
+
+		GER_continuetheoffence = {
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_fortify_the_borders
+			modifier = {
+				army_attack_factor = 0.05
+				winter_attrition_factor = 0.2
+
+			}
+		}
+
+		GER_stop_the_offensive = {
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				winter_attrition_factor = -0.2
+				acclimatization_cold_climate_gain_factor = 0.2
+			}
+		}
+
+		GER_dig_in = {
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_fortify_the_borders
+			modifier = {
+				dig_in_speed_factor = 0.5
+			}
+		}
+
+		GER_operation_typhoon = {
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_fortify_the_borders
+			modifier = {
+				out_of_supply_factor = -0.2
+				army_speed_factor = 0.1
+			}
+		}
+
+		GER_fall_blau = {
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_fortify_the_borders
+			modifier = {
+				supply_consumption_factor = -0.1
+				army_speed_factor = 0.05
+				army_org_factor = 0.05	
+			}
+		}
+
+		GER_operation_citadel = {
+			allowed = {
+				original_tag = GER
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_fortify_the_borders
+			modifier = {
+				supply_consumption_factor = -0.1
+				army_speed_factor = 0.05
+				army_org_factor = 0.05
+				army_attack_factor = 0.05
+			}
+		}
+
 		################ MSB ################
 
 

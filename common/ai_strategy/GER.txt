@@ -587,7 +587,7 @@ GER_war_with_soviets = {
 		original_tag = GER
 	}
 	enable = {
-		has_completed_focus = GER_war_with_the_ussr
+		has_completed_focus = GER_operation_barbarossa
 		country_exists = SOV
 	}
 	abort = {
@@ -2893,10 +2893,10 @@ GER_tanks_in_the_snow = {
 	enable = {
 		OR = {
 			focus_progress = {
-				focus = GER_war_with_the_ussr
+				focus = GER_operation_barbarossa
 				progress > 0.01
 			}
-			has_completed_focus = GER_war_with_the_ussr
+			has_completed_focus = GER_operation_barbarossa
 		}
 	}
 

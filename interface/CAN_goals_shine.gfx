@@ -65,7 +65,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_CAN_ammo_shine"
+		name = "GFX_CAN_ammo_shine"
 		texturefile = "gfx/interface/goals/can/CAN_ammo.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -129,7 +129,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_CAN_army_bits_shine"
+		name = "GFX_CAN_bits_shine"
 		texturefile = "gfx/interface/goals/can/CAN_bits.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {

@@ -10276,7 +10276,7 @@ focus_tree = {
 						option = locked
 					}	
 				}
-				date > 1939.8.20
+				date > 1939.6.1
 			}
 			
 			is_subject = no
@@ -11186,7 +11186,7 @@ focus_tree = {
 						option = locked
 					}	
 				}
-				date > 1941.6.21
+				date > 1941.6.22
 			}
 		}
 

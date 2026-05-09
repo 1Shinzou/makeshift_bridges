@@ -533,6 +533,8 @@ focus_tree = {
         	}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = expand_german_coal_mines_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
 
 			GER_modify_industrial_modifier = yes
 			add_to_variable = { 
@@ -1684,7 +1686,8 @@ focus_tree = {
 			add_ideas = autarkic_economy
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-
+			custom_effect_tooltip = expand_german_coal_mines_tt
+			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = GER_improve_trade_relations_tt
 			every_other_country = {
 				limit = {
@@ -10273,7 +10276,7 @@ focus_tree = {
 						option = locked
 					}	
 				}
-				date > 1939.6.1
+				date > 1939.8.20
 			}
 			
 			is_subject = no
@@ -11183,7 +11186,7 @@ focus_tree = {
 						option = locked
 					}	
 				}
-				date > 1941.6.22
+				date > 1941.6.21
 			}
 		}
 

@@ -231,7 +231,65 @@ on_actions = {
 	}
 	on_monthly = {
 		effect = {
-			
+
+			###################### Auto Dec ######################
+			if = {
+				limit = {
+					AND = {
+						has_game_rule = {
+							rule = historical_war
+							option = on
+						}
+						date > 1939.8.31
+					}
+					NOT = { 
+						GER = { has_completed_focus = GER_danzig_or_war }
+					}
+				}
+				GER = {
+					complete_national_focus = GER_danzig_or_war
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+						has_game_rule = {
+							rule = historical_war
+							option = on
+						}
+						date > 1941.6.30
+					}
+					NOT = { 
+						GER = { has_completed_focus = GER_war_with_the_ussr }
+					}
+				}
+				GER = {
+					complete_national_focus = GER_war_with_the_ussr
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+						has_game_rule = {
+							rule = historical_war
+							option = on
+						}
+						date > 1941.11.30
+					}
+					NOT = { 
+						JAP = { has_completed_focus = JAP_strike_the_southern_road }
+					}
+				}
+				JAP = {
+					complete_national_focus = JAP_strike_the_southern_road
+					declare_war_on = {
+						target = USA
+						type = take_state_focus
+					}
+				}
+			}
+	###################### Auto Dec ######################
+
 			if = {
 				limit = {
 						BEL = {

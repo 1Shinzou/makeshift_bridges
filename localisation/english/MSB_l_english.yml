@@ -155,8 +155,8 @@ GER_erich_von_manstein_barb:0 "Erich von Manstein"
 GER_heinz_guderian_barb:0 "Heinz Guderian"
 
 # GER LARP FOCUSES
-GER_operation_barbarossa:0 "Operation Barbarossa"
-GER_operation_barbarossa_desc:0 "We have only to kick in the door and the whole rotten structure will come crashing down"
+GER_war_with_the_ussr:0 "Operation Barbarossa"
+GER_war_with_the_ussr_desc:0 "We have only to kick in the door and the whole rotten structure will come crashing down"
 GER_vitebsk:0 "Road To Moscow"
 GER_vitebsk_desc:0 ""  
 GER_kiev:0 "Blitz Ukraine"

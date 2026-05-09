@@ -151,6 +151,22 @@ force_attack_last_stand = {
 	}
 }
 
+historical_war = {
+	name = "Historical War Dates"
+	group = "MSB Rules"
+	icon = GFX_decision_border_war
+	default = {
+		name = on
+		text = "Forced"
+		desc = "Danzig or War; Operation Barbarossa & The War in the Pacific will automatically start at their respective historical dates"
+	}
+	option = {
+		name = off
+		text = "Off"
+		desc = ""
+	}
+}
+
 danzig_date_lock = {
 	name = "Danzig or War"
 	group = "MSB Rules"

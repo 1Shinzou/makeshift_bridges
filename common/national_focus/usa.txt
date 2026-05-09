@@ -2545,8 +2545,7 @@ focus_tree = {
 			GER = {
 				add_opinion_modifier = { target = USA modifier = war_plan_black }
 			}
-			army_experience = 50
-			add_command_power = 50
+			#army_experience = 50
 			IF = {
 				limit = {
 					has_dlc = "La Resistance"
@@ -2675,6 +2674,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			add_command_power = 50
+			custom_effect_tooltip = generic_skip_one_line_tt
 				add_timed_idea = {
 						idea = USA_overlord
 						days = 90

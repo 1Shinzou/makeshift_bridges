@@ -4632,8 +4632,9 @@ focus = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			army_experience = 20	
-			add_potential_special_forces_tree = yes	
+			army_experience = 20
+			custom_effect_tooltip = generic_skip_one_line_tt	
+			#add_potential_special_forces_tree = yes	
 			add_ideas = { FRA_kieffer_idea }
 		}
 	}

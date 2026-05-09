@@ -5544,7 +5544,6 @@ focus_tree = {
 		}
 
 		available = {
-			date > 1941.12.1
 			is_subject = no
 			IF = {
 				limit = {

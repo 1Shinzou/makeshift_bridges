@@ -288,12 +288,11 @@ country_event = {
 			}
 		}		
 		set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
-		set_variable_to_random = {
-          var = election_factor
-          min = 0.6
-          max = 0.8
-      }
-		add_to_variable = { election_factor = -0.6 }
+		set_variable = {
+                var = election_factor
+                value = -0.8
+            }
+		#add_to_variable = { election_factor = -0.6 }
 		USA_election_senate = yes
 		USA_election_house = yes
 		USA_flip_support = yes

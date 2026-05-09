@@ -227,9 +227,9 @@ economy_decisions = {
 		icon = GFX_decision_generic_construction
 
 		visible = { 
+			tag = JAP # MSB CHANGE JAPAN SUPPLY HUB DECISION
 			OR = {
 				is_major = no
-				tag = JAP
 				AND = {
 					is_faction_leader = yes
 					num_of_factories < 51 #would be a minor if it wasn't for faction leader status

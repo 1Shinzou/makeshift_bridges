@@ -3780,13 +3780,11 @@ focus = {
 				}
 			}
 			hidden_effect = {
-			add_offsite_building = {
-				type = industrial_complex
-				level = 4
-			}
-				
+				add_offsite_building = {
+					type = industrial_complex
+					level = 8
+				}
 				add_ideas = SPA_death_before_surrender
-				add_state_core = 730
 				EFR = {
 					give_resource_rights = {
 						receiver = GER
@@ -3812,7 +3810,7 @@ focus = {
 			# FRA SPAWN INS
 
 				division_template = {
-					name = "40w"
+					name = "50w Convert"
 					priority = 2
 					division_names_group = FRA_INF_01
 					is_locked = no
@@ -3821,70 +3819,92 @@ focus = {
 						infantry = { x = 0 y = 1 }
 						infantry = { x = 0 y = 2 }
 						infantry = { x = 0 y = 3 }
+						infantry = { x = 0 y = 4 }
 		
 		        		infantry = { x = 1 y = 0 }
 						infantry = { x = 1 y = 1 }
 						infantry = { x = 1 y = 2 }
 						infantry = { x = 1 y = 3 }
+						infantry = { x = 1 y = 4 }	
 
 						infantry = { x = 2 y = 0 }
 						infantry = { x = 2 y = 1 }
 						infantry = { x = 2 y = 2 }
 						infantry = { x = 2 y = 3 }
+						infantry = { x = 2 y = 4 }	
 
 						infantry = { x = 3 y = 0 }
 						infantry = { x = 3 y = 1 }
 						infantry = { x = 3 y = 2 }
 						infantry = { x = 3 y = 3 }
+						infantry = { x = 3 y = 4 }	
 
 						infantry = { x = 4 y = 0 }
 						infantry = { x = 4 y = 1 }
 						infantry = { x = 4 y = 2 }
 						infantry = { x = 4 y = 3 }
+						infantry = { x = 4 y = 4 }							
 						
 					}
 					support = {
 						
 					}
 				}
-
-			random_owned_controlled_state = {
-					prioritize = { 539 }
-				create_unit = {
-						division = "name = \"40w\" division_template = \"40w\" start_experience_factor = 0.6 start_equipment_factor = 1.0" 
+				random_owned_controlled_state = {
+						prioritize = { 554 }
+					create_unit = {
+						division = "name = \"50w Convert\" division_template = \"50w Convert\" start_experience_factor = 0.6 start_equipment_factor = 1.0" 
 						owner = FRA
 					}	
-				create_unit = {
-						division = "name = \"40w\" division_template = \"40w\" start_experience_factor = 0.6 start_equipment_factor = 1.0" 
+					create_unit = {
+						division = "name = \"50w Convert\" division_template = \"50w Convert\" start_experience_factor = 0.6 start_equipment_factor = 1.0" 
 						owner = FRA
 					}	
-				create_unit = {
-						division = "name = \"40w\" division_template = \"40w\" start_experience_factor = 0.6 start_equipment_factor = 1.0" 
-						owner = FRA
-					}
-				create_unit = {
-						division = "name = \"40w\" division_template = \"40w\" start_experience_factor = 0.6 start_equipment_factor = 1.0" 
+					create_unit = {
+						division = "name = \"50w Convert\" division_template = \"50w Convert\" start_experience_factor = 0.6 start_equipment_factor = 1.0" 
 						owner = FRA
 					}
 					create_unit = {
-						division = "name = \"40w\" division_template = \"40w\" start_experience_factor = 0.6 start_equipment_factor = 1.0" 
-						owner = FRA
-					}	
-				create_unit = {
-						division = "name = \"40w\" division_template = \"40w\" start_experience_factor = 0.6 start_equipment_factor = 1.0" 
-						owner = FRA
-					}	
-				create_unit = {
-						division = "name = \"40w\" division_template = \"40w\" start_experience_factor = 0.6 start_equipment_factor = 1.0" 
+						division = "name = \"50w Convert\" division_template = \"50w Convert\" start_experience_factor = 0.6 start_equipment_factor = 1.0" 
 						owner = FRA
 					}
-				create_unit = {
-						division = "name = \"40w\" division_template = \"40w\" start_experience_factor = 0.6 start_equipment_factor = 1.0" 
+					create_unit = {
+						division = "name = \"50w Convert\" division_template = \"50w Convert\" start_experience_factor = 0.6 start_equipment_factor = 1.0" 
+						owner = FRA
+					}	
+					create_unit = {
+						division = "name = \"50w Convert\" division_template = \"50w Convert\" start_experience_factor = 0.6 start_equipment_factor = 1.0" 
+						owner = FRA
+					}	
+					create_unit = {
+						division = "name = \"50w Convert\" division_template = \"50w Convert\" start_experience_factor = 0.6 start_equipment_factor = 1.0" 
 						owner = FRA
 					}
-			
+					create_unit = {
+							division = "name = \"50w Convert\" division_template = \"50w Convert\" start_experience_factor = 0.6 start_equipment_factor = 1.0" 
+						owner = FRA
+					}
+					create_unit = {
+						division = "name = \"50w Convert\" division_template = \"50w Convert\" start_experience_factor = 0.6 start_equipment_factor = 1.0" 
+						owner = FRA
+					}
+					create_unit = {
+							division = "name = \"50w Convert\" division_template = \"50w Convert\" start_experience_factor = 0.6 start_equipment_factor = 1.0" 
+						owner = FRA
+					}
+					create_unit = {
+						division = "name = \"50w Convert\" division_template = \"50w Convert\" start_experience_factor = 0.6 start_equipment_factor = 1.0" 
+						owner = FRA
+					}
+					create_unit = {
+						division = "name = \"50w Convert\" division_template = \"50w Convert\" start_experience_factor = 0.6 start_equipment_factor = 1.0" 
+						owner = FRA
+					}
 				}
-			# FRA SPAWN INS POST CAP END
+				# FRA SPAWN INS POST CAP END
+
+				complete_national_focus = FRA_refus_absurde
+				complete_national_focus = FRA_appeal_to_the_french_nation
 
 			}
 		}

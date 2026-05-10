@@ -3,8 +3,8 @@ GER_focus_moscow = { #STATE MODIFIER
 
     icon = GFX_modifiers_SOV_factory_worker_militias
     
-    army_speed_factor = 0.1
-    supply_node_range = 0.1
+    army_speed_factor = 0.05
+    supply_node_range = 0.05
 }
 
 GER_focus_kiev = { #STATE MODIFIER
@@ -13,5 +13,5 @@ GER_focus_kiev = { #STATE MODIFIER
     icon = GFX_modifiers_SOV_factory_worker_militias
     
     army_speed_factor = 0.05
-    supply_node_range = 0.1
+    supply_node_range = 0.05
 }

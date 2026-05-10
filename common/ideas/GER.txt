@@ -70,7 +70,6 @@ ideas = {
 			picture = ICE_thungur_hnifur
 			modifier = {
 				dig_in_speed_factor = 0.25
-				max_dig_in = 2
 			}
 		}
 
@@ -82,8 +81,8 @@ ideas = {
 			removal_cost = -1
 			picture = generic_acquire_tanks
 			modifier = {
-				army_morale_factor = 0.1
-				army_speed_factor = 0.1
+				army_morale_factor = 0.05
+				army_speed_factor = 0.05
 			}
 		}
 
@@ -95,7 +94,7 @@ ideas = {
 			removal_cost = -1
 			picture = HUN_the_rakosi_battalion_idea
 			modifier = {
-				supply_factor = 0.1
+				supply_factor = 0.05
 				army_speed_factor = 0.05
 			}
 		}
@@ -108,8 +107,8 @@ ideas = {
 			removal_cost = -1
 			picture = HUN_the_rakosi_battalion_idea
 			modifier = {
-				supply_factor = 0.15
-				army_speed_factor = 0.05
+				supply_factor = 0.1
+				army_speed_factor = 0.1
 			}
 			targeted_modifier = {
 				tag = SOV

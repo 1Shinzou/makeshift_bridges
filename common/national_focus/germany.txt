@@ -2363,93 +2363,51 @@ focus_tree = {
 				rule = ger_autarky
 				option = allowed
 			}
-			
+
 			all_core_state = {
 				is_fully_controlled_by = ROOT
 			}
-			OR = {
-				has_resources_in_country = {
-					resource = steel
-					amount > 799 #This needs to correspond to the Bypass values in the previous focuses
-					extracted = yes
-				}
-				any_subject_country = {
-					has_resources_in_country = {
-						resource = steel
-						amount > 799 #This needs to correspond to the Bypass values in the previous focuses
-						extracted = yes
-					}
-				}
+			has_resources_in_collection = {
+				collection = collection:country_and_all_subjects
+				resource = steel
+				amount > 799 #This needs to correspond to the Bypass values in the previous focuses
+				extracted = yes
 			}
-			OR = {
-				has_resources_in_country = {
-					resource = aluminium
-					amount > 199 #This needs to correspond to the Bypass values in the previous focuses
-					extracted = yes
-				}
-				any_subject_country = {
-					has_resources_in_country = {
-						resource = aluminium
-						amount > 199 #This needs to correspond to the Bypass values in the previous focuses
-						extracted = yes
-					}
-				}
+			has_resources_in_collection = {
+				collection = collection:country_and_all_subjects
+				resource = aluminium
+				amount > 199 #This needs to correspond to the Bypass values in the previous focuses
+				extracted = yes
 			}
-			OR = {
-				has_resources_in_country = {
-					resource = oil
-					amount > 149 #This needs to correspond to the Bypass values in the previous focuses
-					extracted = yes
-				}
-				any_subject_country = {
-					has_resources_in_country = {
-						resource = oil
-						amount > 149 #This needs to correspond to the Bypass values in the previous focuses
-						extracted = yes
-					}
-				}
+			has_resources_in_collection = {
+				collection = collection:country_and_all_subjects
+				resource = oil
+				amount > 149 #This needs to correspond to the Bypass values in the previous focuses
+				extracted = yes
 			}
-			OR = {
-				has_resources_in_country = {
-					resource = tungsten
-					amount > 99 #This needs to correspond to the Bypass values in the previous focuses
-					extracted = yes
-				}
-				any_subject_country = {
-					has_resources_in_country = {
-						resource = tungsten
-						amount > 99 #This needs to correspond to the Bypass values in the previous focuses
-						extracted = yes
-					}
-				}
+			has_resources_in_collection = {
+				collection = collection:country_and_all_subjects
+				resource = tungsten
+				amount > 99 #This needs to correspond to the Bypass values in the previous focuses
+				extracted = yes
 			}
-			OR = {
-				has_resources_in_country = {
-					resource = chromium
-					amount > 99 #This needs to correspond to the Bypass values in the previous focuses
-					extracted = yes
-				}
-				any_subject_country = {
-					has_resources_in_country = {
-						resource = chromium
-						amount > 99 #This needs to correspond to the Bypass values in the previous focuses
-						extracted = yes
-					}
-				}
+			has_resources_in_collection = {
+				collection = collection:country_and_all_subjects
+				resource = chromium
+				amount > 99 #This needs to correspond to the Bypass values in the previous focuses
+				extracted = yes
 			}
-			OR = {
-				has_resources_in_country = {
-					resource = rubber
-					amount > 49 #This needs to correspond to the Bypass values in the previous focuses
-					extracted = yes
-				}
-				any_subject_country = {
-					has_resources_in_country = {
-						resource = rubber
-						amount > 49 #This needs to correspond to the Bypass values in the previous focuses
-						extracted = yes
-					}
-				}
+			has_resources_in_collection = {
+				collection = collection:country_and_all_subjects
+				resource = rubber
+				amount > 149 #This needs to correspond to the Bypass values in the previous focuses
+				extracted = yes
+			}
+			has_resources_in_collection = {
+				collection = collection:country_and_all_subjects
+				resource = coal
+				amount > 499 #This needs to correspond to the Bypass values in the previous focuses
+				extracted = yes
 			}
 		}
 
@@ -2457,7 +2415,7 @@ focus_tree = {
 
 		completion_reward = {
 			GER_autarky_achieved_effects = yes
-			
+
 			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = { #Notify that you will get an improved version of the Trade Law

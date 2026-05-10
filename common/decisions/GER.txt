@@ -3273,7 +3273,7 @@ GER_case_anton_category = {
 					has_war = yes
 				}
 				if = {
-					has_war_with = USA
+					has_war_with = SOV
 				}
 			}
 		}

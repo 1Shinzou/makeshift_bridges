@@ -47,7 +47,7 @@ PARADROP_WARNING_DISABLE: "No longer show Enemy Paradrops with this popup."
 # Map Modding
 
 # Strategic Region 
-STRATEGICREGION_15:0 "Levantine Sea"
+STRATEGICREGION_15:0 "Gulf of Aden"
 STRATEGICREGION_253:0 "Balearic Sea"
 STRATEGICREGION_295:0 "Strait of Sicily"
 STRATEGICREGION_292:0 "Bengasi"

@@ -447,21 +447,29 @@ focus_tree = {
 
 			GER_modify_industrial_modifier = yes
 			add_to_variable = { 
-				GER_industrial_production_factory_max_efficiency_factor = 0.05
-				tooltip = production_factory_max_efficiency_factor_tt
+				GER_industrial_industrial_capacity_factory = 0.05
+				tooltip = industrial_capacity_factory_tt
 			}
 			add_to_variable = { 
-				GER_industrial_production_factory_efficiency_gain_factor = 0.05
-				tooltip = production_factory_efficiency_gain_factor_tt
+				GER_industrial_industrial_capacity_dockyard = 0.05
+				tooltip = industrial_capacity_dockyard_tt
 			}
-			add_to_variable = { 
-				GER_industrial_production_factory_start_efficiency_factor = 0.05
-				tooltip = production_factory_start_efficiency_factor_tt
-			}
-			add_to_variable = { 
-				GER_industrial_line_change_production_efficiency_factor = 0.05
-				tooltip = line_change_production_efficiency_factor_tt
-			}
+			#add_to_variable = { 
+			#	GER_industrial_production_factory_max_efficiency_factor = 0.05
+			#	tooltip = production_factory_max_efficiency_factor_tt
+			#}
+			#add_to_variable = { 
+			#	GER_industrial_production_factory_efficiency_gain_factor = 0.05
+			#	tooltip = production_factory_efficiency_gain_factor_tt
+			#}
+			#add_to_variable = { 
+			#	GER_industrial_production_factory_start_efficiency_factor = 0.05
+			#	tooltip = production_factory_start_efficiency_factor_tt
+			#}
+			#add_to_variable = { 
+			#	GER_industrial_line_change_production_efficiency_factor = 0.05
+			#	tooltip = line_change_production_efficiency_factor_tt
+			#}
 		}
 	}
 
@@ -887,10 +895,6 @@ focus_tree = {
 
 			GER_modify_industrial_modifier = yes
 			add_to_variable = { 
-				GER_industrial_production_lack_of_resource_penalty_factor = -0.05
-				tooltip = production_lack_of_resource_penalty_factor_tt
-			}
-			add_to_variable = { 
 				GER_industrial_industrial_capacity_factory = 0.05
 				tooltip = industrial_capacity_factory_tt
 			}
@@ -945,17 +949,26 @@ focus_tree = {
 			#	GER_industrial_production_factory_max_efficiency_factor = 0.05
 			#	tooltip = production_factory_max_efficiency_factor_tt
 			#}
+			#add_to_variable = { 
+			#	GER_industrial_production_factory_efficiency_gain_factor = 0.05
+			#	tooltip = production_factory_efficiency_gain_factor_tt
+			#}
+			#add_to_variable = { 
+			#	GER_industrial_production_factory_start_efficiency_factor = 0.05
+			#	tooltip = production_factory_start_efficiency_factor_tt
+			#}
+			#add_to_variable = { 
+			#	GER_industrial_line_change_production_efficiency_factor = 0.05
+			#	tooltip = line_change_production_efficiency_factor_tt
+			#}
+
 			add_to_variable = { 
-				GER_industrial_production_factory_efficiency_gain_factor = 0.05
-				tooltip = production_factory_efficiency_gain_factor_tt
+				GER_industrial_conversion_cost_civ_to_mil_factor = -0.2
+				tooltip = conversion_cost_civ_to_mil_factor_tt
 			}
 			add_to_variable = { 
-				GER_industrial_production_factory_start_efficiency_factor = 0.05
-				tooltip = production_factory_start_efficiency_factor_tt
-			}
-			add_to_variable = { 
-				GER_industrial_line_change_production_efficiency_factor = 0.05
-				tooltip = line_change_production_efficiency_factor_tt
+				GER_industrial_production_lack_of_resource_penalty_factor = -0.05
+				tooltip = production_lack_of_resource_penalty_factor_tt
 			}
 		}
 	}
@@ -1000,33 +1013,35 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			GER_modify_industrial_modifier = yes
-			#add_to_variable = { 
-			#	GER_industrial_industrial_capacity_factory = 0.05
-			#	tooltip = industrial_capacity_factory_tt
-			#}
-			#add_to_variable = { 
-			#	GER_industrial_industrial_capacity_dockyard = 0.05
-			#	tooltip = industrial_capacity_dockyard_tt
-			#}
-			add_to_variable = { 
-				GER_industrial_conversion_cost_civ_to_mil_factor = -0.2
-				tooltip = conversion_cost_civ_to_mil_factor_tt
-			}
+
+
 			add_to_variable = { 
 				GER_industrial_production_factory_max_efficiency_factor = 0.05
 				tooltip = production_factory_max_efficiency_factor_tt
 			}
+			#add_to_variable = { 
+			#	GER_industrial_production_factory_efficiency_gain_factor = 0.05
+			#	tooltip = production_factory_efficiency_gain_factor_tt
+			#}
+			#add_to_variable = { 
+			#	GER_industrial_production_factory_start_efficiency_factor = 0.05
+			#	tooltip = production_factory_start_efficiency_factor_tt
+			#}
+			#add_to_variable = { 
+			#	GER_industrial_line_change_production_efficiency_factor = 0.05
+			#	tooltip = line_change_production_efficiency_factor_tt
+			#}
+			#add_to_variable = { 
+			#	GER_industrial_conversion_cost_civ_to_mil_factor = -0.2
+			#	tooltip = conversion_cost_civ_to_mil_factor_tt
+			#}
 			add_to_variable = { 
-				GER_industrial_production_factory_efficiency_gain_factor = 0.05
-				tooltip = production_factory_efficiency_gain_factor_tt
+				GER_industrial_industrial_capacity_factory = 0.05
+				tooltip = industrial_capacity_factory_tt
 			}
 			add_to_variable = { 
-				GER_industrial_production_factory_start_efficiency_factor = 0.05
-				tooltip = production_factory_start_efficiency_factor_tt
-			}
-			add_to_variable = { 
-				GER_industrial_line_change_production_efficiency_factor = 0.05
-				tooltip = line_change_production_efficiency_factor_tt
+				GER_industrial_industrial_capacity_dockyard = 0.05
+				tooltip = industrial_capacity_dockyard_tt
 			}
 
 		}
@@ -2343,98 +2358,56 @@ focus_tree = {
 		relative_position_id = GER_seize_foreign_industries
 		cost = 10
 		available = {
-			
+
 			has_game_rule = {
 				rule = ger_autarky
 				option = allowed
 			}
-			
+
 			all_core_state = {
 				is_fully_controlled_by = ROOT
 			}
-			OR = {
-				has_resources_in_country = {
-					resource = steel
-					amount > 799 #This needs to correspond to the Bypass values in the previous focuses
-					extracted = yes
-				}
-				any_subject_country = {
-					has_resources_in_country = {
-						resource = steel
-						amount > 799 #This needs to correspond to the Bypass values in the previous focuses
-						extracted = yes
-					}
-				}
+			has_resources_in_collection = {
+				collection = collection:country_and_all_subjects
+				resource = steel
+				amount > 799 #This needs to correspond to the Bypass values in the previous focuses
+				extracted = yes
 			}
-			OR = {
-				has_resources_in_country = {
-					resource = aluminium
-					amount > 199 #This needs to correspond to the Bypass values in the previous focuses
-					extracted = yes
-				}
-				any_subject_country = {
-					has_resources_in_country = {
-						resource = aluminium
-						amount > 199 #This needs to correspond to the Bypass values in the previous focuses
-						extracted = yes
-					}
-				}
+			has_resources_in_collection = {
+				collection = collection:country_and_all_subjects
+				resource = aluminium
+				amount > 199 #This needs to correspond to the Bypass values in the previous focuses
+				extracted = yes
 			}
-			OR = {
-				has_resources_in_country = {
-					resource = oil
-					amount > 149 #This needs to correspond to the Bypass values in the previous focuses
-					extracted = yes
-				}
-				any_subject_country = {
-					has_resources_in_country = {
-						resource = oil
-						amount > 149 #This needs to correspond to the Bypass values in the previous focuses
-						extracted = yes
-					}
-				}
+			has_resources_in_collection = {
+				collection = collection:country_and_all_subjects
+				resource = oil
+				amount > 149 #This needs to correspond to the Bypass values in the previous focuses
+				extracted = yes
 			}
-			OR = {
-				has_resources_in_country = {
-					resource = tungsten
-					amount > 99 #This needs to correspond to the Bypass values in the previous focuses
-					extracted = yes
-				}
-				any_subject_country = {
-					has_resources_in_country = {
-						resource = tungsten
-						amount > 99 #This needs to correspond to the Bypass values in the previous focuses
-						extracted = yes
-					}
-				}
+			has_resources_in_collection = {
+				collection = collection:country_and_all_subjects
+				resource = tungsten
+				amount > 99 #This needs to correspond to the Bypass values in the previous focuses
+				extracted = yes
 			}
-			OR = {
-				has_resources_in_country = {
-					resource = chromium
-					amount > 99 #This needs to correspond to the Bypass values in the previous focuses
-					extracted = yes
-				}
-				any_subject_country = {
-					has_resources_in_country = {
-						resource = chromium
-						amount > 99 #This needs to correspond to the Bypass values in the previous focuses
-						extracted = yes
-					}
-				}
+			has_resources_in_collection = {
+				collection = collection:country_and_all_subjects
+				resource = chromium
+				amount > 99 #This needs to correspond to the Bypass values in the previous focuses
+				extracted = yes
 			}
-			OR = {
-				has_resources_in_country = {
-					resource = rubber
-					amount > 49 #This needs to correspond to the Bypass values in the previous focuses
-					extracted = yes
-				}
-				any_subject_country = {
-					has_resources_in_country = {
-						resource = rubber
-						amount > 49 #This needs to correspond to the Bypass values in the previous focuses
-						extracted = yes
-					}
-				}
+			has_resources_in_collection = {
+				collection = collection:country_and_all_subjects
+				resource = rubber
+				amount > 149 #This needs to correspond to the Bypass values in the previous focuses
+				extracted = yes
+			}
+			has_resources_in_collection = {
+				collection = collection:country_and_all_subjects
+				resource = coal
+				amount > 499 #This needs to correspond to the Bypass values in the previous focuses
+				extracted = yes
 			}
 		}
 
@@ -2442,7 +2415,7 @@ focus_tree = {
 
 		completion_reward = {
 			GER_autarky_achieved_effects = yes
-			
+
 			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = { #Notify that you will get an improved version of the Trade Law
@@ -11163,11 +11136,11 @@ focus_tree = {
 		icon = GFX_goal_anti_comintern_pact
 		alternate_icon = GFX_focus_GER_anti_comintern_pact
 
-		prerequisite = { focus = GER_molotov_ribbentrop_pact }
+		prerequisite = { focus = GER_remilitarize_the_rhineland }
 
-		x = 2
+		x = 7
 		y = 1
-		relative_position_id = GER_molotov_ribbentrop_pact
+		relative_position_id = GER_remilitarize_the_rhineland
 		cost = 5
 		
 		bypass = {
@@ -11242,9 +11215,10 @@ focus_tree = {
 		alternate_icon = GFX_focus_GER_war_with_the_ussr
 
 		prerequisite = { focus = GER_anti_comintern_pact }
+		prerequisite = { focus = GER_molotov_ribbentrop_pact }
 		mutually_exclusive = { focus = GER_alliance_with_the_ussr }
 		x = 6
-		y = 2
+		y = 1
 		relative_position_id = GER_molotov_ribbentrop_pact
 		cost = 0.2
 
@@ -11362,7 +11336,7 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			add_command_power = 300
+			add_command_power = 50
 		}
 	}
 
@@ -11581,13 +11555,24 @@ focus_tree = {
 		ai_will_do = {
 			factor = 50
 		}	
-		completion_reward = {
-            207 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
-            96 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
-            206 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
-            241 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
-            243 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
-            242 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
+		completion_reward = {  
+			every_state = {
+				limit = {
+					OR = { 
+						state = 207
+						state = 96
+						state = 206
+						state = 241
+						state = 243
+						state = 242
+					}
+				}
+				add_dynamic_modifier = { 
+					modifier = GER_focus_kiev
+					scope = GER
+					days = 100 
+				}
+			} 
 		}		
 	}
 
@@ -11610,16 +11595,27 @@ focus_tree = {
 			factor = 50
 		}	
 		completion_reward = {
-         202 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }        
-         203 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }        
-         197 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }        
-         226 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }        
-         196 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }        
-         200 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }        
-         259 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }        
-         193 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }        
-         221 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }        
-         220 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }      
+			every_state = {
+				limit = {
+					OR = {
+						state = 202
+						state = 203
+						state = 197
+						state = 226
+						state = 196
+						state = 200
+						state = 259
+						state = 193
+						state = 221
+						state = 220
+					}
+				}
+				add_dynamic_modifier = { 
+					modifier = GER_focus_kiev
+					scope = GER
+					days = 100 
+				}
+			}     
 		}		
 	}
 
@@ -11642,14 +11638,25 @@ focus_tree = {
 			factor = 50
 		}	
 		completion_reward = {
-            808 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
-            12 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
-            13 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
-            812 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
-            813 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
-            191 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
-            810 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
-            809 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }      
+			every_state = {
+				limit = {
+					OR = { 
+						state = 808
+						state = 12
+						state = 13
+						state = 812
+						state = 813
+						state = 191
+						state = 810
+						state = 809
+					}
+				}
+				add_dynamic_modifier = { 
+					modifier = GER_focus_kiev
+					scope = GER
+					days = 100 
+				}
+			}  
 		}		
 	}
 	
@@ -11874,21 +11881,27 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_timed_idea = {
-				idea = GER_operation_citadel
-				days = 180
+			every_state = {
+				limit = {
+					is_owned_by = SOV
+				}
+				add_dynamic_modifier = { 
+					modifier = GER_operation_citadel 
+					scope = GER
+					days = 100 
+				}
 			}
 		}
 	}
 
-#AFRICA FOCUSES
+	#AFRICA FOCUSES
 
 	focus = {
 		id = GER_war_with_persia
 
 		icon = GFX_focus_generic_attack_iran
 
-		prerequisite = { focus = GER_anti_comintern_pact }
+		prerequisite = { focus = GER_molotov_ribbentrop_pact }
 
 		x = -4
 		y = 0
@@ -11903,7 +11916,7 @@ focus_tree = {
 		}
 		
 		available = {
-			has_completed_focus = GER_war_with_the_ussr
+			date > 1941.7.1
 		}
 		cancel = {
 			NOT = { country_exists = PER }

@@ -933,11 +933,11 @@ E_ll = {
 	
 		icon = GFX_decision_generic_air
 			
-			allowed = {
+		allowed = {
 		}
 		
 		available = {
-				date > 1940.10.01	
+			date > 1941.6.22	
 		} 
 		fire_only_once = yes
 		visible = {

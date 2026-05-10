@@ -380,12 +380,12 @@ ger_autarky = {
 	name = "Germany Autarky Achieved"
 	group = "Economic Adjustments"
 	icon = GFX_decision_ger_reichskommissariats
-	default = {
+	option = {
 		name = banned
 		text = "GOff"
 		desc = ""
 	}
-	option = {
+	default = {
 		name = allowed
 		text = "ROn"
 		desc = ""

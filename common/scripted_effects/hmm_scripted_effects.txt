@@ -1,4 +1,5 @@
 hmm_capitulations_on_actions = {
+	# Poland
 	if = {
 		limit = {
 			original_tag = POL
@@ -20,7 +21,7 @@ hmm_capitulations_on_actions = {
 		
 	}
 
-
+	# Netherlands
 	if = {
 		limit = {
 			original_tag = HOL
@@ -60,7 +61,19 @@ hmm_capitulations_on_actions = {
 		}
 	}
 
-
+	if = {
+		limit = {
+			original_tag = GRE
+			ITA = { has_war_with = GRE }
+		}
+		
+		ENG = {
+			annex_country = {
+				target = GRE
+				transfer_troops = no
+			}
+		}
+	}
 
 	# China
 	if = {

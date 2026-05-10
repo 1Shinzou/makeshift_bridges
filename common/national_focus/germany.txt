@@ -11336,7 +11336,7 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-			add_command_power = 300
+			add_command_power = 50
 		}
 	}
 
@@ -11558,12 +11558,14 @@ focus_tree = {
 		completion_reward = {  
 			every_state = {
 				limit = {
-					state = 207
-					state = 96
-					state = 206
-					state = 241
-					state = 243
-					state = 242
+					OR = { 
+						state = 207
+						state = 96
+						state = 206
+						state = 241
+						state = 243
+						state = 242
+					}
 				}
 				add_dynamic_modifier = { 
 					modifier = GER_focus_kiev
@@ -11595,16 +11597,18 @@ focus_tree = {
 		completion_reward = {
 			every_state = {
 				limit = {
-					state = 202
-					state = 203
-					state = 197
-					state = 226
-					state = 196
-					state = 200
-					state = 259
-					state = 193
-					state = 221
-					state = 220
+					OR = {
+						state = 202
+						state = 203
+						state = 197
+						state = 226
+						state = 196
+						state = 200
+						state = 259
+						state = 193
+						state = 221
+						state = 220
+					}
 				}
 				add_dynamic_modifier = { 
 					modifier = GER_focus_kiev
@@ -11636,14 +11640,16 @@ focus_tree = {
 		completion_reward = {
 			every_state = {
 				limit = {
-					state = 808
-					state = 12
-					state = 13
-					state = 812
-					state = 813
-					state = 191
-					state = 810
-					state = 809
+					OR = { 
+						state = 808
+						state = 12
+						state = 13
+						state = 812
+						state = 813
+						state = 191
+						state = 810
+						state = 809
+					}
 				}
 				add_dynamic_modifier = { 
 					modifier = GER_focus_kiev

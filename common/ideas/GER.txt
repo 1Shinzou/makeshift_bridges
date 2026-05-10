@@ -39,7 +39,7 @@ ideas = {
 				always = no
 			}
 			removal_cost = -1
-			picture = Blitzkrieg1
+			picture = JAP_advanced_weapons_programs
 			modifier = {
 				planning_speed = 0.25
 				winter_attrition_factor = 0.2
@@ -95,7 +95,7 @@ ideas = {
 			removal_cost = -1
 			picture = HUN_the_rakosi_battalion_idea
 			modifier = {
-				supply_factor = 0.15
+				supply_factor = 0.1
 				army_speed_factor = 0.05
 			}
 		}
@@ -110,7 +110,10 @@ ideas = {
 			modifier = {
 				supply_factor = 0.15
 				army_speed_factor = 0.05
-				army_attack_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.05
 			}
 		}
 

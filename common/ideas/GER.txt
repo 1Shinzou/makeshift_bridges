@@ -99,23 +99,6 @@ ideas = {
 			}
 		}
 
-		GER_operation_citadel = {
-			allowed = {
-				original_tag = GER
-				always = no
-			}
-			removal_cost = -1
-			picture = HUN_the_rakosi_battalion_idea
-			modifier = {
-				supply_factor = 0.1
-				army_speed_factor = 0.1
-			}
-			targeted_modifier = {
-				tag = SOV
-				attack_bonus_against = 0.05
-			}
-		}
-
 		################ MSB ################
 
 

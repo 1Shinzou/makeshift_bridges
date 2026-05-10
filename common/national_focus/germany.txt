@@ -2358,7 +2358,7 @@ focus_tree = {
 		relative_position_id = GER_seize_foreign_industries
 		cost = 10
 		available = {
-			
+
 			has_game_rule = {
 				rule = ger_autarky
 				option = allowed
@@ -11555,13 +11555,22 @@ focus_tree = {
 		ai_will_do = {
 			factor = 50
 		}	
-		completion_reward = {
-            207 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
-            96 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
-            206 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
-            241 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
-            243 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
-            242 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
+		completion_reward = {  
+			every_state = {
+				limit = {
+					state = 207
+					state = 96
+					state = 206
+					state = 241
+					state = 243
+					state = 242
+				}
+				add_dynamic_modifier = { 
+					modifier = GER_focus_kiev
+					scope = GER
+					days = 100 
+				}
+			} 
 		}		
 	}
 
@@ -11584,16 +11593,25 @@ focus_tree = {
 			factor = 50
 		}	
 		completion_reward = {
-         202 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }        
-         203 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }        
-         197 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }        
-         226 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }        
-         196 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }        
-         200 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }        
-         259 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }        
-         193 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }        
-         221 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }        
-         220 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }      
+			every_state = {
+				limit = {
+					state = 202
+					state = 203
+					state = 197
+					state = 226
+					state = 196
+					state = 200
+					state = 259
+					state = 193
+					state = 221
+					state = 220
+				}
+				add_dynamic_modifier = { 
+					modifier = GER_focus_kiev
+					scope = GER
+					days = 100 
+				}
+			}     
 		}		
 	}
 
@@ -11616,14 +11634,23 @@ focus_tree = {
 			factor = 50
 		}	
 		completion_reward = {
-            808 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
-            12 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
-            13 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
-            812 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
-            813 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
-            191 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
-            810 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }    
-            809 = { add_dynamic_modifier = { modifier = GER_focus_kiev days = 100 } }      
+			every_state = {
+				limit = {
+					state = 808
+					state = 12
+					state = 13
+					state = 812
+					state = 813
+					state = 191
+					state = 810
+					state = 809
+				}
+				add_dynamic_modifier = { 
+					modifier = GER_focus_kiev
+					scope = GER
+					days = 100 
+				}
+			}  
 		}		
 	}
 	
@@ -11848,14 +11875,20 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_timed_idea = {
-				idea = GER_operation_citadel
-				days = 180
+			every_state = {
+				limit = {
+					is_owned_by = SOV
+				}
+				add_dynamic_modifier = { 
+					modifier = GER_operation_citadel 
+					scope = GER
+					days = 100 
+				}
 			}
 		}
 	}
 
-#AFRICA FOCUSES
+	#AFRICA FOCUSES
 
 	focus = {
 		id = GER_war_with_persia

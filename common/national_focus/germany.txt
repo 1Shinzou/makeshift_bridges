@@ -11178,11 +11178,11 @@ focus_tree = {
 		icon = GFX_goal_anti_comintern_pact
 		alternate_icon = GFX_focus_GER_anti_comintern_pact
 
-		prerequisite = { focus = GER_molotov_ribbentrop_pact }
+		prerequisite = { focus = GER_remilitarize_the_rhineland }
 
-		x = 2
+		x = 7
 		y = 1
-		relative_position_id = GER_molotov_ribbentrop_pact
+		relative_position_id = GER_remilitarize_the_rhineland
 		cost = 5
 		
 		bypass = {
@@ -11257,9 +11257,10 @@ focus_tree = {
 		alternate_icon = GFX_focus_GER_war_with_the_ussr
 
 		prerequisite = { focus = GER_anti_comintern_pact }
+		prerequisite = { focus = GER_molotov_ribbentrop_pact }
 		mutually_exclusive = { focus = GER_alliance_with_the_ussr }
 		x = 6
-		y = 2
+		y = 1
 		relative_position_id = GER_molotov_ribbentrop_pact
 		cost = 0.2
 
@@ -11903,7 +11904,7 @@ focus_tree = {
 
 		icon = GFX_focus_generic_attack_iran
 
-		prerequisite = { focus = GER_anti_comintern_pact }
+		prerequisite = { focus = GER_molotov_ribbentrop_pact }
 
 		x = -4
 		y = 0
@@ -11918,7 +11919,7 @@ focus_tree = {
 		}
 		
 		available = {
-			has_completed_focus = GER_war_with_the_ussr
+			date > 1941.7.1
 		}
 		cancel = {
 			NOT = { country_exists = PER }

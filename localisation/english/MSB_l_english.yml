@@ -132,6 +132,7 @@ fall_of_france:0 "Fall of France"
 hmm_chi:0 "Japanese Victory over China"
 no_grind:0 "No Grinding"
 no_grind_desc:0 "No Grinding Generals Pre War"
+send_air_to_eng:0 "Lend-Lease Planes to the UK"
 
 # LL Decision
  E_ll:"Air Decision Lend Lease"

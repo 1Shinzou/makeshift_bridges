@@ -2607,9 +2607,6 @@ focus_tree = {
 		available = {
 			JAP_naval_faction_is_at_least_influential = yes
 			JAP_naval_faction_is_greater_than_army = yes
-			NOT = {
-				has_country_flag = JAP_yamamoto_shot_down_flag
-			}
 		}
 
 		bypass = {

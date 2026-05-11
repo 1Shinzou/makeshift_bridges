@@ -1322,7 +1322,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_neutrality_act }
 		relative_position_id = USA_neutrality_act
-		cost = 2
+		cost = 5
 
 
 		bypass = {
@@ -1350,7 +1350,7 @@ focus_tree = {
 		relative_position_id = USA_neutrality_act
 
 
-		cost = 2
+		cost = 5
 
 		ai_will_do = {
 			factor = 1

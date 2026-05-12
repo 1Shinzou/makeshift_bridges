@@ -208,6 +208,13 @@ ITA_po_valley_mettalurgy_desc:0 "The Po Valley is home to a large part of Italia
 
 
 # SOV
+  # Scientists
+SOV_Boris_Georgievich_Chilikin: "Boris Georgievich Chilikin"
+SOV_Boris_Mikhailovich_Malinin: "Boris Mikhailovich Malinin"
+SOV_Mikhail_Ilyich_Koshkin: "Mikhail Ilyich Koshkin"
+SOV_Joseph_Yakovlevich_Kotin: "Joseph Yakovlevich Kotin"
+SOV_Vasily_Gavrilovich_Grabin: "Vasily Gavrilovich Grabin"
+
 SOV_collectivized_society:0 "Collectivized Society"
 stalin_they_will_know_fear:0 "They will know Fear"
 SOV_the_road_of_life2:0 "Road of Life"

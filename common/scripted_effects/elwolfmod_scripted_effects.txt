@@ -76,6 +76,11 @@ elwolfmod_vichy_france = {
 	}
 	
 	ITA = { 
+		diplomatic_relation = {
+			country = EFR
+			relation = military_access
+			active = yes
+		}
 		transfer_state = 735 
 		transfer_state = 851 
 		transfer_state = 1 

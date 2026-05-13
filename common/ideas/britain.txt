@@ -326,7 +326,7 @@ ideas = {
 				consumer_goods_factor = 0
 				industrial_capacity_factory = 0.1
 				production_factory_max_efficiency_factor = 0.05
-				global_building_slots = 5
+				global_building_slots_factor = 0.1
 			}	
 		}
 

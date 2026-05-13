@@ -289,7 +289,7 @@ NDefines.NNavy.HEAVY_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.1  -- heavy gun attack 
 NDefines.NNavy.LIGHT_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.05 -- light gun attack value is divided by this value * 100 and added to shore bombardment modifier
 
 -- Reduced Nav shootdown in naval battles
-NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.1
+NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.025
 
 -- CHANGES TO HELP STR LOSS IN COMBAT --
 NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.050   -- old vanilla 0.050, -- vanilla 0.060,  -- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR

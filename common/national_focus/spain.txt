@@ -3230,14 +3230,13 @@ focus_tree = {
                 }
             }
 			SPR = {
-                    annex_country = {
-                        target = POR
-                        transfer_troops = no
-                    }
+                annex_country = {
+					target = POR
+					transfer_troops = no
                 }
+            }
 			
-				add_stability = 0.2
-			set_rule = { can_join_factions = yes }
+			add_stability = 0.2
 			if = {
 				limit = {
 					GER = {
@@ -3255,6 +3254,10 @@ focus_tree = {
 					}
 				}
 				ITA = { country_event = generic.2 }
+			}
+			hidden_effect = {
+				set_rule = { can_join_factions = yes }
+				remove_ideas = no_faction
 			}
 		}
     }

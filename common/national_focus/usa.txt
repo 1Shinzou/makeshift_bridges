@@ -184,29 +184,31 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			#add_ideas = USA_rubber_in_asia
 			
-			add_timed_idea = { idea = USA_staunch_isolationists days = 1200 }
+			add_ideas = USA_staunch_isolationists
+
 			custom_effect_tooltip = generic_skip_one_line_tt
-			add_timed_idea = {
-				idea = USA_civilian_industry
-				days = 1791
-				IF = {
-					limit = {
-						has_idea = new_deal
-					}
-					remove_ideas = new_deal
+
+			add_ideas = USA_civilian_industry
+
+			if = {
+				limit = {
+					has_idea = new_deal
 				}
-				custom_effect_tooltip = generic_skip_one_line_tt
-				custom_effect_tooltip = "The New Deal idea will be removed if it is currently instated."
-					hidden_effect = {
-					if = {
-						limit = {
-							has_game_rule = {
-								rule = obsolete_focus_branches_visibility
-								option = HIDE
-							}
+				remove_ideas = new_deal
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = "The New Deal idea will be removed if it is currently instated."
+			hidden_effect = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
 						}
-						mark_focus_tree_layout_dirty = yes
 					}
+					mark_focus_tree_layout_dirty = yes
 				}
 			}
 		}
@@ -631,6 +633,8 @@ focus_tree = {
 				add_idea = USA_gold_standard_2
 			}
 			add_timed_idea = { idea = USA_privatization days = 365 }
+
+			remove_ideas = USA_staunch_isolationists
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 

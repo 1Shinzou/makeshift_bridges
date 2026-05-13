@@ -1058,7 +1058,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = FRA_scw_intervention_nationalists_focus
+			picture = ARG_american_allyship
 			
 			modifier = {
 				war_support_factor = -1
@@ -1079,10 +1079,14 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = FRA_scw_intervention_nationalists_focus
+			picture = SOV_third_five_year_plan_civilian
 			
 			modifier = {
 				conversion_cost_civ_to_mil_factor = 1.2
+			}
+
+			cancel = {
+				has_war = yes
 			}
 		}
 		

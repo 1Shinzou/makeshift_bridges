@@ -1635,6 +1635,18 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
+					OR = {
+						has_idea = isolation 
+						has_idea = undisturbed_isolation
+						has_country_flag = USA_the_giant_wakes_added_civ_eco
+					}
+				}
+				add_ideas = civilian_economy
+				set_country_flag = USA_the_giant_wakes_added_civ_eco
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			if = {
+				limit = {
 					NOT = { has_idea = undisturbed_isolation }
 					NOT = { has_idea = isolation }
 					NOT = { has_country_flag = USA_the_giant_wakes_added_civ_eco }
@@ -1653,17 +1665,6 @@ focus_tree = {
 					instant_build = yes
 					}
 				}
-			}
-			if = {
-				limit = {
-					OR = {
-						has_idea = isolation 
-						has_idea = undisturbed_isolation
-						has_country_flag = USA_the_giant_wakes_added_civ_eco
-					}
-				}
-				add_ideas = civilian_economy
-				set_country_flag = USA_the_giant_wakes_added_civ_eco
 			}
 		}
 	}

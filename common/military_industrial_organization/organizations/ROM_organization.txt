@@ -15,10 +15,6 @@ ROM_leonidas_works_organization = {
 	icon = GFX_idea_ROM_leonidas_works
 	allowed = { 
 		tag = ROM
-		has_dlc = "Death or Dishonor"
-	}
-	available = {
-		FROM = { has_completed_focus = ROM_mobile_tank_destroyers }
 	}
 	initial_trait = {
 		name = ROM_mio_trait_mobile_tank_destroyers

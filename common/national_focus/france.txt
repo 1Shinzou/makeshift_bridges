@@ -3785,30 +3785,8 @@ focus = {
 					level = 8
 				}
 				add_ideas = SPA_death_before_surrender
-				EFR = {
-					give_resource_rights = {
-						receiver = GER
-						state = 22
-					}
-					give_resource_rights = {
-						receiver = GER
-						state = 20
-					}
-					give_resource_rights = {
-						receiver = GER
-						state = 32
-					}
-					give_resource_rights = {
-						receiver = GER
-						state = 21
-					}
-					give_resource_rights = {
-						receiver = ITA
-						state = 459
-					}
-				}
-			# FRA SPAWN INS
 
+			# FRA SPAWN INS
 				division_template = {
 					name = "50w Convert"
 					priority = 2
@@ -3902,10 +3880,8 @@ focus = {
 					}
 				}
 				# FRA SPAWN INS POST CAP END
-
 				complete_national_focus = FRA_refus_absurde
 				complete_national_focus = FRA_appeal_to_the_french_nation
-
 			}
 		}
 	}

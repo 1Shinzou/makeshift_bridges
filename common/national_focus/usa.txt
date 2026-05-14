@@ -2326,8 +2326,8 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = { date > 1943.1.1
-
+		available = { 
+			date > 1943.1.1
 		}
 		
 		bypass = {
@@ -2335,7 +2335,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		add_ideas = USA_SHAEF
+			add_ideas = USA_SHAEF
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
 			if = {
 				limit = {
 					has_character = USA_dwight_d_eisenhower
@@ -2360,10 +2363,10 @@ focus_tree = {
 				USA_george_s_patton = {
 					add_trait = { trait = urban_assault_specialist }
 					add_trait = { trait = cavalry_leader }
-						}
-					}
 				}
 			}
+		}
+	}
 		
 	focus = {
 		id = USA_supreme_allied_commander_asia
@@ -2380,8 +2383,8 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = { date > 1943.1.1
-
+		available = { 
+			date > 1943.1.1
 		}
 		
 		bypass = {
@@ -2389,7 +2392,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		add_ideas = USA_SCAP
+			add_ideas = USA_SCAP
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			if = {
 				limit = {
 					has_character = USA_mark_clark
@@ -2415,10 +2421,10 @@ focus_tree = {
 					add_trait = { trait = infantry_leader }
 					add_trait = { trait = organizer }
 					gain_xp = 4501
-						}
-					}
 				}
 			}
+		}
+	}
 	focus = {
 		id = USA_intervention_in_europe
 		icon = GFX_focus_usa_focus_on_europe

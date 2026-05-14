@@ -22,7 +22,7 @@ elwolfmod_vichy_france = {
 		}
 	}
 	EFR = {
-		#Mainland vichy shit
+		#Mainland Vichy
 		transfer_state = 26
 		set_capital = {
 			state = 26
@@ -34,13 +34,15 @@ elwolfmod_vichy_france = {
 		transfer_state = 31
 		transfer_state = 25
 		transfer_state = 33
-		#Algeria vichy shit
+
+		#Algeria Vichy
 		transfer_state = 459
 		transfer_state = 461
 		transfer_state = 462
 		transfer_state = 462
 		transfer_state = 460
 		transfer_state = 513
+
 		462 = {
 			set_demilitarized_zone = yes
 		}
@@ -56,6 +58,28 @@ elwolfmod_vichy_france = {
 		460 = {
 			set_demilitarized_zone = yes
 		}
+
+		give_resource_rights = {
+			receiver = GER
+			state = 22
+		}
+		give_resource_rights = {
+			receiver = GER
+			state = 20
+		}
+		give_resource_rights = {
+			receiver = GER
+			state = 32
+		}
+		give_resource_rights = {
+			receiver = GER
+			state = 21
+		}
+		give_resource_rights = {
+			receiver = ITA
+			state = 459
+		}
+		
 		diplomatic_relation = {
 			country = GER
 			relation = military_access

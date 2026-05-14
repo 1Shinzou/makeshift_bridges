@@ -614,7 +614,7 @@ focus_tree = {
 		available = {
 			OR = {
 				GER = { has_war = yes }
-				date > 1939.7.1
+				date > 1939.9.1
 			}
 		}
 		bypass = {
@@ -632,21 +632,14 @@ focus_tree = {
 				remove_idea = USA_gold_standard
 				add_idea = USA_gold_standard_2
 			}
-			add_timed_idea = { idea = USA_privatization days = 365 }
-
-			remove_ideas = USA_staunch_isolationists
+			add_timed_idea = { 
+				idea = USA_privatization 
+				days = 365 
+			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			368 = {
-				add_extra_state_shared_building_slots = 10
-			}
-			390 = {
-				add_extra_state_shared_building_slots = 10
-			}
-			373 = {
-				add_extra_state_shared_building_slots = 10
-			}
+			remove_ideas = USA_staunch_isolationists
 		}
 	}
 

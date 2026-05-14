@@ -550,13 +550,7 @@ on_actions = {
 						tag = PER
 					}
 				}
-				
-				ENG = {
-					annex_country = {
-						target = PER
-						transfer_troops = yes
-					}
-				}
+				msb_iran_script = yes
 			}
 			
 			if = {
@@ -669,21 +663,6 @@ on_actions = {
                     load_oob = "CHI_CHROM_SPAWN"
                 }
             }
-
-			if = {
-                limit = {
-                    FROM = {
-                        tag = PER
-                    }
-                }			
-				ENG = {
-					annex_country = {
-						target = PER
-						transfer_troops = yes
-					}
-					load_oob = "PER_CHROM_SPAWN"
-				}
-			}
 
 			if = {
 				limit = {

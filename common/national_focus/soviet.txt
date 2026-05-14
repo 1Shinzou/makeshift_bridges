@@ -8461,11 +8461,6 @@ focus = {
 					transfer_troops = no
 				}
 			}
-			ENG = {
-				give_resource_rights = { receiver = SOV state = 411 }
-				give_resource_rights = { receiver = SOV state = 412 }
-				give_resource_rights = { receiver = ENG state = 413 }
-			}
 			every_state = {
 				limit = {
 					is_core_of = PER

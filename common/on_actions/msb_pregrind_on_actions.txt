@@ -29,14 +29,15 @@ on_actions = {
                         ###################
                         ## FIELD MARSHAL ##
                         ###################
-        
-                GER_erich_von_manstein = { add_skill_level = 2 }
-                GER_erich_von_manstein = { add_attack = 1 }
-                GER_erich_von_manstein = { add_defense = 4 }
-                GER_erich_von_manstein = { add_planning = 2 }
-                GER_erich_von_manstein = { add_logistics = 4 }
-
+    
                 GER_erich_von_manstein = {
+                    
+                    add_skill_level = 2
+                    add_attack = 0 
+                    add_defense = 4 
+                    add_planning = -1
+                    add_logistics = 2
+
                     add_unit_leader_trait = panzer_leader
                     add_unit_leader_trait = cavalry_leader
                     add_unit_leader_trait = organizer
@@ -67,15 +68,15 @@ on_actions = {
                         ## RED AIR GENS ##
                         ##################
 
-
-
-                GER_erwin_rommel = { add_skill_level = 4 }
-                GER_erwin_rommel = { add_attack = 2 }
-                GER_erwin_rommel = { add_defense = 4 }
-                GER_erwin_rommel = { add_planning = 4 }
-                GER_erwin_rommel = { add_logistics = 4 }
-
                 GER_erwin_rommel = {
+                    
+                    add_skill_level = 4
+                    add_attack = -1 
+                    add_defense = 2 
+                    add_planning = 0
+                    add_logistics = 1
+
+
                     add_unit_leader_trait = panzer_leader
                     add_unit_leader_trait = cavalry_leader
                     #add_unit_leader_trait = organizer
@@ -102,14 +103,17 @@ on_actions = {
 				        }  
                     }
 
-                
-                GER_fedor_von_bock = { add_skill_level = 4 }
-                GER_fedor_von_bock = { add_attack = 4 }
-                GER_fedor_von_bock = { add_defense = 4 }
-                GER_fedor_von_bock = { add_planning = 3 }
-                GER_fedor_von_bock = { add_logistics = 3 }
-
                 GER_fedor_von_bock = {
+
+                    add_skill_level = 4
+                    add_attack = 1 
+                    add_defense = 2 
+                    add_planning = -1
+                    add_logistics = 0 
+
+                    remove_unit_leader_trait = brilliant_strategist
+                    remove_unit_leader_trait = harsh_leader
+
                     add_unit_leader_trait = panzer_leader
                     add_unit_leader_trait = cavalry_leader
                     #add_unit_leader_trait = organizer
@@ -140,22 +144,19 @@ on_actions = {
                             ## BARB GENS ##
                             ###############
 
-                GER_heinz_guderian = { add_skill_level = 2 }
-                GER_heinz_guderian = { add_attack = 1 }
-                GER_heinz_guderian = { add_defense = 3 }
-                GER_heinz_guderian = { add_planning = 4 }
-                GER_heinz_guderian = { add_logistics = 3 }
-
                 GER_heinz_guderian = {
-                    #add_unit_leader_trait = panzer_leader
+                    add_skill_level = 4 
+                    add_attack = -2 
+                    add_defense = 1 
+                    add_planning = 1
+                    add_logistics = 2
+
+                    remove_unit_leader_trait = brilliant_strategist 
+
                     add_unit_leader_trait = cavalry_leader
-                    #add_unit_leader_trait = organizer
                     add_unit_leader_trait = trait_engineer
                     add_unit_leader_trait = skilled_staffer
-                    #add_unit_leader_trait = commando
-                    #add_unit_leader_trait = camouflage_expert
-                    add_unit_leader_trait = ranger
-                    #add_unit_leader_trait = hill_fighter 
+                    add_unit_leader_trait = ranger 
                     add_unit_leader_trait = urban_assault_specialist 
                 }
                 
@@ -181,15 +182,14 @@ on_actions = {
 
 
             ITA = { 
-                ITA_rodolfo_graziani = { add_skill_level = 4 }
-                ITA_rodolfo_graziani = { add_attack = 2 }
-                ITA_rodolfo_graziani = { add_defense = 3 }
-                ITA_rodolfo_graziani = { add_planning = 1 }
-                ITA_rodolfo_graziani = { add_logistics = 7 }
-
+               
                 ITA_rodolfo_graziani = {
-                    #add_unit_leader_trait = panzer_leader
-                    #add_unit_leader_trait = cavalry_leader
+                    add_skill_level = 4 
+                    add_attack = -2 
+                    add_defense = 0
+                    add_planning = -3 
+                    add_logistics = 5 
+
                     add_unit_leader_trait = infantry_leader
                     add_unit_leader_trait = organizer
                     add_unit_leader_trait = hill_fighter
@@ -209,20 +209,19 @@ on_actions = {
 				        }  
                     }
 
-
-                ITA_giovanni_messe = { add_skill_level = 2 }
-                ITA_giovanni_messe = { add_attack = 0 }
-                ITA_giovanni_messe = { add_defense = 0 }
-                ITA_giovanni_messe = { add_planning = 3 }
-                ITA_giovanni_messe = { add_logistics = 1 }
-
                 ITA_giovanni_messe = {
+
+                    add_skill_level = 2 
+                    add_attack = -1 
+                    add_defense = -2
+                    add_planning = -2 
+                    add_logistics = 1
+
                     add_unit_leader_trait = panzer_leader
                     #add_unit_leader_trait = cavalry_leader
                     add_unit_leader_trait = infantry_leader
                     add_unit_leader_trait = organizer
                     add_unit_leader_trait = brilliant_strategist
-                    #add_unit_leader_trait = desert_fox 
                 }
                 
                 IF = {
@@ -238,13 +237,16 @@ on_actions = {
 				        }  
                     }
 
-                ITA_sebastiano_visconti_prasca = { add_skill_level = 5 }
-                ITA_sebastiano_visconti_prasca = { add_attack = 5 }
-                ITA_sebastiano_visconti_prasca = { add_defense = 5 }
-                ITA_sebastiano_visconti_prasca = { add_planning = 4 }
-                ITA_sebastiano_visconti_prasca = { add_logistics = 3 }
 
                 ITA_sebastiano_visconti_prasca = {
+
+                    add_skill_level = 5 
+                    add_attack = 4 
+                    add_defense = 0
+                    add_planning = -1 
+                    add_logistics = -3
+
+
                     add_unit_leader_trait = cavalry_leader
                     add_unit_leader_trait = skilled_staffer
                     add_unit_leader_trait = infantry_leader
@@ -267,13 +269,14 @@ on_actions = {
 				        }  
                     }
 
-                ITA_francesco_zingales = { add_skill_level = 5 }
-                ITA_francesco_zingales = { add_attack = 3 }
-                ITA_francesco_zingales = { add_defense = 4 }
-                ITA_francesco_zingales = { add_planning = 3 }
-                ITA_francesco_zingales = { add_logistics = 3 }
-
                 ITA_francesco_zingales = {
+
+                    add_skill_level = 5 
+                    add_attack = -1 
+                    add_defense = 2
+                    add_planning = -1 
+                    add_logistics = 2
+
                     add_unit_leader_trait = panzer_leader
                     add_unit_leader_trait = skilled_staffer
                     add_unit_leader_trait = infantry_leader
@@ -296,13 +299,14 @@ on_actions = {
 				        }  
                     }
 
-                ITA_carlo_vecchiarelli = { add_skill_level = 5 }
-                ITA_carlo_vecchiarelli = { add_attack = 3 }
-                ITA_carlo_vecchiarelli = { add_defense = 4 }
-                ITA_carlo_vecchiarelli = { add_planning = 3 }
-                ITA_carlo_vecchiarelli = { add_logistics = 3 }
-
                 ITA_carlo_vecchiarelli = {
+                    
+                    add_skill_level = 5 
+                    add_attack = -2 
+                    add_defense = 0
+                    add_planning = 2 
+                    add_logistics = 1
+
                     add_unit_leader_trait = cavalry_leader
                     add_unit_leader_trait = skilled_staffer
                     add_unit_leader_trait = infantry_leader

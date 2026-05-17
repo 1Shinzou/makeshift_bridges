@@ -118,22 +118,6 @@ select_host_country = {
 	}
 }
 
-pregrind_rule = {
-	name = "Pregrinded Generals"
-	group = "MSB Rules"
-	icon = "GFX_decision_generic_army_support"
-	default = {
-		name = on
-		text = "GOn"
-		desc = "Axis & Comintern have pre grinded General stats & traits(Reccomended)"
-	}
-	option = {
-		name = off
-		text = "ROff"
-		desc = "Pregrinded off, forced to grind ): #TODO_Shinzou put wtv desc u want (Not Reccomended)"
-	}
-}
-
 vp_system = {
 	name = "Victory Points System"
 	group = "MSB Rules"

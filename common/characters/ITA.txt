@@ -178,12 +178,12 @@ characters = {
 		}
 
 		field_marshal = {
-			traits = { trait_cautious politically_connected offensive_doctrine desert_fox }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 1
+			traits = { organizer trait_cautious politically_connected hill_fighter desert_fox infantry_leader }
+			skill = 6
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 8
 			legacy_id = 0
 			visible = { has_government = fascism }
 		}
@@ -341,11 +341,11 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { armor_officer war_hero }
-			skill = 4
+			traits = { armor_officer war_hero infantry_leader organizer panzer_leader brilliant_strategist }
+			skill = 6
 			attack_skill = 4
 			defense_skill = 3
-			planning_skill = 2
+			planning_skill = 5
 			logistics_skill = 4
 			legacy_id = 0
 		}
@@ -396,12 +396,12 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { inflexible_strategist career_officer }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			traits = { inflexible_strategist career_officer organizer cavalry_leader trait_engineer infantry_leader skilled_staffer hill_fighter trait_mountaineer }
+			skill = 6
+			attack_skill = 6
+			defense_skill = 6
+			planning_skill = 5
+			logistics_skill = 4
 			legacy_id = 0
 		}
 	}
@@ -640,12 +640,12 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { cavalry_leader combined_arms_expert } #Motorized
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			traits = { organizer infantry_leader trait_engineer cavalry_leader trickster panzer_leader commando } #Motorized
+			skill = 6
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 4
 			legacy_id = 0
 			visible = { has_government = fascism }
 		}
@@ -785,12 +785,12 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { trait_mountaineer } # Infantry, Mountaneers, Armor
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			traits = { trait_mountaineer organizer infantry_leader trait_engineer cavalry_leader trickster } # Infantry, Mountaneers, Armor
+			skill = 6
+			attack_skill = 6
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
 			legacy_id = 0
 		}
 	}

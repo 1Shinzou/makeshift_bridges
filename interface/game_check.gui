@@ -199,6 +199,31 @@ containerWindowType = {
 			maxwidth = 110
 		}
 
+        ################ Vichy France ################
+    	iconType = {
+			name ="vichy_icon"
+			spriteType = GFX_decision_eng_trade_unions_support
+			position = { x = @GAMERULE_ICONS_X y = 280 }
+		}
+
+		instantTextBoxType = {
+			name ="vichy_text"
+			position = { x = @GAMERULE_NAMES_X y = 290 }
+			font = "hoi_18mbs"
+			text = "Vichy France"
+			format = left
+			maxHeight = 24
+		}
+
+		instantTextBoxType = {
+			name ="vichy_status"
+			position = { x = @STATUS_TEXT_X y = 290 }
+			font = "hoi_18mbs"
+			text = "vichy_status"
+			format = center
+			maxwidth = 110
+		}
+
         ################ Finland Border ################
     	iconType = {
 			name ="killable_fin_icon"

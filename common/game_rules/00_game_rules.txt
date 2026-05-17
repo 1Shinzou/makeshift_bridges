@@ -247,6 +247,22 @@ yug_gre_diff = {
 	}
 }
 
+vichy_france = {
+	name = "Vichy France"
+	group = "MSB Rules"
+	icon = GFX_decision_eng_trade_unions_support
+	default = {
+		name = forced
+		text = "GForce"
+		desc = "Germany has to make Vichy (Not Recommmended)"
+	}
+	option = {
+		name = banned
+		text = "RBanned"
+		desc = "Germany can't make Vichy (Recommmended)"
+	}
+}
+
 killable_fin = {
 	name = "Finland Border"
 	group = "MSB Rules"

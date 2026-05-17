@@ -85,6 +85,11 @@ elwolfmod_vichy_france = {
 			relation = military_access
 			active = yes
 		}
+
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_0
+			amount = 20000
+		}
 	}
 	GER = {
 		diplomatic_relation = {   

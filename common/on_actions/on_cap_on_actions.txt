@@ -17,7 +17,7 @@ on_actions = {
 					set_country_flag = france_tp
 					# transfer_navy = { target = EFR }
 					transfer_units_fraction = {
-						target = EFR
+						target = WST
 						size = 1
 						stockpile_ratio = 1
 						army_ratio = 0

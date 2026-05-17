@@ -20,6 +20,17 @@ elwolfmod_vichy_france = {
 		set_capital = {
 			state = 539
 		}
+		transfer_units_fraction = {
+			target = WST
+			size = 1
+			stockpile_ratio = 1
+			army_ratio = 0
+			navy_ratio = 0
+			air_ratio = 1
+			keep_unit_leaders_trigger = {
+				always = yes
+			}
+		}	
 	}
 	EFR = {
 		#Mainland Vichy

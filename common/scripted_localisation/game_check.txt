@@ -288,28 +288,6 @@ defined_text = {
 }
 
 defined_text = {
-    name = GetVichyStatus
-    text = {
-        trigger = {
-            has_game_rule = {
-                rule = vichy_france
-                option = forced
-            }
-        }
-        localization_key = "check_vichy_gamerules_forced"
-    }
-    text = {
-        trigger = {
-            has_game_rule = {
-                rule = vichy_france
-                option = banned
-            }
-        }
-        localization_key = "check_vichy_gamerules_banned"
-    }
-}
-
-defined_text = {
     name = GetkillablefinStatus
     text = {
         trigger = {

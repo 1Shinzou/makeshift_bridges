@@ -42,10 +42,6 @@ l_english:
 
   yug_gre_diff_status:0 "[GetBalkanWarStatus]"
 
-  vichy_status:0 "[GetVichyStatus]"
-  check_vichy_gamerules_forced:0 "GForce"
-  check_vichy_gamerules_banned:0 "RBanned"
-
   killable_fin_status:0 "[GetkillablefinStatus]"
   check_killable_fin_gamerules_off:0 "GImpassable"
   check_killable_fin_gamerules_on:0 "RPassable"

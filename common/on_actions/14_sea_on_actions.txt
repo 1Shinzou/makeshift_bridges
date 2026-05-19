@@ -130,54 +130,6 @@ on_actions = {
 			
 		}
 
-		#MONGOLIA - Launch event that will lead to the Tauran incident and the border war against Manchukuo 
-		effect = {
-			
-			IF = {
-				limit = {
-					date < "1936.2.2"
-				}
-				MON = {
-					# Our Troops Move on Tauran 
-					country_event = {
-						id = SEA_border_incidents_events.1
-						days = 61 
-					}	
-				}
-			}
-			
-		}
-
-		#KOREA/JAPAN - Set up the resistance DMs 
-		effect = {
-
-			IF = {
-				limit = {
-					NOT = {
-						has_game_rule = {
-							rule = asia_colonization_status
-							option = ASIA_DECOLONIZED
-						}
-					}
-				}
-				every_state = {
-					limit = {
-						OR = {
-							state = 1031
-							state = 1030
-							state = 1029
-							state = 1028
-							state = 527
-						}
-					}
-					add_dynamic_modifier = {
-						modifier = KOR_resistance_against_colonial_rule_dm
-					}
-				}
-			}
-			
-		}
-
 		# Adding in the Great Wall province effect
 		effect = {
 			IF = {

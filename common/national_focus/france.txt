@@ -3882,6 +3882,7 @@ focus = {
 				# FRA SPAWN INS POST CAP END
 				complete_national_focus = FRA_refus_absurde
 				complete_national_focus = FRA_appeal_to_the_french_nation
+				complete_national_focus = FRA_london_provisional_gov
 			}
 		}
 	}
@@ -3953,16 +3954,16 @@ focus = {
 	focus = {
 		id = FRA_london_provisional_gov
 		icon = GFX_focus_eng_the_sun_never_sets
-		x = 5
+		x = 0
 		y = 1
 		offset = {
 			x = 0
 			y = 0
 		}
 		prerequisite = { 
-			focus = FRA_appeal_to_the_french_nation
+			focus = FRA_rally_defectors
 		}
-		relative_position_id = FRA_appeal_to_the_french_nation
+		relative_position_id = FRA_rally_defectors
 		
 		cost = 1
 		ai_will_do = {
@@ -4109,12 +4110,8 @@ focus = {
 	focus = {
 		id = FRA_continue_the_fight
 		icon = GFX_focus_ARG_join_the_allies
-		x = 9
+		x = 8
 		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
 		prerequisite = { 
 			focus = FRA_appeal_to_the_french_nation
 		}
@@ -4740,10 +4737,7 @@ focus = {
 		icon = GFX_focus_focus_fra_maquis
 		x = -3
 		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
+
 		prerequisite = { 
 			focus = FRA_refus_absurde
 		}
@@ -5368,17 +5362,10 @@ focus = {
 		relative_position_id = FRA_british_equipement
 		cost = 5
 		available = {
-			#any_enemy_country = {
-			#	has_war_with = USA
-			#}
-			FRA = { is_ally_with = USA }
-			NOT = {
-				has_war_with = USA
-			}
+
 		}
 		bypass = {
-			
-			}
+		}
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_ARMY_XP}

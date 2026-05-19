@@ -1,14 +1,10 @@
 on_actions = {
-
 	on_capitulation = {
-
 		effect = {
-
 			if = {
 				limit = { 
 					tag = FRA 
 				}
-
 				FRA = { 
 					#every_state = {
 					#	limit = { is_core_of = FRA }
@@ -29,7 +25,6 @@ on_actions = {
 					}	
 					country_event = france.10				
 				}
-
 				if = {
 					limit = {
 						tag = FRA

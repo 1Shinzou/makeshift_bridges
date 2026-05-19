@@ -1609,7 +1609,7 @@ on_actions = {
 				}
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_0
-					amount = 37733
+					amount = 47733
 				}
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
@@ -1621,11 +1621,11 @@ on_actions = {
 				}
 				add_equipment_to_stockpile = {
 					type = motorized_equipment_0
-					amount = 200
+					amount = 400
 				}
 				add_equipment_to_stockpile = {
 					type = motorized_equipment_1
-					amount = 100
+					amount = 300
 				}
 				add_equipment_to_stockpile = {
 					type = artillery_equipment_1
@@ -2046,49 +2046,11 @@ on_actions = {
 			RAJ = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_0
-					amount = 0
+					amount = 3900
 				}
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
 					amount = 2900
-				}
-				add_equipment_to_stockpile = {
-					type = support_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = motorized_equipment_0
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = motorized_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = artillery_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = anti_tank_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = anti_air_equipment_1
-					amount = 0
-				}
-				add_equipment_to_stockpile = {
-					type = gw_armored_car_equipment
-					amount = 0
-				}
-			}
-			RAJ = {
-				add_equipment_to_stockpile = {
-					type = infantry_equipment_0
-					amount = 2900
-				}
-				add_equipment_to_stockpile = {
-					type = infantry_equipment_1
-					amount = 0
 				}
 				add_equipment_to_stockpile = {
 					type = support_equipment_1

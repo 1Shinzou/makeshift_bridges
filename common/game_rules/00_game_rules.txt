@@ -152,13 +152,13 @@ force_attack_last_stand = {
 }
 
 historical_war = {
-	name = "Historical War Dates"
+	name = "Automatic War Dates"
 	group = "MSB Rules"
 	icon = GFX_decision_hol_war_on_pacifism
 	default = {
 		name = on
 		text = "Forced"
-		desc = "Danzig or War; Operation Barbarossa & The War in the Pacific will automatically start at their respective historical dates"
+		desc = "Danzig or War (09/1939); Operation Barbarossa (07/1941) & The War in the Pacific (03/1941) will automatically start at their respectively set dates"
 	}
 	option = {
 		name = off

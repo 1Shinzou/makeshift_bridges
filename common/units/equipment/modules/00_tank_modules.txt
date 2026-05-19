@@ -1396,12 +1396,12 @@ equipment_modules = {
 		}
 
 		add_stats = {
-			build_cost_ic = 2
+			build_cost_ic = 2.5
 			reliability = -0.10
 		}
 		
 		multiply_stats = {
-			build_cost_ic = 0.05
+			build_cost_ic = 0.1
 		}
 	}
 

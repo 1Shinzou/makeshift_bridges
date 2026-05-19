@@ -1930,7 +1930,7 @@
 		x = 0
 		y = 6
 		relative_position_id = FRA_begin_rearmament
-		cost = 20
+		cost = 10
 
 		available_if_capitulated = yes
 

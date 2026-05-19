@@ -1319,13 +1319,8 @@ ideas = {
 			
 			modifier = {
 				conscription = -0.003
-				land_reinforce_rate = -0.02
 				army_morale_factor = -0.1
 				army_org_factor = -0.1
-				hidden_modifier = {
-					ai_desired_divisions_factor = -0.25
-					ai_focus_defense_factor = 0.25
-				}
 			}
 		}
 		FRA_inefficient_economy_1 = {

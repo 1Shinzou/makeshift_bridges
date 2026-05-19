@@ -388,7 +388,7 @@ Technologies = {
 			}
 			visible = {}
 			available = {
-			date > 1940.1.1
+			date > 1940.6.1
 			}
 			complete_effect = {
 				SWE = {

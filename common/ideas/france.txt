@@ -2298,26 +2298,6 @@ ideas = {
         
     }
 	hidden_ideas = {
-		FRA_no_cap = { 
-			
-			allowed = {
-				original_tag = FRA
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1
-
-			picture = generic_disjointed_gov
-			
-			modifier = {
-
-				surrender_limit = 99999
-			}
-		}
 		EFR_no_prod = { 
 			
 			allowed = {

@@ -26,7 +26,8 @@ on_actions = {
 						keep_unit_leaders_trigger = {
 							always = yes
 						}
-					}					
+					}	
+					country_event = france.10				
 				}
 
 				if = {

@@ -2277,7 +2277,10 @@ technologies = {
 			leads_to_tech = mechanised_infantry2
 			research_cost_coeff = 1
 		}
-
+		path = {
+			leads_to_tech = amphibious_mechanized_infantry
+			research_cost_coeff = 1
+		}
 		research_cost = 2
 		start_year = 1939
 		folder = {
@@ -2350,10 +2353,10 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1941
+		start_year = 1940
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = @1941 }
+			position = { x = 2 y = @1940 }
 		}
 
 		categories = {
@@ -2381,10 +2384,10 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1943
+		start_year = 1942
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = @1943 }
+			position = { x = 2 y = @1942 }
 		}
 
 		categories = {
@@ -2410,10 +2413,6 @@ technologies = {
 
 		path = {
 			leads_to_tech = mechanised_infantry3
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = amphibious_mechanized_infantry
 			research_cost_coeff = 1
 		}
 		research_cost = 2

@@ -1324,12 +1324,6 @@ GER_price_controls_cat = {
 
 		visible = {
 			has_dlc = "Gotterdammerung"
-			NOT = {
-				OR = {
-					is_in_faction_with = HUN
-					has_guaranteed = HUN
-				}
-			}
 			HUN = {
 				exists = yes
 				has_capitulated = no
@@ -1339,9 +1333,6 @@ GER_price_controls_cat = {
 		available = {
 			HUN = {
 				has_idea = HUN_gombos_trade_treaty
-				NOT = {
-					is_in_faction_with = ROOT
-				}
 			}
 		}
 

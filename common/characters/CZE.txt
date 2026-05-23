@@ -1805,7 +1805,7 @@ characters = {
 			}
 		}
 		corps_commander={
-			traits={ old_guard trait_engineer career_officer }
+			traits={ old_guard trait_engineer career_officer winter_specialist }
 			skill=3
 			attack_skill=1
 			defense_skill=4
@@ -2396,7 +2396,7 @@ characters = {
 					original_tag  = CZE
 				}
 				available  = {
-					has_intelligence_agency  = yes 
+					has_intelligence_agency = yes 
 				}
 				traits = {
 					head_of_intelligence
@@ -2421,13 +2421,47 @@ characters = {
 				slot = political_advisor
 				idea_token = CZE_frantisek_moravec_mun
 				allowed  = {
-					original_tag = CZE
+					OR = {
+						original_tag = CZE
+						original_tag = ENG
+					}
 				}
 				available  = {
-					has_intelligence_agency  = yes 
-					has_completed_focus = CZE_department_two_expansion
-					NOT = {
-						has_idea = CZE_simon_drgac
+					has_intelligence_agency = yes
+					if = {
+						limit = {
+							original_tag = CZE
+						}
+						has_completed_focus = CZE_department_two_expansion
+						NOT = {
+							has_idea = CZE_simon_drgac
+						}
+					}
+					if = {
+						limit = {
+							NOT = {
+								original_tag = CZE
+							}
+						}
+						ROOT = {
+							NOT = {
+								has_war_with = CZE
+							}
+						}
+					}
+				}
+				visible = {
+					if = {
+						limit = {
+							NOT = {
+								original_tag = CZE
+							}
+						}
+						ROOT = {
+							NOT = {
+								has_war_with = CZE
+							}
+						}
 					}
 				}
 				traits = {
@@ -2435,6 +2469,93 @@ characters = {
 				}
 				on_add = {
 					owner = {
+						if = {
+							limit = {
+								original_tag = ENG
+								GER = {
+									NOT = {
+										has_government = CZE
+									}
+								}
+								NOT = {
+									has_country_flag = ENG_CZE_frantisek_moravec_on_add_effect_already_happened
+								}
+							}
+							if = {
+								limit = {
+									9 = {
+										has_resistance = yes
+										is_controlled_by_ROOT_or_ally = no
+										OR = {
+											is_controlled_by = GER
+											is_controlled_by = RKH
+										}
+									}
+								}
+								9 = {
+									add_resistance = 5
+									add_resistance_target = 5
+									add_compliance = -5
+								}
+								if = {
+									limit = {
+										NOT = {
+											has_country_flag = ENG_CZE_frantisek_moravec_on_add_effect_already_happened
+										}
+									}
+									set_country_flag = ENG_CZE_frantisek_moravec_on_add_effect_already_happened
+								}
+							}
+							if = {
+								limit = {
+									75 = {
+										has_resistance = yes
+										is_controlled_by_ROOT_or_ally = no
+										OR = {
+											is_controlled_by = GER
+											is_controlled_by = RKH
+										}
+									}
+								}
+								75 = {
+									add_resistance = 5
+									add_resistance_target = 5
+									add_compliance = -5
+								}
+								if = {
+									limit = {
+										NOT = {
+											has_country_flag = ENG_CZE_frantisek_moravec_on_add_effect_already_happened
+										}
+									}
+									set_country_flag = ENG_CZE_frantisek_moravec_on_add_effect_already_happened
+								}
+							}
+							if = {
+								limit = {
+									OR = {
+										9 = {
+											has_resistance = yes
+											is_controlled_by_ROOT_or_ally = no
+											OR = {
+												is_controlled_by = GER
+												is_controlled_by = RKH
+											}
+										}
+										75 = {
+											has_resistance = yes
+											is_controlled_by_ROOT_or_ally = no
+											OR = {
+												is_controlled_by = GER
+												is_controlled_by = RKH
+											}
+										}
+									}
+								}
+								custom_effect_tooltip = generic_skip_one_line_tt
+								custom_effect_tooltip = generic_can_only_happen_once_tt
+							}
+						}
 						if = {
 							limit = {
 								has_power_balance = {
@@ -2480,10 +2601,44 @@ characters = {
 				slot = political_advisor
 				idea_token = CZE_frantisek_moravec_mun_no_lar
 				allowed  = {
-					original_tag  = CZE
+					OR = {
+						original_tag = CZE
+						original_tag = ENG
+					}
 				}
-				available  = {
-					has_completed_focus = CZE_department_two_expansion
+				available = {
+					if = {
+						limit = {
+							original_tag = CZE
+						}
+						has_completed_focus = CZE_department_two_expansion
+					}
+					if = {
+						limit = {
+							NOT = {
+								original_tag = CZE
+							}
+						}
+						ROOT = {
+							NOT = {
+								has_war_with = CZE
+							}
+						}
+					}
+				}
+				visible = {
+					if = {
+						limit = {
+							NOT = {
+								original_tag = CZE
+							}
+						}
+						ROOT = {
+							NOT = {
+								has_war_with = CZE
+							}
+						}
+					}
 				}
 				traits = {
 					bold_intelligence_officer_no_lar
@@ -2498,6 +2653,69 @@ characters = {
 							}
 							CZE_bop_very_low_increase_effect = yes
 							custom_effect_tooltip = generic_skip_one_line_tt
+						}
+						if = {
+							limit = {
+								original_tag = ENG
+								GER = {
+									NOT = {
+										has_government = CZE
+									}
+								}
+								NOT = {
+									has_country_flag = ENG_CZE_frantisek_moravec_on_add_effect_already_happened
+								}
+							}
+							if = {
+								limit = {
+									9 = {
+										has_resistance = yes
+										is_controlled_by_ROOT_or_ally = no
+										OR = {
+											is_controlled_by = GER
+											is_controlled_by = RKH
+										}
+									}
+								}
+								9 = {
+									add_resistance = 5
+									add_resistance_target = 5
+									add_compliance = -5
+								}
+								if = {
+									limit = {
+										NOT = {
+											has_country_flag = ENG_CZE_frantisek_moravec_on_add_effect_already_happened
+										}
+									}
+									set_country_flag = ENG_CZE_frantisek_moravec_on_add_effect_already_happened
+								}
+							}
+							if = {
+								limit = {
+									75 = {
+										has_resistance = yes
+										is_controlled_by_ROOT_or_ally = no
+										OR = {
+											is_controlled_by = GER
+											is_controlled_by = RKH
+										}
+									}
+								}
+								75 = {
+									add_resistance = 5
+									add_resistance_target = 5
+									add_compliance = -5
+								}
+								if = {
+									limit = {
+										NOT = {
+											has_country_flag = ENG_CZE_frantisek_moravec_on_add_effect_already_happened
+										}
+									}
+									set_country_flag = ENG_CZE_frantisek_moravec_on_add_effect_already_happened
+								}
+							}
 						}
 					}
 				}
@@ -2587,12 +2805,34 @@ characters = {
 			logistics_skill=2
 			legacy_id=-1
 			visible = {	#Was pressured to retire in 1935
-				OR = {
-					NOT = {
-						has_dlc = "Peace For Our Time"
+				if = {
+					limit = {
+						original_tag = CZE
 					}
-					has_completed_focus = CZE_contact_the_czech_and_slovak_legion
-					has_completed_focus = CZE_fight_over_silesia
+					OR = {
+						NOT = {
+							has_dlc = "Peace For Our Time"
+						}
+						has_completed_focus = CZE_contact_the_czech_and_slovak_legion
+						has_completed_focus = CZE_fight_over_silesia
+					}
+				}
+				if = {
+					limit = {
+						original_tag = FRA
+						has_dlc = "Peace For Our Time"
+						CZE = {
+							NOT = {
+								OR = {
+									has_completed_focus = CZE_contact_the_czech_and_slovak_legion
+									has_completed_focus = CZE_fight_over_silesia
+								}
+							}
+						}
+					}
+					NOT = {
+						has_war_with = CZE
+					}
 				}
 			}
 		}
@@ -2615,11 +2855,21 @@ characters = {
 			logistics_skill=1
 			legacy_id=-1
 			visible = {	#marijn211: has zero combat experience in 1936
-				OR = {
-					NOT = {
-						has_dlc = "Peace For Our Time"
+				if = {
+					limit = {
+						original_tag = CZE
 					}
-					has_completed_focus = CZE_recruit_ideologically_aligned_generals
+					OR = {
+						NOT = {
+							has_dlc = "Peace For Our Time"
+						}
+						has_completed_focus = CZE_recruit_ideologically_aligned_generals
+					}
+				}
+				else = {
+					NOT = {
+						has_war_with = CZE
+					}
 				}
 			}
 		}
@@ -2738,8 +2988,16 @@ characters = {
 			}
 			cost = 100
 			available = {
-				has_defensive_war = yes
-				has_war_with_major = yes
+				OR = {
+					GER = {
+						has_completed_focus = GER_demand_sudetenland
+					}
+					has_defensive_war = yes
+				}
+				OR = {
+					has_war_with_major = yes
+					has_country_flag = CZE_lessons_of_war_i_had_war_with_major_flag
+				}
 				is_subject = no
 			}
 			ai_will_do = {
@@ -3018,12 +3276,32 @@ characters = {
 				logistics_skill=1
 				legacy_id=-1
 				visible = {
-					has_completed_focus = CZE_elevate_slovak_officers
+					if = {
+						limit = {
+							original_tag = CZE
+						}
+						has_completed_focus = CZE_elevate_slovak_officers
+					}
 					SLO = {
 						OR = {
 							exists = no
 							is_subject_of = ROOT
 							has_government = fascism
+						}
+					}
+					if = {
+						limit = {
+							original_tag = FRA
+						}
+						CZE = {
+							NOT = {
+								has_completed_focus = CZE_elevate_slovak_officers
+							}
+						}
+						ROOT = {
+							NOT = {
+								has_war_with = CZE
+							}
 						}
 					}
 				}
@@ -3041,6 +3319,11 @@ characters = {
 							is_subject_of = ROOT
 							has_government = fascism
 						}
+					}
+				}
+				visible = {
+					NOT = {
+						original_tag = FRA
 					}
 				}
 				traits = {
@@ -3423,6 +3706,9 @@ characters = {
 					has_war_with = FRA
 				}
 			}
+			visible = {
+				original_tag = CZE
+			}
 			traits = {
 				army_chief_reform_2		
 			}
@@ -3455,7 +3741,27 @@ characters = {
 					}
 				}
 			}
-		}	
+		}
+		advisor={
+			slot = high_command
+			idea_token = CZE_louis_eugene_faucher_high_command
+			allowed = {
+				original_tag = FRA
+			}
+			traits = {
+				army_guerilla_organizer_1
+			}
+			cost = 50
+			available = {
+				is_subject = no
+			}
+			visible = {
+				is_subject = no
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 	}
 
 	CZE_melichar_frantisek={
@@ -3703,7 +4009,7 @@ characters = {
 		name=CZE_frantisek_placak
 		portraits={
 			army={
-				small="GFX_idea_generic_air_europe_3" #Yes air
+				small="GFX_portrait_CZE_frantisek_placak_small"
 			}
 		}
 		advisor={
@@ -4070,7 +4376,7 @@ characters = {
 		name = CZE_jaroslav_kejla
 		portraits = {
 			army = {
-				small="GFX_idea_generic_air_europe_1"
+				small="GFX_portrait_CZE_jaroslav_kejla_small"
 			}
 		}
 		advisor = {
@@ -4425,7 +4731,10 @@ characters = {
 			idea_token = CZE_vladimir_prikryl
 			ledger = army
 			allowed = {
-				original_tag = CZE
+				OR = {
+					original_tag = CZE
+					original_tag = SOV
+				}
 			}
 			traits = {
 				army_artillery_2
@@ -4433,6 +4742,30 @@ characters = {
 			cost = 100
 			ai_will_do = {
 				factor = 1.000
+			}
+			available = {
+				if = {
+					limit = {
+						NOT = {
+							original_tag = CZE
+						}
+					}
+					NOT = {
+						has_war_with = CZE
+					}
+				}
+			}
+			visible = {
+				if = {
+					limit = {
+						NOT = {
+							original_tag = CZE
+						}
+					}
+					NOT = {
+						has_war_with = CZE
+					}
+				}
 			}
 			on_add = {
 				owner = {
@@ -4474,15 +4807,49 @@ characters = {
 			idea_token = CZE_sergej_ingr
 			ledger = army
 			allowed = {
-				original_tag = CZE
+				OR = {
+					original_tag = CZE
+					original_tag = ENG
+				}
 			}
 			available = {
-				has_government = democratic
+				if = {
+					limit = {
+						original_tag = CZE
+					}
+					has_government = democratic
+				}
+				if = {
+					limit = {
+						NOT = {
+							original_tag = CZE
+						}
+					}
+					ROOT = {
+						NOT = {
+							has_war_with = CZE
+						}
+					}
+				}
+			}
+			visible = {
+				if = {
+					limit = {
+						NOT = {
+							original_tag = CZE
+						}
+					}
+					ROOT = {
+						NOT = {
+							has_war_with = CZE
+						}
+					}
+				}
 			}
 			traits = {
 				army_concealment_1
 			}
-			cost = 100
+			cost = 50
 			ai_will_do = {
 				factor = 0
 			}
@@ -4531,6 +4898,7 @@ characters = {
 			id=-1
 			traits = {
 				anti_communist
+				JAP_militarist
 			}
 		}
 	}

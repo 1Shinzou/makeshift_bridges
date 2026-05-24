@@ -167,7 +167,12 @@ sub_units = {
 		weight = 0.5
 		supply_consumption = 0.05
 		breakthrough = 0.3
-	
+
+		essential = {
+			infantry_equipment
+			support_equipment 
+		}
+
 		need = {
 			infantry_equipment = 150
 			support_equipment = 10
@@ -226,7 +231,12 @@ sub_units = {
 		weight = 0.5
 		supply_consumption = 0.05
 		breakthrough = 0.3
-	
+
+		essential = {
+			infantry_equipment
+			support_equipment 
+		}
+
 		need = {
 			infantry_equipment = 150
 			support_equipment = 10
@@ -285,7 +295,12 @@ sub_units = {
 		
 		supply_consumption = 0.05
 		breakthrough = 0.3
-	
+
+		essential = {
+			infantry_equipment
+			support_equipment 
+		}
+
 		need = {
 			infantry_equipment = 140
 			support_equipment = 10
@@ -346,10 +361,16 @@ sub_units = {
 		supply_consumption = 0.05
 		breakthrough = 0.3
 
+		essential = {
+			infantry_equipment
+			support_equipment 
+		}
+
 		need = {
 			infantry_equipment = 140
 			support_equipment = 10
 		}
+
 		forest = {
 			attack = 0.1
 			defence = 0.1
@@ -403,7 +424,12 @@ sub_units = {
 		supply_consumption = 0.05
 
 		can_be_parachuted = yes
-	
+		
+		essential = {
+			infantry_equipment
+			support_equipment 
+		}
+
 		need = {
 			infantry_equipment = 130
 			support_equipment = 10

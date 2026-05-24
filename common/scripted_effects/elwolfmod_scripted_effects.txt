@@ -59,6 +59,13 @@ elwolfmod_vichy_france = {
 			set_demilitarized_zone = yes
 		}
 
+		every_state = {
+			limit = {
+				is_core_of = FRA
+			}
+			add_compliance = 70
+		}
+
 		give_resource_rights = {
 			receiver = GER
 			state = 22
@@ -116,14 +123,12 @@ elwolfmod_vichy_france = {
 		transfer_state = 1 
 		transfer_state = 665
 		transfer_state = 458
-		735 = { 
-			add_compliance = 30 
-		}
-		1 = { 
-			add_compliance = 30 
-		}
-		851 = { 
-			add_compliance = 30 
+
+		every_state = {
+			limit = {
+				is_core_of = FRA
+			}
+			add_compliance = 70
 		}
 	}
 }

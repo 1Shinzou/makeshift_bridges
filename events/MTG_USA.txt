@@ -4303,7 +4303,6 @@ country_event = {
 						is_controlled_by = JAP
 						is_controlled_by = MAN
 						is_controlled_by = MEN
-						is_controlled_by = RNG
 					}
 			 	} 
 				614 = { #Hebei
@@ -4311,7 +4310,6 @@ country_event = {
 						is_controlled_by = JAP
 						is_controlled_by = MAN
 						is_controlled_by = MEN
-						is_controlled_by = RNG
 					}
 			 	} 
 				597 = { #Shandong
@@ -4319,7 +4317,6 @@ country_event = {
 						is_controlled_by = JAP
 						is_controlled_by = MAN
 						is_controlled_by = MEN
-						is_controlled_by = RNG
 					}
 				} 
 				598 = { #Jiangsu
@@ -4327,7 +4324,6 @@ country_event = {
 						is_controlled_by = JAP
 						is_controlled_by = MAN
 						is_controlled_by = MEN
-						is_controlled_by = RNG
 					}
 				}
 			}
@@ -4337,7 +4333,6 @@ country_event = {
 						is_controlled_by = JAP
 						is_controlled_by = MAN
 						is_controlled_by = MEN
-						is_controlled_by = RNG
 					}
 				}
 				592 = {  #Guangzhou
@@ -4345,7 +4340,6 @@ country_event = {
 						is_controlled_by = JAP
 						is_controlled_by = MAN
 						is_controlled_by = MEN
-						is_controlled_by = RNG
 					}
 			 	}
 			}

@@ -1614,25 +1614,6 @@ focus_tree = {
 			add_to_variable = { JAP_showa_statism_fascism_drift = 0.05 tooltip = fascism_drift_tt }
 			add_to_variable = { JAP_showa_statism_stability_factor = 0.05 tooltip = stability_factor_tt }
 
-			IF = {
-				limit = {
-					has_subject = RNG
-				}
-				custom_effect_tooltip = generic_skip_one_line_tt
-				RNG = {
-					set_politics = {
-						ruling_party = fascism
-						elections_allowed = no
-					}	
-					add_popularity = {
-						ideology = fascism
-						popularity = 0.3
-					}	
-				}
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = JAP_koichi_kido
 				
@@ -3789,30 +3770,18 @@ focus_tree = {
 						NOT = {
 							is_controlled_by = CHI
 							is_controlled_by = PRC
-							is_controlled_by = SHX
-							is_controlled_by = SND
-							is_controlled_by = HBC
-							is_controlled_by = XIC
 						}
 					}
 					597 = {
 						NOT = {
 							is_controlled_by = CHI
 							is_controlled_by = PRC
-							is_controlled_by = SHX
-							is_controlled_by = SND
-							is_controlled_by = HBC
-							is_controlled_by = XIC
 						}
 					}
 					614 = {
 						NOT = {
 							is_controlled_by = CHI
 							is_controlled_by = PRC
-							is_controlled_by = SHX
-							is_controlled_by = SND
-							is_controlled_by = HBC
-							is_controlled_by = XIC
 						}
 					}
 				}
@@ -3822,10 +3791,6 @@ focus_tree = {
 		}
 
 		will_lead_to_war_with = CHI
-		will_lead_to_war_with = SHX
-		will_lead_to_war_with = HBC
-		will_lead_to_war_with = SND
-		will_lead_to_war_with = XIC 
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -3951,42 +3916,7 @@ focus_tree = {
 						}	
 					}
 				}
-				ELSE_IF = {
-					limit = {
-						SND = { #only fires the event for SND if they control ALL of the states (to ensure that only one of them gets it, to avoid issues when one selects to turn over the states and the other doesn't)
-							AND = {
-								controls_state = 608
-								controls_state = 597
-								controls_state = 614
-							}
-						}
-					}
-					SND = {
-						country_event = {
-							id = china.1
-							days = 1
-							random_days = 3
-						}	
-					}
-				}
-				ELSE_IF = {
-					limit = {
-						XIC = { #only fires the event for XIC if they control ALL of the states (to ensure that only one of them gets it, to avoid issues when one selects to turn over the states and the other doesn't)
-							AND = {
-								controls_state = 608
-								controls_state = 1039 
-								controls_state = 614
-							}
-						}
-					}
-					XIC = {
-						country_event = {
-							id = china.1
-							days = 1
-							random_days = 3
-						}	
-					}
-				}
+
 				ELSE = {
 					608 = {
 						OWNER = {
@@ -4022,11 +3952,6 @@ focus_tree = {
 			add_ai_strategy = {
 				type = antagonize
 				id = PRC
-				value = 100
-			}
-			add_ai_strategy = {
-				type = antagonize
-				id = SND
 				value = 100
 			}
 
@@ -5198,7 +5123,6 @@ focus_tree = {
 		will_lead_to_war_with = VIN
 		will_lead_to_war_with = CAM
 		will_lead_to_war_with = LAO
-		will_lead_to_war_with = CHM
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -5274,15 +5198,8 @@ focus_tree = {
 								is_subject_of = VIC
 							}
 							OR = {
-								original_tag = VIN
-								original_tag = CAM
-								original_tag = LAO
-								original_tag = CHM
 								original_tag = SIA
 								original_tag = BRM
-								original_tag = GXC
-								original_tag = GDC
-								original_tag = YUN
 							}
 						}
 					}
@@ -5302,15 +5219,9 @@ focus_tree = {
 							is_subject_of = VIC
 						}
 						OR = {
-							original_tag = VIN
-							original_tag = CAM
-							original_tag = LAO
-							original_tag = CHM
 							original_tag = SIA
 							original_tag = BRM
-							original_tag = GXC
-							original_tag = GDC
-							original_tag = YUN
+
 						}
 					}
 					
@@ -5544,14 +5455,9 @@ focus_tree = {
 		will_lead_to_war_with = MAL
 		will_lead_to_war_with = ENG
 		will_lead_to_war_with = FRA
-		will_lead_to_war_with = SNG
 		will_lead_to_war_with = INS
 		will_lead_to_war_with = HOL
-		will_lead_to_war_with = SAR
-		will_lead_to_war_with = SAB
-		will_lead_to_war_with = BRN
 		will_lead_to_war_with = BRM
-		will_lead_to_war_with = WPG
 
 		cancel_if_invalid = no
 		continue_if_invalid = yes
@@ -5752,91 +5658,6 @@ focus_tree = {
 					type = take_state_focus
 					expire = 0
 					generator = { 671 670 286 741 }
-				}
-			}
-			IF = {
-				limit = {
-					NOT = { has_wargoal_against = WPG }
-					NOT = { has_war_with = WPG }
-					country_exists = WPG
-				}
-				create_wargoal = {
-					target = WPG
-					type = annex_everything
-					expire = 0
-				}
-				add_ai_strategy = {
-					type = conquer
-					id = WPG
-					value = 200
-				}
-			}
-			IF = {
-				limit = {
-					NOT = { has_wargoal_against = SNG }
-					NOT = { has_war_with = SNG }
-					country_exists = SNG
-				}
-				create_wargoal = {
-					target = SNG
-					type = annex_everything
-					expire = 0
-				}
-				add_ai_strategy = {
-					type = conquer
-					id = SNG
-					value = 200
-				}
-			}
-			IF = {
-				limit = {
-					NOT = { has_wargoal_against = SAR }
-					NOT = { has_war_with = SAR }
-					country_exists = SAR
-				}
-				create_wargoal = {
-					target = SAR
-					type = annex_everything
-					expire = 0
-				}
-				add_ai_strategy = {
-					type = conquer
-					id = SAR
-					value = 200
-				}
-			}
-			IF = {
-				limit = {
-					NOT = { has_wargoal_against = SAB }
-					NOT = { has_war_with = SAB }
-					country_exists = SAB
-				}
-				create_wargoal = {
-					target = SAB
-					type = annex_everything
-					expire = 0
-				}
-				add_ai_strategy = {
-					type = conquer
-					id = SAB
-					value = 200
-				}
-			}
-			IF = {
-				limit = {
-					NOT = { has_wargoal_against = BRN }
-					NOT = { has_war_with = BRN }
-					country_exists = BRN
-				}
-				create_wargoal = {
-					target = BRN
-					type = annex_everything
-					expire = 0
-				}
-				add_ai_strategy = {
-					type = conquer
-					id = BRN
-					value = 200
 				}
 			}
 
@@ -7424,8 +7245,6 @@ focus_tree = {
 				has_subject = MAN
 				has_subject = KOR
 				has_subject = MEN
-				has_subject = FOR
-				has_subject = PLU
 				524 = {
 					state_is_fully_controlled_by_ROOT_or_subject = yes
 				}
@@ -7452,8 +7271,6 @@ focus_tree = {
 						has_subject = MAN
 						has_subject = KOR
 						has_subject = MEN
-						has_subject = FOR
-						has_subject = PLU
 					}
 				}
 				random_subject_country = {
@@ -7462,8 +7279,6 @@ focus_tree = {
 							original_tag = MAN
 							original_tag = KOR
 							original_tag = MEN
-							original_tag = FOR
-							original_tag = PLU
 						}
 					}
 					random_core_state = {
@@ -8122,20 +7937,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-
-			IF = {
-				limit = {
-					has_subject = FOR
-				}
-				FOR = {				
-					add_stability = 0.1
-					add_war_support = 0.1
-					add_political_power = 100
-					add_ideas = MAN_hydroelectric_power
-				}
-				custom_effect_tooltip = generic_skip_one_line_tt
-			}
-
 			524 = {
 				add_building_construction = {
 					type = dam
@@ -8150,7 +7951,6 @@ focus_tree = {
 				localization_key = building_state_modifier|dam
 				INDENT = "    "
 			}
-
 		}
 
 	}
@@ -8250,18 +8050,6 @@ focus_tree = {
 					has_state_category = small_island
 				}
 				add_dynamic_modifier = { modifier = JAP_regional_development }
-			}
-
-			IF = {
-				limit = {
-					has_subject = PLU
-				}
-				PLU = {				
-					add_stability = 0.1
-					add_war_support = 0.1
-					add_political_power = 100
-				}
-				custom_effect_tooltip = generic_skip_one_line_tt
 			}
 
 			if = {

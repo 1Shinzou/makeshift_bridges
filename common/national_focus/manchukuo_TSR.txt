@@ -4716,18 +4716,6 @@
 			1045 = { is_fully_controlled_by = ROOT }
 			1044 = { is_fully_controlled_by = ROOT }
 			756 = { is_fully_controlled_by = ROOT }
-			XSM = {
-				exists = no
-			}
-			GSM = {
-				exists = no
-			}
-			NXM = {
-				exists = no
-			}
-			KHM = {
-				exists = no
-			}
 		}
 
 		bypass = {
@@ -4741,112 +4729,6 @@
 		
 
 		completion_reward = {
-			IF = {
-				limit = {
-					KHM = {
-						has_character = XSM_ma_hongbin
-					}
-				}
-				KHM = {
-					XSM_ma_hongbin = {
-						set_nationality = ROOT
-						clr_character_flag = yes
-						remove_trait = {
-							trait = XSM_dubious_loyalty
-						}
-					}
-				}
-			}
-			ELSE_IF = {
-				limit = {
-					NXM = {
-						has_character = XSM_ma_hongbin
-					}
-				}
-				NXM = {
-					XSM_ma_hongbin = {
-						set_nationality = ROOT
-						clr_character_flag = yes
-						remove_trait = {
-							trait = XSM_dubious_loyalty
-						}
-					}
-				}
-			}
-			ELSE_IF = {
-				limit = {
-					XSM = {
-						has_character = XSM_ma_hongbin
-					}
-				}
-				XSM = {
-					XSM_ma_hongbin = {
-						set_nationality = ROOT
-						clr_character_flag = yes
-						remove_trait = {
-							trait = XSM_dubious_loyalty
-						}
-					}
-				}
-			}
-			ELSE_IF = {
-				limit = {
-					GSM = {
-						has_character = XSM_ma_hongbin
-					}
-				}
-				GSM = {
-					XSM_ma_hongbin = {
-						set_nationality = ROOT
-						clr_character_flag = yes
-						remove_trait = {
-							trait = XSM_dubious_loyalty
-						}
-					}
-				}
-			}
-			XSM = {
-				XSM_ma_bufang = {
-					set_nationality = ROOT
-				}
-				IF = {
-					limit = {
-						XSM_ma_bufang = {
-							is_corps_commander = no
-						}
-					}
-					XSM_ma_bufang = {
-					 	add_corps_commander_role = {
-						traits = { }
-						attack_skill = 4
-						defense_skill = 2
-						planning_skill = 2
-						logistics_skill = 2
-						skill = 3
-						legacy_id=-1
-						}
-					}
-				}
-			}
-			KHM = {
-				KHM_ma_hushan = {
-					set_nationality = ROOT
-				}
-				KHM_ma_zhancang = {
-					set_nationality = ROOT
-				}
-			}
-			NXM = {
-				XSM_ma_hongkui = {
-					set_nationality = ROOT
-				}
-			}
-			GSM = {
-				XSM_ma_buqing = {
-					set_nationality = ROOT
-				}
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
 			hidden_effect = {
 				delete_unit_template_and_units = {
 					division_template = "Gansu Braves"

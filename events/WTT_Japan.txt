@@ -1930,20 +1930,6 @@ country_event = {
 				white_peace = ROOT
 			}
 		}
-		if = {
-			limit = {
-				RNG = {
-					exists = yes
-					is_ally_with = JAP
-				}
-			}
-			event_target:WTT_current_china_leader = {
-				annex_country = {
-					target = RNG 
-					transfer_troops = no
-				}	
-			}
-		}
 		else = {
 			every_other_country = {
 				limit = {
@@ -1992,54 +1978,6 @@ country_event = {
 			}
 			set_truce = {
 				target = CHI
-				days = 730
-			}
-			set_truce = {
-				target = XSM
-				days = 730
-			}
-			set_truce = {
-				target = SHX
-				days = 730
-			}
-			set_truce = {
-				target = GXC
-				days = 730
-			}
-			set_truce = {
-				target = YUN
-				days = 730
-			}
-			set_truce = {
-				target = SIK
-				days = 730
-			}
-			set_truce = {
-				target = XIC
-				days = 730
-			}
-			set_truce = {
-				target = SND
-				days = 730
-			}
-			set_truce = {
-				target = GDC
-				days = 730
-			}
-			set_truce = {
-				target = SIC
-				days = 730
-			}
-			set_truce = {
-				target = KHM
-				days = 730
-			}
-			set_truce = {
-				target = NXM
-				days = 730
-			}
-			set_truce = {
-				target = GSM
 				days = 730
 			}
 		}

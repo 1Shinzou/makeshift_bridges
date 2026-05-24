@@ -2519,8 +2519,6 @@ generic_escort_ship_organization = {
 			AND = {
 				OR = {
 					original_tag = BRA 
-					original_tag = CHL
-					original_tag = ARG
 				}
 				has_dlc = "Trial of Allegiance"
 			}
@@ -2529,7 +2527,6 @@ generic_escort_ship_organization = {
 			AND = {
 				OR = {
 					original_tag = AUS
-					original_tag = COG
 				}
 				has_dlc = "Gotterdammerung"
 				
@@ -2538,9 +2535,7 @@ generic_escort_ship_organization = {
 		NOT = {
 			AND = {
 				OR = { 
-					original_tag = AFG
 					original_tag = PER 
-					original_tag = IRQ
 				}
 				has_dlc = "Graveyard of Empires"
 			}
@@ -2550,14 +2545,6 @@ generic_escort_ship_organization = {
 			AND = {
 				OR = {
 					original_tag = PHI
-					original_tag = SND
-					original_tag = HBC
-					original_tag = XIC
-					original_tag = GDC
-					original_tag = SIC
-					original_tag = NXM
-					original_tag = GSM
-					original_tag = KHM
 				}
 				has_dlc = "No Compromise, No Surrender"
 			}
@@ -4061,8 +4048,6 @@ generic_general_aircraft_organization = {
 			AND = {
 				OR = {
 					original_tag = BRA 
-					original_tag = CHL
-					original_tag = ARG
 				} 
 				has_dlc = "Trial of Allegiance"
 			}
@@ -4071,7 +4056,6 @@ generic_general_aircraft_organization = {
 			AND = {
 				OR = {
 					original_tag = AUS
-					original_tag = COG
 				}
 				has_dlc = "Gotterdammerung"
 			}
@@ -4090,14 +4074,6 @@ generic_general_aircraft_organization = {
 			AND = {
 				OR = {
 					original_tag = PHI
-					original_tag = SND
-					original_tag = HBC
-					original_tag = XIC
-					original_tag = GDC
-					original_tag = SIC
-					original_tag = NXM
-					original_tag = GSM
-					original_tag = KHM
 				}
 				has_dlc = "No Compromise, No Surrender"
 			}
@@ -7967,8 +7943,6 @@ generic_motorized_mechanized_organization = {
 			AND = {
 				OR = {
 					original_tag = BRA 
-					original_tag = CHL
-					original_tag = ARG
 				}
 				has_dlc = "Trial of Allegiance"
 			}
@@ -7978,8 +7952,7 @@ generic_motorized_mechanized_organization = {
 				OR = {
 					original_tag = AUS
 					original_tag = HUN
-					original_tag = BEL					
-					original_tag = COG					
+					original_tag = BEL										
 				}
 				has_dlc = "Gotterdammerung"
 				
@@ -7988,10 +7961,8 @@ generic_motorized_mechanized_organization = {
 		NOT = {
 			AND = {
 				OR = {
-					original_tag = AFG
 					original_tag = PER
-					original_tag = RAJ			
-					original_tag = IRQ		
+					original_tag = RAJ				
 				}
 				has_dlc = "Graveyard of Empires"
 				
@@ -8001,15 +7972,6 @@ generic_motorized_mechanized_organization = {
 			AND = {
 				OR = {
 					original_tag = PHI
-					original_tag = SND
-					original_tag = HBC
-					original_tag = XIC
-					original_tag = GDC
-					original_tag = SIC
-					original_tag = NXM
-					original_tag = GSM
-					original_tag = KHM
-					original_tag = KUM
 				}
 				has_dlc = "No Compromise, No Surrender"
 			}

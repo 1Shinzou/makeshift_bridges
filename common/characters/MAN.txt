@@ -296,7 +296,6 @@ characters = {
 			allowed = {
 				OR = {
 					original_tag = MAN
-					original_tag = XIC
 				}
 			}
 			traits = {
@@ -420,7 +419,6 @@ characters = {
 			legacy_id = -1
 			visible = {
 				OR = {
-					original_tag = XIC
 					has_government = democratic
 					has_government = communism
 				}

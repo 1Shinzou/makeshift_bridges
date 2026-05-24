@@ -262,7 +262,7 @@ IF = {
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		female = yes
-		nationalities = { CHI RNG PRC }
+		nationalities = { CHI PRC }
 	}
 
 	create_operative_leader = {
@@ -272,7 +272,7 @@ IF = {
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		female = yes
-		nationalities = { CHI RNG PRC }
+		nationalities = { CHI PRC }
 	}
 
 }
@@ -355,10 +355,6 @@ IF = {
 		fascism = 2
 		communism = 7
 	}
-	#set_autonomy = {
-	#	target = SND
-	#	autonomous_state = autonomy_sea_warlord_subject
-	#}
 
 	add_dynamic_modifier = { modifier = CHI_corruption_in_the_administration }
 	add_dynamic_modifier = { modifier = CHI_inefficient_economy }

@@ -1889,24 +1889,6 @@ country_event = {
 
 		custom_effect_tooltip = generic_skip_one_line_tt
 
-		IF = {
-			limit = {
-				XIC = {
-					exists = yes
-					NOT = {
-						is_ally_with = ROOT
-						has_war_with = ROOT
-					}
-				}
-			}
-			create_wargoal = {
-				type = annex_everything
-				target = XIC
-				expire = 0
-			}	
-			custom_effect_tooltip = generic_skip_one_line_tt
-		}
-
 		FROM = {
 			country_event = {
 				id = SEA_japan_foreign_policy.33
@@ -4041,16 +4023,8 @@ country_event = {
 		custom_effect_tooltip = generic_skip_one_line_tt
 
 		CHI_wang_jingwei = {
-			set_nationality = RNG
 		}
 		hidden_effect = {
-			RNG = {
-				country_event = {
-					id = SEA_japan_foreign_policy.62
-					hours = 2
-					random_hours = 6
-				}	
-			}
 		}
 
 	}
@@ -4062,10 +4036,6 @@ country_event = {
 			base = 0
 		}
 
-		RNG = {
-			change_tag_from = ROOT
-		}
-
 		custom_effect_tooltip = generic_skip_one_line_tt
 
 		add_command_power = -25
@@ -4074,16 +4044,8 @@ country_event = {
 		custom_effect_tooltip = generic_skip_one_line_tt
 
 		CHI_wang_jingwei = {
-			set_nationality = RNG
 		}
 		hidden_effect = {
-			RNG = {
-				country_event = {
-					id = SEA_japan_foreign_policy.62
-					hours = 2
-					random_hours = 6
-				}	
-			}
 		}
 
 	}
@@ -4173,29 +4135,7 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}
-		
-		RNG = {
-			country_event = {
-				id = SEA_japan_foreign_policy.64
-				hours = 2
-				random_hours = 4
-			}	
-		}
 		custom_effect_tooltip = GAME_OVER_TT
-		effect_tooltip = {
-			RNG = {
-				annex_country = {
-					target = ROOT
-					transfer_troops = yes
-				}	
-			}	
-			every_state = {
-				limit = {
-					is_core_of = ROOT
-				}
-				add_core_of = RNG
-			}
-		}
 
 	}
 
@@ -11135,7 +11075,6 @@ country_event = {
 		
 		every_owned_state = {
 			limit = {
-				is_core_of = ANU
 			}
 			add_dynamic_modifier = {
 				modifier = JAP_ainu_revoluton_theory_implemented_dm
@@ -11152,27 +11091,14 @@ country_event = {
 			base = 25 
 		}
 		trigger = {
-			ANU = {
-				exists = no
-			}
+
 		}
 		
 		every_owned_state = {
-			limit = {
-				is_core_of = ANU
-			}
-			transfer_state_to = ANU
+
 		}
 
 		custom_effect_tooltip = generic_skip_one_line_tt
-
-		puppet = ANU
-
-		ANU = {
-			add_political_power = 150
-			add_stability = 0.1
-			add_war_support = 0.1
-		}
 
 	}
 

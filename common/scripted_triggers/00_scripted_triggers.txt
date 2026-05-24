@@ -1124,30 +1124,6 @@ is_unlikely_country_tag = {
 		tag = EVE
 		tag = SHL
 		tag = MEK
-		tag = HAN
-		tag = SAX
-		tag = PRE
-		tag = BAY
-		tag = WUR
-		tag = THU
-		tag = HES
-		tag = RHI
-		tag = RNG 
-		tag = PSR 
-		tag = GXC
-		tag = YUN
-		tag = SHX
-		tag = XSM
-		tag = SIK
-		tag = GDC
-		tag = SND
-		tag = SIC
-		tag = NXM
-		tag = GSM
-		tag = XIC
-		tag = KHM
-		tag = KUM
-		tag = HBC
 	}
 }
 

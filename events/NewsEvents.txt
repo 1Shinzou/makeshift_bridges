@@ -3830,7 +3830,6 @@ news_event = {
 		327 = {
 			OR = {
 				is_controlled_by = JAP
-				is_controlled_by = PSR	#Japanese puppet state
 			}
 		}
 		327 = { is_owned_by = PHI }

@@ -1743,32 +1743,6 @@ ideas = {
 
 		}
 
-		SHX_suiyuan_campaign_idea = {
-
-			picture = chi_wargaming_division
-
-			allowed = {
-				original_tag = SHX
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				surrender_limit = 0.25
-				mobilization_speed = 0.1 
-			}
-
-			targeted_modifier = {
-				tag = JAP
-				defense_bonus_against = 0.2
-			}
-
-		}
-
 		JAP_sufu_materials = {
 
 			picture = SWE_hungershield 

@@ -726,11 +726,6 @@ country_event = {
 		}
 		NOT = { has_country_flag = china.101_fired }
 		has_global_flag = CHI_unite
-		OR = {
-			tag = GXC
-			tag = YUN
-			tag = XSM
-		}
 		CHI = {
 			has_war_with = JAP 
 			has_defensive_war = yes
@@ -944,17 +939,6 @@ country_event = {
 			targeted_alliance = CHI
 			enemy = JAP
 			hostility_reason = asked_to_join
-		}
-		if = {
-			limit = { 
-				NOT = { 
-					OR = {
-						SHX = { is_puppet_of = JAP } 
-						SHX = { is_in_faction_with = JAP}
-					}
-				} 
-			}
-			SHX = { country_event = china.105 }
 		}
 		if = {
 			limit = { NOT = { has_war_with = SOV } }

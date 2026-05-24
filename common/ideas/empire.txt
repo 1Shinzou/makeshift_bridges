@@ -274,37 +274,12 @@ ideas = {
     				trade_cost_for_target_factor = -0.35
 				extra_trade_to_target_factor = 0.15
 			}
-			targeted_modifier = {
-    				tag = GXC
-    				trade_cost_for_target_factor = -0.35
-				extra_trade_to_target_factor = 0.15
-			}
-			targeted_modifier = {
-    				tag = YUN
-    				trade_cost_for_target_factor = -0.35
-				extra_trade_to_target_factor = 0.15
-			}
-			targeted_modifier = {
-    				tag = XSM
-    				trade_cost_for_target_factor = -0.35
-				extra_trade_to_target_factor = 0.15
-			}
-			targeted_modifier = {
-    				tag = SHX
-    				trade_cost_for_target_factor = -0.35
-				extra_trade_to_target_factor = 0.15
-			}
-			targeted_modifier = {
-    				tag = SIK
-    				trade_cost_for_target_factor = -0.35
-				extra_trade_to_target_factor = 0.15
-			}
 			modifier = {
 				trade_opinion_factor = 0.15
 				political_power_gain = 0.05
 				request_lease_tension = -0.25
 				embargo_cost_factor = -0.3
-				}
+			}
 		}
 		FRA_colonies2 = {
 			

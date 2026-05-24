@@ -1647,40 +1647,6 @@ country_event = {
 				add_political_power = -25
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
-
-			ROOT = {
-				white_peace = {
-					tag = SHX
-				}
-			}
-			every_country = {
-				limit = {
-					is_ally_with = ROOT
-					has_war_with = SHX
-				}
-				white_peace = {
-					tag = SHX
-				}
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			IF = {
-				limit = {
-					SHX = {
-						exists = yes
-						NOT = {
-							is_ally_with = ROOT
-						}
-					}
-				}
-				SHX = {
-					country_event = {
-						id = SEA_japan_foreign_policy.30
-						hours = 2
-					}	
-				}
-			}
 		}
 	}
 	
@@ -1762,40 +1728,6 @@ country_event = {
 				}
 				add_political_power = -25
 				custom_effect_tooltip = generic_skip_one_line_tt
-			}
-
-			ROOT = {
-				white_peace = {
-					tag = SHX
-				}
-			}
-			every_country = {
-				limit = {
-					is_ally_with = ROOT
-					has_war_with = SHX
-				}
-				white_peace = {
-					tag = SHX
-				}
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			IF = {
-				limit = {
-					SHX = {
-						exists = yes
-						NOT = {
-							is_ally_with = ROOT
-						}
-					}
-				}
-				SHX = {
-					country_event = {
-						id = SEA_japan_foreign_policy.30
-						hours = 2
-					}	
-				}
 			}
 		}		
 

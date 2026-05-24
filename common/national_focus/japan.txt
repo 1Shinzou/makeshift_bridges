@@ -3899,23 +3899,6 @@ focus_tree = {
 						}	
 					}
 				}
-				ELSE_IF = {
-					limit = {
-						SHX = { #only fires the event for SHX if they control ALL of the states (to ensure that only one of them gets it, to avoid issues when one selects to turn over the states and the other doesn't)
-							AND = {
-								controls_state = 608
-								controls_state = 614
-							}
-						}
-					}
-					SHX = {
-						country_event = {
-							id = china.1
-							days = 1
-							random_days = 3
-						}	
-					}
-				}
 
 				ELSE = {
 					608 = {

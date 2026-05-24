@@ -6135,50 +6135,6 @@ country_event = {
 					value = 100
 				}
 			}
-			if = {
-				limit = {
-					XSM = { is_faction_leader = yes }
-					NOT = { has_war_with = XSM }	
-				}
-				add_ai_strategy = {
-					type = alliance
-					id = XSM		
-					value = 100
-				}
-			}
-			if = {
-				limit = {
-					SHX = { is_faction_leader = yes }
-					NOT = { has_war_with = SHX }	
-				}
-				add_ai_strategy = {
-					type = alliance
-					id = SHX		
-					value = 100
-				}
-			}
-			if = {
-				limit = {
-					YUN = { is_faction_leader = yes }
-					NOT = { has_war_with = YUN }	
-				}
-				add_ai_strategy = {
-					type = alliance
-					id = YUN		
-					value = 100
-				}
-			}
-			if = {
-				limit = {
-					GXC = { is_faction_leader = yes }
-					NOT = { has_war_with = GXC }	
-				}
-				add_ai_strategy = {
-					type = alliance
-					id = GXC		
-					value = 100
-				}
-			}
 		}
 
 		#Break all previous agreements with the Comintern

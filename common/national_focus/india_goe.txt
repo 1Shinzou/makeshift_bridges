@@ -6619,11 +6619,6 @@ focus_tree = {
                     owns_state = 743
                     is_subject = no
                 }
-                GXC = {
-                    controls_state = 591
-                    owns_state = 591
-                    is_subject = no
-                }
             }
         }
         
@@ -6654,23 +6649,6 @@ focus_tree = {
                     RAJ = {  transfer_state = 743  } 
                     custom_effect_tooltip = RAJ_force_china_to_accept_opium_trade_tt
                 }
-            }
-            else_if = {
-                limit = {
-                    GXC = {
-                        controls_state = 591
-                        owns_state = 591
-                        is_subject = no
-                    }
-                }
-
-                GXC = {
-                    country_event = { id = GOE_RAJ_eic.3  hours = 2 }
-                }
-
-                custom_effect_tooltip = if_they_accept_tt
-                effect_tooltip = { RAJ = {  transfer_state = 591  } }
-                custom_effect_tooltip = RAJ_force_china_to_accept_opium_trade_tt
             }
             else = {
                 743 = {

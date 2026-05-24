@@ -89,7 +89,7 @@ elwolfmod_vichy_france = {
 		add_equipment_to_stockpile = {
 			type = infantry_equipment_0
 			producer = FRA
-			amount = 50000
+			amount = 100000
 		}
 	}
 	GER = {

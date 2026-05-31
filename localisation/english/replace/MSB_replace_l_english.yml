@@ -21,6 +21,25 @@ GER_gain_autarkic_economy_lock_free_trade_tt: "§RLock§! §Y$free_trade$§!. Ga
 GER_reichskommissariats_tt: "Allows for the formation of §YReichskommissariats§! which add extra §Ycompliance§! to selected conquered territories.\n"
 GER_anschluss_eq_trigger_tt:0 "More than §Y40.000§! infantry equipment in stockpile"
 
+# USA MTG RAILROADED
+ mtg_usa_congress_small_opposition_tt:1 "§Y2 Senators§! and §Y10 Representatives§! go into §ROpposition§!.\n"
+ mtg_usa_congress_medium_opposition_tt:1 "§Y5 Senators§! and §Y25 Representatives§! go into §ROpposition§!.\n"
+ mtg_usa_congress_large_opposition_tt:1 "§Y8 Senators§! and §Y63 Representatives§! go into §ROpposition§!.\n"
+ mtg_usa_congress_small_support_tt:1 "§Y3 Senators§! and §Y15 Representatives§! will §GSupport§! the Government.\n"
+ mtg_usa_congress_medium_support_tt:1 "§Y6 Senators§! and §Y29 Representatives§! will §GSupport§! the Government.\n"
+ mtg_usa_congress_large_support_tt:1 "§Y19 Senators§! and §Y74 Representatives§! will §GSupport§! the Government.\n"
+ mtg_usa_senate_small_opposition_tt:0 "§Y2 Senators§! will go into §ROpposition§!.\n"
+ mtg_usa_house_small_opposition_tt:0 "§Y10 Representatives§! will go into §ROpposition§!.\n"
+ mtg_usa_senate_small_support_tt:0 "§Y3 Senators§! will §GSupport§! the Government.\n"
+ mtg_usa_house_small_support_tt:0 "§Y15 Representatives§! will §GSupport§! the Government.\n"
+ mtg_usa_senate_medium_opposition_tt:0 "§Y5 Senators§! will go into §ROpposition§!.\n"
+ mtg_usa_house_medium_opposition_tt:0 "§Y25 Representatives§! will go into §ROpposition§!.\n"
+ mtg_usa_senate_medium_support_tt:0 "§Y6 Senators§! will §GSupport§! the Government.\n"
+ mtg_usa_house_medium_support_tt:0 "§Y29 Representatives§! will §GSupport§! the Government.\n"
+ mtg_usa_senate_large_opposition_tt:0 "§Y8 Senators§! will go into §ROpposition§!.\n"
+ mtg_usa_house_large_opposition_tt:0 "§Y63 Representatives§! will go into §ROpposition§!.\n"
+ mtg_usa_senate_large_support_tt:0 "§Y19 Senators§! will §GSupport§! the Government.\n"
+ mtg_usa_house_large_support_tt:0 "§Y74 Representatives§! will §GSupport§! the Government.\n"
 
 ########################
 #### DECISION COSTS ####

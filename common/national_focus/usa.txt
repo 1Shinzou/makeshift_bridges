@@ -3259,7 +3259,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = tank_destroyer_effort
+			#add_ideas = tank_destroyer_effort
 			IF = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
@@ -3304,7 +3304,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-				add_ideas = main_tank_effort
+			#	add_ideas = main_tank_effort
 			IF = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"

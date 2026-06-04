@@ -1609,15 +1609,15 @@ on_actions = {
 				}
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_0
-					amount = 47733
+					amount = 6000
 				}
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
-					amount = 51600
+					amount = 20000
 				}
 				add_equipment_to_stockpile = {
 					type = support_equipment_1
-					amount = 1559
+					amount = 510
 				}
 				add_equipment_to_stockpile = {
 					type = motorized_equipment_0
@@ -2428,11 +2428,11 @@ on_actions = {
 				}
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_0
-					amount = 17070
+					amount = 5160
 				}
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
-					amount = 65160
+					amount = 17070
 				}
 				add_equipment_to_stockpile = {
 					type = support_equipment_1

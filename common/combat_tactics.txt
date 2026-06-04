@@ -312,7 +312,7 @@ tactic_tw_defend = {
 	picture = tw_defend
 	display_phase = tactical_withdrawal
 	
-	combat_width = -0.25		
+	combat_width = -0.25
 	attacker = -0.3
 	defender = -0.05
 }
@@ -422,7 +422,7 @@ tactic_blitz = {
 			has_trait = panzer_leader
 			skill_advantage > 1
 		}
-		OWNER = { NOT = { has_tech = masterful_blitz } } #Soviet improved version of blitz will replace this
+		OWNER = { NOT = { has_tactic = tactic_masterful_blitz } } #Soviet improved version of blitz will replace this
 	}
 	
 	active = no
@@ -704,6 +704,7 @@ tactic_defender_hb_skillful_defence = {
 	base =  { factor = 2 }
 	picture = defender_hb_skillful_defence
 	display_phase = hold_bridge
+	
 	combat_width = -0.25
 	attacker = 0.1
 	defender = 0.05
@@ -718,9 +719,6 @@ tactic_guerrilla_tactics = { #People's army defender tactic. also for German vol
 			skill > 2
 			has_trait = trickster
 		}
-		NOT = {
-			is_fighting_in_terrain = plains
-		}
 	}
 	
 	active = no
@@ -729,8 +727,6 @@ tactic_guerrilla_tactics = { #People's army defender tactic. also for German vol
 		factor = 4
 	}
 	picture = tactic_guerrilla_tactics
-
-	countered_by = tactic_partisan_sweeps
 	
 	combat_width = -0.5
 	attacker = -0.7
@@ -764,6 +760,7 @@ tactic_banzai_charge = { #Special Japan attacker tactic
 		tag = JAP
 		is_attacker = yes
 		phase = no
+		OWNER = { NOT = { has_tactic = tactic_grand_banzai_charge } } #Japanese improved version of Banzai Charge will replace this
 	}
 	
 	active = yes
@@ -775,6 +772,29 @@ tactic_banzai_charge = { #Special Japan attacker tactic
 	
 	attacker_movement_speed = 0.1
 	attacker = 0.25 
+	defender = 0.1
+}
+
+tactic_grand_banzai_charge = { #Special Japan attacker tactic
+	only_show_for = JAP
+
+	is_attacker = yes
+
+	trigger = {
+		tag = JAP
+		is_attacker = yes
+		phase = no
+	}
+	
+	active = no 
+	
+	countered_by = tactic_overwhelming_fire
+	
+	base =  { factor = 4 }
+	picture = tactic_banzai_charge
+	
+	attacker_movement_speed = 0.1
+	attacker = 0.3 
 	defender = 0.1
 }
 
@@ -919,43 +939,41 @@ tactic_masterful_blitz = { #Improved version of Blitz for Soviets
 	
 	attacker_movement_speed = 0.5
 	combat_width = 0.1
-	attacker = 0.25
+	attacker = 0.2
 	defender = -0.2
 }
 
-#Anti-Partisan, purpose is to counter guerrilla 
-tactic_partisan_sweeps = {
 
-    is_attacker = yes
+tactic_masterful_delay = { #Improved version of Delay for Czechs
+	only_show_for = CZE
+
+	is_attacker = no
 	trigger = {
-		is_attacker = yes
-		hardness > 0.3
+		is_attacker = no
 		phase = no
 		OR = {
 			skill > 2
-			has_trait = panzer_leader
+			has_trait = trickster
+			has_trait = fast_planner
+			has_trait = ambusher
+			NOT = {
+				has_trait = unyielding_defender
+			}
 			skill_advantage > 1
 		}
 	}
-    
-    active = no
-
-   	base =  { 
-		factor = 15
-		modifier = {
-			add = 5
-			OR = {
-				has_trait = panzer_expert
-				has_trait = combined_arms_expert
-			}
-		}
+	
+	active = no
+	
+	base =  {
+		factor = 4
 	}
-    
-    picture = partisan_sweeps
-    
-	combat_width = 0.1
-	attacker = 0.2
-	defender = -0.2
+	picture = delay
+	countered_by = tactic_shock
+	
+	attacker_movement_speed = -0.30		#
+	attacker = -0.30
+	defender = -0.20
 }
 
 

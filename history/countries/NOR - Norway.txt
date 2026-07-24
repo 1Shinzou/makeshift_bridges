@@ -437,4 +437,5 @@ if = {
 				rear_1_custom_slot = ship_depth_charge_1
 			}
 		}
+	}
 }

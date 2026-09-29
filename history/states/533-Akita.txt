@@ -1,7 +1,7 @@
 state = {
 	id = 533
 	name = "STATE_533" # North Tohoku
-	manpower = 6575000
+	manpower = 4266278 # Unified tohoku is about 6575000 
 	state_category = town # was large_city
 	resources = {
 		steel = 10 # was: 35, then 15
@@ -12,8 +12,6 @@ state = {
 	history = {
 
 		owner = JAP
-		# No Asia
-		1936.1.1.13 = { owner = WST add_core_of = WST }
 		add_core_of = JAP
 
 		buildings = {

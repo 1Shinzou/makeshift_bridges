@@ -28,14 +28,18 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 7396;1401;sea;5615;-1;-1;-1;-1;;Bangka Belitung-Sumatra
 1342;10279;sea;2737;-1;-1;-1;-1;;Java-Sumatra
 7396;4211;sea;4225;-1;-1;-1;-1;;Bangka-Belitung
+7290;13412;sea;9081;-1;-1;-1;-1;;NZ Samoa 
 1460;12126;sea;812;-1;-1;-1;-1;;Tanahbala-Sumatra
 12126;1428;sea;812;-1;-1;-1;-1;;Tanahbala-Siberut
+12126;13397;sea;812;-1;-1;-1;-1;;Tanahbala-Other Island 
 4306;4608;sea;5666;-1;-1;-1;-1;;Soerbaja-Madura
 7654;4273;sea;2239;-1;-1;-1;-1;;Java-Bali
-7293;4273;sea;2239;-1;-1;-1;-1;;Bali-Lombok
-7293;10191;sea;2239;-1;-1;-1;-1;;Lombok-W.Nusa Tenggara
-12162;1298;sea;2124;-1;-1;-1;-1;;West Nusa Tenggara-East Nusa Tenggara
-12151;10219;sea;5414;-1;-1;-1;-1;;East Nusa Tenggara-Pulau Alor
+7293;13386;sea;2239;-1;-1;-1;-1;;Bali-Lombok
+7293;13388;sea;2239;-1;-1;-1;-1;;Lombok-W.Nusa Tenggara
+13391;1298;sea;2124;-1;-1;-1;-1;;West Nusa Tenggara-East Nusa Tenggara
+13393;10219;sea;5414;-1;-1;-1;-1;;East Nusa Tenggara-Pulau Alor
+13393;12151;sea;5414;-1;-1;-1;-1;;East Nusa Tenggara-Pulau Alor 2 
+13394;10219;sea;5414;-1;-1;-1;-1;;East Nusa Tenggara-Pulau Alor 3 
 12444;10222;sea;5515;-1;-1;-1;-1;;Sulawesi-Pulau Buton
 1293;4269;sea;8751;-1;-1;-1;-1;;Surigao-Leyte
 1311;4228;sea;2856;-1;-1;-1;-1;;San Bernardino Strait
@@ -135,7 +139,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 7304;4360;sea;8614;-1;-1;-1;-1;;New Foundland-Strait
 5407;5382;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar North
 5407;2400;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar South
-2455;2506;;-1;-1;-1;-1;-1;DANISH_BELTS_STRAIT;Øresund
+2455;2431;;-1;-1;-1;-1;-1;DANISH_BELTS_STRAIT;Øresund
 5412;7678;;-1;-1;-1;-1;-1;BOSPHORUS_STRAIT;Bosphorus
 7452;7678;;-1;-1;-1;-1;-1;DARDANELLES_STRAIT;Dardanelles
 2919;2943;;-1;-1;-1;-1;-1;HORMUZ_STRAIT;hormuz
@@ -223,6 +227,46 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 12954;13297;sea;5424;-1;-1;-1;-1;;Araucania
 13312;7982;sea;2919;-1;-1;-1;-1;;South Iran
 761;13315;sea;9092;-1;-1;-1;-1;;Ontario
+3151;3060;impassable;-1;-1;-1;-1;-1;;Finnland Border
+3151;9150;impassable;-1;-1;-1;-1;-1;;Finnland Border
+149;9150;impassable;-1;-1;-1;-1;-1;;Finnland Border
+6070;9176;impassable;-1;-1;-1;-1;-1;;Finnland Border
+9078;9176;impassable;-1;-1;-1;-1;-1;;Finnland Border
+9078;6153;impassable;-1;-1;-1;-1;-1;;Finnland Border
+40;6153;impassable;-1;-1;-1;-1;-1;;Finnland Border
+9231;6153;impassable;-1;-1;-1;-1;-1;;Finnland Border
+2998;6153;impassable;-1;-1;-1;-1;-1;;Finnland Border
+2998;11156;impassable;-1;-1;-1;-1;-1;;Finnland Border
+2998;6210;impassable;-1;-1;-1;-1;-1;;Finnland Border
+6210;80;impassable;-1;-1;-1;-1;-1;;Finnland Border
+3185;80;impassable;-1;-1;-1;-1;-1;;Finnland Border
+7;80;impassable;-1;-1;-1;-1;-1;;Finnland Border
+7;6175;impassable;-1;-1;-1;-1;-1;;Finnland Border
+7;6098;impassable;-1;-1;-1;-1;-1;;Finnland Border
+6134;6175;impassable;-1;-1;-1;-1;-1;;Finnland Border
+3073;6175;impassable;-1;-1;-1;-1;-1;;Finnland Border
+3073;9074;impassable;-1;-1;-1;-1;-1;;Finnland Border
+6045;9074;impassable;-1;-1;-1;-1;-1;;Finnland Border
+9158;9074;impassable;-1;-1;-1;-1;-1;;Finnland Border
+9158;9198;impassable;-1;-1;-1;-1;-1;;Finnland Border
+9158;11181;impassable;-1;-1;-1;-1;-1;;Finnland Border
+197;11181;impassable;-1;-1;-1;-1;-1;;Finnland Border
+197;9123;impassable;-1;-1;-1;-1;-1;;Finnland Border
+11085;9123;impassable;-1;-1;-1;-1;-1;;Finnland Border
+11085;15;impassable;-1;-1;-1;-1;-1;;Finnland Border
+11085;74;impassable;-1;-1;-1;-1;-1;;Finnland Border
+6128;74;impassable;-1;-1;-1;-1;-1;;Finnland Border
+6183;74;impassable;-1;-1;-1;-1;-1;;Finnland Border
+6012;74;impassable;-1;-1;-1;-1;-1;;Finnland Border
+6012;9203;impassable;-1;-1;-1;-1;-1;;Finnland Border
+6012;142;impassable;-1;-1;-1;-1;-1;;Finnland Border
+9140;142;impassable;-1;-1;-1;-1;-1;;Finnland Border
+9140;6117;impassable;-1;-1;-1;-1;-1;;Finnland Border
+10821;5087;impassable;-1;-1;-1;-1;-1;;Raj Northern Border
+10821;1970;impassable;-1;-1;-1;-1;-1;;Raj Northern Border
+5042;1970;impassable;-1;-1;-1;-1;-1;;Raj Northern Border
+5042;8112;impassable;-1;-1;-1;-1;-1;;Raj Northern Border
+5042;4973;impassable;-1;-1;-1;-1;-1;;Raj Northern Border
 13196;13314;sea;9092;-1;-1;-1;-1;;Northern Quebec
 8053;10476;impassable;-1;-1;-1;-1;-1;;Paropamisus Mountains
 12788;10476;impassable;-1;-1;-1;-1;-1;;Paropamisus Mountains
@@ -239,109 +283,16 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 5064;2078;impassable;-1;-1;-1;-1;-1;;South Afghanistan
 1421;10184;sea;2899;-1;-1;-1;-1;;Sulu-Mindanao
 12118;1224;sea;8751;-1;-1;-1;-1;;Cebu-Samar
+
+3938;6521;sea;;-1;-1;-1;-1;Berlin-Madrid;Berlin-Madrid
+
 5864;5838;;-1;-1;-1;-1;-1;OTRANTO_STRAIT;Otranto Strait
-
-
-5563;5364;;-1;-1;-1;-1;-1;Fernando Torres Strait;GDU Torres
-5563;5613;;-1;-1;-1;-1;-1;Fernando Torres Strait;GDU Torres 2
-
-5838;5864;;-1;-1;-1;-1;-1;OTRANTO_STRAIT;Otranto
-2776;2800;;-1;-1;-1;-1;-1;DJIBOUTI_STRAIT;Djibouti
-2431;2382;;-1;-1;-1;-1;-1;ORESUND_STRAIT;ORESUND
-2431;2408;;-1;-1;-1;-1;-1;THE_BELTS;TheBelts
-5864;5838;;-1;-1;-1;-1;-1;OTRANTO_STRAIT;Otranto Strait
-5681;1452;;-1;-1;-1;-1;-1;SICILY_STRAIT;Strait of Messina
-
-2003;5047;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
-2003;5017;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
-2088;5017;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
-2088;12723;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
-2088;13251;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
-2088;1984;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
-12862;1984;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
-12862;2040;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
-12862;13251;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
-4918;2040;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
-4918;4954;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
-12887;4954;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
-12887;2009;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
-12800;2009;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
-12800;13243;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
-12800;13244;impassable;-1;-1;-1;-1;-1;;ETH-UK-BORDER
-
-12359;7602;impassable;-1;-1;-1;-1;-1;;Iran Big Front
-12359;10351;impassable;-1;-1;-1;-1;-1;;Iran Big Front
-10510;10351;impassable;-1;-1;-1;-1;-1;;Iran Big Front
-12333;1521;impassable;-1;-1;-1;-1;-1;;Iran Big Front
-12333;10351;impassable;-1;-1;-1;-1;-1;;Iran Big Front
-7491;5029;impassable;-1;-1;-1;-1;-1;;Iran Big Front
-7491;1521;impassable;-1;-1;-1;-1;-1;;Iran Big Front
-7491;2000;impassable;-1;-1;-1;-1;-1;;Iran Big Front
-7560;2000;impassable;-1;-1;-1;-1;-1;;Iran Big Front
-4958;2000;impassable;-1;-1;-1;-1;-1;;Iran Big Front
-
-672;11664;impassable;-1;-1;-1;-1;-1;;Caucasus
-685;6674;impassable;-1;-1;-1;-1;-1;;Caucasus
-9649;6674;impassable;-1;-1;-1;-1;-1;;Caucasus
-11664;6674;impassable;-1;-1;-1;-1;-1;;Caucasus
-685;9632;impassable;-1;-1;-1;-1;-1;;Caucasus
-11614;9632;impassable;-1;-1;-1;-1;-1;;Caucasus
-11609;9632;impassable;-1;-1;-1;-1;-1;;Caucasus
-11609;1530;impassable;-1;-1;-1;-1;-1;;Caucasus
-6436;1455;impassable;-1;-1;-1;-1;-1;;Caucasus
-6436;7554;impassable;-1;-1;-1;-1;-1;;Caucasus
-6763;7554;impassable;-1;-1;-1;-1;-1;;Caucasus
-6763;3711;impassable;-1;-1;-1;-1;-1;;Caucasus
-6763;1450;impassable;-1;-1;-1;-1;-1;;Caucasus
-11645;1450;impassable;-1;-1;-1;-1;-1;;Caucasus
-
-3761;6521;sea;;-1;-1;-1;-1;Berlin-Madrid;Berlin-Madrid
-3761;896;sea;;-1;-1;-1;-1;Galicia-Madrid;Galicia-Madrid
-
-13228;1048;impassable;-1;-1;-1;-1;-1;;Gibraltar
-13228;10094;impassable;-1;-1;-1;-1;-1;;Gibraltar
-4135;10094;impassable;-1;-1;-1;-1;-1;;Gibraltar
-4135;7153;impassable;-1;-1;-1;-1;-1;;Gibraltar
-9824;9853;impassable;-1;-1;-1;-1;-1;;Spain-France;Border;;;
-11779;9853;impassable;-1;-1;-1;-1;-1;;Spain-France;Border;;;
-11779;6915;impassable;-1;-1;-1;-1;-1;;Spain-France;Border;;;
-3898;6915;impassable;-1;-1;-1;-1;-1;;Spain-France;Border;;;
-3898;6931;impassable;-1;-1;-1;-1;-1;;Spain-France;Border;;;
-3898;3915;impassable;-1;-1;-1;-1;-1;;Spain-France;Border;;;
-3899;3915;impassable;-1;-1;-1;-1;-1;;Spain-France;Border;;;
-3931;11697;impassable;-1;-1;-1;-1;-1;;Spain-France;Border;;;
-3931;743;impassable;-1;-1;-1;-1;-1;;Spain-France;Border;;;
-3737;743;impassable;-1;-1;-1;-1;-1;;Spain-France;Border;;;
-6756;743;impassable;-1;-1;-1;-1;-1;;Spain-France;Border;;;
-915;9884;impassable;-1;-1;-1;-1;-1;;Pyrenees;;;;
-915;9882;impassable;-1;-1;-1;-1;-1;;Pyrenees;;;;
-899;9882;impassable;-1;-1;-1;-1;-1;;Pyrenees;;;;
-3899;9882;impassable;-1;-1;-1;-1;-1;;Pyrenees;;;;
-9884;11838;impassable;-1;-1;-1;-1;-1;;Pyrenees;;;;
-11697;11838;impassable;-1;-1;-1;-1;-1;;Pyrenees;;;;
-10113;1194;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
-10113;10013;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
-12087;10013;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
-4199;10013;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
-4199;4097;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
-7215;4097;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
-12100;1111;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
-12100;4097;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
-12100;989;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
-12857;5046;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
-12857;7203;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
-8111;5046;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
-4920;5046;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
-7992;10875;impassable;-1;-1;-1;-1;-1;;Spain-Africa;;;;
-
-
-10821;5087;impassable;-1;-1;-1;-1;-1;;Raj Northern Border
-10821;1970;impassable;-1;-1;-1;-1;-1;;Raj Northern Border
-5042;1970;impassable;-1;-1;-1;-1;-1;;Raj Northern Border
-5042;8112;impassable;-1;-1;-1;-1;-1;;Raj Northern Border
-5042;4973;impassable;-1;-1;-1;-1;-1;;Raj Northern Border
-
-
+7333;4346;impassable;-1;-1;-1;-1;-1;;Kokoda Track
+7333;12995;impassable;-1;-1;-1;-1;-1;;Kokoda Track
+7333;7378;impassable;-1;-1;-1;-1;-1;;Kokoda Track
+10231;12995;impassable;-1;-1;-1;-1;-1;;Kokoda Track
+13401;13396;sea;436;-1;-1;-1;-1;;Aceh-Islands
+1428;13395;sea;812;-1;-1;-1;-1;;Padang-Islands
 -1;-1;;-1;-1;-1;-1;-1;-1 
 #Start province ID;End province ID;Adjacency type;Through province ID;Starting X position;Starting Y position;Ending X position;Ending Y position;Adjacency rule;Comment
 

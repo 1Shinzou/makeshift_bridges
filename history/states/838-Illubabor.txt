@@ -34,7 +34,7 @@ state = {
 			7912 1  
 		}
 		
-		owner = ETH
+		owner = ITA
 		add_core_of = ETH
 		add_core_of = WST
 

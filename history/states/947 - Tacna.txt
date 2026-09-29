@@ -10,13 +10,9 @@ state = {
 		owner = WST
 		add_core_of = WST
 
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
+		buildings = { 
+			
 		}
-
-		
-
 	}
 
 	provinces = {

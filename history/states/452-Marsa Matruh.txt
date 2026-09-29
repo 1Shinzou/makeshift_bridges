@@ -10,35 +10,22 @@ state={
 		owner = ENG
 		buildings = {
 			infrastructure = 2
-			9989 = {
-				naval_base = 1
-			}
-			10061 = {
-				naval_base = 3
-			}
 		}
 
 		victory_points = {
-			10061 3 # Mersa Matruh
+			10061 2 # Mersa Matruh
 		}
 
 		victory_points = {
-			9989 2 #Sidi Barrani
-		}
-
-		victory_points = {
-			8030 1
-		}
-
-		victory_points = {
-			4913 1
+			9989 1 #Sidi Barrani
 		}
 
 		add_core_of = WST
+		add_core_of = ETH
 	}
 
 	provinces={
-		7079 9989 10061 11910 11967 5078 12033 12091 7148 12764 4913 8028 2068 7943 8030 5006 12768 12740 8118 8060
+		1143 5078 7079 7148 9989 10061 11910 11967 12033 12091 12733 12764  
 	}
 
 

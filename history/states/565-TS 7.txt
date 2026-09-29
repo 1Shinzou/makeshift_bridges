@@ -15,7 +15,7 @@ state = {
 
 		owner = SOV
 		add_core_of = SOV
-		
+		add_core_of = WST
 
 		buildings = {
 			infrastructure = 1

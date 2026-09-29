@@ -19,6 +19,10 @@ state={
 			infrastructure = 1
 		}
 
+		victory_points = {
+			1116 1 # Itanagar 
+		}
+
 	}
 
 	provinces = {

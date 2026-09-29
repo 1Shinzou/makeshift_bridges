@@ -4,21 +4,23 @@ state={
 	name="STATE_280"
 
 	history={
-		owner = WST
-		add_core_of = WST
+		owner = BRA
+		add_core_of = BRA
 		buildings = {
 			infrastructure = 1
 
 		}
-		
+		victory_points = {
+			2111 2 
+		}
 
 	}
 
 	provinces={
 		2111 2142 2181 2204 8175 8189 10959 11010 
 	}
-	manpower = 1
+	manpower=120000
 	buildings_max_level_factor=1.000
-	state_category = wasteland
-	local_supplies = 0.0
+	state_category=pastoral
+	local_supplies=0.000
 }

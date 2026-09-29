@@ -20,8 +20,6 @@ state=
 			12118 1 
 		}
 		add_core_of = PHI
-		# No Asia
-		1936.1.1.13 = { owner = WST add_core_of = WST }
 	}
 
 	provinces={

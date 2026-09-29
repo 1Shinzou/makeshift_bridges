@@ -10,11 +10,12 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = LBA
+		add_core_of = WST
+		add_core_of = ETH
 	}
 	
 	provinces={
-		1174 4051 4117 4176 7154  10037 10067 11940 12009 10754 7939 10758 8077 4962 1118 12711
+		1174 4051 4117 4176 7154 7194 10037 10067 11940 12009 
 	}
 
 	local_supplies=0.0 

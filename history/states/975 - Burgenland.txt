@@ -11,6 +11,7 @@ state = {
 	history = {
 
 		owner = AUS
+		add_core_of = WST
 		add_core_of = AUS
 
 		victory_points = {

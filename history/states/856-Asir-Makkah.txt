@@ -5,14 +5,10 @@ state= {
 	history = {
 
 		owner = WST
-		add_core_of	= SAU
+		add_core_of	= WST
 
-		buildings = {
-			infrastructure = 1
-			arms_factory = 1
-			12883 = {
-				naval_base = 5
-			}
+		buildings = { 
+			
 		}
 
 		
@@ -23,10 +19,10 @@ state= {
 	state_category = wasteland
 
 	provinces = {
-		1923 2090 5037 10786 12883 
+		1923 2090 5037 8073 10786 12883 
 	}
 
 	buildings_max_level_factor = 1.000
-	local_supplies = 0.0
+	local_supplies = 0.000
 
 }

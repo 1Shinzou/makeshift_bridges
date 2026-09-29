@@ -4,7 +4,6 @@ state = {
 	manpower = 1
 
 	
-	
 	state_category = wasteland
 
 	history = {
@@ -12,21 +11,9 @@ state = {
 		owner = WST
 		add_core_of = WST
 
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-			air_base = 1
-			13288 = {
-				naval_base = 1
-			}
+		buildings = { 
+			
 		}
-		
-		
-
-		
-
-		
-
 	}
 
 	provinces = {

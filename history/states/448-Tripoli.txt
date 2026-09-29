@@ -19,11 +19,12 @@ state={
 				naval_base = 5
 			}
 		}
-		add_core_of = LBA
+		add_core_of = WST
+		add_core_of = ETH
 	}
 
 	provinces={
-		1149 1189 4194 7066 7209 9980 12039 10838
+		1118 1149 1189 4194 7066 7209 9980 12039 
 	}
 
 	local_supplies=0.0 

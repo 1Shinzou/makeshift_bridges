@@ -4,15 +4,18 @@ state={
 	manpower = 1
 
 
-
-	state_category = rural
+	state_category = wasteland
 	provinces={
 		7448 7584 10896 12248 12877 
 	}
-	history = {
+	history={
+		owner = WST
+		buildings = { 
+			
+		}
+		add_core_of = WST
 	}
-
 	
 	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	local_supplies = 0.0
 }

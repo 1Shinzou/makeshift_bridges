@@ -32,9 +32,8 @@ state = {
 			13243 1 
 		}
 		
-		owner = ETH
+		owner = ITA
 		add_core_of = ETH
-		add_core_of = WST
 		add_core_of = WST
 
 		1936.6.1 = {

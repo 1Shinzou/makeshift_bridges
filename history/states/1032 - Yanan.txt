@@ -8,7 +8,7 @@ state = {
 	history = {
 
 		owner = CHI
-		
+		add_core_of = WST
 		add_core_of = CHI
 
 
@@ -35,8 +35,14 @@ state = {
 			}
 
 		}
-		# No Asia
-		1936.1.1.13 = { owner = WST add_core_of = WST }
+
+		1938.10.25 = {
+			add_victory_points = {
+				province = 8049
+				value = 2
+			}	
+		}
+
 	}
 
 	provinces = {

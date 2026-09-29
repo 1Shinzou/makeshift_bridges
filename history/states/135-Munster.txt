@@ -12,6 +12,7 @@ state={
 
 	history={
 		owner = IRE
+		add_extra_state_shared_building_slots = 3
 		buildings = {
 			infrastructure = 3 #was: 6
 			industrial_complex = 3

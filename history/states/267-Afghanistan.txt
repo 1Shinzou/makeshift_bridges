@@ -4,15 +4,20 @@ state={
 	name="STATE_267" # Kabul
 	manpower = 1
 	
-	state_category = town
+	state_category = wasteland
 	
-	history = {
+	
+	history={
+		owner = WST
+		buildings = { 
+			
+		}
+		add_core_of = WST
 	}
-
 
 	provinces={
 		7916 7984 10737 10852 12769 
 	}
 
-	local_supplies=0.0 
+	local_supplies = 0.0 
 }

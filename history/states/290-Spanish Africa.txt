@@ -8,12 +8,11 @@ state={
 	state_category = rural
 	
 	resources={
-
+		steel=40 #was:23 was: 20 . Changed to 23 (from 15) due to Portugal Setup
 	}
 
 	history={
 		owner = SPR
-		add_core_of = WST
 		add_core_of = WST
 		victory_points = {
 			9945 3

@@ -32,6 +32,9 @@ state = {
 			11833 = {
 				naval_base = 4
 			}
+			910 = {
+				land_facility = 1
+			}
 		}
 		add_core_of = ITA
 		add_core_of = WST

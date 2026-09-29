@@ -4,7 +4,8 @@ state = {
 	manpower = 1
 	
 	state_category = wasteland
-	#impassable = yes
+	impassable = yes
+	force_link_ownership_to = 898 # Gao
 
 	history = {
 
@@ -16,9 +17,9 @@ state = {
 		}
 
 	}
-	# STATE UNUSED MSB
+
 	provinces = {
-		8073
+		1115 2068 10725 10868
 	}
 
 	local_supplies = 0.0 

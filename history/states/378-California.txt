@@ -7,7 +7,7 @@ state={
 	state_category = metropolis
 	
 	resources={
-		oil=180 # was: 350
+		oil=120 # was: 350 #2025-12-12: was: 180
 		aluminium=8 # was: 14
 	}
 
@@ -33,8 +33,6 @@ state={
 			}
 		}
 		add_core_of = USA
-		# No Asia
-		1936.1.1.13 = { owner = WST add_core_of = WST }
 		victory_points = {
 			9814 30
 		}

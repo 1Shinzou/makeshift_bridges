@@ -12,12 +12,11 @@ state = {
 	history = {
 
 		owner = CHI
-		
+		add_core_of = WST
 		add_core_of = CHI
-		
 
 		victory_points = {
-			1519 5 # Taiyuan 
+			4174 5 # Taiyuan 
 		}
 
 		victory_points = {
@@ -34,8 +33,15 @@ state = {
 			industrial_complex = 2
 		}
 
-		# No Asia
-		1936.1.1.13 = { owner = WST add_core_of = WST }
+		1938.10.25 = {
+			controller = JAP
+			CHI = {
+				set_province_controller = 1034
+				set_province_controller = 1531
+				set_province_controller = 4074
+				set_province_controller = 10367
+			}
+		}
 
 	}
 

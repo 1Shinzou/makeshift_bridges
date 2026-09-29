@@ -9,9 +9,9 @@ state={
 	state_category = wasteland
 	history={
 
-		owner = SOV
-		add_core_of = SOV
-
+		owner = CHI
+		add_core_of = WST
+		add_core_of = CHI
 
 		victory_points = {
 			2074 1 # Ruoqiang 
@@ -20,8 +20,6 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-
-
 	}
 
 	local_supplies=0.0 

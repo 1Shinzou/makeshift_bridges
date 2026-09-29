@@ -25,7 +25,6 @@ state = {
 		add_core_of = ITA
 		add_core_of = YUG
 		add_core_of = WST
-		add_core_of = WST
 
 		### CHANGED TO A MROE ROBUST SYSTEM
 		##CONTROLLED BY ITALY AT GAME START -> ITALIAN NAMES

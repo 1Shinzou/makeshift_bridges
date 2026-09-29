@@ -6,6 +6,19 @@ state = {
 	manpower = 1
 
 	history = {
+
+		owner = WST
+
+		
+		
+		add_core_of = WST
+
+		victory_points = {
+			2220 1
+		}
+
+		
+
 	}
 
 	provinces = {

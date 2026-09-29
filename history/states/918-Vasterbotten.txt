@@ -5,7 +5,7 @@ state = {
 	state_category = rural
 	resources = {
 		tungsten = 35
-		steel = 39
+		steel = 48 # was 39
 		chromium = 15
 	}
 
@@ -18,7 +18,7 @@ state = {
 		}
 		owner = SWE
 		add_core_of = SWE
-		
+		add_core_of = WST
 		
 		buildings = {
 			infrastructure = 2

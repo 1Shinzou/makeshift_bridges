@@ -9,7 +9,7 @@ state={
 
 		owner = CHI
 		add_core_of = CHI
-		
+		add_core_of = WST
 
 		victory_points = {
 			1029 2 # Donghai
@@ -31,8 +31,9 @@ state={
 			}
 		}
 
-		# No Asia
-		1936.1.1.13 = { owner = WST add_core_of = WST }
+		1938.10.25 = {
+			controller = JAP
+		}
 	}
 
 	provinces={

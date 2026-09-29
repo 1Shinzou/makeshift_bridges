@@ -10,7 +10,7 @@ state={
 	history={
 		owner = CHI
 		add_core_of = CHI
-		
+		add_core_of = WST
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1 #was 2
@@ -20,8 +20,16 @@ state={
 		victory_points = {
 			7101 10 
 		}
-		# No Asia
-		1936.1.1.13 = { owner = WST add_core_of = WST }
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 2
+				infrastructure = 3 #was: 6
+				air_base = 3
+				arms_factory = 1
+
+			}
+
+		}
 
 	}
 

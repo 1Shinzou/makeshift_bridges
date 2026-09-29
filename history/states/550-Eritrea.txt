@@ -12,6 +12,7 @@ state=
 	history={
 		owner = ITA
 		add_core_of = WST
+		add_core_of = ETH
 		victory_points = { #Massaua
 			12766 1
 		}

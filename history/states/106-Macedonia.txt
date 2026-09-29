@@ -1,7 +1,10 @@
 state = {
 	id = 106
 	name = "STATE_106"
-
+	resources = {
+		chromium = 50.000
+		aluminium = 10.000
+	} 
 
 	history = {
 		owner = YUG
@@ -16,7 +19,6 @@ state = {
 		}
 		add_core_of = YUG
 		add_core_of = WST
-		add_core_of = BUL
 		add_claim_by = BUL
 	}
 

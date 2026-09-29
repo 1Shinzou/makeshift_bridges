@@ -4,11 +4,10 @@ state={
 	name="STATE_48"
 	manpower = 1685989
 	resources={
-		aluminium = 8
+		aluminium = 2
 		coal = 1 #initial distribution
-		chromium = 20.000
 	}
-
+	
 	
 	state_category = city
 
@@ -24,10 +23,11 @@ state={
 			infrastructure = 3
 			industrial_complex = 6
 			air_base = 3
+			949 = {
+				land_facility = 1
+			}
 		}
 		add_core_of = BUL
-		# Scraping the Barrel
-		1936.1.1.14 = { owner = ITA add_core_of = ITA }
 	}
 
 	provinces={

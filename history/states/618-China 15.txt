@@ -4,11 +4,16 @@ state={
 	name="STATE_618" # Dzungaria
 	manpower = 670800
 
+	resources={
+		oil= 43 
+	}
+
 	state_category = pastoral
 
 	history={
-		owner = SOV
-		add_core_of = SOV
+		owner = CHI
+		add_core_of = WST
+		add_core_of = CHI
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

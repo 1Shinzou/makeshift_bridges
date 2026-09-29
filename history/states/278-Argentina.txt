@@ -1,25 +1,26 @@
 state = {
 	id = 278
 	name = "STATE_278" # Pampas
-	manpower = 1
+	manpower = 5596366
 	
-	state_category = wasteland
+	state_category = large_city
 
 	history = {
 
-		owner = WST
-		add_core_of = WST
+		owner = ARG
+		add_core_of = ARG
 
 		buildings = {
 			infrastructure = 3 #was: 6
 			arms_factory = 2
-			industrial_complex = 5
+			industrial_complex = 3
 			dockyard = 1
 			air_base = 4
 			12364 = {
 				naval_base = 7
 				bunker = 1
 				coastal_bunker = 1
+				land_facility = 1
 			}
 			7621 = {
 				naval_base = 2
@@ -29,9 +30,13 @@ state = {
 			}
 		}
 		
-		
+		victory_points = {
+			12364 15 
+		}
 
-		
+		victory_points = {
+			7621 2 
+		}
 
 	}
 

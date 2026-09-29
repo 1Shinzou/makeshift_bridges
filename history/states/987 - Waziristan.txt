@@ -14,12 +14,7 @@ state={
 		owner = RAJ
 		buildings = {
 		}
-		add_core_of = TUM
-		add_core_of = PAK
-		
-		set_compliance = 0
-		start_resistance = yes
-		set_resistance =  70
+	add_core_of = WST
 		buildings = {
 			infrastructure = 1
 		}

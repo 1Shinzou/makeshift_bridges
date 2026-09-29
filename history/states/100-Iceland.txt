@@ -7,7 +7,7 @@ state = {
 	
 	
 	history = {
-		owner = USA
+		owner = ENG
 		victory_points = { 12674 1 }
 		buildings = {
 			infrastructure = 1
@@ -17,10 +17,8 @@ state = {
 			}
 			industrial_complex = 1
 		}
-		# add_core_of = DEN
 		add_core_of = WST
-		# No Asia
-		1936.1.1.13 = { owner = ENG add_core_of = WST }
+		
 	}
 	provinces = {
 		4861 12674 12689 13266 13267 13268 13271

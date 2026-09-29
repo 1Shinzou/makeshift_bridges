@@ -10,10 +10,8 @@ state={
 	history = {
 
 		owner = CHI
-		
+		add_core_of = WST
 		add_core_of = CHI
-		
-		
 
 		victory_points = {
 			3427 1 # Ordos
@@ -30,9 +28,6 @@ state={
 		1938.10.25 = {
 			controller = JAP
 		}
-		
-		# No Asia
-		1936.1.1.13 = { owner = WST add_core_of = WST }
 	}
 	manpower=500000
 

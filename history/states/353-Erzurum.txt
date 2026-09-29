@@ -5,9 +5,7 @@ state={
 
 	history={
 		owner = TUR
-		victory_points = {
-			11853 3
-		}
+		add_core_of = TUR
 		victory_points = {
 			9860 1
 		}
@@ -17,21 +15,7 @@ state={
 		victory_points = {
 			9868 1
 		}
-		buildings = {
-			infrastructure = 1
-
-		}
-		if = {
-			limit = {
-				has_dlc = "Battle for the Bosporus"
-			}
-			
-		}
-		if = {
-			limit = {
-				NOT = { has_dlc = "Battle for the Bosporus" }
-			}
-			add_core_of = TUR
+		buildings = { 
 			
 		}
 	}
@@ -39,9 +23,9 @@ state={
 	provinces={
 		876 9858 9860 9868 9954 10399 11797  
 	}
-	manpower=523537
+	manpower=1
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=wasteland
 
-	local_supplies=9.0 
+	local_supplies=0.0 
 }

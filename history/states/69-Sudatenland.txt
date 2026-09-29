@@ -20,16 +20,22 @@ state = {
 		}
 
 		victory_points = {
+			6470 1
+		}
+
+		victory_points = {
 			11401 3
 		}
 
 		owner = CZE
+		add_core_of = WST
 		add_core_of = CZE
 
 		buildings = {
 
 			infrastructure = 4
 			industrial_complex = 2
+			arms_factory = 1
 			anti_air_building = 1
 
 			424 = {

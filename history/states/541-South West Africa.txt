@@ -3,13 +3,14 @@ state={
 	id=541
 	name="STATE_541"
 	manpower = 254100
-	state_category = rural
+	state_category = pastoral
 
 	history={
 		owner = SAF
+		add_extra_state_shared_building_slots = 2
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
+			arms_factory = 2 # was 0
 		}
 		victory_points = {
 			4879 1 

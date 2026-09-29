@@ -8,7 +8,8 @@ state={
 	manpower = 445606
 	history={
 		owner = RAJ
-		add_core_of = TUM
+		add_core_of = RAJ
+		add_core_of = WST
 		buildings = {
 			infrastructure = 1
 		}

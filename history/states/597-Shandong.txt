@@ -13,8 +13,7 @@ state = {
 
 		owner = CHI
 		add_core_of = CHI
-		
-
+		add_core_of = WST
 
 
 		victory_points = {
@@ -30,19 +29,21 @@ state = {
 
 			4205 = {
 				naval_base = 2
-				coastal_bunker = 1
-				bunker = 1
 			}
 
 			1104 = {
 				naval_base = 1
-				coastal_bunker = 1
-				bunker = 1
 			}
 
 		}
-		# No Asia
-		1936.1.1.13 = { owner = WST add_core_of = WST }
+
+		1938.10.25 = {
+			owner = CHI
+			controller = JAP	
+			buildings = {
+				air_base = 1
+			}	
+		}
 		
 	}
 

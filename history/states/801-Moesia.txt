@@ -3,7 +3,7 @@ state={
 	name="STATE_801"
 	manpower = 1218780
 
-	state_category= large_town
+	state_category=rural
 
 	history={
 		owner = BUL
@@ -15,12 +15,11 @@ state={
 		}
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 4
+			industrial_complex =1
 
 		}
 		add_core_of = BUL
-		# Scraping the Barrel
-		1936.1.1.14 = { owner = ITA add_core_of = ITA }
+
 	}
 
 	provinces={

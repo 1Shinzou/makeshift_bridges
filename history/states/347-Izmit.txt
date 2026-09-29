@@ -2,14 +2,14 @@
 state={
 	id=347
 	name="STATE_347"
-	manpower = 807660
+	manpower = 1
 	resources={
 		chromium=19 # was: 26
 		steel = 9
 		coal = 5 #initial distribution
 	}
 	
-	state_category = rural
+	state_category = wasteland
 
 	history={
 		owner = TUR
@@ -19,12 +19,8 @@ state={
 		victory_points = {
 			904 1 
 		}
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-			904 = {
-				naval_base = 2
-			}
+		buildings = { 
+			
 		}
 		add_core_of = TUR
 	}

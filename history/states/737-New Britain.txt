@@ -3,10 +3,8 @@ state={
 	name="STATE_737"
 
 	history={
-		add_core_of = AST
+		add_core_of = WST
 		owner = AST
-		# Scraping the Barrel
-		1936.1.1.14 = { owner = RAJ add_core_of = RAJ }
 		buildings = {
 			infrastructure = 1
 			air_base = 1
@@ -44,7 +42,7 @@ state={
 	provinces={
 		1286 1301 1329 1361 4304 4332 4352 4421 7251 7324 7339 7352 7412 10166 10206 12222 
 	}
-	manpower=345640
+	manpower=165000 #PreTAOG 345640
 	buildings_max_level_factor=1
 	state_category= large_island
 

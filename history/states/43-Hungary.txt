@@ -6,7 +6,6 @@ state={
 	resources = {
 		steel = 6 #was 3 was: 4
 		aluminium = 40 # was: 194
-		rubber=16 # Rubber spawned in Day 1 instead of "Invest in the Magyar ..."
 		coal = 4 #initial distribution
 	}
 	
@@ -24,8 +23,6 @@ state={
 			9660 20 
 		}
 		add_core_of = HUN
-		# Scraping the Barrel
-		1936.1.1.14 = { owner = ROM add_core_of = ROM }
 	}
 
 	provinces={

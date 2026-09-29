@@ -11,10 +11,8 @@ state = {
 	history = {
 
 		owner = CHI
-		
+		add_core_of = WST
 		add_core_of = CHI
-		
-		
 
 		victory_points = {
 			7158 1 # Ulanqab 
@@ -28,8 +26,18 @@ state = {
 			infrastructure = 1
 			industrial_complex = 1
 		}
-		# No Asia
-		1936.1.1.13 = { owner = WST add_core_of = WST }
+
+		1939.1.1 = {
+
+			remove_building = {
+				type = industrial_complex
+				level = 1
+			}
+
+			owner = CHI
+			controller = JAP
+
+		}
 
 	}
 

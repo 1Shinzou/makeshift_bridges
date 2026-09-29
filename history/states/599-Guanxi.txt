@@ -11,9 +11,8 @@ state= {
 
 	history= {
 		owner = CHI
-		
 		add_core_of = CHI
-		
+		add_core_of = WST
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
@@ -28,8 +27,16 @@ state= {
 		victory_points = { 
 			1597 1 # Liuzhou  
 		}
-		# No Asia
-		1936.1.1.13 = { owner = WST add_core_of = WST }
+
+		1938.10.25 = {
+			if = {
+				limit = {
+					NOT = { has_dlc = "Waking the Tiger" }
+				}
+				CHI = { transfer_state = PREV }
+			}
+		}
+
 	}
 	provinces={
 		1023 1597 4134 4152 7095 7128 7168 7210 10039 10404 10431 12407 12436 

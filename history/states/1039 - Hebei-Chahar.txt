@@ -8,11 +8,8 @@ state = {
 	history = {
 
 		owner = CHI
-		
+		add_core_of = WST
 		add_core_of = CHI
-		
-
-
 
 		buildings = {
 			infrastructure = 1 #was 2
@@ -29,10 +26,6 @@ state = {
 		victory_points = {
 			6904 3 # Kalgan #was 4
 		}
-
-		# No Asia
-		1936.1.1.13 = { owner = WST add_core_of = WST }
-
 	}
 
 	provinces = {

@@ -8,8 +8,8 @@ state = {
 	
 	history = {
 
-		owner = BRM
-		add_core_of = BRM
+		owner = ENG
+		add_core_of = WST
 
 		buildings = {
 			infrastructure = 2
@@ -32,7 +32,6 @@ state = {
 
 	provinces = {
 		1330 1650 10154 10283 10344 12127 
-		1417 7441 12256	
 	}
 
 	buildings_max_level_factor = 1.000

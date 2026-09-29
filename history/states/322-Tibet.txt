@@ -1,14 +1,11 @@
 state={
 	id=322
 	name="STATE_322"
-	
 
 	history={
 		owner = WST
-		buildings = {
-			infrastructure = 1
-			industrial_complex = 1
-
+		buildings = { 
+			
 		}
 		add_core_of = WST
 

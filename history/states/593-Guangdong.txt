@@ -14,12 +14,9 @@ state = {
 	history = {
 
 		owner = CHI
-		
-
-
+		add_core_of = WST
 		
 		add_core_of = CHI
-		
 
 		victory_points = { 
 			9938 1 # Shantou
@@ -39,12 +36,19 @@ state = {
 			air_base = 1
 			9938 = {
 				naval_base = 1
-				coastal_bunker = 1
-				bunker = 1
 			}
 		}
-		# No Asia
-		1936.1.1.13 = { owner = WST add_core_of = WST }
+
+		1938.10.25 = {		
+			JAP = {
+				set_province_controller = 1202
+				set_province_controller = 4050
+				set_province_controller = 7108
+				set_province_controller = 9938
+				set_province_controller = 12095
+			} 
+
+		}
 
 	}
 

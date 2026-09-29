@@ -4,7 +4,19 @@ state = {
 	manpower = 1
 	state_category = pastoral 
 
+	resources = {
+		
+	}
+
 	history = {
+
+		owner = WST
+
+		victory_points = {
+			2024 1 # Bakwanga
+		}
+
+		add_core_of = WST
 	}
 
 	provinces = {

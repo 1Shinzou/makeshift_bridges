@@ -6,11 +6,10 @@ state={
 	manpower = 1802132
 
 	history = {
-		victory_points = {
-			2096 1 
-		}
+		
 		owner = ENG
 		add_core_of = WST
+		add_core_of = ETH
 		buildings = {
 			infrastructure = 2
 

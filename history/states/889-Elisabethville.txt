@@ -5,10 +5,22 @@ state = {
 	state_category = pastoral
 
 	resources = {
-		tungsten = 2.000
+		
 	}
 
 	history = {
+
+		owner = WST
+
+		
+
+
+		add_core_of = WST
+
+		victory_points = {
+			191 2 # Elizabehville
+		}
+
 	}
 	
 	provinces = {

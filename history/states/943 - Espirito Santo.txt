@@ -2,18 +2,22 @@
 state = {
 	id = 943
 	name = "STATE_943"
-	manpower = 1
+	manpower = 4603600
 	
-	state_category = wasteland
+	state_category = town
 	
-	
+	resources = {
+		steel = 1
+	}
 
 	history = {
 
-		owner = WST
-		add_core_of = WST
+		owner = BRA
+		add_core_of = BRA
 
-		
+		victory_points = {
+			10999 5
+		}
 
 		buildings = {
 			infrastructure = 2

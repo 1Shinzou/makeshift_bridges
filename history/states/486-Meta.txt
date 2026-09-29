@@ -8,8 +8,8 @@ state={
 
 	history={
 		owner = WST
-		buildings = {
-			infrastructure = 1
+		buildings = { 
+			
 		}
 		add_core_of = WST
 	}

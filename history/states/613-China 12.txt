@@ -9,7 +9,7 @@ state = {
 
 		owner = CHI
 		add_core_of = CHI
-		
+		add_core_of = WST
 
 		buildings = {
 			infrastructure = 3 #was: 5
@@ -18,16 +18,16 @@ state = {
 			arms_factory = 2
 			7014 = {
 				naval_base = 6
-				coastal_bunker = 1
-				bunker = 1
 			}
 		}
 		
 		victory_points = {
 			7014 5 # Shanghai
 		}
-		# No Asia
-		1936.1.1.13 = { owner = WST add_core_of = WST }
+
+		1938.10.25 = {
+			controller = JAP
+		}
 	}
 
 	provinces = {

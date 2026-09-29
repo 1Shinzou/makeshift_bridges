@@ -5,13 +5,14 @@ state={
 	history={
 		owner = AUS
 		victory_points = {
-			673 5 
+			673 2
 		}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 			air_base = 3
 		}
+		add_core_of = WST
 		add_core_of = AUS
 		1938.3.12 = {
 			owner = GER

@@ -7,8 +7,9 @@ state = {
 
 	history = {
 
-		owner = SOV
-		add_core_of = SOV
+		owner = CHI
+		add_core_of = WST
+		add_core_of = CHI
 
 		buildings = {
 			infrastructure = 2

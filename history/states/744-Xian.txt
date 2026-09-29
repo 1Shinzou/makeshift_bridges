@@ -12,10 +12,8 @@ state = {
 	history = {
 
 		owner = CHI
-		
+		add_core_of = WST
 		add_core_of = CHI
-		# No Asia
-		1936.1.1.13 = { owner = WST add_core_of = WST }
 
 		victory_points = {
 			7301 1 # Xian

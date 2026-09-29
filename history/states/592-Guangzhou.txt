@@ -11,10 +11,8 @@ state={
 
 	history={
 		owner = CHI
-		
-
+		add_core_of = WST
 		add_core_of = CHI
-		
 		
 		buildings = {
 			infrastructure = 2
@@ -23,8 +21,6 @@ state={
 			air_base = 3
 			1047 = { # Guangzhou
 				naval_base = 5
-				coastal_bunker = 1
-				bunker = 1
 			}
 
 		}
@@ -37,8 +33,14 @@ state={
 			12077 1 # Maoming
 		}
 
-		# No Asia
-		1936.1.1.13 = { owner = WST add_core_of = WST }
+		1938.10.25 = {
+			JAP = {
+				set_province_controller = 1047
+				set_province_controller = 7152
+				set_province_controller = 11938
+				set_province_controller = 11941
+			} 			
+		}
 	}
 
 	provinces={

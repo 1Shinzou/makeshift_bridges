@@ -5,10 +5,10 @@ state = {
 	state_category = pastoral
 
 	history = {
-		owner = CHI
-		add_core_of = CHI
-		
 
+		owner = CHI
+		add_core_of = WST
+		add_core_of = CHI
 
 		buildings = {
 			infrastructure = 1
@@ -17,8 +17,6 @@ state = {
 		victory_points = {
 			5100 1 #Wuwei
 		}
-		# No Asia
-		1936.1.1.13 = { owner = WST add_core_of = WST }
 	}
 
 	provinces = {

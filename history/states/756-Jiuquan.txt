@@ -8,9 +8,11 @@ state={
 	buildings_max_level_factor=1.000
 	state_category = wasteland
 	history={
+
 		owner = CHI
+		add_core_of = WST
 		add_core_of = CHI
-		
+
 		victory_points = {
 			7971 1 # Jiuquan 
 		}
@@ -26,9 +28,6 @@ state={
 				}
 			}
 		}
-
-		# No Asia
-		1936.1.1.13 = { owner = WST add_core_of = WST }
 	}
 
 	local_supplies = 0.0 

@@ -4,7 +4,21 @@ state = {
 	manpower = 1
 	state_category = pastoral
 
+	resources = {
+		
+	}
+
 	history = {
+
+		owner = WST
+
+
+		victory_points = {
+			1950 3 # Stanleyville
+		}
+
+		add_core_of = WST
+
 	}
 
 	provinces = {
@@ -12,5 +26,5 @@ state = {
 	}
 	
 	buildings_max_level_factor = 1.000
-	local_supplies = 2.000
+	local_supplies = 0
 }

@@ -12,7 +12,6 @@ state = {
 		add_core_of = ITA
 		add_core_of = YUG
 		add_core_of = WST
-		add_core_of = WST
 		buildings = {
 			infrastructure = 1
 			dockyard = 1

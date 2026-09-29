@@ -5,13 +5,24 @@ state = {
 	
 	state_category = wasteland
 	impassable = yes
+	force_link_ownership_to = 774 # Chad
 
 	history = {
+
+		owner = WST
+		add_core_of = WST
+
+		buildings = {
+			infrastructure = 0
+		}
+		
 	}
 
 	provinces = {
-		12733
+		4902 5136 10893
 	}
+	
+	buildings_max_level_factor = 1.000
 
 	local_supplies = 1.0 
 }

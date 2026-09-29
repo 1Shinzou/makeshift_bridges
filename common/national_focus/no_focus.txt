@@ -104,10 +104,7 @@ focus_tree = {
 			add = 1000000
 			tag = LIT
 		}
-		modifier = {
-			add = 1000000
-			tag = POR
-		}
+		
 		modifier = {
 			add = 1000000
 			tag = IRE

@@ -87,9 +87,6 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			add_ideas = Increased_enlistment
-			custom_effect_tooltip = generic_skip_one_line_tt
-			
 			army_experience = 25
 			add_doctrine_cost_reduction = {
 				name = AST_additional_militia_training
@@ -174,9 +171,6 @@
 
 		completion_reward = {
 			army_experience = 50
-
-			add_ideas = ENG_home_army_idea
-			custom_effect_tooltip = generic_skip_one_line_tt
 			add_doctrine_cost_reduction = {
 				name = AST_promote_reservists
 				cost_reduction = 0.5
@@ -971,8 +965,8 @@
 					bonus = 1.0
 					uses = 3
 					category = cat_strategic_bomber
-					category = cat_air_bombs
-					category = cat_torpedoes
+					category = tactical_bomber
+					category = naval_air
 				}
 				add_tech_bonus = {
 					name = AST_cac_woomera
@@ -1256,7 +1250,7 @@
 				bonus = 1.0
 				ahead_reduction = 2
 				uses = 1
-				category = cat_torpedoes
+				category = naval_bomber
 			}
 		}
 	}
@@ -1539,9 +1533,8 @@
 		}
 
 		available = {
-			any_state = {
+			any_controlled_state = {
 				is_coastal = yes
-				is_controlled_by = ROOT
 			}
 		}
 		
@@ -1611,9 +1604,8 @@
 		}
 
 		available = {
-			any_state = {
+			any_controlled_state = {
 				is_coastal = yes
-				is_controlled_by = ROOT
 			}
 		}
 		
@@ -1698,12 +1690,19 @@
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
+			
+			add_mastery_bonus = {
+				name = AST_protect_overseas_commerce
+				bonus = 0.1
+				days = 120
+				track = screens
+			}
+
 			add_doctrine_cost_reduction = {
 				name = AST_protect_overseas_commerce
 				cost_reduction = 0.25
 				uses = 2
-				category = fleet_in_being_tree
-				category = convoy_defense_tree
+				category = naval_doctrine
 			}
 		}
 	}
@@ -1737,11 +1736,19 @@
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
+			
+			add_mastery_bonus = {
+				name = AST_fly_the_jolly_roger
+				bonus = 0.1
+				days = 120
+				track = submarines
+			}
+
 			add_doctrine_cost_reduction = {
 				name = AST_fly_the_jolly_roger
 				cost_reduction = 0.25
-				uses = 2
-				category = submarine_doctrine
+				uses = 1
+				category = naval_doctrine
 			}
 		}
 	}
@@ -1887,7 +1894,6 @@
 				bonus = 1.0
 				ahead_reduction = 2
 				uses = 1
-				category = cl_tech
 				category = ca_tech
 			}
 		}
@@ -2050,7 +2056,7 @@
 					}
 					NOT = {state = 674}
 				}
-				add_extra_state_shared_building_slots = 2
+
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -2066,7 +2072,7 @@
 					}
 					NOT = {state = 674}
 				}
-				add_extra_state_shared_building_slots = 2
+
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -2390,23 +2396,7 @@
 				level = 2
 				path = { 7669 1431 12104 1454 }
 			}
-				random_owned_controlled_state = {
-				prioritize = { 520 }
-			limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					NOT = {state = 674}
-				}
-				add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				set_state_flag = AST_expand_lithgow_small_arms_factory_AF
-			}
+
 
 		}
 	}
@@ -3189,7 +3179,7 @@
 	focus = {
 		id = AST_support_the_policy_of_appeasement
 		icon = GFX_goal_generic_improve_relations
-		mutually_exclusive = { focus = AST_never_another_gallipoli }
+		
 		x = 30
 		y = 0
 
@@ -3325,29 +3315,11 @@
 		available = {
 			is_in_faction_with = ENG
 			ENG = { has_government = ROOT }
-			MAL = {
-				is_puppet_of = ENG
-			}
+			
 		}
 		
-		bypass = {
-			OR = {
-				NOT = {
-					OR = {
-						336 = {
-							is_owned_by = MAL
-						}
-						333 = {
-							is_owned_by = MAL
-						}
-					}
-				}
-				NOT = {
-					MAL = {
-						is_puppet_of = ENG
-					}
-				}
-			}
+		bypass = { 
+			
 		}
 
 		cancel_if_invalid = yes
@@ -3481,6 +3453,36 @@
 			333 = {
 				controller = { is_in_faction_with = ROOT }
 			}
+			1059 = {
+				controller = { is_in_faction_with = ROOT }
+			}
+			1023 = {
+				controller = { is_in_faction_with = ROOT }
+			}
+			1024 = {
+				controller = { is_in_faction_with = ROOT }
+			}
+			1021 = {
+				controller = { is_in_faction_with = ROOT }
+			}
+			1060 = {
+				controller = { is_in_faction_with = ROOT }
+			}
+			1063 = {
+				controller = { is_in_faction_with = ROOT }
+			}
+			1064 = {
+				controller = { is_in_faction_with = ROOT }
+			}
+			1062 = {
+				controller = { is_in_faction_with = ROOT }
+			}
+			1061 = {
+				controller = { is_in_faction_with = ROOT }
+			}
+			1065 = {
+				controller = { is_in_faction_with = ROOT }
+			}
 		}
 		
 		bypass = {
@@ -3520,10 +3522,51 @@
 					instant_build = yes
 				}
 
-				#border inland bunker
+				#Extra fort on naval bases
 				add_building_construction = {
 					type = bunker
-					province = 4310
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+
+			}
+
+			1062 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+
+				#Fortify entire coastline
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
 					level = 2
 					instant_build = yes
 				}
@@ -3544,6 +3587,190 @@
 						all_provinces = yes
 						limit_to_naval_base = yes
 					}
+					level = 2
+					instant_build = yes
+				}
+
+			}
+
+			1061 = {
+
+				#Fortify entire coastline
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+
+				#Extra fort on naval bases
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+
+			}
+
+			1063 = {
+
+				#Fortify entire coastline
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+
+				#Extra fort on naval bases
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+
+			}
+
+			1060 = {
+
+				#Fortify entire coastline
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+
+				#Extra fort on naval bases
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+
+			}
+
+			1064 = {
+
+				#Fortify entire coastline
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+
+				#Extra fort on naval bases
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+
+				#border inland bunker
+				add_building_construction = {
+					type = bunker
+					province = 4310
 					level = 2
 					instant_build = yes
 				}
@@ -3591,7 +3818,135 @@
 					instant_build = yes
 				}
 			}
+
+			1059 = {
+				#Fortify entire coastline
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+
+				#Extra fort on naval bases
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			1023 = {
+				#Fortify entire coastline
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+
+				#Extra fort on naval bases
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			1024 = {
+				#Fortify entire coastline
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+
+				#Extra fort on naval bases
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+			}
+
 		}
+
 	}
 
 	focus = {

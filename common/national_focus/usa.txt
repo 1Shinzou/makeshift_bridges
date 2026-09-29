@@ -3643,6 +3643,7 @@ focus_tree = {
 				category =  light_air
 				
 				}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = USA_escort_fighters
 				bonus = 1

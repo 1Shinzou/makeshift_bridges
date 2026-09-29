@@ -14,7 +14,7 @@ AXIS_propaganda_campaigns = {
 				original_tag = YUG
 				original_tag = SPR
 				#original_tag = VIC
-				#original_tag = SIA
+				original_tag = POR
 				original_tag = AUS
 			}
 		}
@@ -65,7 +65,7 @@ AXIS_propaganda_campaigns = {
 				original_tag = YUG
 				original_tag = SPR
 				#original_tag = VIC
-				#original_tag = SIA
+				original_tag = POR
 				original_tag = AUS
 			}
 		}
@@ -114,7 +114,7 @@ AXIS_propaganda_campaigns = {
 				original_tag = YUG
 				original_tag = SPR
 				#original_tag = VIC
-				#original_tag = SIA
+					original_tag = POR
 				original_tag = AUS
 			}
 		}
@@ -167,7 +167,7 @@ AXIS_propaganda_campaigns = {
 				original_tag = YUG
 				original_tag = SPR
 				#original_tag = VIC
-				#original_tag = SIA
+					original_tag = POR
 				original_tag = AUS
 			}
 		}
@@ -217,7 +217,7 @@ AXIS_propaganda_campaigns = {
 				original_tag = YUG
 				original_tag = SPR
 				#original_tag = VIC
-				#original_tag = SIA
+					original_tag = POR
 				original_tag = AUS
 			}
 		}
@@ -264,7 +264,7 @@ AXIS_propaganda_campaigns = {
 				original_tag = YUG
 				original_tag = SPR
 				#original_tag = VIC
-				#original_tag = SIA
+					original_tag = POR
 				original_tag = AUS
 			}
 		}
@@ -838,7 +838,7 @@ ALLIES_propaganda_campaigns = {
 				original_tag = BEL
 				original_tag = COG
 				original_tag = GRE
-				#original_tag = INS
+				original_tag = ARG
 			}
 		}
 
@@ -889,7 +889,7 @@ ALLIES_propaganda_campaigns = {
 				original_tag = BEL
 				original_tag = COG
 				original_tag = GRE
-				#original_tag = INS
+				original_tag = ARG
 			}
 		}
 
@@ -940,7 +940,7 @@ ALLIES_propaganda_campaigns = {
 				original_tag = BEL
 				original_tag = COG
 				original_tag = GRE
-				#original_tag = INS
+				original_tag = ARG
 			}
 		}
 
@@ -991,7 +991,7 @@ ALLIES_propaganda_campaigns = {
 				original_tag = BEL
 				original_tag = COG
 				original_tag = GRE
-				#original_tag = INS
+				original_tag = ARG
 			}
 		}
 
@@ -1042,7 +1042,7 @@ ALLIES_propaganda_campaigns = {
 				original_tag = BEL
 				original_tag = COG
 				original_tag = GRE
-				#original_tag = INS
+				original_tag = ARG
 			}
 		}
 
@@ -1097,7 +1097,7 @@ ALLIES_propaganda_campaigns = {
 				original_tag = BEL
 				original_tag = COG
 				original_tag = GRE
-				#original_tag = INS
+				original_tag = ARG
 			}
 		}
 

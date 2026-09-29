@@ -12,7 +12,7 @@ state={
 	history = {
 
 		owner = NZL
-		add_core_of = NZL
+		add_core_of = AST
 
 		buildings = {
 			infrastructure = 3 

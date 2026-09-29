@@ -4619,7 +4619,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_portuguese_legion
-		cost = 10
+		cost = 5
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = { 	
 			add_doctrine_cost_reduction = {
@@ -4678,7 +4678,7 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = POR_observation_mission
-		cost = 10
+		cost = 5
 		completion_reward = { 	
 			GER = { country_event = generic.2 }
 		}

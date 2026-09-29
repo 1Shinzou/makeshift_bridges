@@ -3210,16 +3210,8 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			add_named_threat = {
-				threat = 3
-				name = SPR_Porgual
-			}
-			news_event = { id = news.6969 }
-			add_state_core = 180
-			add_state_core = 112
-			add_state_core = 795
-			add_state_core = 179
-			add_state_core = 181
+			
+			
             if = {
                 limit = {
                     POR = {
@@ -3229,12 +3221,64 @@ focus_tree = {
                     }
                 }
             }
-			SPR = {
-                annex_country = {
-					target = POR
-					transfer_troops = no
-                }
-            }
+
+			173 = {
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 6
+					instant_build = yes
+				}
+			}
+			789 = {
+				add_extra_state_shared_building_slots = 11
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 7
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}		
+			}
+			168 = {
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}	
+				add_building_construction = {
+					type = arms_factory
+					level = 6
+					instant_build = yes
+				}
+			}
+			793 = {
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}	
+				add_building_construction = {
+					type = arms_factory
+					level = 6
+					instant_build = yes
+				}
+			}
 			
 			add_stability = 0.2
 			if = {

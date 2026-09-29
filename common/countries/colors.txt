@@ -114,6 +114,10 @@ HUN = {
 	color = hsv { 0.07 1.1 1 }
 	color_ui = rgb { 128 64 0 }
 }
+ARG = {
+	color = rgb { 145 157 236 }
+	color_ui = rgb { 189 204 255 }
+}
 AST = {
     color = rgb { 0 140 70 }
     color_ui = rgb { 24 12 101 }

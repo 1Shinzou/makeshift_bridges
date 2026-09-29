@@ -22,7 +22,8 @@ is_playable_country = {
 		tag = SAF
 		tag = SOV
 		# tag = PHI
-
+		tag = POR
+		tag = ARG
 	}
 }
 
@@ -50,6 +51,7 @@ allies = {
 		tag = YUG
 		tag = GRE
 		tag = IRE
+		tag = ARG
 	}
 }
 
@@ -117,7 +119,7 @@ ai_annex = {
 		tag = EST
 		tag = AUS
 		tag = CZE
-		tag = POR
+		#tag = POR
 		tag = BRM
 		tag = PHI
 	}

@@ -39,7 +39,13 @@ shared_focus = {
 	x = 20
 	y = 0
 	
-
+	offset = {
+			x = 30
+			y = 0
+			trigger = {
+				FROM = { original_tag = ARG }
+			}
+		}
 
 	cost = 5
 

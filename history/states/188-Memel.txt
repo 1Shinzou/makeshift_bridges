@@ -7,8 +7,8 @@ state = {
 	
 	history = {
 
-		owner = WST
-		add_core_of = WST
+		owner = LIT
+		add_core_of = LIT
 
 		victory_points = {
 			3288 3 # Klaipeda/Memel

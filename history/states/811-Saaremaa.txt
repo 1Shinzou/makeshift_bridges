@@ -4,14 +4,14 @@ state={
 	name="STATE_811"
 
 	history={
-		owner = WST
+		owner = EST
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {
 			185 1
 		}
-		add_core_of = WST
+		add_core_of = EST
 	}
 
 	provinces={

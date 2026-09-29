@@ -5,50 +5,59 @@ oob = "MON_1936"
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	motorised_infantry = 1
 }
 
 add_ideas = {
 	limited_conscription
+	MON_power_struggle
+	MON_nomadic
 }
+set_variable = { mon_poster_center_icon_frame = 1 }
 
-recruit_character = MON_anandyn_amar
+recruit_character = MON_peljidiin_genden
 recruit_character = MON_mingzhu_zhanshan
 recruit_character = MON_fu_shangzhi
 recruit_character = MON_songgotu_kangan
 recruit_character = MON_haidav
 recruit_character = MON_dagva
-recruit_character = MON_chimid
+recruit_character = MON_gelegdorjiin_demid
 recruit_character = MON_sukhbaataryn_yanjmaa
-recruit_character = MON_ganbaatar
 recruit_character = MON_ulanhu
 recruit_character = MON_vg_pyrselov
-recruit_character = MON_lee_shou_hsin
+recruit_character = MON_lee_shou_xin
 recruit_character = MON_buyannmeh
-recruit_character = MON_horloogiyn_choybalsan
+recruit_character = MON_khorloogiin_choibalsan
+recruit_character = MON_zhamyangiyn_lhagvasuren
 recruit_character = MON_olziytrygyn_badrak
 recruit_character = MON_dashdorj
 recruit_character = MON_gomgchigryn_bumtsend
 recruit_character = MON_dansrabilegyin_dogsam
 recruit_character = MON_yundunwangcug
 recruit_character = MON_pai_yun_ti
-recruit_character = MON_khorloogiin_choibalsan
+recruit_character = MON_lodongijn_dandar
+recruit_character = MON_butochijn_tsog
 
 1939.1.1 = {
 
 	add_political_power = 1198
 	add_command_power = 100
 	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = construction_effort_2
-	complete_national_focus = production_effort_2
-	complete_national_focus = infrastructure_effort
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
+	complete_national_focus = MON_likbez_focus
+	complete_national_focus = MON_revolutions_experience
+	complete_national_focus = MON_transmongolian_railroad
+	complete_national_focus = MON_resource_effort
+	complete_national_focus = MON_develop_agriculture
+	complete_national_focus = MON_oil_effort2
+	complete_national_focus = MON_infrastructure_effort
+	complete_national_focus = MON_industry_effort
+	complete_national_focus = MON_electrification
+	complete_national_focus = MON_mechanization
+	complete_national_focus = MON_republicanism
+	complete_national_focus = MON_communism_focus
+	complete_national_focus = MON_SOV_focus
+	complete_national_focus = MON_repressions
+	complete_national_focus = MON_soviet_aid
 	
 	oob = "MON_1939"
 	set_technology = {
@@ -56,14 +65,16 @@ recruit_character = MON_khorloogiin_choibalsan
 		gw_artillery = 1
 		
 		#doctrines
-		#air_superiority = 1
-		#mass_assault = 1
-		#pocket_defence = 1
-		#defence_in_depth = 1
+		air_superiority = 1
+		
+		mass_assault = 1
+		pocket_defence = 1
+		defence_in_depth = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
+		radio_detection = 1
 		mechanical_computing = 1
 
 		#industry
@@ -74,13 +85,6 @@ recruit_character = MON_khorloogiin_choibalsan
 		construction2 = 1
 		concentrated_industry = 1
 		concentrated_industry2 = 1
-	}
-
-set_grand_doctrine = mass_assault
-set_grand_doctrine = new_strategic_destruction
-
-	complete_special_project = {
-		project = sp:sp_air_radar
 	}
 }
 
@@ -99,17 +103,7 @@ set_popularities = {
 		limited_conscription
 	}
 
+	recruit_character = MON_khorloogiin_choibalsan
+	promote_character = MON_khorloogiin_choibalsan
 	retire_character = MON_anandyn_amar
-
-	add_country_leader_role = {
-		character = MON_khorloogiin_choibalsan
-		promote_leader = yes
-		country_leader = {
-			ideology = stalinism
-			expire = "1948.1.1.12"
-			traits = { MON_pan_mongolian_stalinist } 
-		}
-	}	
-	set_global_flag = MON_choibalsan_ascended_flag 
-	
 }

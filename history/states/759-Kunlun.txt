@@ -9,8 +9,8 @@ state={
 	state_category = wasteland
 	history={
 
-	    owner = SOV
-		add_core_of = SOV
+	  owner = MON
+		add_core_of = MON
 
 		victory_points = {
 			2074 1 # Ruoqiang 

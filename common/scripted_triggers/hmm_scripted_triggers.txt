@@ -29,6 +29,7 @@ is_playable_country = {
 
 allies = {
 	OR = {
+		tag = MON
 		tag = ENG
 		tag = FRA
 		tag = CAN

@@ -149,6 +149,11 @@ recruit_character = SOV_Boris_Mikhailovich_Malinin
 recruit_character = SOV_Mikhail_Ilyich_Koshkin
 recruit_character = SOV_Joseph_Yakovlevich_Kotin
 recruit_character = SOV_Vasily_Gavrilovich_Grabin
+set_autonomy = {
+		target = MON
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.4
+	}
 
 if = {
 	limit = {

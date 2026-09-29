@@ -12,12 +12,14 @@ state = {
 	}
 
 	history = {
+		
 
 		owner = SOV
 		add_core_of = SOV
 		add_core_of = WST
 
 		buildings = {
+			industrial_complex = 2
 			infrastructure = 1
 		}
 		

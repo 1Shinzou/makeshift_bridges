@@ -21,8 +21,8 @@ state={
 			air_base = 1
 
 		}
-		owner = SOV
-		add_core_of = SOV
+		owner = MON
+		add_core_of = MON
 
 	}
 

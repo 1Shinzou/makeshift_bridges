@@ -2627,7 +2627,7 @@ focus_tree = {
 
 	focus = { #DEMOCRATIC
 		id = ARG_in_memory_of_yrigoyen
-		icon = GFX_focus_ARG_in_memory_of_yrigoyen
+		icon = GFX_focus_ARG_defense_and_democracy
 		prerequisite = { focus = ARG_the_clean_election }
 		x = 0
 		y = 1
@@ -3514,7 +3514,7 @@ focus_tree = {
 
 	focus = { #DEMOCRATIC
 		id = ARG_south_american_alliance
-		icon = GFX_focus_ARG_pan_american_cooperation
+		icon = GFX_focus_BRA_north_and_south_america
 		prerequisite = { focus = ARG_align_with_the_monroe_doctrine }
 		x = 0
 		y = 1
@@ -3713,7 +3713,7 @@ focus_tree = {
 
 	focus = { #COOPERATION
 		id = ARG_islas_del_atlantico_sur
-		icon = GFX_focus_ARG_islas_del_atlantico_sur
+		icon = GFX_focus_ARG_argentine_island_sovereignty
 		prerequisite = { focus = ARG_envoy_to_london }
 		x = 2
 		y = 1
@@ -3763,7 +3763,7 @@ focus_tree = {
 
 	focus = { #COOPERATION
 		id = ARG_improving_the_islands
-		icon = GFX_focus_ARG_improving_the_islands
+		icon = GFX_focus_ARG_towards_a_greater_argentina
 		prerequisite = { focus = ARG_islas_del_atlantico_sur }
 		x = 0
 		y = 1

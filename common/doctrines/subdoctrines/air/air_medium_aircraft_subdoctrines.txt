@@ -167,7 +167,42 @@ air_subdoctrine_tactical_battlefield_support = {
     xp_type = air
 
     available = {
-        always = yes
+        if = {
+            limit = {
+                has_game_rule = {
+                    rule = cas_doctrines_status
+                    option = banned
+                }
+            }
+            custom_trigger_tooltip = {
+                tooltip = HMM_banned_by_rules
+                always = no
+            }
+        }
+        else_if = {
+            limit = {
+                has_game_rule = {
+                    rule = cas_doctrines_status
+                    option = axis
+                }
+            }
+            custom_trigger_tooltip = {
+                tooltip = HMM_axis_only
+                axis = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_game_rule = {
+                    rule = cas_doctrines_status
+                    option = allies
+                }
+            }
+            custom_trigger_tooltip = {
+                tooltip = HMM_allies_only
+                allies = yes
+            }
+        }
     }
 
     ai_will_do = {
@@ -194,7 +229,7 @@ air_subdoctrine_tactical_battlefield_support = {
 
     rewards = {
 		keypoint_bombing = {
-		    army_bonus_air_superiority_factor = 0.05
+			air_cas_present_factor = 0.1
 		}
         logistical_bombing= {
 			army_bonus_air_superiority_factor = 0.05

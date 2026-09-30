@@ -25,20 +25,7 @@ foreign_mio_decisions_category = {
 		}
 
 		visible = {
-			GER = {
-				mio_original_country_exists_and_not_at_war_with_ROOT = yes
-			}
-			IF = {
-				limit = { original_tag = BUL }
-				has_completed_focus = BUL_contract_foreign_companies
-			}
-			ELSE_IF = {
-				limit = { original_tag = ETH }
-				has_completed_focus = ETH_invite_foreign_industrialists
-			}
-			ELSE = {
-				always = no 
-			}
+			always = no
 		}
 
 		available = {
@@ -121,16 +108,7 @@ foreign_mio_decisions_category = {
 		}
 
 		visible = {
-			GER = {
-				mio_original_country_exists_and_not_at_war_with_ROOT = yes
-			}
-			IF = {
-				limit = { original_tag = BUL }
-				has_completed_focus = BUL_contract_foreign_companies
-			}
-			ELSE = {
-				always = no 
-			}
+			always = no
 		}
 
 		available = {
@@ -212,16 +190,7 @@ foreign_mio_decisions_category = {
 		}
 
 		visible = {
-			GER = {
-				mio_original_country_exists_and_not_at_war_with_ROOT = yes
-			}
-			IF = {
-				limit = { original_tag = ETH }
-				has_completed_focus = ETH_invite_foreign_industrialists
-			}
-			ELSE = {
-				always = no 
-			}
+			always = no
 		}
 
 		available = {
@@ -271,16 +240,7 @@ foreign_mio_decisions_category = {
 		}
 
 		visible = {
-			GER = {
-				mio_original_country_exists_and_not_at_war_with_ROOT = yes
-			}
-			IF = {
-				limit = { original_tag = BUL }
-				has_completed_focus = BUL_contract_foreign_companies
-			}
-			ELSE = {
-				always = no 
-			}
+		always = no
 		}
 
 		available = {
@@ -354,12 +314,7 @@ foreign_mio_decisions_category = {
 		targets = { GER }
 		
 		allowed = {
-			OR = {
-				AND = {
-					tag = ETH 
-					has_dlc = "By Blood Alone"
-				} 
-			}
+			always = no
 		}
 
 		visible = {
@@ -413,12 +368,7 @@ foreign_mio_decisions_category = {
 		targets = { SOV }
 		
 		allowed = {
-			OR = {
-				AND = {
-					tag = BUL
-					has_dlc = "Battle for the Bosporus"
-				}
-			}
+			always = no
 		}
 
 		visible = {
@@ -515,19 +465,7 @@ foreign_mio_decisions_category = {
 		}
 
 		visible = {
-			SOV = {
-				mio_original_country_exists_and_not_at_war_with_ROOT = yes
-			}
-			IF = {
-				limit = { original_tag = BUL }
-				OR = {
-					has_completed_focus = BUL_contract_foreign_companies
-					has_completed_focus = BUL_a_black_sea_fleet
-				}
-			}
-			ELSE = {
-				always = no 
-			}
+			always = no
 		}
 
 		available = {
@@ -613,16 +551,7 @@ foreign_mio_decisions_category = {
 		}
 
 		visible = {
-			SOV = {
-				mio_original_country_exists_and_not_at_war_with_ROOT = yes
-			}
-			IF = {
-				limit = { original_tag = BUL }
-				has_completed_focus = BUL_contract_foreign_companies
-			}
-			ELSE = {
-				always = no 
-			}
+			always = no
 		}
 
 		available = {
@@ -705,16 +634,7 @@ foreign_mio_decisions_category = {
 		}
 
 		visible = {
-			SOV = {
-				mio_original_country_exists_and_not_at_war_with_ROOT = yes
-			}
-			IF = {
-				limit = { original_tag = BUL }
-				has_completed_focus = BUL_contract_foreign_companies
-			}
-			ELSE = {
-				always = no 
-			}
+			always = no
 		}
 
 		available = {
@@ -803,20 +723,7 @@ foreign_mio_decisions_category = {
 		}
 
 		visible = {
-			ENG = {
-				mio_original_country_exists_and_not_at_war_with_ROOT = yes
-			}
-			IF = {
-				limit = { original_tag = BUL }
-				has_completed_focus = BUL_contract_foreign_companies
-			}
-			ELSE_IF = {
-				limit = { original_tag = ETH }
-				has_completed_focus = ETH_invite_foreign_industrialists
-			}
-			ELSE = {
-				always = no 
-			}
+			always = no
 		}
 
 		available = {
@@ -900,19 +807,7 @@ foreign_mio_decisions_category = {
 		}
 
 		visible = {
-			ENG = {
-				mio_original_country_exists_and_not_at_war_with_ROOT = yes
-			}
-			IF = {
-				limit = { original_tag = BUL }
-				OR = {
-					has_completed_focus = BUL_contract_foreign_companies
-					has_completed_focus = BUL_a_black_sea_fleet
-				}
-			}
-			ELSE = {
-				always = no 
-			}
+			always = no
 		}
 
 		available = {
@@ -1001,23 +896,7 @@ foreign_mio_decisions_category = {
 		}
 
 		visible = {
-			ENG = {
-				mio_original_country_exists_and_not_at_war_with_ROOT = yes
-			}
-			IF = {
-				limit = { original_tag = BUL }
-				OR = {
-					has_completed_focus = BUL_contract_foreign_companies
-					has_completed_focus = BUL_a_black_sea_fleet
-				}
-			}
-			ELSE_IF = {
-				limit = { original_tag = ETH }
-				has_completed_focus = ETH_invite_foreign_industrialists
-			}
-			ELSE = {
-				always = no 
-			}
+		always = no
 		}
 
 		available = {
@@ -1106,20 +985,7 @@ foreign_mio_decisions_category = {
 		}
 
 		visible = {
-			ENG = {
-				mio_original_country_exists_and_not_at_war_with_ROOT = yes
-			}
-			IF = {
-				limit = { original_tag = BUL }
-				has_completed_focus = BUL_contract_foreign_companies
-			}
-			ELSE_IF = {
-				limit = { original_tag = ETH }
-				has_completed_focus = ETH_invite_foreign_industrialists
-			}
-			ELSE = {
-				always = no 
-			}
+			always = no
 		}
 
 		available = {
@@ -1207,20 +1073,7 @@ foreign_mio_decisions_category = {
 		}
 
 		visible = {
-			ENG = {
-				mio_original_country_exists_and_not_at_war_with_ROOT = yes
-			}
-			IF = {
-				limit = { original_tag = BUL }
-				has_completed_focus = BUL_contract_foreign_companies
-			}
-			ELSE_IF = {
-				limit = { original_tag = ETH }
-				has_completed_focus = ETH_invite_foreign_industrialists
-			}
-			ELSE = {
-				always = no 
-			}
+			always = no
 		}
 
 		available = {
@@ -1305,16 +1158,7 @@ foreign_mio_decisions_category = {
 		}
 
 		visible = {
-			ITA = {
-				mio_original_country_exists_and_not_at_war_with_ROOT = yes
-			}
-			IF = {
-				limit = { original_tag = BUL }
-				has_completed_focus = BUL_contract_foreign_companies
-			}
-			ELSE = {
-				always = no 
-			}
+			always = no
 		}
 
 		available = {
@@ -1398,19 +1242,7 @@ foreign_mio_decisions_category = {
 		}
 
 		visible = {
-			ITA = {
-				mio_original_country_exists_and_not_at_war_with_ROOT = yes
-			}
-			IF = {
-				limit = { original_tag = BUL }
-				OR = {
-					has_completed_focus = BUL_contract_foreign_companies
-					has_completed_focus = BUL_a_black_sea_fleet
-				}
-			}
-			ELSE = {
-				always = no 
-			}
+			always = no
 		}
 
 		available = {
@@ -1495,16 +1327,7 @@ foreign_mio_decisions_category = {
 		}
 
 		visible = {
-			ITA = {
-				mio_original_country_exists_and_not_at_war_with_ROOT = yes
-			}
-			IF = {
-				limit = { original_tag = BUL }
-				has_completed_focus = BUL_contract_foreign_companies
-			}
-			ELSE = {
-				always = no 
-			}
+			always = no
 		}
 
 		available = {

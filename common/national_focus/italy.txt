@@ -4763,7 +4763,7 @@ focus_tree = {
 		x = 11
 		y = 0
 		relative_position_id = ITA_air_innovations_bba
-		cost = 5
+		cost = 10
 		available = {
 		}
 

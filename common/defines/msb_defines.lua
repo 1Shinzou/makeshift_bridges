@@ -272,7 +272,6 @@ NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.5						-- Higher value = more shot down pl
 -- Bombing Fix
 NDefines.NSupply.RAILWAY_FLOW_PENALTY_PER_DAMAGED = 4.9
 NDefines.NAir.AIR_WING_BOMB_DAMAGE_FACTOR = 0.6 --Chrom Bombing Fix; HMM = 0.6
-NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.09 -- Vanilla 0.07
 NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = 0 --Vanilla -0.12
  ---AS KAR MOD --- FUCK FLICKERING ----
  NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_DEFAULT = 0.25	-- Default how much efficiency to regain per day. Gain applied hourly.
@@ -333,5 +332,9 @@ NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 3	-- Base factory speed multiplier
 NDefines.NProduction.POWERED_FACTORY_SPEED_MIL = 4	--Powered factory speed multiplier.
 
 -- Mastery
+
 NDefines.NDoctrines.MASTERY_BANK_MAX = 500.0 	-- Vanilla value 200
 
+-- CAS FIXES
+
+NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.05 -- vanilla 0.07 CAS LOSS HELP

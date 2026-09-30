@@ -23,6 +23,7 @@ sub_units = {
 		}
 
 		combat_width = 0
+		regimental = no
 
 		need = {
 			land_cruiser_chassis = 1

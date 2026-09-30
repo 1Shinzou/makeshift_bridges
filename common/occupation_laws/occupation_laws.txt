@@ -539,6 +539,7 @@ colonial_police = {
 					#FROM = { original_tag = GRE }
 
 					#FROM = { original_tag = YUG }
+					FROM = { original_tag = ETH }
 					FROM = { capital_scope = { is_on_continent = africa } }
 				}
 			}
@@ -596,6 +597,7 @@ colonial_police_improved = {
 				#FROM = { original_tag = ALB }
 				#FROM = { original_tag = GRE }
 				#FROM = { original_tag = YUG }
+				FROM = { original_tag = ETH }
 				FROM = { capital_scope = { is_on_continent = africa } }
 			}
 	}

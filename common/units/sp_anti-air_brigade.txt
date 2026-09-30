@@ -33,6 +33,7 @@ sub_units = {
 		training_time = 180
 		weight = 1
 		supply_consumption = 0.1
+	
 
 		breakthrough = -0.55
 		air_attack = 0.15
@@ -237,6 +238,7 @@ sub_units = {
 		training_time = 180
 		weight = 1.75
 		supply_consumption = 0.1
+		regimental = no
 
 		breakthrough = -0.35
 		air_attack = 0.15

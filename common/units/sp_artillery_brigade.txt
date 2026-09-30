@@ -27,6 +27,7 @@ sub_units = {
 		need = {
 			light_tank_artillery_chassis = 50
 		}
+
 		manpower = 500
 		max_organisation = 0
 		default_morale = 0.1
@@ -235,6 +236,7 @@ sub_units = {
 		need = {
 			super_heavy_tank_artillery_chassis = 30
 		}
+		regimental = no
 		manpower = 500
 		max_organisation = 0
 		default_morale = 0.1

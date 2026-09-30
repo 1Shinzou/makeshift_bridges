@@ -20,6 +20,7 @@ sub_units = {
 			#category_support_battalions #To prevent Integrated Support doctrines making them extremely good
 			category_army
 		}
+		regimental = no
 
 	
 		combat_width = 0

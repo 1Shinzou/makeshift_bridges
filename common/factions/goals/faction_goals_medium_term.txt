@@ -1169,8 +1169,7 @@ faction_goal_submarine_force = {
 					NOT = { has_trait = aviation_enthusiast }
 				}
 				gain_xp = 400
-				add_attack = 1
-				add_trait = { trait = seawolf }
+				
 			}
 			add_mastery = {
 				amount = 100
@@ -1258,8 +1257,7 @@ faction_goal_convoy_escort_force = {
 					NOT = { has_trait = aviation_enthusiast }
 				}
 				gain_xp = 400
-				add_attack = 1
-				add_trait = { trait = fleet_protector }
+				
 			}
 			add_mastery = {
 				amount = 100

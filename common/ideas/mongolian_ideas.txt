@@ -77,7 +77,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_infantry_bonus
 			modifier = {
-				attrition = -0.1
+				heat_attrition_factor = -0.50
 			}
 		}
 		MON_peoples_war = {		

@@ -273,13 +273,7 @@ focus_tree = {
 		x = 7
 		y = 2
 			completion_reward = {
-					add_tech_bonus = {
-							name = armor_bonus
-							bonus = 0.5
-							uses = 1
-							category = industry
-							
-						}
+					add_ideas = SOV_collectivized_society
 				}
 			available = {
 
@@ -322,20 +316,14 @@ focus_tree = {
 				}
 			completion_reward = {
 					remove_ideas = MON_power_struggle
-					add_timed_idea = {
-							idea = reign_of_terror
-							days = 100
-						}
+					
 				   
 				}
 			available = {
 
 }
 			cancel = {
-					custom_trigger_tooltip = {
-							tooltip = soviets_no_more_tt
-							soviets_no_more = yes
-						}
+					
 				}
 
 	}
@@ -349,22 +337,20 @@ focus_tree = {
 		x = 7
 		y = 4
 			cancel = {
-					custom_trigger_tooltip = {
-							tooltip = soviets_no_more_tt
-							soviets_no_more = yes
-						}
+					
 				}
 			completion_reward = {
-					add_ideas = MON_soviet_aid
-					330 = {
-							add_extra_state_shared_building_slots = 3
-						}
-					818 = {
-							add_extra_state_shared_building_slots = 3
-						}
-					981 = {
-							add_extra_state_shared_building_slots = 3
-						}
+				add_resource = {
+							type = steel
+							amount = 40
+							state = 817
+						}	
+				add_resource = {
+							type = coal
+							amount = 40
+							state = 817
+						}	
+					
 				}
         search_filters = {FOCUS_FILTER_INDUSTRY}
 	}
@@ -445,11 +431,9 @@ focus_tree = {
 			will_lead_to_war_with = XSM
 			will_lead_to_war_with = SHX
 			completion_reward = {
-					add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = 20000
+					add_ideas = ROM_fully_industralized
 				}
-				}
+				
 			available = {
 					
 				}
@@ -1435,10 +1419,10 @@ focus_tree = {
 			completion_reward = {
 					add_ideas = MON_mechanization_idea
 					330 = {
-							add_extra_state_shared_building_slots = 1
+							add_extra_state_shared_building_slots = 2
 							add_building_construction = {
 									type = industrial_complex
-									level = 1
+									level = 2
 									instant_build = yes
 								}
 						}
@@ -1494,7 +1478,7 @@ focus_tree = {
 							add_extra_state_shared_building_slots = 3
 							add_building_construction = {
 									type = industrial_complex
-									level = 2
+									level = 3
 									instant_build = yes
 								}
 							add_building_construction = {
@@ -1616,10 +1600,10 @@ focus_tree = {
 		y = 4
 			completion_reward = {
 					287 = {
-							add_extra_state_shared_building_slots = 2
+							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = arms_factory
-									level = 2
+									level = 1
 									instant_build = yes
 								}
 						}
@@ -2132,16 +2116,27 @@ focus_tree = {
 		x = 34
 		y = 3
 			completion_reward = {
-					add_research_slot = 1
-					add_tech_bonus = {
-							name = radar_focus
-							bonus = 0.5
-							uses = 2
-							category = radar_tech
-							category = encryption_tech
-							category = decryption_tech
-							category = computing_tech
-						}
+					330 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+			817 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
 				}
 			available = {
 					OR = {

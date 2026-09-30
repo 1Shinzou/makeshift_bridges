@@ -24,12 +24,12 @@ is_playable_country = {
 		# tag = PHI
 		tag = POR
 		tag = ARG
+		tag = MON
 	}
 }
 
 allies = {
 	OR = {
-		tag = MON
 		tag = ENG
 		tag = FRA
 		tag = CAN

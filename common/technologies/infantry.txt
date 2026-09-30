@@ -1525,22 +1525,27 @@ technologies = {
 
 	support_weapons = {
 
-		category_infantry_and_bicycle = {
-			defense = 0.05
-			breakthrough = 0.05
+		enable_subunits = {
+			fire_support
+			mot_fire_support
 		}
-		category_cavalry = {
-			defense = 0.02
-			breakthrough = 0.02
-		}
-		category_special_forces_leg_infantry = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		category_vehicle_infantry = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
+
+		#category_infantry_and_bicycle = {
+		#	defense = 0.05
+		#	breakthrough = 0.05
+		#}
+		#category_cavalry = {
+		#	defense = 0.02
+		#	breakthrough = 0.02
+		#}
+		#category_special_forces_leg_infantry = {
+		#	defense = 0.03
+		#	breakthrough = 0.03
+		#}
+		#category_vehicle_infantry = {
+		#	defense = 0.05
+		#	breakthrough = 0.05
+		#}
 
 		path = {
 			leads_to_tech = support_weapons2
@@ -1564,6 +1569,24 @@ technologies = {
 			# All participants in this war will want to have this tech as early as possible
 			modifier = {
 				factor = 15
+				OR = {
+					original_tag = CHI
+					original_tag = PRC
+					original_tag = XSM
+					original_tag = SIK
+					original_tag = GXC
+					original_tag = SHX
+					original_tag = YUN
+					original_tag = MAN
+					original_tag = MEN
+					original_tag = JAP
+					original_tag = GSM
+					original_tag = NXM
+					original_tag = HBC
+					original_tag = SND
+					original_tag = GDC
+					original_tag = KHM
+				}
 			}
 
 			modifier = {
@@ -1589,22 +1612,35 @@ technologies = {
 
 	support_weapons2 = {
 
-		category_infantry_and_bicycle = {
-			defense = 0.05
+		fire_support = {
+			defense = 0.15
+			breakthrough = 0.15
+			soft_attack = 0.1
+		}
+
+		mot_fire_support = {
+			defense = 0.15
 			breakthrough = 0.05
+			soft_attack = 0.1
 		}
-		category_cavalry = {
-			defense = 0.02
-			breakthrough = 0.02
-		}
-		category_special_forces_leg_infantry = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		category_vehicle_infantry = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
+
+
+		#category_infantry_and_bicycle = {
+		#	defense = 0.05
+		#	breakthrough = 0.05
+		#}
+		#category_cavalry = {
+		#	defense = 0.02
+		#	breakthrough = 0.02
+		#}
+		#category_special_forces_leg_infantry = {
+		#	defense = 0.03
+		#	breakthrough = 0.03
+		#}
+		#category_vehicle_infantry = {
+		#	defense = 0.05
+		#	breakthrough = 0.05
+		#}
 
 		path = {
 			leads_to_tech = support_weapons3
@@ -1631,6 +1667,11 @@ technologies = {
 				OR = {
 					tag = CHI
 					tag = PRC
+					tag = XSM
+					tag = SIK
+					tag = GXC
+					tag = SHX
+					tag = YUN
 				}
 			}
 			modifier = {
@@ -1661,22 +1702,34 @@ technologies = {
 
 	support_weapons3 = {
 
-		category_infantry_and_bicycle = {
-			defense = 0.05
+		fire_support = {
+			defense = 0.15
+			breakthrough = 0.15
+			soft_attack = 0.1
+		}
+
+		mot_fire_support = {
+			defense = 0.15
 			breakthrough = 0.05
+			soft_attack = 0.1
 		}
-		category_cavalry = {
-			defense = 0.02
-			breakthrough = 0.02
-		}
-		category_special_forces_leg_infantry = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		category_vehicle_infantry = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
+
+		#category_infantry_and_bicycle = {
+		#	defense = 0.05
+		#	breakthrough = 0.05
+		#}
+		#category_cavalry = {
+		#	defense = 0.02
+		#	breakthrough = 0.02
+		#}
+		#category_special_forces_leg_infantry = {
+		#	defense = 0.03
+		#	breakthrough = 0.03
+		#}
+		#category_vehicle_infantry = {
+		#	defense = 0.05
+		#	breakthrough = 0.05
+		#}
 
 		path = {
 			leads_to_tech = support_weapons4
@@ -1725,22 +1778,34 @@ technologies = {
 
 	support_weapons4 = {
 
-		category_infantry_and_bicycle = {
-			defense = 0.05
+
+		fire_support = {
+			defense = 0.15
+			breakthrough = 0.15
+			soft_attack = 0.1
+		}
+		mot_fire_support = {
+			defense = 0.15
 			breakthrough = 0.05
+			soft_attack = 0.1
 		}
-		category_cavalry = {
-			defense = 0.02
-			breakthrough = 0.02
-		}
-		category_special_forces_leg_infantry = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		category_vehicle_infantry = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
+
+		#category_infantry_and_bicycle = {
+		#	defense = 0.05
+		#	breakthrough = 0.05
+		#}
+		#category_cavalry = {
+		#	defense = 0.02
+		#	breakthrough = 0.02
+		#}
+		#category_special_forces_leg_infantry = {
+		#	defense = 0.03
+		#	breakthrough = 0.03
+		#}
+		#category_vehicle_infantry = {
+		#	defense = 0.05
+		#	breakthrough = 0.05
+		#}
 
 		research_cost = 1.5
 		start_year = 1942
@@ -1758,7 +1823,7 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				date > "1942.1.6"
+				date > "1942.1.1"
 			}
 
 			modifier = {

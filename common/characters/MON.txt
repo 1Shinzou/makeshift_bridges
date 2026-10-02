@@ -52,13 +52,13 @@ characters={
 			logistics_skill=2
 		}
 		advisor={
-			slot = army_chief
+			slot = high_command
 			idea_token = MON_khorloogiyn_choybalsan
 			allowed = {
 					original_tag = MON
 				}
 				traits = {
-					army_chief_morale_2
+					army_infantry_2
 				}
 				cost = 100
 				ai_will_do = {
@@ -248,8 +248,7 @@ characters={
 		}
 		corps_commander={
 			traits = { 
-		    cavalry_officer
-		    career_officer
+		    infantry_leader infantry_expert
 	        }
 			skill = 3
 	        attack_skill = 2
@@ -638,7 +637,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ cavalry_officer }
+			traits={  infantry_leader infantry_expert }
 			skill = 1
 	        attack_skill = 1
 	        defense_skill = 1

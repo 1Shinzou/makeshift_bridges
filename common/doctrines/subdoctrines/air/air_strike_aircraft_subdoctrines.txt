@@ -8,42 +8,7 @@ air_subdoctrine_flying_artillery = {
     xp_type = air
 
     available = {
-        if = {
-            limit = {
-                has_game_rule = {
-                    rule = cas_doctrines_status
-                    option = banned
-                }
-            }
-            custom_trigger_tooltip = {
-                tooltip = HMM_banned_by_rules
-                always = no
-            }
-        }
-        else_if = {
-            limit = {
-                has_game_rule = {
-                    rule = cas_doctrines_status
-                    option = axis
-                }
-            }
-            custom_trigger_tooltip = {
-                tooltip = HMM_axis_only
-                axis = yes
-            }
-        }
-        else_if = {
-            limit = {
-                has_game_rule = {
-                    rule = cas_doctrines_status
-                    option = allies
-                }
-            }
-            custom_trigger_tooltip = {
-                tooltip = HMM_allies_only
-                allies = yes
-            }
-        }
+        always = yes
     }
 
     ai_will_do = {
@@ -98,42 +63,7 @@ air_subdoctrine_dive_bombers = {
     xp_type = air
 
     available = {
-        if = {
-            limit = {
-                has_game_rule = {
-                    rule = cas_doctrines_status
-                    option = banned
-                }
-            }
-            custom_trigger_tooltip = {
-                tooltip = HMM_banned_by_rules
-                always = no
-            }
-        }
-        else_if = {
-            limit = {
-                has_game_rule = {
-                    rule = cas_doctrines_status
-                    option = axis
-                }
-            }
-            custom_trigger_tooltip = {
-                tooltip = HMM_axis_only
-                axis = yes
-            }
-        }
-        else_if = {
-            limit = {
-                has_game_rule = {
-                    rule = cas_doctrines_status
-                    option = allies
-                }
-            }
-            custom_trigger_tooltip = {
-                tooltip = HMM_allies_only
-                allies = yes
-            }
-        }
+        always = yes
     }
 
     ai_will_do = {
@@ -234,42 +164,7 @@ air_subdoctrine_carrier_strikes = {
     xp_type = air
 
     available = {
-        if = {
-            limit = {
-                has_game_rule = {
-                    rule = cas_doctrines_status
-                    option = banned
-                }
-            }
-            custom_trigger_tooltip = {
-                tooltip = HMM_banned_by_rules
-                always = no
-            }
-        }
-        else_if = {
-            limit = {
-                has_game_rule = {
-                    rule = cas_doctrines_status
-                    option = axis
-                }
-            }
-            custom_trigger_tooltip = {
-                tooltip = HMM_axis_only
-                axis = yes
-            }
-        }
-        else_if = {
-            limit = {
-                has_game_rule = {
-                    rule = cas_doctrines_status
-                    option = allies
-                }
-            }
-            custom_trigger_tooltip = {
-                tooltip = HMM_allies_only
-                allies = yes
-            }
-        }
+        always = yes
     }
 
      ai_will_do = { base = 0 }

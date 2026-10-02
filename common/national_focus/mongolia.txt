@@ -3157,7 +3157,8 @@ focus_tree = {
 		}
 		allow_branch = { 
 			if = { 
-				limit = { MON = { is_ai = yes } }
+				limit = { MON = { is_ai = no } }
+				always = no
 			}
 		}
 		x = 14

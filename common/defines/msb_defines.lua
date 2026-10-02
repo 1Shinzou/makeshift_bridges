@@ -319,7 +319,7 @@ NDefines.NNavy.SUPPLY_NEED_FACTOR = 0.0
 -- old Shore Bombardment Values but the max is still 33%
 NDefines.NNavy.HEAVY_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.1  -- heavy gun attack value is divided by this value * 100 and added to shore bombardment modifier
 NDefines.NNavy.LIGHT_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.05 -- light gun attack value is divided by this value * 100 and added to shore bombardment modifier
-
+NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.25
 -- Reduced Nav shootdown in naval battles
 NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.025
 

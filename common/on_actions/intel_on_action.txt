@@ -19,6 +19,7 @@ on_actions = {
 						tag = IRE
 						tag = SOV
 						tag = PHI
+						tag = ARG
 					}
 				}
 				if = {
@@ -205,6 +206,29 @@ on_actions = {
 						token = team_airforce
 					}
 				}
+					if = {
+					limit = {
+						NOT = {
+							tag = ARG
+						}
+					}
+					add_operation_token = {
+						tag = ARG
+						token = team_civilian
+					}
+					add_operation_token = {
+						tag = ARG
+						token = team_army
+					}
+					add_operation_token = {
+						tag = ARG
+						token = team_navy
+					}
+					add_operation_token = {
+						tag = ARG
+						token = team_airforce
+					}
+				}
 				if = {
 					limit = {
 						NOT = {
@@ -358,6 +382,7 @@ on_actions = {
 						tag = SIA
 						tag = SPR
 						tag = AUS
+						tag = POR
 					}
 				}
 				if = {
@@ -449,6 +474,29 @@ on_actions = {
 					}
 					add_operation_token = {
 						tag = ROM
+						token = team_airforce
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							tag = POR
+						}
+					}
+					add_operation_token = {
+						tag = POR
+						token = team_civilian
+					}
+					add_operation_token = {
+						tag = POR
+						token = team_army
+					}
+					add_operation_token = {
+						tag = POR
+						token = team_navy
+					}
+					add_operation_token = {
+						tag = POR
 						token = team_airforce
 					}
 				}

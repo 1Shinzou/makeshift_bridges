@@ -3145,5 +3145,54 @@ focus_tree = {
 			available = {
 
 }
-	}	
+	}
+
+
+	focus = {
+		id = MON_integration_focus
+		icon = GFX_focus_generic_soviet_politics
+		cost = 0
+		prerequisite = {
+			
+		}
+		allow_branch = { 
+			if = { 
+				limit = { MON = { is_ai = yes } }
+			}
+		}
+		x = 14
+		y = 5
+		completion_reward = {
+			 MON = {
+                    transfer_units_fraction = {
+                        target = SOV
+                        size = 1
+                        stockpile_ratio = 1
+                        army_ratio = 1
+                        navy_ratio = 1
+                        air_ratio = 1
+                        keep_unit_leaders_trigger = {
+                            always = no
+                        }
+                    }
+                }
+                SOV = {
+                    annex_country = {
+                        target = MON
+                        transfer_troops = yes
+                    }
+                }
+                every_state = {
+                    limit = {
+                        is_core_of = MON
+                        is_controlled_by = SOV
+                    }
+					add_core_of = SOV
+                    #add_compliance = 100
+                }
+			}
+		available = {
+			has_completed_focus = MON_western_path
+		}
+	}		
 }

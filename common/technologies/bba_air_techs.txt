@@ -1787,7 +1787,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1942
+		start_year = 1944
 
 		folder = {
 			name = bba_air_techs_folder

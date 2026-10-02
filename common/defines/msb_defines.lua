@@ -67,7 +67,7 @@ NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0.1
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 30                           -- Up from 10, should allow for more flexibility with picking focuses while doing something else, like tank templates
 NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROLLED = 0
 NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROL_DIFF = 0
-NDefines.NGame.GAME_SPEED_SECONDS = { 1000.0, 0.25, 0.20, 0.12, 0.08 } -- Speed Defines
+NDefines.NGame.GAME_SPEED_SECONDS = { 1000.0, 0.25, 0.20, 0.12, 0.0000 } -- Speed Defines
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 720
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 30
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 14 							    -- WAS 48 | drastically cuts down on save file sizes after WW2 starts and well into barbarossa
@@ -338,3 +338,6 @@ NDefines.NDoctrines.MASTERY_BANK_MAX = 500.0 	-- Vanilla value 200
 -- CAS FIXES
 
 NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.05 -- vanilla 0.07 CAS LOSS HELP
+
+NDefines.NGraphics.COUNTRY_COLOR_SATURATION_MODIFIER = 0.75 -- Vanilla 0.6   HFU 0.9
+NDefines.NGraphics.COUNTRY_COLOR_BRIGHTNESS_MODIFIER = 0.85 -- Vanilla 0.8   HFU 0.9

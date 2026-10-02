@@ -367,6 +367,29 @@ on_actions = {
 						token = team_airforce
 					}
 				}
+				if = {
+					limit = {
+						NOT = {
+							tag = MON
+						}
+					}
+					add_operation_token = {
+						tag = MON
+						token = team_civilian
+					}
+					add_operation_token = {
+						tag = MON
+						token = team_army
+					}
+					add_operation_token = {
+						tag = MON
+						token = team_navy
+					}
+					add_operation_token = {
+						tag = MON
+						token = team_airforce
+					}
+				}
 			}
 			every_country = {
 				limit = {

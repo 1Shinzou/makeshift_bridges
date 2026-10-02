@@ -1,0 +1,75 @@
+Mongolia_historical = {
+	name = "Mongolian historical plan"
+	desc = "Essentially historical behaviour for Mongolia"
+
+	allowed = {
+		original_tag = MON
+	}
+	enable = {
+		if = { 
+			limit = { 
+				MON = { 
+					is_ai = yes
+				}
+			}
+			always = yes
+		}
+	}
+	abort = { 
+
+	}
+
+	ai_national_focuses = {
+
+		#Focus 									#Days 	#Historical Daye
+		MON_industry_effort
+		MON_electrification
+		MON_mechanization
+		MON_industry_effort2
+		MON_mil_industry
+
+		MON_likbez_focus
+		MON_national_education
+		MON_academy
+		MON_western_path
+		MON_integration_focus
+		############## Now do whatever really ################
+
+	}
+
+	research = {
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		war_economy = 100
+		tot_economic_mobilisation = 100
+	}
+
+	traits = {
+		captain_of_industry = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	ai_strategy = {
+		#type = template_prio
+		#id = medium_armor
+		#value = 111
+	}
+
+	focus_factors = {
+		
+	}
+
+}
